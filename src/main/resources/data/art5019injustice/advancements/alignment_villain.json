@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:scarecrow_nolanverse_suit_helmet"
+    },
+    "title": {
+      "translate": "advancements.alignment_villain.title"
+    },
+    "description": {
+      "translate": "advancements.alignment_villain.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "alignment_villain_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 60
+  },
+  "parent": "art5019injustice:alignment_anti_hero"
+}

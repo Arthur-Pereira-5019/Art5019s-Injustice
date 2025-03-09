@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "art5019injustice:emblem_peak_human"
+    },
+    {
+      "item": "art5019injustice:steel_ingot"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:peak_human_badge_item",
+    "count": 1
+  }
+}

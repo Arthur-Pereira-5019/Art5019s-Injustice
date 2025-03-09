@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:venom_tobey_maguire_suit_helmet"
+    },
+    "title": {
+      "translate": "advancements.spider_man_venom.title"
+    },
+    "description": {
+      "translate": "advancements.spider_man_venom.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "spider_man_venom_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 17
+  },
+  "parent": "art5019injustice:spider_man_th_suit"
+}

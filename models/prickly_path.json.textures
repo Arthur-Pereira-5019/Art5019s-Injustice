@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "prickly_path"
+      },
+      "name": "default"
+    }
+  }
+}

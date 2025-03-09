@@ -1,0 +1,7 @@
+{
+  "parent": "art5019injustice:custom/webshooter",
+  "textures": {
+    "0": "art5019injustice:block/webwsh",
+    "particle": "art5019injustice:item/andrewshooter"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "domino_eyes",
+    "enableBody": true,
+    "textureBody": "domino_chest",
+    "enableLeggings": true,
+    "textureLeggings": "domino_leggings",
+    "enableBoots": true,
+    "textureBoots": "domino_boots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "domino_",
+    "helmetName": "Domino Spot",
+    "bodyName": "Domino Chestplate",
+    "leggingsName": "Domino Leggings",
+    "bootsName": "Domino Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "Neena Thurman (Earth 0)",
+        "§6Lucky Killer:",
+        "§n  -With this Full Suit Set and having Domino powers, most bullets you fire will come with a strange effect over the opponent"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Neena Thurman (Earth 0)",
+        "§6Lucky Killer:",
+        "§n  -With this Full Suit Set and having Domino powers, most bullets you fire will come with a strange effect over the opponent"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "Neena Thurman (Earth 0)",
+        "§6Lucky Killer:",
+        "§n  -With this Full Suit Set and having Domino powers, most bullets you fire will come with a strange effect over the opponent",
+        "-Magazine Support: Can stack up to 12 Magazine of Each Type"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "Neena Thurman (Earth 0)",
+        "§6Lucky Killer:",
+        "§n  -With this Full Suit Set and having Domino powers, most bullets you fire will come with a strange effect over the opponent"
+      ]
+    },
+    "helmetModelName": "Modeldomino_head",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 21,
+    "damageValueHelmet": 1,
+    "damageValueBody": 5,
+    "damageValueLeggings": 4,
+    "damageValueBoots": 3,
+    "enchantability": 23,
+    "toughness": 0.5,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:FabricBlack"
+      }
+    ]
+  }
+}

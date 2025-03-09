@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "art5019injustice:textures/screens/blue_ice.png",
+    "icon": {
+      "item": "art5019injustice:quicksilver_boots"
+    },
+    "title": {
+      "translate": "advancements.st_quicksilver_base.title"
+    },
+    "description": {
+      "translate": "advancements.st_quicksilver_base.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_quicksilver_base_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

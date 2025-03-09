@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "K",
+    "keyBindingName": "Set Tool Mode",
+    "keyBindingCategoryKey": "inj",
+    "onKeyPressed": {
+      "name": "SetToolModeOnKeyPressed"
+    }
+  }
+}

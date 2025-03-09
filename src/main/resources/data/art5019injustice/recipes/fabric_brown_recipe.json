@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "fabric",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cac",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:string"
+    },
+    "b": {
+      "item": "minecraft:leather"
+    },
+    "c": {
+      "item": "minecraft:brown_wool"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:fabric_brown",
+    "count": 1
+  }
+}

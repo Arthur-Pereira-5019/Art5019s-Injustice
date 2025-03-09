@@ -1,0 +1,303 @@
+{
+  "_fv": 66,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:Cientist"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:UraniumBlock"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 61,
+            "offer": {
+              "value": "CUSTOM:EnrichedUranium"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 5,
+            "xp": 5,
+            "priceMultiplier": 0.08
+          },
+          {
+            "price1": {
+              "value": "Blocks.STONE#5"
+            },
+            "countPrice1": 24,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.EMERALD"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 22,
+            "xp": 3,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Blocks.BONE_BLOCK"
+            },
+            "countPrice1": 11,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.EMERALD"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 22,
+            "xp": 4,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:LeadIngot"
+            },
+            "countPrice1": 11,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.EMERALD"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 22,
+            "xp": 10,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 39,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:WebCylinder"
+            },
+            "countOffer": 1,
+            "level": 4,
+            "maxTrades": 7,
+            "xp": 20,
+            "priceMultiplier": 0.08
+          },
+          {
+            "price1": {
+              "value": "Items.GUNPOWDER"
+            },
+            "countPrice1": 13,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.EMERALD"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 22,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:AdrenalyneSyringe"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Blocks.EMERALD_BLOCK"
+            },
+            "countPrice2": 3,
+            "offer": {
+              "value": "CUSTOM:AdrenV3"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 3,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Blocks.EMERALD_BLOCK"
+            },
+            "countPrice1": 2,
+            "price2": {
+              "value": "Items.PAPER"
+            },
+            "countPrice2": 4,
+            "offer": {
+              "value": "CUSTOM:ChemistryFormulaKit"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 2,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 7,
+            "price2": {
+              "value": "CUSTOM:PetroleumBucket"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:TerephthaloylChloride"
+            },
+            "countOffer": 4,
+            "level": 4,
+            "maxTrades": 10,
+            "xp": 7,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 11,
+            "price2": {
+              "value": "CUSTOM:ChlorineBottle"
+            },
+            "countPrice2": 3,
+            "offer": {
+              "value": "CUSTOM:PPhenylenediamine"
+            },
+            "countOffer": 3,
+            "level": 4,
+            "maxTrades": 10,
+            "xp": 7,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 6,
+            "price2": {
+              "value": "Items.BOOK"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:ChemistryBook1"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 10,
+            "price2": {
+              "value": "CUSTOM:ChemistryBook1"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:ChemistryBook2"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 7,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 14,
+            "price2": {
+              "value": "CUSTOM:ChemistryBook2"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:ChemistryBook3"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 10,
+            "xp": 11,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 18,
+            "price2": {
+              "value": "CUSTOM:ChemistryBook3"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:ChemistryBook4"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 17,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 22,
+            "price2": {
+              "value": "CUSTOM:ChemistryBook4"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:ChemistryBook5"
+            },
+            "countOffer": 1,
+            "level": 4,
+            "maxTrades": 10,
+            "xp": 25,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 26,
+            "price2": {
+              "value": "CUSTOM:ChemistryBook5"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:ChemistryBook6"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      }
+    ]
+  }
+}

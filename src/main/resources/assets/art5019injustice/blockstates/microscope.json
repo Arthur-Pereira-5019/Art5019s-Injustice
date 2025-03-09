@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "art5019injustice:block/microscope"
+    },
+    "facing=east": {
+      "model": "art5019injustice:block/microscope",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "art5019injustice:block/microscope",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "art5019injustice:block/microscope",
+      "y": 270
+    }
+  }
+}

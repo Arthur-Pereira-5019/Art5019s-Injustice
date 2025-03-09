@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:NeuroSuitScheme"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#3"
+      },
+      {
+        "value": "CUSTOM:KevlarBlack"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#3"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:Filter"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NeuroSuit.helmet"
+    },
+    "name": "neuro_suit_mask_recipe",
+    "namespace": "mod"
+  }
+}

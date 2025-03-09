@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:sheet_lead"
+    },
+    "b": {
+      "item": "art5019injustice:blue_kevlar"
+    },
+    "c": {
+      "item": "art5019injustice:peak_human_badge_item"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:ted_kord_suit_boots",
+    "count": 1
+  }
+}

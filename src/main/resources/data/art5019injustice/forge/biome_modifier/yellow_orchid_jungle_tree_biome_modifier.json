@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "bamboo_jungle",
+    "jungle"
+  ],
+  "features": "art5019injustice:yellow_orchid_jungle_tree",
+  "step": "vegetal_decoration"
+}

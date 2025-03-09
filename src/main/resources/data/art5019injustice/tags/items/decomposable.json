@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "art5019injustice:contamined_water_bucket",
+    "minecraft:water_bucket",
+    "minecraft:bucket",
+    "minecraft:grass",
+    "minecraft:seagrass",
+    "minecraft:gold_ore",
+    "art5019injustice:uranium_block",
+    "minecraft:copper_ore",
+    "minecraft:redstone_ore",
+    "minecraft:dirt",
+    "minecraft:coal_ore",
+    "minecraft:gunpowder",
+    "minecraft:kelp",
+    "minecraft:stone"
+  ]
+}

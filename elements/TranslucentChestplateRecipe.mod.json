@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FabricYellow"
+      },
+      {
+        "value": "CUSTOM:SuitSchemeVought"
+      },
+      {
+        "value": "CUSTOM:FabricYellow"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:FabricYellow"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TranslucentTheBoys.body"
+    },
+    "name": "translucent_chestplate_recipe",
+    "namespace": "mod"
+  }
+}

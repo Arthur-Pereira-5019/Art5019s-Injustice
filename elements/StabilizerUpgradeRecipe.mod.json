@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SiliconeMetal"
+      },
+      {
+        "value": "CUSTOM:SteelIngot"
+      },
+      {
+        "value": "CUSTOM:SiliconeMetal"
+      },
+      {
+        "value": "Blocks.TARGET"
+      },
+      {
+        "value": "CUSTOM:ShootingDevice"
+      },
+      {
+        "value": "Blocks.TARGET"
+      },
+      {
+        "value": "CUSTOM:SiliconeMetal"
+      },
+      {
+        "value": "CUSTOM:SteelIngot"
+      },
+      {
+        "value": "CUSTOM:SiliconeMetal"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PistolStabilizerUpgrade"
+    },
+    "name": "stabilizer_upgrade_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_fv": 66,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Hungry Potion",
+    "splashName": "Splash Hungry Potion",
+    "lingeringName": "Lingering Hungry Potion",
+    "arrowName": "Arrow of Hungry Potion",
+    "effects": [
+      {
+        "effect": {
+          "value": "HUNGER"
+        },
+        "duration": 900,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

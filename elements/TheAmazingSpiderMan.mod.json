@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "The Amazing Spider-Man",
+    "achievementDescription": "Every day I wake up knowing that the more people I try to save, the more enemies I will make",
+    "achievementIcon": {
+      "value": "CUSTOM:SpiderManAG3.helmet"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 9,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:BecomingSpiderMan"
+    },
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"36\" y=\"40\"/></next></block></xml>"
+  }
+}

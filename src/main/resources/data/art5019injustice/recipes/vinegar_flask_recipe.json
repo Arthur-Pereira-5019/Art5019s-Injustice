@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:yeast"
+    },
+    {
+      "item": "art5019injustice:alcohol_flask"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:vinegar_flask",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:america_constitution"
+    },
+    "title": {
+      "translate": "advancements.make_america_great_again.title"
+    },
+    "description": {
+      "translate": "advancements.make_america_great_again.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "make_america_great_again_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:use_summoning_book"
+}

@@ -1,0 +1,10 @@
+{
+  "_fv": 66,
+  "_type": "loottable",
+  "definition": {
+    "type": "Block",
+    "pools": [],
+    "name": "blocks/scarecrow_lab_loot_table",
+    "namespace": "mod"
+  }
+}

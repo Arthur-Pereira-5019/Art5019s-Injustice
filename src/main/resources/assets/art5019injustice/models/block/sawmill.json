@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "art5019injustice:block/stonecutter_bottom",
+    "up": "art5019injustice:block/stonecutter_top",
+    "north": "art5019injustice:block/stonecutter_side",
+    "east": "art5019injustice:block/stonecutter_other_side",
+    "south": "art5019injustice:block/stonecutter_side",
+    "west": "art5019injustice:block/stonecutter_other_side",
+    "particle": "art5019injustice:block/stonecutter_bottom"
+  },
+  "render_type": "solid"
+}

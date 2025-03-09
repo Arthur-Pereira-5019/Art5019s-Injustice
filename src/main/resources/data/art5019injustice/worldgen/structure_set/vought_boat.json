@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "art5019injustice:vought_boat",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 120,
+    "separation": 90,
+    "salt": 1985472278
+  }
+}

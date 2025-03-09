@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "art5019injustice:oil_flask"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:mayo_flask",
+    "count": 1
+  }
+}

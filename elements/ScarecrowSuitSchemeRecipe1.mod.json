@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:RareBlueFlower"
+      },
+      {
+        "value": "Blocks.LIT_PUMPKIN"
+      },
+      {
+        "value": "CUSTOM:RareBlueFlower"
+      },
+      {
+        "value": "Blocks.CARVED_PUMPKIN"
+      },
+      {
+        "value": "Items.PAPER"
+      },
+      {
+        "value": "Blocks.CARVED_PUMPKIN"
+      },
+      {
+        "value": "CUSTOM:RareBlueFlower"
+      },
+      {
+        "value": "Blocks.LIT_PUMPKIN"
+      },
+      {
+        "value": "CUSTOM:RareBlueFlower"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ScarecrowSuitScheme"
+    },
+    "name": "scarecrow_suit_scheme_recipe_1",
+    "namespace": "mod"
+  }
+}

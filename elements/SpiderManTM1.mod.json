@@ -1,0 +1,108 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "smtm1mask",
+    "enableBody": true,
+    "textureBody": "smtm1chest",
+    "enableLeggings": true,
+    "textureLeggings": "smtm1legs",
+    "enableBoots": true,
+    "textureBoots": "smtm1boots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "spider_man_latm1_",
+    "helmetName": "The Human Spider Mask",
+    "bodyName": "The Human Spider Sweatshirt",
+    "leggingsName": "The Human Spider Leggings",
+    "bootsName": "The Human Spider Sneakers",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 2)",
+        "§6Spider-King of The Ring:",
+        "§n  -With the Full Suit Set, every Critical Hit will deal extra 4 Damage"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 2)",
+        "§6Spider-King of The Ring:",
+        "§n  -With the Full Suit Set, every Critical Hit will deal extra 4 Damage"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 2)",
+        "§6Spider-King of The Ring:",
+        "§n  -With the Full Suit Set, every Critical Hit will deal extra 4 Damage"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 2)",
+        "§6Spider-King of The Ring:",
+        "§n  -With the Full Suit Set, every Critical Hit will deal extra 4 Damage"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 14,
+    "damageValueHelmet": 1,
+    "damageValueBody": 3,
+    "damageValueLeggings": 2,
+    "damageValueBoots": 1,
+    "enchantability": 15,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "Blocks.WOOL#14"
+      }
+    ]
+  }
+}

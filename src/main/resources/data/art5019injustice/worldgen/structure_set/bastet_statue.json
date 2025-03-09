@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "art5019injustice:bastet_statue",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 100,
+    "separation": 70,
+    "salt": 807044837
+  }
+}

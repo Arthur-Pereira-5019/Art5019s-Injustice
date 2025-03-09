@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "bcb",
+    "d d"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:purple_stained_glass_pane"
+    },
+    "b": {
+      "item": "minecraft:glass_pane"
+    },
+    "c": {
+      "item": "art5019injustice:advanced_circuit_board"
+    },
+    "d": {
+      "item": "minecraft:red_stained_glass_pane"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:tech_lenses",
+    "count": 2
+  }
+}

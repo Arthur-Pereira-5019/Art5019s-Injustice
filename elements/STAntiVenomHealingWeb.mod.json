@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "§3Healer Webbing",
+    "achievementDescription": "§bAbility 4 + Ability 3 - By adding antibodies to the released Anti-Symbiote mass, you're able to temporarily inhibit your target to attack back, but at a cost of might healing him. [Cooldown: 2s]",
+    "achievementIcon": {
+      "value": "CUSTOM:OrganicWebbingAntiVenom"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:STAntiVenomOrganicWebbing"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

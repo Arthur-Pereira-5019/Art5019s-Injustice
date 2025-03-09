@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:atlantean_symbol"
+    },
+    "title": {
+      "translate": "advancements.king_of_the_seas.title"
+    },
+    "description": {
+      "translate": "advancements.king_of_the_seas.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "king_of_the_seas_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 7
+  },
+  "parent": "art5019injustice:there_was_an_idea"
+}

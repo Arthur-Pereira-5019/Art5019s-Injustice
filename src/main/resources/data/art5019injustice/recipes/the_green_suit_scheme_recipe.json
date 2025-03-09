@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:spruce_leaves"
+    },
+    {
+      "item": "minecraft:acacia_leaves"
+    },
+    {
+      "item": "minecraft:dark_oak_leaves"
+    },
+    {
+      "item": "minecraft:birch_leaves"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:mangrove_leaves"
+    },
+    {
+      "item": "minecraft:jungle_leaves"
+    },
+    {
+      "item": "minecraft:cherry_leaves"
+    },
+    {
+      "item": "minecraft:flowering_azalea_leaves"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:the_green_suit_scheme",
+    "count": 1
+  }
+}

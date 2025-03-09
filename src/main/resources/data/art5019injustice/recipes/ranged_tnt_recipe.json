@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:tnt"
+    },
+    "b": {
+      "item": "art5019injustice:tracker_device"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:ranged_tnt",
+    "count": 8
+  }
+}

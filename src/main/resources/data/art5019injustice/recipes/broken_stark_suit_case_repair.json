@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:microchip"
+    },
+    "b": {
+      "item": "minecraft:red_dye"
+    },
+    "c": {
+      "item": "art5019injustice:gold_titanium_block"
+    },
+    "d": {
+      "item": "art5019injustice:broken_stark_suit_case"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:stark_wallet",
+    "count": 1
+  }
+}

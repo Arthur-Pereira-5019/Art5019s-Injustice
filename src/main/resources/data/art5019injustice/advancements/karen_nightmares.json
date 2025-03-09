@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:vaccine_type_i"
+    },
+    "title": {
+      "translate": "advancements.karen_nightmares.title"
+    },
+    "description": {
+      "translate": "advancements.karen_nightmares.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "karen_nightmares_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 33
+  },
+  "parent": "art5019injustice:the_cure"
+}

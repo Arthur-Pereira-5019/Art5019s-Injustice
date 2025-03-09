@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:space_stone"
+    },
+    "title": {
+      "translate": "advancements.space_stone_adv.title"
+    },
+    "description": {
+      "translate": "advancements.space_stone_adv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "space_stone_adv_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "art5019injustice:infinity_stones_tesseract"
+}

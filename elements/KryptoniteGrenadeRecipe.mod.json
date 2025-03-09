@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:KryptoniteDust"
+      },
+      {
+        "value": "Items.IRON_NUGGET"
+      },
+      {
+        "value": "CUSTOM:KryptoniteDust"
+      },
+      {
+        "value": "CUSTOM:NuggetLead"
+      },
+      {
+        "value": "CUSTOM:VacuumDevice"
+      },
+      {
+        "value": "CUSTOM:NuggetLead"
+      },
+      {
+        "value": "CUSTOM:KryptoniteDust"
+      },
+      {
+        "value": "CUSTOM:NuggetLead"
+      },
+      {
+        "value": "CUSTOM:KryptoniteDust"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:KryptoniteGrenade"
+    },
+    "name": "kryptonite_grenade_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 8.0,
+    "cookingTime": 1200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "Items.QUARTZ"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:SiliconeMetal"
+    },
+    "name": "silicone_metal_recipe",
+    "namespace": "mod"
+  }
+}

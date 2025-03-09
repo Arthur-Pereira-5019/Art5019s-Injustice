@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "badlands",
+    "savanna_plateau",
+    "windswept_gravelly_hills",
+    "windswept_hills",
+    "grove",
+    "meadow",
+    "wooded_badlands",
+    "desert",
+    "stony_peaks"
+  ]
+}

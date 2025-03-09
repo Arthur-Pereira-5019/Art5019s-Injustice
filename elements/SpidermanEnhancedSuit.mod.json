@@ -1,0 +1,121 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "smyl1mask",
+    "enableBody": true,
+    "textureBody": "smyl1chest",
+    "enableLeggings": true,
+    "textureLeggings": "smyl1leggings",
+    "enableBoots": true,
+    "textureBoots": "smyl1boots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "spiderman_yl1_",
+    "helmetName": "Spider-Man Advanced Suit Mask",
+    "bodyName": "Spider-Man Advanced Suit Chestplate",
+    "leggingsName": "Spider-Man Advanced Suit Leggings",
+    "bootsName": "Spider-Man Advanced Suit Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 5)",
+        "§a-Focus Boost:",
+        "§n  -Press Suit Ability 1 Button to gain a great Strength and Regeneration boost (2.5 Minutes Cooldown)",
+        "-Police Radio Access"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 5)",
+        "§a-Focus Boost:",
+        "Press Suit Ability 1 Button to gain a great Strength and Regeneration boost (2.5 Minutes Cooldown)"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 5)",
+        "§a-Focus Boost:",
+        "§n  -Press Suit Ability 1 Button to gain a great Strength and Regeneration boost (2.5 Minutes Cooldown)"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 5)",
+        "§a-Focus Boost:",
+        "§n  -Press Suit Ability 1 Button to gain a great Strength and Regeneration boost (2.5 Minutes Cooldown)"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 25,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 12,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:SewingKit"
+      }
+    ]
+  }
+}

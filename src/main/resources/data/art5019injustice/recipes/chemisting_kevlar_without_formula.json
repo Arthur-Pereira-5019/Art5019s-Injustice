@@ -1,0 +1,39 @@
+{
+  "type": "art5019injustice:chemisting",
+  "ingredients": [
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "item": "art5019injustice:terephthaloyl_chloride"
+    },
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "item": "art5019injustice:p_phenylenediamine"
+    },
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    }
+  ],
+  "output": {
+    "item": "art5019injustice:kevlar_default",
+    "count": 1
+  }
+}

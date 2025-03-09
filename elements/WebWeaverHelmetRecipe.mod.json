@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "Blocks.TINTED_GLASS"
+      },
+      {
+        "value": "CUSTOM:SuitSchemeVought"
+      },
+      {
+        "value": "Blocks.TINTED_GLASS"
+      },
+      {
+        "value": "CUSTOM:FabricYellow"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:FabricYellow"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:WebweaverSuit.helmet"
+    },
+    "name": "web_weaver_helmet_recipe",
+    "namespace": "mod"
+  }
+}

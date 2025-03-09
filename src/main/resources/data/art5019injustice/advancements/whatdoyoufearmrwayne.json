@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:rare_blue_flower"
+    },
+    "title": {
+      "translate": "advancements.whatdoyoufearmrwayne.title"
+    },
+    "description": {
+      "translate": "advancements.whatdoyoufearmrwayne.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "whatdoyoufearmrwayne_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 4,
+    "recipes": [
+      "art5019injustice:scarecrow_nolan_boots_recipe",
+      "art5019injustice:scarecrow_nolan_leggings_recipe",
+      "art5019injustice:scarecrow_nolan_suit_recipe",
+      "art5019injustice:scarecrow_nolan_mask_recipe"
+    ]
+  },
+  "parent": "minecraft:adventure/play_jukebox_in_meadows"
+}

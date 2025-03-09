@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:KryptoniteNanites"
+      },
+      {
+        "value": "CUSTOM:TitaniumNanites"
+      },
+      {
+        "value": "CUSTOM:KryptoniteNanites"
+      },
+      {
+        "value": "CUSTOM:TitaniumNanites"
+      },
+      {
+        "value": "CUSTOM:MicrochipTier3"
+      },
+      {
+        "value": "CUSTOM:TitaniumNanites"
+      },
+      {
+        "value": "CUSTOM:KryptoniteNanites"
+      },
+      {
+        "value": "CUSTOM:TitaniumNanites"
+      },
+      {
+        "value": "CUSTOM:KryptoniteNanites"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MetalloNanites"
+    },
+    "name": "metallo_nanites_recipe",
+    "namespace": "mod"
+  }
+}

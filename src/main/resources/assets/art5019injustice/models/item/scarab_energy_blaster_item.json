@@ -1,0 +1,7 @@
+{
+  "parent": "art5019injustice:custom/energy_blaster",
+  "textures": {
+    "0": "art5019injustice:block/bbenergyblaster",
+    "particle": "art5019injustice:item/casedust"
+  }
+}

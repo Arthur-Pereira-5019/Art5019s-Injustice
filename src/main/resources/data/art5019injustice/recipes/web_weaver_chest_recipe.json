@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "dad"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_yellow"
+    },
+    "b": {
+      "item": "art5019injustice:suit_scheme_vought"
+    },
+    "c": {
+      "item": "art5019injustice:fabric_gray"
+    },
+    "d": {
+      "item": "art5019injustice:fabric_black"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:webweaver_suit_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:brains"
+    },
+    "title": {
+      "translate": "advancements.st_supreme_advanced_brain.title"
+    },
+    "description": {
+      "translate": "advancements.st_supreme_advanced_brain.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_supreme_advanced_brain_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:st_supreme_base"
+}

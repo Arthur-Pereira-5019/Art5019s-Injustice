@@ -1,0 +1,7 @@
+{
+  "_fv": 66,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable id=\"entitya\" type=\"Entity\">entitya</variable></variables><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"variables_set_entity\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" has_entity=\"false\" is_player_var=\"false\"/><field name=\"VAR\">local:entitya</field><value name=\"VAL\"><block type=\"entity_create\"><field name=\"entity\">CUSTOM:AtlanteanZombie</field></block></value><next><block type=\"return_entity\"><value name=\"return\"><block type=\"variables_get_entity\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" has_entity=\"false\" is_player_var=\"false\"/><field name=\"VAR\">local:entitya</field></block></value></block></next></block></next></block><block type=\"logic_entity_compare\" x=\"109\" y=\"213\"><field name=\"entity\"/><value name=\"compareTo\"><block type=\"entity_from_deps\"/></value></block></xml>"
+  }
+}

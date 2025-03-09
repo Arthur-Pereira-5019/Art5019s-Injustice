@@ -1,0 +1,21 @@
+{
+  "_fv": 66,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Bottle of Scarecrow Formula",
+    "splashName": "Throwable Bottle of Scarecrow Formula",
+    "lingeringName": "Long Bottle of Scarecrow Formula",
+    "arrowName": "Arrow of Scarecrow Formula",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Fear"
+        },
+        "duration": 24000,
+        "amplifier": 1,
+        "ambient": false,
+        "showParticles": false
+      }
+    ]
+  }
+}

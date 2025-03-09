@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:tnt"
+    },
+    "title": {
+      "translate": "advancements.stjrbb_suit_defense_ii.title"
+    },
+    "description": {
+      "translate": "advancements.stjrbb_suit_defense_ii.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "stjrbb_suit_defense_ii_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:stjrbb_suit_defense_i"
+}

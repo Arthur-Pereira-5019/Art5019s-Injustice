@@ -1,0 +1,30 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Only Human After All",
+    "achievementDescription": "My skills on the field are legit",
+    "achievementIcon": {
+      "value": "CUSTOM:HumanIcon"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "BaneInjustice2BootsRecipe",
+      "BaneInjustice2LeggingsRecipe",
+      "BaneInjustice2ChestplateRecipe",
+      "BaneInjustice2MaskRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 7,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:ThereWasAnIdea"
+    },
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"34\" y=\"33\"/></next></block></xml>"
+  }
+}

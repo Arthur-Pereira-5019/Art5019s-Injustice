@@ -1,0 +1,7 @@
+{
+  "parent": "art5019injustice:custom/vibraniumshield2",
+  "textures": {
+    "0": "art5019injustice:block/captainbritainshield",
+    "particle": "art5019injustice:item/captainbritainchestplate"
+  }
+}

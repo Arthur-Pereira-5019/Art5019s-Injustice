@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:bucket",
+    "art5019injustice:contamined_water_bucket",
+    "minecraft:iron_axe",
+    "minecraft:iron_pickaxe",
+    "minecraft:water_bucket"
+  ]
+}

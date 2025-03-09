@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "art5019injustice:yellow_cattleya",
+  "step": "vegetal_decoration"
+}

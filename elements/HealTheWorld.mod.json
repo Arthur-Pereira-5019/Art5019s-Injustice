@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Heal the World",
+    "achievementDescription": "Do an action that will make you better as an person and also actually grant a safer future. They can, and must be repeated, not only here, but everywhere you are.",
+    "achievementIcon": {
+      "value": "CUSTOM:PlanetEarthIcon"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 70,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:HeroJourney"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

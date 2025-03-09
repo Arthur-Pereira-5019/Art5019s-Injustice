@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:black_panther_suit_leggings"
+    },
+    {
+      "item": "art5019injustice:vibranium_nanites"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:black_panther_suit_2_leggings",
+    "count": 1
+  }
+}

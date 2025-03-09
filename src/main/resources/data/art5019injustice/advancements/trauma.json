@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:rare_blue_flower"
+    },
+    "title": {
+      "translate": "advancements.trauma.title"
+    },
+    "description": {
+      "translate": "advancements.trauma.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "trauma_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 3
+  },
+  "parent": "art5019injustice:whatdoyoufearmrwayne"
+}

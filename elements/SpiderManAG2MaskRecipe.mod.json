@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.DYE#18"
+      },
+      {
+        "value": "CUSTOM:FabricRed"
+      },
+      {
+        "value": "Items.DYE#18"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#1"
+      },
+      {
+        "value": "CUSTOM:FabricRed"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#1"
+      },
+      {
+        "value": "CUSTOM:FabricRed"
+      },
+      {
+        "value": "CUSTOM:SpiderBadge"
+      },
+      {
+        "value": "CUSTOM:FabricRed"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SpiderManAG2.helmet"
+    },
+    "name": "spider_man_ag_2_mask_recipe",
+    "namespace": "mod"
+  }
+}

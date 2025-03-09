@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_bars"
+    },
+    "b": {
+      "item": "art5019injustice:canister"
+    },
+    "c": {
+      "item": "art5019injustice:activated_charcoal"
+    },
+    "d": {
+      "item": "art5019injustice:fabric_gray"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:filter",
+    "count": 1
+  }
+}

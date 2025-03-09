@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "art5019injustice:earth_x_eyes_lab",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 110,
+    "separation": 50,
+    "salt": 669021203
+  }
+}

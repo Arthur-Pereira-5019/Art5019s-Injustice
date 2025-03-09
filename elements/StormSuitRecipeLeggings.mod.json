@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:XGeneSuitScheme"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:StormBlackSuit.legs"
+    },
+    "name": "storm_suit_recipe_leggings",
+    "namespace": "mod"
+  }
+}

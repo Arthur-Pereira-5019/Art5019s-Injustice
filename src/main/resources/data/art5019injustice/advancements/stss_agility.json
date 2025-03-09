@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:repeater"
+    },
+    "title": {
+      "translate": "advancements.stss_agility.title"
+    },
+    "description": {
+      "translate": "advancements.stss_agility.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "stss_agility_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:stss_base"
+}

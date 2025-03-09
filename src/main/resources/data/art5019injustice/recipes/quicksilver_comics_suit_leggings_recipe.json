@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "bdb"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_black"
+    },
+    "b": {
+      "item": "art5019injustice:fabric_cyan"
+    },
+    "c": {
+      "item": "minecraft:light_gray_dye"
+    },
+    "d": {
+      "item": "art5019injustice:x_gene_suit_scheme"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:quicksilver_leggings",
+    "count": 1
+  }
+}

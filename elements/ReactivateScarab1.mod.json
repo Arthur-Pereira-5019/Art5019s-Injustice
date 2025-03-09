@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MicrochipTier3"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.END_CRYSTAL"
+      },
+      {
+        "value": "CUSTOM:BrokenBlueScarab"
+      },
+      {
+        "value": "Items.END_CRYSTAL"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MicrochipTier3"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BlueScarab"
+    },
+    "name": "reactivate_scarab_1",
+    "namespace": "mod"
+  }
+}

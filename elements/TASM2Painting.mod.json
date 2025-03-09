@@ -1,0 +1,11 @@
+{
+  "_fv": 66,
+  "_type": "painting",
+  "definition": {
+    "texture": "tasm2painting.png",
+    "width": 16,
+    "height": 32,
+    "title": "Hero Again",
+    "author": "Art5019"
+  }
+}

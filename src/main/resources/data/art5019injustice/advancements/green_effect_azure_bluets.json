@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:azure_bluet"
+    },
+    "title": {
+      "translate": "advancements.green_effect_azure_bluets.title"
+    },
+    "description": {
+      "translate": "advancements.green_effect_azure_bluets.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "green_effect_azure_bluets_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "art5019injustice:make_the_green_sacrifice"
+}

@@ -1,0 +1,68 @@
+{
+    "type": "silentgear:nbt",
+    "__comment__": "Causes Kryptonite Poisoning",
+    "max_level": 4,
+    "cancels_with": [],
+    "nbt": {
+        "main": [
+            {
+                "level": 1,
+                "data": {
+                    "kryptonitePois": 1
+                }
+            },
+            {
+                "level": 2,
+                "data": {
+                    "kryptonitePois": 2
+                }
+            },
+            {
+                "level": 3,
+                "data": {
+                    "kryptonitePois": 3
+                }
+            },
+            {
+                "level": 4,
+                "data": {
+                    "kryptonitePois": 4
+                }
+            }
+        ],
+        "tip": [
+        	{
+                "level": 1,
+                "data": {
+                    "kryptonitePois": 1
+                }
+            },
+            {
+                "level": 2,
+                "data": {
+                    "kryptonitePois": 2
+                }
+            },
+            {
+                "level": 3,
+                "data": {
+                    "kryptonitePois": 3
+                }
+            },
+            {
+                "level": 4,
+                "data": {
+                    "kryptonitePois": 4
+                }
+            }
+        	]
+    },
+    "name": {
+        "translate": true,
+        "name": "trait.art5019injustice.anti_kryptonian"
+    },
+    "description": {
+        "translate": true,
+        "name": "trait.art5019injustice.anti_kryptonian.desc"
+    }
+}

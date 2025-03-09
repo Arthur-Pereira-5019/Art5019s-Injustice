@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "crimson_forest",
+    "warped_forest",
+    "basalt_deltas"
+  ],
+  "features": "art5019injustice:stibnite_netherrack",
+  "step": "underground_ores"
+}

@@ -1,0 +1,38 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Does whatever a Spider can",
+    "achievementDescription": "Make your first homemade Spider Suit",
+    "achievementIcon": {
+      "value": "CUSTOM:SpiderManTM1.helmet"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "SpiderManAG2BootsRecipe",
+      "SpiderManAG2LegginsRecipe",
+      "SpiderManAG2ChestRecipe",
+      "SpiderManAG2MaskRecipe",
+      "SpiderManAG3BootsRecipe",
+      "SpiderManAG3LegsRecipe",
+      "SpiderManAG3ChestRecipe",
+      "SpiderManAG3MaskRecipe",
+      "NightMonkeySuitBootsRecipe",
+      "NightMonkeySuitLeggingsRecipe",
+      "NightMonkeySuitChestplateRecipe",
+      "NightMonkeySuitMaskRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 6,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:DoesWhateverASpiderCan"
+    },
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"44\" y=\"45\"/></next></block></xml>"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    "ghi"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "art5019injustice:bottle_sulfuric_acid"
+    },
+    "c": {
+      "item": "art5019injustice:steel_dust"
+    },
+    "d": {
+      "item": "minecraft:tnt"
+    },
+    "e": {
+      "item": "art5019injustice:chemistry_kit"
+    },
+    "f": {
+      "item": "art5019injustice:uranium_block"
+    },
+    "g": {
+      "item": "art5019injustice:alcohol_flask"
+    },
+    "h": {
+      "item": "art5019injustice:petroleum_bucket"
+    },
+    "i": {
+      "item": "art5019injustice:ethylene_bottle"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:advanced_chemistry_kit",
+    "count": 1
+  }
+}

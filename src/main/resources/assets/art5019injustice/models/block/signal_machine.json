@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "art5019injustice:block/titanium_ore_block",
+    "up": "art5019injustice:block/titanium_ore_block",
+    "north": "art5019injustice:block/radio_device",
+    "east": "art5019injustice:block/titanium_ore_block",
+    "south": "art5019injustice:block/titanium_ore_block",
+    "west": "art5019injustice:block/titanium_ore_block",
+    "particle": "art5019injustice:block/titanium_ore_block"
+  },
+  "render_type": "solid"
+}

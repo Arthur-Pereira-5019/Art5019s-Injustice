@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SteelNugget"
+      },
+      {
+        "value": "CUSTOM:SteelIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SteelIngot"
+      },
+      {
+        "value": "Blocks.TNT"
+      },
+      {
+        "value": "CUSTOM:SteelNugget"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SteelNugget"
+      },
+      {
+        "value": "CUSTOM:ExplosiveCharge"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HeavyMissile"
+    },
+    "name": "heavy_missile_recipe",
+    "namespace": "mod"
+  }
+}

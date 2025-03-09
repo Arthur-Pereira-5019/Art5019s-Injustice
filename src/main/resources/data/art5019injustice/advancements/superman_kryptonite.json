@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:kryptonite"
+    },
+    "title": {
+      "translate": "advancements.superman_kryptonite.title"
+    },
+    "description": {
+      "translate": "advancements.superman_kryptonite.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "superman_kryptonite_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 15
+  },
+  "parent": "art5019injustice:the_last_son_of_krypton"
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:BaneSuitScheme"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "Items.DYE#10"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BaneInjustice2Suit.boots"
+    },
+    "name": "bane_injustice_2_boots_recipe",
+    "namespace": "mod"
+  }
+}

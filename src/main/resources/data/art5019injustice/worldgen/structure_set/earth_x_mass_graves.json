@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "art5019injustice:earth_x_mass_graves",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 50,
+    "separation": 35,
+    "salt": 833453938
+  }
+}

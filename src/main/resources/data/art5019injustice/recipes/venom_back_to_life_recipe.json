@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:brains"
+    },
+    "b": {
+      "item": "art5019injustice:venom_remains"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:symbiote",
+    "count": 1
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "smag1mask",
+    "enableBody": true,
+    "textureBody": "smag1chest",
+    "enableLeggings": true,
+    "textureLeggings": "smag1legs",
+    "enableBoots": true,
+    "textureBoots": "smag1boots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "spider_man_laag1_",
+    "helmetName": "Vigilante Spider-Man Mask and Glasses",
+    "bodyName": "Vigilante Spider-Man Jacket",
+    "leggingsName": "Vigilante Spider-Man Jeans",
+    "bootsName": "Vigilante Spider-Man Sneakers",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 1)",
+        "-Shades"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 1)"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 1)"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 1)"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 15,
+    "damageValueHelmet": 1,
+    "damageValueBody": 3,
+    "damageValueLeggings": 2,
+    "damageValueBoots": 2,
+    "enchantability": 15,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_leather"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:SewingKit"
+      }
+    ]
+  }
+}

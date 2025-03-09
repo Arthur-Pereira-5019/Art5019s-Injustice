@@ -1,0 +1,52 @@
+{
+  "_fv": 66,
+  "_type": "fluid",
+  "definition": {
+    "name": "Contamined Water",
+    "bucketName": "Strange Water Bucket",
+    "textureStill": "contaminedwaterstill",
+    "textureFlowing": "water_flow",
+    "tintType": "Water",
+    "canMultiply": false,
+    "flowRate": 5,
+    "levelDecrease": 1,
+    "slopeFindDistance": 12,
+    "spawnParticles": true,
+    "dripParticle": {
+      "value": "DRIP_WATER"
+    },
+    "flowStrength": 1.0,
+    "luminosity": 0,
+    "density": 1000,
+    "viscosity": 1000,
+    "temperature": 300,
+    "type": "WATER",
+    "generateBucket": true,
+    "textureBucket": "water_bucket",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeChemistry"
+      }
+    ],
+    "emptySound": {
+      "value": ""
+    },
+    "rarity": "UNCOMMON",
+    "specialInformation": {
+      "fixedValue": [
+        "Reacts with Pure Potassium"
+      ]
+    },
+    "resistance": 100.0,
+    "luminance": 0,
+    "lightOpacity": 1,
+    "emissiveRendering": false,
+    "tickRate": 10,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "WATER",
+    "onEntityCollides": {
+      "name": "EntityCollideWithContaminedWater"
+    }
+  }
+}

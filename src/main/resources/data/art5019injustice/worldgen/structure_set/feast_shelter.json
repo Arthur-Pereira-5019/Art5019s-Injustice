@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "art5019injustice:feast_shelter",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 260,
+    "separation": 210,
+    "salt": 625657733
+  }
+}

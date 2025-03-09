@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:venom"
+    },
+    "title": {
+      "translate": "advancements.loftdk_1620.title"
+    },
+    "description": {
+      "translate": "advancements.loftdk_1620.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "loftdk_1620_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 7
+  },
+  "parent": "art5019injustice:only_human_after_all"
+}

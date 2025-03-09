@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:kryptonite_shard"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:kryptonite",
+    "count": 1
+  }
+}

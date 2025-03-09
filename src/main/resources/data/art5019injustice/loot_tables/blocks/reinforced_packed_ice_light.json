@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "art5019injustice:blocks/reinforced_packed_ice_light",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:reinforced_packed_ice_light"
+        }
+      ]
+    }
+  ]
+}

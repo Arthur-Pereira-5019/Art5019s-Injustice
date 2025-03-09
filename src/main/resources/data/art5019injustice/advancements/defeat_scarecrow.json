@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:scarecrow_nolanverse_suit_helmet"
+    },
+    "title": {
+      "translate": "advancements.defeat_scarecrow.title"
+    },
+    "description": {
+      "translate": "advancements.defeat_scarecrow.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_scarecrow_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 33
+  },
+  "parent": "art5019injustice:fight_modified_humans"
+}

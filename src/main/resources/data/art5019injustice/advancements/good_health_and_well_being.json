@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:medical_kit"
+    },
+    "title": {
+      "translate": "advancements.good_health_and_well_being.title"
+    },
+    "description": {
+      "translate": "advancements.good_health_and_well_being.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "good_health_and_well_being_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 70
+  },
+  "parent": "art5019injustice:heal_the_world"
+}

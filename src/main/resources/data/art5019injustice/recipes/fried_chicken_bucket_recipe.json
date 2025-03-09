@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "experience": 5,
+  "cookingtime": 1800,
+  "ingredient": {
+    "item": "art5019injustice:chicken_bucket"
+  },
+  "result": "art5019injustice:fried_chicken_bucket"
+}

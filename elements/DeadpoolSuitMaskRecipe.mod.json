@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FabricRed"
+      },
+      {
+        "value": "CUSTOM:XGeneSuitScheme"
+      },
+      {
+        "value": "CUSTOM:FabricRed"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#0"
+      },
+      {
+        "value": "Items.DYE#16"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#0"
+      },
+      {
+        "value": "CUSTOM:RedKevlar"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:RedKevlar"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DeadpoolSuit.helmet"
+    },
+    "name": "deadpool_suit_mask_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:diamond_sword"
+  },
+  "base": {
+    "item": "art5019injustice:meteorite_cobblestone"
+  },
+  "addition": {
+    "item": "minecraft:blaze_rod"
+  },
+  "result": {
+    "item": "art5019injustice:meteorite_sword"
+  }
+}

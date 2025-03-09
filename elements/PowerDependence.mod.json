@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Inability",
+    "icon": "powerdependence",
+    "color": {
+      "value": -12779470,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "PowerDependenceEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "PowerDependenceEffectExpires"
+    }
+  }
+}

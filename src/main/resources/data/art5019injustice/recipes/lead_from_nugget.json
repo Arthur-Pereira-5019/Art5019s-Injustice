@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:lead_ingot"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:nugget_lead",
+    "count": 9
+  }
+}

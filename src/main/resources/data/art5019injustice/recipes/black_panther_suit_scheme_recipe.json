@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "art5019injustice:emblem_black_panther"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:black_panther_suit_scheme",
+    "count": 1
+  }
+}

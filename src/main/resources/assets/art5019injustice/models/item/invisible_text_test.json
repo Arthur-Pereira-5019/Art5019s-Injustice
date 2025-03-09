@@ -1,0 +1,14 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "art5019injustice:item/steel_dust"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "art5019injustice:invisible_text_test_ownervisibility": 1
+      },
+      "model": "art5019injustice:item/invisible_text_test_0"
+    }
+  ]
+}

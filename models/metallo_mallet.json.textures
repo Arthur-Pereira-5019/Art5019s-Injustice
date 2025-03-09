@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "metallo_mallet"
+      },
+      "name": "default"
+    }
+  }
+}

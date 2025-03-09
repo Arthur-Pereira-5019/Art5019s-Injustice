@@ -1,0 +1,19 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Spider Leap",
+    "icon": "puzzleblockdoubt",
+    "color": {
+      "value": -6750208,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onActiveTick": {
+      "name": "SpiderLeapEffectStartedapplied"
+    }
+  }
+}

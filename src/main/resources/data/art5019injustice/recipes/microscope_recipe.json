@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "ca",
+    "de"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:iron_nugget"
+    },
+    "c": {
+      "item": "minecraft:glass"
+    },
+    "d": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "e": {
+      "item": "minecraft:polished_blackstone_button"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:microscope",
+    "count": 1
+  }
+}

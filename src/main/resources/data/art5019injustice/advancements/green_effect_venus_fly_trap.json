@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:venus_fly_trap"
+    },
+    "title": {
+      "translate": "advancements.green_effect_venus_fly_trap.title"
+    },
+    "description": {
+      "translate": "advancements.green_effect_venus_fly_trap.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "green_effect_venus_fly_trap_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:make_the_green_sacrifice"
+}

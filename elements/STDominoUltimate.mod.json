@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "§5Calamity Discharge",
+    "achievementDescription": "§dUltimate (Ability 3) - All your Fortune is discharged as hazard in entities. The more Fortune, the stronger and farther the Hazard goes. (Requires at least Fortune IV Effect. Cooldowns all your abilities for 3 days and this one from 6)",
+    "achievementIcon": {
+      "value": "Blocks.SKULL#1"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:STDomioHazardChanneling"
+    },
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"29\" y=\"46\"/></next></block></xml>"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:jar"
+    },
+    "b": {
+      "item": "art5019injustice:symbiote"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:venom_jar",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "b b",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:white_fabric"
+    },
+    "b": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:parachute",
+    "count": 1
+  }
+}

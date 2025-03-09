@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Want Forgiviness? Get Religion",
+    "achievementDescription": "Free yourself from the Symbiote",
+    "achievementIcon": {
+      "value": "CUSTOM:Symbiote"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 21,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:SpiderManVenom"
+    },
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"24\" y=\"31\"/></next></block></xml>"
+  }
+}

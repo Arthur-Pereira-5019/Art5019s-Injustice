@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.WOOL#0"
+      },
+      {
+        "value": "CUSTOM:WhiteFabric"
+      },
+      {
+        "value": "Blocks.WOOL#0"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#0"
+      },
+      {
+        "value": "Items.DYE#9"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#0"
+      },
+      {
+        "value": "CUSTOM:WhiteFabric"
+      },
+      {
+        "value": "CUSTOM:SpiderBadge"
+      },
+      {
+        "value": "CUSTOM:WhiteFabric"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GhostSpider.helmet"
+    },
+    "name": "ghost_spider_mask_recipe",
+    "namespace": "mod"
+  }
+}

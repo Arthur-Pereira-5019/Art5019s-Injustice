@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "zombie_villager",
+    "cow",
+    "sheep",
+    "rabbit",
+    "pig"
+  ]
+}

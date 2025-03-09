@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:copper_wiring"
+    },
+    "title": {
+      "translate": "advancements.neuro_extreme_hotwire.title"
+    },
+    "description": {
+      "translate": "advancements.neuro_extreme_hotwire.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "neuro_extreme_hotwire_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "art5019injustice:not_a_pig_not_a_criminal"
+}

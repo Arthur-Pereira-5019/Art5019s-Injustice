@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:gold_titanium_nanites"
+    },
+    {
+      "item": "art5019injustice:spider_man_th_2_helmet"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:iron_spider_th_helmet",
+    "count": 1
+  }
+}

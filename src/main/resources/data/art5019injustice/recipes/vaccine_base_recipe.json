@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "b": {
+      "item": "art5019injustice:empty_syringe"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:vaccine_base",
+    "count": 1
+  }
+}

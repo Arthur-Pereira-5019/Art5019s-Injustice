@@ -1,0 +1,7 @@
+{
+  "_fv": 66,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"controls_if\"><mutation else=\"1\"></mutation><value name=\"IF0\"><block type=\"compare_mcitems\"><value name=\"a\"><block type=\"empty_itemstack\"></block></value><value name=\"b\"><block type=\"entity_iteminhand\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value></block></value><statement name=\"DO0\"><block type=\"entity_execute_command\"><value name=\"command\"><block type=\"text\"><field name=\"TEXT\">attribute @s minecraft:generic.attack_damage modifier add 15f33058-1c4e-11ee-863a-2eb5a363657c VenomBSt 6 add</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></statement><statement name=\"ELSE\"><block type=\"entity_execute_command\"><value name=\"command\"><block type=\"text\"><field name=\"TEXT\">attribute @s minecraft:generic.attack_damage modifier remove 15f33058-1c4e-11ee-863a-2eb5a363657c</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></statement></block></next></block></xml>"
+  }
+}

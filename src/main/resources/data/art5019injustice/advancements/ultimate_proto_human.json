@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:bio_evolutive_serum"
+    },
+    "title": {
+      "translate": "advancements.ultimate_proto_human.title"
+    },
+    "description": {
+      "translate": "advancements.ultimate_proto_human.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "ultimate_proto_human_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 7
+  },
+  "parent": "art5019injustice:there_was_an_idea"
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:summoning_book"
+    },
+    "title": {
+      "translate": "advancements.use_summoning_book.title"
+    },
+    "description": {
+      "translate": "advancements.use_summoning_book.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "use_summoning_book_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "minecraft:story/enchant_item"
+}

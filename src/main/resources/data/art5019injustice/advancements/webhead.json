@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:t_web_shooter_tier_1"
+    },
+    "title": {
+      "translate": "advancements.webhead.title"
+    },
+    "description": {
+      "translate": "advancements.webhead.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "webhead_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 9,
+    "recipes": [
+      "art5019injustice:web_shooter_tier_2_recipe"
+    ]
+  },
+  "parent": "art5019injustice:becoming_spider_man"
+}

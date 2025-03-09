@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:love_sausage_icon"
+    },
+    "title": {
+      "translate": "advancements.defeat_stormfront.title"
+    },
+    "description": {
+      "translate": "advancements.defeat_stormfront.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_stormfront_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 280
+  },
+  "parent": "art5019injustice:earth_x_wrong_call"
+}

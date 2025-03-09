@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Venom",
+    "icon": "venom",
+    "color": {
+      "value": -16724992,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "VenomEffectEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "VenomEffectOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "VenomEffectEffectExpires"
+    }
+  }
+}

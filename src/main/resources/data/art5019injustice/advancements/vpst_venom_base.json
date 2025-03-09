@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "art5019injustice:textures/screens/vibraniumnetherite.png",
+    "icon": {
+      "item": "art5019injustice:psp_symbiote"
+    },
+    "title": {
+      "translate": "advancements.vpst_venom_base.title"
+    },
+    "description": {
+      "translate": "advancements.vpst_venom_base.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "vpst_venom_base_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:storm_icon"
+    },
+    "title": {
+      "translate": "advancements.st_neuro_broken_mind.title"
+    },
+    "description": {
+      "translate": "advancements.st_neuro_broken_mind.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "st_neuro_broken_mind_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:st_neuro_base"
+}

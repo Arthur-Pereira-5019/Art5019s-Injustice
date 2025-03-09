@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 3.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:GoldTitaniumDust"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:GoldTitaniumIngot"
+    },
+    "name": "blasting_gold_titanium",
+    "namespace": "mod"
+  }
+}

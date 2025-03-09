@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_light_blue"
+    },
+    "b": {
+      "item": "art5019injustice:white_fabric"
+    },
+    "c": {
+      "item": "art5019injustice:peak_human_badge_item"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:condiment_king_suit_leggings",
+    "count": 1
+  }
+}

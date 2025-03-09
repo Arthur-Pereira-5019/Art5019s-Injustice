@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:fishes"
+    },
+    "b": {
+      "item": "art5019injustice:gold_titanium_ingot"
+    },
+    "c": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "d": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:atlantean_suit_scheme",
+    "count": 1
+  }
+}

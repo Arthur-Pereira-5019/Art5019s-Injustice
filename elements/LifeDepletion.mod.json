@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Life Depletion",
+    "icon": "life_depletion",
+    "color": {
+      "value": -6750004,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "LifeDepletionEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "LifeDepletionEffectExpires"
+    }
+  }
+}

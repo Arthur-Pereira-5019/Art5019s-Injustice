@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:super_fertilizer"
+    },
+    "title": {
+      "translate": "advancements.make_the_green_sacrifice.title"
+    },
+    "description": {
+      "translate": "advancements.make_the_green_sacrifice.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "make_the_green_sacrifice_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 33
+  },
+  "parent": "minecraft:adventure/root"
+}

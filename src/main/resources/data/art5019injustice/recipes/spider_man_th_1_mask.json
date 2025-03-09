@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "beb"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_black"
+    },
+    "b": {
+      "item": "minecraft:red_wool"
+    },
+    "c": {
+      "item": "minecraft:white_stained_glass_pane"
+    },
+    "d": {
+      "item": "minecraft:orange_dye"
+    },
+    "e": {
+      "item": "art5019injustice:spider_badge"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:spider_man_th_1_helmet",
+    "count": 1
+  }
+}

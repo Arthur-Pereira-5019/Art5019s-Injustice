@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:alcohol_flask"
+    },
+    "title": {
+      "translate": "advancements.iron_man_demon_on_the_bottle.title"
+    },
+    "description": {
+      "translate": "advancements.iron_man_demon_on_the_bottle.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "iron_man_demon_on_the_bottle_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 7
+  },
+  "parent": "art5019injustice:iron_soldier_become"
+}

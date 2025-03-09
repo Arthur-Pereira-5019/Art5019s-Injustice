@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "cec"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:black_dye"
+    },
+    "b": {
+      "item": "art5019injustice:utility_belt"
+    },
+    "c": {
+      "item": "art5019injustice:fabric_blue"
+    },
+    "d": {
+      "item": "art5019injustice:spider_man_th_1_leggings"
+    },
+    "e": {
+      "item": "art5019injustice:upgrade_kit"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:spider_man_th_2_leggings",
+    "count": 1
+  }
+}

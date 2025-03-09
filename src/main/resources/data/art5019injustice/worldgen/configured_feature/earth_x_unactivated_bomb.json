@@ -1,0 +1,13 @@
+{
+  "type": "art5019injustice:structure_feature",
+  "config": {
+    "structure": "art5019injustice:unactivated_bomb",
+    "random_rotation": true,
+    "ignored_blocks": "minecraft:air",
+    "offset": [
+      0,
+      -3,
+      0
+    ]
+  }
+}

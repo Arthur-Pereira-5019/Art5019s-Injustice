@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:unactivated_mark_iii_helmet"
+    },
+    {
+      "item": "art5019injustice:unactivated_mark_iii_leggings"
+    },
+    {
+      "item": "minecraft:barrel"
+    },
+    {
+      "item": "art5019injustice:unactivated_mark_iii_chestplate"
+    },
+    {
+      "item": "art5019injustice:unactivated_mark_iii_boots"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:stark_wallet",
+    "count": 1
+  }
+}

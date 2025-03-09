@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Bacterial Meningitis",
+    "icon": "meningitis",
+    "color": {
+      "value": -2539174,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "MeningitisEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "MeningitisOnEffectActiveTick"
+    },
+    "activeTickCondition": {
+      "name": "FluEffectStartedapplied"
+    }
+  }
+}

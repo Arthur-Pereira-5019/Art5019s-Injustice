@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:palladium_ingot"
+    },
+    "b": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "c": {
+      "item": "art5019injustice:copper_wiring"
+    },
+    "d": {
+      "item": "minecraft:end_crystal"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:arc_reactor",
+    "count": 1
+  }
+}

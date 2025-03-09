@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_orange"
+    },
+    "b": {
+      "item": "art5019injustice:atlantean_suit_scheme"
+    },
+    "c": {
+      "item": "art5019injustice:fabric_green"
+    },
+    "d": {
+      "item": "art5019injustice:atlantean_armor_chestplate"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:aquaman_suit_chestplate",
+    "count": 1
+  }
+}

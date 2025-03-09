@@ -1,0 +1,15 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "X",
+    "keyBindingName": "Ability 2",
+    "keyBindingCategoryKey": "inj",
+    "onKeyPressed": {
+      "name": "Ability2OnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "Ability2OnKeyReleased"
+    }
+  }
+}

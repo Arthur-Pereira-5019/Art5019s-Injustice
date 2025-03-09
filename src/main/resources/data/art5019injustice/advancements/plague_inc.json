@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:contamined_human_remains"
+    },
+    "title": {
+      "translate": "advancements.plague_inc.title"
+    },
+    "description": {
+      "translate": "advancements.plague_inc.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "plague_inc_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:microbiology"
+}

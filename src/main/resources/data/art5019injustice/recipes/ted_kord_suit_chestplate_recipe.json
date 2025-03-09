@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "ccc",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:blue_kevlar"
+    },
+    "b": {
+      "item": "art5019injustice:peak_human_badge_item"
+    },
+    "c": {
+      "item": "art5019injustice:light_blue_kevlar"
+    },
+    "d": {
+      "item": "art5019injustice:fabric_blue"
+    },
+    "e": {
+      "item": "art5019injustice:sheet_lead"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:ted_kord_suit_chestplate",
+    "count": 1
+  }
+}

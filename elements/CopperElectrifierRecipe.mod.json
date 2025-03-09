@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ElektrumMetal"
+      },
+      {
+        "value": "CUSTOM:CopperWiring"
+      },
+      {
+        "value": "CUSTOM:ElektrumMetal"
+      },
+      {
+        "value": "CUSTOM:CopperWiring"
+      },
+      {
+        "value": "TAG:forge:copper_blocks"
+      },
+      {
+        "value": "CUSTOM:CopperWiring"
+      },
+      {
+        "value": "CUSTOM:ElektrumMetal"
+      },
+      {
+        "value": "CUSTOM:CopperWiring"
+      },
+      {
+        "value": "CUSTOM:ElektrumMetal"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CopperElectrifier"
+    },
+    "name": "copper_electrifier_recipe",
+    "namespace": "mod"
+  }
+}

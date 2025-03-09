@@ -1,0 +1,7 @@
+{
+  "type": "art5019injustice:structure_feature",
+  "config": {
+    "structure": "art5019injustice:cow_stable",
+    "ignored_blocks": "minecraft:air"
+  }
+}

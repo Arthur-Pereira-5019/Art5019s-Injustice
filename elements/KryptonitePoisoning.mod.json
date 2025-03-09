@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Green Kryptonite Radiation",
+    "icon": "extra_poison_res",
+    "color": {
+      "value": -15270144,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "KryptonitePoisoningEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "KryptonitePoisoningOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "KryptonitePoisoningEffectExpires"
+    }
+  }
+}

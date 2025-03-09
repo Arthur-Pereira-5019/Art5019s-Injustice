@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Allergy",
+    "icon": "allergy.png",
+    "color": {
+      "value": -16724992,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "AllergyEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "AllergyOnEffectActiveTick"
+    },
+    "activeTickCondition": {
+      "name": "AllergyActiveTickCondition"
+    }
+  }
+}

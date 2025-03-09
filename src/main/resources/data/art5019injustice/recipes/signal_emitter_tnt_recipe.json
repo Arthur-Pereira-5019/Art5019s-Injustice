@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "cd",
+    " e"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stone_button"
+    },
+    "b": {
+      "item": "art5019injustice:radio_device"
+    },
+    "c": {
+      "item": "minecraft:note_block"
+    },
+    "d": {
+      "item": "art5019injustice:silver_ingot"
+    },
+    "e": {
+      "item": "minecraft:tnt"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:frequency_emitter_tnt",
+    "count": 1
+  }
+}

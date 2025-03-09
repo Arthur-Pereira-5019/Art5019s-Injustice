@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:ScarecrowSuitScheme"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ScarecrowNolanverseSuit.boots"
+    },
+    "name": "scarecrow_nolan_boots_recipe",
+    "namespace": "mod"
+  }
+}

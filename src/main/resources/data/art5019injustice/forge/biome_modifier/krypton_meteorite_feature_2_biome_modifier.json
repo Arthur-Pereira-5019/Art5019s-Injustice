@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_ocean",
+  "features": "art5019injustice:krypton_meteorite_feature_2",
+  "step": "surface_structures"
+}

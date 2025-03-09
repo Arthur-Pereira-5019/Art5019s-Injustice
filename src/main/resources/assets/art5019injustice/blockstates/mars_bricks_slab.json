@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "art5019injustice:block/mars_bricks_slab"
+    },
+    "type=top": {
+      "model": "art5019injustice:block/mars_bricks_slab_top"
+    },
+    "type=double": {
+      "model": "art5019injustice:block/mars_bricks_slab_full"
+    }
+  }
+}

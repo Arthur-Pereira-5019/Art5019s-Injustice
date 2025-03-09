@@ -1,0 +1,123 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "smtm2mask",
+    "enableBody": true,
+    "textureBody": "smtm2chest",
+    "enableLeggings": true,
+    "textureLeggings": "smag3legs",
+    "enableBoots": true,
+    "textureBoots": "smtm2boots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "spider_man_latm2_",
+    "helmetName": "Friendly Neighborhood Spider-Man Mask",
+    "bodyName": "Friendly Neighborhood Spider-Man Chest",
+    "leggingsName": "Friendly Neighborhood Spider-Man Leggings",
+    "bootsName": "Friendly Neighborhood Spider-Man Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 2)",
+        "§6Web Master:",
+        "§n  -Each piece of this Suit Set adds a fourth of a 25% boost on your webs"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 2)",
+        "§6Web Master:",
+        "§n  -Each piece of this Suit Set adds a fourth of a 25% boost on your webs"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 2)",
+        "§6Web Master:",
+        "§n  -Each piece of this Suit Set adds a fourth of a 25% boost on your webs"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 2)",
+        "§6Web Master:",
+        "§n  -Each piece of this Suit Set adds a fourth of a 25% boost on your webs"
+      ]
+    },
+    "helmetModelName": "Modelspiderman_tm2_mask",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "spiderman_tm_layer_1.png",
+    "bodyModelName": "Modelspiderman_tm2_chest",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "spiderman_tm_layer_1.png",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Modelspiderman_tm2_boots",
+    "bootsModelPartL": "LeftLeg",
+    "bootsModelPartR": "RightLeg",
+    "bootsModelTexture": "spiderman_tm_layer_1.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 17,
+    "damageValueHelmet": 2,
+    "damageValueBody": 4,
+    "damageValueLeggings": 3,
+    "damageValueBoots": 2,
+    "enchantability": 15,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:FabricRed"
+      },
+      {
+        "value": "CUSTOM:FabricBlue"
+      }
+    ]
+  }
+}

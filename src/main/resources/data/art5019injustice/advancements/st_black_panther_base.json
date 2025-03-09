@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "art5019injustice:textures/screens/vibranium_in_stone.png",
+    "icon": {
+      "item": "art5019injustice:emblem_black_panther"
+    },
+    "title": {
+      "translate": "advancements.st_black_panther_base.title"
+    },
+    "description": {
+      "translate": "advancements.st_black_panther_base.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_black_panther_base_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "ca",
+    "de"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "b": {
+      "item": "minecraft:comparator"
+    },
+    "c": {
+      "item": "art5019injustice:shooting_device_2"
+    },
+    "d": {
+      "item": "minecraft:stone_button"
+    },
+    "e": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:ak_47",
+    "count": 1
+  }
+}

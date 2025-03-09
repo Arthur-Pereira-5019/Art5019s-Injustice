@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:silicone_metal"
+    },
+    "b": {
+      "item": "minecraft:glass_pane"
+    },
+    "c": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:lab_vest_helmet",
+    "count": 1
+  }
+}

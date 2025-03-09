@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:dice"
+    },
+    "title": {
+      "translate": "advancements.craft_antibiotics_recipe.title"
+    },
+    "description": {
+      "translate": "advancements.craft_antibiotics_recipe.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "craft_antibiotics_recipe_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "art5019injustice:microbiology"
+}

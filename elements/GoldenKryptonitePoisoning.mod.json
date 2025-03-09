@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Golden Kryptonite Radiation",
+    "icon": "golden_kryptonite_poisoning",
+    "color": {
+      "value": -13312,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "GoldenKryptonitePoisoningEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "GoldenKryptonitePoisoningOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "GoldenKryptonitePoisoningEffectExpires"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "art5019injustice:block/mars_bricks",
+    "particle": "art5019injustice:block/mars_bricks"
+  },
+  "render_type": "solid"
+}

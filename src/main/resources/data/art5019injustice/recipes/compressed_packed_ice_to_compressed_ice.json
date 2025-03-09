@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:compressed_packed_ice"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:compressed_ice_block",
+    "count": 9
+  }
+}

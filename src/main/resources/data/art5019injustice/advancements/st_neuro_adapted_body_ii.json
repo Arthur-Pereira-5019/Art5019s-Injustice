@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:stone_sword"
+    },
+    "title": {
+      "translate": "advancements.st_neuro_adapted_body_ii.title"
+    },
+    "description": {
+      "translate": "advancements.st_neuro_adapted_body_ii.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_neuro_adapted_body_ii_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:st_neuro_adapted_body"
+}

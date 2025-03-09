@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:peanut_butter"
+    },
+    "title": {
+      "translate": "advancements.st_supes_peanut_butter.title"
+    },
+    "description": {
+      "translate": "advancements.st_supes_peanut_butter.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_supes_peanut_butter_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:st_supe_healing_factor"
+}

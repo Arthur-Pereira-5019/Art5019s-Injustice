@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:diamond_sword"
+  },
+  "base": {
+    "item": "art5019injustice:black_panther_suit_scheme"
+  },
+  "addition": {
+    "item": "art5019injustice:vibranium_rocks"
+  },
+  "result": {
+    "item": "art5019injustice:vibranium_sword"
+  }
+}

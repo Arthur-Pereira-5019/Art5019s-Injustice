@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_forest",
+  "features": "art5019injustice:venus_fly_trap",
+  "step": "vegetal_decoration"
+}

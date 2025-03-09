@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:microchip"
+    },
+    "b": {
+      "item": "minecraft:compass"
+    },
+    "c": {
+      "item": "minecraft:clock"
+    },
+    "d": {
+      "item": "art5019injustice:advanced_circuit_board"
+    },
+    "e": {
+      "item": "minecraft:note_block"
+    },
+    "f": {
+      "item": "minecraft:comparator"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:microchip_ai",
+    "count": 1
+  }
+}

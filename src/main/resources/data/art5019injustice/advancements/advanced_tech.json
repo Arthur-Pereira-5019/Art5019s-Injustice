@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:microchip"
+    },
+    "title": {
+      "translate": "advancements.advanced_tech.title"
+    },
+    "description": {
+      "translate": "advancements.advanced_tech.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "advanced_tech_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 3,
+    "recipes": [
+      "art5019injustice:advanced_circuit_board_recipe",
+      "art5019injustice:ai_chip_recipe",
+      "art5019injustice:microchip_heater_recipe",
+      "art5019injustice:microchip_cooler_recipe",
+      "art5019injustice:tech_lenses_recipe"
+    ]
+  },
+  "parent": "art5019injustice:local_metallurgist"
+}

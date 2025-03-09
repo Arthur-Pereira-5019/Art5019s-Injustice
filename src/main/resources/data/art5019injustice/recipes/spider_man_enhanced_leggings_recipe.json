@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:upgrade_kit"
+    },
+    "b": {
+      "item": "minecraft:red_dye"
+    },
+    "c": {
+      "item": "art5019injustice:spider_man_tm_2_leggings"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:spiderman_enhanced_suit_leggings",
+    "count": 1
+  }
+}

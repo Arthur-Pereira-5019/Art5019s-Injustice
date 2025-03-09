@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:symbiote_vision"
+    },
+    "title": {
+      "translate": "advancements.steb_vision.title"
+    },
+    "description": {
+      "translate": "advancements.steb_vision.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "steb_vision_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:steb_suit_activation"
+}

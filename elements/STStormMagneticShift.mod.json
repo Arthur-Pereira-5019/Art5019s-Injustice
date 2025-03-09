@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "§3Magnetic Shift",
+    "achievementDescription": "§bAbility 1 (+Sneak) - A small shift in the magnetic field quickly attracts electrons to whatever you're looking at. Cooldown: 4 Minutes (Less cooldown time with Power Levels and based on how heavy is the weather) [Grants Power XP]",
+    "achievementIcon": {
+      "value": "CUSTOM:LightningStrikeIcon"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:STStormWeatherManipulation"
+    },
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"52\" y=\"35\"/></next></block></xml>"
+  }
+}

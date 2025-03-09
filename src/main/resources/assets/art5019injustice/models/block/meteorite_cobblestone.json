@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "art5019injustice:block/meteorite_cobblestone",
+    "particle": "art5019injustice:block/meteorite_cobblestone"
+  },
+  "render_type": "solid"
+}

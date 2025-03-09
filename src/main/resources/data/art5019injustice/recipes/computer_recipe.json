@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "b": {
+      "item": "minecraft:observer"
+    },
+    "c": {
+      "item": "art5019injustice:copper_wiring"
+    },
+    "d": {
+      "item": "minecraft:glass"
+    },
+    "e": {
+      "item": "art5019injustice:microchip_tier_3"
+    },
+    "f": {
+      "item": "minecraft:stone_button"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:computer",
+    "count": 1
+  }
+}

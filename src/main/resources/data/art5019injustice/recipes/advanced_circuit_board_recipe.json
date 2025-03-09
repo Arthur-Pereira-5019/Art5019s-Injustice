@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:microchip"
+    },
+    "b": {
+      "item": "minecraft:comparator"
+    },
+    "c": {
+      "item": "art5019injustice:laser_device"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:advanced_circuit_board",
+    "count": 1
+  }
+}

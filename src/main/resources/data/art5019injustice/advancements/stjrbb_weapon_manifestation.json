@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:scarab_sword"
+    },
+    "title": {
+      "translate": "advancements.stjrbb_weapon_manifestation.title"
+    },
+    "description": {
+      "translate": "advancements.stjrbb_weapon_manifestation.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "stjrbb_weapon_manifestation_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:stjrbb_activate"
+}

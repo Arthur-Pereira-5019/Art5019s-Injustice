@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FabricBrown"
+      },
+      {
+        "value": "CUSTOM:UtilityBelt"
+      },
+      {
+        "value": "CUSTOM:FabricBrown"
+      },
+      {
+        "value": "CUSTOM:FabricBlue"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:FabricBlue"
+      },
+      {
+        "value": "CUSTOM:FabricBlue"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:FabricBlue"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CaptainAmericaFirstSuit.legs"
+    },
+    "name": "captain_america_first_suit_leggings_recipe",
+    "namespace": "mod"
+  }
+}

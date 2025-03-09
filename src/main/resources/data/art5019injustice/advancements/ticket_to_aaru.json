@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:maat_feather"
+    },
+    "title": {
+      "translate": "advancements.ticket_to_aaru.title"
+    },
+    "description": {
+      "translate": "advancements.ticket_to_aaru.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ticket_to_aaru_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 75
+  },
+  "parent": "art5019injustice:alignment_hero"
+}

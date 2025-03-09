@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:coal",
+    "art5019injustice:steel_ingot",
+    "art5019injustice:lead_ingot",
+    "art5019injustice:titanium_ingot",
+    "art5019injustice:gold_titanium_ingot",
+    "minecraft:iron_ingot",
+    "minecraft:gold_ingot",
+    "art5019injustice:elektrum_metal",
+    "art5019injustice:vibranium_ingot",
+    "art5019injustice:kryptonite"
+  ]
+}

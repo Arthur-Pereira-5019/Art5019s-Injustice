@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:spiderman_enhanced_suit_chestplate"
+    },
+    "title": {
+      "translate": "advancements.spider_man_be_greater.title"
+    },
+    "description": {
+      "translate": "advancements.spider_man_be_greater.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spider_man_be_greater_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 13
+  },
+  "parent": "art5019injustice:spider_man_th_suit"
+}

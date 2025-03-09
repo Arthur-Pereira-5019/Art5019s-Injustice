@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:venom"
+    },
+    {
+      "item": "art5019injustice:venom"
+    },
+    {
+      "item": "art5019injustice:venom"
+    },
+    {
+      "item": "art5019injustice:venom"
+    },
+    {
+      "item": "art5019injustice:empty_cylinder"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:venom_byg_cylinder",
+    "count": 1
+  }
+}

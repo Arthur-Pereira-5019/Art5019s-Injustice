@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "pistol"
+      },
+      "name": "default"
+    },
+    "golden": {
+      "map": {
+        "0": "minecraft:gold_block"
+      },
+      "name": "golden"
+    },
+    "oldpistol": {
+      "map": {
+        "0": "old_pistol"
+      },
+      "name": "oldpistol"
+    }
+  }
+}

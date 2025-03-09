@@ -1,0 +1,120 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "smag2mask",
+    "enableBody": true,
+    "textureBody": "smag2chest",
+    "enableLeggings": true,
+    "textureLeggings": "smag2legs",
+    "enableBoots": true,
+    "textureBoots": "smag2boots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "spider_man_laag2_",
+    "helmetName": "The Amazing Spider-Man Mask",
+    "bodyName": "The Amazing Spider-Man Chest",
+    "leggingsName": "The Amazing Spider-Man Leggings",
+    "bootsName": "The Amazing Spider-Man Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 1)",
+        "§6Big Lizard Hunter:",
+        "§n  -Using this full Suit Set makes you immune to damage from claws"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 1)",
+        "§6Big Lizard Hunter:",
+        "  -Using this full Suit Set makes you immune to damage from claws"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 1)",
+        "§6Big Lizard Hunter:",
+        "  -Using this full Suit Set makes you immune to damage from claws"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 1)",
+        "§6Big Lizard Hunter:",
+        "  -Using this full Suit Set makes you immune to damage from claws"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 15,
+    "damageValueHelmet": 2,
+    "damageValueBody": 4,
+    "damageValueLeggings": 3,
+    "damageValueBoots": 2,
+    "enchantability": 15,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:SewingKit"
+      }
+    ]
+  }
+}

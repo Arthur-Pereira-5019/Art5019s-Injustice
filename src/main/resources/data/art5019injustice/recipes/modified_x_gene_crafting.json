@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "b": {
+      "tag": "art5019injustice:gene_x"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:modified_x_gene",
+    "count": 1
+  }
+}

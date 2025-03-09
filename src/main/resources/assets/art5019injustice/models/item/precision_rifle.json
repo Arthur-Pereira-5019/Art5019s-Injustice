@@ -1,0 +1,7 @@
+{
+  "parent": "art5019injustice:custom/sniper",
+  "textures": {
+    "2": "art5019injustice:block/sniper",
+    "particle": "art5019injustice:item/sniper"
+  }
+}

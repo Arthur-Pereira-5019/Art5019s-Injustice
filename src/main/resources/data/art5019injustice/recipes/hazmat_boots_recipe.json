@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "b b"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:sheet_lead"
+    },
+    "b": {
+      "item": "art5019injustice:fabric_gray"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:hazmat_boots",
+    "count": 1
+  }
+}

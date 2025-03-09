@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:empty_syringe"
+    },
+    {
+      "item": "art5019injustice:empty_syringe"
+    },
+    {
+      "item": "minecraft:potion"
+    },
+    {
+      "item": "art5019injustice:empty_syringe"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:water_syringe",
+    "count": 3
+  }
+}

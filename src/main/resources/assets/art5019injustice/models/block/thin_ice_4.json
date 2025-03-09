@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "art5019injustice:block/frosted_ice_3",
+    "up": "art5019injustice:block/frosted_ice_3",
+    "north": "art5019injustice:block/frosted_ice_3",
+    "east": "art5019injustice:block/frosted_ice_3",
+    "south": "art5019injustice:block/frosted_ice_3",
+    "west": "art5019injustice:block/frosted_ice_3",
+    "particle": "art5019injustice:block/frosted_ice_3"
+  },
+  "render_type": "translucent"
+}

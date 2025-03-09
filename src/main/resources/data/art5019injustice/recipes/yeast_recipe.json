@@ -1,0 +1,15 @@
+{
+  "type": "art5019injustice:contamination",
+  "ingredients": [
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "tag": "forge:sugars"
+    }
+  ],
+  "output": {
+    "item": "art5019injustice:yeast",
+    "count": 1
+  }
+}

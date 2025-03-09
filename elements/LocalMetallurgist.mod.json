@@ -1,0 +1,42 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Local Metallurgist",
+    "achievementDescription": "Make your first steel ingot",
+    "achievementIcon": {
+      "value": "CUSTOM:SteelIngot"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "ChemistryTableRecipe",
+      "SyringeRecipe",
+      "CanisterRecipe",
+      "BadgeRecipe",
+      "EmptyCylinderRecipe",
+      "KatanaRecipe",
+      "MicrochipRecipe",
+      "UtilityBeltRecipe",
+      "SignalEmitterBatsRecipe",
+      "WebShooterTier1Recipe",
+      "HookScytheRecipe",
+      "MicroscopeRecipe",
+      "GunBlueBeetleRecipe",
+      "AK47MagazineRecipe",
+      "AK47Recipe",
+      "ChemistryKitRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 3,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:PowerRanger"
+    },
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"99\" y=\"71\"/></next></block></xml>"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Alcohol Sterilized",
+    "icon": "alcohol_sterilized",
+    "color": {
+      "value": -1513240,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "AlcoholSterilizedEffectStartedapplied"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:tesseract"
+    },
+    "title": {
+      "translate": "advancements.infinity_stones.title"
+    },
+    "description": {
+      "translate": "advancements.infinity_stones.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "infinity_stones_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 40
+  },
+  "parent": "art5019injustice:there_was_an_idea"
+}

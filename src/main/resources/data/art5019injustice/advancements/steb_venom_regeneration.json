@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:medical_kit"
+    },
+    "title": {
+      "translate": "advancements.steb_venom_regeneration.title"
+    },
+    "description": {
+      "translate": "advancements.steb_venom_regeneration.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "steb_venom_regeneration_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:steb_venom_base"
+}

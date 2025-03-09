@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:silver_nugget"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:silver_ingot",
+    "count": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:yeast"
+    },
+    "title": {
+      "translate": "advancements.obtain_yeast.title"
+    },
+    "description": {
+      "translate": "advancements.obtain_yeast.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_yeast_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "art5019injustice:yeast"
+            ],
+            "count": {
+              "min": 1,
+              "max": 10
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "art5019injustice:bread_yeast",
+      "art5019injustice:alcohol_flask_recipe",
+      "art5019injustice:vinegar_flask_recipe",
+      "art5019injustice:cookie_yeast"
+    ]
+  },
+  "parent": "art5019injustice:microbiology"
+}

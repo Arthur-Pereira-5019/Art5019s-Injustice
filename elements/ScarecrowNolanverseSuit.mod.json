@@ -1,0 +1,114 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "mask_icon",
+    "enableBody": true,
+    "textureBody": "suit_icon",
+    "enableLeggings": true,
+    "textureLeggings": "pants_icon",
+    "enableBoots": true,
+    "textureBoots": "boots_icon",
+    "onHelmetTick": {
+      "name": "ScarecrowNolanverseSuitHelmetTickEvent"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "scarecrow_",
+    "helmetName": "Scarecrow Mask",
+    "bodyName": "Scarecrow Suit",
+    "leggingsName": "Scarecrow Pants",
+    "bootsName": "Scarecrow Shoes",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "Dr. Jonathan Crane (Earth 2)",
+        "§6Gotham Raider:",
+        "§n  -With this full Suit Set and Scarecrow powers, everytime you enter a village, the Rage effect is applied on you"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Dr. Jonathan Crane (Earth 2)",
+        "§6Gotham Raider:",
+        "§n  -With this full Suit Set and Scarecrow powers, everytime you enter a village, the Rage effect is applied on you"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "Dr. Jonathan Crane (Earth 2)",
+        "§6Gotham Raider:",
+        "§n  -With this full Suit Set and Scarecrow powers, everytime you enter a village, the Rage effect is applied on you"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "Dr. Jonathan Crane (Earth 2)",
+        "§6Gotham Raider:",
+        "§n  -With this full Suit Set and Scarecrow powers, everytime you enter a village, the Rage effect is applied on you"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 17,
+    "damageValueHelmet": 2,
+    "damageValueBody": 4,
+    "damageValueLeggings": 3,
+    "damageValueBoots": 2,
+    "enchantability": 15,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "Items.WHEAT"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      }
+    ]
+  }
+}

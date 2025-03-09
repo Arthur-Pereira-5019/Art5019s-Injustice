@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:neuro_hero_icon"
+    },
+    "title": {
+      "translate": "advancements.neuro_saviour.title"
+    },
+    "description": {
+      "translate": "advancements.neuro_saviour.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "neuro_saviour_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 22,
+    "loot": [
+      "art5019injustice:entities/blue_beetle_jr_victory_table"
+    ]
+  },
+  "parent": "art5019injustice:not_a_pig_not_a_criminal"
+}

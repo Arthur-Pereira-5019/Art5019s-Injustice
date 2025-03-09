@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:ruby"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:ruby_block",
+    "count": 1
+  }
+}

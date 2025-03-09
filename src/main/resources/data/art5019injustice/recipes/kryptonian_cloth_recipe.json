@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:string"
+    },
+    "b": {
+      "item": "art5019injustice:raolite"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:kryptonian_cloth",
+    "count": 1
+  }
+}

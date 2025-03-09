@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/packed_ice",
+    "up": "art5019injustice:block/kryptonian_computer_top",
+    "north": "art5019injustice:block/kryptonian_computer_side",
+    "east": "art5019injustice:block/kryptonian_computer_side",
+    "south": "art5019injustice:block/kryptonian_computer_side",
+    "west": "art5019injustice:block/kryptonian_computer_side",
+    "particle": "minecraft:block/packed_ice"
+  },
+  "render_type": "solid"
+}

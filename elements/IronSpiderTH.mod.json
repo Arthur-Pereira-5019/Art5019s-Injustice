@@ -1,0 +1,110 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "isthmask",
+    "enableBody": true,
+    "textureBody": "isthchest",
+    "enableLeggings": true,
+    "textureLeggings": "isthlegs",
+    "enableBoots": true,
+    "textureBoots": "isthboots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "spider_man_th3_",
+    "helmetName": "Iron Spider Helmet",
+    "bodyName": "Iron Spider Chestplate",
+    "leggingsName": "Iron Spider Leggings",
+    "bootsName": "Iron Spider Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 0)",
+        "-Bulletproof",
+        "§aNanotech:",
+        "§n  Press Suit Ability 1 with the Full Armor to Repair with Gold Titanium",
+        "Can be disabled with Interference II or Higher"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 0)",
+        "Auto-Defense: 4 (7 with Instakill) Damage per hit, Range: 5 Blocks",
+        "-Bulletproof",
+        "§aNanotech:",
+        "§n  Press Suit Ability 1 with the Full Armor to Repair with Gold Titanium"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 0)",
+        "-Bulletproof",
+        "§aNanotech:",
+        "§n  Press Suit Ability 1 with the Full Armor to Repair with Gold Titanium"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "Peter Parker (Earth 0)",
+        "-Bulletproof",
+        "§aNanotech:",
+        "§n  Press Suit Ability 1 with the Full Armor to Repair with Gold Titanium"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Modeliron_spider_th",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 46,
+    "damageValueHelmet": 3,
+    "damageValueBody": 7,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "art5019injustice:block/poisonivygrass",
+    "particle": "art5019injustice:block/poisonivygrass"
+  },
+  "render_type": "cutout"
+}

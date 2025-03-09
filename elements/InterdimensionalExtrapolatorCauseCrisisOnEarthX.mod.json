@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Crisis On Earth-X",
+    "achievementDescription": "\"It's a place so awful, so horrific, no sane person would ever travel there\"",
+    "achievementIcon": {
+      "value": "CUSTOM:EarthXIcon"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 30,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:ObtainTheMultiverseCore"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

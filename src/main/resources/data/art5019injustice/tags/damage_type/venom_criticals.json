@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "explosion",
+    "player_explosion",
+    "fireball",
+    "fireworks",
+    "in_fire",
+    "on_fire",
+    "unattributed_fireball",
+    "art5019injustice:sonic_damage",
+    "sonic_boom"
+  ]
+}

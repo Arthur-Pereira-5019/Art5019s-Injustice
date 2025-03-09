@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "cda"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:magnesium_dust"
+    },
+    "b": {
+      "item": "minecraft:iron_nugget"
+    },
+    "c": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "d": {
+      "item": "art5019injustice:nugget_lead"
+    },
+    "e": {
+      "item": "art5019injustice:vacuum_device"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:flash_bang_grenade",
+    "count": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    "ghi"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:titanium_ingot"
+    },
+    "b": {
+      "item": "art5019injustice:advanced_circuit_board"
+    },
+    "c": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "d": {
+      "item": "art5019injustice:microchip_heater"
+    },
+    "e": {
+      "item": "minecraft:chest"
+    },
+    "f": {
+      "item": "art5019injustice:microchip_cooler"
+    },
+    "g": {
+      "item": "art5019injustice:copper_wiring"
+    },
+    "h": {
+      "item": "art5019injustice:canister"
+    },
+    "i": {
+      "item": "art5019injustice:radio_device"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:upgrade_kit",
+    "count": 1
+  }
+}

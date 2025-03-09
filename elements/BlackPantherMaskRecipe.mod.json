@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:VibraniumIngot"
+      },
+      {
+        "value": "CUSTOM:BlackPantherSuitScheme"
+      },
+      {
+        "value": "CUSTOM:VibraniumIngot"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#0"
+      },
+      {
+        "value": "CUSTOM:KevlarBlack"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#0"
+      },
+      {
+        "value": "CUSTOM:KevlarBlack"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:KevlarBlack"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BlackPantherSuit.helmet"
+    },
+    "name": "black_panther_mask_recipe",
+    "namespace": "mod"
+  }
+}

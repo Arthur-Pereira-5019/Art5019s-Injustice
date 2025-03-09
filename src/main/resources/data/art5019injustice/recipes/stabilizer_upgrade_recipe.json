@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:silicone_metal"
+    },
+    "b": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "c": {
+      "item": "minecraft:target"
+    },
+    "d": {
+      "item": "art5019injustice:shooting_device"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:pistol_stabilizer_upgrade",
+    "count": 1
+  }
+}

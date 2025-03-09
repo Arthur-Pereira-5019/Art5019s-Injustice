@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:atlantean_gold_ingot"
+    },
+    "b": {
+      "item": "art5019injustice:atlantean_suit_scheme"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:atlantean_armor_chestplate",
+    "count": 1
+  }
+}

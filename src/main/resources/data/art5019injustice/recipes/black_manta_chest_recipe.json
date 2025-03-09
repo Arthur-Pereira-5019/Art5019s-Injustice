@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ece"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "b": {
+      "item": "art5019injustice:atlantean_suit_scheme"
+    },
+    "c": {
+      "item": "art5019injustice:titanium_ingot"
+    },
+    "d": {
+      "item": "art5019injustice:empty_cylinder"
+    },
+    "e": {
+      "item": "art5019injustice:gold_titanium_ingot"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:black_manta_armor_chestplate",
+    "count": 1
+  }
+}

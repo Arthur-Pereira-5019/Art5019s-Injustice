@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:activated_charcoal"
+    },
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "item": "art5019injustice:activated_charcoal"
+    },
+    {
+      "tag": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:white_wool"
+    },
+    {
+      "item": "art5019injustice:ethylene_bottle"
+    },
+    {
+      "item": "art5019injustice:ethylene_bottle"
+    },
+    {
+      "item": "art5019injustice:ethylene_bottle"
+    },
+    {
+      "item": "art5019injustice:ethylene_bottle"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:water_filter",
+    "count": 4
+  }
+}

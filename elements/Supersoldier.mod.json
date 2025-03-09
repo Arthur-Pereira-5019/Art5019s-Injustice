@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Super Soldier",
+    "achievementDescription": "The serum amplifies everything that is inside, so good becomes great; bad becomes worse..",
+    "achievementIcon": {
+      "value": "CUSTOM:SuperSoldierSerumSyringe"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "CaptainAmericaShieldRecipe",
+      "CaptainBritainShieldRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 7,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:LocalChemistry"
+    },
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"54\" y=\"42\"/></next></block></xml>"
+  }
+}

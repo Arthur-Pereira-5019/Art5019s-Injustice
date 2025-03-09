@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:microchip"
+    },
+    {
+      "item": "minecraft:redstone_lamp"
+    },
+    {
+      "item": "art5019injustice:ruby"
+    },
+    {
+      "item": "art5019injustice:copper_wiring"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:laser_device",
+    "count": 8
+  }
+}

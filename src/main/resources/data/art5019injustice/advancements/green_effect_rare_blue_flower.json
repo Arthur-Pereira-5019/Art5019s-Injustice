@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:rare_blue_flower"
+    },
+    "title": {
+      "translate": "advancements.green_effect_rare_blue_flower.title"
+    },
+    "description": {
+      "translate": "advancements.green_effect_rare_blue_flower.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "green_effect_rare_blue_flower_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "art5019injustice:make_the_green_sacrifice"
+}

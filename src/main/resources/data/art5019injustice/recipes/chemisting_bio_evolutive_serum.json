@@ -1,0 +1,39 @@
+{
+  "type": "art5019injustice:chemisting",
+  "ingredients": [
+    {
+      "item": "art5019injustice:chemistry_kit"
+    },
+    {
+      "item": "art5019injustice:advanced_chemistry_kit"
+    },
+    {
+      "item": "art5019injustice:chemistry_kit"
+    },
+    {
+      "item": "art5019injustice:venom"
+    },
+    {
+      "item": "art5019injustice:human_eye"
+    },
+    {
+      "item": "art5019injustice:chemistry_kit"
+    },
+    {
+      "item": "art5019injustice:chemistry_kit"
+    },
+    {
+      "item": "art5019injustice:advanced_chemistry_kit"
+    },
+    {
+      "item": "art5019injustice:chemistry_kit"
+    },
+    {
+      "item": "art5019injustice:formula_bio_evolutive_serum"
+    }
+  ],
+  "output": {
+    "item": "art5019injustice:bio_evolutive_serum",
+    "count": 1
+  }
+}

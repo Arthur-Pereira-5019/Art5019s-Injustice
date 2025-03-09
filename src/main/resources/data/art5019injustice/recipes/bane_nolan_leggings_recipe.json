@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "aba",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_gray"
+    },
+    "b": {
+      "item": "art5019injustice:bane_suit_scheme"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:bane_nolan_leggings",
+    "count": 1
+  }
+}

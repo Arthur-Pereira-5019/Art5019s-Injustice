@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="art5019injustice"
+version="2.0.0.8"
+displayName="Art5019's Injustice (Closed Beta)"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/art5019s-injustice"
+logoFile="logo.png"
+credits="https://docs.google.com/document/d/1yAYb6azcrg2CUTj5_vgHD7cq5HvHvCjhCmlCuxk5ipU/edit"
+authors="Art5019, MCreator"
+description="Art5019's Injustice is a fighting/adventure superpower themed mod, which allows the player to collect items, weapons, suits and other stuff related to different superheros and villains mythologies,"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.art5019injustice]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+[[dependencies.art5019injustice]]
+    modId="jei"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

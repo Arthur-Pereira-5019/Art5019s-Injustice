@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Impact of events on the world criminality.",
+    "description": "The percentage of each event impact on the criminality factor of the world, related to the default values. For servers with more players, is recommended to set this to a lower value, so the criminality will last longer.",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 100
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:red_dye"
+    },
+    "b": {
+      "item": "art5019injustice:upgrade_kit"
+    },
+    "c": {
+      "item": "art5019injustice:tech_lenses"
+    },
+    "d": {
+      "item": "art5019injustice:gold_titanium_armor_helmet"
+    },
+    "e": {
+      "item": "art5019injustice:microchip_ai_3"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:unactivated_mark_iii_helmet",
+    "count": 1
+  }
+}

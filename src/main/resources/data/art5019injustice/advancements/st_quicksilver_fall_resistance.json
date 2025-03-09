@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:icon_quicksilver_fall_immunity"
+    },
+    "title": {
+      "translate": "advancements.st_quicksilver_fall_resistance.title"
+    },
+    "description": {
+      "translate": "advancements.st_quicksilver_fall_resistance.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_quicksilver_fall_resistance_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:st_quicksilver_step_assist"
+}

@@ -1,0 +1,102 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "neuro_mascara",
+    "enableBody": true,
+    "textureBody": "neurochest",
+    "enableLeggings": true,
+    "textureLeggings": "neuro_legs",
+    "enableBoots": true,
+    "textureBoots": "neuro_boots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "neuro_",
+    "helmetName": "Máscara do Neuro",
+    "bodyName": "Jaqueta do Neuro",
+    "leggingsName": "Calças do Neuro",
+    "bootsName": "Botas do Neuro",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "Anthony R. Soares (Earth 1314)"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Anthony R. Soares (Earth 1314)",
+        "Elektrum Touch: There's a great chance of provoking/increasing the Electricity status effect on attack."
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "Anthony R. Soares (Earth 1314)"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "Anthony R. Soares (Earth 1314)",
+        "-Elektrum Touch: There's a good chance of provoking/increasing the Electricity status effect on attack."
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 23,
+    "damageValueHelmet": 2,
+    "damageValueBody": 5,
+    "damageValueLeggings": 4,
+    "damageValueBoots": 2,
+    "enchantability": 12,
+    "toughness": 0.2,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:SewingKit"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_blue"
+    },
+    "b": {
+      "item": "minecraft:white_dye"
+    },
+    "c": {
+      "item": "art5019injustice:suit_scheme_super_soldier"
+    },
+    "d": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:captain_america_first_suit_helmet",
+    "count": 1
+  }
+}

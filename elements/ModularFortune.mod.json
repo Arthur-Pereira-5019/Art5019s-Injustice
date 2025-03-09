@@ -1,0 +1,27 @@
+{
+  "_fv": 66,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Luck Channeling",
+    "type": "BREAKABLE",
+    "rarity": "VERY_RARE",
+    "maxLevel": 1,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "FORTUNE"
+      },
+      {
+        "value": "LOOTING"
+      }
+    ],
+    "excludeEnchantments": true,
+    "compatibleItems": [],
+    "excludeItems": false,
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": false,
+    "canGenerateInLootTables": false,
+    "canVillagerTrade": false
+  }
+}

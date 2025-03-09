@@ -1,0 +1,105 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "blackpanthermask",
+    "enableBody": true,
+    "textureBody": "blackpantherchest",
+    "enableLeggings": true,
+    "textureLeggings": "blackpantherleggings",
+    "enableBoots": true,
+    "textureBoots": "blackpanther_boots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "black_panther_movies_",
+    "helmetName": "Panther King Mask",
+    "bodyName": "Panther King Chestplate",
+    "leggingsName": "Panther King Leggings",
+    "bootsName": "Panther King Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "T'Challa (Earth Prime)",
+        "-Bulletproof"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "T'Challa (Earth Prime)",
+        "-Bulletproof",
+        "-Claws: On critical with a free main-hand, there's a slight chance to apply or increase the bleeding effect on the enemy"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "T'Challa (Earth Prime)",
+        "-Bulletproof"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "T'Challa (Earth Prime)",
+        "-Bulletproof"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 148,
+    "damageValueHelmet": 15,
+    "damageValueBody": 40,
+    "damageValueLeggings": 30,
+    "damageValueBoots": 15,
+    "enchantability": 7,
+    "toughness": 10.0,
+    "knockbackResistance": 0.5,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:VibraniumIngot"
+      }
+    ]
+  }
+}

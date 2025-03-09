@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "art5019injustice:block/transmutation_bottom",
+    "up": "art5019injustice:block/transmutationtabletop",
+    "north": "art5019injustice:block/transmutation_table_front",
+    "east": "art5019injustice:block/transmutation_table_top",
+    "south": "art5019injustice:block/transmutation_table_front",
+    "west": "art5019injustice:block/transmutation_table_top",
+    "particle": "art5019injustice:block/transmutation_bottom"
+  },
+  "render_type": "solid"
+}

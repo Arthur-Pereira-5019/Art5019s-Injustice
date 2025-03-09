@@ -1,0 +1,120 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "hazmat_mask",
+    "enableBody": true,
+    "textureBody": "hazmat_chest",
+    "enableLeggings": true,
+    "textureLeggings": "hazmat_leggings",
+    "enableBoots": true,
+    "textureBoots": "hazmat_boots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "hazmat",
+    "helmetName": "Hazmat Mask",
+    "bodyName": "Hazmat Chestplate",
+    "leggingsName": "Hazmat Leggings",
+    "bootsName": "Hazmat Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "-Chemical Protection",
+        "-Biological Protection",
+        "-Radiation Protection"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "-Chemical Protection",
+        "-Biological Protection",
+        "-Radiation Protection"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "-Chemical Protection",
+        "-Biological Protection",
+        "-Radiation Protection"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "-Chemical Protection",
+        "-Biological Protection",
+        "-Radiation Protection"
+      ]
+    },
+    "helmetModelName": "Modelhazmat_helmet",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "hazmat_helmet.png",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 16,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.2,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:SewingKit"
+      }
+    ]
+  }
+}

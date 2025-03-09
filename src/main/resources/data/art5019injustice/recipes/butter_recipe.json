@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "experience": 4,
+  "cookingtime": 900,
+  "ingredient": {
+    "item": "minecraft:milk_bucket"
+  },
+  "result": "art5019injustice:butter"
+}

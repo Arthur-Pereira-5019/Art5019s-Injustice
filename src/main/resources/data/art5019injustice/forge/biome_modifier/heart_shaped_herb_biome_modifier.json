@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "art5019injustice:vibranium_lands",
+  "features": "art5019injustice:heart_shaped_herb",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "obtain_redstone_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:redstone"
+            ],
+            "count": {
+              "min": 1,
+              "max": 100
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "art5019injustice:microchip_recipe"
+    ]
+  },
+  "parent": "art5019injustice:there_was_an_idea"
+}

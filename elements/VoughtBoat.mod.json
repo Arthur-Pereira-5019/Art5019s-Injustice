@@ -1,0 +1,30 @@
+{
+  "_fv": 66,
+  "_type": "structure",
+  "definition": {
+    "structure": "voughtboat",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 120,
+    "separation": 90,
+    "restrictionBiomes": [
+      {
+        "value": "#minecraft:is_deep_ocean"
+      }
+    ],
+    "terrainAdaptation": "none",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "b": {
+      "item": "art5019injustice:glass_lenses"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:amethyst_lenses",
+    "count": 1
+  }
+}

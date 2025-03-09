@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:handcuff"
+    },
+    "title": {
+      "translate": "advancements.snyder_weakest_hater.title"
+    },
+    "description": {
+      "translate": "advancements.snyder_weakest_hater.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "snyder_weakest_hater_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 15
+  },
+  "parent": "art5019injustice:hero_journey"
+}

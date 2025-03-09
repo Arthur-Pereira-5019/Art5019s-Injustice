@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "b b",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_yellow"
+    },
+    "b": {
+      "item": "art5019injustice:sheet_lead"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:hazmat_leggings",
+    "count": 1
+  }
+}

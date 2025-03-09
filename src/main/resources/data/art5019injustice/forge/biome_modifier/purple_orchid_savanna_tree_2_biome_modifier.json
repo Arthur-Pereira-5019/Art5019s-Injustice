@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "savanna",
+    "savanna_plateau",
+    "windswept_savanna"
+  ],
+  "features": "art5019injustice:purple_orchid_savanna_tree_2",
+  "step": "vegetal_decoration"
+}

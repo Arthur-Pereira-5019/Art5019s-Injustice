@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "e e"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:string"
+    },
+    "b": {
+      "item": "minecraft:firework_star"
+    },
+    "c": {
+      "item": "art5019injustice:fabric_cyan"
+    },
+    "d": {
+      "item": "art5019injustice:spider_badge"
+    },
+    "e": {
+      "item": "art5019injustice:white_fabric"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:ghost_spider_boots",
+    "count": 1
+  }
+}

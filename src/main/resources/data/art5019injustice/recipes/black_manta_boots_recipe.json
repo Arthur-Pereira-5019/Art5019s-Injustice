@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "c c"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:titanium_ingot"
+    },
+    "b": {
+      "item": "art5019injustice:atlantean_suit_scheme"
+    },
+    "c": {
+      "item": "art5019injustice:atlantean_gold_ingot"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:black_manta_armor_boots",
+    "count": 1
+  }
+}

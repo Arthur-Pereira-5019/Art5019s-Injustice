@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:signal_machine_pillager"
+    },
+    "title": {
+      "translate": "advancements.earth_x_enter_base.title"
+    },
+    "description": {
+      "translate": "advancements.earth_x_enter_base.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "earth_x_enter_base_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 23
+  },
+  "parent": "art5019injustice:enter_earth_x"
+}

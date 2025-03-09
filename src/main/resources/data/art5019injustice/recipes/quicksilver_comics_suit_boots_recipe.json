@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_light_blue"
+    },
+    "b": {
+      "item": "minecraft:light_gray_dye"
+    },
+    "c": {
+      "item": "art5019injustice:x_gene_suit_scheme"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:quicksilver_boots",
+    "count": 1
+  }
+}

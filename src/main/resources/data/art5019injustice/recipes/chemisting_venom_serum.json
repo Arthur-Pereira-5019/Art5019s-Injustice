@@ -1,0 +1,39 @@
+{
+  "type": "art5019injustice:chemisting",
+  "ingredients": [
+    {
+      "item": "art5019injustice:chemistry_kit"
+    },
+    {
+      "item": "art5019injustice:chemistry_kit"
+    },
+    {
+      "item": "art5019injustice:chemistry_kit"
+    },
+    {
+      "item": "art5019injustice:water_syringe"
+    },
+    {
+      "item": "minecraft:beef"
+    },
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "item": "art5019injustice:chemistry_kit"
+    },
+    {
+      "item": "art5019injustice:chemistry_kit"
+    },
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "item": "art5019injustice:venom_scheme"
+    }
+  ],
+  "output": {
+    "item": "art5019injustice:venom",
+    "count": 1
+  }
+}

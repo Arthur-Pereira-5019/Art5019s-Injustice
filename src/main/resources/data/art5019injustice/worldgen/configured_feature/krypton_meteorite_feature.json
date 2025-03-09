@@ -1,0 +1,14 @@
+{
+  "type": "art5019injustice:structure_feature",
+  "config": {
+    "structure": "art5019injustice:meteor_kryptonite_1",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:structure_block",
+    "offset": [
+      0,
+      -5,
+      0
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "§5Ultimate: Extreme Jump-Start",
+    "achievementDescription": "§dUltimate - (Ability 5) When on the Peak of your power,  attacking your enemy will create a strong connection between you and your target, allowing a strong electrical current flow directly to his nervous system, hurting you a bit in exchange for extreme damage on the opponent. Requires Power Level 5. Cooldown: 40 Minutes",
+    "achievementIcon": {
+      "value": "CUSTOM:CopperWiring"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:STNeuroFearTransmission"
+    },
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"50\" y=\"40\"/></next></block></xml>"
+  }
+}

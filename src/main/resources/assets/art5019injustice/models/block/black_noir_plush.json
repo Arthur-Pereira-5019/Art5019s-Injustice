@@ -1,0 +1,9 @@
+{
+  "parent": "art5019injustice:custom/blacknoirplush",
+  "textures": {
+    "all": "art5019injustice:block/blacknoir_plush",
+    "particle": "art5019injustice:block/blacknoir_plush",
+    "0": "art5019injustice:block/blacknoir_plush"
+  },
+  "render_type": "solid"
+}

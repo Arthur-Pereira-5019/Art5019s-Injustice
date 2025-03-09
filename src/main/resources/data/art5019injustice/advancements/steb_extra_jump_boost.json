@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:jump_boost_icon"
+    },
+    "title": {
+      "translate": "advancements.steb_extra_jump_boost.title"
+    },
+    "description": {
+      "translate": "advancements.steb_extra_jump_boost.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "steb_extra_jump_boost_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:steb_suit_activation"
+}

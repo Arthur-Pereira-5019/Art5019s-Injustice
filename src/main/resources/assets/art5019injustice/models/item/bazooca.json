@@ -1,0 +1,7 @@
+{
+  "parent": "art5019injustice:custom/bazuca",
+  "textures": {
+    "1": "art5019injustice:block/bazuca",
+    "particle": "art5019injustice:item/suitschemebane"
+  }
+}

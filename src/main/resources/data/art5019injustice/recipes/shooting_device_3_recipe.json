@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    " bc",
+    "dae"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:steel_nugget"
+    },
+    "b": {
+      "item": "art5019injustice:shooting_device_2"
+    },
+    "c": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "d": {
+      "item": "art5019injustice:microchip_cooler"
+    },
+    "e": {
+      "item": "art5019injustice:silicone_metal"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:shooting_device_3",
+    "count": 1
+  }
+}

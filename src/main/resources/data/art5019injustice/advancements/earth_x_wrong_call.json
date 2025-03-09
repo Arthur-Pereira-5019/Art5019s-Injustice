@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:cell_phone"
+    },
+    "title": {
+      "translate": "advancements.earth_x_wrong_call.title"
+    },
+    "description": {
+      "translate": "advancements.earth_x_wrong_call.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "earth_x_wrong_call_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 15
+  },
+  "parent": "art5019injustice:earth_x_phone_pillager_defeated"
+}

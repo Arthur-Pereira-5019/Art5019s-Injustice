@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:heart_shaped_herb_soup"
+    },
+    "title": {
+      "translate": "advancements.black_panther_become.title"
+    },
+    "description": {
+      "translate": "advancements.black_panther_become.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "black_panther_become_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "art5019injustice:visit_vibranium_lands"
+}

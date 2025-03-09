@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.SNOWBALL"
+      },
+      {
+        "value": "Items.BANNER"
+      },
+      {
+        "value": "Items.SNOWBALL"
+      },
+      {
+        "value": "Items.LEATHER"
+      },
+      {
+        "value": "Items.PAPER"
+      },
+      {
+        "value": "Items.LEATHER"
+      },
+      {
+        "value": "Items.SNOWBALL"
+      },
+      {
+        "value": "Items.BANNER"
+      },
+      {
+        "value": "Items.SNOWBALL"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SuitSchemeSuperSoldier"
+    },
+    "name": "super_soldier_alt_suit_scheme_recipe",
+    "namespace": "mod"
+  }
+}

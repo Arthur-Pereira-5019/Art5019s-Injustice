@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Extra Poison Res",
+    "icon": "kryptonite_poisoning",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onStarted": {
+      "name": "ExtraPoisonResEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "ExtraPoisonResEffectExpires"
+    }
+  }
+}

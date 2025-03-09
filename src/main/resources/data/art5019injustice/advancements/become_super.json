@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:vought_icon"
+    },
+    "title": {
+      "translate": "advancements.become_super.title"
+    },
+    "description": {
+      "translate": "advancements.become_super.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "become_super_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "art5019injustice:there_was_an_idea"
+}

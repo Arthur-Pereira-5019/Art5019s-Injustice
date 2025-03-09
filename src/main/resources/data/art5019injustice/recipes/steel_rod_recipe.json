@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:steel_rod",
+    "count": 4
+  }
+}

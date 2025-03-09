@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "§6Sun Absorption",
+    "achievementDescription": "§6Power Meter - Your physiology mainly depends on the absorption of Solar Radiation to grant you, your abilities.",
+    "achievementIcon": {
+      "value": "CUSTOM:SunIcon"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:STSupermanBase"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"23\" y=\"18\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "FOOD",
+    "xpReward": 5.0,
+    "cookingTime": 1800,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:ChickenBucket"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:FriedChickenBucket"
+    },
+    "name": "fried_chicken_bucket_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "_fv": 66,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_nearby_entities",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnNearbyEntities"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 3,
+          "y": 3
+        }
+      }
+    ],
+    "baseTexture": "orangelenses.png",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "BlueBeetleDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

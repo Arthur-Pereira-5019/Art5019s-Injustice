@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:kryptonite"
+    },
+    "title": {
+      "translate": "advancements.stronger_than_kryptonite.title"
+    },
+    "description": {
+      "translate": "advancements.stronger_than_kryptonite.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "stronger_than_kryptonite_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 240
+  },
+  "parent": "art5019injustice:the_last_son_of_krypton"
+}

@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:BlackPantherSuitScheme"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:VibraniumRocks"
+    },
+    "smithingInputTemplateStack": {
+      "value": "Items.DIAMOND_SWORD"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:VibraniumSword"
+    },
+    "name": "vibranium_sword_recipe",
+    "namespace": "mod"
+  }
+}

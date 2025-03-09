@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "c c"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_black"
+    },
+    "b": {
+      "item": "art5019injustice:suit_scheme_vought"
+    },
+    "c": {
+      "item": "art5019injustice:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:black_noir_boots",
+    "count": 1
+  }
+}

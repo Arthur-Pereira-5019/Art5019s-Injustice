@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "cda"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:elektrum_dust"
+    },
+    "b": {
+      "item": "minecraft:iron_nugget"
+    },
+    "c": {
+      "item": "minecraft:redstone"
+    },
+    "d": {
+      "item": "art5019injustice:nugget_lead"
+    },
+    "e": {
+      "item": "art5019injustice:vacuum_device"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:grenade_electric",
+    "count": 1
+  }
+}

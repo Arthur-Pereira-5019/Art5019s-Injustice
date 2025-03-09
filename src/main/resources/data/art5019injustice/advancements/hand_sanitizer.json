@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:alcohol_flask"
+    },
+    "title": {
+      "translate": "advancements.hand_sanitizer.title"
+    },
+    "description": {
+      "translate": "advancements.hand_sanitizer.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "hand_sanitizer_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 25
+  },
+  "parent": "art5019injustice:obtain_yeast"
+}

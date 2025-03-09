@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    " b ",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone_torch"
+    },
+    "b": {
+      "item": "art5019injustice:silver_ingot"
+    },
+    "c": {
+      "item": "minecraft:comparator"
+    },
+    "d": {
+      "item": "art5019injustice:copper_wiring"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:radio_device",
+    "count": 1
+  }
+}

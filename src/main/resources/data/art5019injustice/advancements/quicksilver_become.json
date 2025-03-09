@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:quicksilver_chestplate"
+    },
+    "title": {
+      "translate": "advancements.quicksilver_become.title"
+    },
+    "description": {
+      "translate": "advancements.quicksilver_become.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "quicksilver_become_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 3,
+    "recipes": [
+      "art5019injustice:quicksilver_comics_suit_boots_recipe",
+      "art5019injustice:quicksilver_comics_suit_leggings_recipe",
+      "art5019injustice:quicksilver_comics_suit_chestplate_recipe"
+    ]
+  },
+  "parent": "art5019injustice:x_gene"
+}

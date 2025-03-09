@@ -1,0 +1,364 @@
+{
+  "spider.sense": {
+    "subtitle": "subtitles.spider.sense",
+    "sounds": [
+      {
+        "name": "art5019injustice:andrew_sense",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:tobey_sense",
+        "stream": false
+      }
+    ]
+  },
+  "spider.recoil": {
+    "subtitle": "subtitles.spider.recoil",
+    "sounds": [
+      {
+        "name": "art5019injustice:webshooterrecoil",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:webshootrecoil2",
+        "stream": false
+      }
+    ]
+  },
+  "item.pistol.reload": {
+    "subtitle": "subtitles.item.pistol.reload",
+    "sounds": [
+      {
+        "name": "art5019injustice:pistol_reload",
+        "stream": false
+      }
+    ]
+  },
+  "item.pistol.shoot": {
+    "subtitle": "subtitles.item.pistol.shoot",
+    "sounds": [
+      {
+        "name": "art5019injustice:pistol_shoot",
+        "stream": false
+      }
+    ]
+  },
+  "spider.shoot": {
+    "subtitle": "subtitles.spider.shoot",
+    "sounds": [
+      {
+        "name": "art5019injustice:webshoot2",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:webshoot3",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:webshoot4",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:webshoot5",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:webshoot6",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:webshoot7",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:webshoot8",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:webshoot9",
+        "stream": false
+      }
+    ]
+  },
+  "item.pistol.shoots": {
+    "subtitle": "subtitles.item.pistol.shoots",
+    "sounds": [
+      {
+        "name": "art5019injustice:pistol_shoot_2",
+        "stream": false
+      }
+    ]
+  },
+  "chains": {
+    "subtitle": "subtitles.chains",
+    "sounds": [
+      {
+        "name": "art5019injustice:chainattack1",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:chainattack2",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:chainattack3",
+        "stream": false
+      }
+    ]
+  },
+  "suit.generic.injects": {
+    "subtitle": "subtitles.suit.generic.injects",
+    "sounds": [
+      {
+        "name": "art5019injustice:bane_inject_1",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:bane_inject_2",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:bane_inject_3",
+        "stream": false
+      }
+    ]
+  },
+  "entity.player.earring": {
+    "subtitle": "subtitles.entity.player.earring",
+    "sounds": [
+      {
+        "name": "art5019injustice:earring",
+        "stream": false
+      }
+    ]
+  },
+  "entity.player.earrings": {
+    "subtitle": "subtitles.entity.player.earrings",
+    "sounds": [
+      {
+        "name": "art5019injustice:ear_ringing_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "block.computer.writes": {
+    "subtitle": "subtitles.block.computer.writes",
+    "sounds": [
+      {
+        "name": "art5019injustice:keyboard-typing-sound-effect-_sfx_",
+        "stream": false
+      }
+    ]
+  },
+  "suit.ironman.suitup": {
+    "subtitle": "subtitles.suit.ironman.suitup",
+    "sounds": [
+      {
+        "name": "art5019injustice:armor_sound",
+        "stream": false
+      }
+    ]
+  },
+  "entity.generic.laser": {
+    "subtitle": "subtitles.entity.generic.laser",
+    "sounds": [
+      {
+        "name": "art5019injustice:heatvision10",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:heatvision08",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:heatvision06",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:heatvision03",
+        "stream": false
+      }
+    ]
+  },
+  "entity.ironman.repulsor": {
+    "subtitle": "subtitles.entity.ironman.repulsor",
+    "sounds": [
+      {
+        "name": "art5019injustice:iron_man_repulsor",
+        "stream": false
+      }
+    ]
+  },
+  "item.cellphone.call": {
+    "subtitle": "subtitles.item.cellphone.call",
+    "sounds": [
+      {
+        "name": "art5019injustice:phone-dial-and-ring-sound",
+        "stream": false
+      }
+    ]
+  },
+  "item.airplane": {
+    "subtitle": "subtitles.item.airplane",
+    "sounds": [
+      {
+        "name": "art5019injustice:airplane-sound-effect",
+        "stream": false
+      }
+    ]
+  },
+  "item.spacestone.portal": {
+    "subtitle": "subtitles.item.spacestone.portal",
+    "sounds": [
+      {
+        "name": "art5019injustice:portal-",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:portal-4",
+        "stream": false
+      }
+    ]
+  },
+  "item.spacestone.teleport": {
+    "subtitle": "subtitles.item.spacestone.teleport",
+    "sounds": [
+      {
+        "name": "art5019injustice:teleportation",
+        "stream": false
+      }
+    ]
+  },
+  "item.spacestone.manipulate": {
+    "subtitle": "subtitles.item.spacestone.manipulate",
+    "sounds": [
+      {
+        "name": "art5019injustice:manipulation",
+        "stream": false
+      }
+    ]
+  },
+  "item.mindstone.manipulate": {
+    "subtitle": "subtitles.item.mindstone.manipulate",
+    "sounds": [
+      {
+        "name": "art5019injustice:mind-control",
+        "stream": false
+      }
+    ]
+  },
+  "item.tesseract.breaks": {
+    "subtitle": "subtitles.item.tesseract.breaks",
+    "sounds": [
+      {
+        "name": "art5019injustice:tesseract__stone__destruction_1_",
+        "stream": false
+      }
+    ]
+  },
+  "item.spacestone.freeze": {
+    "subtitle": "subtitles.item.spacestone.freeze",
+    "sounds": [
+      {
+        "name": "art5019injustice:freeze-_-thaw",
+        "stream": false
+      }
+    ]
+  },
+  "item.grenade.thrown": {
+    "subtitle": "subtitles.item.grenade.thrown",
+    "sounds": [
+      {
+        "name": "art5019injustice:grenade_thrown",
+        "stream": false
+      }
+    ]
+  },
+  "item.grenade.push": {
+    "subtitle": "subtitles.item.grenade.push",
+    "sounds": [
+      {
+        "name": "art5019injustice:grenade_trigger",
+        "stream": false
+      }
+    ]
+  },
+  "item.grenade.hits": {
+    "subtitle": "subtitles.item.grenade.hits",
+    "sounds": [
+      {
+        "name": "art5019injustice:grenade_hits",
+        "stream": false
+      }
+    ]
+  },
+  "effect.short_shock": {
+    "subtitle": "subtitles.effect.short_shock",
+    "sounds": [
+      {
+        "name": "art5019injustice:short_electricity_1",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:short_electricity_2",
+        "stream": false
+      }
+    ]
+  },
+  "entity.scratch": {
+    "subtitle": "subtitles.entity.scratch",
+    "sounds": [
+      {
+        "name": "art5019injustice:scratch_2",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:scratchingsound",
+        "stream": false
+      }
+    ]
+  },
+  "entity.venom.idle": {
+    "subtitle": "subtitles.entity.venom.idle",
+    "sounds": [
+      {
+        "name": "art5019injustice:idle2",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:venomidle1",
+        "stream": false
+      }
+    ]
+  },
+  "entity.venom.dies": {
+    "subtitle": "subtitles.entity.venom.dies",
+    "sounds": [
+      {
+        "name": "art5019injustice:death1",
+        "stream": false
+      }
+    ]
+  },
+  "player.poisonivy.kiss": {
+    "subtitle": "subtitles.player.poisonivy.kiss",
+    "sounds": [
+      {
+        "name": "art5019injustice:poisonivykiss1",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:poisonivykiss2",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:poisonivykiss3",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:poisonivykiss4",
+        "stream": false
+      }
+    ]
+  }
+}

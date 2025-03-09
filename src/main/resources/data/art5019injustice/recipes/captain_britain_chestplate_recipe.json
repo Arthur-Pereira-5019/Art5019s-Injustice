@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_blue"
+    },
+    "b": {
+      "item": "art5019injustice:suit_scheme_super_soldier"
+    },
+    "c": {
+      "item": "art5019injustice:fabric_red"
+    },
+    "d": {
+      "item": "art5019injustice:white_fabric"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:captain_britan_chestplate",
+    "count": 1
+  }
+}

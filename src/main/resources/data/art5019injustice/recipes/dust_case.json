@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:nugget_lead"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:case_dust",
+    "count": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 400,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:RawAtlanteanGold"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:AtlanteanGoldIngot"
+    },
+    "name": "atlantean_gold_ingot_blast_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:white_dye"
+    },
+    "b": {
+      "item": "art5019injustice:upgrade_kit"
+    },
+    "c": {
+      "item": "art5019injustice:spider_man_tm_2_chestplate"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:spiderman_enhanced_suit_chestplate",
+    "count": 1
+  }
+}

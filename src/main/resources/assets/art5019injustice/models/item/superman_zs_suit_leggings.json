@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "art5019injustice:item/superman_zs_leggings"
+  }
+}

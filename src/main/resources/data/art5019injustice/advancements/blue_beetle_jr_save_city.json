@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:blue_beetle_victory_icon"
+    },
+    "title": {
+      "translate": "advancements.blue_beetle_jr_save_city.title"
+    },
+    "description": {
+      "translate": "advancements.blue_beetle_jr_save_city.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "blue_beetle_jr_save_city_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 22,
+    "loot": [
+      "art5019injustice:entities/blue_beetle_jr_victory_table"
+    ]
+  },
+  "parent": "art5019injustice:warrior_of_the_reach"
+}

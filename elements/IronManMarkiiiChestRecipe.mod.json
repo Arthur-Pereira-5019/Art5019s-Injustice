@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.DISPENSER"
+      },
+      {
+        "value": "CUSTOM:UpgradeKit"
+      },
+      {
+        "value": "Blocks.DISPENSER"
+      },
+      {
+        "value": "Items.DYE#1"
+      },
+      {
+        "value": "CUSTOM:GoldTitaniumArmor.body"
+      },
+      {
+        "value": "Items.DYE#1"
+      },
+      {
+        "value": "CUSTOM:Repulsor"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Repulsor"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:UnactivatedMarkIII.body"
+    },
+    "name": "iron_man_markiii_chest_recipe",
+    "namespace": "mod"
+  }
+}

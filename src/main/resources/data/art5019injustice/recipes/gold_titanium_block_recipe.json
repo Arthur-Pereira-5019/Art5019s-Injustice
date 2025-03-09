@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:gold_titanium_ingot"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:gold_titanium_block",
+    "count": 1
+  }
+}

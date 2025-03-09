@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:white_fabric"
+    },
+    "b": {
+      "item": "art5019injustice:x_gene_suit_scheme"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:storm_white_suit_leggings",
+    "count": 1
+  }
+}

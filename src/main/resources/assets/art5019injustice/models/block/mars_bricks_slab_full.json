@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "art5019injustice:block/mars_bricks",
+    "bottom": "art5019injustice:block/mars_bricks",
+    "top": "art5019injustice:block/mars_bricks",
+    "side": "art5019injustice:block/mars_bricks"
+  },
+  "render_type": "solid"
+}

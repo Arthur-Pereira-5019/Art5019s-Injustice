@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:FabricYellow"
+      },
+      {
+        "value": "CUSTOM:SuitSchemeVought"
+      },
+      {
+        "value": "CUSTOM:FabricYellow"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:WebweaverSuit.legs"
+    },
+    "name": "web_weaver_leggings_recipe",
+    "namespace": "mod"
+  }
+}

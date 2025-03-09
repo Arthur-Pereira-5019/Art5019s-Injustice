@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "e e"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:dispenser"
+    },
+    "b": {
+      "item": "art5019injustice:upgrade_kit"
+    },
+    "c": {
+      "item": "minecraft:red_dye"
+    },
+    "d": {
+      "item": "art5019injustice:gold_titanium_armor_chestplate"
+    },
+    "e": {
+      "item": "art5019injustice:repulsor"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:unactivated_mark_iii_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "d d"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:upgrade_kit"
+    },
+    "b": {
+      "item": "minecraft:red_dye"
+    },
+    "c": {
+      "item": "art5019injustice:gold_titanium_armor_boots"
+    },
+    "d": {
+      "item": "art5019injustice:repulsor"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:unactivated_mark_iii_boots",
+    "count": 1
+  }
+}

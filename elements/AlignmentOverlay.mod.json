@@ -1,0 +1,109 @@
+{
+  "_fv": 66,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "alignment_pos_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "IfHasAlignment1"
+          },
+          "anchorPoint": "CENTER",
+          "x": 272,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "alignment_pos_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "IfHasAlignment2"
+          },
+          "anchorPoint": "CENTER",
+          "x": 272,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "alignment_pos_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "IfHasAlignment3"
+          },
+          "anchorPoint": "CENTER",
+          "x": 272,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "alignment_neg_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "IfHasAlignmentNeg1"
+          },
+          "anchorPoint": "CENTER",
+          "x": 272,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aligment_neg_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "IfHasAlignmentNeg3"
+          },
+          "anchorPoint": "CENTER",
+          "x": 271,
+          "y": 40
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "alignment_default.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "IfHasAlignmentDefault"
+          },
+          "anchorPoint": "CENTER",
+          "x": 272,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "alignment_neg_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "IfHasAlignmentNeg2"
+          },
+          "anchorPoint": "CENTER",
+          "x": 272,
+          "y": 41
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Inventory",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

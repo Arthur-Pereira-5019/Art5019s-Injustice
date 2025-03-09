@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "art5019injustice:blocks/signal_machine_pillager",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:signal_machine"
+        }
+      ]
+    }
+  ]
+}

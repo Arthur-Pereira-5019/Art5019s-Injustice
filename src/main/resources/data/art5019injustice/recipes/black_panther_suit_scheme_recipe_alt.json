@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:black_dye"
+    },
+    "b": {
+      "item": "minecraft:gold_nugget"
+    },
+    "c": {
+      "item": "art5019injustice:vibranium_nugget"
+    },
+    "d": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:black_panther_suit_scheme",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:iron_man_mark_iii_helmet"
+    },
+    "title": {
+      "translate": "advancements.iron_man_mark_iii_adv.title"
+    },
+    "description": {
+      "translate": "advancements.iron_man_mark_iii_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "iron_man_mark_iii_adv_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:iron_soldier_become"
+}

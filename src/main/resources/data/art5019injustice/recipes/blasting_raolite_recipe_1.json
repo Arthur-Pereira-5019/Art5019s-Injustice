@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "group": "raolite",
+  "category": "misc",
+  "experience": 4,
+  "cookingtime": 400,
+  "ingredient": {
+    "item": "art5019injustice:kryptonite"
+  },
+  "result": "art5019injustice:raolite"
+}

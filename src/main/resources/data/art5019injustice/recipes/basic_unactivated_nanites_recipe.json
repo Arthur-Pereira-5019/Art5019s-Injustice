@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:elektrum_dust"
+    },
+    "b": {
+      "item": "art5019injustice:titanium_dust"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:nanites",
+    "count": 1
+  }
+}

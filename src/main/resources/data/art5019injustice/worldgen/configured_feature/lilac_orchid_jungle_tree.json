@@ -1,0 +1,7 @@
+{
+  "type": "art5019injustice:structure_feature",
+  "config": {
+    "structure": "art5019injustice:orchid_lilac_jungle_1",
+    "ignored_blocks": "minecraft:air"
+  }
+}

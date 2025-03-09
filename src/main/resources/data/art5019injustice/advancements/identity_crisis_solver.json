@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:guy_fawkes_mask_helmet"
+    },
+    "title": {
+      "translate": "advancements.identity_crisis_solver.title"
+    },
+    "description": {
+      "translate": "advancements.identity_crisis_solver.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "identity_crisis_solver_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "minecraft:husbandry/safely_harvest_honey"
+}

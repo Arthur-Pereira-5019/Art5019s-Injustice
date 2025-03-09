@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "c c"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_black"
+    },
+    "b": {
+      "item": "art5019injustice:spider_badge"
+    },
+    "c": {
+      "item": "art5019injustice:kevlar_black"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:night_monkey_suit_boots",
+    "count": 1
+  }
+}

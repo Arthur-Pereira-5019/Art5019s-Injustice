@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:anti_venom_suit_helmet"
+    },
+    "title": {
+      "translate": "advancements.newer_species.title"
+    },
+    "description": {
+      "translate": "advancements.newer_species.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "newer_species_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:become_symbiote"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_top_right_open",
+  "textures": {
+    "particle": "art5019injustice:block/dwarf_star_alloy_bottom",
+    "bottom": "art5019injustice:block/dwarf_star_alloy_bottom",
+    "top": "art5019injustice:block/dwarf_star_alloy_door_top"
+  },
+  "render_type": "cutout"
+}

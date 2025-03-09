@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:paper"
+    },
+    "b": {
+      "item": "art5019injustice:x_gene_emblem"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:x_gene_suit_scheme",
+    "count": 1
+  }
+}

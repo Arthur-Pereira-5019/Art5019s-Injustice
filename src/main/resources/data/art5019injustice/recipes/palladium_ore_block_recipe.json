@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:palladium_ingot"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:palladium_block",
+    "count": 1
+  }
+}

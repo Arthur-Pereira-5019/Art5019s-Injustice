@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "cdc",
+    "eee"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:empty_syringe"
+    },
+    "b": {
+      "item": "art5019injustice:bane_suit_scheme"
+    },
+    "c": {
+      "item": "art5019injustice:fabric_lime"
+    },
+    "d": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "e": {
+      "item": "art5019injustice:fabric_gray"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:bane_injustice_2_suit_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,382 @@
+{
+  "_fv": 66,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "LEATHERWORKER"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 5,
+            "price2": {
+              "value": "Items.LEATHER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:WhiteFabric"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 3,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 5,
+            "price2": {
+              "value": "Items.LEATHER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:FabricBlack"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 3,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 7,
+            "price2": {
+              "value": "Items.LEATHER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:FabricRed"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 7,
+            "price2": {
+              "value": "Items.LEATHER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:FabricLime"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 7,
+            "price2": {
+              "value": "Items.LEATHER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:FabricBlue"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 11,
+            "price2": {
+              "value": "Items.LEATHER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:FabricOrange"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 8,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 11,
+            "price2": {
+              "value": "Items.LEATHER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:FabricGreen"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 8,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 11,
+            "price2": {
+              "value": "Items.LEATHER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:FabricBrown"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 8,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 11,
+            "price2": {
+              "value": "Items.LEATHER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:FabricCyan"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 8,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 11,
+            "price2": {
+              "value": "Items.LEATHER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:FabricLightBlue"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 8,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 11,
+            "price2": {
+              "value": "Items.LEATHER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:FabricPurple"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 8,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 7,
+            "price2": {
+              "value": "Items.LEATHER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:FabricYellow"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "ARMORER"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 12,
+            "price2": {
+              "value": "Items.PAPER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:BaneSuitScheme"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 25,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 12,
+            "price2": {
+              "value": "Items.PAPER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:ScarecrowSuitScheme"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 25,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 12,
+            "price2": {
+              "value": "Items.PAPER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:SpiderBadge"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 25,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 12,
+            "price2": {
+              "value": "Items.PAPER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:AtlanteanSuitScheme"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 25,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 12,
+            "price2": {
+              "value": "Items.PAPER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:XGeneSuitScheme"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 25,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 12,
+            "price2": {
+              "value": "Items.PAPER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:NeuroSuitScheme"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 25,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 12,
+            "price2": {
+              "value": "Items.PAPER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:BlackPantherSuitScheme"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 25,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 12,
+            "price2": {
+              "value": "Items.PAPER"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:SuitSchemeSuperSoldier"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 25,
+            "priceMultiplier": 0.05
+          }
+        ]
+      }
+    ]
+  }
+}

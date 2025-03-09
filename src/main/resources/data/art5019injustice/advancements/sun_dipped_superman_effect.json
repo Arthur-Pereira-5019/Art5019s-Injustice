@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:sun_icon"
+    },
+    "title": {
+      "translate": "advancements.sun_dipped_superman_effect.title"
+    },
+    "description": {
+      "translate": "advancements.sun_dipped_superman_effect.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sun_dipped_superman_effect_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 40
+  },
+  "parent": "art5019injustice:the_last_son_of_krypton"
+}

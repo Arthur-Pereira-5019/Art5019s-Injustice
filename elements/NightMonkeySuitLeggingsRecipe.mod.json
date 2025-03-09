@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:UtilityBelt"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:KevlarBlack"
+      },
+      {
+        "value": "CUSTOM:SpiderBadge"
+      },
+      {
+        "value": "CUSTOM:KevlarBlack"
+      },
+      {
+        "value": "CUSTOM:KevlarBlack"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:KevlarBlack"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NightMonkeySuit.legs"
+    },
+    "name": "night_monkey_suit_leggings_recipe",
+    "namespace": "mod"
+  }
+}

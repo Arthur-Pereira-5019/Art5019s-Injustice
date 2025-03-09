@@ -1,0 +1,9 @@
+{
+  "type": "art5019injustice:structure_feature",
+  "config": {
+    "structure": "art5019injustice:iridium_meteorite_1",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air"
+  }
+}

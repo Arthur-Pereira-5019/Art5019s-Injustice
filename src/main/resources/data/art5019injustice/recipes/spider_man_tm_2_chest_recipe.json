@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_red"
+    },
+    "b": {
+      "item": "minecraft:cobweb"
+    },
+    "c": {
+      "item": "art5019injustice:fabric_blue"
+    },
+    "d": {
+      "item": "art5019injustice:spider_badge"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:spider_man_tm_2_chestplate",
+    "count": 1
+  }
+}

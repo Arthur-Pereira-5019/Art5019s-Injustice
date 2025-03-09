@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "nether_wastes",
+    "crimson_forest",
+    "warped_forest",
+    "basalt_deltas",
+    "soul_sand_valley"
+  ],
+  "features": "art5019injustice:sulphur_netherrack",
+  "step": "underground_ores"
+}

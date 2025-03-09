@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a",
+    "bc",
+    "dd"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:string"
+    },
+    "b": {
+      "item": "minecraft:gunpowder"
+    },
+    "c": {
+      "item": "minecraft:white_wool"
+    },
+    "d": {
+      "item": "art5019injustice:alcohol_flask"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:light_molotov",
+    "count": 1
+  }
+}

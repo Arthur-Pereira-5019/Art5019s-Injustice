@@ -1,0 +1,21 @@
+{
+  "parent": "art5019injustice:custom/pistol",
+  "textures": {
+    "0": "art5019injustice:block/old_pistol",
+    "particle": "art5019injustice:item/empty_cilynder"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "art5019injustice:old_pistol_skin": 0
+      },
+      "model": "art5019injustice:item/old_pistol_0"
+    },
+    {
+      "predicate": {
+        "art5019injustice:old_pistol_skin": 1
+      },
+      "model": "art5019injustice:item/old_pistol_1"
+    }
+  ]
+}

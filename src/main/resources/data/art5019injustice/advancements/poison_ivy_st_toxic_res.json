@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:wither_rose"
+    },
+    "title": {
+      "translate": "advancements.poison_ivy_st_toxic_res.title"
+    },
+    "description": {
+      "translate": "advancements.poison_ivy_st_toxic_res.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "poison_ivy_st_toxic_res_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:poison_ivy_st_base"
+}

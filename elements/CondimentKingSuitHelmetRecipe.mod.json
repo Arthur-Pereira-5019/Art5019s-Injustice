@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FabricGreen"
+      },
+      {
+        "value": "CUSTOM:FabricGreen"
+      },
+      {
+        "value": "CUSTOM:FabricGreen"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#15"
+      },
+      {
+        "value": "CUSTOM:FabricGreen"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#15"
+      },
+      {
+        "value": "CUSTOM:FabricGreen"
+      },
+      {
+        "value": "CUSTOM:PeakHumanBadgeItem"
+      },
+      {
+        "value": "CUSTOM:FabricGreen"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CondimentKingSuit.helmet"
+    },
+    "name": "condiment_king_suit_helmet_recipe",
+    "namespace": "mod"
+  }
+}

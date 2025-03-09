@@ -1,0 +1,121 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "webweaver_mask",
+    "enableBody": true,
+    "textureBody": "webweaver_cheast",
+    "enableLeggings": true,
+    "textureLeggings": "webweaver_leggings",
+    "enableBoots": true,
+    "textureBoots": "webweaver_boots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "webweaver_",
+    "helmetName": "Webweaver Mask",
+    "bodyName": "Webweaver Chestplate",
+    "leggingsName": "Webweaver Leggings",
+    "bootsName": "Webweaver Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "Patrick Whitehall (Earth Prime)",
+        "-Eye Protector",
+        "§6Spinneret:",
+        "§n  -Your Organic Web (if you have any) will come from a more... realistic source"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Patrick Whitehall (Earth Prime)",
+        "§6Spinneret:",
+        "§n  -Your Organic Web (if you have any) will come from a more... realistic source"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "Patrick Whitehall (Earth Prime)",
+        "§6Spinneret:",
+        "§n  -Your Organic Web (if you have any) will come from a more... realistic source"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "Patrick Whitehall (Earth Prime)",
+        "§6Spinneret:",
+        "§n  -Your Organic Web (if you have any) will come from a more... realistic source"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 17,
+    "damageValueHelmet": 2,
+    "damageValueBody": 4,
+    "damageValueLeggings": 3,
+    "damageValueBoots": 2,
+    "enchantability": 15,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:SewingKit"
+      }
+    ]
+  }
+}

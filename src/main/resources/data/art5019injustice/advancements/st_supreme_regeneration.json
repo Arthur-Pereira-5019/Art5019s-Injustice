@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:medical_kit"
+    },
+    "title": {
+      "translate": "advancements.st_supreme_regeneration.title"
+    },
+    "description": {
+      "translate": "advancements.st_supreme_regeneration.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_supreme_regeneration_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:st_supreme_constitution"
+}

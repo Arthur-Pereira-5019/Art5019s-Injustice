@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:activated_nanites"
+    },
+    "b": {
+      "item": "art5019injustice:vibranium_dust"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:vibranium_nanites",
+    "count": 4
+  }
+}

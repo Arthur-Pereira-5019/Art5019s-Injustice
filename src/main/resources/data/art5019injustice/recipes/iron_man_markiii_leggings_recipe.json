@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:upgrade_kit"
+    },
+    "b": {
+      "item": "minecraft:dispenser"
+    },
+    "c": {
+      "item": "art5019injustice:gold_titanium_armor_leggings"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:unactivated_mark_iii_leggings",
+    "count": 1
+  }
+}

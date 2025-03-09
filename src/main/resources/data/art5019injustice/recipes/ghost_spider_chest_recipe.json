@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ede"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:white_fabric"
+    },
+    "b": {
+      "item": "art5019injustice:spider_badge"
+    },
+    "c": {
+      "item": "art5019injustice:fabric_pink"
+    },
+    "d": {
+      "item": "art5019injustice:fabric_black"
+    },
+    "e": {
+      "item": "art5019injustice:fabric_light_blue"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:ghost_spider_chestplate",
+    "count": 1
+  }
+}

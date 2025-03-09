@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "minecraft:stone_button"
+    },
+    {
+      "item": "art5019injustice:copper_wiring"
+    },
+    {
+      "item": "minecraft:note_block"
+    },
+    {
+      "item": "art5019injustice:silver_ingot"
+    },
+    {
+      "item": "minecraft:pointed_dripstone"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:signal_emitter_bats",
+    "count": 1
+  }
+}

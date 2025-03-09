@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "art5019injustice:vibranium_lands",
+    "ice_spikes"
+  ],
+  "features": "art5019injustice:vibranium_ore",
+  "step": "underground_ores"
+}

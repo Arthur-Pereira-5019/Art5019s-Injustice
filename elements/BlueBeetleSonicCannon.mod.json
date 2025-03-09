@@ -1,0 +1,34 @@
+{
+  "_fv": 66,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "bluebeetlejrswords",
+    "customModelName": "bluebeetlesoniccannon:default",
+    "blockingModelName": "Normal blocking",
+    "name": "Sonic Cannon",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [],
+    "efficiency": 4.0,
+    "attackSpeed": 1.4,
+    "enchantability": 2,
+    "damageVsEntity": 5.0,
+    "usageCount": 0,
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "STONE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "BlueBeetleSonicCannonRightclicked"
+    },
+    "onItemInInventoryTick": {
+      "name": "ScarabCannonToolInventoryTick"
+    }
+  }
+}

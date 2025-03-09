@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STONE_BUTTON"
+      },
+      {
+        "value": "CUSTOM:CopperWiring"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.NOTEBLOCK"
+      },
+      {
+        "value": "CUSTOM:SilverIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.POINTED_DRIPSTONE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SignalEmitterBats"
+    },
+    "name": "signal_emitter_bats_recipe",
+    "namespace": "mod"
+  }
+}

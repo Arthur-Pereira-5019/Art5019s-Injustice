@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:steel_nugget"
+    },
+    "b": {
+      "item": "art5019injustice:pistol_magazine"
+    },
+    "c": {
+      "item": "art5019injustice:explosive_charge"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:precision_rifle_megazine",
+    "count": 1
+  }
+}

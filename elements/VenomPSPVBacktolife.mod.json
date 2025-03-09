@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Brains"
+      },
+      {
+        "value": "CUSTOM:Brains"
+      },
+      {
+        "value": "CUSTOM:Brains"
+      },
+      {
+        "value": "CUSTOM:Brains"
+      },
+      {
+        "value": "CUSTOM:VenomizedSpiderRemains"
+      },
+      {
+        "value": "CUSTOM:Brains"
+      },
+      {
+        "value": "CUSTOM:Brains"
+      },
+      {
+        "value": "CUSTOM:Brains"
+      },
+      {
+        "value": "CUSTOM:Brains"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PspSymbiote"
+    },
+    "name": "venom_pspv_backtolife",
+    "namespace": "mod"
+  }
+}

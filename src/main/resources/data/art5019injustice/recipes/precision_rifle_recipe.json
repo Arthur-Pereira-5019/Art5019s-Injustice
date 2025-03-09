@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab ",
+    "cda",
+    " ca"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "b": {
+      "item": "minecraft:spyglass"
+    },
+    "c": {
+      "item": "art5019injustice:steel_nugget"
+    },
+    "d": {
+      "item": "art5019injustice:shooting_device_3"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:precision_rifle",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "skeleton",
+    "skeleton_horse",
+    "wither_skeleton",
+    "wither",
+    "creeper",
+    "art5019injustice:orchid_zombie",
+    "glow_item_frame",
+    "item",
+    "item_display",
+    "item_frame",
+    "armor_stand",
+    "arrow",
+    "spectral_arrow",
+    "egg",
+    "snow_golem",
+    "snowball",
+    "tnt",
+    "slime",
+    "ghast",
+    "allay",
+    "vex",
+    "art5019injustice:uncle_sam",
+    "iron_golem",
+    "art5019injustice:metallo"
+  ]
+}

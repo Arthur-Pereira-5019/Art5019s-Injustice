@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Neurological Boosts",
+    "icon": "neuro_impulse.png",
+    "color": {
+      "value": -7536385,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "ImpulseEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "ImpulseEffectExpires"
+    }
+  }
+}

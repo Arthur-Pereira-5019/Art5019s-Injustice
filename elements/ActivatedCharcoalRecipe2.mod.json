@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 3.0,
+    "cookingTime": 1800,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "Items.COAL#1"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:ActivatedCharcoal"
+    },
+    "name": "activated_charcoal_recipe_2",
+    "namespace": "mod"
+  }
+}

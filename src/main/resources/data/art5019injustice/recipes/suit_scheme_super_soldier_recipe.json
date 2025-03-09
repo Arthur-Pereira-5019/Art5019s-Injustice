@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:paper"
+    },
+    "b": {
+      "item": "art5019injustice:super_soldier_emblem"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:suit_scheme_super_soldier",
+    "count": 1
+  }
+}

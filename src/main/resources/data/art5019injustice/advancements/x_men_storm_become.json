@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:storm_icon"
+    },
+    "title": {
+      "translate": "advancements.x_men_storm_become.title"
+    },
+    "description": {
+      "translate": "advancements.x_men_storm_become.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "x_men_storm_become_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 7
+  },
+  "parent": "art5019injustice:x_gene"
+}

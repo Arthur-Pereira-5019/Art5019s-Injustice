@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:kryptonite_shard"
+    },
+    {
+      "item": "art5019injustice:kryptonite"
+    },
+    {
+      "item": "art5019injustice:pistol_magazine"
+    },
+    {
+      "item": "art5019injustice:kryptonite"
+    },
+    {
+      "item": "art5019injustice:kryptonite_shard"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:kryptonite_magazine",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "meadow",
+  "features": "art5019injustice:rare_blue_flower",
+  "step": "vegetal_decoration"
+}

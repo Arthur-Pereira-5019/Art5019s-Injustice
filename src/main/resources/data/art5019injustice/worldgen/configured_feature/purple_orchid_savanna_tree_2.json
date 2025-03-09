@@ -1,0 +1,7 @@
+{
+  "type": "art5019injustice:structure_feature",
+  "config": {
+    "structure": "art5019injustice:orchid_purple_savana_2",
+    "ignored_blocks": "minecraft:air"
+  }
+}

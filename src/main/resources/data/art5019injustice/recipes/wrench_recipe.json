@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "bcb",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:steel_blade"
+    },
+    "b": {
+      "item": "art5019injustice:steel_nugget"
+    },
+    "c": {
+      "item": "art5019injustice:steel_rod"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:wrench",
+    "count": 1
+  }
+}

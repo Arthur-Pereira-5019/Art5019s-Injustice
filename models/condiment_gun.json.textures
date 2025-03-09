@@ -1,0 +1,40 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "all_lighter_gray"
+      },
+      "name": "default"
+    },
+    "mayo": {
+      "map": {
+        "1": "all_white"
+      },
+      "name": "mayo"
+    },
+    "ketchup": {
+      "map": {
+        "1": "all_red"
+      },
+      "name": "ketchup"
+    },
+    "pepper": {
+      "map": {
+        "1": "all_dark_red"
+      },
+      "name": "pepper"
+    },
+    "mustard": {
+      "map": {
+        "1": "all_burned_yellow"
+      },
+      "name": "mustard"
+    },
+    "vinegar": {
+      "map": {
+        "1": "all_lighter_green"
+      },
+      "name": "vinegar"
+    }
+  }
+}

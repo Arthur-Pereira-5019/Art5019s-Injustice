@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_red"
+    },
+    "b": {
+      "item": "art5019injustice:upgrade_kit"
+    },
+    "c": {
+      "item": "art5019injustice:spider_man_th_1_chestplate"
+    },
+    "d": {
+      "item": "art5019injustice:fabric_blue"
+    },
+    "e": {
+      "item": "art5019injustice:parachute"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:spider_man_th_2_chestplate",
+    "count": 1
+  }
+}

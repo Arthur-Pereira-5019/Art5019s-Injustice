@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:symbiote"
+    },
+    "title": {
+      "translate": "advancements.peter_parker_want_forgiviness.title"
+    },
+    "description": {
+      "translate": "advancements.peter_parker_want_forgiviness.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "peter_parker_want_forgiviness_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 21
+  },
+  "parent": "art5019injustice:spider_man_venom"
+}

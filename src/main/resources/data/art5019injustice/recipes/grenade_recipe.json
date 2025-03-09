@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:nugget_lead"
+    },
+    "b": {
+      "item": "minecraft:iron_nugget"
+    },
+    "c": {
+      "item": "art5019injustice:explosive_charge"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:grenade",
+    "count": 1
+  }
+}

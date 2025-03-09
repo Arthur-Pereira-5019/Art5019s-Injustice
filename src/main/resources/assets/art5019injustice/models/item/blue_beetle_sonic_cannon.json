@@ -1,0 +1,7 @@
+{
+  "parent": "art5019injustice:custom/bluebeetlesoniccannon",
+  "textures": {
+    "0": "art5019injustice:block/soniccannon",
+    "particle": "art5019injustice:item/bluebeetlejrswords"
+  }
+}

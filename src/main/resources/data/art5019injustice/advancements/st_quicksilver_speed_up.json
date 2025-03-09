@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:jump_boost_icon"
+    },
+    "title": {
+      "translate": "advancements.st_quicksilver_speed_up.title"
+    },
+    "description": {
+      "translate": "advancements.st_quicksilver_speed_up.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_quicksilver_speed_up_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:st_quicksilver_base"
+}

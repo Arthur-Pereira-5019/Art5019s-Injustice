@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:neuro_suit_helmet"
+    },
+    "title": {
+      "translate": "advancements.alignment_vigilante.title"
+    },
+    "description": {
+      "translate": "advancements.alignment_vigilante.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "alignment_vigilante_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "art5019injustice:hero_journey"
+}

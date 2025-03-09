@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "BLOCKS",
+    "xpReward": 5.0,
+    "cookingTime": 1600,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:Stibnite"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Antimony"
+    },
+    "name": "antimony_recipe",
+    "namespace": "mod"
+  }
+}

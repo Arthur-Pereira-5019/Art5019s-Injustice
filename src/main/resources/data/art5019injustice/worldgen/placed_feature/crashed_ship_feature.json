@@ -1,0 +1,19 @@
+{
+  "feature": "art5019injustice:crashed_ship_feature",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 1250
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

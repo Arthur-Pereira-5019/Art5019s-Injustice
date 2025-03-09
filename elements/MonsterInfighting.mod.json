@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Monster Infighting",
+    "icon": "rage",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onStarted": {
+      "name": "MonsterInfightingEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "MonsterInfightingOnEffectActiveTick"
+    },
+    "activeTickCondition": {
+      "name": "MonsterInfightingEffectExpires"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Polio",
+    "icon": "polio",
+    "color": {
+      "value": -3889981,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "PolioApplied"
+    },
+    "onActiveTick": {
+      "name": "PolioOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "PolioEffectExpires"
+    },
+    "activeTickCondition": {
+      "name": "PolioActiveTickCondition"
+    }
+  }
+}

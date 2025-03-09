@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 7,
+  "cookingtime": 1600,
+  "ingredient": {
+    "item": "art5019injustice:raw_atlantean_gold"
+  },
+  "result": "art5019injustice:atlantean_gold_ingot"
+}

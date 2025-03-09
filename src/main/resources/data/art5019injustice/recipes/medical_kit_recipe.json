@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:aloe_vera_item"
+    },
+    "b": {
+      "tag": "minecraft:wool"
+    },
+    "c": {
+      "item": "minecraft:shears"
+    },
+    "d": {
+      "item": "minecraft:barrel"
+    },
+    "e": {
+      "item": "minecraft:ice"
+    },
+    "f": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:medical_kit",
+    "count": 1
+  }
+}

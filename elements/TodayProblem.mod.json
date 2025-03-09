@@ -1,0 +1,127 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 320,
+    "height": 80,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "0",
+          "name": "n1",
+          "width": 120,
+          "height": 20,
+          "x": 62,
+          "y": 110
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_validate",
+          "text": "=",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "ReturnTodayProblemValidate"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 241,
+          "y": 110
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_operator",
+          "text": {
+            "fixedValue": "Operator",
+            "name": "ReturnTodayProblemOp"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 193,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_n2",
+          "text": {
+            "fixedValue": "N2",
+            "name": "ReturnTodayProblemN2"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 205,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_res",
+          "text": {
+            "fixedValue": "Res",
+            "name": "ReturnTodayProblemRes"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 316,
+          "y": 116
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "spider_clock.png",
+          "use1Xscale": true,
+          "x": 352,
+          "y": 87
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_today_problem_chronometer",
+          "text": {
+            "fixedValue": "",
+            "name": "TodayProblemChronometer"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 326,
+          "y": 92
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "TodayProblemThisGUIIsOpened"
+    },
+    "onTick": {
+      "name": "TodayProblemWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

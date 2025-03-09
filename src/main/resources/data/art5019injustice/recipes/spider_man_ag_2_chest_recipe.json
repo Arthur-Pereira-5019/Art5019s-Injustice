@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "dad"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_red"
+    },
+    "b": {
+      "item": "art5019injustice:spider_badge"
+    },
+    "c": {
+      "item": "minecraft:black_dye"
+    },
+    "d": {
+      "item": "art5019injustice:fabric_blue"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:spider_man_ag_2_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:chemistry_book_6"
+    },
+    "title": {
+      "translate": "advancements.use_chemistry_book.title"
+    },
+    "description": {
+      "translate": "advancements.use_chemistry_book.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "use_chemistry_book_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "minecraft:adventure/trade"
+}

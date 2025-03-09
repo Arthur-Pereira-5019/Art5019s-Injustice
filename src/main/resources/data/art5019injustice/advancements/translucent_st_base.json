@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "art5019injustice:textures/screens/glass.png",
+    "icon": {
+      "item": "art5019injustice:vought_icon"
+    },
+    "title": {
+      "translate": "advancements.translucent_st_base.title"
+    },
+    "description": {
+      "translate": "advancements.translucent_st_base.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "translucent_st_base_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

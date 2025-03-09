@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Superman Nether Star Absorption",
+    "description": "How many seconds of Solar Energy will be wielded to a Kryptonian by Right-Clicking a Nether Star",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 9000
+  }
+}

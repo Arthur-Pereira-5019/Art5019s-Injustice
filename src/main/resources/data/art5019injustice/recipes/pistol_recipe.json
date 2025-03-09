@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "cb"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:shooting_device"
+    },
+    "b": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "c": {
+      "item": "minecraft:stone_button"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:pistol_item",
+    "count": 1
+  }
+}

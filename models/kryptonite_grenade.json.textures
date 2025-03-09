@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "kryptonite_grenade"
+      },
+      "name": "default"
+    }
+  }
+}

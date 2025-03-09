@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:earth_x_icon"
+    },
+    "title": {
+      "translate": "advancements.interdimensional_extrapolator_cause_crisis_on_earth_x.title"
+    },
+    "description": {
+      "translate": "advancements.interdimensional_extrapolator_cause_crisis_on_earth_x.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "interdimensional_extrapolator_cause_crisis_on_earth_x_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "art5019injustice:obtain_the_multiverse_core"
+}

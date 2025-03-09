@@ -1,0 +1,15 @@
+{
+  "type": "art5019injustice:contamination",
+  "ingredients": [
+    {
+      "item": "art5019injustice:contamined_human_remains"
+    },
+    {
+      "item": "art5019injustice:human_remains"
+    }
+  ],
+  "output": {
+    "item": "art5019injustice:contamined_human_remains",
+    "count": 1
+  }
+}

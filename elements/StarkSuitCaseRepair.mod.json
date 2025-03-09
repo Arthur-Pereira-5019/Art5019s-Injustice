@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CopperWiring"
+      },
+      {
+        "value": "CUSTOM:GoldTitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:CopperWiring"
+      },
+      {
+        "value": "CUSTOM:GoldTitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:StarkWallet"
+      },
+      {
+        "value": "CUSTOM:GoldTitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:CopperWiring"
+      },
+      {
+        "value": "CUSTOM:GoldTitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:CopperWiring"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:StarkWallet"
+    },
+    "name": "stark_suit_case_repair",
+    "namespace": "mod"
+  }
+}

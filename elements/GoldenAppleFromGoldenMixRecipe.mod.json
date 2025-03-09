@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "CUSTOM:PistolUpgradeGoldenSkin"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.APPLE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Items.GOLDEN_APPLE#0"
+    },
+    "name": "golden_apple_from_golden_mix_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab ",
+    "bca",
+    " ad"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:steel_nugget"
+    },
+    "b": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "c": {
+      "item": "minecraft:tnt"
+    },
+    "d": {
+      "item": "art5019injustice:explosive_charge"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:heavy_missile",
+    "count": 1
+  }
+}

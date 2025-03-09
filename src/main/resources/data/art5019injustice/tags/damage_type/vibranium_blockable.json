@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "player_attack",
+    "player_explosion",
+    "explosion",
+    "mob_attack",
+    "mob_projectile",
+    "arrow",
+    "generic"
+  ]
+}

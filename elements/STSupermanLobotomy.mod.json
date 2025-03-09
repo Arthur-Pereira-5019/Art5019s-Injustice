@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "§4Super-Lobotomy",
+    "achievementDescription": "§cAbility 4+Sneak - By emitting controled portions of solar energy trough your eyes focalized by your super senses, you're able to cause tissue damage on your target, removing their cognitive abilities and memories. [Requires 1 Month of Solar Energy. Consumes 20 times your base production] ",
+    "achievementIcon": {
+      "value": "CUSTOM:SupermanLobotomyIcon"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:STSupermanHeatvision"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

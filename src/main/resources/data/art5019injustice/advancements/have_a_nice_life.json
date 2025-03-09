@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:symbiote"
+    },
+    "title": {
+      "translate": "advancements.have_a_nice_life.title"
+    },
+    "description": {
+      "translate": "advancements.have_a_nice_life.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "have_a_nice_life_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 21
+  },
+  "parent": "art5019injustice:become_symbiote"
+}

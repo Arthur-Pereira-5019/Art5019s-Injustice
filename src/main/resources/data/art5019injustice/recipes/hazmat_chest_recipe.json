@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bab",
+    "c c"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_yellow"
+    },
+    "b": {
+      "item": "art5019injustice:sheet_lead"
+    },
+    "c": {
+      "item": "art5019injustice:fabric_gray"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:hazmat_chestplate",
+    "count": 1
+  }
+}

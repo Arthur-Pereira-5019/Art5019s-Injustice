@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:spider_man_th_2_helmet"
+    },
+    "title": {
+      "translate": "advancements.spider_man_th_suit.title"
+    },
+    "description": {
+      "translate": "advancements.spider_man_th_suit.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spider_man_th_suit_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 9,
+    "recipes": [
+      "art5019injustice:spider_man_enhanced_boots_recipe",
+      "art5019injustice:spider_man_enhanced_leggings_recipe",
+      "art5019injustice:spider_man_enhanced_chest_recipe",
+      "art5019injustice:spider_man_enhanced_mask_recipe"
+    ]
+  },
+  "parent": "art5019injustice:becoming_spider_man"
+}

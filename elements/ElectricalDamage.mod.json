@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.09000000000000001,
+    "scaling": "never",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s was electrocuted",
+    "itemDeathMessage": "%1$s was electrocuted by %2$s using %3$s",
+    "playerDeathMessage": "%1$s was electrocuted whilst trying to escape %2$s"
+  }
+}

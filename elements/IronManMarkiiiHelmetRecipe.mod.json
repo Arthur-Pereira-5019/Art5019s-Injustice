@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.DYE#1"
+      },
+      {
+        "value": "CUSTOM:UpgradeKit"
+      },
+      {
+        "value": "Items.DYE#1"
+      },
+      {
+        "value": "CUSTOM:TechLenses"
+      },
+      {
+        "value": "CUSTOM:GoldTitaniumArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:TechLenses"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MicrochipAI3"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:UnactivatedMarkIII.helmet"
+    },
+    "name": "iron_man_markiii_helmet_recipe",
+    "namespace": "mod"
+  }
+}

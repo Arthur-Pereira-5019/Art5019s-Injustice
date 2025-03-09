@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    "ghi"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:bone_block"
+    },
+    "b": {
+      "item": "art5019injustice:coal_dust"
+    },
+    "c": {
+      "item": "art5019injustice:silicone_metal"
+    },
+    "d": {
+      "item": "art5019injustice:iron_dust"
+    },
+    "e": {
+      "item": "minecraft:barrel"
+    },
+    "f": {
+      "item": "minecraft:copper_ingot"
+    },
+    "g": {
+      "item": "minecraft:gunpowder"
+    },
+    "h": {
+      "item": "art5019injustice:gold_dust"
+    },
+    "i": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:chemistry_kit",
+    "count": 1
+  }
+}

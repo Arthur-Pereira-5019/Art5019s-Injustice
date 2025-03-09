@@ -1,0 +1,127 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "condiment_king_helmet",
+    "enableBody": true,
+    "textureBody": "condiment_king_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "condiment_king_legs",
+    "enableBoots": true,
+    "textureBoots": "condiment_king_boots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "condiment_king_",
+    "helmetName": "Condiment King Helmet",
+    "bodyName": "Condiment King Chestplate",
+    "leggingsName": "Condiment King Leggings",
+    "bootsName": "Condiment King Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "Mitchell Mayo (Earth 0)",
+        "-Shades",
+        "§6Spice of Life:",
+        "§n  -When shooting with the Condiment Guns, there's a small chance to regain food points"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Mitchell Mayo (Earth 0)",
+        "§6Spice of Life:",
+        "§n  -When shooting with the Condiment Guns, there's a small chance to regain food points"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "Mitchell Mayo (Earth 0)",
+        "§6Spice of Life:",
+        "§n  -When shooting with the Condiment Guns, there's a small chance to regain food points"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "Mitchell Mayo (Earth 0)",
+        "§6Spice of Life:",
+        "§n  -When shooting with the Condiment Guns, there's a small chance to regain food points"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 17,
+    "damageValueHelmet": 2,
+    "damageValueBody": 4,
+    "damageValueLeggings": 3,
+    "damageValueBoots": 2,
+    "enchantability": 15,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:FabricCyan"
+      },
+      {
+        "value": "CUSTOM:FabricLightBlue"
+      },
+      {
+        "value": "CUSTOM:FabricGreen"
+      }
+    ]
+  }
+}

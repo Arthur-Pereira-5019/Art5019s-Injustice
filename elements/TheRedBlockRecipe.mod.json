@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "Items.BEEF"
+      },
+      {
+        "value": "Items.RABBIT"
+      },
+      {
+        "value": "Items.ROTTEN_FLESH"
+      },
+      {
+        "value": "Items.MUTTON"
+      },
+      {
+        "value": "CUSTOM:HumanRemains"
+      },
+      {
+        "value": "Items.FISH"
+      },
+      {
+        "value": "Items.CHICKEN"
+      },
+      {
+        "value": "Items.PORKCHOP"
+      },
+      {
+        "value": "CUSTOM:Brains"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RedBlock"
+    },
+    "name": "the_red_block_recipe",
+    "namespace": "mod"
+  }
+}

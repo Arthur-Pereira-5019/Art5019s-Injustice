@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:canister"
+    },
+    "b": {
+      "item": "art5019injustice:upgrade_kit"
+    },
+    "c": {
+      "item": "minecraft:repeater"
+    },
+    "d": {
+      "item": "art5019injustice:t_web_shooter_tier_1"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:t_web_shooter_tier_2",
+    "count": 1
+  }
+}

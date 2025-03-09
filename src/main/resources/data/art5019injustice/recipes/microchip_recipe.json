@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:silver_nugget"
+    },
+    "b": {
+      "item": "minecraft:green_dye"
+    },
+    "c": {
+      "item": "art5019injustice:silicone_metal"
+    },
+    "d": {
+      "item": "minecraft:comparator"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:microchip",
+    "count": 1
+  }
+}

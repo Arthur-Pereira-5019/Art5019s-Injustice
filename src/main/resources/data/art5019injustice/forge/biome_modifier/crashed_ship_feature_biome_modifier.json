@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "desert",
+    "plains",
+    "snowy_plains",
+    "sunflower_plains",
+    "savanna"
+  ],
+  "features": "art5019injustice:crashed_ship_feature",
+  "step": "surface_structures"
+}

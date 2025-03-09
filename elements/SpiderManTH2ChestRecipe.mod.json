@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FabricRed"
+      },
+      {
+        "value": "CUSTOM:UpgradeKit"
+      },
+      {
+        "value": "CUSTOM:FabricRed"
+      },
+      {
+        "value": "CUSTOM:FabricRed"
+      },
+      {
+        "value": "CUSTOM:SpiderManTH1.body"
+      },
+      {
+        "value": "CUSTOM:FabricRed"
+      },
+      {
+        "value": "CUSTOM:FabricBlue"
+      },
+      {
+        "value": "CUSTOM:Parachute"
+      },
+      {
+        "value": "CUSTOM:FabricBlue"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SpiderManTH2.body"
+    },
+    "name": "spider_man_th_2_chest_recipe",
+    "namespace": "mod"
+  }
+}

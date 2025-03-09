@@ -1,0 +1,122 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_analyze",
+          "text": "Analyze",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MicroscopeGUIAnalyzeButtonClicked"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 183,
+          "y": 46
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 150,
+          "y": 72
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 258,
+          "y": 72
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "icon_arrow_2x.png",
+          "use1Xscale": false,
+          "x": 177,
+          "y": 73
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 137,
+          "y": 47
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lense_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "IfSlot3IsEmpty"
+          },
+          "x": 138,
+          "y": 48
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_lenses",
+          "text": {
+            "fixedValue": "Lenses"
+          },
+          "displayCondition": {
+            "name": "IfSlot3IsEmpty"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 134,
+          "y": 44
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

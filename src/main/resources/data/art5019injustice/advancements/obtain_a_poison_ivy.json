@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:poison_ivy"
+    },
+    "title": {
+      "translate": "advancements.obtain_a_poison_ivy.title"
+    },
+    "description": {
+      "translate": "advancements.obtain_a_poison_ivy.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_a_poison_ivy_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "art5019injustice:the_green_suit_scheme_recipe"
+    ]
+  },
+  "parent": "minecraft:husbandry/root"
+}

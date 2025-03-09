@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:symbiote"
+    },
+    "title": {
+      "translate": "advancements.become_symbiote.title"
+    },
+    "description": {
+      "translate": "advancements.become_symbiote.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "become_symbiote_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 21
+  },
+  "parent": "art5019injustice:there_was_an_idea"
+}

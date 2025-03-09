@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SteelIngot"
+      },
+      {
+        "value": "Items.SPYGLASS"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SteelNugget"
+      },
+      {
+        "value": "CUSTOM:ShootingDevice3"
+      },
+      {
+        "value": "CUSTOM:SteelIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SteelNugget"
+      },
+      {
+        "value": "CUSTOM:SteelIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PrecisionRifle"
+    },
+    "name": "precision_rifle_recipe",
+    "namespace": "mod"
+  }
+}

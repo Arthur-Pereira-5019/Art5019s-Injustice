@@ -1,0 +1,53 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "With great powers...",
+    "achievementDescription": "Get bitten by the radioactive spider",
+    "achievementIcon": {
+      "value": "CUSTOM:EmblemSpider"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "SpiderManAG1BootsRecipe",
+      "SpiderManAG1LegsRecipe",
+      "SpiderManAG1ChestRecipe",
+      "SpiderManAG1HelmetRecipe",
+      "SpiderBadgeRecipe",
+      "SpiderBadgeRecipe2",
+      "WebCylinderRecipe",
+      "WebShooterTier1Recipe",
+      "SpiderManAG2BootsRecipe",
+      "SpiderManAG2LegginsRecipe",
+      "SpiderManAG2ChestRecipe",
+      "SpiderManAG2MaskRecipe",
+      "SpiderManAG3BootsRecipe",
+      "SpiderManAG3LegsRecipe",
+      "SpiderManAG3ChestRecipe",
+      "SpiderManAG3MaskRecipe",
+      "SpiderManTH1Boots",
+      "SpiderManTH1Legs",
+      "SpiderManTH1Chest",
+      "SpiderManTH1Mask",
+      "SpiderManTM1BootsRecipe",
+      "SpiderManTM1LegsRecipe",
+      "SpiderManTM1ChestRecipe",
+      "SpiderManTM1HelmetRecipe",
+      "SpiderManTM2BootsRecipe",
+      "SpiderManTM2LeggingsRecipe",
+      "SpiderManTM2ChestRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 10,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:ThereWasAnIdea"
+    },
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"47\" y=\"35\"/></next></block></xml>"
+  }
+}

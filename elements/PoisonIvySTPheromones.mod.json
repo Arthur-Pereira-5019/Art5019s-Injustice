@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "§3Human Pheromone Release",
+    "achievementDescription": "§bAbility 4 - Altough you're not a full human anymore, some of your old biology still remains and is amplified by your powers, which allow you to release a heavy charge of sexual pheromones in the air, making any human nearby you, being it a man or a woman, attracted to you.",
+    "achievementIcon": {
+      "value": "CUSTOM:IconHeart"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:PoisonIvySTBase"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

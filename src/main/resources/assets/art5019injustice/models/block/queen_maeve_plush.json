@@ -1,0 +1,9 @@
+{
+  "parent": "art5019injustice:custom/queenmaeve_plush",
+  "textures": {
+    "all": "art5019injustice:block/queenmaeve_plush",
+    "particle": "art5019injustice:block/queenmaeve_plush",
+    "0": "art5019injustice:block/queenmaeve_plush"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PepperSauceFlask"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PepperSauceFlask"
+      },
+      {
+        "value": "TAG:forge:meats"
+      },
+      {
+        "value": "CUSTOM:PepperSauceFlask"
+      },
+      {
+        "value": "Items.BOWL"
+      },
+      {
+        "value": "Items.BOWL"
+      },
+      {
+        "value": "Items.BOWL"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PepperSoup"
+    },
+    "name": "pepper_souce_recipe",
+    "namespace": "mod"
+  }
+}

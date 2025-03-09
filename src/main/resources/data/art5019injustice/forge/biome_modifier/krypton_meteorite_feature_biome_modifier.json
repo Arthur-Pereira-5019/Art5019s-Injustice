@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#art5019injustice:meteorite_suitable",
+  "features": "art5019injustice:krypton_meteorite_feature",
+  "step": "surface_structures"
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "art5019injustice:scarecrow_emblem"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:scarecrow_suit_scheme",
+    "count": 1
+  }
+}

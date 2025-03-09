@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "mangrove_swamp",
+  "features": "art5019injustice:white_orchid_mangrove_tree_1",
+  "step": "vegetal_decoration"
+}

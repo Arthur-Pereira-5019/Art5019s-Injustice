@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "art5019injustice:block/emptytex",
+    "up": "art5019injustice:block/emptytex",
+    "north": "art5019injustice:block/emptytex",
+    "east": "art5019injustice:block/emptytex",
+    "south": "art5019injustice:block/emptytex",
+    "west": "art5019injustice:block/emptytex",
+    "particle": "art5019injustice:block/emptytex"
+  },
+  "render_type": "translucent"
+}

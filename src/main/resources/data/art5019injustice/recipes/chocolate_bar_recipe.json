@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:sugar"
+    },
+    "b": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "c": {
+      "item": "art5019injustice:butter"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:chocolate_bar",
+    "count": 1
+  }
+}

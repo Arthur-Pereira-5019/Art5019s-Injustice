@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "art5019injustice:item/pricklypathtexture"
+  },
+  "render_type": "translucent"
+}

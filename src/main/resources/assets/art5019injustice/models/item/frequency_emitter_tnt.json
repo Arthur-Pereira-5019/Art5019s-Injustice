@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "art5019injustice:item/radio_5"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "art5019injustice:frequency_emitter_tnt_turnedon": 0
+      },
+      "model": "art5019injustice:item/frequency_emitter_tnt_0"
+    },
+    {
+      "predicate": {
+        "art5019injustice:frequency_emitter_tnt_turnedon": 1
+      },
+      "model": "art5019injustice:item/frequency_emitter_tnt_1"
+    }
+  ]
+}

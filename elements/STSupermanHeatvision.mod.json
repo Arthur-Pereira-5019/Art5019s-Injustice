@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "§3Heat Vision",
+    "achievementDescription": "§bAbility 4 - By emitting concentrated amounts of solar radiation by your eyes, a hot and destructive red beam is created. [Requires 1,5 Weeks of Solar Energy. Consumes 2 times your base production]",
+    "achievementIcon": {
+      "value": "CUSTOM:HeatVisionHCIcon"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:STSupermanUncontrolledHeatVision"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

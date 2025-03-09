@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:vibranium_ingot"
+    },
+    "b": {
+      "item": "art5019injustice:black_panther_suit_scheme"
+    },
+    "c": {
+      "item": "minecraft:white_stained_glass_pane"
+    },
+    "d": {
+      "item": "art5019injustice:kevlar_black"
+    },
+    "e": {
+      "item": "art5019injustice:fabric_black"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:black_panther_suit_helmet",
+    "count": 1
+  }
+}

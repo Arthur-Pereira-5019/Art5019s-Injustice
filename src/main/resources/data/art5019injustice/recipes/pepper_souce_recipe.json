@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:pepper_sauce_flask"
+    },
+    "b": {
+      "tag": "forge:meats"
+    },
+    "c": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:pepper_soup",
+    "count": 3
+  }
+}

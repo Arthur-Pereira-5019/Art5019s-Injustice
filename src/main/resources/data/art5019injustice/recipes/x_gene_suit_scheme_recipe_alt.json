@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "cfa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:emerald"
+    },
+    "b": {
+      "item": "art5019injustice:brains"
+    },
+    "c": {
+      "item": "minecraft:lightning_rod"
+    },
+    "d": {
+      "item": "minecraft:sugar"
+    },
+    "e": {
+      "item": "minecraft:paper"
+    },
+    "f": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:x_gene_suit_scheme",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 3,
+  "cookingtime": 400,
+  "ingredient": {
+    "item": "art5019injustice:gold_titanium_dust"
+  },
+  "result": "art5019injustice:gold_titanium_ingot"
+}

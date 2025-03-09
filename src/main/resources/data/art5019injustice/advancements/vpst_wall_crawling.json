@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:icon_venom_wall_crawling"
+    },
+    "title": {
+      "translate": "advancements.vpst_wall_crawling.title"
+    },
+    "description": {
+      "translate": "advancements.vpst_wall_crawling.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "vpst_wall_crawling_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:vpst_wall_crawling"
+}

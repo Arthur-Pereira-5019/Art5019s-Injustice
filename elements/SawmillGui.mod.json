@@ -1,0 +1,212 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:art5019injustice:gears"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 132,
+          "y": 43
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:art5019injustice:can_become_dust"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 175,
+          "y": 70
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_saw",
+          "image": "saw.png",
+          "hoveredImage": "steel_saw.png",
+          "onClick": {
+            "name": "SawDustButton"
+          },
+          "x": 234,
+          "y": 70
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 259,
+          "y": 70
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "saw_icon.png",
+          "use1Xscale": false,
+          "x": 133,
+          "y": 44
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_turn_into_dust",
+          "text": {
+            "fixedValue": "Turn up"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 230,
+          "y": 67
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 201,
+          "y": 70
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_case",
+          "text": {
+            "fixedValue": "Case"
+          },
+          "displayCondition": {
+            "name": "IfSlot4IsEmpty"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 198,
+          "y": 67
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_input",
+          "text": {
+            "fixedValue": "Input"
+          },
+          "displayCondition": {
+            "name": "IfSlot2IsEmpty"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 172,
+          "y": 67
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_output",
+          "text": {
+            "fixedValue": "Output"
+          },
+          "displayCondition": {
+            "name": "IfSlot3IsEmpty"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 256,
+          "y": 67
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_saw",
+          "text": {
+            "fixedValue": "Saw"
+          },
+          "displayCondition": {
+            "name": "IfSlot1IsEmpty"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 130,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "empty_ingot.png",
+          "use1Xscale": false,
+          "x": 176,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_saw_power",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSawPower"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 172,
+          "y": 51
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

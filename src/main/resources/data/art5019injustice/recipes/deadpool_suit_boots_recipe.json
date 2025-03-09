@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_purple"
+    },
+    "b": {
+      "item": "art5019injustice:kevlar_black"
+    },
+    "c": {
+      "item": "art5019injustice:x_gene_suit_scheme"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:deadpool_suit_boots",
+    "count": 1
+  }
+}

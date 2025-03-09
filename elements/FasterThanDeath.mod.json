@@ -1,0 +1,27 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Faster than Death",
+    "achievementDescription": "Defeat a Speedster",
+    "achievementIcon": {
+      "value": "CUSTOM:Hamburguer"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [
+      "DefeatSpeedsterLootTable"
+    ],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 90,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:FightModifiedHumans"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:microchip_tier_3"
+    },
+    "b": {
+      "item": "minecraft:end_crystal"
+    },
+    "c": {
+      "item": "art5019injustice:broken_blue_scarab"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:blue_scarab",
+    "count": 1
+  }
+}

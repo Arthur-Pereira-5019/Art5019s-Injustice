@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "art5019injustice:blietz_krieg",
+    "art5019injustice:deathstroke",
+    "art5019injustice:hydra_soldier",
+    "art5019injustice:loki_boss",
+    "art5019injustice:red_skull",
+    "art5019injustice:scarecrow_i",
+    "villager",
+    "wandering_trader",
+    "art5019injustice:phone_pillager",
+    "pillager",
+    "vindicator",
+    "ravager",
+    "iron_golem",
+    "evoker"
+  ]
+}

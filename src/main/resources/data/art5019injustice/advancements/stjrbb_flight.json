@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    "title": {
+      "translate": "advancements.stjrbb_flight.title"
+    },
+    "description": {
+      "translate": "advancements.stjrbb_flight.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "stjrbb_flight_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:stjrbb_activate"
+}

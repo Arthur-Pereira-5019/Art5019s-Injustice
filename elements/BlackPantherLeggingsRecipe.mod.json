@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:KevlarBlack"
+      },
+      {
+        "value": "CUSTOM:VibraniumIngot"
+      },
+      {
+        "value": "CUSTOM:KevlarBlack"
+      },
+      {
+        "value": "CUSTOM:VibraniumIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:VibraniumIngot"
+      },
+      {
+        "value": "CUSTOM:KevlarBlack"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:KevlarBlack"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BlackPantherSuit.legs"
+    },
+    "name": "black_panther_leggings_recipe",
+    "namespace": "mod"
+  }
+}

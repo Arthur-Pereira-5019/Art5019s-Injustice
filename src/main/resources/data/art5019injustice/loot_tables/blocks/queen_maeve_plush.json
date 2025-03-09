@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "art5019injustice:blocks/queen_maeve_plush",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:queen_maeve_plush"
+        }
+      ]
+    }
+  ]
+}

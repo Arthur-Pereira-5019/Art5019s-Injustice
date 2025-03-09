@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "beb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:white_wool"
+    },
+    "b": {
+      "item": "art5019injustice:white_fabric"
+    },
+    "c": {
+      "item": "minecraft:white_stained_glass_pane"
+    },
+    "d": {
+      "item": "minecraft:pink_dye"
+    },
+    "e": {
+      "item": "art5019injustice:spider_badge"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:ghost_spider_helmet",
+    "count": 1
+  }
+}

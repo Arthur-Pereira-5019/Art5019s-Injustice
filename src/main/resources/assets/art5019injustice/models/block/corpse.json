@@ -1,0 +1,9 @@
+{
+  "parent": "art5019injustice:custom/corpse",
+  "textures": {
+    "all": "art5019injustice:block/corpse",
+    "particle": "art5019injustice:block/corpse",
+    "0": "art5019injustice:block/corpse"
+  },
+  "render_type": "solid"
+}

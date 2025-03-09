@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_gray"
+    },
+    "b": {
+      "item": "art5019injustice:fabric_yellow"
+    },
+    "c": {
+      "item": "art5019injustice:suit_scheme_vought"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:webweaver_suit_leggings",
+    "count": 1
+  }
+}

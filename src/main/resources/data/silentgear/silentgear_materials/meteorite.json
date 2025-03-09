@@ -1,0 +1,85 @@
+{
+  "availability": {
+    "tier": 4,
+    "categories": [
+      "rock"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "art5019injustice:meteorite_cobblestone"
+    }
+  },
+  "name": {
+    "translate": "material.art5019injustice.meteorite"
+  },
+  "stats": {
+    "main": {
+      "durability": 1240.0,
+      "armor_durability": 120.0,
+      "enchantability": 6.0,
+      "harvest_level": 1.0,
+      "harvest_speed": 6.0,
+      "melee_damage": 3.5,
+      "magic_damage": 0.0,
+      "attack_speed": 0.0,
+      "armor": 6.0,
+      "armor/helmet": 3.0,
+      "armor/chestplate": 6.0,
+      "armor/leggings": 5.0,
+      "armor/boots": 3.0,
+      "ranged_damage": 5.0,
+      "ranged_speed": -0.2,
+      "projectile_speed": 1.0,
+      "projectile_accuracy": 0.8,
+      "rarity": 30.0,
+      "silentgems:chargeability": 5
+    },
+    "rod": {
+      "harvest_speed": {
+        "mul2": 10.0
+      },
+      "melee_damage": {
+        "mul2": 9.0
+      },
+      "rarity": 7.0
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:brittle",
+        "level": 2
+      },
+      {
+        "name": "silentgear:chipping",
+        "level": 3
+      },
+      {
+        "name": "silentgear:magmatic",
+        "level": 1
+      },
+      {
+        "name": "silentgear:chipping",
+        "level": 3
+      },
+      {
+        "name": "silentgear:fiery",
+        "level": 2
+      }
+    ],
+    "rod": [
+      {
+        "name": "silentgear:brittle",
+        "level": 3
+      },
+      {
+        "name": "silentgear:chipping",
+        "level": 2
+      }
+    ]
+  }
+}

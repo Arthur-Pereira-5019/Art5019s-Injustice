@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:kevlar_black"
+    },
+    "b": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "c": {
+      "item": "art5019injustice:elektrum_metal"
+    },
+    "d": {
+      "item": "art5019injustice:neuro_suit_scheme"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:neuro_suit_boots",
+    "count": 1
+  }
+}

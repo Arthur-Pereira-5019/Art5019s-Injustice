@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "art5019injustice:textures/screens/cobweb.png",
+    "icon": {
+      "item": "art5019injustice:emblem_spider"
+    },
+    "title": {
+      "translate": "advancements.st_spider_man_base.title"
+    },
+    "description": {
+      "translate": "advancements.st_spider_man_base.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_spider_man_base_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

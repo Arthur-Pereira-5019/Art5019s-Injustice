@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_deep_ocean",
+  "features": "art5019injustice:petroleum_stone_feature",
+  "step": "underground_ores"
+}

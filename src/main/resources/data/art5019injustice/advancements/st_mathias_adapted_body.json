@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:beef"
+    },
+    "title": {
+      "translate": "advancements.st_mathias_adapted_body.title"
+    },
+    "description": {
+      "translate": "advancements.st_mathias_adapted_body.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_mathias_adapted_body_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:st_mathias_regeneration"
+}

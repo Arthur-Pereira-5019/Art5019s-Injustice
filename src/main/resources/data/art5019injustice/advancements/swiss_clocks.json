@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:quartz"
+    },
+    "title": {
+      "translate": "advancements.swiss_clocks.title"
+    },
+    "description": {
+      "translate": "advancements.swiss_clocks.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "swiss_clocks_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:quartz"
+            ],
+            "count": {
+              "min": 1,
+              "max": 20
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "minecraft:nether/root"
+}

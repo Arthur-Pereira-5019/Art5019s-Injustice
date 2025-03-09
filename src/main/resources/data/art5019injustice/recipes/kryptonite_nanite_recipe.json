@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bab",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:kryptonite_dust"
+    },
+    "b": {
+      "item": "art5019injustice:activated_nanites"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:kryptonite_nanites",
+    "count": 2
+  }
+}

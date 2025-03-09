@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:titanium_ingot"
+    },
+    "b": {
+      "item": "art5019injustice:radio_device"
+    },
+    "c": {
+      "item": "art5019injustice:advanced_laser_device"
+    },
+    "d": {
+      "item": "art5019injustice:atlantean_gold_ingot"
+    },
+    "e": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "f": {
+      "item": "art5019injustice:atlantean_suit_scheme"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:black_manta_armor_helmet",
+    "count": 1
+  }
+}

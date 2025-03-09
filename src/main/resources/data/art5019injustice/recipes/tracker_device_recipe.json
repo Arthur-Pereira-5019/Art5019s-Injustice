@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:laser_device"
+    },
+    "b": {
+      "item": "minecraft:slime_ball"
+    },
+    "c": {
+      "item": "art5019injustice:titanium_ingot"
+    },
+    "d": {
+      "item": "art5019injustice:radio_device"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:tracker_device",
+    "count": 4
+  }
+}

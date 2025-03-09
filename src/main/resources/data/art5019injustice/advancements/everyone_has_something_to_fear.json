@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:icon_scarecrow"
+    },
+    "title": {
+      "translate": "advancements.everyone_has_something_to_fear.title"
+    },
+    "description": {
+      "translate": "advancements.everyone_has_something_to_fear.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "everyone_has_something_to_fear_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 7,
+    "recipes": [
+      "art5019injustice:scarecrow_nolan_boots_recipe",
+      "art5019injustice:scarecrow_nolan_leggings_recipe",
+      "art5019injustice:scarecrow_nolan_suit_recipe",
+      "art5019injustice:scarecrow_nolan_mask_recipe"
+    ]
+  },
+  "parent": "art5019injustice:trauma"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "art5019injustice:block/signal_machine_pillager_temp"
+    },
+    "facing=east": {
+      "model": "art5019injustice:block/signal_machine_pillager_temp",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "art5019injustice:block/signal_machine_pillager_temp",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "art5019injustice:block/signal_machine_pillager_temp",
+      "y": 270
+    }
+  }
+}

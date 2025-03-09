@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "art5019injustice:item/interdimensional_extrapolator"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "art5019injustice:interdimensional_extrapolator_extrapolator_activated": 0
+      },
+      "model": "art5019injustice:item/interdimensional_extrapolator_0"
+    },
+    {
+      "predicate": {
+        "art5019injustice:interdimensional_extrapolator_extrapolator_activated": 1
+      },
+      "model": "art5019injustice:item/interdimensional_extrapolator_1"
+    }
+  ]
+}

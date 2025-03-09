@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "§5Permanent Collective Trauma",
+    "achievementDescription": "§dAbility 1 - With enough fear pheromones in the air, and fear hormones on the bloodstream, easily even more fear can be spread trough the masses, but not any fear, it's a fear solid as matter, strong as a nightmare and shared as a plague, easily able to destroy the mind of anyone who dares to fight agaisn't it.",
+    "achievementIcon": {
+      "value": "CUSTOM:PermanentFearIcon"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:STScarecrowFearSense"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

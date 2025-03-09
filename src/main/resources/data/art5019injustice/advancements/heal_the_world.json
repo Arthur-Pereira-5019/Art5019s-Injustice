@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:planet_earth_icon"
+    },
+    "title": {
+      "translate": "advancements.heal_the_world.title"
+    },
+    "description": {
+      "translate": "advancements.heal_the_world.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "heal_the_world_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 70
+  },
+  "parent": "art5019injustice:hero_journey"
+}

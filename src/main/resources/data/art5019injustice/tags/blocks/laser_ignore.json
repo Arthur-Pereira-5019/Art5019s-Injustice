@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:any_air",
+    "art5019injustice:contamined_water",
+    "art5019injustice:stilled_water",
+    "minecraft:water",
+    "#minecraft:fire"
+  ]
+}

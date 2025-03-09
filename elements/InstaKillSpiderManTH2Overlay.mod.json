@@ -1,0 +1,72 @@
+{
+  "_fv": 66,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_nearby_entities",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnNearbyEntities"
+          },
+          "color": {
+            "value": -3801088,
+            "falpha": 0.0
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 8,
+          "y": 7
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_web_shooter_mode",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnWebShooterMode"
+          },
+          "color": {
+            "value": -3801088,
+            "falpha": 0.0
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 8,
+          "y": 18
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_remaining_webs",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnRemainingWebs"
+          },
+          "color": {
+            "value": -3801088,
+            "falpha": 0.0
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 7,
+          "y": 29
+        }
+      }
+    ],
+    "baseTexture": "redlenses.png",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "InstaKillSpiderManTH2OverlayDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

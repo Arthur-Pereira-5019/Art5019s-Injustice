@@ -1,0 +1,151 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 256,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_my_name_is_stan_im_a_vought_ex",
+          "text": {
+            "fixedValue": "My name is Stan, I'm a Vought"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 171,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_executive_im_looking_forward_t",
+          "text": {
+            "fixedValue": "executive, I'm looking forward"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 171,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_to_make_great_negotations_with_y",
+          "text": {
+            "fixedValue": "to make great negotations with"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 170,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_you_what_would_you_like_to_buy",
+          "text": {
+            "fixedValue": "you. What would you like to buy?"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 171,
+          "y": 72
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_powers",
+          "text": "Powers",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MainMenuVoughtExecutivePowersButtonPressed"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 90,
+          "y": 110
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "vought_icon.png",
+          "use1Xscale": false,
+          "x": 93,
+          "y": 42
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_suit",
+          "text": "Suits",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SuitSchemeVoughtExecutiveBuyButton"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 90,
+          "y": 131
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_influence",
+          "text": "Influence",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenInfluenceMenuVoughtExecutive"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 90,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_merchandise",
+          "text": "Merchandise",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "VoughtExecutiveMerchandisingButton"
+          },
+          "width": 82,
+          "height": 20,
+          "x": 90,
+          "y": 173
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

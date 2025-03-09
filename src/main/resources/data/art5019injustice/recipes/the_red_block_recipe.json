@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:beef"
+    },
+    {
+      "item": "minecraft:rabbit"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:mutton"
+    },
+    {
+      "item": "art5019injustice:human_remains"
+    },
+    {
+      "tag": "minecraft:fishes"
+    },
+    {
+      "item": "minecraft:chicken"
+    },
+    {
+      "item": "minecraft:porkchop"
+    },
+    {
+      "item": "art5019injustice:brains"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:red_block",
+    "count": 1
+  }
+}

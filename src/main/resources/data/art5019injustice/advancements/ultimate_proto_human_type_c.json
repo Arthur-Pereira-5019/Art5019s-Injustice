@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:silver_axe"
+    },
+    "title": {
+      "translate": "advancements.ultimate_proto_human_type_c.title"
+    },
+    "description": {
+      "translate": "advancements.ultimate_proto_human_type_c.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ultimate_proto_human_type_c_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 13
+  },
+  "parent": "art5019injustice:ultimate_proto_human"
+}

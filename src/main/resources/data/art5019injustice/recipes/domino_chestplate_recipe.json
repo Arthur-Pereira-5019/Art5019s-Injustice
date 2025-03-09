@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "ccc",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:kevlar_black"
+    },
+    "b": {
+      "item": "art5019injustice:x_gene_suit_scheme"
+    },
+    "c": {
+      "item": "art5019injustice:fabric_black"
+    },
+    "d": {
+      "item": "art5019injustice:fabric_red"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:domino_suit_chestplate",
+    "count": 1
+  }
+}

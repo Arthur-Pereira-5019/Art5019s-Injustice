@@ -1,0 +1,44 @@
+{
+  "parent": "art5019injustice:custom/condiment_gun",
+  "textures": {
+    "1": "art5019injustice:block/all_lighter_gray",
+    "particle": "art5019injustice:item/trophy"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "art5019injustice:condiment_gun_sauce": 1,
+        "art5019injustice:condiment_gun_shots": 1
+      },
+      "model": "art5019injustice:item/condiment_gun_0"
+    },
+    {
+      "predicate": {
+        "art5019injustice:condiment_gun_sauce": 2,
+        "art5019injustice:condiment_gun_shots": 1
+      },
+      "model": "art5019injustice:item/condiment_gun_1"
+    },
+    {
+      "predicate": {
+        "art5019injustice:condiment_gun_sauce": 3,
+        "art5019injustice:condiment_gun_shots": 1
+      },
+      "model": "art5019injustice:item/condiment_gun_2"
+    },
+    {
+      "predicate": {
+        "art5019injustice:condiment_gun_sauce": 4,
+        "art5019injustice:condiment_gun_shots": 1
+      },
+      "model": "art5019injustice:item/condiment_gun_3"
+    },
+    {
+      "predicate": {
+        "art5019injustice:condiment_gun_sauce": 5,
+        "art5019injustice:condiment_gun_shots": 1
+      },
+      "model": "art5019injustice:item/condiment_gun_4"
+    }
+  ]
+}

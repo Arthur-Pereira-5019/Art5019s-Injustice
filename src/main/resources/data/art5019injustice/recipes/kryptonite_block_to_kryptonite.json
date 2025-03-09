@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:true_kryptonite_block"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:kryptonite",
+    "count": 9
+  }
+}

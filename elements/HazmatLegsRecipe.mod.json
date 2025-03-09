@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FabricYellow"
+      },
+      {
+        "value": "CUSTOM:FabricYellow"
+      },
+      {
+        "value": "CUSTOM:FabricYellow"
+      },
+      {
+        "value": "CUSTOM:SheetLead"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SheetLead"
+      },
+      {
+        "value": "CUSTOM:FabricYellow"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:FabricYellow"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Hazmat.legs"
+    },
+    "name": "hazmat_legs_recipe",
+    "namespace": "mod"
+  }
+}

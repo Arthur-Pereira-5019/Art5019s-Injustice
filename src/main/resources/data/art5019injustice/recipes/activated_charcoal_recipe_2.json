@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 3,
+  "cookingtime": 1800,
+  "ingredient": {
+    "item": "minecraft:charcoal"
+  },
+  "result": "art5019injustice:activated_charcoal"
+}

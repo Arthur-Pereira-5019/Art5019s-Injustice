@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "bdb",
+    "cbe"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:dispenser"
+    },
+    "b": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "c": {
+      "item": "minecraft:green_dye"
+    },
+    "d": {
+      "item": "art5019injustice:shooting_device_3"
+    },
+    "e": {
+      "item": "art5019injustice:steel_nugget"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:bazooca",
+    "count": 1
+  }
+}

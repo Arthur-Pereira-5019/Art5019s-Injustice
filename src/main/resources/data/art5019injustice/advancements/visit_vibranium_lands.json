@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:meteorite"
+    },
+    "title": {
+      "translate": "advancements.visit_vibranium_lands.title"
+    },
+    "description": {
+      "translate": "advancements.visit_vibranium_lands.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "visit_vibranium_lands_0": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "art5019injustice:vibranium_lands"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 15
+  },
+  "parent": "minecraft:adventure/sleep_in_bed"
+}

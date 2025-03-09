@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.BONE_BLOCK"
+      },
+      {
+        "value": "CUSTOM:CoalDust"
+      },
+      {
+        "value": "CUSTOM:SiliconeMetal"
+      },
+      {
+        "value": "CUSTOM:IronDust"
+      },
+      {
+        "value": "Blocks.BARREL"
+      },
+      {
+        "value": "Items.COPPER_INGOT"
+      },
+      {
+        "value": "Items.GUNPOWDER"
+      },
+      {
+        "value": "CUSTOM:GoldDust"
+      },
+      {
+        "value": "Blocks.DIRT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ChemistryKit"
+    },
+    "name": "chemistry_kit_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "_fv": 66,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "CLERIC"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.TOTEM_OF_UNDYING"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 24,
+            "offer": {
+              "value": "CUSTOM:SummoningBook"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 3,
+            "xp": 5,
+            "priceMultiplier": 0.09
+          }
+        ]
+      }
+    ]
+  }
+}

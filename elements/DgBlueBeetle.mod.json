@@ -1,0 +1,87 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "bluebeetledghelmet",
+    "enableBody": true,
+    "textureBody": "bluebeetledgchest",
+    "enableLeggings": true,
+    "textureLeggings": "bluebeetledgleggings",
+    "enableBoots": true,
+    "textureBoots": "bluebeetledgboots",
+    "onHelmetTick": {
+      "name": "JRBlueBeetleHelmetTickEvent"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "dgbluebeetle_",
+    "helmetName": "Original Blue Beetle Helmet",
+    "bodyName": "Original Blue Beetle Chestplate",
+    "leggingsName": "Original Blue Beetle Leggings",
+    "bootsName": "Original Blue Beetle Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "Dan Garrett (Earth Prime)"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Dan Garrett (Earth Prime)"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "Dan Garrett (Earth Prime)"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "Dan Garrett (Earth Prime)"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 120,
+    "damageValueHelmet": 5,
+    "damageValueBody": 9,
+    "damageValueLeggings": 8,
+    "damageValueBoots": 5,
+    "enchantability": 3,
+    "toughness": 2.5,
+    "knockbackResistance": 0.2,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

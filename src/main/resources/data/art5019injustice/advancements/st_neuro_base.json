@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "art5019injustice:textures/screens/brain_coral_block.png",
+    "icon": {
+      "item": "art5019injustice:neuro_suit_helmet"
+    },
+    "title": {
+      "translate": "advancements.st_neuro_base.title"
+    },
+    "description": {
+      "translate": "advancements.st_neuro_base.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "st_neuro_base_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

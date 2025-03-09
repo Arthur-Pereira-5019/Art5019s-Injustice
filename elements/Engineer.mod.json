@@ -1,0 +1,16 @@
+{
+  "_fv": 66,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Engineer",
+    "pointOfInterest": {
+      "value": "Blocks.OBSERVER"
+    },
+    "actionSound": {
+      "value": "entity.villager.work_toolsmith"
+    },
+    "hat": "None",
+    "professionTextureFile": "engineer.png",
+    "zombifiedProfessionTextureFile": "engineerzombie.png"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:white_wool"
+    },
+    "b": {
+      "item": "art5019injustice:silicone_metal"
+    },
+    "c": {
+      "item": "minecraft:echo_shard"
+    },
+    "d": {
+      "item": "art5019injustice:shooting_device"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:pistol_upgrade_silencer",
+    "count": 1
+  }
+}

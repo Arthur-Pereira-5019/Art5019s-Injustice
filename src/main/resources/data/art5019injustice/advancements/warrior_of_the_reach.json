@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:scarab"
+    },
+    "title": {
+      "translate": "advancements.warrior_of_the_reach.title"
+    },
+    "description": {
+      "translate": "advancements.warrior_of_the_reach.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "warrior_of_the_reach_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 7
+  },
+  "parent": "art5019injustice:there_was_an_idea"
+}

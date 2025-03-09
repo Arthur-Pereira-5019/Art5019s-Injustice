@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 400,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "Items.ROTTEN_FLESH"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:LeatherPiece"
+    },
+    "name": "leather_piece_recipe",
+    "namespace": "mod"
+  }
+}

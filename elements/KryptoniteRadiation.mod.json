@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.6,
+    "scaling": "never",
+    "effects": "burning",
+    "normalDeathMessage": "%1$s was consumed by kryptonite radiation",
+    "itemDeathMessage": "%1$s was consumed by kryptonite radiation by %2$s using %3$s",
+    "playerDeathMessage": "%1$s was consumed by kryptonite radiation whilst trying to escape %2$s"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:ketchup_flask"
+    },
+    {
+      "item": "minecraft:cooked_beef"
+    },
+    {
+      "item": "art5019injustice:tomato"
+    },
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "minecraft:sea_pickle"
+    },
+    {
+      "item": "minecraft:cooked_beef"
+    },
+    {
+      "item": "art5019injustice:mayo_flask"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:hamburguer",
+    "count": 1
+  }
+}

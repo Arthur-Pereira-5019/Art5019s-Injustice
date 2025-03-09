@@ -1,0 +1,9 @@
+{
+  "parent": "art5019injustice:custom/key",
+  "textures": {
+    "all": "art5019injustice:block/key",
+    "particle": "art5019injustice:block/key",
+    "1": "art5019injustice:block/key"
+  },
+  "render_type": "translucent"
+}

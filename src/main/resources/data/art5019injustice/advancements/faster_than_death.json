@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:hamburguer"
+    },
+    "title": {
+      "translate": "advancements.faster_than_death.title"
+    },
+    "description": {
+      "translate": "advancements.faster_than_death.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "faster_than_death_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 90,
+    "loot": [
+      "art5019injustice:gameplay/defeat_a_speedster"
+    ]
+  },
+  "parent": "art5019injustice:fight_modified_humans"
+}

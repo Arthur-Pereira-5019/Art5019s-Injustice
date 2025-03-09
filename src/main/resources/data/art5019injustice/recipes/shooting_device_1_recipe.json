@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    " bc",
+    "ade"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:nugget_lead"
+    },
+    "b": {
+      "item": "minecraft:dispenser"
+    },
+    "c": {
+      "item": "art5019injustice:lead_ingot"
+    },
+    "d": {
+      "item": "minecraft:comparator"
+    },
+    "e": {
+      "item": "art5019injustice:silicone_metal"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:shooting_device",
+    "count": 1
+  }
+}

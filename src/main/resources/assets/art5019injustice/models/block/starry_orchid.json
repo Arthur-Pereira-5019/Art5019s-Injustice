@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "art5019injustice:block/cattleya_starry",
+    "particle": "art5019injustice:block/cattleya_starry"
+  },
+  "render_type": "cutout"
+}

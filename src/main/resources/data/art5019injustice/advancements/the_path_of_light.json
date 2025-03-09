@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:yang"
+    },
+    "title": {
+      "translate": "advancements.the_path_of_light.title"
+    },
+    "description": {
+      "translate": "advancements.the_path_of_light.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_path_of_light_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:the_heartofthe_matter"
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:cell_phone"
+    },
+    "title": {
+      "translate": "advancements.earth_x_phone_pillager_defeated.title"
+    },
+    "description": {
+      "translate": "advancements.earth_x_phone_pillager_defeated.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "earth_x_phone_pillager_defeated_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "art5019injustice:interdimensional_extrapolator_cause_crisis_on_earth_x"
+}

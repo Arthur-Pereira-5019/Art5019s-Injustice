@@ -1,0 +1,7 @@
+{
+  "parent": "art5019injustice:custom/ak47",
+  "textures": {
+    "0": "art5019injustice:block/ak47",
+    "particle": "art5019injustice:item/empty_cilynder"
+  }
+}

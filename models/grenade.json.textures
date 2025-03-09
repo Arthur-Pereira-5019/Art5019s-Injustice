@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "grenade"
+      },
+      "name": "default"
+    },
+    "electric": {
+      "map": {
+        "0": "grenade_electric"
+      },
+      "name": "electric"
+    },
+    "flashbang": {
+      "map": {
+        "0": "grenade_light"
+      },
+      "name": "flashbang"
+    }
+  }
+}

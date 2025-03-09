@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:tesseract"
+    },
+    "title": {
+      "translate": "advancements.infinity_stones_tesseract.title"
+    },
+    "description": {
+      "translate": "advancements.infinity_stones_tesseract.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "infinity_stones_tesseract_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "art5019injustice:tesseract"
+            ],
+            "count": {
+              "min": 1,
+              "max": 10
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "art5019injustice:infinity_stones"
+}

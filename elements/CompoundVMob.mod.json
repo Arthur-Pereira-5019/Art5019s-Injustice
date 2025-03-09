@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Compound V",
+    "icon": "v_blood.png",
+    "color": {
+      "value": -16759041,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "CompoundVMobEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "CompoundVMobOnEffectActiveTick"
+    },
+    "activeTickCondition": {
+      "name": "CompoundVMobActiveTickCondition"
+    }
+  }
+}

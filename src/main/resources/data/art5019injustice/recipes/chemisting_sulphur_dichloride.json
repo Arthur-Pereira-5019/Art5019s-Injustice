@@ -1,0 +1,39 @@
+{
+  "type": "art5019injustice:chemisting",
+  "ingredients": [
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "item": "art5019injustice:chlorine_bottle"
+    },
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "item": "art5019injustice:sulphur"
+    },
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "tag": "art5019injustice:jei_empty_tag"
+    },
+    {
+      "item": "art5019injustice:sulfur_dichloride_formula"
+    }
+  ],
+  "output": {
+    "item": "art5019injustice:bottle_sulfur_dichloride",
+    "count": 1
+  }
+}

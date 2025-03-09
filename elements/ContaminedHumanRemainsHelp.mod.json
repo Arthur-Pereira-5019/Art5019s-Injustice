@@ -1,0 +1,14 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:ContaminedHumanRemains"
+      }
+    ],
+    "information": [
+      "Can have it's Infectivity Tier increased by feeding it Human Remains on a Microbiology Table."
+    ]
+  }
+}

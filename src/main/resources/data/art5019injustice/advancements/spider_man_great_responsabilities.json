@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:spider_man_won_icon"
+    },
+    "title": {
+      "translate": "advancements.spider_man_great_responsabilities.title"
+    },
+    "description": {
+      "translate": "advancements.spider_man_great_responsabilities.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spider_man_great_responsabilities_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50,
+    "loot": [
+      "art5019injustice:entities/blue_beetle_jr_victory_table"
+    ]
+  },
+  "parent": "art5019injustice:does_whatever_a_spider_can"
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_red"
+    },
+    "b": {
+      "item": "minecraft:white_dye"
+    },
+    "c": {
+      "item": "minecraft:leather"
+    },
+    "d": {
+      "item": "art5019injustice:spider_badge"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:spider_man_tm_1_boots",
+    "count": 1
+  }
+}

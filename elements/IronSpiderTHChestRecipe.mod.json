@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:GoldTitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:GoldTitaniumNanites"
+      },
+      {
+        "value": "CUSTOM:GoldTitaniumIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SpiderManTH2.body"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GoldTitaniumIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GoldTitaniumIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:IronSpiderTH.body"
+    },
+    "name": "iron_spider_th_chest_recipe",
+    "namespace": "mod"
+  }
+}

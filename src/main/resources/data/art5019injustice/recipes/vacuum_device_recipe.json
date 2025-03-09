@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:steel_nugget"
+    },
+    "b": {
+      "item": "minecraft:iron_bars"
+    },
+    "c": {
+      "item": "art5019injustice:canister"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:vacuum_device",
+    "count": 3
+  }
+}

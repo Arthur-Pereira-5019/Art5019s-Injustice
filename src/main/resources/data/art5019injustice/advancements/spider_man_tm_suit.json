@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:spider_man_tm_2_helmet"
+    },
+    "title": {
+      "translate": "advancements.spider_man_tm_suit.title"
+    },
+    "description": {
+      "translate": "advancements.spider_man_tm_suit.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spider_man_tm_suit_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 9
+  },
+  "parent": "art5019injustice:becoming_spider_man"
+}

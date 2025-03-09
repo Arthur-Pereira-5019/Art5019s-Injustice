@@ -1,0 +1,7 @@
+{
+  "parent": "art5019injustice:custom/kryptonite_grenade",
+  "textures": {
+    "0": "art5019injustice:block/kryptonite_grenade",
+    "particle": "art5019injustice:item/webgrenade"
+  }
+}

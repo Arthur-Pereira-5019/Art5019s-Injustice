@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "art5019injustice:textures/screens/space_4.png",
+    "icon": {
+      "item": "art5019injustice:krypton_icon"
+    },
+    "title": {
+      "translate": "advancements.st_superman_base.title"
+    },
+    "description": {
+      "translate": "advancements.st_superman_base.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_superman_base_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

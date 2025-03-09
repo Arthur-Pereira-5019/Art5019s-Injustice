@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:meteorite"
+    },
+    "title": {
+      "translate": "advancements.meteorite_break_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.meteorite_break_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "meteorite_break_advancement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 40
+  },
+  "parent": "minecraft:story/mine_diamond"
+}

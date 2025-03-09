@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 22,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "block_match",
+          "block": "minecraft:gravel"
+        },
+        "state": {
+          "Name": "art5019injustice:petroleum"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "block_match",
+          "block": "minecraft:sand"
+        },
+        "state": {
+          "Name": "art5019injustice:petroleum"
+        }
+      }
+    ]
+  }
+}

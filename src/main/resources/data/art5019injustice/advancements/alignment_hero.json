@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:black_panther_suit_2_helmet"
+    },
+    "title": {
+      "translate": "advancements.alignment_hero.title"
+    },
+    "description": {
+      "translate": "advancements.alignment_hero.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "alignment_hero_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 60
+  },
+  "parent": "art5019injustice:alignment_vigilante"
+}

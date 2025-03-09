@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "art5019injustice:block/black_noir_plush"
+    },
+    "facing=east": {
+      "model": "art5019injustice:block/black_noir_plush",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "art5019injustice:block/black_noir_plush",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "art5019injustice:block/black_noir_plush",
+      "y": 270
+    }
+  }
+}

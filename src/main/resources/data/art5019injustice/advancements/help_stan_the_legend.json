@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:tnt"
+    },
+    "title": {
+      "translate": "advancements.help_stan_the_legend.title"
+    },
+    "description": {
+      "translate": "advancements.help_stan_the_legend.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "help_stan_the_legend_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 33
+  },
+  "parent": "art5019injustice:hope_beacon"
+}

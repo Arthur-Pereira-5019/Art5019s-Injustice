@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:string"
+    },
+    {
+      "item": "art5019injustice:potassium_dust"
+    },
+    {
+      "item": "minecraft:white_wool"
+    },
+    {
+      "item": "art5019injustice:alcohol_flask"
+    },
+    {
+      "item": "art5019injustice:alcohol_flask"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:molotov",
+    "count": 2
+  }
+}

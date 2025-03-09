@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FabricBlue"
+      },
+      {
+        "value": "CUSTOM:PeakHumanBadgeItem"
+      },
+      {
+        "value": "CUSTOM:FabricBlue"
+      },
+      {
+        "value": "CUSTOM:TechLenses"
+      },
+      {
+        "value": "CUSTOM:BlueKevlar"
+      },
+      {
+        "value": "CUSTOM:TechLenses"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SheetLead"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TedKordSuit.helmet"
+    },
+    "name": "ted_kord_suit_mask_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:advanced_circuit_board"
+    },
+    "b": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "c": {
+      "item": "art5019injustice:steel_nugget"
+    },
+    "d": {
+      "item": "minecraft:dispenser"
+    },
+    "e": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "f": {
+      "item": "minecraft:note_block"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:ted_kord_gun",
+    "count": 1
+  }
+}

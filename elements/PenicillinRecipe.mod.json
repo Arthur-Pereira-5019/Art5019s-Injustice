@@ -1,0 +1,19 @@
+{
+  "_fv": 66,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "contamination",
+    "result": {
+      "value": "CUSTOM:Penicillin"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "Items.BREAD"
+      },
+      {
+        "value": "TAG:forge:sugars"
+      }
+    ]
+  }
+}

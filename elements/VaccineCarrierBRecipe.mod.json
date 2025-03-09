@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:VaccineTypeII"
+      },
+      {
+        "value": "CUSTOM:VaccineTypeII"
+      },
+      {
+        "value": "CUSTOM:VaccineTypeII"
+      },
+      {
+        "value": "CUSTOM:VaccineTypeII"
+      },
+      {
+        "value": "CUSTOM:BaseVaccineCarrier"
+      },
+      {
+        "value": "CUSTOM:VaccineTypeII"
+      },
+      {
+        "value": "CUSTOM:VaccineTypeII"
+      },
+      {
+        "value": "CUSTOM:VaccineTypeII"
+      },
+      {
+        "value": "CUSTOM:VaccineTypeII"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:VaccineCarrierB"
+    },
+    "name": "vaccine_carrier_b_recipe",
+    "namespace": "mod"
+  }
+}

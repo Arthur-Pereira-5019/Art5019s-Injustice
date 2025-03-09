@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "art5019injustice:textures/screens/mud.png",
+    "icon": {
+      "item": "art5019injustice:super_soldier_emblem"
+    },
+    "title": {
+      "translate": "advancements.stss_base.title"
+    },
+    "description": {
+      "translate": "advancements.stss_base.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "stss_base_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

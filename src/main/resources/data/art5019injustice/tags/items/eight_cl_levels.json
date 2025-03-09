@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "art5019injustice:contamined_water_bucket",
+    "minecraft:water_bucket",
+    "minecraft:grass"
+  ]
+}

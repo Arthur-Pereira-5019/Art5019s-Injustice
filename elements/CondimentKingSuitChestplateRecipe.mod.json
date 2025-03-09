@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FabricCyan"
+      },
+      {
+        "value": "CUSTOM:PeakHumanBadgeItem"
+      },
+      {
+        "value": "CUSTOM:FabricCyan"
+      },
+      {
+        "value": "CUSTOM:FabricCyan"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:FabricCyan"
+      },
+      {
+        "value": "CUSTOM:FabricCyan"
+      },
+      {
+        "value": "CUSTOM:FabricCyan"
+      },
+      {
+        "value": "CUSTOM:FabricCyan"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CondimentKingSuit.body"
+    },
+    "name": "condiment_king_suit_chestplate_recipe",
+    "namespace": "mod"
+  }
+}

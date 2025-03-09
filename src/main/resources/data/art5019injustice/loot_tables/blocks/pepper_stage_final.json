@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "art5019injustice:blocks/pepper_stage_final",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:pepper",
+          "functions": [
+            {
+              "count": 3,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

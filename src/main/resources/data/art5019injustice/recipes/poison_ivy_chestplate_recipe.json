@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cac",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_black"
+    },
+    "b": {
+      "item": "art5019injustice:the_green_suit_scheme"
+    },
+    "c": {
+      "tag": "minecraft:leaves"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:poison_ivy_body_suit_chestplate",
+    "count": 1
+  }
+}

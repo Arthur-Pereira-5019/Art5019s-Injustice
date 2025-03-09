@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "art5019injustice:block/petri_table_down",
+    "up": "art5019injustice:block/petri_table_top",
+    "north": "art5019injustice:block/petri_table_side",
+    "east": "art5019injustice:block/petri_table_side",
+    "south": "art5019injustice:block/petri_table_side",
+    "west": "art5019injustice:block/petri_table_side",
+    "particle": "art5019injustice:block/petri_table_down"
+  },
+  "render_type": "solid"
+}

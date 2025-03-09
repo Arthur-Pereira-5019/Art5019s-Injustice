@@ -1,0 +1,43 @@
+{
+  "_fv": 66,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "chemisting",
+    "result": {
+      "value": "CUSTOM:BioEvolutiveSerum"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:ChemistryKit"
+      },
+      {
+        "value": "CUSTOM:AdvancedChemistryKit"
+      },
+      {
+        "value": "CUSTOM:ChemistryKit"
+      },
+      {
+        "value": "CUSTOM:Venom"
+      },
+      {
+        "value": "CUSTOM:HumanEye"
+      },
+      {
+        "value": "CUSTOM:ChemistryKit"
+      },
+      {
+        "value": "CUSTOM:ChemistryKit"
+      },
+      {
+        "value": "CUSTOM:AdvancedChemistryKit"
+      },
+      {
+        "value": "CUSTOM:ChemistryKit"
+      },
+      {
+        "value": "Blocks.AIR"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:MagnesiumDust"
+      },
+      {
+        "value": "Items.IRON_NUGGET"
+      },
+      {
+        "value": "Items.GLOWSTONE_DUST"
+      },
+      {
+        "value": "CUSTOM:NuggetLead"
+      },
+      {
+        "value": "CUSTOM:VacuumDevice"
+      },
+      {
+        "value": "CUSTOM:NuggetLead"
+      },
+      {
+        "value": "Items.GLOWSTONE_DUST"
+      },
+      {
+        "value": "CUSTOM:NuggetLead"
+      },
+      {
+        "value": "CUSTOM:MagnesiumDust"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:FlashBangGrenade"
+    },
+    "name": "flash_grenade_recipe",
+    "namespace": "mod"
+  }
+}

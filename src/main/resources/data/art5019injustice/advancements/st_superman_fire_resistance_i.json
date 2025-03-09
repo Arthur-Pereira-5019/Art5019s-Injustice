@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:superman_fire_res_icon_1"
+    },
+    "title": {
+      "translate": "advancements.st_superman_fire_resistance_i.title"
+    },
+    "description": {
+      "translate": "advancements.st_superman_fire_resistance_i.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_superman_fire_resistance_i_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:st_superman_resistance"
+}

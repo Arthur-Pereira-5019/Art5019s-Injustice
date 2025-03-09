@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:chemistry_table"
+    },
+    "title": {
+      "translate": "advancements.local_chemistry.title"
+    },
+    "description": {
+      "translate": "advancements.local_chemistry.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "local_chemistry_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 4
+  },
+  "parent": "art5019injustice:local_metallurgist"
+}

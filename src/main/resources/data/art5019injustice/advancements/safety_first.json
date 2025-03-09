@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:lab_vest_helmet"
+    },
+    "title": {
+      "translate": "advancements.safety_first.title"
+    },
+    "description": {
+      "translate": "advancements.safety_first.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "safety_first_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "art5019injustice:microbiology"
+}

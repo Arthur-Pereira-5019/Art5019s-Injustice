@@ -1,0 +1,7 @@
+{
+  "parent": "art5019injustice:custom/vibraniumshield1",
+  "textures": {
+    "0": "art5019injustice:block/captainamericashield",
+    "particle": "art5019injustice:item/vibraniumshield"
+  }
+}

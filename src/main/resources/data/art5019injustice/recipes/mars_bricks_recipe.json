@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bab",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:red_sand"
+    },
+    "b": {
+      "item": "art5019injustice:meteorite_cobblestone"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:mars_bricks",
+    "count": 6
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "group": "raolite",
+  "category": "misc",
+  "experience": 4,
+  "cookingtime": 800,
+  "ingredient": {
+    "item": "art5019injustice:kryptonite"
+  },
+  "result": "art5019injustice:raolite"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "art5019injustice:textures/screens/soul_sand.png",
+    "icon": {
+      "item": "art5019injustice:deadpool_icon"
+    },
+    "title": {
+      "translate": "advancements.st_deadpool_base.title"
+    },
+    "description": {
+      "translate": "advancements.st_deadpool_base.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_deadpool_base_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

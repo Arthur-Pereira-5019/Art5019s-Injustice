@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "c c"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:leather"
+    },
+    "b": {
+      "item": "art5019injustice:suit_scheme_super_soldier"
+    },
+    "c": {
+      "item": "art5019injustice:fabric_brown"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:captain_britan_boots",
+    "count": 1
+  }
+}

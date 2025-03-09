@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 7,
+  "cookingtime": 600,
+  "ingredient": {
+    "item": "art5019injustice:palladium_ore"
+  },
+  "result": "art5019injustice:palladium_ingot"
+}

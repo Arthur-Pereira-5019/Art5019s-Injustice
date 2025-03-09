@@ -1,0 +1,111 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "storm_earring",
+    "enableBody": true,
+    "textureBody": "black_storm",
+    "enableLeggings": true,
+    "textureLeggings": "black_storm_pants",
+    "enableBoots": true,
+    "textureBoots": "storm_boots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "storm_",
+    "helmetName": "Storm Earrings",
+    "bodyName": "Storm Chestplate",
+    "leggingsName": "Storm Leggings",
+    "bootsName": "Storm Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "Ororo Munroe (Earth 0)",
+        "§6Wildcard:",
+        "§n  -Works as a Wildcard to complete the §6Special Ability §fof any other Storm Suit (Based on the Chestplate of that suit)"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Ororo Munroe (Earth 0)",
+        "§6Heavy Weather:",
+        "§n  -Each piece of this Suit Set removes 2,5 seconds of the cooldown of Storm Magnetic Shift Ability"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "Ororo Munroe (Earth 0)",
+        "§6Heavy Weather:",
+        "§n  -Each piece of this Suit Set removes 2,5 seconds of the cooldown of Storm Magnetic Shift Ability"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "Ororo Munroe (Earth 0)",
+        "§6Heavy Weather:",
+        "§n  -Each piece of this Suit Set removes 2,5 seconds of the cooldown of Storm Magnetic Shift Ability"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 23,
+    "damageValueHelmet": 2,
+    "damageValueBody": 4,
+    "damageValueLeggings": 3,
+    "damageValueBoots": 2,
+    "enchantability": 15,
+    "toughness": 0.2,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:WhiteFabric"
+      }
+    ]
+  }
+}

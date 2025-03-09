@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:anti_venom_suit_helmet"
+    },
+    "title": {
+      "translate": "advancements.st_anti_venom_bio_suit_activation.title"
+    },
+    "description": {
+      "translate": "advancements.st_anti_venom_bio_suit_activation.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_anti_venom_bio_suit_activation_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:st_anti_venom_base"
+}

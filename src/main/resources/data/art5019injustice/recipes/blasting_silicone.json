@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 8,
+  "cookingtime": 2400,
+  "ingredient": {
+    "item": "minecraft:quartz"
+  },
+  "result": "art5019injustice:silicone_metal"
+}

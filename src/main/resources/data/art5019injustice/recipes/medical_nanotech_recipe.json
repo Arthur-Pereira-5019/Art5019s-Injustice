@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:vaccine_base"
+    },
+    "b": {
+      "item": "art5019injustice:microchip_ai_3"
+    },
+    "c": {
+      "item": "art5019injustice:antibiotics"
+    },
+    "d": {
+      "item": "art5019injustice:medical_kit"
+    },
+    "e": {
+      "item": "art5019injustice:activated_nanites"
+    },
+    "f": {
+      "item": "minecraft:enchanted_golden_apple"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:medical_nanotech",
+    "count": 1
+  }
+}

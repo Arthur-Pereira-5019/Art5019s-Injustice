@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AtlanteanGoldIngot"
+      },
+      {
+        "value": "CUSTOM:AtlanteanSuitScheme"
+      },
+      {
+        "value": "CUSTOM:AtlanteanGoldIngot"
+      },
+      {
+        "value": "CUSTOM:AtlanteanGoldIngot"
+      },
+      {
+        "value": "CUSTOM:AtlanteanGoldIngot"
+      },
+      {
+        "value": "CUSTOM:AtlanteanGoldIngot"
+      },
+      {
+        "value": "CUSTOM:AtlanteanGoldIngot"
+      },
+      {
+        "value": "CUSTOM:AtlanteanGoldIngot"
+      },
+      {
+        "value": "CUSTOM:AtlanteanGoldIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AtlanteanArmor.body"
+    },
+    "name": "atlantean_chest_recipe",
+    "namespace": "mod"
+  }
+}

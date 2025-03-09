@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:copper_wiring"
+    },
+    "b": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "c": {
+      "item": "art5019injustice:palladium_ingot"
+    },
+    "d": {
+      "item": "minecraft:end_crystal"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:repulsor",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:blaze_powder"
+    },
+    "b": {
+      "item": "art5019injustice:copper_wiring"
+    },
+    "c": {
+      "item": "art5019injustice:microchip"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:microchip_heater",
+    "count": 1
+  }
+}

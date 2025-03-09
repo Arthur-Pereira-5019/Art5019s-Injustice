@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "§eUniversal Understanding",
+    "achievementDescription": "§ePassive - All your brain capacity, aligned with your super senses and the extreme nature of your powers, allow you to feel and understand the very mechanics that control the complex aspects of any and every form of life in the universe, allowing you to better comunicate with and understand them (Social Power: +5). [Requires 3 Weeks of Solar Energy. Doesn't consume.]",
+    "achievementIcon": {
+      "value": "CUSTOM:IconGalaxy"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:STSupermanSuperInteligence"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

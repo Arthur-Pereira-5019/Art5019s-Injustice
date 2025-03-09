@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bdb"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:spider_badge"
+    },
+    "b": {
+      "item": "art5019injustice:fabric_red"
+    },
+    "c": {
+      "item": "minecraft:light_gray_dye"
+    },
+    "d": {
+      "item": "minecraft:cobweb"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:spider_man_tm_2_boots",
+    "count": 1
+  }
+}

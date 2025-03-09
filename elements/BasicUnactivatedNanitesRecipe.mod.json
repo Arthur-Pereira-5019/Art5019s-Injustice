@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ElektrumDust"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ElektrumDust"
+      },
+      {
+        "value": "CUSTOM:TitaniumDust"
+      },
+      {
+        "value": "CUSTOM:ElektrumDust"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ElektrumDust"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Nanites"
+    },
+    "name": "basic_unactivated_nanites_recipe",
+    "namespace": "mod"
+  }
+}

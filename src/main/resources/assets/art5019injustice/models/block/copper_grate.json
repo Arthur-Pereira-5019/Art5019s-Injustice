@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "art5019injustice:block/copper_grate",
+    "particle": "art5019injustice:block/copper_grate"
+  },
+  "render_type": "translucent"
+}

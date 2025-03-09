@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:crossbow"
+    },
+    "title": {
+      "translate": "advancements.enter_earth_x.title"
+    },
+    "description": {
+      "translate": "advancements.enter_earth_x.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "enter_earth_x_0": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "art5019injustice:earth_x"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "loot": [
+      "art5019injustice:entities/trophy_multiverse_travel"
+    ]
+  },
+  "parent": "art5019injustice:there_was_an_idea"
+}

@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Flu",
+    "icon": "flu",
+    "color": {
+      "value": -4043186,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "FluApplied"
+    },
+    "onActiveTick": {
+      "name": "FluOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "FluEffectExpires"
+    },
+    "activeTickCondition": {
+      "name": "FluEffectStartedapplied"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Time Stopped",
+    "icon": "time_stopped.png",
+    "color": {
+      "value": -10585993,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onStarted": {
+      "name": "SlowPerception"
+    },
+    "onActiveTick": {
+      "name": "TimeStoppedActiveTickCondition"
+    },
+    "onExpired": {
+      "name": "SlowPerceptionEnd"
+    }
+  }
+}

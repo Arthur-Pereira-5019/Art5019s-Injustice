@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:blood_syringe"
+    },
+    "title": {
+      "translate": "advancements.x_gene_hope_serum.title"
+    },
+    "description": {
+      "translate": "advancements.x_gene_hope_serum.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "x_gene_hope_serum_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 17
+  },
+  "parent": "art5019injustice:x_gene"
+}

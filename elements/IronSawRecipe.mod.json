@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:IronBlade"
+      },
+      {
+        "value": "CUSTOM:IronBlade"
+      },
+      {
+        "value": "CUSTOM:IronBlade"
+      },
+      {
+        "value": "CUSTOM:IronBlade"
+      },
+      {
+        "value": "Blocks.PLANKS"
+      },
+      {
+        "value": "CUSTOM:IronBlade"
+      },
+      {
+        "value": "CUSTOM:IronBlade"
+      },
+      {
+        "value": "CUSTOM:IronBlade"
+      },
+      {
+        "value": "CUSTOM:IronBlade"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:IronSaw"
+    },
+    "name": "iron_saw_recipe",
+    "namespace": "mod"
+  }
+}

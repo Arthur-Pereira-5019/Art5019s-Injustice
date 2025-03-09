@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/packed_ice",
+    "up": "minecraft:block/packed_ice",
+    "north": "minecraft:block/packed_ice",
+    "east": "minecraft:block/packed_ice",
+    "south": "minecraft:block/packed_ice",
+    "west": "minecraft:block/packed_ice",
+    "particle": "minecraft:block/packed_ice"
+  },
+  "render_type": "solid"
+}

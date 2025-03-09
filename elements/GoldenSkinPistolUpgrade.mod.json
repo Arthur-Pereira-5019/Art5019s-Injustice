@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:GoldDust"
+      },
+      {
+        "value": "CUSTOM:ChemistryKit"
+      },
+      {
+        "value": "CUSTOM:GoldDust"
+      },
+      {
+        "value": "Items.GLOWSTONE_DUST"
+      },
+      {
+        "value": "CUSTOM:ShootingDevice"
+      },
+      {
+        "value": "Items.GLOWSTONE_DUST"
+      },
+      {
+        "value": "CUSTOM:GoldDust"
+      },
+      {
+        "value": "CUSTOM:ChemistryKit"
+      },
+      {
+        "value": "CUSTOM:GoldDust"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PistolUpgradeGoldenSkin"
+    },
+    "name": "golden_skin_pistol_upgrade",
+    "namespace": "mod"
+  }
+}

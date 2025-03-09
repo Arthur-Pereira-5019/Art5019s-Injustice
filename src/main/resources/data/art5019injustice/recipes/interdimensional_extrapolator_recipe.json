@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stone_button"
+    },
+    "b": {
+      "item": "art5019injustice:palladium_ingot"
+    },
+    "c": {
+      "item": "art5019injustice:microchip_tier_3"
+    },
+    "d": {
+      "item": "art5019injustice:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:interdimensional_extrapolator",
+    "count": 1
+  }
+}

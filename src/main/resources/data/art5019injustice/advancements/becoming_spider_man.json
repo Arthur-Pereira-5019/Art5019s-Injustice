@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:spider_man_tm_1_helmet"
+    },
+    "title": {
+      "translate": "advancements.becoming_spider_man.title"
+    },
+    "description": {
+      "translate": "advancements.becoming_spider_man.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "becoming_spider_man_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 6,
+    "recipes": [
+      "art5019injustice:spider_man_ag_2_boots_recipe",
+      "art5019injustice:spider_man_ag_2_leggins_recipe",
+      "art5019injustice:spider_man_ag_2_chest_recipe",
+      "art5019injustice:spider_man_ag_2_mask_recipe",
+      "art5019injustice:spider_man_ag_3_boots_recipe",
+      "art5019injustice:spider_man_ag_3_legs_recipe",
+      "art5019injustice:spider_man_ag_3_chest_recipe",
+      "art5019injustice:spider_man_ag_3_mask_recipe",
+      "art5019injustice:night_monkey_suit_boots_recipe",
+      "art5019injustice:night_monkey_suit_leggings_recipe",
+      "art5019injustice:night_monkey_suit_chestplate_recipe",
+      "art5019injustice:night_monkey_suit_mask_recipe"
+    ]
+  },
+  "parent": "art5019injustice:does_whatever_a_spider_can"
+}

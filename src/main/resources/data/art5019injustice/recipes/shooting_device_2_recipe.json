@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    " bc",
+    "dae"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:silver_nugget"
+    },
+    "b": {
+      "item": "art5019injustice:shooting_device"
+    },
+    "c": {
+      "item": "art5019injustice:silver_ingot"
+    },
+    "d": {
+      "item": "minecraft:comparator"
+    },
+    "e": {
+      "item": "art5019injustice:silicone_metal"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:shooting_device_2",
+    "count": 1
+  }
+}

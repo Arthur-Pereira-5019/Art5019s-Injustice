@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:WhiteFabric"
+      },
+      {
+        "value": "CUSTOM:SpiderBadge"
+      },
+      {
+        "value": "CUSTOM:WhiteFabric"
+      },
+      {
+        "value": "CUSTOM:FabricPink"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:FabricPink"
+      },
+      {
+        "value": "CUSTOM:FabricLightBlue"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:FabricLightBlue"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GhostSpider.body"
+    },
+    "name": "ghost_spider_chest_recipe",
+    "namespace": "mod"
+  }
+}

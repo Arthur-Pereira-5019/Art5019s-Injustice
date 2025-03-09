@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "bcd",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:copper_wiring"
+    },
+    "b": {
+      "item": "art5019injustice:shooting_device"
+    },
+    "c": {
+      "item": "minecraft:glass_bottle"
+    },
+    "d": {
+      "item": "art5019injustice:advanced_circuit_board"
+    },
+    "e": {
+      "item": "minecraft:stone_button"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:condiment_gun",
+    "count": 1
+  }
+}

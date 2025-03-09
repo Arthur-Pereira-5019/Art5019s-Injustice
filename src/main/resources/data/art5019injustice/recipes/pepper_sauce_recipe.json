@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:pepper"
+    },
+    {
+      "item": "art5019injustice:pepper"
+    },
+    {
+      "item": "art5019injustice:pepper"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:pepper_sauce_flask",
+    "count": 1
+  }
+}

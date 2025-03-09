@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:kryptonite_dust"
+    },
+    "b": {
+      "item": "minecraft:iron_nugget"
+    },
+    "c": {
+      "item": "art5019injustice:nugget_lead"
+    },
+    "d": {
+      "item": "art5019injustice:vacuum_device"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:kryptonite_grenade",
+    "count": 1
+  }
+}

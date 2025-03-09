@@ -1,0 +1,7 @@
+{
+  "type": "art5019injustice:structure_feature",
+  "config": {
+    "structure": "art5019injustice:jungle_log_3",
+    "ignored_blocks": "minecraft:air"
+  }
+}

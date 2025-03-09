@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Wakanada...? ",
+    "achievementDescription": "A landscape rich in Vibranium.",
+    "achievementIcon": {
+      "value": "CUSTOM:Meteorite"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 15,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "adventure/sleep_in_bed"
+    },
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"biome_entered\" x=\"40\" y=\"35\"><field name=\"biome\">CUSTOM:VibraniumLands</field></block></next></block></xml>"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:sand"
+    },
+    "b": {
+      "item": "art5019injustice:venom_pills"
+    },
+    "c": {
+      "item": "art5019injustice:empty_syringe"
+    },
+    "d": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:bane_suit_scheme",
+    "count": 1
+  }
+}

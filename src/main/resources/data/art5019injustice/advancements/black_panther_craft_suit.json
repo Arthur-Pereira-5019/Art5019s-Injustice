@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:black_panther_suit_helmet"
+    },
+    "title": {
+      "translate": "advancements.black_panther_craft_suit.title"
+    },
+    "description": {
+      "translate": "advancements.black_panther_craft_suit.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "black_panther_craft_suit_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 9
+  },
+  "parent": "art5019injustice:black_panther_become"
+}

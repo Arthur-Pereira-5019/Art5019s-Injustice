@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:jungle_log",
+    "minecraft:acacia_log",
+    "minecraft:mangrove_log",
+    "minecraft:jungle_wood",
+    "minecraft:acacia_wood",
+    "minecraft:mangrove_wood",
+    "minecraft:mangrove_roots"
+  ]
+}

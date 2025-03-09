@@ -1,0 +1,8 @@
+{
+  "type": "art5019injustice:structure_feature",
+  "config": {
+    "structure": "art5019injustice:andesite_rock",
+    "random_rotation": true,
+    "ignored_blocks": "minecraft:air"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "art5019injustice:textures/screens/prismarine_bricks.png",
+    "icon": {
+      "item": "art5019injustice:atlantean_symbol"
+    },
+    "title": {
+      "translate": "advancements.aquaman_skill_tree_base.title"
+    },
+    "description": {
+      "translate": "advancements.aquaman_skill_tree_base.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "aquaman_skill_tree_base_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

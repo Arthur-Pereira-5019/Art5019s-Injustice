@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "art5019injustice:block/pepper_stage_2",
+    "particle": "art5019injustice:block/pepper_stage_2"
+  },
+  "render_type": "cutout"
+}

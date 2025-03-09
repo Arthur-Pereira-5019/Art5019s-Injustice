@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ebe"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_black"
+    },
+    "b": {
+      "item": "art5019injustice:fabric_gray"
+    },
+    "c": {
+      "item": "minecraft:tinted_glass"
+    },
+    "d": {
+      "item": "art5019injustice:suit_scheme_vought"
+    },
+    "e": {
+      "item": "art5019injustice:fabric_yellow"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:webweaver_suit_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:HalothaneFormula"
+      },
+      {
+        "value": "CUSTOM:FormulaKevlar"
+      },
+      {
+        "value": "CUSTOM:FormulaSuperSoldierSerum"
+      },
+      {
+        "value": "CUSTOM:FormulaBioEvolutiveSerum"
+      },
+      {
+        "value": "CUSTOM:FormulaMustardBottle"
+      },
+      {
+        "value": "CUSTOM:AdrenalyneFormula"
+      },
+      {
+        "value": "CUSTOM:PureMagnesiumFormula"
+      },
+      {
+        "value": "CUSTOM:MineralExtractionFormula"
+      },
+      {
+        "value": "CUSTOM:FormulaFerricChloride"
+      },
+      {
+        "value": "CUSTOM:FormulaSimpleElectrolysis"
+      },
+      {
+        "value": "CUSTOM:FormulaHydrogenFluoride"
+      },
+      {
+        "value": "CUSTOM:FormulaAntimonyTrichloride"
+      },
+      {
+        "value": "CUSTOM:FormulaTrichloroethylene"
+      },
+      {
+        "value": "CUSTOM:SulfurDichlorideFormula"
+      },
+      {
+        "value": "CUSTOM:VenomScheme"
+      },
+      {
+        "value": "CUSTOM:WebFluidScheme"
+      }
+    ],
+    "information": [
+      "Remove the dificulty of the respective Chemistry Recipe by 1"
+    ]
+  }
+}

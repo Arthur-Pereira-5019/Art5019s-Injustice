@@ -1,0 +1,55 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:emblem_spider"
+    },
+    "title": {
+      "translate": "advancements.does_whatever_a_spider_can.title"
+    },
+    "description": {
+      "translate": "advancements.does_whatever_a_spider_can.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "does_whatever_a_spider_can_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10,
+    "recipes": [
+      "art5019injustice:spider_man_ag_1_boots_recipe",
+      "art5019injustice:spider_man_ag_1_legs_recipe",
+      "art5019injustice:spider_man_ag_1_chest_recipe",
+      "art5019injustice:spider_man_ag_1_helmet_recipe",
+      "art5019injustice:spider_badge_recipe",
+      "art5019injustice:spider_badge_recipe_2",
+      "art5019injustice:deleted_mod_element",
+      "art5019injustice:web_shooter_tier_1_recipe",
+      "art5019injustice:spider_man_ag_2_boots_recipe",
+      "art5019injustice:spider_man_ag_2_leggins_recipe",
+      "art5019injustice:spider_man_ag_2_chest_recipe",
+      "art5019injustice:spider_man_ag_2_mask_recipe",
+      "art5019injustice:spider_man_ag_3_boots_recipe",
+      "art5019injustice:spider_man_ag_3_legs_recipe",
+      "art5019injustice:spider_man_ag_3_chest_recipe",
+      "art5019injustice:spider_man_ag_3_mask_recipe",
+      "art5019injustice:spider_man_th_1_boots",
+      "art5019injustice:spider_man_th_1_legs",
+      "art5019injustice:spider_man_th_1_chest",
+      "art5019injustice:spider_man_th_1_mask",
+      "art5019injustice:spider_man_tm_1_boots_recipe",
+      "art5019injustice:spider_man_tm_1_legs_recipe",
+      "art5019injustice:spider_man_tm_1_chest_recipe",
+      "art5019injustice:spider_man_tm_1_helmet_recipe",
+      "art5019injustice:spider_man_tm_2_boots_recipe",
+      "art5019injustice:spider_man_tm_2_leggings_recipe",
+      "art5019injustice:spider_man_tm_2_chest_recipe"
+    ]
+  },
+  "parent": "art5019injustice:there_was_an_idea"
+}

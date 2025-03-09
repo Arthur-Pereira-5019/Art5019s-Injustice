@@ -1,0 +1,9 @@
+{
+  "parent": "art5019injustice:custom/microscope",
+  "textures": {
+    "all": "art5019injustice:block/microscope",
+    "particle": "art5019injustice:block/microscope",
+    "0": "art5019injustice:block/webshooter"
+  },
+  "render_type": "solid"
+}

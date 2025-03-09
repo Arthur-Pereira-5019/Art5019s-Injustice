@@ -1,0 +1,21 @@
+{
+  "_fv": 66,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Allergenic Potion",
+    "splashName": "Splash Allergenic Potion",
+    "lingeringName": "Lingering Allergenic Potion",
+    "arrowName": "Allergenic Arrow",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Allergy"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

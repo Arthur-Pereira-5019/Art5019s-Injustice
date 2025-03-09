@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:blue_scarab"
+    },
+    "title": {
+      "translate": "advancements.stjrbb_activate.title"
+    },
+    "description": {
+      "translate": "advancements.stjrbb_activate.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "stjrbb_activate_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:stjrbb_base"
+}

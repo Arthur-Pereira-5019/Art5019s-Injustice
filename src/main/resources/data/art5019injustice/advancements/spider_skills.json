@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:emblem_spider"
+    },
+    "title": {
+      "translate": "advancements.spider_skills.title"
+    },
+    "description": {
+      "translate": "advancements.spider_skills.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "spider_skills_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:st_spider_man_base"
+}

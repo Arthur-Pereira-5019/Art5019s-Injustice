@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "art5019injustice:block/computer_back",
+    "up": "art5019injustice:block/computer_back",
+    "north": "art5019injustice:block/computer_front",
+    "east": "art5019injustice:block/computer_side",
+    "south": "art5019injustice:block/computer_back",
+    "west": "art5019injustice:block/computer_side",
+    "particle": "art5019injustice:block/computer_back"
+  },
+  "render_type": "solid"
+}

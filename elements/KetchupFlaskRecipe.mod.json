@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Tomato"
+      },
+      {
+        "value": "CUSTOM:Tomato"
+      },
+      {
+        "value": "CUSTOM:Tomato"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:VinegarFlask"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:KetchupFlask"
+    },
+    "name": "ketchup_flask_recipe",
+    "namespace": "mod"
+  }
+}

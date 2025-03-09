@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:vaccine_type_ii"
+    },
+    "b": {
+      "item": "art5019injustice:base_vaccine_carrier"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:vaccine_carrier_b",
+    "count": 1
+  }
+}

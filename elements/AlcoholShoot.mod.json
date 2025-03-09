@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:AlcoholFlask"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 1.0,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "AlcoholShootProjectileHitBlock"
+    },
+    "onHitsEntity": {
+      "name": "AlcoholShootProjectileHitsLivingEntity"
+    },
+    "onFlyingTick": {
+      "name": "AlcoholShootProjectileHitsBlock"
+    }
+  }
+}

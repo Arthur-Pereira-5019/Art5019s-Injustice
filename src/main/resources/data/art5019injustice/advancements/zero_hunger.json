@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:cooked_chicken"
+    },
+    "title": {
+      "translate": "advancements.zero_hunger.title"
+    },
+    "description": {
+      "translate": "advancements.zero_hunger.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "zero_hunger_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 70
+  },
+  "parent": "art5019injustice:heal_the_world"
+}

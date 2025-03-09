@@ -1,0 +1,10 @@
+{
+  "type": "art5019injustice:art5019injustice_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/underwater_ruin_small"
+    }
+  ],
+  "lootTable": "art5019injustice:gameplay/ruby_fish_suspicious_sand"
+}

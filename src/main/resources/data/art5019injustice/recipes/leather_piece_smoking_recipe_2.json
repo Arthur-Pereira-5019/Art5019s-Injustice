@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "experience": 4,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "art5019injustice:human_remains"
+  },
+  "result": "art5019injustice:leather_piece"
+}

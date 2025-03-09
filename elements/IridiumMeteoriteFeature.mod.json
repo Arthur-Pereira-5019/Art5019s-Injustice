@@ -1,0 +1,14 @@
+{
+  "_fv": 66,
+  "_type": "feature",
+  "definition": {
+    "skipPlacement": false,
+    "generationStep": "UNDERGROUND_STRUCTURES",
+    "restrictionBiomes": [
+      {
+        "value": "#minecraft:is_overworld"
+      }
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_custom_structure\"><field name=\"structure\">iridium_meteorite_1</field><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">0</field><field name=\"random_rotation\">TRUE</field><field name=\"random_mirror\">TRUE</field><value name=\"ignored_blocks\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"block0\">Blocks.AIR</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">30</field><next><block type=\"placement_in_square\"><comment pinned=\"false\" h=\"80\" w=\"189\">We then move each feature horizontally, so that they don't generate in the corner of the chunk</comment><next><block type=\"placement_height_uniform\"><comment pinned=\"false\" h=\"84\" w=\"208\">We then set the height of the feature. This ore feature generates with a uniform distribution between the bottom of the world and 64</comment><value name=\"min\"><block type=\"vertical_anchor_above_bottom\"><field name=\"value\">32</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">48</field></block></value><next><block type=\"placement_biome_filter\"><comment pinned=\"false\" h=\"85\" w=\"210\">Finally, we check that the feature isn't outside of the biome. This placement modifier should always be the last one.</comment><next><block type=\"placement_block_predicate_filter\"><value name=\"condition\"><block type=\"block_predicate_matching_blocks\"><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">0</field><value name=\"blockSet\"><block type=\"block_holderset_tag\"><field name=\"tag\">stone_ore_replaceables</field></block></value></block></value></block></next></block></next></block></next></block></next></block></next></block></xml>"
+  }
+}

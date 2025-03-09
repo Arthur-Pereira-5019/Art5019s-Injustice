@@ -1,0 +1,15 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "N",
+    "keyBindingName": "Suit Ability 1",
+    "keyBindingCategoryKey": "inj",
+    "onKeyPressed": {
+      "name": "SuitAbility1OnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "SuitAbility1OnKeyReleased"
+    }
+  }
+}

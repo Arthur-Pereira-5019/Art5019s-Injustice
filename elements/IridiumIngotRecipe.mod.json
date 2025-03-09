@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 10.0,
+    "cookingTime": 7200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:Iridium"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:IridiumIngot"
+    },
+    "name": "iridium_ingot_recipe",
+    "namespace": "mod"
+  }
+}

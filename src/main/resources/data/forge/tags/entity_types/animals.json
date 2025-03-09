@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "cow",
+    "sheep",
+    "chicken",
+    "panda",
+    "rabbit",
+    "horse",
+    "donkey",
+    "pig",
+    "fox",
+    "cat",
+    "wolf"
+  ]
+}

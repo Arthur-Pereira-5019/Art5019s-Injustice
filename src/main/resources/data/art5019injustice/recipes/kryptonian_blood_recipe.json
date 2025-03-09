@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:empty_syringe"
+    },
+    {
+      "item": "art5019injustice:strange_bone_kryptonian"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:kryptonian_blood",
+    "count": 1
+  }
+}

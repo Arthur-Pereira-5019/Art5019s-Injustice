@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 14400,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:Iridium"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:IridiumIngot"
+    },
+    "name": "iridium_ingot_recipe_furnace",
+    "namespace": "mod"
+  }
+}

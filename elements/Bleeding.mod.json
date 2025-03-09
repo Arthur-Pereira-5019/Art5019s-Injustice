@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Bleeding",
+    "icon": "bleeding",
+    "color": {
+      "value": -7072491,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "BleedingOnEffectActiveTick"
+    },
+    "onActiveTick": {
+      "name": "BleedingOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "BleedingEffectExpires"
+    },
+    "activeTickCondition": {
+      "name": "BleedingActiveTickCondition"
+    }
+  }
+}

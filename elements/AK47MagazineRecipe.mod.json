@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SteelNugget"
+      },
+      {
+        "value": "CUSTOM:PistolMagazine"
+      },
+      {
+        "value": "CUSTOM:SteelNugget"
+      },
+      {
+        "value": "CUSTOM:SteelIngot"
+      },
+      {
+        "value": "CUSTOM:PistolMagazine"
+      },
+      {
+        "value": "CUSTOM:SteelIngot"
+      },
+      {
+        "value": "CUSTOM:SteelNugget"
+      },
+      {
+        "value": "CUSTOM:PistolMagazine"
+      },
+      {
+        "value": "CUSTOM:SteelNugget"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AK47Magazine"
+    },
+    "name": "ak_47_magazine_recipe",
+    "namespace": "mod"
+  }
+}

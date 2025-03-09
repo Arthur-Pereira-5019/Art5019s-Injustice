@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Electricity",
+    "icon": "electricity",
+    "color": {
+      "value": -13312,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "ElectricityOnEffectActiveTick"
+    },
+    "activeTickCondition": {
+      "name": "ElectricityActiveTickCondition"
+    }
+  }
+}

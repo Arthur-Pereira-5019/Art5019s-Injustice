@@ -1,0 +1,9 @@
+{
+  "parent": "art5019injustice:custom/rubik",
+  "textures": {
+    "all": "art5019injustice:block/rubik",
+    "particle": "art5019injustice:block/rubik",
+    "0": "art5019injustice:block/rubik"
+  },
+  "render_type": "solid"
+}

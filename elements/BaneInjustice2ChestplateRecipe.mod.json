@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EmptySyringe"
+      },
+      {
+        "value": "CUSTOM:BaneSuitScheme"
+      },
+      {
+        "value": "CUSTOM:EmptySyringe"
+      },
+      {
+        "value": "CUSTOM:FabricLime"
+      },
+      {
+        "value": "CUSTOM:SteelIngot"
+      },
+      {
+        "value": "CUSTOM:FabricLime"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BaneInjustice2Suit.body"
+    },
+    "name": "bane_injustice_2_chestplate_recipe",
+    "namespace": "mod"
+  }
+}

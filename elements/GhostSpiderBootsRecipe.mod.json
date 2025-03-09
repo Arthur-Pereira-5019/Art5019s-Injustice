@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "Items.FIREWORK_CHARGE"
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "CUSTOM:FabricCyan"
+      },
+      {
+        "value": "CUSTOM:SpiderBadge"
+      },
+      {
+        "value": "CUSTOM:FabricCyan"
+      },
+      {
+        "value": "CUSTOM:WhiteFabric"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:WhiteFabric"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GhostSpider.boots"
+    },
+    "name": "ghost_spider_boots_recipe",
+    "namespace": "mod"
+  }
+}

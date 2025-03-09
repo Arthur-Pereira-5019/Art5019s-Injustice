@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "The Cure",
+    "achievementDescription": "Get the effect of immunity after surviving a viral infection, which may be used to create vaccines",
+    "achievementIcon": {
+      "value": "Items.POTIONITEM"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 30,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:FeverDreams"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"59\" y=\"105\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

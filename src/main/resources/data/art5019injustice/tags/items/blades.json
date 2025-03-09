@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "art5019injustice:scarab_sword",
+    "art5019injustice:enriched_sword",
+    "art5019injustice:vibranium_sword",
+    "art5019injustice:silver_sword",
+    "minecraft:wooden_sword",
+    "minecraft:stone_sword",
+    "minecraft:iron_sword",
+    "minecraft:golden_sword",
+    "minecraft:diamond_sword",
+    "minecraft:netherite_sword",
+    "art5019injustice:katana",
+    "art5019injustice:tactical_knife",
+    "art5019injustice:kryptonite_knife",
+    "art5019injustice:golden_kryptonite_knife",
+    "minecraft:glass"
+  ]
+}

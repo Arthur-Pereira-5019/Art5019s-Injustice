@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:white_fabric"
+    },
+    "b": {
+      "item": "art5019injustice:peak_human_badge_item"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:condiment_king_suit_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:upgrade_kit"
+    },
+    "b": {
+      "item": "art5019injustice:spider_man_tm_2_helmet"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:spiderman_enhanced_suit_helmet",
+    "count": 1
+  }
+}

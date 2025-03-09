@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Microchip"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.COMPARATOR"
+      },
+      {
+        "value": "CUSTOM:LaserDevice"
+      },
+      {
+        "value": "Items.COMPARATOR"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Microchip"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AdvancedCircuitBoard"
+    },
+    "name": "advanced_circuit_board_recipe",
+    "namespace": "mod"
+  }
+}

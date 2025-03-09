@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " c ",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:brown_dye"
+    },
+    "b": {
+      "item": "art5019injustice:scarecrow_suit_scheme"
+    },
+    "c": {
+      "item": "minecraft:wheat"
+    },
+    "d": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:scarecrow_nolanverse_suit_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:dice"
+    },
+    "title": {
+      "translate": "advancements.help_paul_rabbit_the_gambler.title"
+    },
+    "description": {
+      "translate": "advancements.help_paul_rabbit_the_gambler.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "help_paul_rabbit_the_gambler_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 33
+  },
+  "parent": "art5019injustice:hope_beacon"
+}

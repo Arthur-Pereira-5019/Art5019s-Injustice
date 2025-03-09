@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "art5019injustice:block/queen_maeve_plush"
+    },
+    "facing=east": {
+      "model": "art5019injustice:block/queen_maeve_plush",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "art5019injustice:block/queen_maeve_plush",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "art5019injustice:block/queen_maeve_plush",
+      "y": 270
+    }
+  }
+}

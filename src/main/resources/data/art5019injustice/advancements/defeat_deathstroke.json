@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:katana"
+    },
+    "title": {
+      "translate": "advancements.defeat_deathstroke.title"
+    },
+    "description": {
+      "translate": "advancements.defeat_deathstroke.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_deathstroke_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 240
+  },
+  "parent": "art5019injustice:defeat_scarecrow"
+}

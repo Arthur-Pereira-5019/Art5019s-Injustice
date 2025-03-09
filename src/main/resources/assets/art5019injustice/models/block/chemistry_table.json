@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "art5019injustice:block/chemistry_table_bottom",
+    "up": "art5019injustice:block/chemistry_table_top",
+    "north": "art5019injustice:block/chemistry_table_side",
+    "east": "art5019injustice:block/chemistry_table_front",
+    "south": "art5019injustice:block/chemistry_table_side",
+    "west": "art5019injustice:block/chemistry_table_front",
+    "particle": "art5019injustice:block/chemistry_table_bottom"
+  },
+  "render_type": "solid"
+}

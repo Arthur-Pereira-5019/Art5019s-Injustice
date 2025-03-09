@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "I was forced to give'em the Serum",
+    "achievementDescription": "Cursed and blessed with a non stopping regenerating body, Mathias Silver-Axe the most searched gangstar in the Americas was the first Ultimate Proto-Human (Type-C)",
+    "achievementIcon": {
+      "value": "CUSTOM:SilverAxe"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 13,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:UltimateProtoHuman"
+    },
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"55\" y=\"52\"/></next></block></xml>"
+  }
+}

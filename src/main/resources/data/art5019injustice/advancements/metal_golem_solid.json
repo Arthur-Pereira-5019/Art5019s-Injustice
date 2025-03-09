@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:iron_nanites"
+    },
+    "title": {
+      "translate": "advancements.metal_golem_solid.title"
+    },
+    "description": {
+      "translate": "advancements.metal_golem_solid.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "metal_golem_solid_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 60
+  },
+  "parent": "art5019injustice:nanomachines_son"
+}

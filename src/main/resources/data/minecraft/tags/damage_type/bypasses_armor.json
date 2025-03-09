@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "art5019injustice:bleeding_damage",
+    "art5019injustice:kryptonite_radiation",
+    "art5019injustice:radiation_damage",
+    "art5019injustice:scratch_damage",
+    "art5019injustice:sonic_damage",
+    "art5019injustice:virulence"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "§3Gravitational Propelling",
+    "achievementDescription": "§bAbility 3 - By changing even more your body mass properties, you're able to propel yourself towards anything, to anywhere, everywhere. [Requires 1,5 Weeks of Solar Energy. Doesn't consume. Toggle trough flight levels by sneaking. Flight Speed scales with the amount of Solar Energy stored.]",
+    "achievementIcon": {
+      "value": "CUSTOM:SupermanFlyIcon"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:STSupermanFlight"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

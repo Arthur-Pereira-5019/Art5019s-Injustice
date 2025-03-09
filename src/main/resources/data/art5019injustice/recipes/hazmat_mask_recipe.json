@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_yellow"
+    },
+    "b": {
+      "item": "art5019injustice:sheet_lead"
+    },
+    "c": {
+      "item": "minecraft:glass_pane"
+    },
+    "d": {
+      "item": "art5019injustice:filter"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:hazmat_helmet",
+    "count": 1
+  }
+}

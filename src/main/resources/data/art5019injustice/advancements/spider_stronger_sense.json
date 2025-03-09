@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:icon_spider_tingling_1"
+    },
+    "title": {
+      "translate": "advancements.spider_stronger_sense.title"
+    },
+    "description": {
+      "translate": "advancements.spider_stronger_sense.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "spider_stronger_sense_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:spider_skills"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "taiga",
+  "features": "art5019injustice:pepper_stage_final",
+  "step": "vegetal_decoration"
+}

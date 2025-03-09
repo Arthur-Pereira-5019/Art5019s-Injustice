@@ -1,0 +1,19 @@
+{
+  "_fv": 66,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "contamination",
+    "result": {
+      "value": "CUSTOM:ContaminedHumanRemains"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "Items.ROTTEN_FLESH"
+      },
+      {
+        "value": "CUSTOM:HumanRemains"
+      }
+    ]
+  }
+}

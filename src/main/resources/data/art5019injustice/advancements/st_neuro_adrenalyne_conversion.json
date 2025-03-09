@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:adrenalyne_syringe"
+    },
+    "title": {
+      "translate": "advancements.st_neuro_adrenalyne_conversion.title"
+    },
+    "description": {
+      "translate": "advancements.st_neuro_adrenalyne_conversion.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_neuro_adrenalyne_conversion_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:st_neuro_base"
+}

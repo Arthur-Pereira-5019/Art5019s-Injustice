@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:sawmill"
+    },
+    "title": {
+      "translate": "advancements.another_one_bites_the_dust.title"
+    },
+    "description": {
+      "translate": "advancements.another_one_bites_the_dust.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "another_one_bites_the_dust_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "art5019injustice:sawmill"
+            ],
+            "count": {
+              "min": 1,
+              "max": 100
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 15
+  },
+  "parent": "minecraft:story/smelt_iron"
+}

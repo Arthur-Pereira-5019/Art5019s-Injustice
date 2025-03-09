@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:dice"
+    },
+    "title": {
+      "translate": "advancements.lets_go_gambling.title"
+    },
+    "description": {
+      "translate": "advancements.lets_go_gambling.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lets_go_gambling_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "minecraft:adventure/trade"
+}

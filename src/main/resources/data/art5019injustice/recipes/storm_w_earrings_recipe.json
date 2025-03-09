@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "c c"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:vibranium_nugget"
+    },
+    "b": {
+      "item": "art5019injustice:x_gene_suit_scheme"
+    },
+    "c": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:storm_black_suit_helmet",
+    "count": 1
+  }
+}

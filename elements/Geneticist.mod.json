@@ -1,0 +1,16 @@
+{
+  "_fv": 66,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Geneticist",
+    "pointOfInterest": {
+      "value": "CUSTOM:Microscope"
+    },
+    "actionSound": {
+      "value": "block.brewing_stand.brew"
+    },
+    "hat": "None",
+    "professionTextureFile": "plains.png",
+    "zombifiedProfessionTextureFile": "zombifiedscientist.png"
+  }
+}

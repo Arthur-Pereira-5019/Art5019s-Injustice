@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SilverNugget"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ShootingDevice"
+      },
+      {
+        "value": "CUSTOM:SilverIngot"
+      },
+      {
+        "value": "Items.COMPARATOR"
+      },
+      {
+        "value": "CUSTOM:SilverNugget"
+      },
+      {
+        "value": "CUSTOM:SiliconeMetal"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ShootingDevice2"
+    },
+    "name": "shooting_device_2_recipe",
+    "namespace": "mod"
+  }
+}

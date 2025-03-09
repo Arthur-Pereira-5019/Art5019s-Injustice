@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Canister"
+      },
+      {
+        "value": "CUSTOM:UpgradeKit"
+      },
+      {
+        "value": "CUSTOM:Canister"
+      },
+      {
+        "value": "Items.REPEATER"
+      },
+      {
+        "value": "CUSTOM:TWebShooterTier1"
+      },
+      {
+        "value": "Items.REPEATER"
+      },
+      {
+        "value": "CUSTOM:Canister"
+      },
+      {
+        "value": "Items.REPEATER"
+      },
+      {
+        "value": "CUSTOM:Canister"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TWebShooterTier2"
+    },
+    "name": "web_shooter_tier_2_recipe",
+    "namespace": "mod"
+  }
+}

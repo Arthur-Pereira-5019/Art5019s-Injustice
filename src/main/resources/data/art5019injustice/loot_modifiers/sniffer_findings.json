@@ -1,0 +1,10 @@
+{
+  "type": "art5019injustice:art5019injustice_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:gameplay/sniffer_digging"
+    }
+  ],
+  "lootTable": "art5019injustice:entities/sniffer_mod_findings"
+}

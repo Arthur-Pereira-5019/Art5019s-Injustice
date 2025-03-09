@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:loki_scepter"
+    },
+    "title": {
+      "translate": "advancements.summon_loki.title"
+    },
+    "description": {
+      "translate": "advancements.summon_loki.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "summon_loki_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 40
+  },
+  "parent": "art5019injustice:use_summoning_book"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:badge"
+    },
+    "title": {
+      "translate": "advancements.st_storm_level_2.title"
+    },
+    "description": {
+      "translate": "advancements.st_storm_level_2.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_storm_level_2_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:st_storm_level_1"
+}

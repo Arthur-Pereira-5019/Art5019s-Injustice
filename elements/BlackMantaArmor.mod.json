@@ -1,0 +1,121 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "blackmanta_helmet",
+    "enableBody": true,
+    "textureBody": "blackmantachestplate",
+    "enableLeggings": true,
+    "textureLeggings": "blackmantaleggings",
+    "enableBoots": true,
+    "textureBoots": "blackmantaboots",
+    "onHelmetTick": {
+      "name": "BlackMantaArmorHelmetTickEvent"
+    },
+    "onBodyTick": {
+      "name": "BlackMantaArmorChestplateTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "BlackMantaArmorLeggingsTickEvent"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "black_manta_",
+    "helmetName": "Black Manta Armor Helmet",
+    "bodyName": "Black Manta Armor Chestplate",
+    "leggingsName": "Black Manta Armor Leggings",
+    "bootsName": "Black Manta Armor Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "Press Suit Ability 1 to Laser",
+        "Type Radio to Activate the Radio and the number to set the frequency",
+        "Can be disabled with Interference I or Higher"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Grants Conduit Power"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "Grants Dolphin's Grace"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "Modelblackmanta",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "black_manta_helmet.png",
+    "bodyModelName": "Modelblackmanta_chest",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "black_manta_layer_1.png",
+    "leggingsModelName": "Modelblack_manta_layer_legs",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "black_manta_layer_2.png",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 50,
+    "damageValueHelmet": 4,
+    "damageValueBody": 8,
+    "damageValueLeggings": 7,
+    "damageValueBoots": 4,
+    "enchantability": 3,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      }
+    ]
+  }
+}

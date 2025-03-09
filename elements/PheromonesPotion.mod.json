@@ -1,0 +1,30 @@
+{
+  "_fv": 66,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Bottle of Pheromones",
+    "splashName": "Splash Bottle of Pheromones",
+    "lingeringName": "Lingering Bottle of Pheromones",
+    "arrowName": "Arrow of Pheromones",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Pheromones"
+        },
+        "duration": 1200,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      },
+      {
+        "effect": {
+          "value": "HERO_OF_THE_VILLAGE"
+        },
+        "duration": 1200,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

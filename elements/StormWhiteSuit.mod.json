@@ -1,0 +1,108 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": false,
+    "textureHelmet": "storm_earring",
+    "enableBody": true,
+    "textureBody": "storm_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "storm_leggings",
+    "enableBoots": true,
+    "textureBoots": "storm_boots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeSuits"
+      }
+    ],
+    "armorTextureFile": "storm_white_suit_",
+    "helmetName": "Astonishing Storm Earrings",
+    "bodyName": "Astonishing Storm Chestplate",
+    "leggingsName": "Astonishing Storm Leggings",
+    "bootsName": "Astonishing Storm Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "Ororo Munroe (Earth 0)",
+        "§6Astonishing Winds:",
+        "§n  -Each piece of this adds a fourth of a 20% boost on Storm wind-based abilities"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Ororo Munroe (Earth 0)",
+        "§6Astonishing Winds:",
+        "§n  -Each piece of this adds a fourth of a 20% boost on Storm wind-based abilities"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "Ororo Munroe (Earth 0)",
+        "§6Astonishing Winds:",
+        "§n  -Each piece of this adds a fourth of a 20% boost on Storm wind-based abilities"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "Ororo Munroe (Earth 0)",
+        "§6Astonishing Winds:",
+        "§n  -Each piece of this adds a fourth of a 20% boost on Storm wind-based abilities"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": true
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 23,
+    "damageValueHelmet": 1,
+    "damageValueBody": 4,
+    "damageValueLeggings": 3,
+    "damageValueBoots": 2,
+    "enchantability": 15,
+    "toughness": 0.2,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:SewingKit"
+      }
+    ]
+  }
+}

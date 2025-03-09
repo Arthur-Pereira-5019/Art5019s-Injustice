@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "art5019injustice:item/heat_resistance_superman_icon_hc"
+  }
+}

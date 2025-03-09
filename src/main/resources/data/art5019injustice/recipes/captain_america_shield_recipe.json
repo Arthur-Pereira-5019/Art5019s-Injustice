@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:red_dye"
+    },
+    "b": {
+      "item": "minecraft:white_dye"
+    },
+    "c": {
+      "item": "minecraft:blue_dye"
+    },
+    "d": {
+      "item": "art5019injustice:vibranium_ingot"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:captain_america_shield",
+    "count": 1
+  }
+}

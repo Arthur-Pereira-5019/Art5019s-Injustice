@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "eae"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:fabric_blue"
+    },
+    "b": {
+      "item": "art5019injustice:suit_scheme_super_soldier"
+    },
+    "c": {
+      "item": "art5019injustice:fabric_red"
+    },
+    "d": {
+      "item": "art5019injustice:white_fabric"
+    },
+    "e": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:captain_america_first_suit_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:tesseract"
+    },
+    "title": {
+      "translate": "advancements.defeat_loki.title"
+    },
+    "description": {
+      "translate": "advancements.defeat_loki.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_loki_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 66
+  },
+  "parent": "art5019injustice:defeat_a_god"
+}

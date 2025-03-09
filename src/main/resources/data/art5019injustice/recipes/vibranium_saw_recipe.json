@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:vibranium_blade"
+    },
+    "b": {
+      "item": "art5019injustice:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:vibranium_saw",
+    "count": 1
+  }
+}

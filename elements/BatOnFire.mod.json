@@ -1,0 +1,11 @@
+{
+  "_fv": 66,
+  "_type": "painting",
+  "definition": {
+    "texture": "batonfire.png",
+    "width": 16,
+    "height": 16,
+    "title": "Bat On Fire",
+    "author": "Art5019"
+  }
+}

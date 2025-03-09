@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SilverNugget"
+      },
+      {
+        "value": "Items.DYE#2"
+      },
+      {
+        "value": "CUSTOM:SilverNugget"
+      },
+      {
+        "value": "CUSTOM:SiliconeMetal"
+      },
+      {
+        "value": "Items.COMPARATOR"
+      },
+      {
+        "value": "CUSTOM:SiliconeMetal"
+      },
+      {
+        "value": "CUSTOM:SilverNugget"
+      },
+      {
+        "value": "Items.DYE#2"
+      },
+      {
+        "value": "CUSTOM:SilverNugget"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Microchip"
+    },
+    "name": "microchip_recipe",
+    "namespace": "mod"
+  }
+}

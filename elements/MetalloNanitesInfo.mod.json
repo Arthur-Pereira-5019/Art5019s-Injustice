@@ -1,0 +1,14 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:MetalloNanites"
+      }
+    ],
+    "information": [
+      "Interact it with a Kryptonite Block above a Titanium Block to create Metallo."
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "art5019injustice:custom/condiment_gun",
+  "textures": {
+    "1": "art5019injustice:block/all_white",
+    "particle": "art5019injustice:item/banenolanmask"
+  }
+}

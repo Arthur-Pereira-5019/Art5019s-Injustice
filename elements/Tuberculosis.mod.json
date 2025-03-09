@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Tuberculosis",
+    "icon": "flu",
+    "color": {
+      "value": -8242887,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "TuberculosisApplied"
+    },
+    "onActiveTick": {
+      "name": "TuberculosisOnEffectActiveTick"
+    },
+    "activeTickCondition": {
+      "name": "FluEffectStartedapplied"
+    }
+  }
+}

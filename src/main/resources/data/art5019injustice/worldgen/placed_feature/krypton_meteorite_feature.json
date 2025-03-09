@@ -1,0 +1,30 @@
+{
+  "feature": "art5019injustice:krypton_meteorite_feature",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 2200
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:solid",
+        "offset": [
+          0,
+          -1,
+          0
+        ]
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

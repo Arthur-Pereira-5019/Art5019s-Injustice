@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_top_left_open",
+  "textures": {
+    "particle": "art5019injustice:block/iron_door_bottom",
+    "bottom": "art5019injustice:block/iron_door_bottom",
+    "top": "art5019injustice:block/iron_door_top"
+  },
+  "render_type": "solid"
+}

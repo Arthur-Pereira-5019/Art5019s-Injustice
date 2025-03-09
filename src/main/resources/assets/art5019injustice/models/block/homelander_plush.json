@@ -1,0 +1,9 @@
+{
+  "parent": "art5019injustice:custom/homelander_plushie",
+  "textures": {
+    "all": "art5019injustice:block/homelanderplush",
+    "particle": "art5019injustice:block/homelanderplush",
+    "1": "art5019injustice:block/homelanderplush"
+  },
+  "render_type": "solid"
+}

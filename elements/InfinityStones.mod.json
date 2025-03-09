@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "§5S§1i§4x §6S§2i§en§5g§1u§4l§6a§2r§ei§5t§1i§4e§6s",
+    "achievementDescription": "Obtain one of the six Infinity Stones",
+    "achievementIcon": {
+      "value": "CUSTOM:Tesseract"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 40,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:ThereWasAnIdea"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

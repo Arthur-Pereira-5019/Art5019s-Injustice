@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "b b",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:kevlar_black"
+    },
+    "b": {
+      "item": "art5019injustice:vibranium_ingot"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:black_panther_suit_leggings",
+    "count": 1
+  }
+}

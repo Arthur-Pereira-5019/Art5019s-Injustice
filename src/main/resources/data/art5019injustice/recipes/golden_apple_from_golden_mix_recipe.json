@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:apple"
+    },
+    "b": {
+      "item": "art5019injustice:pistol_upgrade_golden_skin"
+    }
+  },
+  "result": {
+    "item": "minecraft:golden_apple",
+    "count": 8
+  }
+}

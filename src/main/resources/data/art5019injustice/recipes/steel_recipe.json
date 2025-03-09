@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:lead_dust"
+    },
+    {
+      "item": "art5019injustice:iron_dust"
+    },
+    {
+      "item": "art5019injustice:titanium_dust"
+    },
+    {
+      "item": "art5019injustice:coal_dust"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:steel_mix_dust",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:titanium_dust"
+    },
+    {
+      "item": "art5019injustice:gold_dust"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:gold_titanium_dust",
+    "count": 1
+  }
+}

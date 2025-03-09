@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass_bottle"
+    },
+    "b": {
+      "item": "minecraft:allium"
+    },
+    "c": {
+      "item": "art5019injustice:penicillin"
+    },
+    "d": {
+      "item": "minecraft:honey_bottle"
+    },
+    "e": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:antibiotics",
+    "count": 5
+  }
+}

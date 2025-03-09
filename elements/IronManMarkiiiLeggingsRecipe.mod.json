@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:UpgradeKit"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.DISPENSER"
+      },
+      {
+        "value": "CUSTOM:GoldTitaniumArmor.legs"
+      },
+      {
+        "value": "Blocks.DISPENSER"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:UnactivatedMarkIII.legs"
+    },
+    "name": "iron_man_markiii_leggings_recipe",
+    "namespace": "mod"
+  }
+}

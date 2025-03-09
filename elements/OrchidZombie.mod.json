@@ -1,0 +1,260 @@
+{
+  "_fv": 66,
+  "_type": "livingentity",
+  "definition": {
+    "mobName": "Orchid Zombie",
+    "mobLabel": "",
+    "mobModelName": "Biped",
+    "mobModelTexture": "orchidzombiebase.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
+    "solidBoundingBox": {
+      "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 0.9
+    },
+    "boundingBoxScale": {
+      "fixedValue": 0.9
+    },
+    "modelLayers": [
+      {
+        "model": "Default",
+        "texture": "orchidzombieblue.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "OrchidZombieDisplayCondition"
+        }
+      },
+      {
+        "model": "Default",
+        "texture": "orchidzombiewine.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "OrchidZombieWineDisplayCondition"
+        }
+      },
+      {
+        "model": "Default",
+        "texture": "orcizombieyello2.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "OrchidZombieYellowDisplayCondition"
+        }
+      },
+      {
+        "model": "Default",
+        "texture": "orchidzombiewhite.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "OrchidZombieWhiteDisplayCondition"
+        }
+      },
+      {
+        "model": "Default",
+        "texture": "orchidzombielilac.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "OrchidZombieLilacDisplayCondition"
+        }
+      },
+      {
+        "model": "Default",
+        "texture": "orchidzombiepurple.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "OrchidZombiePurpleDisplayCondition"
+        }
+      },
+      {
+        "model": "Default",
+        "texture": "orchidzombierainbow.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "OrchidZombieRainbowDisplayCondition"
+        }
+      },
+      {
+        "model": "Default",
+        "texture": "orchidzombiestarry.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "OrchidZombieStarryDisplayCondition"
+        }
+      },
+      {
+        "model": "Default",
+        "texture": "orchidzombiestarryglow.png",
+        "disableHurtOverlay": false,
+        "glow": true,
+        "condition": {
+          "name": "OrchidZombieStarryDisplayCondition"
+        }
+      }
+    ],
+    "modelWidth": 0.6,
+    "modelHeight": 1.8,
+    "modelShadowSize": 0.7,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -14273261,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -26113,
+      "falpha": 0.0
+    },
+    "creativeTabs": [
+      {
+        "value": "MISC"
+      }
+    ],
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": ""
+    },
+    "equipmentOffHand": {
+      "value": ""
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": ""
+    },
+    "equipmentLeggings": {
+      "value": ""
+    },
+    "equipmentBoots": {
+      "value": ""
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 3,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.3,
+    "stepHeight": 0.6,
+    "armorBaseValue": 0.0,
+    "trackingRange": 64,
+    "followRange": 16,
+    "health": 15,
+    "xpAmount": 0,
+    "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
+    "pushedByFluids": {
+      "fixedValue": true
+    },
+    "flyingMob": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": false,
+    "immuneToArrows": false,
+    "immuneToFallDamage": false,
+    "immuneToCactus": true,
+    "immuneToDrowning": true,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
+    "mobDrop": {
+      "value": ""
+    },
+    "livingSound": {
+      "value": ""
+    },
+    "hurtSound": {
+      "value": "block.grass.hit"
+    },
+    "deathSound": {
+      "value": "entity.generic.death"
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "entityDataEntries": [
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "orchidcolor",
+        "type": "integer",
+        "value": 0
+      }
+    ],
+    "whenMobDies": {
+      "name": "OrchidZombieEntityDies"
+    },
+    "whenMobIsHurt": {
+      "name": "OrchidZombieEntityIsHurt"
+    },
+    "onRightClickedOn": {
+      "name": "OrchidZombieRightClickedOnEntity"
+    },
+    "onMobTickUpdate": {
+      "name": "OrchidZombieOnEntityTickUpdate"
+    },
+    "onInitialSpawn": {
+      "name": "OrchidZombieOnInitialEntitySpawn"
+    },
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">10</field><field name=\"max_distance\">2</field><field name=\"condition\">null,null</field><next><block type=\"fight_as_owner\"><field name=\"condition\">null,null</field><next><block type=\"protect_owner\"><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": true,
+    "tameable": true,
+    "breedTriggerItems": [
+      {
+        "value": "Blocks.BARRIER"
+      }
+    ],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "rangedAttackInterval": 20,
+    "rangedAttackRadius": 10.0,
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": false,
+    "spawningProbability": 20,
+    "mobSpawningType": "monster",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 4,
+    "restrictionBiomes": [],
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
+  }
+}

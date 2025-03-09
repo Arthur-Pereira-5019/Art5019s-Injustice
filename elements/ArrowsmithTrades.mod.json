@@ -1,0 +1,33 @@
+{
+  "_fv": 66,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:Cientist"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 34,
+            "price2": {
+              "value": "Items.BOOK"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:ArcherBook"
+            },
+            "countOffer": 1,
+            "level": 4,
+            "maxTrades": 10,
+            "xp": 17,
+            "priceMultiplier": 0.05
+          }
+        ]
+      }
+    ]
+  }
+}

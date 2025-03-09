@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:iridium_ingot"
+    },
+    "title": {
+      "translate": "advancements.obtain_iridium_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.obtain_iridium_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_iridium_advancement_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "art5019injustice:iridium"
+            ],
+            "count": {
+              "min": 1,
+              "max": 100
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "art5019injustice:meteorite_break_advancement"
+}

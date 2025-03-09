@@ -1,0 +1,30 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "What do you fear Mr. Wayne?",
+    "achievementDescription": "Find the flower",
+    "achievementIcon": {
+      "value": "CUSTOM:RareBlueFlower"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "ScarecrowNolanBootsRecipe",
+      "ScarecrowNolanLeggingsRecipe",
+      "ScarecrowNolanSuitRecipe",
+      "ScarecrowNolanMaskRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 4,
+    "achievementType": "goal",
+    "parent": {
+      "value": "adventure/play_jukebox_in_meadows"
+    },
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"34\" y=\"47\"/></next></block></xml>"
+  }
+}

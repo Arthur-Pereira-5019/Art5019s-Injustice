@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "title": {
+      "translate": "advancements.local_metallurgist.title"
+    },
+    "description": {
+      "translate": "advancements.local_metallurgist.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "local_metallurgist_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 3,
+    "recipes": [
+      "art5019injustice:chemistry_table_recipe",
+      "art5019injustice:syringe_recipe",
+      "art5019injustice:canister_recipe",
+      "art5019injustice:badge_recipe",
+      "art5019injustice:empty_cylinder_recipe",
+      "art5019injustice:katana_recipe",
+      "art5019injustice:microchip_recipe",
+      "art5019injustice:utility_belt_recipe",
+      "art5019injustice:signal_emitter_bats_recipe",
+      "art5019injustice:web_shooter_tier_1_recipe",
+      "art5019injustice:hook_scythe_recipe",
+      "art5019injustice:microscope_recipe",
+      "art5019injustice:gun_blue_beetle_recipe",
+      "art5019injustice:ak_47_magazine_recipe",
+      "art5019injustice:ak_47_recipe",
+      "art5019injustice:chemistry_kit_recipe"
+    ]
+  },
+  "parent": "art5019injustice:power_ranger"
+}

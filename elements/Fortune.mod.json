@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Fortune",
+    "icon": "fortune",
+    "color": {
+      "value": -16711936,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "FortuneEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "FortuneOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "FortuneEffectExpires"
+    },
+    "activeTickCondition": {
+      "name": "FortuneActiveTickCondition"
+    }
+  }
+}

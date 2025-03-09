@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "CUSTOM:BottleSulfuricAcid"
+      },
+      {
+        "value": "CUSTOM:SteelDust"
+      },
+      {
+        "value": "Blocks.TNT"
+      },
+      {
+        "value": "CUSTOM:ChemistryKit"
+      },
+      {
+        "value": "CUSTOM:UraniumBlock"
+      },
+      {
+        "value": "CUSTOM:AlcoholFlask"
+      },
+      {
+        "value": "CUSTOM:PetroleumBucket"
+      },
+      {
+        "value": "CUSTOM:EthyleneBottle"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AdvancedChemistryKit"
+    },
+    "name": "advanced_chemistry_kit_recipe",
+    "namespace": "mod"
+  }
+}

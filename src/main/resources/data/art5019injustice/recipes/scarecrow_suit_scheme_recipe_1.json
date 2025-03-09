@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:rare_blue_flower"
+    },
+    "b": {
+      "item": "minecraft:jack_o_lantern"
+    },
+    "c": {
+      "item": "minecraft:carved_pumpkin"
+    },
+    "d": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:scarecrow_suit_scheme",
+    "count": 1
+  }
+}

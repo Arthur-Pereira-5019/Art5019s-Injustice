@@ -1,0 +1,15 @@
+{
+  "type": "art5019injustice:contamination",
+  "ingredients": [
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "tag": "forge:meats"
+    }
+  ],
+  "output": {
+    "item": "minecraft:rotten_flesh",
+    "count": 1
+  }
+}

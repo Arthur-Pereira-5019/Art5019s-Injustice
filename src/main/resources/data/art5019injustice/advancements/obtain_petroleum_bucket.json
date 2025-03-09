@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:petroleum_bucket"
+    },
+    "title": {
+      "translate": "advancements.obtain_petroleum_bucket.title"
+    },
+    "description": {
+      "translate": "advancements.obtain_petroleum_bucket.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_petroleum_bucket_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "art5019injustice:deep_deep_yet_deeper"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "art5019injustice:block/mars_bricks",
+    "up": "art5019injustice:block/mars_bricks",
+    "north": "art5019injustice:block/mars_bricks",
+    "east": "art5019injustice:block/mars_bricks",
+    "south": "art5019injustice:block/mars_bricks",
+    "west": "art5019injustice:block/mars_bricks",
+    "particle": "art5019injustice:block/mars_bricks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:lightning_rod"
+    },
+    "title": {
+      "translate": "advancements.st_storm_eletromagnetical_protection.title"
+    },
+    "description": {
+      "translate": "advancements.st_storm_eletromagnetical_protection.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "st_storm_eletromagnetical_protection_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:st_storm_magnetic_shift"
+}

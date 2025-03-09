@@ -1,0 +1,9 @@
+{
+  "parent": "art5019injustice:custom/prickly_path",
+  "textures": {
+    "all": "art5019injustice:block/prickly_path",
+    "particle": "art5019injustice:block/prickly_path",
+    "0": "art5019injustice:block/prickly_path"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,19 @@
+{
+  "_fv": 66,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "contamination",
+    "result": {
+      "value": "CUSTOM:Yeast"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "Items.SWEET_BERRIES"
+      },
+      {
+        "value": "TAG:forge:sugars"
+      }
+    ]
+  }
+}

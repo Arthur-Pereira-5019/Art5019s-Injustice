@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bbb",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:sugar"
+    },
+    "b": {
+      "item": "art5019injustice:tomato"
+    },
+    "c": {
+      "item": "art5019injustice:vinegar_flask"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:ketchup_flask",
+    "count": 1
+  }
+}

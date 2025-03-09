@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:steel_ingot"
+    },
+    "b": {
+      "item": "minecraft:dispenser"
+    },
+    "c": {
+      "item": "art5019injustice:microchip"
+    },
+    "d": {
+      "item": "art5019injustice:canister"
+    },
+    "e": {
+      "item": "art5019injustice:steel_nugget"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:t_web_shooter_tier_1",
+    "count": 1
+  }
+}

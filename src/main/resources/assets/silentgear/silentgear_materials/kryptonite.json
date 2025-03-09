@@ -1,0 +1,54 @@
+{
+  "main/all": [
+    {
+      "texture": "silentgear:main_generic_hc",
+      "color": "#82ee00"
+    },
+    {
+      "texture": "silentgear:_highlight"
+    }
+  ],
+  "main/fragment": [
+    {
+      "texture": "silentgear:metal",
+      "color": "#82ee00"
+    }
+  ],
+  "tip/all": [
+    {
+      "texture": "silentgear:tip_sharp",
+      "color": "#82ee00"
+    }
+  ],
+  "tip/part": [
+    {
+      "texture": "silentgear:tip_base"
+    },
+    {
+      "texture": "silentgear:tip",
+      "color": "#82ee00"
+    },
+    {
+      "texture": "silentgear:tip_shine"
+    }
+  ],
+  "adornment/all": [
+    {
+      "texture": "silentgear:adornment_generic",
+      "color": "#82ee00"
+    },
+    {
+      "texture": "silentgear:adornment_highlight",
+      "color": "#82ee00"
+    }
+  ],
+  "adornment/part": [
+    {
+      "texture": "silentgear:adornment",
+      "color": "#82ee00"
+    },
+    {
+      "texture": "silentgear:adornment_highlight"
+    }
+  ]
+}
