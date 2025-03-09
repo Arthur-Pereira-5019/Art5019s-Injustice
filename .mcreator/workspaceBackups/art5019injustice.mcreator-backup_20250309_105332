@@ -53683,12 +53683,6 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
-    },
-    {
-      "name": "accpassword",
-      "type": "string",
-      "scope": "player_persistent",
-      "value": "\"\""
     }
   ],
   "sound_elements": [
@@ -57879,7 +57873,7 @@
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/art5019s-injustice",
     "license": "Academic Free License v3.0",
     "serverSideOnly": false,
-    "modPicture": "art5019logodefault",
+    "modPicture": "neuro_mask",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
