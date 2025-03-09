@@ -133,6 +133,7 @@ public class Art5019injusticeModVariables {
 			clone.tp_res = original.tp_res;
 			clone.tp_idop = original.tp_idop;
 			clone.gossipid = original.gossipid;
+			clone.accpassword = original.accpassword;
 			if (!event.isWasDeath()) {
 				clone.selfdestructtick = original.selfdestructtick;
 				clone.runningt = original.runningt;
@@ -382,6 +383,7 @@ public class Art5019injusticeModVariables {
 		public double tp_idop = 0;
 		public double lost_blood = 0;
 		public double gossipid = 0;
+		public String accpassword = "\"\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -456,6 +458,7 @@ public class Art5019injusticeModVariables {
 			nbt.putDouble("tp_idop", tp_idop);
 			nbt.putDouble("lost_blood", lost_blood);
 			nbt.putDouble("gossipid", gossipid);
+			nbt.putString("accpassword", accpassword);
 			return nbt;
 		}
 
@@ -527,6 +530,7 @@ public class Art5019injusticeModVariables {
 			tp_idop = nbt.getDouble("tp_idop");
 			lost_blood = nbt.getDouble("lost_blood");
 			gossipid = nbt.getDouble("gossipid");
+			accpassword = nbt.getString("accpassword");
 		}
 	}
 
@@ -617,6 +621,7 @@ public class Art5019injusticeModVariables {
 					variables.tp_idop = message.data.tp_idop;
 					variables.lost_blood = message.data.lost_blood;
 					variables.gossipid = message.data.gossipid;
+					variables.accpassword = message.data.accpassword;
 				}
 			});
 			context.setPacketHandled(true);

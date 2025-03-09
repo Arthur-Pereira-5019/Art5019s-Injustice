@@ -20,6 +20,7 @@ import net.mcreator.artinjustice.client.model.Modelqueenmaeve_chest;
 import net.mcreator.artinjustice.client.model.Modelpillagermodel;
 import net.mcreator.artinjustice.client.model.Modelmrnegativefallen;
 import net.mcreator.artinjustice.client.model.Modelkryptonite_grenade_Converted;
+import net.mcreator.artinjustice.client.model.Modelkrypto;
 import net.mcreator.artinjustice.client.model.Modeliron_spider_th;
 import net.mcreator.artinjustice.client.model.Modeliron_spider;
 import net.mcreator.artinjustice.client.model.Modelinner_demon_mask;
@@ -63,6 +64,7 @@ public class Art5019injusticeModModels {
 		event.registerLayerDefinition(Modelblackmanta_legs.LAYER_LOCATION, Modelblackmanta_legs::createBodyLayer);
 		event.registerLayerDefinition(Modelghost_spider_helmet.LAYER_LOCATION, Modelghost_spider_helmet::createBodyLayer);
 		event.registerLayerDefinition(Modelsteve.LAYER_LOCATION, Modelsteve::createBodyLayer);
+		event.registerLayerDefinition(Modelkrypto.LAYER_LOCATION, Modelkrypto::createBodyLayer);
 		event.registerLayerDefinition(Modeldomino_head.LAYER_LOCATION, Modeldomino_head::createBodyLayer);
 		event.registerLayerDefinition(Modelhazmat_helmet.LAYER_LOCATION, Modelhazmat_helmet::createBodyLayer);
 		event.registerLayerDefinition(Modeluncle_sam.LAYER_LOCATION, Modeluncle_sam::createBodyLayer);

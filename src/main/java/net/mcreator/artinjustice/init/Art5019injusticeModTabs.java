@@ -443,6 +443,7 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.MAY_PARKER_SPAWN_EGG.get());
 				tabData.accept(Art5019injusticeModItems.CHRIS_THE_MUSICIAN_SPAWN_EGG.get());
 				tabData.accept(Art5019injusticeModItems.STAN_THE_LEGEND_SPAWN_EGG.get());
+				tabData.accept(Art5019injusticeModItems.KRYPTO_THE_SUPERDOG_SPAWN_EGG.get());
 			})
 
 					.build());

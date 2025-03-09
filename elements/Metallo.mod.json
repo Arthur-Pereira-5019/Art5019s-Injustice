@@ -52,7 +52,7 @@
       {
         "model": "Default",
         "texture": "metallo_5.png",
-        "disableHurtOverlay": false,
+        "disableHurtOverlay": true,
         "glow": false,
         "condition": {
           "name": "Metallo5DisplayCondition"
@@ -61,7 +61,7 @@
       {
         "model": "Default",
         "texture": "metallo_6.png",
-        "disableHurtOverlay": false,
+        "disableHurtOverlay": true,
         "glow": false,
         "condition": {
           "name": "Metallo6DisplayCondition"
@@ -70,7 +70,7 @@
       {
         "model": "Default",
         "texture": "metallo_2_glow.png",
-        "disableHurtOverlay": false,
+        "disableHurtOverlay": true,
         "glow": true,
         "condition": {
           "name": "Metallo2DisplayCondition"
@@ -79,7 +79,7 @@
       {
         "model": "Default",
         "texture": "metallo_3_glow.png",
-        "disableHurtOverlay": false,
+        "disableHurtOverlay": true,
         "glow": true,
         "condition": {
           "name": "Metallo3DisplayCondition"
@@ -88,7 +88,7 @@
       {
         "model": "Default",
         "texture": "metallo_4_glow.png",
-        "disableHurtOverlay": false,
+        "disableHurtOverlay": true,
         "glow": true,
         "condition": {
           "name": "Metallo4DisplayCondition"
@@ -97,7 +97,7 @@
       {
         "model": "Default",
         "texture": "metallo_5_glow.png",
-        "disableHurtOverlay": false,
+        "disableHurtOverlay": true,
         "glow": true,
         "condition": {
           "name": "Metallo5DisplayCondition"
@@ -106,7 +106,7 @@
       {
         "model": "Default",
         "texture": "metallo_6_glow.png",
-        "disableHurtOverlay": false,
+        "disableHurtOverlay": true,
         "glow": true,
         "condition": {
           "name": "Metallo6DisplayCondition"

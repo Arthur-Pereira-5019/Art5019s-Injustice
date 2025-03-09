@@ -1376,6 +1376,7 @@ public class Art5019injusticeModItems {
 	public static final RegistryObject<Item> MAY_PARKER_SPAWN_EGG = REGISTRY.register("may_parker_spawn_egg", () -> new ForgeSpawnEggItem(Art5019injusticeModEntities.MAY_PARKER, -3652830, -11122130, new Item.Properties()));
 	public static final RegistryObject<Item> CHRIS_THE_MUSICIAN_SPAWN_EGG = REGISTRY.register("chris_the_musician_spawn_egg", () -> new ForgeSpawnEggItem(Art5019injusticeModEntities.CHRIS_THE_MUSICIAN, -15990646, -14019072, new Item.Properties()));
 	public static final RegistryObject<Item> STAN_THE_LEGEND_SPAWN_EGG = REGISTRY.register("stan_the_legend_spawn_egg", () -> new ForgeSpawnEggItem(Art5019injusticeModEntities.STAN_THE_LEGEND, -10203593, -3355444, new Item.Properties()));
+	public static final RegistryObject<Item> KRYPTO_THE_SUPERDOG_SPAWN_EGG = REGISTRY.register("krypto_the_superdog_spawn_egg", () -> new ForgeSpawnEggItem(Art5019injusticeModEntities.KRYPTO_THE_SUPERDOG, -1, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

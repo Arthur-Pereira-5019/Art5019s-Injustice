@@ -2,57 +2,12 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "rolls": {
-        "min": 4,
-        "max": 5
-      },
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "art5019injustice:spider_man_ag_1_helmet",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_ag_1_chestplate",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_ag_1_leggings",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_ag_1_boots",
-          "weight": 10,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -66,105 +21,7 @@
         {
           "type": "minecraft:item",
           "name": "art5019injustice:spider_man_ag_2_helmet",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_ag_2_chestplate",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_ag_2_leggings",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_ag_2_boots",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_ag_3_helmet",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_ag_3_chestplate",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_ag_3_leggings",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_ag_3_boots",
-          "weight": 10,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -178,7 +35,7 @@
         {
           "type": "minecraft:item",
           "name": "art5019injustice:spider_man_th_1_helmet",
-          "weight": 10,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -191,92 +48,8 @@
         },
         {
           "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_th_1_chestplate",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_th_1_leggings",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_th_1_boots",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_tm_1_helmet",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_tm_1_chestplate",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_tm_1_leggings",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_tm_1_boots",
-          "weight": 10,
+          "name": "art5019injustice:spider_man_ag_3_helmet",
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -290,7 +63,7 @@
         {
           "type": "minecraft:item",
           "name": "art5019injustice:spider_man_tm_2_helmet",
-          "weight": 10,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -303,36 +76,8 @@
         },
         {
           "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_tm_2_chestplate",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_tm_2_leggings",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "art5019injustice:spider_man_tm_2_boots",
-          "weight": 10,
+          "name": "art5019injustice:spider_man_tm_1_helmet",
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -346,7 +91,82 @@
         {
           "type": "minecraft:item",
           "name": "art5019injustice:ghost_spider_helmet",
-          "weight": 10,
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_ag_1_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_ag_2_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_ag_3_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_th_1_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_tm_1_chestplate",
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -360,7 +180,7 @@
         {
           "type": "minecraft:item",
           "name": "art5019injustice:ghost_spider_chestplate",
-          "weight": 10,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -373,8 +193,130 @@
         },
         {
           "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_tm_2_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
           "name": "art5019injustice:ghost_spider_leggings",
-          "weight": 10,
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_tm_2_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_tm_1_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_th_1_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_ag_3_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_ag_2_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_ag_1_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_tm_2_boots",
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -388,7 +330,7 @@
         {
           "type": "minecraft:item",
           "name": "art5019injustice:ghost_spider_boots",
-          "weight": 10,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -401,21 +343,63 @@
         },
         {
           "type": "minecraft:item",
-          "name": "art5019injustice:web_cylinder",
-          "weight": 5,
+          "name": "art5019injustice:spider_man_tm_1_boots",
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
               "count": {
                 "min": 1,
-                "max": 3
+                "max": 1
               }
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "art5019injustice:t_web_shooter_tier_1",
+          "name": "art5019injustice:spider_man_th_1_boots",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_ag_3_boots",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_ag_2_boots",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:spider_man_ag_1_boots",
           "weight": 1,
           "functions": [
             {

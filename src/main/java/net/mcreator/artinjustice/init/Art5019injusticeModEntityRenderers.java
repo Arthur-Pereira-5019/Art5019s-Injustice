@@ -42,6 +42,7 @@ import net.mcreator.artinjustice.client.renderer.LokiCloneRenderer;
 import net.mcreator.artinjustice.client.renderer.LokiBossRenderer;
 import net.mcreator.artinjustice.client.renderer.KryptoniteSilverfishRenderer;
 import net.mcreator.artinjustice.client.renderer.KryptoniteGrenadeThrownRenderer;
+import net.mcreator.artinjustice.client.renderer.KryptoTheSuperdogRenderer;
 import net.mcreator.artinjustice.client.renderer.KaleTheCaretakerRenderer;
 import net.mcreator.artinjustice.client.renderer.HydraSoldierRenderer;
 import net.mcreator.artinjustice.client.renderer.HydraSniperRenderer;
@@ -141,5 +142,6 @@ public class Art5019injusticeModEntityRenderers {
 		event.registerEntityRenderer(Art5019injusticeModEntities.MAY_PARKER.get(), MayParkerRenderer::new);
 		event.registerEntityRenderer(Art5019injusticeModEntities.CHRIS_THE_MUSICIAN.get(), ChrisTheMusicianRenderer::new);
 		event.registerEntityRenderer(Art5019injusticeModEntities.STAN_THE_LEGEND.get(), StanTheLegendRenderer::new);
+		event.registerEntityRenderer(Art5019injusticeModEntities.KRYPTO_THE_SUPERDOG.get(), KryptoTheSuperdogRenderer::new);
 	}
 }

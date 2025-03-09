@@ -72,6 +72,7 @@ import net.mcreator.artinjustice.entity.KryptoniteSilverfishEntity;
 import net.mcreator.artinjustice.entity.KryptonitePistolProjectileMobsEntity;
 import net.mcreator.artinjustice.entity.KryptonitePistolProjectileEntity;
 import net.mcreator.artinjustice.entity.KryptoniteGrenadeThrownEntity;
+import net.mcreator.artinjustice.entity.KryptoTheSuperdogEntity;
 import net.mcreator.artinjustice.entity.KetchupShotProjectileEntity;
 import net.mcreator.artinjustice.entity.KaleTheCaretakerEntity;
 import net.mcreator.artinjustice.entity.InstaKillShootProjectileEntity;
@@ -333,6 +334,8 @@ public class Art5019injusticeModEntities {
 			EntityType.Builder.<StanTheLegendEntity>of(StanTheLegendEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StanTheLegendEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<KryptoTheSuperdogEntity>> KRYPTO_THE_SUPERDOG = register("krypto_the_superdog", EntityType.Builder.<KryptoTheSuperdogEntity>of(KryptoTheSuperdogEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KryptoTheSuperdogEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -383,6 +386,7 @@ public class Art5019injusticeModEntities {
 			MayParkerEntity.init();
 			ChrisTheMusicianEntity.init();
 			StanTheLegendEntity.init();
+			KryptoTheSuperdogEntity.init();
 		});
 	}
 
@@ -430,5 +434,6 @@ public class Art5019injusticeModEntities {
 		event.put(MAY_PARKER.get(), MayParkerEntity.createAttributes().build());
 		event.put(CHRIS_THE_MUSICIAN.get(), ChrisTheMusicianEntity.createAttributes().build());
 		event.put(STAN_THE_LEGEND.get(), StanTheLegendEntity.createAttributes().build());
+		event.put(KRYPTO_THE_SUPERDOG.get(), KryptoTheSuperdogEntity.createAttributes().build());
 	}
 }

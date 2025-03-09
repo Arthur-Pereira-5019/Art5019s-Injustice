@@ -3,6 +3,7 @@ package net.mcreator.artinjustice.client.renderer;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.renderer.entity.layers.RenderLayer;
 import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;
 import net.minecraft.client.renderer.entity.LivingEntityRenderer;
@@ -83,7 +84,7 @@ public class MetalloRenderer extends HumanoidMobRenderer<MetalloEntity, Humanoid
 				double z = entity.getZ();
 				if (Metallo5DisplayConditionProcedure.execute(entity)) {
 					VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.entityCutoutNoCull(LAYER_TEXTURE));
-					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
 				}
 			}
 		});
@@ -98,7 +99,7 @@ public class MetalloRenderer extends HumanoidMobRenderer<MetalloEntity, Humanoid
 				double z = entity.getZ();
 				if (Metallo6DisplayConditionProcedure.execute(entity)) {
 					VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.entityCutoutNoCull(LAYER_TEXTURE));
-					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
 				}
 			}
 		});
@@ -113,7 +114,7 @@ public class MetalloRenderer extends HumanoidMobRenderer<MetalloEntity, Humanoid
 				double z = entity.getZ();
 				if (Metallo2DisplayConditionProcedure.execute(entity)) {
 					VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
 				}
 			}
 		});
@@ -128,7 +129,7 @@ public class MetalloRenderer extends HumanoidMobRenderer<MetalloEntity, Humanoid
 				double z = entity.getZ();
 				if (Metallo3DisplayConditionProcedure.execute(entity)) {
 					VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
 				}
 			}
 		});
@@ -143,7 +144,7 @@ public class MetalloRenderer extends HumanoidMobRenderer<MetalloEntity, Humanoid
 				double z = entity.getZ();
 				if (Metallo4DisplayConditionProcedure.execute(entity)) {
 					VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
 				}
 			}
 		});
@@ -158,7 +159,7 @@ public class MetalloRenderer extends HumanoidMobRenderer<MetalloEntity, Humanoid
 				double z = entity.getZ();
 				if (Metallo5DisplayConditionProcedure.execute(entity)) {
 					VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
 				}
 			}
 		});
@@ -173,7 +174,7 @@ public class MetalloRenderer extends HumanoidMobRenderer<MetalloEntity, Humanoid
 				double z = entity.getZ();
 				if (Metallo6DisplayConditionProcedure.execute(entity)) {
 					VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
 				}
 			}
 		});
