@@ -23,6 +23,15 @@ public class Ability6pProcedure {
 					});
 				}
 			}
+		} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 23) {
+			KryptonianUpdateProcedure.execute(entity);
+			{
+				double _setval = 300;
+				entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.ability6cooldown = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 }

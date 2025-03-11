@@ -271,6 +271,7 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.PENICILLIN.get());
 				tabData.accept(Art5019injusticeModItems.STEEL_ROD.get());
 				tabData.accept(Art5019injusticeModItems.ACTIVATED_CHARCOAL.get());
+				tabData.accept(Art5019injusticeModItems.RED_KRYPTONITE.get());
 			})
 
 					.build());

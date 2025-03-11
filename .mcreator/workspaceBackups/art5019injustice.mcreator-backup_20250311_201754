@@ -53261,6 +53261,132 @@
         ]
       },
       "path": "~/SpiderMan/Symbiotes/AntiVenom/MartinLiFeast/FeastNPCs"
+    },
+    {
+      "name": "KryptoTheSuperdog",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "krypto_the_superdog",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/client/renderer/KryptoTheSuperdogRenderer.java",
+          "src/main/java/net/mcreator/artinjustice/entity/KryptoTheSuperdogEntity.java",
+          "src/main/resources/assets/art5019injustice/models/item/krypto_the_superdog_spawn_egg.json"
+        ]
+      },
+      "path": "~/Kryptonian/Krypto"
+    },
+    {
+      "name": "IfKryptoHasCollar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "if_krypto_has_collar",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/IfKryptoHasCollarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/Krypto"
+    },
+    {
+      "name": "NotHasCollar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "not_has_collar",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/NotHasCollarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/Krypto"
+    },
+    {
+      "name": "AttributeAdder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attribute_adder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/AttributeAdderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "context",
+            "type": "number"
+          },
+          {
+            "name": "amount",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "operation",
+            "type": "string"
+          },
+          {
+            "name": "uuid",
+            "type": "string"
+          }
+        ]
+      },
+      "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "KryptoTheSuperdogOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "krypto_the_superdog_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/KryptoTheSuperdogOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RedKryptonite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_kryptonite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/red_kryptonite.json",
+          "src/main/java/net/mcreator/artinjustice/item/RedKryptoniteItem.java"
+        ]
+      },
+      "path": "~/Kryptonian/Kryptonite"
     }
   ],
   "variable_elements": [
@@ -55161,6 +55287,7 @@
       "advancements.st_neuro_trauma_overcoming.descr": "§ePassive - After dealing with more than the avarage human mind can handle, you became immune to the Fear Effect. Requires Level 5",
       "item.art5019injustice.water_syringe": "Syringe",
       "advancements.alignment_menace.title": "Menace",
+      "item.art5019injustice.red_kryptonite": "Golden Kryptonite",
       "advancements.st_quicksilver_speed_down.descr": "§eAbility 1- When Sneaking, lowers your speed levels",
       "gui.art5019injustice.suittablegui.label_suit": "Suit",
       "advancements.defeat_stormfront.descr": "Only one more to go...",
@@ -57100,6 +57227,7 @@
       "advancements.dont_do_that_at_home.descr": "Put yourself in danger by injecting contamined blood. Please don\u0027t that at home.",
       "item.art5019injustice.filter": "Filter",
       "item.art5019injustice.black_noir_helmet": "Black Noir Helmet",
+      "entity.art5019injustice.krypto_the_superdog": "Krypto",
       "advancements.the_heartofthe_matter.title": "The Heart of the Matter",
       "advancements.infinity_stones_tesseract.title": "§1Tesseract",
       "gui.art5019injustice.tesseract_gui.X": "X:",
@@ -57127,6 +57255,7 @@
       "advancements.st_neuro_fighting_skill.title": "§fFighting Skill I",
       "item.art5019injustice.signal_emitter_bats": "Signal Emitter",
       "death.attack.bleed": "%1$s bled to death",
+      "item.art5019injustice.krypto_the_superdog_spawn_egg": "Krypto Spawn Egg",
       "item.art5019injustice.formula_antimony_trichloride": "Formula",
       "gui.art5019injustice.influence_menu_vought_executive.button_buy": "Buy",
       "advancements.translucent_st_base.descr": "§6Supe",
