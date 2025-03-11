@@ -53426,6 +53426,25 @@
         ]
       },
       "path": "~/Kryptonian/Kryptonite"
+    },
+    {
+      "name": "KryptoTheSuperdogEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "krypto_the_superdog_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/KryptoTheSuperdogEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/Krypto"
     }
   ],
   "variable_elements": [

@@ -38,6 +38,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.artinjustice.procedures.KryptoTheSuperdogOnInitialEntitySpawnProcedure;
+import net.mcreator.artinjustice.procedures.KryptoTheSuperdogEntityIsHurtProcedure;
 import net.mcreator.artinjustice.procedures.IfKryptoHasCollarProcedure;
 import net.mcreator.artinjustice.init.Art5019injusticeModEntities;
 
@@ -121,6 +122,15 @@ public class KryptoTheSuperdogEntity extends Wolf {
 
 	@Override
 	public boolean hurt(DamageSource damagesource, float amount) {
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Level world = this.level();
+		Entity entity = this;
+		Entity sourceentity = damagesource.getEntity();
+		Entity immediatesourceentity = damagesource.getDirectEntity();
+
+		KryptoTheSuperdogEntityIsHurtProcedure.execute(entity);
 		if (damagesource.is(DamageTypes.IN_FIRE))
 			return false;
 		return super.hurt(damagesource, amount);
