@@ -152,6 +152,20 @@
         "name": "hascollar",
         "type": "logic",
         "value": true
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "attack",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "attackticks",
+        "type": "integer",
+        "value": 0
       }
     ],
     "whenMobIsHurt": {

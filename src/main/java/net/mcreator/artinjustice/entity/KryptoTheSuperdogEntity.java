@@ -52,6 +52,8 @@ import javax.annotation.Nullable;
 
 public class KryptoTheSuperdogEntity extends Wolf {
 	public static final EntityDataAccessor<Boolean> DATA_hascollar = SynchedEntityData.defineId(KryptoTheSuperdogEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<Integer> DATA_attack = SynchedEntityData.defineId(KryptoTheSuperdogEntity.class, EntityDataSerializers.INT);
+	public static final EntityDataAccessor<Integer> DATA_attackticks = SynchedEntityData.defineId(KryptoTheSuperdogEntity.class, EntityDataSerializers.INT);
 
 	public KryptoTheSuperdogEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(Art5019injusticeModEntities.KRYPTO_THE_SUPERDOG.get(), world);
@@ -73,6 +75,8 @@ public class KryptoTheSuperdogEntity extends Wolf {
 	protected void defineSynchedData() {
 		super.defineSynchedData();
 		this.entityData.define(DATA_hascollar, true);
+		this.entityData.define(DATA_attack, 0);
+		this.entityData.define(DATA_attackticks, 0);
 	}
 
 	@Override
@@ -136,7 +140,7 @@ public class KryptoTheSuperdogEntity extends Wolf {
 		Entity sourceentity = damagesource.getEntity();
 		Entity immediatesourceentity = damagesource.getDirectEntity();
 
-		KryptoTheSuperdogEntityIsHurtProcedure.execute(entity);
+		KryptoTheSuperdogEntityIsHurtProcedure.execute(world, x, y, z, entity);
 		if (damagesource.is(DamageTypes.IN_FIRE))
 			return false;
 		return super.hurt(damagesource, amount);
@@ -158,6 +162,8 @@ public class KryptoTheSuperdogEntity extends Wolf {
 	public void addAdditionalSaveData(CompoundTag compound) {
 		super.addAdditionalSaveData(compound);
 		compound.putBoolean("Datahascollar", this.entityData.get(DATA_hascollar));
+		compound.putInt("Dataattack", this.entityData.get(DATA_attack));
+		compound.putInt("Dataattackticks", this.entityData.get(DATA_attackticks));
 	}
 
 	@Override
@@ -165,6 +171,10 @@ public class KryptoTheSuperdogEntity extends Wolf {
 		super.readAdditionalSaveData(compound);
 		if (compound.contains("Datahascollar"))
 			this.entityData.set(DATA_hascollar, compound.getBoolean("Datahascollar"));
+		if (compound.contains("Dataattack"))
+			this.entityData.set(DATA_attack, compound.getInt("Dataattack"));
+		if (compound.contains("Dataattackticks"))
+			this.entityData.set(DATA_attackticks, compound.getInt("Dataattackticks"));
 	}
 
 	@Override

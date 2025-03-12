@@ -53479,6 +53479,26 @@
           }
         ]
       }
+    },
+    {
+      "name": "KryptoTheSuperdogRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "krypto_the_superdog_right_clicked_on_entity",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/KryptoTheSuperdogRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/Krypto"
     }
   ],
   "variable_elements": [
