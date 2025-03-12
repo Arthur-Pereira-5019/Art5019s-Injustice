@@ -8,6 +8,8 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.animal.Wolf;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
@@ -26,6 +28,8 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
@@ -37,7 +41,9 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.artinjustice.procedures.KryptoTheSuperdogRightClickedOnEntityProcedure;
 import net.mcreator.artinjustice.procedures.KryptoTheSuperdogOnInitialEntitySpawnProcedure;
+import net.mcreator.artinjustice.procedures.KryptoTheSuperdogOnEntityTickUpdateProcedure;
 import net.mcreator.artinjustice.procedures.KryptoTheSuperdogEntityIsHurtProcedure;
 import net.mcreator.artinjustice.procedures.IfKryptoHasCollarProcedure;
 import net.mcreator.artinjustice.init.Art5019injusticeModEntities;
@@ -161,6 +167,25 @@ public class KryptoTheSuperdogEntity extends Wolf {
 			this.entityData.set(DATA_hascollar, compound.getBoolean("Datahascollar"));
 	}
 
+	@Override
+	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
+		ItemStack itemstack = sourceentity.getItemInHand(hand);
+		InteractionResult retval = InteractionResult.sidedSuccess(this.level().isClientSide());
+		super.mobInteract(sourceentity, hand);
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity entity = this;
+		Level world = this.level();
+		return KryptoTheSuperdogRightClickedOnEntityProcedure.execute(entity);
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		KryptoTheSuperdogOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+	}
+
 	public static void init() {
 	}
 
@@ -169,7 +194,7 @@ public class KryptoTheSuperdogEntity extends Wolf {
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
 		builder = builder.add(Attributes.MAX_HEALTH, 200);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 6);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 8);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 64);
 		return builder;
 	}

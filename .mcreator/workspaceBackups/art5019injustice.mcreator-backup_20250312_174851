@@ -53316,6 +53316,157 @@
         ]
       },
       "path": "~/Kryptonian/Krypto"
+    },
+    {
+      "name": "AttributeAdder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attribute_adder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/AttributeAdderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "context",
+            "type": "number"
+          },
+          {
+            "name": "amount",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "operation",
+            "type": "string"
+          },
+          {
+            "name": "uuid",
+            "type": "string"
+          }
+        ]
+      },
+      "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "KryptoTheSuperdogOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "krypto_the_superdog_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/KryptoTheSuperdogOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RedKryptonite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_kryptonite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/red_kryptonite.json",
+          "src/main/java/net/mcreator/artinjustice/item/RedKryptoniteItem.java"
+        ]
+      },
+      "path": "~/Kryptonian/Kryptonite"
+    },
+    {
+      "name": "RedKryptoniteItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_kryptonite_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/RedKryptoniteItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/Kryptonite"
+    },
+    {
+      "name": "KryptoTheSuperdogEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "krypto_the_superdog_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/KryptoTheSuperdogEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/Krypto"
+    },
+    {
+      "name": "KryptoTheSuperdogOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "krypto_the_superdog_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/KryptoTheSuperdogOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -55216,6 +55367,7 @@
       "advancements.st_neuro_trauma_overcoming.descr": "§ePassive - After dealing with more than the avarage human mind can handle, you became immune to the Fear Effect. Requires Level 5",
       "item.art5019injustice.water_syringe": "Syringe",
       "advancements.alignment_menace.title": "Menace",
+      "item.art5019injustice.red_kryptonite": "Golden Kryptonite",
       "advancements.st_quicksilver_speed_down.descr": "§eAbility 1- When Sneaking, lowers your speed levels",
       "gui.art5019injustice.suittablegui.label_suit": "Suit",
       "advancements.defeat_stormfront.descr": "Only one more to go...",
@@ -55272,8 +55424,8 @@
       "item.art5019injustice.spider_man_ag_2_leggings": "The Amazing Spider-Man Leggings",
       "gui.art5019injustice.petri_table_gui.tooltip_cologne": "Cologne",
       "advancements.vpst_spider_organic_webbing.title": "Alien Webbing",
-      "advancements.storm_when_hell_freezes_over.title": "When Hell freezes over",
       "item.art5019injustice.antimony_trichloride": "Antimony Trichloride",
+      "advancements.storm_when_hell_freezes_over.title": "When Hell freezes over",
       "advancements.st_deadpool_imortality.title": "§eType 3 Immortality",
       "item.art5019injustice.flare": "Flare",
       "item.art5019injustice.hazmat_boots": "Hazmat Boots",
