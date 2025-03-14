@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:SpiderManAG2.legs"
+      "value": "CUSTOM:GhostSpider.legs"
     },
     "name": "ghost_spider_leggings_recipe",
     "namespace": "mod"

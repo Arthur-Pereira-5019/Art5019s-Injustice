@@ -34,9 +34,9 @@ public class CaptainCarterShieldEntitySwingsItemProcedure {
 							entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 							return entityToSpawn;
 						}
-					}.getArrow(projectileLevel, entity, 3, 1);
+					}.getArrow(projectileLevel, entity, 4, 1);
 					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, (float) 2.5, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
 				}
 			}

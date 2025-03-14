@@ -84,7 +84,7 @@ public class CaptainCarterShieldThrownProjectileEntity extends AbstractArrow imp
 	@Override
 	public void tick() {
 		super.tick();
-		CaptainCarterShieldThrownProjectileWhileProjectileFlyingTickProcedure.execute(this);
+		CaptainCarterShieldThrownProjectileWhileProjectileFlyingTickProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 		if (this.inGround)
 			this.discard();
 	}

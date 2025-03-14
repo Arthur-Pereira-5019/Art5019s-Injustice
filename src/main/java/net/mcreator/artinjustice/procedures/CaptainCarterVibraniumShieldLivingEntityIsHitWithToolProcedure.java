@@ -13,7 +13,7 @@ public class CaptainCarterVibraniumShieldLivingEntityIsHitWithToolProcedure {
 		if (entity == null)
 			return;
 		Art5019injusticeMod.queueServerWork(2, () -> {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK)), 4);
+			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK)), 7);
 		});
 	}
 }

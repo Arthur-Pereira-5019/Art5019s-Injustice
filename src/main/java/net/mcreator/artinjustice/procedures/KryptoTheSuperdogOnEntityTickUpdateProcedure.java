@@ -31,7 +31,7 @@ public class KryptoTheSuperdogOnEntityTickUpdateProcedure {
 		if (entity == null)
 			return;
 		if (!world.isClientSide()) {
-			if (Math.random() < 0.0075) {
+			if (Math.random() < 0.009) {
 				if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) {
 					if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY() - entity.getY() > 5) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -41,31 +41,33 @@ public class KryptoTheSuperdogOnEntityTickUpdateProcedure {
 								_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.DASHING.get(), 2, 0, false, false));
 						}
 					} else {
-						if (Math.random() < 0.25) {
+						if ((entity instanceof KryptoTheSuperdogEntity _datEntI ? _datEntI.getEntityData().get(KryptoTheSuperdogEntity.DATA_attackticks) : 0) < 0) {
 							if (Math.random() < 0.25) {
-								if (entity instanceof KryptoTheSuperdogEntity _datEntSetI)
-									_datEntSetI.getEntityData().set(KryptoTheSuperdogEntity.DATA_attackticks, 200);
-								if (entity instanceof KryptoTheSuperdogEntity _datEntSetI)
-									_datEntSetI.getEntityData().set(KryptoTheSuperdogEntity.DATA_attack, 2);
-								if (world instanceof Level _level) {
-									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("art5019injustice:entity.generic.laser")), SoundSource.HOSTILE, 1, 0);
-									} else {
-										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("art5019injustice:entity.generic.laser")), SoundSource.HOSTILE, 1, 0, false);
+								if (Math.random() < 0.25) {
+									if (entity instanceof KryptoTheSuperdogEntity _datEntSetI)
+										_datEntSetI.getEntityData().set(KryptoTheSuperdogEntity.DATA_attackticks, 200);
+									if (entity instanceof KryptoTheSuperdogEntity _datEntSetI)
+										_datEntSetI.getEntityData().set(KryptoTheSuperdogEntity.DATA_attack, 2);
+									if (world instanceof Level _level) {
+										if (!_level.isClientSide()) {
+											_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("art5019injustice:entity.generic.laser")), SoundSource.HOSTILE, 1, 0);
+										} else {
+											_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("art5019injustice:entity.generic.laser")), SoundSource.HOSTILE, 1, 0, false);
+										}
 									}
-								}
-							} else {
-								if (world instanceof Level _level) {
-									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.wolf.howl")), SoundSource.HOSTILE, 2, 0);
-									} else {
-										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.wolf.howl")), SoundSource.HOSTILE, 2, 0, false);
+								} else {
+									if (world instanceof Level _level) {
+										if (!_level.isClientSide()) {
+											_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.wolf.howl")), SoundSource.HOSTILE, 2, 0);
+										} else {
+											_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.wolf.howl")), SoundSource.HOSTILE, 2, 0, false);
+										}
 									}
+									if (entity instanceof KryptoTheSuperdogEntity _datEntSetI)
+										_datEntSetI.getEntityData().set(KryptoTheSuperdogEntity.DATA_attack, 1);
+									if (entity instanceof KryptoTheSuperdogEntity _datEntSetI)
+										_datEntSetI.getEntityData().set(KryptoTheSuperdogEntity.DATA_attackticks, 120);
 								}
-								if (entity instanceof KryptoTheSuperdogEntity _datEntSetI)
-									_datEntSetI.getEntityData().set(KryptoTheSuperdogEntity.DATA_attack, 1);
-								if (entity instanceof KryptoTheSuperdogEntity _datEntSetI)
-									_datEntSetI.getEntityData().set(KryptoTheSuperdogEntity.DATA_attackticks, 120);
 							}
 						}
 					}
