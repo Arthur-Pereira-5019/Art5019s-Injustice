@@ -111,11 +111,6 @@ public class KryptoTheSuperdogEntity extends Wolf {
 	}
 
 	@Override
-	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.wolf.ambient"));
-	}
-
-	@Override
 	public void playStepSound(BlockPos pos, BlockState blockIn) {
 		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.wolf.step")), 0.15f, 1);
 	}
@@ -140,8 +135,10 @@ public class KryptoTheSuperdogEntity extends Wolf {
 		Entity sourceentity = damagesource.getEntity();
 		Entity immediatesourceentity = damagesource.getDirectEntity();
 
-		KryptoTheSuperdogEntityIsHurtProcedure.execute(world, x, y, z, entity);
+		KryptoTheSuperdogEntityIsHurtProcedure.execute(world, x, y, z, entity, sourceentity);
 		if (damagesource.is(DamageTypes.IN_FIRE))
+			return false;
+		if (damagesource.is(DamageTypes.FALL))
 			return false;
 		return super.hurt(damagesource, amount);
 	}

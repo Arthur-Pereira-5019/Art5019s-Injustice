@@ -31,28 +31,35 @@ public class KryptoTheSuperdogOnEntityTickUpdateProcedure {
 		if (entity == null)
 			return;
 		if (!world.isClientSide()) {
-			if (Math.random() < 0.009) {
+			if (Math.random() < 0.01) {
 				if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.wolf.growl")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.wolf.growl")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
 					if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY() - entity.getY() > 5) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 120, 0, false, false));
-						if (Math.random() < 0.25) {
+							_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 100, 1, false, false));
+						if (Math.random() < 0.3) {
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.DASHING.get(), 2, 0, false, false));
 						}
 					} else {
 						if ((entity instanceof KryptoTheSuperdogEntity _datEntI ? _datEntI.getEntityData().get(KryptoTheSuperdogEntity.DATA_attackticks) : 0) < 0) {
-							if (Math.random() < 0.25) {
-								if (Math.random() < 0.25) {
+							if (Math.random() < 0.1) {
+								if (Math.random() < 0.3) {
 									if (entity instanceof KryptoTheSuperdogEntity _datEntSetI)
 										_datEntSetI.getEntityData().set(KryptoTheSuperdogEntity.DATA_attackticks, 200);
 									if (entity instanceof KryptoTheSuperdogEntity _datEntSetI)
 										_datEntSetI.getEntityData().set(KryptoTheSuperdogEntity.DATA_attack, 2);
 									if (world instanceof Level _level) {
 										if (!_level.isClientSide()) {
-											_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("art5019injustice:entity.generic.laser")), SoundSource.HOSTILE, 1, 0);
+											_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("art5019injustice:entity.generic.laser")), SoundSource.HOSTILE, 2, 1);
 										} else {
-											_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("art5019injustice:entity.generic.laser")), SoundSource.HOSTILE, 1, 0, false);
+											_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("art5019injustice:entity.generic.laser")), SoundSource.HOSTILE, 2, 1, false);
 										}
 									}
 								} else {
@@ -69,6 +76,14 @@ public class KryptoTheSuperdogOnEntityTickUpdateProcedure {
 										_datEntSetI.getEntityData().set(KryptoTheSuperdogEntity.DATA_attackticks, 120);
 								}
 							}
+						}
+					}
+				} else {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.wolf.ambient")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.wolf.ambient")), SoundSource.NEUTRAL, 1, 1, false);
 						}
 					}
 				}

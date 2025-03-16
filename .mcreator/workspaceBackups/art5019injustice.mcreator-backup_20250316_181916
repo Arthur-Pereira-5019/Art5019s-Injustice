@@ -41092,6 +41092,22 @@
           {
             "name": "immediatesourceentity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -53430,7 +53446,7 @@
     {
       "name": "KryptoTheSuperdogEntityIsHurt",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "krypto_the_superdog_entity_is_hurt",
       "metadata": {

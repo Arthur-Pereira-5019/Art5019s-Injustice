@@ -118,7 +118,7 @@
     "canControlStrafe": false,
     "immuneToFire": true,
     "immuneToArrows": false,
-    "immuneToFallDamage": false,
+    "immuneToFallDamage": true,
     "immuneToCactus": false,
     "immuneToDrowning": false,
     "immuneToLightning": false,
@@ -133,7 +133,7 @@
       "value": ""
     },
     "livingSound": {
-      "value": "entity.wolf.ambient"
+      "value": ""
     },
     "hurtSound": {
       "value": "entity.wolf.hurt"
