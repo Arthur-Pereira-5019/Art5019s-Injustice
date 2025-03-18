@@ -53542,7 +53542,7 @@
     {
       "name": "KryptoSitting",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "krypto_sitting",
       "metadata": {

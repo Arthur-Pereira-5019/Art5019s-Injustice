@@ -34,12 +34,10 @@ public class KryptoTheSuperdogEntityIsHurtProcedure {
 			if (entity instanceof KryptoTheSuperdogEntity _datEntSetL)
 				_datEntSetL.getEntityData().set(KryptoTheSuperdogEntity.DATA_hascollar, false);
 			if (entity instanceof NeutralMob _entity) {
-				_entity.forgetCurrentTargetAndRefreshUniversalAnger();
 				_entity.stopBeingAngry();
 				_entity.setLastHurtByMob(null);
 				_entity.setLastHurtByPlayer(null);
 				_entity.setTarget(null);
-				_entity.setPersistentAngerTarget(null);
 			}
 			if (entity instanceof LivingEntity _entity) {
 				_entity.getBrain().eraseMemory(MemoryModuleType.ANGRY_AT);
