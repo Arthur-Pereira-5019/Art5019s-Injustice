@@ -11,6 +11,7 @@ import net.minecraft.world.entity.ai.memory.MemoryModuleType;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.TamableAnimal;
+import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.NeutralMob;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
@@ -49,12 +50,16 @@ public class KryptoTheSuperdogEntityIsHurtProcedure {
 				_entity.targetSelector.getAvailableGoals().removeIf(goal -> goal.getGoal() instanceof NearestAttackableTargetGoal || goal.getGoal() instanceof HurtByTargetGoal);
 			}
 			Art5019injusticeMod.queueServerWork(5, () -> {
-				if (entity instanceof Mob _entity) {
-					_entity.targetSelector.addGoal(3, new HurtByTargetGoal(this));
+				if (entity instanceof PathfinderMob _entity) {
+					_entity.targetSelector.addGoal(3, new HurtByTargetGoal(_entity));
 				}
 			});
+			if (entity instanceof LivingEntity _entity)
+				_entity.setHealth(entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1);
 			if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
 				_toTame.tame(_owner);
+			if (entity instanceof LivingEntity _entity)
+				_entity.setHealth(entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1);
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Art5019injusticeModItems.RED_KRYPTONITE.get()));
 				entityToSpawn.setPickUpDelay(10);

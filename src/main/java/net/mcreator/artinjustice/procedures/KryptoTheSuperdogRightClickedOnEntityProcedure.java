@@ -1,18 +1,22 @@
 package net.mcreator.artinjustice.procedures;
 
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.InteractionResult;
 
 public class KryptoTheSuperdogRightClickedOnEntityProcedure {
-	public static InteractionResult execute(Entity entity) {
-		if (entity == null)
-			return InteractionResult.PASS;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BONE) {
-			return InteractionResult.FAIL;
+	public static void execute(Entity entity, Entity sourceentity) {
+		if (entity == null || sourceentity == null)
+			return;
+		if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) == sourceentity) {
+			if (entity instanceof TamableAnimal _entity) {
+				if (_entity.isInSittingPose() == false) {
+					_entity.setOrderedToSit(true);
+					_entity.setInSittingPose(true);
+				} else {
+					_entity.setOrderedToSit(false);
+					_entity.setInSittingPose(false);
+				}
+			}
 		}
-		return InteractionResult.PASS;
 	}
 }

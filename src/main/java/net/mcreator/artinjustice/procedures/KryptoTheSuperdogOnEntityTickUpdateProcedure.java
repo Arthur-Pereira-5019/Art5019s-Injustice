@@ -87,6 +87,7 @@ public class KryptoTheSuperdogOnEntityTickUpdateProcedure {
 						}
 					}
 				}
+				KryptoSittingProcedure.execute(entity);
 			}
 		}
 		if ((entity instanceof KryptoTheSuperdogEntity _datEntI ? _datEntI.getEntityData().get(KryptoTheSuperdogEntity.DATA_attackticks) : 0) >= 1) {

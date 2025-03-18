@@ -335,7 +335,7 @@ public class Art5019injusticeModEntities {
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<KryptoTheSuperdogEntity>> KRYPTO_THE_SUPERDOG = register("krypto_the_superdog", EntityType.Builder.<KryptoTheSuperdogEntity>of(KryptoTheSuperdogEntity::new, MobCategory.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KryptoTheSuperdogEntity::new).fireImmune().sized(0.6f, 1.8f));
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KryptoTheSuperdogEntity::new).fireImmune().sized(1f, 1f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Krypto",
     "mobLabel": "",
-    "mobModelName": "Modelkrypto",
+    "mobModelName": "Modelemptymodel",
     "mobModelTexture": "wolf.png",
     "transparentModelCondition": {
       "fixedValue": false
@@ -23,35 +23,44 @@
     },
     "modelLayers": [
       {
-        "model": "Default",
+        "model": "Modelkrypto",
         "texture": "wolf.png",
         "disableHurtOverlay": false,
         "glow": false,
         "condition": {
-          "name": "NotHasCollar"
+          "name": "KryptoRender1Condition"
         }
       },
       {
-        "model": "Default",
+        "model": "Modelkrypto",
         "texture": "kryptonitecollar.png",
         "disableHurtOverlay": false,
         "glow": false,
         "condition": {
-          "name": "IfKryptoHasCollar"
+          "name": "KryptoRender2Condition"
         }
       },
       {
-        "model": "Default",
+        "model": "Modelkrypto",
         "texture": "kryptonite_collar_glow.png",
         "disableHurtOverlay": false,
         "glow": true,
         "condition": {
-          "name": "IfKryptoHasCollar"
+          "name": "KryptoRender2Condition"
+        }
+      },
+      {
+        "model": "Modelsittingkrypto",
+        "texture": "wolf.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "KryptoRender3Condition"
         }
       }
     ],
-    "modelWidth": 0.6,
-    "modelHeight": 1.8,
+    "modelWidth": 1.0,
+    "modelHeight": 1.0,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
@@ -96,10 +105,10 @@
     "knockbackResistance": 0.0,
     "movementSpeed": 0.4,
     "stepHeight": 0.6,
-    "armorBaseValue": 0.0,
+    "armorBaseValue": 8.0,
     "trackingRange": 64,
     "followRange": 64,
-    "health": 200,
+    "health": 400,
     "xpAmount": 0,
     "waterMob": false,
     "breatheUnderwater": {
