@@ -9,6 +9,9 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.Screen;
 
@@ -23,15 +26,15 @@ public class OnTooltipRenderingProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
-		execute(event, event.getItemStack(), event.getToolTip());
+		execute(event, event.getEntity(), event.getItemStack(), event.getToolTip());
 	}
 
-	public static void execute(ItemStack itemstack, List<Component> tooltip) {
-		execute(null, itemstack, tooltip);
+	public static void execute(Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		execute(null, entity, itemstack, tooltip);
 	}
 
-	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
-		if (tooltip == null)
+	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		if (entity == null || tooltip == null)
 			return;
 		String upgrade = "";
 		String upgrade2 = "";
@@ -78,6 +81,8 @@ public class OnTooltipRenderingProcedure {
 			} else {
 				tooltip.add(Component.literal("\u00A77Press Shift to see Fingerprint details. "));
 			}
+		} else if (itemstack.is(ItemTags.create(new ResourceLocation("art5019injustice:can_be_smashed"))) && CanSmashItemsProcedure.execute(entity)) {
+			tooltip.add(1, Component.literal("\u00A7aCan be smashed"));
 		}
 	}
 }

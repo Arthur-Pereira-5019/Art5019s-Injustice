@@ -21,7 +21,7 @@ public class RedKryptoniteItemInInventoryTickProcedure {
 			return;
 		{
 			final Vec3 _center = new Vec3(x, y, z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(12 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 			for (Entity entityiterator : _entfound) {
 				if ((entityiterator.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 23) {
 					if (!(entity instanceof Player _plrCldCheck1 && _plrCldCheck1.getCooldowns().isOnCooldown(itemstack.getItem()))) {
@@ -29,13 +29,6 @@ public class RedKryptoniteItemInInventoryTickProcedure {
 							_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.RAGE.get(), 300, 1, false, false));
 						if (entity instanceof Player _player)
 							_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
-					}
-					{
-						double _setval = (entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powermeter - 4;
-						entityiterator.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.powermeter = _setval;
-							capability.syncPlayerVariables(entityiterator);
-						});
 					}
 					KryptonianUpdateProcedure.execute(entityiterator);
 				}

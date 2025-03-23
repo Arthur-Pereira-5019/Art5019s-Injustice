@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019injustice:steel_ingot"
+    },
+    {
+      "item": "art5019injustice:old_pistol"
+    },
+    {
+      "item": "minecraft:comparator"
+    }
+  ],
+  "result": {
+    "item": "art5019injustice:pistol_item",
+    "count": 1
+  }
+}

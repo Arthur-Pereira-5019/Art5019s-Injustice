@@ -12,16 +12,16 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:SiliconeMetal"
       },
       {
-        "value": "CUSTOM:NuggetLead"
+        "value": "Items.REPEATER"
       },
       {
-        "value": ""
+        "value": "Items.IRON_NUGGET"
       },
       {
-        "value": ""
+        "value": "CUSTOM:LeadIngot"
       },
       {
         "value": "Blocks.DISPENSER"
@@ -30,10 +30,10 @@
         "value": "CUSTOM:LeadIngot"
       },
       {
-        "value": "CUSTOM:NuggetLead"
+        "value": "Items.IRON_NUGGET"
       },
       {
-        "value": "Items.COMPARATOR"
+        "value": "Items.REPEATER"
       },
       {
         "value": "CUSTOM:SiliconeMetal"

@@ -149,7 +149,8 @@ public class PlayerInteractsProcedure {
 				}
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.DRIPPING_WATER, x, y, z, 20, 0.6, 1, 0.6, 1);
-			} else if ((sourceentity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).alignment < -50) {
+			} else if ((sourceentity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).alignment < -50
+					|| sourceentity instanceof LivingEntity _livEnt37 && _livEnt37.hasEffect(Art5019injusticeModMobEffects.RAGE.get())) {
 				Art5019injusticeMod.queueServerWork(2, () -> {
 					if (sourceentity instanceof ServerPlayer _ent) {
 						BlockPos _bpos = BlockPos.containing(x, y, z);

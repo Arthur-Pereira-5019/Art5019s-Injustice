@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SteelDust"
+      },
+      {
+        "value": "CUSTOM:EmptyPill"
+      },
+      {
+        "value": "CUSTOM:SteelDust"
+      },
+      {
+        "value": "CUSTOM:EmptyPill"
+      },
+      {
+        "value": "CUSTOM:RedKryptonite"
+      },
+      {
+        "value": "CUSTOM:EmptyPill"
+      },
+      {
+        "value": "CUSTOM:SteelDust"
+      },
+      {
+        "value": "CUSTOM:EmptyPill"
+      },
+      {
+        "value": "CUSTOM:SteelDust"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RedKryptonitePills"
+    },
+    "name": "red_kryptonite_pills_recipe",
+    "namespace": "mod"
+  }
+}

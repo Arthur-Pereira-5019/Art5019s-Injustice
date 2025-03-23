@@ -6,6 +6,7 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -112,5 +113,14 @@ public class KryptoTheSuperdogOnEntityTickUpdateProcedure {
 		}
 		if (entity instanceof KryptoTheSuperdogEntity _datEntSetI)
 			_datEntSetI.getEntityData().set(KryptoTheSuperdogEntity.DATA_attackticks, (int) ((entity instanceof KryptoTheSuperdogEntity _datEntI ? _datEntI.getEntityData().get(KryptoTheSuperdogEntity.DATA_attackticks) : 0) - 1));
+		if (!(entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)) {
+			if (entity instanceof KryptoTheSuperdogEntity _datEntSetI)
+				_datEntSetI.getEntityData().set(KryptoTheSuperdogEntity.DATA_idletime, (int) ((entity instanceof KryptoTheSuperdogEntity _datEntI ? _datEntI.getEntityData().get(KryptoTheSuperdogEntity.DATA_idletime) : 0) + 1));
+		} else {
+			if ((entity instanceof KryptoTheSuperdogEntity _datEntI ? _datEntI.getEntityData().get(KryptoTheSuperdogEntity.DATA_idletime) : 0) >= 1600) {
+				if (!entity.level().isClientSide())
+					entity.discard();
+			}
+		}
 	}
 }

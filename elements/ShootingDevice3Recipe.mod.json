@@ -12,16 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:SteelIngot"
       },
       {
-        "value": "CUSTOM:SteelNugget"
+        "value": "CUSTOM:SiliconeMetal"
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "CUSTOM:SteelIngot"
       },
       {
         "value": "CUSTOM:ShootingDevice2"
@@ -30,13 +27,16 @@
         "value": "CUSTOM:SteelIngot"
       },
       {
-        "value": "CUSTOM:MicrochipCooler"
+        "value": "CUSTOM:ShootingDevice2"
       },
       {
-        "value": "CUSTOM:SteelNugget"
+        "value": "CUSTOM:SteelIngot"
       },
       {
         "value": "CUSTOM:SiliconeMetal"
+      },
+      {
+        "value": "CUSTOM:SteelIngot"
       }
     ],
     "recipeReturnStack": {

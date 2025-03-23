@@ -360,5 +360,14 @@
         "stream": false
       }
     ]
+  },
+  "entity.superman.whistle": {
+    "subtitle": "subtitles.entity.superman.whistle",
+    "sounds": [
+      {
+        "name": "art5019injustice:superwhistle",
+        "stream": false
+      }
+    ]
   }
 }

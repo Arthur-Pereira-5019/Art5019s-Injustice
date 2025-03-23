@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:steel_dust"
+    },
+    "b": {
+      "item": "art5019injustice:empty_pill"
+    },
+    "c": {
+      "item": "art5019injustice:red_kryptonite"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:red_kryptonite_pills",
+    "count": 4
+  }
+}

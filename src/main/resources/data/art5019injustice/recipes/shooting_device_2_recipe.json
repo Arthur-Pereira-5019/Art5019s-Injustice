@@ -2,22 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " a ",
-    " bc",
-    "dae"
+    "abc",
+    "ded",
+    "cba"
   ],
   "key": {
     "a": {
-      "item": "art5019injustice:silver_nugget"
+      "item": "art5019injustice:steel_rod"
     },
     "b": {
-      "item": "art5019injustice:shooting_device"
+      "item": "art5019injustice:titanium_ingot"
     },
     "c": {
-      "item": "art5019injustice:silver_ingot"
+      "item": "minecraft:comparator"
     },
     "d": {
-      "item": "minecraft:comparator"
+      "item": "art5019injustice:shooting_device_2"
     },
     "e": {
       "item": "art5019injustice:silicone_metal"

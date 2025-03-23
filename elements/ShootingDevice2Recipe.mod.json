@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:SteelRod"
       },
       {
-        "value": "CUSTOM:SilverNugget"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ShootingDevice"
-      },
-      {
-        "value": "CUSTOM:SilverIngot"
+        "value": "CUSTOM:TitaniumIngot"
       },
       {
         "value": "Items.COMPARATOR"
       },
       {
-        "value": "CUSTOM:SilverNugget"
+        "value": "CUSTOM:ShootingDevice2"
       },
       {
         "value": "CUSTOM:SiliconeMetal"
+      },
+      {
+        "value": "CUSTOM:ShootingDevice2"
+      },
+      {
+        "value": "Items.COMPARATOR"
+      },
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:SteelRod"
       }
     ],
     "recipeReturnStack": {

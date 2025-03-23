@@ -69,11 +69,11 @@ public class BountyPaperRightclickedProcedure {
 		}.getAmount(2) * 10;
 		for (Entity entityiterator : new ArrayList<>(world.players())) {
 			if ((entityiterator.getDisplayName().getString()).equals(guistate.containsKey("text:KillTarget") ? ((EditBox) guistate.get("text:KillTarget")).getValue() : "")) {
-				if (hirePower < 25) {
+				if (hirePower < 20) {
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("But nobody came."), false);
 					sucess = true;
-				} else if (hirePower < 80) {
+				} else if (hirePower < 70) {
 					{
 						Entity _ent = entity;
 						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
@@ -89,11 +89,11 @@ public class BountyPaperRightclickedProcedure {
 					Art5019injusticeModVariables.MapVariables.get(world).today_news = 2;
 					Art5019injusticeModVariables.MapVariables.get(world).syncData(world);
 					sucess = true;
-				} else if (hirePower >= 80) {
-					while (iteration <= 10 && sucess == false) {
+				} else if (hirePower >= 75) {
+					while (iteration <= 15 && sucess == false) {
 						ry = Mth.nextInt(RandomSource.create(), 0, 6) + y;
-						rz = Mth.nextInt(RandomSource.create(), -10, 10) + x;
-						rx = Mth.nextInt(RandomSource.create(), -10, 10) + z;
+						rz = Mth.nextInt(RandomSource.create(), -10, 10) + z;
+						rx = Mth.nextInt(RandomSource.create(), -10, 10) + x;
 						if (!world.getBlockState(BlockPos.containing(rx, ry, rz)).canOcclude() && !world.getBlockState(BlockPos.containing(rx, ry + 1, rz)).canOcclude()) {
 							if (world instanceof ServerLevel _level) {
 								Entity entityToSpawn = Art5019injusticeModEntities.DEATHSTROKE.get().spawn(_level, BlockPos.containing(rx, ry, rz), MobSpawnType.MOB_SUMMONED);

@@ -45,4 +45,5 @@ public class Art5019injusticeModSounds {
 	public static final RegistryObject<SoundEvent> ENTITY_VENOM_IDLE = REGISTRY.register("entity.venom.idle", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("art5019injustice", "entity.venom.idle")));
 	public static final RegistryObject<SoundEvent> ENTITY_VENOM_DIES = REGISTRY.register("entity.venom.dies", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("art5019injustice", "entity.venom.dies")));
 	public static final RegistryObject<SoundEvent> PLAYER_POISONIVY_KISS = REGISTRY.register("player.poisonivy.kiss", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("art5019injustice", "player.poisonivy.kiss")));
+	public static final RegistryObject<SoundEvent> ENTITY_SUPERMAN_WHISTLE = REGISTRY.register("entity.superman.whistle", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("art5019injustice", "entity.superman.whistle")));
 }

@@ -2,25 +2,25 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " a ",
-    " bc",
-    "ade"
+    "abc",
+    "ded",
+    "cba"
   ],
   "key": {
     "a": {
-      "item": "art5019injustice:nugget_lead"
+      "item": "art5019injustice:silicone_metal"
     },
     "b": {
-      "item": "minecraft:dispenser"
+      "item": "minecraft:repeater"
     },
     "c": {
-      "item": "art5019injustice:lead_ingot"
+      "item": "minecraft:iron_nugget"
     },
     "d": {
-      "item": "minecraft:comparator"
+      "item": "art5019injustice:lead_ingot"
     },
     "e": {
-      "item": "art5019injustice:silicone_metal"
+      "item": "minecraft:dispenser"
     }
   },
   "result": {

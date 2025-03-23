@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Rage",
-    "icon": "rage.png",
+    "icon": "rage",
     "color": {
       "value": -7794942,
       "falpha": 0.0

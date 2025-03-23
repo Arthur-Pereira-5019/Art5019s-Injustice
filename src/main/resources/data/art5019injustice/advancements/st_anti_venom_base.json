@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
+    "background": "art5019injustice:textures/screens/white_wool.png",
     "icon": {
       "item": "art5019injustice:anti_venom_suit_chestplate"
     },

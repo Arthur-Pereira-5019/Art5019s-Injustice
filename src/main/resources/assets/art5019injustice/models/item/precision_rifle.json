@@ -1,7 +1,32 @@
 {
-  "parent": "art5019injustice:custom/sniper",
-  "textures": {
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "art5019injustice:custom/sniper",
+    "textures": {
     "2": "art5019injustice:block/sniper",
     "particle": "art5019injustice:item/sniper"
+   }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "art5019injustice:item/sniper"
+      },
+      "gui_light": "front"
+    },
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "art5019injustice:item/sniper"
+      }
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "art5019injustice:item/sniper"
+      }
+    }
   }
 }

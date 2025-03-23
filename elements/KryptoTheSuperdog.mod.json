@@ -175,6 +175,13 @@
         "name": "attackticks",
         "type": "integer",
         "value": 0
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "idletime",
+        "type": "integer",
+        "value": 0
       }
     ],
     "whenMobIsHurt": {
@@ -203,7 +210,7 @@
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "spawnThisMob": false,
-    "doesDespawnWhenIdle": true,
+    "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,

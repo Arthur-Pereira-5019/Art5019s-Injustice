@@ -17,11 +17,15 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
+import net.mcreator.artinjustice.network.Art5019injusticeModVariables;
 import net.mcreator.artinjustice.init.Art5019injusticeModItems;
 import net.mcreator.artinjustice.entity.KryptoTheSuperdogEntity;
 import net.mcreator.artinjustice.Art5019injusticeMod;
@@ -72,6 +76,18 @@ public class KryptoTheSuperdogEntityIsHurtProcedure {
 			}
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.HEART, x, y, z, 20, 1, 1, 1, 1);
+			if ((sourceentity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 23) {
+				if (sourceentity instanceof ServerPlayer _player) {
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("art5019injustice:aliens_best_friend"));
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+			}
 		}
+		if (entity instanceof KryptoTheSuperdogEntity _datEntSetI)
+			_datEntSetI.getEntityData().set(KryptoTheSuperdogEntity.DATA_idletime, 0);
 	}
 }

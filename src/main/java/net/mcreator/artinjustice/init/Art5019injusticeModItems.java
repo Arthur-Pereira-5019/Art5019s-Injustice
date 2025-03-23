@@ -109,6 +109,7 @@ import net.mcreator.artinjustice.item.TWebShooterTier1Item;
 import net.mcreator.artinjustice.item.SyringeItem;
 import net.mcreator.artinjustice.item.SymbioteVisionItem;
 import net.mcreator.artinjustice.item.SymbioteItem;
+import net.mcreator.artinjustice.item.SupersonicWhistleItem;
 import net.mcreator.artinjustice.item.SupermanZSSuitItem;
 import net.mcreator.artinjustice.item.SupermanSuperBreathingItem;
 import net.mcreator.artinjustice.item.SupermanNFTSuitItem;
@@ -122,6 +123,7 @@ import net.mcreator.artinjustice.item.SupermanFireResIcon1Item;
 import net.mcreator.artinjustice.item.SupermanFallImmunityIconItem;
 import net.mcreator.artinjustice.item.SuperSoldierSerumSyringeItem;
 import net.mcreator.artinjustice.item.SuperSoldierEmblemItem;
+import net.mcreator.artinjustice.item.SuperPressureIconItem;
 import net.mcreator.artinjustice.item.SuperFertilizerItem;
 import net.mcreator.artinjustice.item.SupeRemainsItem;
 import net.mcreator.artinjustice.item.SunflowerSeedTextureItem;
@@ -190,6 +192,7 @@ import net.mcreator.artinjustice.item.SaltItem;
 import net.mcreator.artinjustice.item.RubyItem;
 import net.mcreator.artinjustice.item.RubyFishItem;
 import net.mcreator.artinjustice.item.RepulsorItem;
+import net.mcreator.artinjustice.item.RedKryptonitePillsItem;
 import net.mcreator.artinjustice.item.RedKryptoniteItem;
 import net.mcreator.artinjustice.item.RedKevlarItem;
 import net.mcreator.artinjustice.item.RawSilverItem;
@@ -1379,6 +1382,9 @@ public class Art5019injusticeModItems {
 	public static final RegistryObject<Item> STAN_THE_LEGEND_SPAWN_EGG = REGISTRY.register("stan_the_legend_spawn_egg", () -> new ForgeSpawnEggItem(Art5019injusticeModEntities.STAN_THE_LEGEND, -10203593, -3355444, new Item.Properties()));
 	public static final RegistryObject<Item> KRYPTO_THE_SUPERDOG_SPAWN_EGG = REGISTRY.register("krypto_the_superdog_spawn_egg", () -> new ForgeSpawnEggItem(Art5019injusticeModEntities.KRYPTO_THE_SUPERDOG, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> RED_KRYPTONITE = REGISTRY.register("red_kryptonite", () -> new RedKryptoniteItem());
+	public static final RegistryObject<Item> SUPERSONIC_WHISTLE = REGISTRY.register("supersonic_whistle", () -> new SupersonicWhistleItem());
+	public static final RegistryObject<Item> SUPER_PRESSURE_ICON = REGISTRY.register("super_pressure_icon", () -> new SuperPressureIconItem());
+	public static final RegistryObject<Item> RED_KRYPTONITE_PILLS = REGISTRY.register("red_kryptonite_pills", () -> new RedKryptonitePillsItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

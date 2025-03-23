@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "shooting_device_3",
+    "texture": "gun_parts_3",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Shooting Device",
+    "name": "Gun Parts",
     "rarity": "COMMON",
     "creativeTabs": [
       {

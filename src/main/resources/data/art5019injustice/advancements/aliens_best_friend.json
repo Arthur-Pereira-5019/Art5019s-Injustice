@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:strange_bone_kryptonian"
+    },
+    "title": {
+      "translate": "advancements.aliens_best_friend.title"
+    },
+    "description": {
+      "translate": "advancements.aliens_best_friend.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "aliens_best_friend_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "art5019injustice:the_last_son_of_krypton"
+}

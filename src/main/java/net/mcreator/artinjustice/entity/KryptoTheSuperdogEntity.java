@@ -54,6 +54,7 @@ public class KryptoTheSuperdogEntity extends Wolf {
 	public static final EntityDataAccessor<Boolean> DATA_hascollar = SynchedEntityData.defineId(KryptoTheSuperdogEntity.class, EntityDataSerializers.BOOLEAN);
 	public static final EntityDataAccessor<Integer> DATA_attack = SynchedEntityData.defineId(KryptoTheSuperdogEntity.class, EntityDataSerializers.INT);
 	public static final EntityDataAccessor<Integer> DATA_attackticks = SynchedEntityData.defineId(KryptoTheSuperdogEntity.class, EntityDataSerializers.INT);
+	public static final EntityDataAccessor<Integer> DATA_idletime = SynchedEntityData.defineId(KryptoTheSuperdogEntity.class, EntityDataSerializers.INT);
 
 	public KryptoTheSuperdogEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(Art5019injusticeModEntities.KRYPTO_THE_SUPERDOG.get(), world);
@@ -64,6 +65,7 @@ public class KryptoTheSuperdogEntity extends Wolf {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
+		setPersistenceRequired();
 	}
 
 	@Override
@@ -77,6 +79,7 @@ public class KryptoTheSuperdogEntity extends Wolf {
 		this.entityData.define(DATA_hascollar, true);
 		this.entityData.define(DATA_attack, 0);
 		this.entityData.define(DATA_attackticks, 0);
+		this.entityData.define(DATA_idletime, 0);
 	}
 
 	@Override
@@ -108,6 +111,11 @@ public class KryptoTheSuperdogEntity extends Wolf {
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
+	}
+
+	@Override
+	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+		return false;
 	}
 
 	@Override
@@ -161,6 +169,7 @@ public class KryptoTheSuperdogEntity extends Wolf {
 		compound.putBoolean("Datahascollar", this.entityData.get(DATA_hascollar));
 		compound.putInt("Dataattack", this.entityData.get(DATA_attack));
 		compound.putInt("Dataattackticks", this.entityData.get(DATA_attackticks));
+		compound.putInt("Dataidletime", this.entityData.get(DATA_idletime));
 	}
 
 	@Override
@@ -172,6 +181,8 @@ public class KryptoTheSuperdogEntity extends Wolf {
 			this.entityData.set(DATA_attack, compound.getInt("Dataattack"));
 		if (compound.contains("Dataattackticks"))
 			this.entityData.set(DATA_attackticks, compound.getInt("Dataattackticks"));
+		if (compound.contains("Dataidletime"))
+			this.entityData.set(DATA_idletime, compound.getInt("Dataidletime"));
 	}
 
 	@Override
