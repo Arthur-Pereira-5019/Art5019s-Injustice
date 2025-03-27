@@ -10,7 +10,7 @@ import net.mcreator.artinjustice.network.Art5019injusticeModVariables;
 import net.mcreator.artinjustice.init.Art5019injusticeModMobEffects;
 
 public class Ability2pProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		double remainingbreath = 0;
@@ -70,6 +70,7 @@ public class Ability2pProcedure {
 						} else {
 							entity.setAirSupply((int) (entity.getAirSupply() - 11));
 						}
+						SupermanHailStormProcedure.execute(world, x, y, z, entity);
 					} else {
 						if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerlvl >= 4) {
 							GenericColdBreathProcedure.execute(world, entity, 1.5 + ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerlvl - 4) / 4);

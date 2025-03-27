@@ -12069,6 +12069,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -54061,6 +54073,74 @@
         ]
       },
       "path": "~/Kryptonian/Superman/KryptonianSkilltree"
+    },
+    {
+      "name": "SupermanUnboundFlight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superman_unbound_flight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/SupermanUnboundFlightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SupermanHailStorm",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superman_hail_storm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/SupermanHailStormProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [

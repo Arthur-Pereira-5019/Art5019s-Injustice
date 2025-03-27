@@ -58,8 +58,12 @@ public class Ability3OnKeyPressedProcedure {
 						ThreeTogleFlightProcedure.execute(entity);
 					}
 				} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 23) {
-					if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerlvl >= 4) {
-						ThreeTogleFlightProcedure.execute(entity);
+					if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).ability5duration >= 1) {
+						SupermanUnboundFlightProcedure.execute(world, x, y, z, entity);
+					} else {
+						if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerlvl >= 4) {
+							ThreeTogleFlightProcedure.execute(entity);
+						}
 					}
 				} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 25) {
 					AntiVenomCleaningHandsToggleProcedure.execute(world, x, y, z, entity);

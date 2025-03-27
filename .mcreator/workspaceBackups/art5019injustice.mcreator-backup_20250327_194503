@@ -12069,6 +12069,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -19269,6 +19281,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -33630,6 +33658,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -33672,6 +33716,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -36514,6 +36574,18 @@
             "type": "number"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -38259,6 +38331,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -53972,6 +54060,87 @@
         ]
       },
       "path": "~/Kryptonian/Superman/KryptonianSkilltree"
+    },
+    {
+      "name": "STSupermanAllOut",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "st_superman_all_out",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/advancements/st_superman_all_out.json"
+        ]
+      },
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
+    },
+    {
+      "name": "SupermanUnboundFlight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superman_unbound_flight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/SupermanUnboundFlightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SupermanHailStorm",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superman_hail_storm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/SupermanHailStormProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -56275,6 +56444,7 @@
       "item.art5019injustice.criminal_spawn_egg": "Criminal Spawn Egg",
       "item.art5019injustice.spider_man_ag_2_helmet": "The Amazing Spider-Man Mask",
       "advancements.hero_journey.descr": "Defeat your first criminal",
+      "advancements.st_superman_all_out.descr": "§cAbility 5 - Take away your moral restrictions and unleash your full potential.",
       "advancements.obtain_the_multiverse_core.descr": "Vibrations, strings of a web, a tree...",
       "death.attack.electrical_damage.item": "%1$s was electrocuted by %2$s using %3$s",
       "item.art5019injustice.yin_yang_icon": "Yin Yang Icon",
@@ -56366,6 +56536,7 @@
       "item.art5019injustice.anti_venom_suit_leggings": "Venom Legs",
       "subtitles.item.grenade.thrown": "Grenade is Thrown",
       "item.art5019injustice.lab_vest_helmet": "Lab Glasses",
+      "advancements.st_superman_all_out.title": "§4Unbound Powers",
       "subtitles.item.pistol.shoots": "Pistol Shoots",
       "advancements.st_supe_base.title": "§6Supe",
       "advancements.st_domino_luck_ii.title": "§eLuck II",
