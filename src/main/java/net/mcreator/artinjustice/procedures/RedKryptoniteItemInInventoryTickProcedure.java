@@ -30,7 +30,7 @@ public class RedKryptoniteItemInInventoryTickProcedure {
 						if (entity instanceof Player _player)
 							_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
 					}
-					KryptonianUpdateProcedure.execute(entityiterator);
+					KryptonianUpdateProcedure.execute(world, x, y, z, entityiterator);
 				}
 			}
 		}

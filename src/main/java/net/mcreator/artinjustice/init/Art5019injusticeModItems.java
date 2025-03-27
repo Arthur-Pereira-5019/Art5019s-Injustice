@@ -558,6 +558,7 @@ import net.mcreator.artinjustice.item.AnnotationPaperItem;
 import net.mcreator.artinjustice.item.AmethystLensesItem;
 import net.mcreator.artinjustice.item.AmericaConstitutionItem;
 import net.mcreator.artinjustice.item.AloeVeraItemItem;
+import net.mcreator.artinjustice.item.AllOutIconItem;
 import net.mcreator.artinjustice.item.AlienBloodItem;
 import net.mcreator.artinjustice.item.AlcoholFlaskItem;
 import net.mcreator.artinjustice.item.AdvancedLaserDeviceItem;
@@ -1385,6 +1386,7 @@ public class Art5019injusticeModItems {
 	public static final RegistryObject<Item> SUPERSONIC_WHISTLE = REGISTRY.register("supersonic_whistle", () -> new SupersonicWhistleItem());
 	public static final RegistryObject<Item> SUPER_PRESSURE_ICON = REGISTRY.register("super_pressure_icon", () -> new SuperPressureIconItem());
 	public static final RegistryObject<Item> RED_KRYPTONITE_PILLS = REGISTRY.register("red_kryptonite_pills", () -> new RedKryptonitePillsItem());
+	public static final RegistryObject<Item> ALL_OUT_ICON = REGISTRY.register("all_out_icon", () -> new AllOutIconItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

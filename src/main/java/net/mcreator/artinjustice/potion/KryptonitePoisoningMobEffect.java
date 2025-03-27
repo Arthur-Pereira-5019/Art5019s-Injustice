@@ -22,13 +22,13 @@ public class KryptonitePoisoningMobEffect extends MobEffect {
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		KryptonitePoisoningOnEffectActiveTickProcedure.execute(entity.level(), entity, amplifier);
+		KryptonitePoisoningOnEffectActiveTickProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, amplifier);
 	}
 
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		KryptonitePoisoningEffectExpiresProcedure.execute(entity);
+		KryptonitePoisoningEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override

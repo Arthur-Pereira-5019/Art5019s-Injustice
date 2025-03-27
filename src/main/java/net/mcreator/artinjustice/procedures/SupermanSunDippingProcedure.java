@@ -63,7 +63,7 @@ public class SupermanSunDippingProcedure {
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 						"stopsound @a music");
 			Art5019injusticeMod.queueServerWork(2, () -> {
-				KryptonianUpdateProcedure.execute(entity);
+				KryptonianUpdateProcedure.execute(world, x, y, z, entity);
 			});
 			if (entity instanceof ServerPlayer _plr8 && _plr8.level() instanceof ServerLevel
 					&& _plr8.getAdvancements().getOrStartProgress(_plr8.server.getAdvancements().getAdvancement(new ResourceLocation("art5019injustice:sun_dipped_superman_effect"))).isDone()) {

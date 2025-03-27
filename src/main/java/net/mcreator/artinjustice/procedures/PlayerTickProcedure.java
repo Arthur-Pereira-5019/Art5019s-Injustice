@@ -308,31 +308,6 @@ public class PlayerTickProcedure {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.RAGE.get(), 60, 0, false, false));
 				}
-			} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 23) {
-				if (world instanceof Level _lvl73 && _lvl73.isDay() && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
-					{
-						double _setval = (entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powermeter + 1;
-						entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.powermeter = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powermeter % 1200 == 0) {
-						KryptonianUpdateProcedure.execute(entity);
-					}
-				}
-				if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powermeter <= 240000) {
-					{
-						double _setval = (entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).uncontrolledpowercooldown - 1;
-						entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.uncontrolledpowercooldown = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).uncontrolledpowercooldown <= 0) {
-						KryptonianUncontrolledPowerProcedure.execute(world, x, y, z, entity);
-					}
-				}
 			}
 			if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).masspunch > 0) {
 				if (world instanceof ServerLevel _level)
@@ -405,7 +380,7 @@ public class PlayerTickProcedure {
 				});
 			}
 		} else {
-			Ability6pProcedure.execute(entity);
+			Ability6pProcedure.execute(world, x, y, z, entity);
 		}
 		if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).ability7cooldown > 0) {
 			{
@@ -457,7 +432,7 @@ public class PlayerTickProcedure {
 						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 0, false, false));
 				}
 				if (EnchantmentHelper.getItemEnchantmentLevel(Art5019injusticeModEnchantments.ESHU_BINDING.get(), (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)) != 0) {
-					if (!(entity instanceof LivingEntity _livEnt91 && _livEnt91.hasEffect(Art5019injusticeModMobEffects.FORTUNE.get()))) {
+					if (!(entity instanceof LivingEntity _livEnt89 && _livEnt89.hasEffect(Art5019injusticeModMobEffects.FORTUNE.get()))) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.FORTUNE.get(), 900, 0, false, false));
 					}

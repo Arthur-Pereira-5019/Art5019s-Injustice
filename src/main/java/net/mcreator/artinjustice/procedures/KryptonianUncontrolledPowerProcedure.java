@@ -12,7 +12,7 @@ public class KryptonianUncontrolledPowerProcedure {
 		if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerlvl == 1) {
 			UncontrolledSenseSoundServiceProcedure.execute(world, x, y, z, entity);
 			{
-				double _setval = 800;
+				double _setval = 8;
 				entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.uncontrolledpowercooldown = _setval;
 					capability.syncPlayerVariables(entity);
@@ -29,14 +29,14 @@ public class KryptonianUncontrolledPowerProcedure {
 			}
 			if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).uncontrolledpoweractivated <= 0) {
 				{
-					double _setval = 9600;
+					double _setval = 96;
 					entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.uncontrolledpowercooldown = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}
 				{
-					double _setval = 400;
+					double _setval = 4;
 					entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.uncontrolledpoweractivated = _setval;
 						capability.syncPlayerVariables(entity);

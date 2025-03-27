@@ -101,7 +101,7 @@ public class RageOnEffectActiveTickProcedure {
 				});
 			}
 		} else {
-			Ability6pProcedure.execute(entity);
+			Ability6pProcedure.execute(world, x, y, z, entity);
 		}
 		if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 4) {
 			if (world instanceof ServerLevel _level)

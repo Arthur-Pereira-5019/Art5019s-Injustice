@@ -19269,6 +19269,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -33520,7 +33536,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_base.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "EarIcon",
@@ -33561,7 +33577,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_sun_absorption.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanUncontrolledSenses",
@@ -33574,7 +33590,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_uncontrolled_senses.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "IconSenses",
@@ -33601,7 +33617,7 @@
           "src/main/resources/data/art5019injustice/advancements/super_senses.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "ThenMakeItSmall",
@@ -33630,6 +33646,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -33672,6 +33704,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -33737,7 +33785,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_x_ray.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "KryptonianSuperSenses",
@@ -33786,7 +33834,7 @@
           "src/main/java/net/mcreator/artinjustice/item/IconSupermanStrengthItem.java"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanRelativeStrength",
@@ -33799,7 +33847,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_relative_strength.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "IconSupermanSpeed",
@@ -33813,7 +33861,7 @@
           "src/main/resources/assets/art5019injustice/models/item/icon_superman_speed.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanRelativeSpeed",
@@ -33826,7 +33874,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_relative_speed.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "IconSupermanBulletproof",
@@ -33840,7 +33888,7 @@
           "src/main/java/net/mcreator/artinjustice/item/IconSupermanBulletproofItem.java"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanResistance",
@@ -33853,7 +33901,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_resistance.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "IconGravityDefySuperman",
@@ -33867,7 +33915,7 @@
           "src/main/resources/assets/art5019injustice/models/item/icon_gravity_defy_superman.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanLeaping",
@@ -33880,7 +33928,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_leaping.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "SuperBreath",
@@ -33999,7 +34047,7 @@
           "src/main/java/net/mcreator/artinjustice/item/IconSuperBreathItem.java"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanSuperbreath",
@@ -34012,7 +34060,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_superbreath.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "KryptonianUncontrolledLaser",
@@ -34866,7 +34914,7 @@
           "src/main/java/net/mcreator/artinjustice/item/HeatVisionHCIconItem.java"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanUncontrolledHeatVision",
@@ -34879,7 +34927,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_uncontrolled_heat_vision.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanHeatvision",
@@ -34892,7 +34940,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_heatvision.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "ThreeTogleFlight",
@@ -34925,7 +34973,7 @@
           "src/main/resources/assets/art5019injustice/models/item/superman_levitation_icon.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "SupermanFlyIcon",
@@ -34939,7 +34987,7 @@
           "src/main/resources/assets/art5019injustice/models/item/superman_fly_icon.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanFlight",
@@ -34952,7 +35000,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_flight.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanFly",
@@ -34965,7 +35013,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_fly.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "SupermanFireResIcon1",
@@ -34979,7 +35027,7 @@
           "src/main/java/net/mcreator/artinjustice/item/SupermanFireResIcon1Item.java"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "SupermanFireResIcon2",
@@ -34993,7 +35041,7 @@
           "src/main/resources/assets/art5019injustice/models/item/superman_fire_res_icon_2.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanFireResistanceI",
@@ -35006,7 +35054,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_fire_resistance_i.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanFireResistanceII",
@@ -35019,7 +35067,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_fire_resistance_ii.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "SupermanFallImmunityIcon",
@@ -35033,7 +35081,7 @@
           "src/main/java/net/mcreator/artinjustice/item/SupermanFallImmunityIconItem.java"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanFallImunity",
@@ -35046,7 +35094,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_fall_imunity.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "SupermanLobotomyIcon",
@@ -35060,7 +35108,7 @@
           "src/main/java/net/mcreator/artinjustice/item/SupermanLobotomyIconItem.java"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanLobotomy",
@@ -35073,7 +35121,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_lobotomy.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "Iridium",
@@ -36511,6 +36559,18 @@
           },
           {
             "name": "amplifier",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
             "type": "number"
           },
           {
@@ -38259,6 +38319,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -38331,7 +38407,7 @@
           "src/main/java/net/mcreator/artinjustice/item/SupermanKCSuitItem.java"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "KryptonianCloth",
@@ -41311,7 +41387,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_kryptonite_resistance.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "SuperBreath2",
@@ -41603,7 +41679,7 @@
           "src/main/resources/assets/art5019injustice/models/item/superman_freezing_breathicon.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "SupermanFreezingBreath",
@@ -41616,7 +41692,7 @@
           "src/main/resources/data/art5019injustice/advancements/superman_freezing_breath.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "SupermanSuperBreathing",
@@ -41630,7 +41706,7 @@
           "src/main/java/net/mcreator/artinjustice/item/SupermanSuperBreathingItem.java"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanSuperBreathI",
@@ -41643,7 +41719,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_super_breath_i.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "GoldenKryptonite",
@@ -43012,7 +43088,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_kryptonite_resistance_ii.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanKryptoniteResistanceIII",
@@ -43025,7 +43101,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_kryptonite_resistance_iii.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanKryptoniteResistanceIV",
@@ -43038,7 +43114,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_kryptonite_resistance_iv.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "Criminal",
@@ -48577,7 +48653,7 @@
           "src/main/resources/assets/art5019injustice/models/item/icon_super_senses.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "IconSupermanUncontrolledSenses",
@@ -48591,7 +48667,7 @@
           "src/main/java/net/mcreator/artinjustice/item/IconSupermanUncontrolledSensesItem.java"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "IconGalaxy",
@@ -48605,7 +48681,7 @@
           "src/main/resources/assets/art5019injustice/models/item/icon_galaxy.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanSuperInteligence",
@@ -48618,7 +48694,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_super_inteligence.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanUniversalUnderstanding",
@@ -48631,7 +48707,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_universal_understanding.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "FeastNPCOnInitialEntitySpawn",
@@ -53878,7 +53954,7 @@
           "src/main/java/net/mcreator/artinjustice/item/SuperPressureIconItem.java"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "STSupermanSuperPressure",
@@ -53891,7 +53967,7 @@
           "src/main/resources/data/art5019injustice/advancements/st_superman_super_pressure.json"
         ]
       },
-      "path": "~/Kryptonian/Superman/Skilltree"
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
       "name": "CanSmashItems",
@@ -53958,6 +54034,33 @@
         ]
       },
       "path": "~/Kryptonian/Kryptonite"
+    },
+    {
+      "name": "AllOutIcon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_out_icon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/item/AllOutIconItem.java",
+          "src/main/resources/assets/art5019injustice/models/item/all_out_icon.json"
+        ]
+      },
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
+    },
+    {
+      "name": "STSupermanAllOut",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "st_superman_all_out",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/advancements/st_superman_all_out.json"
+        ]
+      },
+      "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     }
   ],
   "variable_elements": [
@@ -56086,6 +56189,7 @@
       "advancements.st_mathias_adapted_body.descr": "Passive - Resistance I",
       "item.art5019injustice.scarab_energy_blaster_item": "Energy Blaster",
       "item.art5019injustice.symbiote": "Symbiote",
+      "item.art5019injustice.all_out_icon": "All Out Icon",
       "item.art5019injustice.condiment_king_suit_helmet": "Condiment King Helmet",
       "item.art5019injustice.hazmat_chestplate": "Hazmat Chestplate",
       "item.art5019injustice.poison_ivy_icon": "Poison Ivy Icon",
@@ -56260,6 +56364,7 @@
       "item.art5019injustice.criminal_spawn_egg": "Criminal Spawn Egg",
       "item.art5019injustice.spider_man_ag_2_helmet": "The Amazing Spider-Man Mask",
       "advancements.hero_journey.descr": "Defeat your first criminal",
+      "advancements.st_superman_all_out.descr": "§cAbility 5 - Take away your moral restrictions and unleash your full potential.",
       "advancements.obtain_the_multiverse_core.descr": "Vibrations, strings of a web, a tree...",
       "death.attack.electrical_damage.item": "%1$s was electrocuted by %2$s using %3$s",
       "item.art5019injustice.yin_yang_icon": "Yin Yang Icon",
@@ -56351,6 +56456,7 @@
       "item.art5019injustice.anti_venom_suit_leggings": "Venom Legs",
       "subtitles.item.grenade.thrown": "Grenade is Thrown",
       "item.art5019injustice.lab_vest_helmet": "Lab Glasses",
+      "advancements.st_superman_all_out.title": "§4Unbound Powers",
       "subtitles.item.pistol.shoots": "Pistol Shoots",
       "advancements.st_supe_base.title": "§6Supe",
       "advancements.st_domino_luck_ii.title": "§eLuck II",
@@ -58479,7 +58585,7 @@
             "name": "Superman",
             "children": [
               {
-                "name": "Skilltree",
+                "name": "KryptonianSkilltree",
                 "children": []
               }
             ]

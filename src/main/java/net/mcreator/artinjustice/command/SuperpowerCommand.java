@@ -154,7 +154,7 @@ public class SuperpowerCommand {
 			if (entity != null)
 				direction = entity.getDirection();
 
-			SetPowerMeterProcedure.execute(arguments, entity);
+			SetPowerMeterProcedure.execute(world, x, y, z, arguments, entity);
 			return 0;
 		})))));
 	}

@@ -13,7 +13,7 @@ import net.mcreator.artinjustice.network.Art5019injusticeModVariables;
 import net.mcreator.artinjustice.init.Art5019injusticeModMobEffects;
 
 public class KryptonitePoisoningOnEffectActiveTickProcedure {
-	public static void execute(LevelAccessor world, Entity entity, double amplifier) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, double amplifier) {
 		if (entity == null)
 			return;
 		double kr = 0;
@@ -27,7 +27,7 @@ public class KryptonitePoisoningOnEffectActiveTickProcedure {
 				});
 			}
 			if (Math.random() < 0.0045 - 0.00099 * kr) {
-				KryptonianUpdateProcedure.execute(entity);
+				KryptonianUpdateProcedure.execute(world, x, y, z, entity);
 				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("art5019injustice:kryptonite_radiation")))),
 						(float) (2 * (amplifier + 1)));
 				{
@@ -39,7 +39,7 @@ public class KryptonitePoisoningOnEffectActiveTickProcedure {
 				}
 			}
 			if (Math.random() < 0.003 - 0.00066 * kr) {
-				KryptonianUpdateProcedure.execute(entity);
+				KryptonianUpdateProcedure.execute(world, x, y, z, entity);
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.POWER_DEPENDENCE.get(), (int) (300 * amplifier), 1, false, false));
 				{
@@ -51,7 +51,7 @@ public class KryptonitePoisoningOnEffectActiveTickProcedure {
 				}
 			}
 			if (Math.random() < 0.003 - 0.00066 * kr) {
-				KryptonianUpdateProcedure.execute(entity);
+				KryptonianUpdateProcedure.execute(world, x, y, z, entity);
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.ATTACK_INABILITY.get(), (int) (300 * amplifier), 1, false, false));
 			}
