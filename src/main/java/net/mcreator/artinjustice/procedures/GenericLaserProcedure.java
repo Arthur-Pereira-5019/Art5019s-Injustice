@@ -48,9 +48,7 @@ public class GenericLaserProcedure {
 							"fill ~ ~-1 ~ ~ ~1 ~ fire replace #forge:any_air");
 				break;
 			}
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(lx, ly, lz), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"particle dust 1.000 0.000 0.000 1 ~ ~ ~ 0.3 0.3 0.3 3 3 normal");
+			GenerateDustParticlesProcedure.execute(world, lx, ly, lz, "" + new java.text.DecimalFormat("##").format(power * 1.1), "0.2", "0.2", "0.2", "1.000 0.000 0.000 1", "1");
 			{
 				final Vec3 _center = new Vec3(lx, ly, lz);
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();

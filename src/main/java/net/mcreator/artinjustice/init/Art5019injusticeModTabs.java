@@ -455,6 +455,7 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModBlocks.COMPRESSED_ICE_BLOCK.get().asItem());
 				tabData.accept(Art5019injusticeModBlocks.COPPER_GRATE.get().asItem());
 				tabData.accept(Art5019injusticeModBlocks.COPPER_ELECTRIFIER.get().asItem());
+				tabData.accept(Art5019injusticeModBlocks.ICE_LENSE.get().asItem());
 			})
 
 					.build());

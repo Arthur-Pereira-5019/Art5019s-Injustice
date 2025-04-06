@@ -12069,6 +12069,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -54063,6 +54075,78 @@
       "path": "~/Kryptonian/Superman/KryptonianSkilltree"
     },
     {
+      "name": "SupermanHailStorm",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superman_hail_storm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/SupermanHailStormProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SupermanPowerfulLaser",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superman_powerful_laser",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/SupermanPowerfulLaserProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "power",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
       "name": "SupermanUnboundFlight",
       "type": "procedure",
       "compiles": true,
@@ -54095,6 +54179,89 @@
           }
         ]
       }
+    },
+    {
+      "name": "GenericBlockFreezing",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generic_block_freezing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/GenericBlockFreezingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "scale",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "IceLenseOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_lense_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/IceLenseOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/Superman/FortressBlocks"
+    },
+    {
+      "name": "IceLense",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_lense",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/block/IceLenseBlock.java",
+          "src/main/resources/assets/art5019injustice/models/block/ice_lense.json",
+          "src/main/resources/data/art5019injustice/loot_tables/blocks/ice_lense.json",
+          "src/main/resources/assets/art5019injustice/models/item/ice_lense.json",
+          "src/main/resources/assets/art5019injustice/blockstates/ice_lense.json"
+        ]
+      },
+      "path": "~/Kryptonian/Superman/FortressBlocks"
     }
   ],
   "variable_elements": [
@@ -56542,6 +56709,7 @@
       "advancements.st_homelander_resistance.title": "§eResistance",
       "effect.art5019injustice.fear": "Fear Toxin",
       "advancements.st_neuro_fear_transmission.title": "§eFear Transmission",
+      "block.art5019injustice.ice_lense": "Ice Lense",
       "effect.art5019injustice.electricity": "Electricity",
       "trait.art5019injustice.anti_kryptonian.desc": "Causes Kryptonite Poisoning",
       "advancements.anti_venoms.descr": "Forcefully remove a Symbiote with your bare hands.",
@@ -58620,6 +58788,10 @@
             "children": [
               {
                 "name": "KryptonianSkilltree",
+                "children": []
+              },
+              {
+                "name": "FortressBlocks",
                 "children": []
               }
             ]

@@ -89,6 +89,7 @@ import net.mcreator.artinjustice.block.LeadBlockBlock;
 import net.mcreator.artinjustice.block.LazarusPitWaterBlock;
 import net.mcreator.artinjustice.block.KryptoniteBlockBlock;
 import net.mcreator.artinjustice.block.KryptonianComputerBlock;
+import net.mcreator.artinjustice.block.IceLenseBlock;
 import net.mcreator.artinjustice.block.HomelanderPlushBlock;
 import net.mcreator.artinjustice.block.HeartShapedHerbBlock;
 import net.mcreator.artinjustice.block.GoldTitaniumBlockBlock;
@@ -204,6 +205,7 @@ public class Art5019injusticeModBlocks {
 	public static final RegistryObject<Block> COPPER_ELECTRIFIER = REGISTRY.register("copper_electrifier", () -> new CopperElectrifierBlock());
 	public static final RegistryObject<Block> RUBIK_CUBE = REGISTRY.register("rubik_cube", () -> new RubikCubeBlock());
 	public static final RegistryObject<Block> PUZZLE_BLOCK = REGISTRY.register("puzzle_block", () -> new PuzzleBlockBlock());
+	public static final RegistryObject<Block> ICE_LENSE = REGISTRY.register("ice_lense", () -> new IceLenseBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

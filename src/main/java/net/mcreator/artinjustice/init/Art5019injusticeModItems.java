@@ -1387,6 +1387,7 @@ public class Art5019injusticeModItems {
 	public static final RegistryObject<Item> SUPER_PRESSURE_ICON = REGISTRY.register("super_pressure_icon", () -> new SuperPressureIconItem());
 	public static final RegistryObject<Item> RED_KRYPTONITE_PILLS = REGISTRY.register("red_kryptonite_pills", () -> new RedKryptonitePillsItem());
 	public static final RegistryObject<Item> ALL_OUT_ICON = REGISTRY.register("all_out_icon", () -> new AllOutIconItem());
+	public static final RegistryObject<Item> ICE_LENSE = block(Art5019injusticeModBlocks.ICE_LENSE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

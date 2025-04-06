@@ -38,21 +38,7 @@ public class GenericColdBreathProcedure {
 			Scaling = powerscale / 3;
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.SNOWFLAKE, lx, ly, lz, (int) (1 * Scaling), (0.4 * Scaling), (0.4 * Scaling), (0.4 * Scaling), 0.3);
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(lx, ly, lz), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						("fill ~" + Scaling + " ~" + Scaling + " ~" + Scaling + " ~-" + Scaling + " ~-" + Scaling + " ~-" + Scaling + " air replace #minecraft:fire"));
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(lx, ly, lz), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						("fill ~" + Scaling + " ~" + Scaling + " ~" + Scaling + " ~-" + Scaling + " ~-" + Scaling + " ~-" + Scaling + " frosted_ice replace water[level=0]"));
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(lx, ly, lz), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						("fill ~" + Scaling + " ~" + Scaling + " ~" + Scaling + " ~-" + Scaling + " ~-" + Scaling + " ~-" + Scaling + " art5019injustice:thin_ice replace water"));
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(lx, ly, lz), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						("fill ~" + Scaling + " ~" + Scaling + " ~" + Scaling + " ~-" + Scaling + " ~-" + Scaling + " ~-" + Scaling + " obsidian replace lava[level=0]"));
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(lx, ly, lz), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						("fill ~" + Scaling + " ~" + Scaling + " ~" + Scaling + " ~-" + Scaling + " ~-" + Scaling + " ~-" + Scaling + " stone replace lava"));
+			GenericBlockFreezingProcedure.execute(world, lx, ly, lz, Scaling);
 			{
 				final Vec3 _center = new Vec3(lx, ly, lz);
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(Scaling / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
