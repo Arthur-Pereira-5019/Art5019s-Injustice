@@ -33,10 +33,10 @@ public class IceLenseOnTickUpdateProcedure {
 		if (angulation > 0) {
 			deg = (180 * angulation) / 14700;
 			canBeam = true;
-			Scaling = Scaling + 0.6;
+			Scaling = 0.6;
 			for (int index0 = 0; index0 < 25; index0++) {
 				lx = x + 0.5 + Math.cos(Math.toRadians(deg)) * Scaling;
-				ly = y + 0.5 + Math.sin(Math.toRadians(deg)) * Scaling;
+				ly = y + 1.1 + Math.sin(Math.toRadians(deg)) * Scaling;
 				if (!world.getBlockState(BlockPos.containing(lx, ly, z)).canOcclude()) {
 					Scaling = Scaling + 0.9;
 				} else {
@@ -49,13 +49,14 @@ public class IceLenseOnTickUpdateProcedure {
 				for (int index1 = 0; index1 < 25; index1++) {
 					lx = x + 0.5 + Math.cos(Math.toRadians(deg)) * Scaling;
 					ly = y + 0.5 + Math.sin(Math.toRadians(deg)) * Scaling;
-					if (!world.getBlockState(BlockPos.containing(lx, ly, z)).canOcclude()) {
+					lz = z + 0.5;
+					if (!world.getBlockState(BlockPos.containing(lx, ly, lz)).canOcclude()) {
 						Scaling = Scaling - 0.6;
 					} else {
 						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.FLASH, lx, ly, z, 5, 1, 1, 1, 1);
+							_level.sendParticles(ParticleTypes.FLASH, lx, ly, lz, 5, 1, 1, 1, 1);
 						{
-							final Vec3 _center = new Vec3(lx, ly, z);
+							final Vec3 _center = new Vec3(lx, ly, lz);
 							List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 							for (Entity entityiterator : _entfound) {
 								if ((entityiterator.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 23) {
@@ -77,7 +78,7 @@ public class IceLenseOnTickUpdateProcedure {
 						}
 						break;
 					}
-					GenerateDustParticlesProcedure.execute(world, lx, ly, z, "15", "0.1", "0.1", "0.1", "1.000 0.800 0.200 1", "0.1");
+					GenerateDustParticlesProcedure.execute(world, lx, ly, lz, "15", "0.1", "0.1", "0.1", "1.000 0.800 0.200 1", "0.1");
 				}
 			}
 		}

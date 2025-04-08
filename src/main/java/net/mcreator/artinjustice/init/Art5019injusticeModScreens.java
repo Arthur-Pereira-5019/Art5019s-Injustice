@@ -13,6 +13,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.artinjustice.client.gui.VillagerPassScreen;
 import net.mcreator.artinjustice.client.gui.VenomInventoryScreen;
+import net.mcreator.artinjustice.client.gui.TransmutationGUIScreen;
 import net.mcreator.artinjustice.client.gui.TodayProblemScreen;
 import net.mcreator.artinjustice.client.gui.TodayProblemBackupScreen;
 import net.mcreator.artinjustice.client.gui.Test5Screen;
@@ -71,6 +72,7 @@ public class Art5019injusticeModScreens {
 			MenuScreens.register(Art5019injusticeModMenus.VENOM_INVENTORY.get(), VenomInventoryScreen::new);
 			MenuScreens.register(Art5019injusticeModMenus.ANNOTATION_JEFFERSON_JACKSON.get(), AnnotationJeffersonJacksonScreen::new);
 			MenuScreens.register(Art5019injusticeModMenus.TODAY_PROBLEM_BACKUP.get(), TodayProblemBackupScreen::new);
+			MenuScreens.register(Art5019injusticeModMenus.TRANSMUTATION_GUI.get(), TransmutationGUIScreen::new);
 		});
 	}
 }

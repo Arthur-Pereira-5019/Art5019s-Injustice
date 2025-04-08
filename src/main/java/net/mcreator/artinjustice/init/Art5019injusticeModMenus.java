@@ -13,6 +13,7 @@ import net.minecraft.world.inventory.MenuType;
 
 import net.mcreator.artinjustice.world.inventory.VillagerPassMenu;
 import net.mcreator.artinjustice.world.inventory.VenomInventoryMenu;
+import net.mcreator.artinjustice.world.inventory.TransmutationGUIMenu;
 import net.mcreator.artinjustice.world.inventory.TodayProblemMenu;
 import net.mcreator.artinjustice.world.inventory.TodayProblemBackupMenu;
 import net.mcreator.artinjustice.world.inventory.Test5Menu;
@@ -69,4 +70,5 @@ public class Art5019injusticeModMenus {
 	public static final RegistryObject<MenuType<VenomInventoryMenu>> VENOM_INVENTORY = REGISTRY.register("venom_inventory", () -> IForgeMenuType.create(VenomInventoryMenu::new));
 	public static final RegistryObject<MenuType<AnnotationJeffersonJacksonMenu>> ANNOTATION_JEFFERSON_JACKSON = REGISTRY.register("annotation_jefferson_jackson", () -> IForgeMenuType.create(AnnotationJeffersonJacksonMenu::new));
 	public static final RegistryObject<MenuType<TodayProblemBackupMenu>> TODAY_PROBLEM_BACKUP = REGISTRY.register("today_problem_backup", () -> IForgeMenuType.create(TodayProblemBackupMenu::new));
+	public static final RegistryObject<MenuType<TransmutationGUIMenu>> TRANSMUTATION_GUI = REGISTRY.register("transmutation_gui", () -> IForgeMenuType.create(TransmutationGUIMenu::new));
 }
