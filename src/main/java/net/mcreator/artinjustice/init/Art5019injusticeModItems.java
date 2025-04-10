@@ -450,6 +450,8 @@ import net.mcreator.artinjustice.item.ElectricityWeaknessTranslucentIconItem;
 import net.mcreator.artinjustice.item.EarthXIconItem;
 import net.mcreator.artinjustice.item.EarIconItem;
 import net.mcreator.artinjustice.item.DwarfStarKeyItem;
+import net.mcreator.artinjustice.item.DwarfStarItem;
+import net.mcreator.artinjustice.item.DwarfStarHammerItem;
 import net.mcreator.artinjustice.item.DominoSuitItem;
 import net.mcreator.artinjustice.item.DominoIconItem;
 import net.mcreator.artinjustice.item.DiceItem;
@@ -568,6 +570,7 @@ import net.mcreator.artinjustice.item.AdrenalyneSyringeItem;
 import net.mcreator.artinjustice.item.AdrenalyneFormulaItem;
 import net.mcreator.artinjustice.item.AdrenV3Item;
 import net.mcreator.artinjustice.item.ActivatedNanitesItem;
+import net.mcreator.artinjustice.item.ActivatedDwarfStarItem;
 import net.mcreator.artinjustice.item.ActivatedCharcoalItem;
 import net.mcreator.artinjustice.item.AK47MagazineItem;
 import net.mcreator.artinjustice.item.AK47Item;
@@ -1388,6 +1391,10 @@ public class Art5019injusticeModItems {
 	public static final RegistryObject<Item> RED_KRYPTONITE_PILLS = REGISTRY.register("red_kryptonite_pills", () -> new RedKryptonitePillsItem());
 	public static final RegistryObject<Item> ALL_OUT_ICON = REGISTRY.register("all_out_icon", () -> new AllOutIconItem());
 	public static final RegistryObject<Item> ICE_LENSE = block(Art5019injusticeModBlocks.ICE_LENSE);
+	public static final RegistryObject<Item> DWARF_STAR = REGISTRY.register("dwarf_star", () -> new DwarfStarItem());
+	public static final RegistryObject<Item> DWARF_STAR_BLOCK = block(Art5019injusticeModBlocks.DWARF_STAR_BLOCK);
+	public static final RegistryObject<Item> DWARF_STAR_HAMMER = REGISTRY.register("dwarf_star_hammer", () -> new DwarfStarHammerItem());
+	public static final RegistryObject<Item> ACTIVATED_DWARF_STAR = REGISTRY.register("activated_dwarf_star", () -> new ActivatedDwarfStarItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

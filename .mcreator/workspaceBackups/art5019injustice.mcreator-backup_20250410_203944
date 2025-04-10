@@ -43434,7 +43434,7 @@
           "src/main/resources/data/art5019injustice/loot_tables/blocks/transmutation_table.json"
         ]
       },
-      "path": "~/Materials/Uranium"
+      "path": "~/TransmutationTable"
     },
     {
       "name": "TransmutationTableRecipe",
@@ -43447,7 +43447,7 @@
           "src/main/resources/data/art5019injustice/recipes/transmutation_table_recipe.json"
         ]
       },
-      "path": "~/Materials/Uranium"
+      "path": "~/TransmutationTable"
     },
     {
       "name": "CriminalEntityDies",
@@ -54262,6 +54262,299 @@
         ]
       },
       "path": "~/Kryptonian/Superman/FortressBlocks"
+    },
+    {
+      "name": "TransmutationGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transmutation_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/world/inventory/TransmutationGUIMenu.java",
+          "src/main/java/net/mcreator/artinjustice/network/TransmutationGUISlotMessage.java",
+          "src/main/java/net/mcreator/artinjustice/client/gui/TransmutationGUIScreen.java"
+        ]
+      },
+      "path": "~/TransmutationTable"
+    },
+    {
+      "name": "IsKryptonian",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_kryptonian",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/IsKryptonianProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Kryptonian"
+    },
+    {
+      "name": "DwarfStarItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/DwarfStarItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Materials/DwarfStar"
+    },
+    {
+      "name": "DwarfStar",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/dwarf_star.json",
+          "src/main/java/net/mcreator/artinjustice/item/DwarfStarItem.java"
+        ]
+      },
+      "path": "~/Materials/DwarfStar"
+    },
+    {
+      "name": "DwarfStarBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/loot_tables/blocks/dwarf_star_block.json",
+          "src/main/java/net/mcreator/artinjustice/block/DwarfStarBlockBlock.java",
+          "src/main/resources/assets/art5019injustice/models/item/dwarf_star_block.json",
+          "src/main/resources/assets/art5019injustice/blockstates/dwarf_star_block.json",
+          "src/main/resources/assets/art5019injustice/models/block/dwarf_star_block.json"
+        ]
+      },
+      "path": "~/Materials/DwarfStar"
+    },
+    {
+      "name": "DwarfStarHammer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/item/DwarfStarHammerItem.java",
+          "src/main/resources/assets/art5019injustice/models/item/dwarf_star_hammer.json"
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "DwarfStarHammerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_hammer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/dwarf_star_hammer_recipe.json"
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "DwarfStarHammerEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_hammer_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/DwarfStarHammerEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "ActivatedDwarfStarItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activated_dwarf_star_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/ActivatedDwarfStarItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Materials/DwarfStar"
+    },
+    {
+      "name": "ActivatedDwarfStar",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activated_dwarf_star",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/item/ActivatedDwarfStarItem.java",
+          "src/main/resources/assets/art5019injustice/models/item/activated_dwarf_star.json"
+        ]
+      },
+      "path": "~/Materials/DwarfStar"
+    },
+    {
+      "name": "APersonalVoyage",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_personal_voyage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/advancements/a_personal_voyage.json"
+        ]
+      },
+      "path": "~/Materials/DwarfStar"
+    },
+    {
+      "name": "CosmicForger",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cosmic_forger",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/advancements/cosmic_forger.json"
+        ]
+      },
+      "path": "~/Kryptonian/Superman"
+    },
+    {
+      "name": "SuperAnvil",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_anvil",
+      "metadata": {
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/SuperAnvilProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "toBeChanged",
+            "type": "itemstack"
+          },
+          {
+            "name": "power",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "SuperAnvilForging",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_anvil_forging",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/SuperAnvilForgingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "toBeManipulated",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "power",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GlobalProcedures"
     }
   ],
   "variable_elements": [
@@ -55222,6 +55515,7 @@
       "~CUSTOM:LeadOre"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:DwarfStarBlock",
       "~CUSTOM:ReinforcedPackedIceLight",
       "~CUSTOM:DwarfStarDoor",
       "~CUSTOM:ReinforcedIce",
@@ -55421,6 +55715,7 @@
       "CUSTOM:TWebShooterTier2"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:DwarfStarHammer",
       "~CUSTOM:SilverPickaxe",
       "~CUSTOM:EnrichedPickaxe",
       "~CUSTOM:BlueBeetleSonicCannon"
@@ -55751,6 +56046,7 @@
       "CUSTOM:VenomEddieBrockSuit.helmet"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:DwarfStarBlock",
       "~CUSTOM:CopperElectrifier",
       "~CUSTOM:CopperGrate",
       "~CUSTOM:ReinforcedPackedIceLight",
@@ -56207,6 +56503,7 @@
       "advancements.st_black_panther_base.title": "§6Skilltree",
       "item.art5019injustice.probability_field_emissor_disruptor": "Signal Emitter",
       "item.art5019injustice.hydrogen_fluoride": "Hydrogen Fluoride",
+      "item.art5019injustice.activated_dwarf_star": "Activated Dwarf Star",
       "gui.art5019injustice.power_gui_peak_human.label_spider_sense_30": "Spider Sense: 30%",
       "line.allergy.scratch": "Press the React key to scratch and get rid of the allergy",
       "gui.art5019injustice.compound_v_menu_vought_executive.label_like_you_is_able_to_pay_that_amo": "one of our estimated serums, but, if",
@@ -56465,6 +56762,7 @@
       "item.art5019injustice.ted_kord_suit_chestplate": "Classical Blue Beetle Chestplate",
       "advancements.poison_ivy_regeneration.title": "§eRegeneration",
       "advancements.back_to_life.title": "Born Again",
+      "block.art5019injustice.dwarf_star_block": "Dwarf Star Block",
       "item.art5019injustice.jar": "Jar",
       "advancements.st_mathias_body_weakening.title": "Body Adaptation",
       "item.art5019injustice.hazmat_leggings": "Hazmat Leggings",
@@ -56903,6 +57201,7 @@
       "advancements.craft_microscope.title": "It\u0027s a small world...",
       "item.art5019injustice.uncle_sam_spawn_egg": "Uncle Sam Spawn Egg",
       "item.art5019injustice.police_radio": "Police Radio",
+      "item.art5019injustice.dwarf_star": "Dwarf Star Alloy",
       "advancements.st_anti_venom_healer_bomb.title": "§3Healing Bomb",
       "item.art5019injustice.fabric_pink": "Pink Fabric",
       "advancements.st_homelander_strength.descr": "§ePassive - +7 Attack Damage",
@@ -57151,7 +57450,9 @@
       "item.art5019injustice.spider_man_tm_1_chestplate": "The Human Spider Sweatshirt",
       "advancements.st_spider_man_wall_crawling.descr": "§eAbility 1 - Trough van der Waals forces, you\u0027re able to attach on any solid surface nearby you",
       "gui.art5019injustice.chemistry_table_gui.label_f_levels": "F Levels:",
+      "gui.art5019injustice.transmutation_gui.tooltip_cologne": "Cologne",
       "advancements.stjrbb_weapon_manifestation.descr": "§eAbility 2 - Allows the user to manifestate different weapons to assist in combat. By pressing Ability 3 key, the user is able to switch between weapons.",
+      "item.art5019injustice.dwarf_star_hammer": "Dwarf Star Hammer",
       "advancements.st_superman_leaping.descr": "§fPassive - Years of evolution on a high density planet makes easier to defy other weaker gravity pulls. The limits of your leaping are bounded only to the amount of solar energy running on your cells.",
       "effect.art5019injustice.chemistry_knowledge": "Chemistry Knowledge",
       "item.art5019injustice.vibranium_saw": "Vibranium Saw",
@@ -57525,6 +57826,7 @@
       "item.art5019injustice.super_soldier_serum_syringe": "Syringe",
       "item.art5019injustice.venom_tobey_maguire_suit_boots": "Venom Feet",
       "advancements.st_anti_venom_wall_crawling.descr": "§bAbility 2 - Due to the sheer strength of the Anti-Symbiote, you\u0027re able to crawl up walls ",
+      "gui.art5019injustice.transmutation_gui.tooltip_food": "Food",
       "advancements.black_panther_craft_suit.title": "Vibranium Habit",
       "subtitles.item.spacestone.portal": "Portal is opened",
       "block.art5019injustice.rare_blue_flower": "Rare Blue Flower",
@@ -57581,6 +57883,7 @@
       "block.art5019injustice.tomato_stage_6": "Tomato",
       "advancements.st_quicksilver_fast_hands.descr": "§ePassive - Haste II",
       "block.art5019injustice.tomato_stage_5": "Tomato",
+      "advancements.cosmic_forger.title": "Cosmic Forger",
       "item.art5019injustice.mayo_shot": "Mayo Shot",
       "item.art5019injustice.x_gene_emblem": "X-Gene Emblem",
       "block.art5019injustice.tomato_stage_4": "Tomato",
@@ -57592,6 +57895,7 @@
       "item.art5019injustice.ghost_spider_boots": "Ghost Spider\u0027s Converse Nether Star",
       "entity.art5019injustice.criminal": "Criminal",
       "advancements.st_supe_fall_resistance.descr": "§ePassive - Negates all Fall Damage",
+      "advancements.cosmic_forger.descr": "Forge your own Star",
       "advancements.silent_trade.title": "Silent Trade",
       "item.art5019injustice.storm_black_suit_boots": "Storm Boots",
       "item.art5019injustice.scarecrow_focus_shift_icon": "Scarecrow Focus Shift Icon",
@@ -57906,6 +58210,7 @@
       "gui.art5019injustice.today_problem.label_operator": "Operator",
       "advancements.earth_x_enter_base.title": "Return to Castle",
       "item.minecraft.splash_potion.effect.allergy_potion": "Splash Allergenic Potion",
+      "advancements.a_personal_voyage.title": "A Personal Voyage",
       "advancements.stbbdg_strength.title": "§fScarab Strength",
       "advancements.st_scarecrow_base.title": "§6Skilltree",
       "advancements.st_supe_healing_factor.descr": "§ePassive - Grants Regeneration I",
@@ -58010,6 +58315,7 @@
       "advancements.become_homelander_advancement.descr": "Become Homelander",
       "entity.art5019injustice.scarecrow_i": "Scarecrow",
       "item.art5019injustice.gold_dust": "Gold Dust",
+      "advancements.a_personal_voyage.descr": "Find your first piece of Dwarf Star Alloy",
       "gui.art5019injustice.influence_menu_vought_executive.label_able_to_pay_way_more_in_exchange": "serums.",
       "item.art5019injustice.kryptonian_cloth": "Kryptonian Cloth",
       "advancements.spider_responsabilities.descr": "§bPassive - When in low health an endurace boost is given to you to finish off your challenges. (Scales with Alignment, doesn\u0027t work with low or negative Alignment)",
@@ -58349,6 +58655,10 @@
           {
             "name": "Uranium",
             "children": []
+          },
+          {
+            "name": "DwarfStar",
+            "children": []
           }
         ]
       },
@@ -58390,6 +58700,10 @@
           },
           {
             "name": "Newspaper",
+            "children": []
+          },
+          {
+            "name": "Hammers",
             "children": []
           }
         ]
@@ -58904,6 +59218,10 @@
       },
       {
         "name": "Detective",
+        "children": []
+      },
+      {
+        "name": "TransmutationTable",
         "children": []
       }
     ]

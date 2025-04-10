@@ -46,20 +46,18 @@ public class IceLenseOnTickUpdateProcedure {
 			}
 			Scaling = -0.6;
 			if (canBeam) {
-				for (int index1 = 0; index1 < 25; index1++) {
+				for (int index1 = 0; index1 < 40; index1++) {
 					lx = x + 0.5 + Math.cos(Math.toRadians(deg)) * Scaling;
 					ly = y + 0.5 + Math.sin(Math.toRadians(deg)) * Scaling;
 					lz = z + 0.5;
 					if (!world.getBlockState(BlockPos.containing(lx, ly, lz)).canOcclude()) {
-						Scaling = Scaling - 0.6;
+						Scaling = Scaling - 1;
 					} else {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.FLASH, lx, ly, lz, 5, 1, 1, 1, 1);
 						{
 							final Vec3 _center = new Vec3(lx, ly, lz);
 							List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 							for (Entity entityiterator : _entfound) {
-								if ((entityiterator.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 23) {
+								if (IsKryptonianProcedure.execute(entityiterator)) {
 									{
 										double _setval = (entityiterator.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powermeter + 20;
 										entityiterator.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -78,7 +76,8 @@ public class IceLenseOnTickUpdateProcedure {
 						}
 						break;
 					}
-					GenerateDustParticlesProcedure.execute(world, lx, ly, lz, "15", "0.1", "0.1", "0.1", "1.000 0.800 0.200 1", "0.1");
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.FLASH, lx, ly, lz, 1, 0.1, 0.1, 0.1, 1);
 				}
 			}
 		}

@@ -95,6 +95,7 @@ import net.mcreator.artinjustice.block.HeartShapedHerbBlock;
 import net.mcreator.artinjustice.block.GoldTitaniumBlockBlock;
 import net.mcreator.artinjustice.block.FluoriteOreBlock;
 import net.mcreator.artinjustice.block.DwarfStarDoorBlock;
+import net.mcreator.artinjustice.block.DwarfStarBlockBlock;
 import net.mcreator.artinjustice.block.DroppedKeyBlock;
 import net.mcreator.artinjustice.block.CorpseBlock;
 import net.mcreator.artinjustice.block.CopperGrateBlock;
@@ -206,6 +207,7 @@ public class Art5019injusticeModBlocks {
 	public static final RegistryObject<Block> RUBIK_CUBE = REGISTRY.register("rubik_cube", () -> new RubikCubeBlock());
 	public static final RegistryObject<Block> PUZZLE_BLOCK = REGISTRY.register("puzzle_block", () -> new PuzzleBlockBlock());
 	public static final RegistryObject<Block> ICE_LENSE = REGISTRY.register("ice_lense", () -> new IceLenseBlock());
+	public static final RegistryObject<Block> DWARF_STAR_BLOCK = REGISTRY.register("dwarf_star_block", () -> new DwarfStarBlockBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

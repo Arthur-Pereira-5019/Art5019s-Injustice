@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:activated_dwarf_star"
+    },
+    "title": {
+      "translate": "advancements.cosmic_forger.title"
+    },
+    "description": {
+      "translate": "advancements.cosmic_forger.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cosmic_forger_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "art5019injustice:a_personal_voyage"
+}

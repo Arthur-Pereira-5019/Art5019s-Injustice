@@ -272,6 +272,8 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.STEEL_ROD.get());
 				tabData.accept(Art5019injusticeModItems.ACTIVATED_CHARCOAL.get());
 				tabData.accept(Art5019injusticeModItems.RED_KRYPTONITE.get());
+				tabData.accept(Art5019injusticeModItems.DWARF_STAR.get());
+				tabData.accept(Art5019injusticeModBlocks.DWARF_STAR_BLOCK.get().asItem());
 			})
 
 					.build());
@@ -447,6 +449,8 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.KRYPTO_THE_SUPERDOG_SPAWN_EGG.get());
 				tabData.accept(Art5019injusticeModItems.SUPERSONIC_WHISTLE.get());
 				tabData.accept(Art5019injusticeModItems.RED_KRYPTONITE_PILLS.get());
+				tabData.accept(Art5019injusticeModItems.DWARF_STAR_HAMMER.get());
+				tabData.accept(Art5019injusticeModItems.ACTIVATED_DWARF_STAR.get());
 			})
 
 					.build());
@@ -456,6 +460,7 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModBlocks.COPPER_GRATE.get().asItem());
 				tabData.accept(Art5019injusticeModBlocks.COPPER_ELECTRIFIER.get().asItem());
 				tabData.accept(Art5019injusticeModBlocks.ICE_LENSE.get().asItem());
+				tabData.accept(Art5019injusticeModBlocks.DWARF_STAR_BLOCK.get().asItem());
 			})
 
 					.build());
@@ -717,6 +722,7 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.TACTICAL_IRON_KNIFE.get());
 				tabData.accept(Art5019injusticeModItems.KRYPTONITE_GRENADE.get());
 				tabData.accept(Art5019injusticeModItems.LIGHT_MOLOTOV.get());
+				tabData.accept(Art5019injusticeModItems.DWARF_STAR_HAMMER.get());
 			})
 
 					.build());
@@ -737,6 +743,8 @@ public class Art5019injusticeModTabs {
 			tabData.accept(Art5019injusticeModItems.METALLO_SPAWN_EGG.get());
 			tabData.accept(Art5019injusticeModItems.CRIMINAL_SPAWN_EGG.get());
 			tabData.accept(Art5019injusticeModItems.MARTIN_LI_SPAWN_EGG.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(Art5019injusticeModItems.DWARF_STAR_HAMMER.get());
 		}
 	}
 }
