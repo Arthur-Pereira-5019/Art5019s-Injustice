@@ -4,7 +4,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 
-public class DwarfStarHammerEntitySwingsItemProcedure {
+public class IronHammerEntitySwingsItemProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
@@ -12,6 +12,6 @@ public class DwarfStarHammerEntitySwingsItemProcedure {
 		double lx = 0;
 		double lz = 0;
 		double ly = 0;
-		HammerGenericRayCastProcedure.execute(world, entity, itemstack, 10);
+		HammerGenericRayCastProcedure.execute(world, entity, itemstack, 4);
 	}
 }

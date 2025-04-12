@@ -451,6 +451,10 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.RED_KRYPTONITE_PILLS.get());
 				tabData.accept(Art5019injusticeModItems.DWARF_STAR_HAMMER.get());
 				tabData.accept(Art5019injusticeModItems.ACTIVATED_DWARF_STAR.get());
+				tabData.accept(Art5019injusticeModItems.DIAMOND_HAMMER.get());
+				tabData.accept(Art5019injusticeModItems.IRON_HAMMER.get());
+				tabData.accept(Art5019injusticeModItems.STEEL_HAMMER.get());
+				tabData.accept(Art5019injusticeModItems.GOLDEN_HAMMER.get());
 			})
 
 					.build());
@@ -723,6 +727,10 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.KRYPTONITE_GRENADE.get());
 				tabData.accept(Art5019injusticeModItems.LIGHT_MOLOTOV.get());
 				tabData.accept(Art5019injusticeModItems.DWARF_STAR_HAMMER.get());
+				tabData.accept(Art5019injusticeModItems.DIAMOND_HAMMER.get());
+				tabData.accept(Art5019injusticeModItems.IRON_HAMMER.get());
+				tabData.accept(Art5019injusticeModItems.STEEL_HAMMER.get());
+				tabData.accept(Art5019injusticeModItems.GOLDEN_HAMMER.get());
 			})
 
 					.build());
@@ -745,6 +753,10 @@ public class Art5019injusticeModTabs {
 			tabData.accept(Art5019injusticeModItems.MARTIN_LI_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(Art5019injusticeModItems.DWARF_STAR_HAMMER.get());
+			tabData.accept(Art5019injusticeModItems.DIAMOND_HAMMER.get());
+			tabData.accept(Art5019injusticeModItems.IRON_HAMMER.get());
+			tabData.accept(Art5019injusticeModItems.STEEL_HAMMER.get());
+			tabData.accept(Art5019injusticeModItems.GOLDEN_HAMMER.get());
 		}
 	}
 }

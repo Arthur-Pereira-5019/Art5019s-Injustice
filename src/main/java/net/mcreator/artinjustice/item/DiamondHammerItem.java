@@ -4,18 +4,18 @@ package net.mcreator.artinjustice.item;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
 
 import net.mcreator.artinjustice.procedures.DwarfStarHammerEntitySwingsItemProcedure;
-import net.mcreator.artinjustice.init.Art5019injusticeModItems;
 
-public class DwarfStarHammerItem extends PickaxeItem {
-	public DwarfStarHammerItem() {
+public class DiamondHammerItem extends PickaxeItem {
+	public DiamondHammerItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 6000;
+				return 2250;
 			}
 
 			public float getSpeed() {
@@ -23,21 +23,21 @@ public class DwarfStarHammerItem extends PickaxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 7f;
+				return 4f;
 			}
 
 			public int getLevel() {
-				return 4;
+				return 3;
 			}
 
 			public int getEnchantmentValue() {
-				return 30;
+				return 10;
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Art5019injusticeModItems.DWARF_STAR.get()));
+				return Ingredient.of(new ItemStack(Items.DIAMOND));
 			}
-		}, 1, -3.4f, new Item.Properties().fireResistant());
+		}, 1, -3.3f, new Item.Properties());
 	}
 
 	@Override

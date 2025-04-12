@@ -4,40 +4,40 @@ package net.mcreator.artinjustice.item;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
 
 import net.mcreator.artinjustice.procedures.DwarfStarHammerEntitySwingsItemProcedure;
-import net.mcreator.artinjustice.init.Art5019injusticeModItems;
 
-public class DwarfStarHammerItem extends PickaxeItem {
-	public DwarfStarHammerItem() {
+public class GoldenHammerItem extends PickaxeItem {
+	public GoldenHammerItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 6000;
+				return 360;
 			}
 
 			public float getSpeed() {
-				return 13f;
+				return 6f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 7f;
+				return 2f;
 			}
 
 			public int getLevel() {
-				return 4;
+				return 2;
 			}
 
 			public int getEnchantmentValue() {
-				return 30;
+				return 22;
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Art5019injusticeModItems.DWARF_STAR.get()));
+				return Ingredient.of(new ItemStack(Items.GOLD_INGOT));
 			}
-		}, 1, -3.4f, new Item.Properties().fireResistant());
+		}, 1, -3.3f, new Item.Properties());
 	}
 
 	@Override

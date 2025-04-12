@@ -54555,6 +54555,37 @@
         ]
       },
       "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "HammerGenericRayCast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer_generic_ray_cast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/HammerGenericRayCastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "power",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Hammers"
     }
   ],
   "variable_elements": [

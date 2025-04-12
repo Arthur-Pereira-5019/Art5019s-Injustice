@@ -144,6 +144,7 @@ import net.mcreator.artinjustice.item.SteelRodItem;
 import net.mcreator.artinjustice.item.SteelNuggetItem;
 import net.mcreator.artinjustice.item.SteelMixDustItem;
 import net.mcreator.artinjustice.item.SteelIngotItem;
+import net.mcreator.artinjustice.item.SteelHammerItem;
 import net.mcreator.artinjustice.item.SteelDustItem;
 import net.mcreator.artinjustice.item.SteelBladeItem;
 import net.mcreator.artinjustice.item.StarkWalletItem;
@@ -323,6 +324,7 @@ import net.mcreator.artinjustice.item.IronSpiderTHItem;
 import net.mcreator.artinjustice.item.IronSawItem;
 import net.mcreator.artinjustice.item.IronNanitesItem;
 import net.mcreator.artinjustice.item.IronManMarkIIIItem;
+import net.mcreator.artinjustice.item.IronHammerItem;
 import net.mcreator.artinjustice.item.IronDustItem;
 import net.mcreator.artinjustice.item.IronBladeItem;
 import net.mcreator.artinjustice.item.IridiumItem;
@@ -389,6 +391,7 @@ import net.mcreator.artinjustice.item.GoldenKryptoniteShardItem;
 import net.mcreator.artinjustice.item.GoldenKryptoniteKnifeItem;
 import net.mcreator.artinjustice.item.GoldenKryptoniteItem;
 import net.mcreator.artinjustice.item.GoldenKryptoniteBladeItem;
+import net.mcreator.artinjustice.item.GoldenHammerItem;
 import net.mcreator.artinjustice.item.GoldTitaniumNanitesItem;
 import net.mcreator.artinjustice.item.GoldTitaniumIngotItem;
 import net.mcreator.artinjustice.item.GoldTitaniumDustItem;
@@ -456,6 +459,7 @@ import net.mcreator.artinjustice.item.DominoSuitItem;
 import net.mcreator.artinjustice.item.DominoIconItem;
 import net.mcreator.artinjustice.item.DiceItem;
 import net.mcreator.artinjustice.item.DiamondLensesItem;
+import net.mcreator.artinjustice.item.DiamondHammerItem;
 import net.mcreator.artinjustice.item.DgBlueBeetleItem;
 import net.mcreator.artinjustice.item.DeadpoolSuitItem;
 import net.mcreator.artinjustice.item.DeadpoolIconItem;
@@ -1395,6 +1399,10 @@ public class Art5019injusticeModItems {
 	public static final RegistryObject<Item> DWARF_STAR_BLOCK = block(Art5019injusticeModBlocks.DWARF_STAR_BLOCK);
 	public static final RegistryObject<Item> DWARF_STAR_HAMMER = REGISTRY.register("dwarf_star_hammer", () -> new DwarfStarHammerItem());
 	public static final RegistryObject<Item> ACTIVATED_DWARF_STAR = REGISTRY.register("activated_dwarf_star", () -> new ActivatedDwarfStarItem());
+	public static final RegistryObject<Item> DIAMOND_HAMMER = REGISTRY.register("diamond_hammer", () -> new DiamondHammerItem());
+	public static final RegistryObject<Item> IRON_HAMMER = REGISTRY.register("iron_hammer", () -> new IronHammerItem());
+	public static final RegistryObject<Item> STEEL_HAMMER = REGISTRY.register("steel_hammer", () -> new SteelHammerItem());
+	public static final RegistryObject<Item> GOLDEN_HAMMER = REGISTRY.register("golden_hammer", () -> new GoldenHammerItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -54555,6 +54555,51 @@
         ]
       },
       "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "HammerGenericRayCast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer_generic_ray_cast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/HammerGenericRayCastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "power",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "DiamondHammer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/item/DiamondHammerItem.java",
+          "src/main/resources/assets/art5019injustice/models/item/diamond_hammer.json"
+        ]
+      },
+      "path": "~/Items/Hammers"
     }
   ],
   "variable_elements": [
@@ -55715,6 +55760,7 @@
       "CUSTOM:TWebShooterTier2"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:DiamondHammer",
       "~CUSTOM:DwarfStarHammer",
       "~CUSTOM:SilverPickaxe",
       "~CUSTOM:EnrichedPickaxe",
@@ -56772,6 +56818,7 @@
       "advancements.green_effect_azure_bluets.descr": "Azure Bluets are genetically related to forget-me-nots, symbols of those who have left us.",
       "entity.art5019injustice.plague_zombie": "Plague Zombie",
       "item.art5019injustice.golden_kryptonite": "Golden Kryptonite",
+      "item.art5019injustice.diamond_hammer": "Dwarf Star Hammer",
       "gui.art5019injustice.main_menu_vought_executive.button_merchandise": "Merchandise",
       "item.art5019injustice.web_shooter_electric_web": "Web Shooter",
       "item.art5019injustice.gold_titanium_dust": "Gold Titanium Dust",

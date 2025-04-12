@@ -11,33 +11,33 @@ import net.minecraft.world.entity.LivingEntity;
 import net.mcreator.artinjustice.procedures.DwarfStarHammerEntitySwingsItemProcedure;
 import net.mcreator.artinjustice.init.Art5019injusticeModItems;
 
-public class DwarfStarHammerItem extends PickaxeItem {
-	public DwarfStarHammerItem() {
+public class SteelHammerItem extends PickaxeItem {
+	public SteelHammerItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 6000;
+				return 1000;
 			}
 
 			public float getSpeed() {
-				return 13f;
+				return 8f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 7f;
+				return 5f;
 			}
 
 			public int getLevel() {
-				return 4;
+				return 3;
 			}
 
 			public int getEnchantmentValue() {
-				return 30;
+				return 7;
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Art5019injusticeModItems.DWARF_STAR.get()));
+				return Ingredient.of(new ItemStack(Art5019injusticeModItems.STEEL_INGOT.get()));
 			}
-		}, 1, -3.4f, new Item.Properties().fireResistant());
+		}, 1, -3.4f, new Item.Properties());
 	}
 
 	@Override
