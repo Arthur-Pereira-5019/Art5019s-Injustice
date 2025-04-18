@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 9,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:DwarfStar"
-      },
-      {
-        "value": "CUSTOM:DwarfStar"
-      },
-      {
-        "value": "CUSTOM:DwarfStar"
-      },
-      {
-        "value": "CUSTOM:DwarfStar"
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "CUSTOM:DwarfStar"
+        "value": ""
       },
       {
         "value": ""
       },
       {
-        "value": "Items.STICK"
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GoldenKryptonite"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DwarfStarHammer"
+      "value": "CUSTOM:GoldenKryptoniteShard"
     },
-    "name": "dwarf_star_hammer_recipe",
+    "name": "golden_kryptonite_to_shard",
     "namespace": "mod"
   }
 }

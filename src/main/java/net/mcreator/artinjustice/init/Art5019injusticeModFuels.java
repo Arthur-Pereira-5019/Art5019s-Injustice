@@ -19,5 +19,7 @@ public class Art5019injusticeModFuels {
 			event.setBurnTime(40000);
 		else if (itemstack.getItem() == Art5019injusticeModItems.KRYPTONITE.get())
 			event.setBurnTime(8000);
+		else if (itemstack.getItem() == Art5019injusticeModItems.ACTIVATED_DWARF_STAR.get())
+			event.setBurnTime(2000000);
 	}
 }

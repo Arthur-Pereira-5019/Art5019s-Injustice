@@ -12,22 +12,22 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:DwarfStar"
+        "value": "Items.GOLD_INGOT"
       },
       {
-        "value": "CUSTOM:DwarfStar"
+        "value": "Items.GOLD_INGOT"
       },
       {
-        "value": "CUSTOM:DwarfStar"
+        "value": "Items.GOLD_INGOT"
       },
       {
-        "value": "CUSTOM:DwarfStar"
+        "value": "Items.GOLD_INGOT"
       },
       {
         "value": "Items.STICK"
       },
       {
-        "value": "CUSTOM:DwarfStar"
+        "value": "Items.GOLD_INGOT"
       },
       {
         "value": ""
@@ -40,9 +40,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DwarfStarHammer"
+      "value": "CUSTOM:GoldenHammer"
     },
-    "name": "dwarf_star_hammer_recipe",
+    "name": "golden_hammer_recipe",
     "namespace": "mod"
   }
 }

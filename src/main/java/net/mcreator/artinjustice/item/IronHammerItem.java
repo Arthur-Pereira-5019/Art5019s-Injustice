@@ -15,7 +15,7 @@ public class IronHammerItem extends PickaxeItem {
 	public IronHammerItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 600;
+				return 1000;
 			}
 
 			public float getSpeed() {

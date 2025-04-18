@@ -12,22 +12,22 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:DwarfStar"
+        "value": "CUSTOM:SteelIngot"
       },
       {
-        "value": "CUSTOM:DwarfStar"
+        "value": "CUSTOM:SteelIngot"
       },
       {
-        "value": "CUSTOM:DwarfStar"
+        "value": "CUSTOM:SteelIngot"
       },
       {
-        "value": "CUSTOM:DwarfStar"
+        "value": "CUSTOM:SteelIngot"
       },
       {
         "value": "Items.STICK"
       },
       {
-        "value": "CUSTOM:DwarfStar"
+        "value": "CUSTOM:SteelIngot"
       },
       {
         "value": ""
@@ -40,9 +40,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DwarfStarHammer"
+      "value": "CUSTOM:SteelHammer"
     },
-    "name": "dwarf_star_hammer_recipe",
+    "name": "steel_hammer_recipe",
     "namespace": "mod"
   }
 }

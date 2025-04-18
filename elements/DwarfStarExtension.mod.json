@@ -1,0 +1,15 @@
+{
+  "_fv": 66,
+  "_type": "itemextension",
+  "definition": {
+    "item": {
+      "value": "CUSTOM:ActivatedDwarfStar"
+    },
+    "enableFuel": true,
+    "fuelPower": {
+      "fixedValue": 2000000.0
+    },
+    "hasDispenseBehavior": false,
+    "compostLayerChance": 0.0
+  }
+}

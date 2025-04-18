@@ -54555,6 +54555,419 @@
         ]
       },
       "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "HammerGenericRayCast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer_generic_ray_cast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/HammerGenericRayCastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "power",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "DiamondHammer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/item/DiamondHammerItem.java",
+          "src/main/resources/assets/art5019injustice/models/item/diamond_hammer.json"
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "IronHammer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_hammer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/iron_hammer.json",
+          "src/main/java/net/mcreator/artinjustice/item/IronHammerItem.java"
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "SteelHammer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_hammer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/steel_hammer.json",
+          "src/main/java/net/mcreator/artinjustice/item/SteelHammerItem.java"
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "GoldenHammer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/item/GoldenHammerItem.java",
+          "src/main/resources/assets/art5019injustice/models/item/golden_hammer.json"
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "IronHammerEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_hammer_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/IronHammerEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "GoldenHammerEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_hammer_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/GoldenHammerEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "DiamondHammerEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_hammer_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/DiamondHammerEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "SteelHammerEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_hammer_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/SteelHammerEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "HaphaestusBlessing",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "haphaestus_blessing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/enchantment/HaphaestusBlessingEnchantment.java"
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "DiamondHammerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_hammer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/diamond_hammer_recipe.json"
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "GoldenHammerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_hammer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/golden_hammer_recipe.json"
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "IronHammerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_hammer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/iron_hammer_recipe.json"
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "SteelHammerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_hammer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/steel_hammer_recipe.json"
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "OgumBlessing",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ogum_blessing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/enchantment/OgumBlessingEnchantment.java"
+        ]
+      },
+      "path": "~/Items/Hammers"
+    },
+    {
+      "name": "SupermanDwarfStarUse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superman_dwarf_star_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/SupermanDwarfStarUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ActivatedDwarfStarRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activated_dwarf_star_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/ActivatedDwarfStarRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DwarfStarExtension",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_extension",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Materials/DwarfStar"
+    },
+    {
+      "name": "SuperAnvilBladeForging",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_anvil_blade_forging",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/SuperAnvilBladeForgingProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "GoldenKryptoniteShardToFull",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_kryptonite_shard_to_full",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/golden_kryptonite_shard_to_full.json"
+        ]
+      },
+      "path": "~/Kryptonian/Kryptonite"
+    },
+    {
+      "name": "GoldenKryptoniteToShard",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_kryptonite_to_shard",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/golden_kryptonite_to_shard.json"
+        ]
+      },
+      "path": "~/Kryptonian/Kryptonite"
+    },
+    {
+      "name": "ReturnStrength",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_strength",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/ReturnStrengthProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GlobalProcedures"
     }
   ],
   "variable_elements": [
@@ -55715,6 +56128,10 @@
       "CUSTOM:TWebShooterTier2"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:GoldenHammer",
+      "~CUSTOM:SteelHammer",
+      "~CUSTOM:IronHammer",
+      "~CUSTOM:DiamondHammer",
       "~CUSTOM:DwarfStarHammer",
       "~CUSTOM:SilverPickaxe",
       "~CUSTOM:EnrichedPickaxe",
@@ -56156,6 +56573,13 @@
       "Items.GUNPOWDER",
       "Blocks.KELP",
       "Blocks.STONE#0"
+    ],
+    "ITEMS:mod:hammers": [
+      "CUSTOM:DwarfStarHammer",
+      "CUSTOM:DiamondHammer",
+      "CUSTOM:IronHammer",
+      "CUSTOM:SteelHammer",
+      "CUSTOM:GoldenHammer"
     ],
     "ITEMS:mod:sixmodes": [
       "CUSTOM:TWebShooterTier2",
@@ -56725,6 +57149,7 @@
       "item.art5019injustice.iron_spider_th_leggings": "Iron Spider Leggings",
       "item.art5019injustice.superman_lobotomy_icon": "Superman Lobotomy Icon",
       "advancements.st_neuro_adapted_body.title": "§eAdapted Body I",
+      "item.art5019injustice.golden_hammer": "Golden Hammer",
       "advancements.earth_x_wrong_call.title": "Wrong Number",
       "item.art5019injustice.newspaper": "Newspaper",
       "gui.art5019injustice.suit_scheme_menu_vought_executive.label_of_dollars_to_fill_only_a_syring": "help you to make the perfect super-suit ",
@@ -56768,10 +57193,12 @@
       "item.art5019injustice.hazmat_leggings": "Hazmat Leggings",
       "advancements.st_superman_uncontrolled_heat_vision.descr": "§eIt burns...",
       "block.art5019injustice.stibnite_netherrack": "Stibnite Netherrack",
+      "enchantment.art5019injustice.ogum_blessing": "Ogum\u0027s Blessing",
       "advancements.green_effect_azure_bluets.descr": "Azure Bluets are genetically related to forget-me-nots, symbols of those who have left us.",
       "item.art5019injustice.jump_boost_icon": "Jump Boost Icon",
       "entity.art5019injustice.plague_zombie": "Plague Zombie",
       "item.art5019injustice.golden_kryptonite": "Golden Kryptonite",
+      "item.art5019injustice.diamond_hammer": "Diamond Hammer",
       "gui.art5019injustice.main_menu_vought_executive.button_merchandise": "Merchandise",
       "item.art5019injustice.web_shooter_electric_web": "Web Shooter",
       "item.art5019injustice.gold_titanium_dust": "Gold Titanium Dust",
@@ -57502,6 +57929,7 @@
       "item.art5019injustice.kryptonite_magazine": "Magazine",
       "advancements.everyone_has_something_to_fear.descr": "Unleash your power over the others fears with the Scarecrow Toxin",
       "item.minecraft.potion.effect.pheromones_potion": "Bottle of Pheromones",
+      "item.art5019injustice.iron_hammer": "Iron Hammer",
       "trait.art5019injustice.anti_kryptonian": "Kryptonite Infused",
       "advancements.st_supreme_sun_weakness.descr": "§ePassive - Sunlight may burn you. Forms of protection: Wearing low-damaged upper pieces of armor, walking during rains and thunderstorms, close spaces or at night (in this case fire will still be visible).",
       "block.art5019injustice.puzzle_block": "Puzzle Block",
@@ -57602,6 +58030,7 @@
       "gui.art5019injustice.suit_scheme_menu_vought_executive.label_like_you_is_able_to_pay_that_amo": "one of our estimated serums, but, if",
       "advancements.stss_speed.descr": "+0.015 Speed",
       "advancements.st_deadpool_toxic_resistance.title": "§eChemical Resistance",
+      "enchantment.art5019injustice.haphaestus_blessing": "Haphaestus Blessing",
       "item.art5019injustice.webweaver_suit_chestplate": "Webweaver Chestplate",
       "advancements.earth_x_signal_lost.title": "Crisis on Earth-X",
       "advancements.spider_man_venom.title": "Dark Spider",
@@ -58429,6 +58858,7 @@
       "item.art5019injustice.night_monkey_suit_helmet": "Night Monkey Helmet",
       "advancements.green_effect_prickly_path.descr": "A lot of plants in nature developed thorns as a form of self-defence",
       "block.art5019injustice.mars_bricks_stairs": "Mars Bricks",
+      "item.art5019injustice.steel_hammer": "Steel Hammer",
       "advancements.earth_x_blitz_krieg.title": "Blitzkrieg",
       "item.art5019injustice.kale_the_caretaker_spawn_egg": "Kale the Caretaker Spawn Egg",
       "advancements.dont_do_that_at_home.descr": "Put yourself in danger by injecting contamined blood. Please don\u0027t that at home.",

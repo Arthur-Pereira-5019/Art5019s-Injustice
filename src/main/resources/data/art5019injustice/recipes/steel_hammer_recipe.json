@@ -8,14 +8,14 @@
   ],
   "key": {
     "a": {
-      "item": "art5019injustice:dwarf_star"
+      "item": "art5019injustice:steel_ingot"
     },
     "b": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "art5019injustice:dwarf_star_hammer",
+    "item": "art5019injustice:steel_hammer",
     "count": 1
   }
 }

@@ -1,13 +1,16 @@
 
 package net.mcreator.artinjustice.item;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 
+import net.mcreator.artinjustice.procedures.DwarfStarItemInInventoryTickProcedure;
 import net.mcreator.artinjustice.procedures.DwarfStarHammerEntitySwingsItemProcedure;
 import net.mcreator.artinjustice.init.Art5019injusticeModItems;
 
@@ -15,7 +18,7 @@ public class DwarfStarHammerItem extends PickaxeItem {
 	public DwarfStarHammerItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 6000;
+				return 10000;
 			}
 
 			public float getSpeed() {
@@ -45,5 +48,11 @@ public class DwarfStarHammerItem extends PickaxeItem {
 		boolean retval = super.onEntitySwing(itemstack, entity);
 		DwarfStarHammerEntitySwingsItemProcedure.execute(entity.level(), entity, itemstack);
 		return retval;
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		DwarfStarItemInInventoryTickProcedure.execute(entity);
 	}
 }

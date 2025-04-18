@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Ogum's Blessing",
+    "type": "BREAKABLE",
+    "rarity": "RARE",
+    "maxLevel": 3,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "CUSTOM:HaphaestusBlessing"
+      }
+    ],
+    "excludeEnchantments": true,
+    "compatibleItems": [
+      {
+        "value": "TAG:art5019injustice:hammers"
+      }
+    ],
+    "excludeItems": false,
+    "isTreasureEnchantment": true,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": false
+  }
+}

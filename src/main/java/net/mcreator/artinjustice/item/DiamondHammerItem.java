@@ -15,7 +15,7 @@ public class DiamondHammerItem extends PickaxeItem {
 	public DiamondHammerItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 2250;
+				return 3750;
 			}
 
 			public float getSpeed() {
