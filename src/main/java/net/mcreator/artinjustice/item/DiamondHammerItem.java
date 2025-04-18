@@ -9,7 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
 
-import net.mcreator.artinjustice.procedures.DwarfStarHammerEntitySwingsItemProcedure;
+import net.mcreator.artinjustice.procedures.HammerGenericRayCastProcedure;
 
 public class DiamondHammerItem extends PickaxeItem {
 	public DiamondHammerItem() {
@@ -43,7 +43,7 @@ public class DiamondHammerItem extends PickaxeItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		DwarfStarHammerEntitySwingsItemProcedure.execute(entity.level(), entity, itemstack);
+		HammerGenericRayCastProcedure.execute(entity.level(), entity, itemstack);
 		return retval;
 	}
 }

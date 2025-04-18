@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "art5019injustice:item/golden_kryptonite_katana"
+  }
+}

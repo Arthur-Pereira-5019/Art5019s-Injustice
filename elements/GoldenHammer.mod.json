@@ -42,7 +42,7 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntitySwing": {
-      "name": "DwarfStarHammerEntitySwingsItem"
+      "name": "HammerGenericRayCast"
     }
   }
 }

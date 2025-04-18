@@ -4,9 +4,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -17,6 +17,7 @@ import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
 import net.mcreator.artinjustice.init.Art5019injusticeModItems;
+import net.mcreator.artinjustice.Art5019injusticeMod;
 
 public class SuperAnvilProcedure {
 	public static ItemStack execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack toBeChanged, double power) {
@@ -59,8 +60,8 @@ public class SuperAnvilProcedure {
 				result = new ItemStack(Art5019injusticeModItems.ACTIVATED_DWARF_STAR.get());
 			}
 		}
-		if (power > 2) {
-			if (toBeChanged.getItem() == Items.IRON_INGOT) {
+		if (power > 3) {
+			if (toBeChanged.is(ItemTags.create(new ResourceLocation("art5019injustice:can_become_blade")))) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.land")), SoundSource.BLOCKS, 1, (float) 1.4);
@@ -70,23 +71,17 @@ public class SuperAnvilProcedure {
 				}
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.LAVA, x, y, z, 100, 0.1, 0.1, 0.1, 1);
-				if (!world.isClientSide()) {
-					if (Math.random() < 0.4) {
-						result = new ItemStack(Art5019injusticeModItems.IRON_BLADE.get());
-						result.setCount(2);
-						if (Math.random() < 0.2) {
-							result.setCount(3);
-						}
-					} else {
-						result = new ItemStack(Items.IRON_NUGGET);
-						result.setCount(8);
-						if (Math.random() < 0.7) {
-							result.setCount(9);
-						}
-					}
-				}
+				result = AnvilBladeForgingProcedure.execute(world, toBeChanged);
 			}
 		}
+		if (world instanceof ServerLevel _level)
+			_level.sendParticles(ParticleTypes.LAVA, x, y, z, (int) (10 * power), 0.1, 0.1, 0.1, 1);
+		if (world instanceof ServerLevel _level)
+			_level.sendParticles(ParticleTypes.FLASH, x, y, z, (int) (4 * power), 0.1, 0.1, 0.1, 1);
+		Art5019injusticeMod.queueServerWork(40, () -> {
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, x, y, z, (int) (10 * power), 0.1, 0.1, 0.1, 0.4);
+		});
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.BLOCKS, 1, 1);

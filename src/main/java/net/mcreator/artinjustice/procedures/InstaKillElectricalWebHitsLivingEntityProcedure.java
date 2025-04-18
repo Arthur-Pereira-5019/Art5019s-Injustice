@@ -42,16 +42,14 @@ public class InstaKillElectricalWebHitsLivingEntityProcedure {
 				&& (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(Art5019injusticeModMobEffects.WEBBED.get()) ? _livEnt.getEffect(Art5019injusticeModMobEffects.WEBBED.get()).getDuration() : 0) <= 600) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,
-						(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.MOVEMENT_SLOWDOWN) ? _livEnt.getEffect(MobEffects.MOVEMENT_SLOWDOWN).getDuration() : 0) + (boost + 50)
-								- (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)),
+						(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.MOVEMENT_SLOWDOWN) ? _livEnt.getEffect(MobEffects.MOVEMENT_SLOWDOWN).getDuration() : 0) + (boost + 50) - ReturnStrengthProcedure.execute(entity)),
 						(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.MOVEMENT_SLOWDOWN) ? _livEnt.getEffect(MobEffects.MOVEMENT_SLOWDOWN).getAmplifier() : 0) + 1), false, false));
 		}
 		if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WEAKNESS) ? _livEnt.getEffect(MobEffects.WEAKNESS).getAmplifier() : 0) <= 2) {
 			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(Art5019injusticeModMobEffects.WEBBED.get()) ? _livEnt.getEffect(Art5019injusticeModMobEffects.WEBBED.get()).getDuration() : 0) <= 600) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS,
-							(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WEAKNESS) ? _livEnt.getEffect(MobEffects.WEAKNESS).getDuration() : 0) + (boost + 50)
-									- (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)),
+							(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WEAKNESS) ? _livEnt.getEffect(MobEffects.WEAKNESS).getDuration() : 0) + (boost + 50) - ReturnStrengthProcedure.execute(entity)),
 							(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WEAKNESS) ? _livEnt.getEffect(MobEffects.WEAKNESS).getAmplifier() : 0) + 1), false, false));
 			}
 		} else {
@@ -59,16 +57,15 @@ public class InstaKillElectricalWebHitsLivingEntityProcedure {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.WEBBED.get(),
 							(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(Art5019injusticeModMobEffects.WEBBED.get()) ? _livEnt.getEffect(Art5019injusticeModMobEffects.WEBBED.get()).getDuration() : 0) + (boost + 50)
-									- (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)),
+									- ReturnStrengthProcedure.execute(entity)),
 							1, false, false));
 			}
 		}
 		if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(Art5019injusticeModMobEffects.ELECTRICITY.get()) ? _livEnt.getEffect(Art5019injusticeModMobEffects.ELECTRICITY.get()).getAmplifier() : 0) <= 2) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.ELECTRICITY.get(),
-						(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(Art5019injusticeModMobEffects.ELECTRICITY.get()) ? _livEnt.getEffect(Art5019injusticeModMobEffects.ELECTRICITY.get()).getDuration() : 0) + (boost + 50)
-								- (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)),
-						2, false, false));
+						(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(Art5019injusticeModMobEffects.ELECTRICITY.get()) ? _livEnt.getEffect(Art5019injusticeModMobEffects.ELECTRICITY.get()).getDuration() : 0) + boost + 50), 2,
+						false, false));
 		}
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),

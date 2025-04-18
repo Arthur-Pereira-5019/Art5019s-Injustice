@@ -22,108 +22,6 @@ import net.mcreator.artinjustice.Art5019injusticeMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class Art5019injusticeModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Art5019injusticeMod.MODID);
-	public static final RegistryObject<CreativeModeTab> ART_5019_INJUSTICE_CHEMISTRY = REGISTRY.register("art_5019_injustice_chemistry",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.art5019injustice.art_5019_injustice_chemistry")).icon(() -> new ItemStack(Art5019injusticeModItems.VENOM.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(Art5019injusticeModItems.STEEL_INGOT.get());
-				tabData.accept(Art5019injusticeModBlocks.CHEMISTRY_TABLE.get().asItem());
-				tabData.accept(Art5019injusticeModItems.VENOM.get());
-				tabData.accept(Art5019injusticeModItems.VENOM_BYG_CYLINDER.get());
-				tabData.accept(Art5019injusticeModItems.WEB_FLUID_SCHEME.get());
-				tabData.accept(Art5019injusticeModItems.VENOM_SCHEME.get());
-				tabData.accept(Art5019injusticeModItems.EMPTY_SYRINGE.get());
-				tabData.accept(Art5019injusticeModItems.VENOM_PILLS.get());
-				tabData.accept(Art5019injusticeModItems.EMPTY_PILL.get());
-				tabData.accept(Art5019injusticeModItems.CONTAMINED_WATER_BUCKET.get());
-				tabData.accept(Art5019injusticeModItems.CASE_DUST.get());
-				tabData.accept(Art5019injusticeModItems.STEEL_NUGGET.get());
-				tabData.accept(Art5019injusticeModItems.POTASSIUM_DUST.get());
-				tabData.accept(Art5019injusticeModItems.CONTAMINED_WATER_BOTTLE.get());
-				tabData.accept(Art5019injusticeModItems.WATER_SYRINGE.get());
-				tabData.accept(Art5019injusticeModItems.CONTAMINED_WATER_SYRINGE.get());
-				tabData.accept(Art5019injusticeModItems.HALOTHANE_FORMULA.get());
-				tabData.accept(Art5019injusticeModItems.FORMULA_KEVLAR.get());
-				tabData.accept(Art5019injusticeModItems.FORMULA_SUPER_SOLDIER_SERUM.get());
-				tabData.accept(Art5019injusticeModItems.CHEMISTRY_KIT.get());
-				tabData.accept(Art5019injusticeModItems.FORMULA_BIO_EVOLUTIVE_SERUM.get());
-				tabData.accept(Art5019injusticeModItems.FORMULA_MUSTARD_BOTTLE.get());
-				tabData.accept(Art5019injusticeModItems.ADRENALYNE_FORMULA.get());
-				tabData.accept(Art5019injusticeModItems.MAGNESIUM_DUST.get());
-				tabData.accept(Art5019injusticeModItems.PURE_MAGNESIUM_FORMULA.get());
-				tabData.accept(Art5019injusticeModItems.CHEMISTRY_FORMULA_KIT.get());
-				tabData.accept(Art5019injusticeModItems.MINERAL_EXTRACTION_FORMULA.get());
-				tabData.accept(Art5019injusticeModItems.FERRIC_CHLORIDE.get());
-				tabData.accept(Art5019injusticeModItems.FORMULA_FERRIC_CHLORIDE.get());
-				tabData.accept(Art5019injusticeModItems.CHEMISTRY_BOOK_1.get());
-				tabData.accept(Art5019injusticeModItems.CHEMISTRY_BOOK_2.get());
-				tabData.accept(Art5019injusticeModItems.CHEMISTRY_BOOK_3.get());
-				tabData.accept(Art5019injusticeModItems.CHEMISTRY_BOOK_6.get());
-				tabData.accept(Art5019injusticeModItems.FORMULA_SIMPLE_ELECTROLYSIS.get());
-				tabData.accept(Art5019injusticeModItems.FORMULA_HYDROGEN_FLUORIDE.get());
-				tabData.accept(Art5019injusticeModItems.FORMULA_ANTIMONY_TRICHLORIDE.get());
-				tabData.accept(Art5019injusticeModItems.FORMULA_TRICHLOROETHYLENE.get());
-				tabData.accept(Art5019injusticeModItems.BOTTLE_SULFUR_DICHLORIDE.get());
-				tabData.accept(Art5019injusticeModItems.SULFUR_DICHLORIDE_FORMULA.get());
-				tabData.accept(Art5019injusticeModItems.ADVANCED_CHEMISTRY_KIT.get());
-				tabData.accept(Art5019injusticeModItems.CHEMISTRY_BOOK_4.get());
-				tabData.accept(Art5019injusticeModItems.CHEMISTRY_BOOK_5.get());
-			})
-
-					.build());
-	public static final RegistryObject<CreativeModeTab> POWER_GRANTERS = REGISTRY.register("power_granters",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.art5019injustice.power_granters")).icon(() -> new ItemStack(Art5019injusticeModItems.BLUE_SCARAB.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(Art5019injusticeModItems.BLUE_SCARAB.get());
-				tabData.accept(Art5019injusticeModItems.SCARECROW_INJECTION.get());
-				tabData.accept(Art5019injusticeModItems.BLUE_SCARAB_DG.get());
-				tabData.accept(Art5019injusticeModItems.SUPER_SOLDIER_SERUM_SYRINGE.get());
-				tabData.accept(Art5019injusticeModItems.X_GENE_BLOOD_SYRINGE.get());
-				tabData.accept(Art5019injusticeModItems.HEART_SHAPED_HERB_SOUP.get());
-				tabData.accept(Art5019injusticeModItems.SYMBIOTE.get());
-				tabData.accept(Art5019injusticeModItems.BIO_EVOLUTIVE_SERUM.get());
-				tabData.accept(Art5019injusticeModItems.DEADPOOL_BLOOD.get());
-				tabData.accept(Art5019injusticeModItems.BLOOD_QUICKSILVER.get());
-				tabData.accept(Art5019injusticeModItems.BLOOD_DOMINO.get());
-				tabData.accept(Art5019injusticeModItems.ARC_REACTOR.get());
-				tabData.accept(Art5019injusticeModItems.ATLANTEAN_BLOOD.get());
-				tabData.accept(Art5019injusticeModItems.BLOOD_STORM.get());
-				tabData.accept(Art5019injusticeModItems.BOOK_OF_HEROES.get());
-				tabData.accept(Art5019injusticeModItems.BIO_EVOLUTIVE_SERUM_BAD.get());
-				tabData.accept(Art5019injusticeModItems.BIO_EVOLUTIVE_SERUM_PERFECTED.get());
-				tabData.accept(Art5019injusticeModItems.KRYPTONIAN_BLOOD.get());
-				tabData.accept(Art5019injusticeModItems.COMPOUND_V.get());
-				tabData.accept(Art5019injusticeModItems.COMPOUND_V_GOOD.get());
-				tabData.accept(Art5019injusticeModItems.COMPOUND_V_PERFECT.get());
-				tabData.accept(Art5019injusticeModItems.COMPOUND_V_MID.get());
-				tabData.accept(Art5019injusticeModItems.PSP_SYMBIOTE.get());
-				tabData.accept(Art5019injusticeModItems.ANTI_SYMBIOTE.get());
-			})
-
-					.build());
-	public static final RegistryObject<CreativeModeTab> ART_5019_INJUSTICE_COLLECTIBES = REGISTRY.register("art_5019_injustice_collectibes", () -> CreativeModeTab.builder()
-			.title(Component.translatable("item_group.art5019injustice.art_5019_injustice_collectibes")).icon(() -> new ItemStack(Art5019injusticeModBlocks.HOMELANDER_PLUSH.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(Art5019injusticeModItems.EMBLEM_SPIDER.get());
-				tabData.accept(Art5019injusticeModItems.TROPHY.get());
-				tabData.accept(Art5019injusticeModItems.EMBLEM_PEAK_HUMAN.get());
-				tabData.accept(Art5019injusticeModItems.SCARAB_WIELDER_EMBLEM.get());
-				tabData.accept(Art5019injusticeModItems.SCARECROW_EMBLEM.get());
-				tabData.accept(Art5019injusticeModItems.TROPHY_SAVIOUR.get());
-				tabData.accept(Art5019injusticeModItems.SUPER_SOLDIER_EMBLEM.get());
-				tabData.accept(Art5019injusticeModItems.NEURO_EMBLEM.get());
-				tabData.accept(Art5019injusticeModItems.X_GENE_EMBLEM.get());
-				tabData.accept(Art5019injusticeModItems.EMBLEM_BLACK_PANTHER.get());
-				tabData.accept(Art5019injusticeModItems.ATLANTEAN_EMBLEM.get());
-				tabData.accept(Art5019injusticeModItems.TROPHY_FAST_AAND_FURIOUS.get());
-				tabData.accept(Art5019injusticeModItems.TROPHY_MULTIVERSE.get());
-				tabData.accept(Art5019injusticeModItems.FREEDOM_FIGHTERS_BADGE.get());
-				tabData.accept(Art5019injusticeModBlocks.HOMELANDER_PLUSH.get().asItem());
-				tabData.accept(Art5019injusticeModBlocks.BLACK_NOIR_PLUSH.get().asItem());
-				tabData.accept(Art5019injusticeModBlocks.QUEEN_MAEVE_PLUSH.get().asItem());
-				tabData.accept(Art5019injusticeModItems.AMERICA_CONSTITUTION.get());
-				tabData.accept(Art5019injusticeModItems.NEWSPAPER.get());
-				tabData.accept(Art5019injusticeModItems.RUBY_FISH.get());
-				tabData.accept(Art5019injusticeModBlocks.RUBIK_CUBE.get().asItem());
-			})
-
-			.build());
 	public static final RegistryObject<CreativeModeTab> ART_5019_INJUSTICE_MATERIALS = REGISTRY.register("art_5019_injustice_materials",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.art5019injustice.art_5019_injustice_materials")).icon(() -> new ItemStack(Art5019injusticeModItems.ENRICHED_URANIUM.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(Art5019injusticeModItems.MICROCHIP.get());
@@ -274,6 +172,14 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.RED_KRYPTONITE.get());
 				tabData.accept(Art5019injusticeModItems.DWARF_STAR.get());
 				tabData.accept(Art5019injusticeModBlocks.DWARF_STAR_BLOCK.get().asItem());
+				tabData.accept(Art5019injusticeModItems.LONG_STEEL_BLADE.get());
+				tabData.accept(Art5019injusticeModItems.LONG_IRON_BLADE.get());
+				tabData.accept(Art5019injusticeModItems.LONG_GOLDEN_KRYPTONITE_BLADE.get());
+				tabData.accept(Art5019injusticeModItems.LONG_KRYPTONITE_BLADE.get());
+				tabData.accept(Art5019injusticeModItems.GOLDEN_KRYPTONITE_FINE_BLADE.get());
+				tabData.accept(Art5019injusticeModItems.FINE_IRON_BLADE.get());
+				tabData.accept(Art5019injusticeModItems.FINE_KRYPTONITE_BLADE.get());
+				tabData.accept(Art5019injusticeModItems.FINE_STEEL_BLADE.get());
 			})
 
 					.build());
@@ -299,14 +205,6 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.TOMATO_SOUP.get());
 				tabData.accept(Art5019injusticeModItems.PINGO_DOCE.get());
 				tabData.accept(Art5019injusticeModItems.FRESH_WATER.get());
-			})
-
-					.build());
-	public static final RegistryObject<CreativeModeTab> MAGIC = REGISTRY.register("magic",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.art5019injustice.magic")).icon(() -> new ItemStack(Blocks.ENCHANTING_TABLE)).displayItems((parameters, tabData) -> {
-				tabData.accept(Art5019injusticeModItems.SUMMONING_BOOK.get());
-				tabData.accept(Art5019injusticeModItems.DICE.get());
-				tabData.accept(Art5019injusticeModItems.THOR_RUNE.get());
 			})
 
 					.build());
@@ -455,6 +353,116 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.IRON_HAMMER.get());
 				tabData.accept(Art5019injusticeModItems.STEEL_HAMMER.get());
 				tabData.accept(Art5019injusticeModItems.GOLDEN_HAMMER.get());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> ART_5019_INJUSTICE_CHEMISTRY = REGISTRY.register("art_5019_injustice_chemistry",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.art5019injustice.art_5019_injustice_chemistry")).icon(() -> new ItemStack(Art5019injusticeModItems.VENOM.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(Art5019injusticeModItems.STEEL_INGOT.get());
+				tabData.accept(Art5019injusticeModBlocks.CHEMISTRY_TABLE.get().asItem());
+				tabData.accept(Art5019injusticeModItems.VENOM.get());
+				tabData.accept(Art5019injusticeModItems.VENOM_BYG_CYLINDER.get());
+				tabData.accept(Art5019injusticeModItems.WEB_FLUID_SCHEME.get());
+				tabData.accept(Art5019injusticeModItems.VENOM_SCHEME.get());
+				tabData.accept(Art5019injusticeModItems.EMPTY_SYRINGE.get());
+				tabData.accept(Art5019injusticeModItems.VENOM_PILLS.get());
+				tabData.accept(Art5019injusticeModItems.EMPTY_PILL.get());
+				tabData.accept(Art5019injusticeModItems.CONTAMINED_WATER_BUCKET.get());
+				tabData.accept(Art5019injusticeModItems.CASE_DUST.get());
+				tabData.accept(Art5019injusticeModItems.STEEL_NUGGET.get());
+				tabData.accept(Art5019injusticeModItems.POTASSIUM_DUST.get());
+				tabData.accept(Art5019injusticeModItems.CONTAMINED_WATER_BOTTLE.get());
+				tabData.accept(Art5019injusticeModItems.WATER_SYRINGE.get());
+				tabData.accept(Art5019injusticeModItems.CONTAMINED_WATER_SYRINGE.get());
+				tabData.accept(Art5019injusticeModItems.HALOTHANE_FORMULA.get());
+				tabData.accept(Art5019injusticeModItems.FORMULA_KEVLAR.get());
+				tabData.accept(Art5019injusticeModItems.FORMULA_SUPER_SOLDIER_SERUM.get());
+				tabData.accept(Art5019injusticeModItems.CHEMISTRY_KIT.get());
+				tabData.accept(Art5019injusticeModItems.FORMULA_BIO_EVOLUTIVE_SERUM.get());
+				tabData.accept(Art5019injusticeModItems.FORMULA_MUSTARD_BOTTLE.get());
+				tabData.accept(Art5019injusticeModItems.ADRENALYNE_FORMULA.get());
+				tabData.accept(Art5019injusticeModItems.MAGNESIUM_DUST.get());
+				tabData.accept(Art5019injusticeModItems.PURE_MAGNESIUM_FORMULA.get());
+				tabData.accept(Art5019injusticeModItems.CHEMISTRY_FORMULA_KIT.get());
+				tabData.accept(Art5019injusticeModItems.MINERAL_EXTRACTION_FORMULA.get());
+				tabData.accept(Art5019injusticeModItems.FERRIC_CHLORIDE.get());
+				tabData.accept(Art5019injusticeModItems.FORMULA_FERRIC_CHLORIDE.get());
+				tabData.accept(Art5019injusticeModItems.CHEMISTRY_BOOK_1.get());
+				tabData.accept(Art5019injusticeModItems.CHEMISTRY_BOOK_2.get());
+				tabData.accept(Art5019injusticeModItems.CHEMISTRY_BOOK_3.get());
+				tabData.accept(Art5019injusticeModItems.CHEMISTRY_BOOK_6.get());
+				tabData.accept(Art5019injusticeModItems.FORMULA_SIMPLE_ELECTROLYSIS.get());
+				tabData.accept(Art5019injusticeModItems.FORMULA_HYDROGEN_FLUORIDE.get());
+				tabData.accept(Art5019injusticeModItems.FORMULA_ANTIMONY_TRICHLORIDE.get());
+				tabData.accept(Art5019injusticeModItems.FORMULA_TRICHLOROETHYLENE.get());
+				tabData.accept(Art5019injusticeModItems.BOTTLE_SULFUR_DICHLORIDE.get());
+				tabData.accept(Art5019injusticeModItems.SULFUR_DICHLORIDE_FORMULA.get());
+				tabData.accept(Art5019injusticeModItems.ADVANCED_CHEMISTRY_KIT.get());
+				tabData.accept(Art5019injusticeModItems.CHEMISTRY_BOOK_4.get());
+				tabData.accept(Art5019injusticeModItems.CHEMISTRY_BOOK_5.get());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> POWER_GRANTERS = REGISTRY.register("power_granters",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.art5019injustice.power_granters")).icon(() -> new ItemStack(Art5019injusticeModItems.BLUE_SCARAB.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(Art5019injusticeModItems.BLUE_SCARAB.get());
+				tabData.accept(Art5019injusticeModItems.SCARECROW_INJECTION.get());
+				tabData.accept(Art5019injusticeModItems.BLUE_SCARAB_DG.get());
+				tabData.accept(Art5019injusticeModItems.SUPER_SOLDIER_SERUM_SYRINGE.get());
+				tabData.accept(Art5019injusticeModItems.X_GENE_BLOOD_SYRINGE.get());
+				tabData.accept(Art5019injusticeModItems.HEART_SHAPED_HERB_SOUP.get());
+				tabData.accept(Art5019injusticeModItems.SYMBIOTE.get());
+				tabData.accept(Art5019injusticeModItems.BIO_EVOLUTIVE_SERUM.get());
+				tabData.accept(Art5019injusticeModItems.DEADPOOL_BLOOD.get());
+				tabData.accept(Art5019injusticeModItems.BLOOD_QUICKSILVER.get());
+				tabData.accept(Art5019injusticeModItems.BLOOD_DOMINO.get());
+				tabData.accept(Art5019injusticeModItems.ARC_REACTOR.get());
+				tabData.accept(Art5019injusticeModItems.ATLANTEAN_BLOOD.get());
+				tabData.accept(Art5019injusticeModItems.BLOOD_STORM.get());
+				tabData.accept(Art5019injusticeModItems.BOOK_OF_HEROES.get());
+				tabData.accept(Art5019injusticeModItems.BIO_EVOLUTIVE_SERUM_BAD.get());
+				tabData.accept(Art5019injusticeModItems.BIO_EVOLUTIVE_SERUM_PERFECTED.get());
+				tabData.accept(Art5019injusticeModItems.KRYPTONIAN_BLOOD.get());
+				tabData.accept(Art5019injusticeModItems.COMPOUND_V.get());
+				tabData.accept(Art5019injusticeModItems.COMPOUND_V_GOOD.get());
+				tabData.accept(Art5019injusticeModItems.COMPOUND_V_PERFECT.get());
+				tabData.accept(Art5019injusticeModItems.COMPOUND_V_MID.get());
+				tabData.accept(Art5019injusticeModItems.PSP_SYMBIOTE.get());
+				tabData.accept(Art5019injusticeModItems.ANTI_SYMBIOTE.get());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> ART_5019_INJUSTICE_COLLECTIBES = REGISTRY.register("art_5019_injustice_collectibes", () -> CreativeModeTab.builder()
+			.title(Component.translatable("item_group.art5019injustice.art_5019_injustice_collectibes")).icon(() -> new ItemStack(Art5019injusticeModBlocks.HOMELANDER_PLUSH.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(Art5019injusticeModItems.EMBLEM_SPIDER.get());
+				tabData.accept(Art5019injusticeModItems.TROPHY.get());
+				tabData.accept(Art5019injusticeModItems.EMBLEM_PEAK_HUMAN.get());
+				tabData.accept(Art5019injusticeModItems.SCARAB_WIELDER_EMBLEM.get());
+				tabData.accept(Art5019injusticeModItems.SCARECROW_EMBLEM.get());
+				tabData.accept(Art5019injusticeModItems.TROPHY_SAVIOUR.get());
+				tabData.accept(Art5019injusticeModItems.SUPER_SOLDIER_EMBLEM.get());
+				tabData.accept(Art5019injusticeModItems.NEURO_EMBLEM.get());
+				tabData.accept(Art5019injusticeModItems.X_GENE_EMBLEM.get());
+				tabData.accept(Art5019injusticeModItems.EMBLEM_BLACK_PANTHER.get());
+				tabData.accept(Art5019injusticeModItems.ATLANTEAN_EMBLEM.get());
+				tabData.accept(Art5019injusticeModItems.TROPHY_FAST_AAND_FURIOUS.get());
+				tabData.accept(Art5019injusticeModItems.TROPHY_MULTIVERSE.get());
+				tabData.accept(Art5019injusticeModItems.FREEDOM_FIGHTERS_BADGE.get());
+				tabData.accept(Art5019injusticeModBlocks.HOMELANDER_PLUSH.get().asItem());
+				tabData.accept(Art5019injusticeModBlocks.BLACK_NOIR_PLUSH.get().asItem());
+				tabData.accept(Art5019injusticeModBlocks.QUEEN_MAEVE_PLUSH.get().asItem());
+				tabData.accept(Art5019injusticeModItems.AMERICA_CONSTITUTION.get());
+				tabData.accept(Art5019injusticeModItems.NEWSPAPER.get());
+				tabData.accept(Art5019injusticeModItems.RUBY_FISH.get());
+				tabData.accept(Art5019injusticeModBlocks.RUBIK_CUBE.get().asItem());
+			})
+
+			.build());
+	public static final RegistryObject<CreativeModeTab> MAGIC = REGISTRY.register("magic",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.art5019injustice.magic")).icon(() -> new ItemStack(Blocks.ENCHANTING_TABLE)).displayItems((parameters, tabData) -> {
+				tabData.accept(Art5019injusticeModItems.SUMMONING_BOOK.get());
+				tabData.accept(Art5019injusticeModItems.DICE.get());
+				tabData.accept(Art5019injusticeModItems.THOR_RUNE.get());
 			})
 
 					.build());
@@ -731,13 +739,23 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.IRON_HAMMER.get());
 				tabData.accept(Art5019injusticeModItems.STEEL_HAMMER.get());
 				tabData.accept(Art5019injusticeModItems.GOLDEN_HAMMER.get());
+				tabData.accept(Art5019injusticeModItems.STEEL_SWORD.get());
+				tabData.accept(Art5019injusticeModItems.STEEL_PICKAXE.get());
+				tabData.accept(Art5019injusticeModItems.STEEL_AXE.get());
+				tabData.accept(Art5019injusticeModItems.STEEL_HOE.get());
+				tabData.accept(Art5019injusticeModItems.STEEL_SHOVEL.get());
+				tabData.accept(Art5019injusticeModItems.STEEL_KATANA.get());
+				tabData.accept(Art5019injusticeModItems.KRYPTONITE_KATANA.get());
+				tabData.accept(Art5019injusticeModItems.GOLDEN_KRYPTONITE_KATANA.get());
 			})
 
 					.build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(Art5019injusticeModItems.STEEL_SWORD.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(Art5019injusticeModItems.NIGHTMARE_SPIDER_SPAWN_EGG.get());
 			tabData.accept(Art5019injusticeModItems.TEST_DUMMY_SPAWN_EGG.get());
 			tabData.accept(Art5019injusticeModItems.HYDRA_SOLDIER_SPAWN_EGG.get());
@@ -757,6 +775,10 @@ public class Art5019injusticeModTabs {
 			tabData.accept(Art5019injusticeModItems.IRON_HAMMER.get());
 			tabData.accept(Art5019injusticeModItems.STEEL_HAMMER.get());
 			tabData.accept(Art5019injusticeModItems.GOLDEN_HAMMER.get());
+			tabData.accept(Art5019injusticeModItems.STEEL_PICKAXE.get());
+			tabData.accept(Art5019injusticeModItems.STEEL_AXE.get());
+			tabData.accept(Art5019injusticeModItems.STEEL_HOE.get());
+			tabData.accept(Art5019injusticeModItems.STEEL_SHOVEL.get());
 		}
 	}
 }

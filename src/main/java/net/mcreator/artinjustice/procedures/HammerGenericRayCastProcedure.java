@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Comparator;
 
 public class HammerGenericRayCastProcedure {
-	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack, double power) {
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		double Scaling = 0;
@@ -33,7 +33,7 @@ public class HammerGenericRayCastProcedure {
 						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 						for (Entity entityiterator : _entfound) {
 							if (entityiterator instanceof ItemEntity) {
-								SuperAnvilForgingProcedure.execute(world, lx, ly, lz, entity, entityiterator, itemstack, power);
+								SuperAnvilForgingProcedure.execute(world, lx, ly, lz, entity, entityiterator, itemstack);
 							}
 						}
 					}

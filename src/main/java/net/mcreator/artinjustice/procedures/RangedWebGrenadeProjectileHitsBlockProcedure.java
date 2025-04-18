@@ -33,11 +33,11 @@ public class RangedWebGrenadeProjectileHitsBlockProcedure {
 			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(7 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.WEBBED.get(), 200, 1, false, false));
+					_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.WEBBED.get(), (int) (180 - ReturnStrengthProcedure.execute(entityiterator)), 1, false, false));
 				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 1, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, (int) (180 - ReturnStrengthProcedure.execute(entityiterator)), 1, false, false));
 				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 200, 1, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, (int) (180 - ReturnStrengthProcedure.execute(entityiterator)), 1, false, false));
 			}
 		}
 		{
@@ -45,11 +45,11 @@ public class RangedWebGrenadeProjectileHitsBlockProcedure {
 			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.WEBBED.get(), 300, 2, false, false));
+					_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.WEBBED.get(), (int) (270 - ReturnStrengthProcedure.execute(entityiterator)), 2, false, false));
 				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 300, 2, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, (int) (270 - ReturnStrengthProcedure.execute(entityiterator)), 2, false, false));
 				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 300, 2, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, (int) (270 - ReturnStrengthProcedure.execute(entityiterator)), 2, false, false));
 			}
 		}
 		{
@@ -57,11 +57,11 @@ public class RangedWebGrenadeProjectileHitsBlockProcedure {
 			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.WEBBED.get(), 450, 3, false, false));
+					_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.WEBBED.get(), (int) (380 - ReturnStrengthProcedure.execute(entityiterator)), 3, false, false));
 				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 450, 3, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, (int) (380 - ReturnStrengthProcedure.execute(entityiterator)), 3, false, false));
 				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 450, 3, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, (int) (380 - ReturnStrengthProcedure.execute(entityiterator)), 3, false, false));
 			}
 		}
 		if (!immediatesourceentity.level().isClientSide())

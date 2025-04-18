@@ -4,20 +4,19 @@ package net.mcreator.artinjustice.item;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-
-import net.mcreator.artinjustice.init.Art5019injusticeModItems;
 
 public class KatanaItem extends SwordItem {
 	public KatanaItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 310;
+				return 250;
 			}
 
 			public float getSpeed() {
-				return 4f;
+				return 6f;
 			}
 
 			public float getAttackDamageBonus() {
@@ -29,12 +28,12 @@ public class KatanaItem extends SwordItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 2;
+				return 14;
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Art5019injusticeModItems.STEEL_INGOT.get()));
+				return Ingredient.of(new ItemStack(Items.IRON_INGOT));
 			}
-		}, 3, -2.3f, new Item.Properties());
+		}, 3, -2.2f, new Item.Properties());
 	}
 }

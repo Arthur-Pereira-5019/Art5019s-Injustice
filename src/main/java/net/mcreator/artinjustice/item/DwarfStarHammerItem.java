@@ -10,8 +10,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.artinjustice.procedures.HammerGenericRayCastProcedure;
 import net.mcreator.artinjustice.procedures.DwarfStarItemInInventoryTickProcedure;
-import net.mcreator.artinjustice.procedures.DwarfStarHammerEntitySwingsItemProcedure;
 import net.mcreator.artinjustice.init.Art5019injusticeModItems;
 
 public class DwarfStarHammerItem extends PickaxeItem {
@@ -46,7 +46,7 @@ public class DwarfStarHammerItem extends PickaxeItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		DwarfStarHammerEntitySwingsItemProcedure.execute(entity.level(), entity, itemstack);
+		HammerGenericRayCastProcedure.execute(entity.level(), entity, itemstack);
 		return retval;
 	}
 

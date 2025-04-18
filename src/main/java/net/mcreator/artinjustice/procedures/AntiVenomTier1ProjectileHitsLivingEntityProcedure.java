@@ -40,16 +40,15 @@ public class AntiVenomTier1ProjectileHitsLivingEntityProcedure {
 				&& (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(Art5019injusticeModMobEffects.WEBBED.get()) ? _livEnt.getEffect(Art5019injusticeModMobEffects.WEBBED.get()).getDuration() : 0) <= 900) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,
-						(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.MOVEMENT_SLOWDOWN) ? _livEnt.getEffect(MobEffects.MOVEMENT_SLOWDOWN).getDuration() : 0) + 80
-								- (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)),
+						(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.MOVEMENT_SLOWDOWN) ? _livEnt.getEffect(MobEffects.MOVEMENT_SLOWDOWN).getDuration() : 0) + 40 - ReturnStrengthProcedure.execute(entity)),
 						(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.MOVEMENT_SLOWDOWN) ? _livEnt.getEffect(MobEffects.MOVEMENT_SLOWDOWN).getAmplifier() : 0) + 1), false, false));
 		}
 		if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.MOVEMENT_SLOWDOWN) ? _livEnt.getEffect(MobEffects.MOVEMENT_SLOWDOWN).getAmplifier() : 0) > 3
 				&& (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(Art5019injusticeModMobEffects.WEBBED.get()) ? _livEnt.getEffect(Art5019injusticeModMobEffects.WEBBED.get()).getDuration() : 0) <= 900) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.WEBBED.get(),
-						(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(Art5019injusticeModMobEffects.WEBBED.get()) ? _livEnt.getEffect(Art5019injusticeModMobEffects.WEBBED.get()).getDuration() : 0) + 80
-								- (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)),
+						(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(Art5019injusticeModMobEffects.WEBBED.get()) ? _livEnt.getEffect(Art5019injusticeModMobEffects.WEBBED.get()).getDuration() : 0) + 40
+								- ReturnStrengthProcedure.execute(entity)),
 						1, false, false));
 		}
 		if (world instanceof ServerLevel _level)

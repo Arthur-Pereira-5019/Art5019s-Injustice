@@ -1,0 +1,45 @@
+{
+  "_fv": 66,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "golden_kryptonite_katana",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Iron Katana",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Art5019InjusticeWeapons"
+      }
+    ],
+    "efficiency": 6.0,
+    "attackSpeed": 1.8,
+    "enchantability": 4,
+    "damageVsEntity": 4.0,
+    "usageCount": 300,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:GoldenKryptonite"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "STONE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "GoldenKryptoniteKatanaLivingEntityIsHitWithTool"
+    },
+    "onItemInUseTick": {
+      "name": "GoldenKryptoniteItemInIventoryTick"
+    }
+  }
+}

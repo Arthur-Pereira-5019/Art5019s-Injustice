@@ -8,7 +8,7 @@
     "texture": "katana",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Katana",
+    "name": "Iron Katana",
     "specialInformation": {
       "fixedValue": []
     },
@@ -17,17 +17,17 @@
         "value": "CUSTOM:Art5019InjusticeWeapons"
       }
     ],
-    "efficiency": 4.0,
-    "attackSpeed": 1.7,
-    "enchantability": 2,
+    "efficiency": 6.0,
+    "attackSpeed": 1.8,
+    "enchantability": 14,
     "damageVsEntity": 4.5,
-    "usageCount": 310,
+    "usageCount": 250,
     "glowCondition": {
       "fixedValue": false
     },
     "repairItems": [
       {
-        "value": "CUSTOM:SteelIngot"
+        "value": "Items.IRON_INGOT"
       }
     ],
     "immuneToFire": false,

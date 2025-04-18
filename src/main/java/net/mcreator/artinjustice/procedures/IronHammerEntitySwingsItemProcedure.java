@@ -12,6 +12,6 @@ public class IronHammerEntitySwingsItemProcedure {
 		double lx = 0;
 		double lz = 0;
 		double ly = 0;
-		HammerGenericRayCastProcedure.execute(world, entity, itemstack, 4);
+		HammerGenericRayCastProcedure.execute(world, entity, itemstack);
 	}
 }

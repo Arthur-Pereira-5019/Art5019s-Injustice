@@ -12,6 +12,6 @@ public class DwarfStarHammerEntitySwingsItemProcedure {
 		double lx = 0;
 		double lz = 0;
 		double ly = 0;
-		HammerGenericRayCastProcedure.execute(world, entity, itemstack, 10);
+		HammerGenericRayCastProcedure.execute(world, entity, itemstack);
 	}
 }

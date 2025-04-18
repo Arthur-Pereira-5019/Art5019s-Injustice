@@ -42,10 +42,12 @@ public class TacticalKnifesGenericAttackProcedure {
 										? _livEnt.getEffect(Art5019injusticeModMobEffects.GOLDEN_KRYPTONITE_POISONING.get()).getDuration()
 										: 0) + 120),
 								1, false, false));
-					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.POWER_DEPENDENCE.get(), 80, 0, false, false));
-					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.ATTACK_INABILITY.get(), 120, 0, false, false));
+					if (IsKryptonianProcedure.execute(entity)) {
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.POWER_DEPENDENCE.get(), 80, 0, false, false));
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.ATTACK_INABILITY.get(), 120, 0, false, false));
+					}
 				}
 			}
 		}

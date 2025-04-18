@@ -12,13 +12,14 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.artinjustice.init.Art5019injusticeModEnchantments;
+import net.mcreator.artinjustice.Art5019injusticeMod;
 
 public class SuperAnvilForgingProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity toBeManipulated, ItemStack itemstack, double power) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity toBeManipulated, ItemStack itemstack) {
 		if (entity == null || toBeManipulated == null)
 			return;
 		ItemStack toBeCreated = ItemStack.EMPTY;
@@ -26,18 +27,16 @@ public class SuperAnvilForgingProcedure {
 		ItemStack manipulatedItem = ItemStack.EMPTY;
 		double realpower = 0;
 		if (!(entity instanceof Player _plrCldCheck1 && _plrCldCheck1.getCooldowns().isOnCooldown(itemstack.getItem()))) {
-			manipulatedItem = (toBeManipulated instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY);
-			forged = SuperAnvilProcedure.execute(world, x, y, z, entity, manipulatedItem, power);
 			realpower = itemstack.getEnchantmentLevel(Art5019injusticeModEnchantments.OGUM_BLESSING.get()) * 1.5 + ReturnStrengthProcedure.execute(entity);
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("" + realpower)), false);
+			manipulatedItem = (toBeManipulated instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY);
+			forged = SuperAnvilProcedure.execute(world, x, y, z, entity, manipulatedItem, realpower);
 			if (!(forged.getItem() == ItemStack.EMPTY.getItem())) {
 				if (!(itemstack.getItem() == ItemStack.EMPTY.getItem())) {
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(itemstack.getItem(), (int) (800 / (itemstack.getEnchantmentLevel(Art5019injusticeModEnchantments.HAPHAESTUS_BLESSING.get()) + 1)));
 					{
 						ItemStack _ist = itemstack;
-						if (_ist.hurt((int) (itemstack.getMaxDamage() / 120 - 3 * power), RandomSource.create(), null)) {
+						if (_ist.hurt((int) (itemstack.getMaxDamage() / 120 - 3 * realpower), RandomSource.create(), null)) {
 							_ist.shrink(1);
 							_ist.setDamageValue(0);
 						}
@@ -67,6 +66,14 @@ public class SuperAnvilForgingProcedure {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.hit")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
+				Art5019injusticeMod.queueServerWork(40, () -> {
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.FLASH, x, y, z, 22, 1, 1, 1, 1);
+				});
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.LAVA, x, y, z, (int) (10 * realpower), 0.1, 0.1, 0.1, 1);
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, x, y, z, (int) (7 * realpower), 0.5, 0.5, 0.5, 0.4);
 			}
 		}
 	}
