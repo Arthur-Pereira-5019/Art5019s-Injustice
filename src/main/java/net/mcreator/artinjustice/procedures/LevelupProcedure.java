@@ -47,6 +47,11 @@ public class LevelupProcedure {
 					}
 				}
 			}
+		} else {
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal(("\u00A7aYou just leveled up to level "
+						+ (entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerlvl + "\u00A7! Take a look at your skilltree to see what changed!")),
+						true);
 		}
 	}
 }

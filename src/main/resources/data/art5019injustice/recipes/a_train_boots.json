@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "bcb",
+    "bdb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:string"
+    },
+    "b": {
+      "item": "art5019injustice:fabric_gray"
+    },
+    "c": {
+      "item": "art5019injustice:suit_scheme_vought"
+    },
+    "d": {
+      "item": "minecraft:light_gray_dye"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:a_train_suit_boots",
+    "count": 1
+  }
+}

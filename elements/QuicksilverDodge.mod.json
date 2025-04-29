@@ -2,10 +2,10 @@
   "_fv": 66,
   "_type": "achievement",
   "definition": {
-    "achievementName": "§eSpeed",
-    "achievementDescription": "§ePassive - Each speed level grants +0.043 Speed",
+    "achievementName": "Reaction Time",
+    "achievementDescription": "Ability 4 - Quickly moves you to a random nearby spot, by repeating this move on a time span of less than one second of the first time, you'll be able to keep quick moving forward at the cost of some of your energy.",
     "achievementIcon": {
-      "value": "Items.SUGAR"
+      "value": "CUSTOM:QuicksilverDodgeIcon"
     },
     "background": "Default",
     "disableDisplay": false,
@@ -18,7 +18,7 @@
     "rewardXP": 0,
     "achievementType": "task",
     "parent": {
-      "value": "CUSTOM:STQuicksilverSpeedLevels"
+      "value": "CUSTOM:STQuicksilverSpeedUp"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
   }

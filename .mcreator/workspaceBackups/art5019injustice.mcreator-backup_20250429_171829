@@ -55398,6 +55398,75 @@
         ]
       },
       "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "ATrainSuit",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_train_suit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/a_train_suit_chestplate.json",
+          "src/main/resources/assets/art5019injustice/models/item/a_train_suit_boots.json",
+          "src/main/resources/assets/art5019injustice/models/item/a_train_suit_leggings.json",
+          "src/main/java/net/mcreator/artinjustice/item/ATrainSuitItem.java",
+          "src/main/resources/assets/art5019injustice/models/item/a_train_suit_helmet.json"
+        ]
+      },
+      "path": "~/CompoundV/ATrain"
+    },
+    {
+      "name": "ATrainBoots",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_train_boots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/a_train_boots.json"
+        ]
+      },
+      "path": "~/CompoundV/ATrain"
+    },
+    {
+      "name": "ATrainLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_train_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/a_train_leggings_recipe.json"
+        ]
+      },
+      "path": "~/CompoundV/ATrain"
+    },
+    {
+      "name": "ATrainChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_train_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/a_train_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/CompoundV/ATrain"
+    },
+    {
+      "name": "ATrainHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_train_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/a_train_helmet_recipe.json"
+        ]
+      },
+      "path": "~/CompoundV/ATrain"
     }
   ],
   "variable_elements": [
@@ -57803,6 +57872,7 @@
       "effect.art5019injustice.flu": "Flu",
       "block.art5019injustice.rainbow_orchid": "§eRainbow Orchid",
       "item.art5019injustice.stormfront_spawn_egg": "Stormfront Spawn Egg",
+      "item.art5019injustice.a_train_suit_leggings": "A-Train Leggings",
       "gui.art5019injustice.suit_scheme_menu_vought_executive.label_since_the_compoundv_is_our_most": "If you recently bought any of our",
       "advancements.microbiology.descr": "Craft your first Microbiology Table",
       "item.art5019injustice.formula_kevlar": "Formula",
@@ -57932,6 +58002,7 @@
       "advancements.ticket_to_aaru.descr": "Retrieve part of your good deeds trough a Feather of Ma\u0027At",
       "advancements.stjrbb_suit_defense_ii.descr": "§bPassive - After taking a considerable amount of damage, an self-defense explosion will be activated. (Cooldown: 10 Minutes)",
       "advancements.obtain_glass.descr": "Obtain Glass",
+      "item.art5019injustice.a_train_suit_helmet": "A-Train Sunglasses",
       "item.art5019injustice.blood_syringe": "Syringe",
       "advancements.stss_alignment_enhancer.descr": "§bMultiplies all the gained or lost Alignment points by 4. As doctor Abraham Erksine states: §o\"The serum amplifies everything that is inside, so good becomes great, bad becomes worse.\"",
       "advancements.vpst_venomous_bite.descr": "Ability 3 - During your healing process, your symbiote stores the residual toxins, allowing them to be discharged by your teeth. Cooldown: 50 Seconds",
@@ -58037,7 +58108,7 @@
       "item.art5019injustice.chemistry_kit": "Chemistry Kit",
       "advancements.st_storm_aerokinesis.descr": "§bAbility 3 - By manipulating the wind around you, you\u0027re able to switch between levitation and flight. [Better control by sneaking]",
       "advancements.st_homelander_fall_immunity.title": "§eFall Resistance",
-      "advancements.st_quicksilver_speed.descr": "§ePassive - Each speed level grants +0.04 Speed",
+      "advancements.st_quicksilver_speed.descr": "§ePassive - Each speed level grants +0.043 Speed",
       "item.art5019injustice.blue_kevlar": "Blue Kevlar",
       "advancements.stjrbb_strength.title": "§fScarab Strength",
       "item.art5019injustice.kryptonian_blood": "Syringe",
@@ -58053,6 +58124,7 @@
       "item.art5019injustice.silver_ingot": "Silver",
       "advancements.deadpool_become.title": "Merc with a Mouth",
       "block.art5019injustice.locked_door": "Locked Door",
+      "item.art5019injustice.a_train_suit_boots": "A-Train Shoes",
       "advancements.stbbdg_evolve.descr": "§6Ability 5 - After some time bonding with the Scarab, you\u0027re able to access it\u0027s full power.",
       "advancements.st_anti_venom_absolute_healing.descr": "§bDue to the immense flux of antibodies on your bloodstream, alongside the symbiote mass, most internal and external damage can be repaired in seconds, regardless of whether it\u0027s a disease, a toxin or a injury.",
       "advancements.swiss_clocks.title": "Swiss Clocks",
@@ -58686,6 +58758,7 @@
       "jei.art5019injustice.metallo_nanites_info": "Interact it with a Kryptonite Block above a Titanium Block to create Metallo.",
       "advancements.st_gas_ignition.title": "§3Internal Gas Ignition",
       "item_group.art5019injustice.art_5019_injustice_suits": "Art5019\u0027s Injustice Suits",
+      "item.art5019injustice.a_train_suit_chestplate": "A-Train Chestpiece",
       "advancements.st_anti_venom_base.title": "§6Anti Symbiote",
       "item.art5019injustice.black_panther_suit_2_boots": "Black Panther Habit Boots",
       "item.art5019injustice.superman_fall_immunity_icon": "Superman Fall Immunity Icon",

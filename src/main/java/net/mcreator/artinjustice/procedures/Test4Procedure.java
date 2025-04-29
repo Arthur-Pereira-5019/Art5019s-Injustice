@@ -129,7 +129,7 @@ public class Test4Procedure {
 				if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 4) {
 					ScarecrowAbility1Procedure.execute(world, x, y, z, entity);
 				} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 8) {
-					QuicksilverAbility1Procedure.execute(entity);
+					QuicksilverAbility1Procedure.execute(world, x, y, z, entity);
 				} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 9) {
 					Ability1DominoProcedure.execute(world, x, y, z, entity);
 				} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 13

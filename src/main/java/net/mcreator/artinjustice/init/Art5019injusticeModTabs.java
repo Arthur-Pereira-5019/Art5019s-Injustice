@@ -676,6 +676,10 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.NEGATIVE_SPIDERMAN_SUIT_CHESTPLATE.get());
 				tabData.accept(Art5019injusticeModItems.NEGATIVE_SPIDERMAN_SUIT_LEGGINGS.get());
 				tabData.accept(Art5019injusticeModItems.NEGATIVE_SPIDERMAN_SUIT_BOOTS.get());
+				tabData.accept(Art5019injusticeModItems.A_TRAIN_SUIT_HELMET.get());
+				tabData.accept(Art5019injusticeModItems.A_TRAIN_SUIT_CHESTPLATE.get());
+				tabData.accept(Art5019injusticeModItems.A_TRAIN_SUIT_LEGGINGS.get());
+				tabData.accept(Art5019injusticeModItems.A_TRAIN_SUIT_BOOTS.get());
 			})
 
 			.build());

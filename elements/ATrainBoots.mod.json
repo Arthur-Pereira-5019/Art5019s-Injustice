@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:SuitSchemeVought"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      },
+      {
+        "value": "Items.DYE#7"
+      },
+      {
+        "value": "CUSTOM:FabricGray"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ATrainSuit.boots"
+    },
+    "name": "a_train_boots",
+    "namespace": "mod"
+  }
+}

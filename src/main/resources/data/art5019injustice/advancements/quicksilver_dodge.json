@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "art5019injustice:quicksilver_dodge_icon"
+    },
+    "title": {
+      "translate": "advancements.quicksilver_dodge.title"
+    },
+    "description": {
+      "translate": "advancements.quicksilver_dodge.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "quicksilver_dodge_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "art5019injustice:st_quicksilver_speed_up"
+}

@@ -55,7 +55,7 @@ public class DodgeProcedure {
 						}
 					}
 				} else {
-					AbilityTeleportProcedure.execute(world, x, y, z, entity, (entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).ability4cooldown, 4, 2);
+					AbilityTeleportProcedure.execute(world, x, y, z, entity, (entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).ability4cooldown, 4, 4);
 					if (entity instanceof Player _player)
 						_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 1));
 				}

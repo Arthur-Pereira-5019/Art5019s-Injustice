@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:FabricBlack"
+      },
+      {
+        "value": "CUSTOM:FabricBlue"
+      },
+      {
+        "value": "CUSTOM:SuitSchemeVought"
+      },
+      {
+        "value": "CUSTOM:FabricBlue"
+      },
+      {
+        "value": "CUSTOM:FabricBlue"
+      },
+      {
+        "value": "Items.DYE#6"
+      },
+      {
+        "value": "CUSTOM:FabricBlue"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ATrainSuit.legs"
+    },
+    "name": "a_train_leggings_recipe",
+    "namespace": "mod"
+  }
+}

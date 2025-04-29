@@ -55398,6 +55398,280 @@
         ]
       },
       "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "ATrainSuit",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_train_suit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/a_train_suit_chestplate.json",
+          "src/main/resources/assets/art5019injustice/models/item/a_train_suit_boots.json",
+          "src/main/resources/assets/art5019injustice/models/item/a_train_suit_leggings.json",
+          "src/main/java/net/mcreator/artinjustice/item/ATrainSuitItem.java",
+          "src/main/resources/assets/art5019injustice/models/item/a_train_suit_helmet.json"
+        ]
+      },
+      "path": "~/CompoundV/ATrain"
+    },
+    {
+      "name": "ATrainBoots",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_train_boots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/a_train_boots.json"
+        ]
+      },
+      "path": "~/CompoundV/ATrain"
+    },
+    {
+      "name": "ATrainLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_train_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/a_train_leggings_recipe.json"
+        ]
+      },
+      "path": "~/CompoundV/ATrain"
+    },
+    {
+      "name": "ATrainChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_train_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/a_train_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/CompoundV/ATrain"
+    },
+    {
+      "name": "ATrainHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_train_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/a_train_helmet_recipe.json"
+        ]
+      },
+      "path": "~/CompoundV/ATrain"
+    },
+    {
+      "name": "QuicksilverDodgeIcon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quicksilver_dodge_icon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/quicksilver_dodge_icon.json",
+          "src/main/java/net/mcreator/artinjustice/item/QuicksilverDodgeIconItem.java"
+        ]
+      },
+      "path": "~/XMen/Quicksilver"
+    },
+    {
+      "name": "QuicksilverDodge",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quicksilver_dodge",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/advancements/quicksilver_dodge.json"
+        ]
+      },
+      "path": "~/XMen/Quicksilver"
+    },
+    {
+      "name": "QuicksilverLevelUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quicksilver_level_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/QuicksilverLevelUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/XMen/Quicksilver"
+    },
+    {
+      "name": "IconExtraSpeed",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_extra_speed",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/icon_extra_speed.json",
+          "src/main/java/net/mcreator/artinjustice/item/IconExtraSpeedItem.java"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "IconExtraSpeed2",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_extra_speed_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/icon_extra_speed_2.json",
+          "src/main/java/net/mcreator/artinjustice/item/IconExtraSpeed2Item.java"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "IconExtraSpeed3",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_extra_speed_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/item/IconExtraSpeed3Item.java",
+          "src/main/resources/assets/art5019injustice/models/item/icon_extra_speed_3.json"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "IconExtraSpeed4",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_extra_speed_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/icon_extra_speed_4.json",
+          "src/main/java/net/mcreator/artinjustice/item/IconExtraSpeed4Item.java"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "STQuicksilverExtraSpeedI",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "st_quicksilver_extra_speed_i",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/advancements/st_quicksilver_extra_speed_i.json"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "STQuicksilverExtraSpeedII",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "st_quicksilver_extra_speed_ii",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/advancements/st_quicksilver_extra_speed_ii.json"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "STQuicksilverExtraSpeedIII",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "st_quicksilver_extra_speed_iii",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/advancements/st_quicksilver_extra_speed_iii.json"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "STQuicksilverExtraSpeedIV",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "st_quicksilver_extra_speed_iv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/advancements/st_quicksilver_extra_speed_iv.json"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "QuicksilverTryToLevelUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quicksilver_try_to_level_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/QuicksilverTryToLevelUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/XMen/Quicksilver"
     }
   ],
   "variable_elements": [
@@ -57296,6 +57570,7 @@
       "gui.art5019injustice.today_problem_backup.n1": "0",
       "entity.art5019injustice.kale_the_caretaker": "Kale the Caretaker",
       "item.art5019injustice.armor_cape_test_2_chestplate": "Armor Cape Test 2 Chestplate",
+      "advancements.st_quicksilver_extra_speed_iv.descr": "Adds an extra level of Speed (Requires Level 5)",
       "advancements.stjrbb_scarab_sword.descr": "§2Construct - +7 Damage Sword",
       "item.art5019injustice.art_the_unemployed_spawn_egg": "Art the Unemployed Spawn Egg",
       "gui.art5019injustice.merchandise_menu_vought_executive.label_quality": "quality.",
@@ -57732,6 +58007,7 @@
       "item.art5019injustice.the_nightmare_spawn_egg": "Nightmare Spawn Egg",
       "effect.art5019injustice.attack_inability": "Attack Inability",
       "effect.art5019injustice.fortune": "Fortune",
+      "item.art5019injustice.quicksilver_dodge_icon": "Quicksilver Dodge Icon",
       "entity.art5019injustice.the_nightmare": "Nightmare",
       "item.art5019injustice.criminal_spawn_egg": "Criminal Spawn Egg",
       "item.art5019injustice.spider_man_ag_2_helmet": "The Amazing Spider-Man Mask",
@@ -57757,6 +58033,7 @@
       "item.art5019injustice.badassium_core": "Badassium Core",
       "advancements.st_neuro_engineering_skills.descr": "§bAbility 1 - By thinking more before doing a project, it allows you to finish it pratically by free. (Gains can be toggled by sneaking). Cooldown: 16.6 minutes",
       "item.art5019injustice.pepper": "Pepper",
+      "advancements.st_quicksilver_extra_speed_iv.title": "Extra Fast IV",
       "advancements.steb_sound_weakness.title": "Sound Weakness",
       "advancements.stjrbb_scarab_sword.title": "§2Scarab Sword",
       "entity.art5019injustice.nightmare_spider": "Nightmare Spider",
@@ -57768,6 +58045,7 @@
       "advancements.alignment_menace.descr": "And nothing will stop me...",
       "gui.art5019injustice.influence_menu_vought_executive.label_as_inteligent_as_we_think_you_ar": "small contribuition in exchange of one of our best",
       "item.art5019injustice.weakeness_blood_syringe": "Syringe",
+      "advancements.st_quicksilver_extra_speed_iii.title": "Extra Fast III",
       "entity.art5019injustice.uncle_sam": "Uncle Sam",
       "advancements.st_scarecrow_fear_immunity.descr": "§ePassive - Makes you Immune to any sort of Fear",
       "effect.art5019injustice.deafness": "Deafness",
@@ -57803,6 +58081,7 @@
       "effect.art5019injustice.flu": "Flu",
       "block.art5019injustice.rainbow_orchid": "§eRainbow Orchid",
       "item.art5019injustice.stormfront_spawn_egg": "Stormfront Spawn Egg",
+      "item.art5019injustice.a_train_suit_leggings": "A-Train Leggings",
       "gui.art5019injustice.suit_scheme_menu_vought_executive.label_since_the_compoundv_is_our_most": "If you recently bought any of our",
       "advancements.microbiology.descr": "Craft your first Microbiology Table",
       "item.art5019injustice.formula_kevlar": "Formula",
@@ -57932,6 +58211,8 @@
       "advancements.ticket_to_aaru.descr": "Retrieve part of your good deeds trough a Feather of Ma\u0027At",
       "advancements.stjrbb_suit_defense_ii.descr": "§bPassive - After taking a considerable amount of damage, an self-defense explosion will be activated. (Cooldown: 10 Minutes)",
       "advancements.obtain_glass.descr": "Obtain Glass",
+      "item.art5019injustice.a_train_suit_helmet": "A-Train Sunglasses",
+      "advancements.quicksilver_dodge.title": "Reaction Time",
       "item.art5019injustice.blood_syringe": "Syringe",
       "advancements.stss_alignment_enhancer.descr": "§bMultiplies all the gained or lost Alignment points by 4. As doctor Abraham Erksine states: §o\"The serum amplifies everything that is inside, so good becomes great, bad becomes worse.\"",
       "advancements.vpst_venomous_bite.descr": "Ability 3 - During your healing process, your symbiote stores the residual toxins, allowing them to be discharged by your teeth. Cooldown: 50 Seconds",
@@ -58037,7 +58318,7 @@
       "item.art5019injustice.chemistry_kit": "Chemistry Kit",
       "advancements.st_storm_aerokinesis.descr": "§bAbility 3 - By manipulating the wind around you, you\u0027re able to switch between levitation and flight. [Better control by sneaking]",
       "advancements.st_homelander_fall_immunity.title": "§eFall Resistance",
-      "advancements.st_quicksilver_speed.descr": "§ePassive - Each speed level grants +0.04 Speed",
+      "advancements.st_quicksilver_speed.descr": "§ePassive - Each speed level grants +0.043 Speed",
       "item.art5019injustice.blue_kevlar": "Blue Kevlar",
       "advancements.stjrbb_strength.title": "§fScarab Strength",
       "item.art5019injustice.kryptonian_blood": "Syringe",
@@ -58053,6 +58334,7 @@
       "item.art5019injustice.silver_ingot": "Silver",
       "advancements.deadpool_become.title": "Merc with a Mouth",
       "block.art5019injustice.locked_door": "Locked Door",
+      "item.art5019injustice.a_train_suit_boots": "A-Train Shoes",
       "advancements.stbbdg_evolve.descr": "§6Ability 5 - After some time bonding with the Scarab, you\u0027re able to access it\u0027s full power.",
       "advancements.st_anti_venom_absolute_healing.descr": "§bDue to the immense flux of antibodies on your bloodstream, alongside the symbiote mass, most internal and external damage can be repaired in seconds, regardless of whether it\u0027s a disease, a toxin or a injury.",
       "advancements.swiss_clocks.title": "Swiss Clocks",
@@ -58108,7 +58390,10 @@
       "enchantment.art5019injustice.royalty": "Sea Royalty",
       "item.art5019injustice.diamond_lenses": "Diamond Lenses",
       "advancements.green_effect_sunflower.descr": "Sunflowers, beyond their archetypal Sun beauty, are known for their huge seeds",
+      "item.art5019injustice.icon_extra_speed_4": "Icon Extra Speed",
       "item.art5019injustice.pistol_item": "Pistol",
+      "item.art5019injustice.icon_extra_speed_2": "Icon Extra Speed",
+      "item.art5019injustice.icon_extra_speed_3": "Icon Extra Speed",
       "item.art5019injustice.potassium_dust": "Potassium Dust",
       "subtitles.entity.ironman.repulsor": "Repulsor Blasts",
       "advancements.st_anti_venom_healing_web.descr": "§bAbility 4 + Ability 3 - By adding antibodies to the released Anti-Symbiote mass, you\u0027re able to temporarily inhibit your target to attack back, but at a cost of might healing him. [Cooldown: 2s]",
@@ -58470,6 +58755,7 @@
       "item.art5019injustice.golden_kryptonite_katana": "Iron Katana",
       "advancements.hidden_agenda.descr": "Learn about Mr. Li and his secrets",
       "advancements.st_storm_level_4.descr": "§6Level 4",
+      "advancements.st_quicksilver_extra_speed_i.descr": "Adds an extra level of Speed (Requires Level 2)",
       "gui.art5019injustice.bounty_paper_gui.label_bounty_paper": "Bounty Paper",
       "item.art5019injustice.queen_maeve_suit_boots": "Queen Maeve Boots",
       "item.art5019injustice.bane_nolan_boots": "League of Shadows Bane Boots",
@@ -58501,6 +58787,7 @@
       "advancements.iron_soldier_palladium.descr": "Passive - Every 15 Minutes, an Effect of Poisoning is applied due to the Palladium in the ARC Reactor Core",
       "advancements.st_spider_man_strength.title": "§fSpider Strength",
       "entity.art5019injustice.mr_negative": "Mr Negative",
+      "advancements.quicksilver_dodge.descr": "Ability 4 - Quickly moves you to a random nearby spot, by repeating this move on a time span of less than one second of the first time, you\u0027ll be able to keep quick moving forward at the cost of some of your energy.",
       "advancements.trauma.title": "Trauma",
       "item.art5019injustice.webweaver_suit_helmet": "Webweaver Mask",
       "effect.art5019injustice.kryptonite_poisoning": "Green Kryptonite Radiation",
@@ -58588,6 +58875,7 @@
       "advancements.st_aquaman_conduit_power.descr": "§ePassive - Grants Conduit Power",
       "subtitles.spider.shoot": "Web Shooter shoots",
       "advancements.permanent_trauma.descr": "§dAbility 1 - With enough fear pheromones in the air, and fear hormones on the bloodstream, easily even more fear can be spread trough the masses, but not any fear, it\u0027s a fear solid as matter, strong as a nightmare and shared as a plague, easily able to destroy the mind of anyone who dares to fight agaisn\u0027t it.",
+      "item.art5019injustice.icon_extra_speed": "Icon Extra Speed",
       "advancements.green_effect_rare_blue_flower.descr": "A lot of plants in fact produce hallucinogenic substances as a form to keep other animals away, and still... humans decide to consume them.",
       "gui.art5019injustice.compound_v_menu_vought_executive.button_buy": "Buy",
       "advancements.warrior_of_the_reach.descr": "Get the Scarab attached to you",
@@ -58686,6 +58974,7 @@
       "jei.art5019injustice.metallo_nanites_info": "Interact it with a Kryptonite Block above a Titanium Block to create Metallo.",
       "advancements.st_gas_ignition.title": "§3Internal Gas Ignition",
       "item_group.art5019injustice.art_5019_injustice_suits": "Art5019\u0027s Injustice Suits",
+      "item.art5019injustice.a_train_suit_chestplate": "A-Train Chestpiece",
       "advancements.st_anti_venom_base.title": "§6Anti Symbiote",
       "item.art5019injustice.black_panther_suit_2_boots": "Black Panther Habit Boots",
       "item.art5019injustice.superman_fall_immunity_icon": "Superman Fall Immunity Icon",
@@ -58739,6 +59028,7 @@
       "advancements.obtain_all_orchids.title": "Orchidary",
       "advancements.st_neuro_adrenalyne_conversion.descr": "§6Passive - Most forms of enraging you will be converted to Neurological Boosts.",
       "block.art5019injustice.venus_fly_trap": "Venus Fly Trap",
+      "advancements.st_quicksilver_extra_speed_i.title": "Extra Fast I",
       "gui.art5019injustice.petri_table_gui.tooltip_food": "Food",
       "block.art5019injustice.titanium_ore": "Titanium Ore",
       "advancements.captain_america_hero.descr": "Save the day.",
@@ -58794,6 +59084,7 @@
       "item.art5019injustice.raolite": "Raolite",
       "advancements.st_supreme_neural_boosts.descr": "§bPassive - When hurt, there is a chance of it increasing your Neurological Boost Effect, that makes you fast and stronger, when hitting level VI with the effect, a cooldown of 10 minutes will be applied..",
       "advancements.green_effect_sand.descr": "Cactaceae family members are fleshy and spiky plant adapted to dry ambients.",
+      "advancements.st_quicksilver_extra_speed_iii.descr": "Adds an extra level of Speed (Requires Level 4)",
       "effect.art5019injustice.immunity_b": "Immunity Type-II",
       "item.art5019injustice.iron_dust": "Iron Dust",
       "advancements.st_superman_superbreath.descr": "§bAbility 2 - By compressing large chunks of air into dense bits stored on your lung, you\u0027re able to exhale strong wind currents trough your mouth. [Requires 5 Days of Solar Energy. Doesn\u0027t consume]",
@@ -59049,6 +59340,7 @@
       "item.art5019injustice.icon_venom_wall_crawling": "Icon Venom Wall Crawling",
       "advancements.st_homelander_base.descr": "§6Skilltree",
       "item.art5019injustice.steel_shovel": "Steel Shovel",
+      "advancements.st_quicksilver_extra_speed_ii.title": "Extra Fast II",
       "advancements.dont_do_that_at_home.title": "Mad Scientist",
       "advancements.silent_trade.descr": "Trade a Bell with a Shadow in exchange for Assassin loot",
       "item.art5019injustice.terephthaloyl_chloride": "Terephthaloyl Chloride",
@@ -59062,6 +59354,7 @@
       "subtitles.item.spacestone.teleport": "Entity teleports",
       "advancements.st_superman_sun_absorption.title": "§6Sun Absorption",
       "key.art5019injustice.scratch": "React",
+      "advancements.st_quicksilver_extra_speed_ii.descr": "Adds an extra level of Speed (Requires Level 3)",
       "item.art5019injustice.scarab_wielder_emblem": "Scarab Host Emblem",
       "advancements.st_superman_x_ray.title": "§3X-Ray Vision",
       "block.art5019injustice.ranged_tnt": "Ranged TNT",

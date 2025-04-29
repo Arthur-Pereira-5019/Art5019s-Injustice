@@ -208,6 +208,7 @@ import net.mcreator.artinjustice.item.RaoliteItem;
 import net.mcreator.artinjustice.item.RangedWebGrenadeItem;
 import net.mcreator.artinjustice.item.RadioDeviceItem;
 import net.mcreator.artinjustice.item.QuicksilverItem;
+import net.mcreator.artinjustice.item.QuicksilverDodgeIconItem;
 import net.mcreator.artinjustice.item.QueenMaeveSuitItem;
 import net.mcreator.artinjustice.item.PureMagnesiumFormulaItem;
 import net.mcreator.artinjustice.item.PspSymbioteItem;
@@ -372,6 +373,10 @@ import net.mcreator.artinjustice.item.IconHomelanderItem;
 import net.mcreator.artinjustice.item.IconHeartItem;
 import net.mcreator.artinjustice.item.IconGravityDefySupermanItem;
 import net.mcreator.artinjustice.item.IconGalaxyItem;
+import net.mcreator.artinjustice.item.IconExtraSpeedItem;
+import net.mcreator.artinjustice.item.IconExtraSpeed4Item;
+import net.mcreator.artinjustice.item.IconExtraSpeed3Item;
+import net.mcreator.artinjustice.item.IconExtraSpeed2Item;
 import net.mcreator.artinjustice.item.IconElectricalTouchItem;
 import net.mcreator.artinjustice.item.IconBlackDiamondItem;
 import net.mcreator.artinjustice.item.HydrogenFluorideItem;
@@ -592,6 +597,7 @@ import net.mcreator.artinjustice.item.AdrenV3Item;
 import net.mcreator.artinjustice.item.ActivatedNanitesItem;
 import net.mcreator.artinjustice.item.ActivatedDwarfStarItem;
 import net.mcreator.artinjustice.item.ActivatedCharcoalItem;
+import net.mcreator.artinjustice.item.ATrainSuitItem;
 import net.mcreator.artinjustice.item.AK47MagazineItem;
 import net.mcreator.artinjustice.item.AK47Item;
 import net.mcreator.artinjustice.Art5019injusticeMod;
@@ -1435,6 +1441,15 @@ public class Art5019injusticeModItems {
 	public static final RegistryObject<Item> STEEL_KATANA = REGISTRY.register("steel_katana", () -> new SteelKatanaItem());
 	public static final RegistryObject<Item> KRYPTONITE_KATANA = REGISTRY.register("kryptonite_katana", () -> new KryptoniteKatanaItem());
 	public static final RegistryObject<Item> GOLDEN_KRYPTONITE_KATANA = REGISTRY.register("golden_kryptonite_katana", () -> new GoldenKryptoniteKatanaItem());
+	public static final RegistryObject<Item> A_TRAIN_SUIT_HELMET = REGISTRY.register("a_train_suit_helmet", () -> new ATrainSuitItem.Helmet());
+	public static final RegistryObject<Item> A_TRAIN_SUIT_CHESTPLATE = REGISTRY.register("a_train_suit_chestplate", () -> new ATrainSuitItem.Chestplate());
+	public static final RegistryObject<Item> A_TRAIN_SUIT_LEGGINGS = REGISTRY.register("a_train_suit_leggings", () -> new ATrainSuitItem.Leggings());
+	public static final RegistryObject<Item> A_TRAIN_SUIT_BOOTS = REGISTRY.register("a_train_suit_boots", () -> new ATrainSuitItem.Boots());
+	public static final RegistryObject<Item> QUICKSILVER_DODGE_ICON = REGISTRY.register("quicksilver_dodge_icon", () -> new QuicksilverDodgeIconItem());
+	public static final RegistryObject<Item> ICON_EXTRA_SPEED = REGISTRY.register("icon_extra_speed", () -> new IconExtraSpeedItem());
+	public static final RegistryObject<Item> ICON_EXTRA_SPEED_2 = REGISTRY.register("icon_extra_speed_2", () -> new IconExtraSpeed2Item());
+	public static final RegistryObject<Item> ICON_EXTRA_SPEED_3 = REGISTRY.register("icon_extra_speed_3", () -> new IconExtraSpeed3Item());
+	public static final RegistryObject<Item> ICON_EXTRA_SPEED_4 = REGISTRY.register("icon_extra_speed_4", () -> new IconExtraSpeed4Item());
 
 	// Start of user code block custom items
 	// End of user code block custom items

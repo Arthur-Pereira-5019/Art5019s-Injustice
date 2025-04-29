@@ -2,10 +2,10 @@
   "_fv": 66,
   "_type": "achievement",
   "definition": {
-    "achievementName": "§eSpeed",
-    "achievementDescription": "§ePassive - Each speed level grants +0.043 Speed",
+    "achievementName": "Extra Fast I",
+    "achievementDescription": "Adds an extra level of Speed (Requires Level 2)",
     "achievementIcon": {
-      "value": "Items.SUGAR"
+      "value": "CUSTOM:IconExtraSpeed"
     },
     "background": "Default",
     "disableDisplay": false,
@@ -18,7 +18,7 @@
     "rewardXP": 0,
     "achievementType": "task",
     "parent": {
-      "value": "CUSTOM:STQuicksilverSpeedLevels"
+      "value": "CUSTOM:STQuicksilverSpeedUp"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
   }

@@ -1,12 +1,13 @@
 package net.mcreator.artinjustice.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.artinjustice.network.Art5019injusticeModVariables;
 
 public class QuicksilverAbility1Procedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if (!entity.isShiftKeyDown()) {
@@ -21,6 +22,7 @@ public class QuicksilverAbility1Procedure {
 						});
 					}
 					AbilitySpeedsterUpdateProcedure.execute(entity);
+					QuicksilverTryToLevelUpProcedure.execute(world, x, y, z, entity);
 				}
 			}
 		} else {
