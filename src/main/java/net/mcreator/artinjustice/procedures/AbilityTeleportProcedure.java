@@ -39,11 +39,6 @@ public class AbilityTeleportProcedure {
 							_level.sendParticles(ParticleTypes.SMOKE, x, y, z, 200, 1, 1, 1, 1);
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.SMOKE, newx, newy, newz, 200, 1, 1, 1, 1);
-					} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 8) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.FLASH, x, y, z, 200, 1, 1, 1, 1);
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.FLASH, newx, newy, newz, 200, 1, 1, 1, 1);
 					}
 					GenericCooldownManagerProcedure.execute(entity, cd, ctxt);
 				}
