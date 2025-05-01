@@ -9435,6 +9435,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -55494,6 +55510,269 @@
         ]
       },
       "path": "~/XMen/Quicksilver"
+    },
+    {
+      "name": "QuicksilverLevelUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quicksilver_level_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/QuicksilverLevelUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/XMen/Quicksilver"
+    },
+    {
+      "name": "IconExtraSpeed",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_extra_speed",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/icon_extra_speed.json",
+          "src/main/java/net/mcreator/artinjustice/item/IconExtraSpeedItem.java"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "IconExtraSpeed2",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_extra_speed_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/icon_extra_speed_2.json",
+          "src/main/java/net/mcreator/artinjustice/item/IconExtraSpeed2Item.java"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "IconExtraSpeed3",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_extra_speed_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/item/IconExtraSpeed3Item.java",
+          "src/main/resources/assets/art5019injustice/models/item/icon_extra_speed_3.json"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "IconExtraSpeed4",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon_extra_speed_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/icon_extra_speed_4.json",
+          "src/main/java/net/mcreator/artinjustice/item/IconExtraSpeed4Item.java"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "STQuicksilverExtraSpeedI",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "st_quicksilver_extra_speed_i",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/advancements/st_quicksilver_extra_speed_i.json"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "STQuicksilverExtraSpeedII",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "st_quicksilver_extra_speed_ii",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/advancements/st_quicksilver_extra_speed_ii.json"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "STQuicksilverExtraSpeedIII",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "st_quicksilver_extra_speed_iii",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/advancements/st_quicksilver_extra_speed_iii.json"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "STQuicksilverExtraSpeedIV",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "st_quicksilver_extra_speed_iv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/advancements/st_quicksilver_extra_speed_iv.json"
+        ]
+      },
+      "path": "~/XMen/Quicksilver/QuicksilverSkilltree"
+    },
+    {
+      "name": "QuicksilverTryToLevelUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quicksilver_try_to_level_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/QuicksilverTryToLevelUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/XMen/Quicksilver"
+    },
+    {
+      "name": "BecomeATrain",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "become_a_train",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/BecomeATrainProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CompoundV/ATrain"
+    },
+    {
+      "name": "BecomeATrainAdv",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "become_a_train_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/advancements/become_a_train_adv.json"
+        ]
+      },
+      "path": "~/CompoundV/ATrain"
+    },
+    {
+      "name": "GenericSpeedsterAbility1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generic_speedster_ability_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/GenericSpeedsterAbility1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnAbility1Type",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ability_1_type",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/ReturnAbility1TypeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -56211,6 +56490,10 @@
       "CUSTOM:GoldenKryptonite",
       "CUSTOM:SteelIngot"
     ],
+    "ITEMS:mod:tier1chemistry": [
+      "CUSTOM:FormulaSimpleElectrolysis",
+      "CUSTOM:MineralExtractionFormula"
+    ],
     "BLOCKS:forge:wooden_doors": [
       "Blocks.OAK_DOOR",
       "Blocks.SPRUCE_DOOR",
@@ -56234,21 +56517,6 @@
       "Blocks.MANGROVE_TRAPDOOR",
       "Blocks.CHERRY_TRAPDOOR",
       "Blocks.BAMBOO_TRAPDOOR"
-    ],
-    "ITEMS:mod:tier1chemistry": [
-      "CUSTOM:FormulaSimpleElectrolysis",
-      "CUSTOM:MineralExtractionFormula"
-    ],
-    "DAMAGE_TYPES:mod:venom_criticals": [
-      "EXPLOSION",
-      "PLAYER_EXPLOSION",
-      "FIREBALL",
-      "FIREWORKS",
-      "IN_FIRE",
-      "ON_FIRE",
-      "UNATTRIBUTED_FIREBALL",
-      "CUSTOM:SonicDamage",
-      "SONIC_BOOM"
     ],
     "BLOCKS:forge:plant_life": [
       "TAG:forge:orchids",
@@ -56291,6 +56559,17 @@
       "Blocks.SMALL_DRIPLEAF",
       "Blocks.HANGING_ROOTS",
       "TAG:minecraft:logs"
+    ],
+    "DAMAGE_TYPES:mod:venom_criticals": [
+      "EXPLOSION",
+      "PLAYER_EXPLOSION",
+      "FIREBALL",
+      "FIREWORKS",
+      "IN_FIRE",
+      "ON_FIRE",
+      "UNATTRIBUTED_FIREBALL",
+      "CUSTOM:SonicDamage",
+      "SONIC_BOOM"
     ],
     "ITEMS:mod:spiderman_suits": [
       "CUSTOM:SpiderManAG1.helmet",
@@ -56443,21 +56722,15 @@
       "Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB",
       "Blocks.WAXED_OXIDIZED_CUT_COPPER_SLAB"
     ],
-    "BLOCKS:minecraft:needs_iron_tool": [
-      "~CUSTOM:CompressedPackedIce",
-      "~CUSTOM:FluoriteOre",
-      "~CUSTOM:StibniteNetherrack",
-      "~CUSTOM:SignalMachinePillagerTemp",
-      "~CUSTOM:SignalMachinePillager",
-      "~CUSTOM:RubyBlock",
-      "~CUSTOM:GoldTitaniumBlock",
-      "~CUSTOM:RubyOre",
-      "~CUSTOM:AtlanteanGoldOre",
-      "~CUSTOM:Computer",
-      "~CUSTOM:TitaniumBlock",
-      "~CUSTOM:TitaniumOre",
-      "~CUSTOM:ChemistryTable",
-      "~CUSTOM:LeadOre"
+    "ITEMS:mod:smth_suits": [
+      "CUSTOM:SpiderManTH2.helmet",
+      "CUSTOM:SpiderManTH2.body",
+      "CUSTOM:SpiderManTH2.legs",
+      "CUSTOM:SpiderManTH2.boots",
+      "CUSTOM:NightMonkeySuit.helmet",
+      "CUSTOM:NightMonkeySuit.body",
+      "CUSTOM:NightMonkeySuit.legs",
+      "CUSTOM:NightMonkeySuit.boots"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
       "~CUSTOM:DwarfStarBlock",
@@ -56473,15 +56746,21 @@
       "~CUSTOM:LeadBlock",
       "~CUSTOM:UraniumBlock"
     ],
-    "ITEMS:mod:smth_suits": [
-      "CUSTOM:SpiderManTH2.helmet",
-      "CUSTOM:SpiderManTH2.body",
-      "CUSTOM:SpiderManTH2.legs",
-      "CUSTOM:SpiderManTH2.boots",
-      "CUSTOM:NightMonkeySuit.helmet",
-      "CUSTOM:NightMonkeySuit.body",
-      "CUSTOM:NightMonkeySuit.legs",
-      "CUSTOM:NightMonkeySuit.boots"
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:CompressedPackedIce",
+      "~CUSTOM:FluoriteOre",
+      "~CUSTOM:StibniteNetherrack",
+      "~CUSTOM:SignalMachinePillagerTemp",
+      "~CUSTOM:SignalMachinePillager",
+      "~CUSTOM:RubyBlock",
+      "~CUSTOM:GoldTitaniumBlock",
+      "~CUSTOM:RubyOre",
+      "~CUSTOM:AtlanteanGoldOre",
+      "~CUSTOM:Computer",
+      "~CUSTOM:TitaniumBlock",
+      "~CUSTOM:TitaniumOre",
+      "~CUSTOM:ChemistryTable",
+      "~CUSTOM:LeadOre"
     ],
     "ITEMS:mod:venom_injection_armor": [
       "CUSTOM:BaneInjustice2Suit.helmet",
@@ -57385,13 +57664,14 @@
       "advancements.green_effect_azure_bluets.title": "Azure Bluets",
       "advancements.st_quicksilver_step_assist.title": "§eStep Assist",
       "advancements.st_superman_leaping.title": "§fRelative Super Leaping",
-      "advancements.poison_ivy_st_photosynthesis.title": "§ePhotosynthetic Biology",
       "gui.art5019injustice.armor_assembler.button_assemble": "Assemble",
+      "advancements.poison_ivy_st_photosynthesis.title": "§ePhotosynthetic Biology",
       "advancements.st_superman_lobotomy.title": "§4Super-Lobotomy",
       "gui.art5019injustice.bounty_paper_gui.button_empty": "\u003e",
       "gui.art5019injustice.today_problem_backup.n1": "0",
-      "entity.art5019injustice.kale_the_caretaker": "Kale the Caretaker",
+      "advancements.st_quicksilver_extra_speed_iv.descr": "Adds an extra level of Speed (Requires Level 5)",
       "item.art5019injustice.armor_cape_test_2_chestplate": "Armor Cape Test 2 Chestplate",
+      "entity.art5019injustice.kale_the_caretaker": "Kale the Caretaker",
       "advancements.stjrbb_scarab_sword.descr": "§2Construct - +7 Damage Sword",
       "item.art5019injustice.art_the_unemployed_spawn_egg": "Art the Unemployed Spawn Egg",
       "gui.art5019injustice.merchandise_menu_vought_executive.label_quality": "quality.",
@@ -57418,8 +57698,8 @@
       "gui.art5019injustice.suit_scheme_menu_vought_executive.label_diamond_blocks_the_starting_bid": "greater than 10 Diamonds, if you want",
       "gui.art5019injustice.chemistry_table_gui.label_u_levels": "U Levels:",
       "effect.art5019injustice.power_dependence": "Inability",
-      "item.art5019injustice.queen_maeve_suit_helmet": "Queen Maeve Tiara",
       "advancements.st_neuro_adapted_body_ii.title": "§fAdapted Body II",
+      "item.art5019injustice.queen_maeve_suit_helmet": "Queen Maeve Tiara",
       "death.attack.scratch_damage.item": "%1$s was scratched by %2$s using %3$s",
       "advancements.st_spider_man_speed.descr": "§fPassive - +0.02 Speed",
       "advancements.earth_x_enter_base.descr": "Track down a base... or are you the one being tracked?",
@@ -57442,23 +57722,23 @@
       "advancements.defeat_stormfront.descr": "Only one more to go...",
       "item.art5019injustice.fried_chicken_bucket": "Fried Chicken Bucket",
       "advancements.lets_go_gambling.descr": "Buy a Dice from a Wandering Trader",
-      "advancements.st_black_panther_constitution.title": "§eBlack Panther Constitution",
       "item.art5019injustice.iridium_ingot": "Iridium Ingot",
+      "advancements.st_black_panther_constitution.title": "§eBlack Panther Constitution",
       "advancements.microbiology.title": "Petri Dishes",
       "item.art5019injustice.heat_vision_hc_icon": " Heat Vision HC Icon",
       "item.art5019injustice.tech_lenses": "Tech Lenses",
       "effect.art5019injustice.polio": "Polio",
       "advancements.st_neuro_advanced_brain.title": "§eAdvanced Brain",
       "advancements.visit_vibranium_lands.descr": "A landscape rich in Vibranium.",
-      "advancements.vpst_symbiote_hunger.descr": "Passive - By diving your body with another living being, you\u0027ll need extra food to sustain yourself.",
-      "advancements.advanced_tech.title": "Advanced Tech",
       "advancements.poison_ivy_st_chlorokinesis.descr": "§cAbility 3 - By utilizing your connection to the Green, you\u0027re able to control nearby plants.",
+      "advancements.advanced_tech.title": "Advanced Tech",
+      "advancements.vpst_symbiote_hunger.descr": "Passive - By diving your body with another living being, you\u0027ll need extra food to sustain yourself.",
       "advancements.poison_ivy_st_poisonous_kiss.title": "§3Poisonous Kiss",
       "item.art5019injustice.leather_piece": "Leather Piece",
       "advancements.stronger_than_kryptonite.descr": "Defeat Metallo, the Kryptonite-Fueled-Vicious-Killer-Cyborg",
-      "advancements.fever_dreams.descr": "Get on the fever stage of a disease",
-      "death.attack.scratch_damage": "%1$s scratched too hard",
       "block.art5019injustice.vibranium_ore": "Vibranium Ore",
+      "death.attack.scratch_damage": "%1$s scratched too hard",
+      "advancements.fever_dreams.descr": "Get on the fever stage of a disease",
       "death.attack.bleed.player": "%1$s bled to death whilst fighting %2$s",
       "item.art5019injustice.case_dust": "Case Dust",
       "item.art5019injustice.p_phenylenediamine": "Paraphenylenediamine",
@@ -57468,8 +57748,8 @@
       "item.art5019injustice.probability_field_emissor_disruptor": "Signal Emitter",
       "item.art5019injustice.hydrogen_fluoride": "Hydrogen Fluoride",
       "item.art5019injustice.activated_dwarf_star": "Activated Dwarf Star",
-      "gui.art5019injustice.power_gui_peak_human.label_spider_sense_30": "Spider Sense: 30%",
       "line.allergy.scratch": "Press the React key to scratch and get rid of the allergy",
+      "gui.art5019injustice.power_gui_peak_human.label_spider_sense_30": "Spider Sense: 30%",
       "gui.art5019injustice.compound_v_menu_vought_executive.label_like_you_is_able_to_pay_that_amo": "one of our estimated serums, but, if",
       "gui.art5019injustice.power_gui_spiderman.label_regeneration_ii": "Regeneration: II",
       "advancements.st_superman_flight.title": "§3Gravitational Field",
@@ -57489,8 +57769,8 @@
       "subtitles.suit.generic.injects": "Suit Injects",
       "advancements.stjrbb_strength.descr": "§fPassive - +5 Damage",
       "item.art5019injustice.captain_america_hero_icon": "Captain America Hero Icon",
-      "gui.art5019injustice.merchandise_menu_vought_executive.label_able_to_pay_way_more_in_exchange": "serums.",
       "advancements.st_supe_agility.title": "§eAgility I",
+      "gui.art5019injustice.merchandise_menu_vought_executive.label_able_to_pay_way_more_in_exchange": "serums.",
       "advancements.st_neuro_base.title": "§6Skilltree",
       "item.art5019injustice.spider_man_ag_2_leggings": "The Amazing Spider-Man Leggings",
       "gui.art5019injustice.petri_table_gui.tooltip_cologne": "Cologne",
@@ -57509,8 +57789,8 @@
       "advancements.st_domino_luck_channeling.descr": "§ePassive - Channels your current Fortune level into the tool that you\u0027re using while using it",
       "gamerule.art5019SupermanNetherStarAbsorption": "Superman Nether Star Absorption",
       "advancements.st_quicksilver_base.descr": "§6Quicksilver",
-      "item.art5019injustice.nightmare_spider_spawn_egg": "Nightmare Spider Spawn Egg",
       "advancements.st_domino_fortune.title": "§eLuck",
+      "item.art5019injustice.nightmare_spider_spawn_egg": "Nightmare Spider Spawn Egg",
       "advancements.become_poison_ivy_adv.descr": "Become Poison Ivy",
       "advancements.iron_man_demon_on_the_bottle.title": "Demon in a Bottle",
       "item.art5019injustice.ghost_spider_leggings": "Ghost Spider Leggings",
@@ -57531,29 +57811,29 @@
       "gui.art5019injustice.signal_machine_block.button_turn_on": "Turn On",
       "item.art5019injustice.enriched_shovel": "Atomic Shovel",
       "item.art5019injustice.feast_cards": "Feast Cards",
-      "item.art5019injustice.space_stone": "§9Space Stone",
       "item.art5019injustice.enriched_hoe": "Atomic Hoe",
+      "item.art5019injustice.space_stone": "§9Space Stone",
       "item.art5019injustice.long_golden_kryptonite_blade": "Long Golden Kryptonite Blade",
       "advancements.st_superman_kryptonite_resistance_ii.title": "§fKryptonite Resistance II",
       "advancements.st_homelander_laser_vision.descr": "§bAbility 1 - By releasing heavy amounts of ions trough your eyes, the air quickly heats up turning into a powerful plasma beam.",
       "entity.art5019injustice.hydra_sniper": "Hydra Soldier (Sniper)",
       "item.art5019injustice.webweaver_suit_leggings": "Webweaver Leggings",
       "advancements.february.descr": "Obtain your first amethyst",
-      "item.art5019injustice.electricity_weakness_translucent_icon": "Electricity Weakness Translucent Icon",
       "item.art5019injustice.superman_fire_res_icon_1": "Superman Fire Res Icon 1",
+      "item.art5019injustice.electricity_weakness_translucent_icon": "Electricity Weakness Translucent Icon",
       "painting.art5019injustice.painting_captain_america_1.author": "Art5019",
       "item.art5019injustice.superman_fire_res_icon_2": "Superman Fire Res Icon 2",
       "item.art5019injustice.storm_icon": "Storm Icon",
       "advancements.st_anti_venom_absolute_healing.title": "§3Absolute Healing",
       "subtitles.entity.superman.whistle": "Whistle",
-      "advancements.stjrbb_sonic_cannon.title": "§2Sonic Cannon",
       "item.art5019injustice.sewing_kit": "Sewing Kit",
+      "advancements.stjrbb_sonic_cannon.title": "§2Sonic Cannon",
       "item.art5019injustice.anti_venom_suit_boots": "Venom Feet",
-      "entity.art5019injustice.shadows": "Shadows",
       "advancements.st_neuro_fear_transmission.descr": "§ePassive - When attacking, there\u0027s a good chance to apply or even making longer the effect of Fear on the enemy.",
+      "entity.art5019injustice.shadows": "Shadows",
       "advancements.defeat_red_skull.descr": "Free the Earth from the Tentacles of Earth-X Hydra and their Far-Right Ideology",
-      "item.art5019injustice.raw_atlantean_gold": "Raw Atlantean Gold",
       "item.art5019injustice.spiderman_enhanced_suit_leggings": "Spider-Man Advanced Suit Leggings",
+      "item.art5019injustice.raw_atlantean_gold": "Raw Atlantean Gold",
       "advancements.superman_kryptonite.descr": "Suffer the effects of a Green Kryptonite",
       "advancements.hero_of_wakanda.title": "Hero of Wakanda",
       "painting.art5019injustice.painting_black_panther_1.title": "The Return of the King",
@@ -57567,8 +57847,8 @@
       "advancements.st_superman_kryptonite_resistance_ii.descr": "§fPassive - Reduces by an extra 22% your susceptibility to the effects of Kryptonite. (May vary according to the Kryptonite color, and Level). [Requires 1,3 Months of Solar Energy. Doesn\u0027t consume]",
       "item.art5019injustice.gold_titanium_ingot": "Gold Titanium Ingot",
       "advancements.st_storm_level_up.title": "§6Power Level",
-      "advancements.space_stone_adv.title": "Space Stone",
       "item.art5019injustice.iridium": "Raw Iridium",
+      "advancements.space_stone_adv.title": "Space Stone",
       "item.art5019injustice.venom_eddie_brock_suit_chestplate": "Venom Body",
       "advancements.super_senses.descr": "§bAbility 1 + Shift: By taking a heavy breath, you\u0027re able to find more than meets the eye around you. [Requires 2 Days of Solar Energy, doesn\u0027t cost anything]",
       "advancements.stss_health.descr": "Passive - +12 Health",
@@ -57577,8 +57857,8 @@
       "item.art5019injustice.condiment_king_suit_boots": "Condiment King Boots",
       "block.art5019injustice.kryptonian_computer": "Kryptonian Computer",
       "block.art5019injustice.bromine_sand": "Bromine Sand",
-      "painting.art5019injustice.neuro_painting_1.title": "They think this will make me crazy",
       "advancements.deep_deep_yet_deeper.descr": "Find an Deep Ocean",
+      "painting.art5019injustice.neuro_painting_1.title": "They think this will make me crazy",
       "advancements.translucent_electricity_weakness.descr": "§ePassive - When the Carbon Metamaterial skin is activated, you\u0027ll become a natural conductor to electricity, causing it to be more harmful agains\u0027t you.",
       "gui.art5019injustice.leadsuitcase.label_suitcase": "Suitcase",
       "advancements.stjrbb_fly.title": "Scarab Flight",
@@ -57590,27 +57870,27 @@
       "advancements.st_anti_venom_collective_cure.descr": "§bAbility 5 - Releasing airbone mutated antibodies allows you to cure everything and everyone nearby you. [Cooldown: 4s by Cured]",
       "entity.art5019injustice.special_spider": "Special Spider",
       "item.art5019injustice.tomato_soup": "Tomato Soup",
-      "advancements.st_storm_level_1.title": "§6Power Level",
       "item.art5019injustice.psp_symbiote": "Symbiote",
+      "advancements.st_storm_level_1.title": "§6Power Level",
       "advancements.st_quicksilver_base.title": "§6Skilltree",
       "gui.art5019injustice.power_gui_spiderman.label_level": "Level: 1/1",
       "advancements.st_dark_spider_organic_webbing.descr": "Ability 3 - By releasing some of the Symbiote mass with pressure throughout your wrists, you\u0027re able to generate some sort of Organic Web. [Cooldown: 2s/8s]",
       "block.art5019injustice.lilac_cattleya": "Lilac Orchid",
       "advancements.blue_beetle_jr_save_city.descr": "Save the day.",
       "advancements.st_supreme_advanced_brain.title": "Advanced Brain",
-      "advancements.spider_electrical_touch.title": "§3Venom Blast",
       "advancements.tomb_raider.descr": "Search the remains of a human",
-      "advancements.x_gene_hope_serum.title": "Hope Serum",
+      "advancements.spider_electrical_touch.title": "§3Venom Blast",
       "item.art5019injustice.super_fertilizer": "The Green Essence",
+      "advancements.x_gene_hope_serum.title": "Hope Serum",
       "item.art5019injustice.medical_kit": "Medical Kit",
       "advancements.super_senses.title": "§3Super Senses",
-      "gui.art5019injustice.chemistry_table_gui.label_ca_levels": "Ca Levels:",
       "item.art5019injustice.storm_white_suit_leggings": "Astonishing Storm Leggings",
+      "gui.art5019injustice.chemistry_table_gui.label_ca_levels": "Ca Levels:",
       "advancements.vpst_venomous_bite.title": "Venomous Bite",
       "advancements.defeat_deathstroke.descr": "Defeat Deathstroke",
       "advancements.steb_resistance.title": "§eSymbiote Resistance",
-      "item.art5019injustice.deadpool_blood": "Syringe",
       "painting.art5019injustice.ffh_painting_1.author": "Art5019",
+      "item.art5019injustice.deadpool_blood": "Syringe",
       "advancements.out_of_the_matrix.descr": "Help Chris Jackson, the Musician",
       "advancements.stjrbb_water_breathing.descr": "§fPassive - Allows the user to breath underwarter",
       "advancements.king_of_the_seas.descr": "Get the powers of a Atlantean",
@@ -57633,8 +57913,8 @@
       "advancements.use_summoning_book.descr": "Use the Summoning Book to summon something",
       "advancements.summon_loki.title": "I\u0027ve come too far for anything else",
       "advancements.steb_suit_activation.title": "Biosuit Activation",
-      "advancements.vpst_sound_weakness.descr": "Passive - Specific sound frequencies may disrupt the bonds of the Symbiote mass, causing higher damage and making your symbiote prone to it\u0027s own death.",
       "advancements.st_neuro_neural_boosts.title": "§3Neurological Boosts",
+      "advancements.vpst_sound_weakness.descr": "Passive - Specific sound frequencies may disrupt the bonds of the Symbiote mass, causing higher damage and making your symbiote prone to it\u0027s own death.",
       "advancements.steb_vision.title": "Symbiote Eyes",
       "advancements.stss_jump_boost.title": "Jump Boost",
       "advancements.st_neuro_energy_transmission.title": "§eEnergy Transmission",
@@ -57652,26 +57932,26 @@
       "advancements.nanomachines_son.title": "Nanomachines Son",
       "advancements.st_mathias_adapted_body.descr": "Passive - Resistance I",
       "item.art5019injustice.scarab_energy_blaster_item": "Energy Blaster",
-      "item.art5019injustice.all_out_icon": "All Out Icon",
       "item.art5019injustice.symbiote": "Symbiote",
+      "item.art5019injustice.all_out_icon": "All Out Icon",
       "item.art5019injustice.condiment_king_suit_helmet": "Condiment King Helmet",
       "item.art5019injustice.hazmat_chestplate": "Hazmat Chestplate",
-      "item.art5019injustice.scarecrow_emblem": "Scarecrow Emblem",
-      "item.art5019injustice.microchip_heater": "Microchip",
       "item.art5019injustice.poison_ivy_icon": "Poison Ivy Icon",
+      "item.art5019injustice.microchip_heater": "Microchip",
+      "item.art5019injustice.scarecrow_emblem": "Scarecrow Emblem",
       "advancements.st_superman_super_inteligence.title": "§eSuper Intelligence",
       "item.art5019injustice.emblem_spider": "Spider Emblem",
       "advancements.use_chemistry_book.title": "I\u0027m something of a scientist myself",
       "subtitles.suit.ironman.suitup": "Suit Up",
       "advancements.poison_ivy_st_poisonous_kiss.descr": "§bAbility 2 - By secreting a phytotoxin by special glands on your mouth, you\u0027re able to deliver a poisonous kiss on your adversary.",
       "item.art5019injustice.golden_kryptonite_blade": "Golden Kryptonite Blade",
-      "advancements.vpst_symbiote_hunger.title": "Symbiote Hunger",
       "advancements.st_supreme_engineering_skills.title": "§3Engineering Skills",
+      "advancements.vpst_symbiote_hunger.title": "Symbiote Hunger",
       "advancements.spider_electrical_touch.descr": "§bPassive - When low in life, the first critical attack you hit, an strong effect of electricity will be applied on your ememy (6 Minutes Cooldown)",
       "item.art5019injustice.fabric_orange": "Orange Fabric",
-      "advancements.stronger_than_kryptonite.title": "Stronger Than a Rock",
-      "death.attack.scratch_damage.player": "%1$s scratcheded too hard whilst trying to escape %2$s",
       "jei.art5019injustice.formulas": "Remove the dificulty of the respective Chemistry Recipe by 1",
+      "death.attack.scratch_damage.player": "%1$s scratcheded too hard whilst trying to escape %2$s",
+      "advancements.stronger_than_kryptonite.title": "Stronger Than a Rock",
       "item.art5019injustice.dice": "Dice",
       "advancements.st_supes_peanut_butter.descr": "Passive - Some nut-based foods might trigger your Super Immune-System to attack your own body recklessly.",
       "advancements.st_quicksilver_fast_travel.descr": "§bBy reaching your max speed, a split second is enough to make you travel across large distances",
@@ -57680,8 +57960,8 @@
       "advancements.obtain_glass.title": "Art Nouveau",
       "advancements.green_effect_orchids.title": "Epiphytes",
       "entity.art5019injustice.orchid_zombie": "Orchid Zombie",
-      "advancements.st_neuro_neural_boosts.descr": "§bPassive - When hurt, there is a chance of it increasing your Neurological Boost Effect, that makes you fast and stronger, when hitting level VI with the effect, a cooldown of 8 minutes will be applied..",
       "item.art5019injustice.loki_armor_helmet": "Loki Helmet",
+      "advancements.st_neuro_neural_boosts.descr": "§bPassive - When hurt, there is a chance of it increasing your Neurological Boost Effect, that makes you fast and stronger, when hitting level VI with the effect, a cooldown of 8 minutes will be applied..",
       "block.art5019injustice.meteorite": "Unknown Meteorite Block",
       "advancements.st_neuro_trauma_overcoming.title": "§eTrauma Overcoming",
       "advancements.summon_loki.descr": "Summon Loki, god of mischief",
@@ -57736,8 +58016,8 @@
       "advancements.st_superman_uncontrolled_heat_vision.descr": "§eIt burns...",
       "block.art5019injustice.stibnite_netherrack": "Stibnite Netherrack",
       "enchantment.art5019injustice.ogum_blessing": "Ogum\u0027s Blessing",
-      "item.art5019injustice.jump_boost_icon": "Jump Boost Icon",
       "advancements.green_effect_azure_bluets.descr": "Azure Bluets are genetically related to forget-me-nots, symbols of those who have left us.",
+      "item.art5019injustice.jump_boost_icon": "Jump Boost Icon",
       "entity.art5019injustice.plague_zombie": "Plague Zombie",
       "item.art5019injustice.golden_kryptonite": "Golden Kryptonite",
       "item.art5019injustice.diamond_hammer": "Diamond Hammer",
@@ -57768,8 +58048,8 @@
       "biome.art5019injustice.war_lands": "War Lands",
       "advancements.st_storm_aerokinesis.title": "§3Aerokinesis II",
       "item.art5019injustice.titanium_ingot": "Titanium",
-      "item.art5019injustice.shurikens": "Shuriken",
       "item.art5019injustice.peanut_butter": "Peanut Butter",
+      "item.art5019injustice.shurikens": "Shuriken",
       "advancements.alignment_god.descr": "And, afterall, it wasn\u0027t about Vengeance, but Hope...",
       "item.art5019injustice.base_vaccine_carrier": "Vaccine Carrier",
       "item.art5019injustice.steel_nugget": "Steel Nugget",
@@ -57784,8 +58064,8 @@
       "item.art5019injustice.fabric_black": "Fabric Black",
       "gui.art5019injustice.power_gui_spiderman.label_spider_sense_30": "Spider Sense: 30%",
       "item.minecraft.splash_potion.effect.scarecrow_stronger_formula": "Throwable Bottle of Scarecrow Formula",
-      "item.art5019injustice.atlantean_zombie_blood": "Syringe",
       "advancements.st_superman_fall_imunity.title": "§fFall Immunity",
+      "item.art5019injustice.atlantean_zombie_blood": "Syringe",
       "gui.art5019injustice.computer_gui.label_ai": "Subject:",
       "block.art5019injustice.palladium_block": "Block of Palladium",
       "item.art5019injustice.icon_superman_strength": "Icon Superman Strength",
@@ -57795,16 +58075,16 @@
       "item.art5019injustice.yang": "Yang",
       "item.art5019injustice.fresh_water": "Fresh Water",
       "advancements.whatdoyoufearmrwayne.title": "What do you fear Mr. Wayne?",
-      "advancements.st_anti_venom_base.descr": "§6Skilltree",
-      "item.art5019injustice.summoning_book": "Summoning Book",
       "advancements.st_superman_kryptonite_resistance_iii.descr": "§fPassive - Reduces by an extra 22% your susceptibility to the effects of Kryptonite. (May vary according to the Kryptonite color, and Level). [Requires 1,6 Months of Solar Energy. Doesn\u0027t consume]",
+      "item.art5019injustice.summoning_book": "Summoning Book",
+      "advancements.st_anti_venom_base.descr": "§6Skilltree",
       "advancements.good_health_and_well_being.title": "III",
       "item.art5019injustice.hook_scythe": "Chained Sickle",
       "advancements.alignment_anti_hero.title": "Anti-Hero",
       "death.attack.panic": "%1$s panicked to death",
       "item.art5019injustice.super_pressure_icon": "Super Pressure Icon",
-      "effect.art5019injustice.sun_dipped": "Sun Dipped",
       "item.art5019injustice.superman_kc_suit_boots": "Old House of El Boots",
+      "effect.art5019injustice.sun_dipped": "Sun Dipped",
       "item.art5019injustice.condiment_king_suit_leggings": "Condiment King Leggings",
       "advancements.spider_man_be_greater.descr": "New suit, same old me.",
       "advancements.deep_deep_yet_deeper.title": "Deep Deep Yet Deeper",
@@ -57812,13 +58092,13 @@
       "advancements.ultimate_proto_human.descr": "The Bioevolutive Serum, created to \"repair failures\" on DNA and create the \"perfect\" humans, turned it\u0027s subjects on the strongest Proto-Humans known in history",
       "item.art5019injustice.advanced_circuit_board": "Microchip",
       "item.minecraft.lingering_potion.effect.scarecrow_nightmare_formula": "Long Bottle of Scarecrow Formula",
-      "death.attack.radiation": "%1$s was consumed by radiation",
       "item.art5019injustice.bottle_sulfuric_acid": "Sulfuric Acid Bottle",
+      "death.attack.radiation": "%1$s was consumed by radiation",
       "advancements.defeat_a_god.title": "What\u0027s a God to a Nonbeliever?",
       "advancements.symbiote_merge.descr": "§6Right-Click with a Symbiote with low Alignment to become a Venomized Spider",
-      "advancements.st_neuro_broken_mind.descr": "§ePassive - From times to times, when hurt a long fear effect is applied. §cDisabled after reaching Level 5.",
-      "gui.art5019injustice.suittablegui.label_fabrics": "Fabrics",
       "advancements.st_scarecrow_fear_immunity.title": "§eFear Immunity",
+      "gui.art5019injustice.suittablegui.label_fabrics": "Fabrics",
+      "advancements.st_neuro_broken_mind.descr": "§ePassive - From times to times, when hurt a long fear effect is applied. §cDisabled after reaching Level 5.",
       "advancements.stjrbb_deactivate.title": "§eDeactivate Suit",
       "entity.art5019injustice.eshu": "Eshu",
       "item.art5019injustice.nanotech_kit": "Upgrade Kit",
@@ -57846,14 +58126,15 @@
       "advancements.st_superman_kryptonite_resistance_iii.title": "§fKryptonite Resistance III",
       "item.art5019injustice.black_panther_suit_leggings": "Panther King Leggings",
       "gui.art5019injustice.suittablegui.label_dyes": "Dyes",
-      "advancements.there_was_an_idea.title": "There Was An Idea",
       "advancements.stjrbb_flight.title": "§eScarab Levitation",
+      "advancements.there_was_an_idea.title": "There Was An Idea",
       "item.art5019injustice.icon_senses": "Icon Senses",
       "advancements.st_superman_fall_imunity.descr": "§fPassive - The resistance on your muscles, bones and tendons makes falling from extreme heights something almost natural. [Requires 3 Weeks of Solar Energy. Doesn\u0027t consume. Unlocked by Charity]",
       "advancements.become_poison_ivy_adv.title": "Goddess of Eden",
       "item.art5019injustice.badassium_core": "Badassium Core",
       "advancements.st_neuro_engineering_skills.descr": "§bAbility 1 - By thinking more before doing a project, it allows you to finish it pratically by free. (Gains can be toggled by sneaking). Cooldown: 16.6 minutes",
       "item.art5019injustice.pepper": "Pepper",
+      "advancements.st_quicksilver_extra_speed_iv.title": "Extra Fast IV",
       "advancements.steb_sound_weakness.title": "Sound Weakness",
       "advancements.stjrbb_scarab_sword.title": "§2Scarab Sword",
       "entity.art5019injustice.nightmare_spider": "Nightmare Spider",
@@ -57865,6 +58146,7 @@
       "advancements.alignment_menace.descr": "And nothing will stop me...",
       "gui.art5019injustice.influence_menu_vought_executive.label_as_inteligent_as_we_think_you_ar": "small contribuition in exchange of one of our best",
       "item.art5019injustice.weakeness_blood_syringe": "Syringe",
+      "advancements.st_quicksilver_extra_speed_iii.title": "Extra Fast III",
       "entity.art5019injustice.uncle_sam": "Uncle Sam",
       "advancements.st_scarecrow_fear_immunity.descr": "§ePassive - Makes you Immune to any sort of Fear",
       "effect.art5019injustice.deafness": "Deafness",
@@ -58209,7 +58491,10 @@
       "enchantment.art5019injustice.royalty": "Sea Royalty",
       "item.art5019injustice.diamond_lenses": "Diamond Lenses",
       "advancements.green_effect_sunflower.descr": "Sunflowers, beyond their archetypal Sun beauty, are known for their huge seeds",
+      "item.art5019injustice.icon_extra_speed_4": "Icon Extra Speed",
       "item.art5019injustice.pistol_item": "Pistol",
+      "item.art5019injustice.icon_extra_speed_2": "Icon Extra Speed",
+      "item.art5019injustice.icon_extra_speed_3": "Icon Extra Speed",
       "item.art5019injustice.potassium_dust": "Potassium Dust",
       "subtitles.entity.ironman.repulsor": "Repulsor Blasts",
       "advancements.st_anti_venom_healing_web.descr": "§bAbility 4 + Ability 3 - By adding antibodies to the released Anti-Symbiote mass, you\u0027re able to temporarily inhibit your target to attack back, but at a cost of might healing him. [Cooldown: 2s]",
@@ -58571,6 +58856,7 @@
       "item.art5019injustice.golden_kryptonite_katana": "Iron Katana",
       "advancements.hidden_agenda.descr": "Learn about Mr. Li and his secrets",
       "advancements.st_storm_level_4.descr": "§6Level 4",
+      "advancements.st_quicksilver_extra_speed_i.descr": "Adds an extra level of Speed (Requires Level 2)",
       "gui.art5019injustice.bounty_paper_gui.label_bounty_paper": "Bounty Paper",
       "item.art5019injustice.queen_maeve_suit_boots": "Queen Maeve Boots",
       "item.art5019injustice.bane_nolan_boots": "League of Shadows Bane Boots",
@@ -58690,6 +58976,7 @@
       "advancements.st_aquaman_conduit_power.descr": "§ePassive - Grants Conduit Power",
       "subtitles.spider.shoot": "Web Shooter shoots",
       "advancements.permanent_trauma.descr": "§dAbility 1 - With enough fear pheromones in the air, and fear hormones on the bloodstream, easily even more fear can be spread trough the masses, but not any fear, it\u0027s a fear solid as matter, strong as a nightmare and shared as a plague, easily able to destroy the mind of anyone who dares to fight agaisn\u0027t it.",
+      "item.art5019injustice.icon_extra_speed": "Icon Extra Speed",
       "advancements.green_effect_rare_blue_flower.descr": "A lot of plants in fact produce hallucinogenic substances as a form to keep other animals away, and still... humans decide to consume them.",
       "gui.art5019injustice.compound_v_menu_vought_executive.button_buy": "Buy",
       "advancements.warrior_of_the_reach.descr": "Get the Scarab attached to you",
@@ -58842,6 +59129,7 @@
       "advancements.obtain_all_orchids.title": "Orchidary",
       "advancements.st_neuro_adrenalyne_conversion.descr": "§6Passive - Most forms of enraging you will be converted to Neurological Boosts.",
       "block.art5019injustice.venus_fly_trap": "Venus Fly Trap",
+      "advancements.st_quicksilver_extra_speed_i.title": "Extra Fast I",
       "gui.art5019injustice.petri_table_gui.tooltip_food": "Food",
       "block.art5019injustice.titanium_ore": "Titanium Ore",
       "advancements.captain_america_hero.descr": "Save the day.",
@@ -58897,6 +59185,7 @@
       "item.art5019injustice.raolite": "Raolite",
       "advancements.st_supreme_neural_boosts.descr": "§bPassive - When hurt, there is a chance of it increasing your Neurological Boost Effect, that makes you fast and stronger, when hitting level VI with the effect, a cooldown of 10 minutes will be applied..",
       "advancements.green_effect_sand.descr": "Cactaceae family members are fleshy and spiky plant adapted to dry ambients.",
+      "advancements.st_quicksilver_extra_speed_iii.descr": "Adds an extra level of Speed (Requires Level 4)",
       "effect.art5019injustice.immunity_b": "Immunity Type-II",
       "item.art5019injustice.iron_dust": "Iron Dust",
       "advancements.st_superman_superbreath.descr": "§bAbility 2 - By compressing large chunks of air into dense bits stored on your lung, you\u0027re able to exhale strong wind currents trough your mouth. [Requires 5 Days of Solar Energy. Doesn\u0027t consume]",
@@ -59152,6 +59441,7 @@
       "item.art5019injustice.icon_venom_wall_crawling": "Icon Venom Wall Crawling",
       "advancements.st_homelander_base.descr": "§6Skilltree",
       "item.art5019injustice.steel_shovel": "Steel Shovel",
+      "advancements.st_quicksilver_extra_speed_ii.title": "Extra Fast II",
       "advancements.dont_do_that_at_home.title": "Mad Scientist",
       "advancements.silent_trade.descr": "Trade a Bell with a Shadow in exchange for Assassin loot",
       "item.art5019injustice.terephthaloyl_chloride": "Terephthaloyl Chloride",
@@ -59165,6 +59455,7 @@
       "subtitles.item.spacestone.teleport": "Entity teleports",
       "advancements.st_superman_sun_absorption.title": "§6Sun Absorption",
       "key.art5019injustice.scratch": "React",
+      "advancements.st_quicksilver_extra_speed_ii.descr": "Adds an extra level of Speed (Requires Level 3)",
       "item.art5019injustice.scarab_wielder_emblem": "Scarab Host Emblem",
       "advancements.st_superman_x_ray.title": "§3X-Ray Vision",
       "block.art5019injustice.ranged_tnt": "Ranged TNT",
@@ -59178,6 +59469,7 @@
       "advancements.leveling_up.descr": "§6Passive - When you defeat an enemy, some Power XP is added to you, use your Ability 1 to gain even more XP and to Level-Up once enough XP is gained.",
       "item.art5019injustice.deadpool_suit_helmet": "Deadpool Mask",
       "advancements.st_aquaman_strength.title": "§fAtlantean Strength",
+      "advancements.become_a_train_adv.descr": "Get the powers of A-Train",
       "advancements.st_storm_level_4.title": "§6Power Level",
       "item.art5019injustice.blood_syringe_poison": "Syringe",
       "item.art5019injustice.spider_man_th_2_helmet": "Stark Tech Spider-Man Mask",
@@ -59260,6 +59552,7 @@
       "entity.art5019injustice.vought_executive": "Vought Executive",
       "subtitles.entity.player.earring": "Loud Noises",
       "advancements.st_aquaman_strength.descr": "§fAttribute - Grants +4 Damage",
+      "advancements.become_a_train_adv.title": "Message from the Stars",
       "item.art5019injustice.water_filter": "Water Filter",
       "painting.art5019injustice.tasm_1_painting.title": "Swinging",
       "gui.art5019injustice.main_menu_vought_executive.label_you_what_would_you_like_to_buy": "you. What would you like to buy?",

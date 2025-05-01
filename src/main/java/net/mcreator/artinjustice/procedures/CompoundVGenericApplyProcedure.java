@@ -24,10 +24,10 @@ public class CompoundVGenericApplyProcedure {
 						if (Math.random() < 0.1 * quality) {
 							BecomeHomelanderProcedure.execute(entity);
 						} else {
-							BecomeDefaultSuperProcedure.execute(entity);
+							BecomeATrainProcedure.execute(entity);
 						}
 					} else {
-						BecomeTranslucentProcedure.execute(entity);
+						BecomeDefaultSuperProcedure.execute(entity);
 					}
 				} else {
 					if (Math.random() < 0.1 * quality) {

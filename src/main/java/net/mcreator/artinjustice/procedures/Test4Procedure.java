@@ -128,8 +128,8 @@ public class Test4Procedure {
 			if (!(entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(Art5019injusticeModMobEffects.POWER_DEPENDENCE.get()))) {
 				if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 4) {
 					ScarecrowAbility1Procedure.execute(world, x, y, z, entity);
-				} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 8) {
-					QuicksilverAbility1Procedure.execute(world, x, y, z, entity);
+				} else if (ReturnAbility1TypeProcedure.execute(entity) == 1) {
+					GenericSpeedsterAbility1Procedure.execute(world, x, y, z, entity);
 				} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 9) {
 					Ability1DominoProcedure.execute(world, x, y, z, entity);
 				} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 13

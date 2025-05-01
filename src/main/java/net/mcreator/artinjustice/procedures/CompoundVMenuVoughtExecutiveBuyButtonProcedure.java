@@ -24,7 +24,7 @@ public class CompoundVMenuVoughtExecutiveBuyButtonProcedure {
 					}
 					return 0;
 				}
-			}.getAmount(0) >= 10 && new Object() {
+			}.getAmount(0) >= 4 && new Object() {
 				public int getAmount(int sltid) {
 					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
@@ -33,7 +33,7 @@ public class CompoundVMenuVoughtExecutiveBuyButtonProcedure {
 					}
 					return 0;
 				}
-			}.getAmount(0) <= 15) {
+			}.getAmount(0) <= 9) {
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					((Slot) _slots.get(0)).remove(new Object() {
 						public int getAmount(int sltid) {
@@ -62,7 +62,7 @@ public class CompoundVMenuVoughtExecutiveBuyButtonProcedure {
 					}
 					return 0;
 				}
-			}.getAmount(0) <= 23) {
+			}.getAmount(0) <= 14) {
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					((Slot) _slots.get(0)).remove(new Object() {
 						public int getAmount(int sltid) {
@@ -91,7 +91,7 @@ public class CompoundVMenuVoughtExecutiveBuyButtonProcedure {
 					}
 					return 0;
 				}
-			}.getAmount(0) <= 30) {
+			}.getAmount(0) <= 19) {
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					((Slot) _slots.get(0)).remove(new Object() {
 						public int getAmount(int sltid) {
@@ -120,7 +120,7 @@ public class CompoundVMenuVoughtExecutiveBuyButtonProcedure {
 					}
 					return 0;
 				}
-			}.getAmount(0) > 30) {
+			}.getAmount(0) > 19) {
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					((Slot) _slots.get(0)).remove(new Object() {
 						public int getAmount(int sltid) {
