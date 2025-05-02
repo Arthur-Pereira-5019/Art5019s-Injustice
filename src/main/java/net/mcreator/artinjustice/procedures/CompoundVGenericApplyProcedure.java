@@ -11,6 +11,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 
 import net.mcreator.artinjustice.network.Art5019injusticeModVariables;
+import net.mcreator.artinjustice.init.Art5019injusticeModMobEffects;
 import net.mcreator.artinjustice.init.Art5019injusticeModItems;
 
 public class CompoundVGenericApplyProcedure {
@@ -37,26 +38,33 @@ public class CompoundVGenericApplyProcedure {
 					}
 				}
 			} else {
-				if (Math.random() < 0.3) {
+				if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 26) {
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.RUSHING.get(), (int) (400 * quality), 0, false, false));
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, (int) (12000 * quality), 2, false, false));
+				} else {
 					if (Math.random() < 0.3) {
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, (int) (12000 * quality), 2, false, false));
+						if (Math.random() < 0.3) {
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, (int) (12000 * quality), 2, false, false));
+						} else {
+							if (Math.random() < 0.3) {
+								if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+									_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, (int) (12000 * quality), 2, false, false));
+							} else {
+								if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+									_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, (int) (12000 * quality), 3, false, false));
+							}
+						}
 					} else {
 						if (Math.random() < 0.3) {
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, (int) (12000 * quality), 2, false, false));
+								_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, (int) (12000 * quality), 2, false, false));
 						} else {
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-								_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, (int) (12000 * quality), 3, false, false));
+								_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, (int) (12000 * quality), 2, false, false));
 						}
-					}
-				} else {
-					if (Math.random() < 0.3) {
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, (int) (12000 * quality), 2, false, false));
-					} else {
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, (int) (12000 * quality), 2, false, false));
 					}
 				}
 			}

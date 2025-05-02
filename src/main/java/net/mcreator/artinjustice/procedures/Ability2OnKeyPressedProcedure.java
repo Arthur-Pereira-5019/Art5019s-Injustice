@@ -92,6 +92,22 @@ public class Ability2OnKeyPressedProcedure {
 				if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 8) {
 					AbilityPunchMassUpdateProcedure.execute(entity);
 				}
+				if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 26) {
+					{
+						double _setval = 200;
+						entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.ability2duration = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						double _setval = 4000;
+						entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.ability2cooldown = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+				}
 			} else {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal(

@@ -55830,7 +55830,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/artinjustice/client/gui/QuicksilverQuickTravelGUIScreen.java",
-          "src/main/java/net/mcreator/artinjustice/world/inventory/QuicksilverQuickTravelGUIMenu.java"
+          "src/main/java/net/mcreator/artinjustice/world/inventory/QuicksilverQuickTravelGUIMenu.java",
+          "src/main/java/net/mcreator/artinjustice/network/QuicksilverQuickTravelGUIButtonMessage.java"
         ]
       },
       "path": "~/XMen/Quicksilver"
@@ -56300,6 +56301,12 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
+    },
+    {
+      "name": "ability2duration",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
