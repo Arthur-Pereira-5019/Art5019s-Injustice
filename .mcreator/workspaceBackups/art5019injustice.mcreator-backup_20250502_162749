@@ -55800,6 +55800,26 @@
         ]
       },
       "path": "~/CompoundV/ATrain"
+    },
+    {
+      "name": "ReturnQuicksilverMaxDistanceTravel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_quicksilver_max_distance_travel",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/ReturnQuicksilverMaxDistanceTravelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/XMen/Quicksilver"
     }
   ],
   "variable_elements": [

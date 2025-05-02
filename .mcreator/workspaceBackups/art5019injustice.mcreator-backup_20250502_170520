@@ -55790,6 +55790,72 @@
             "type": "entity"
           },
           {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CompoundV/ATrain"
+    },
+    {
+      "name": "ReturnQuicksilverMaxDistanceTravel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_quicksilver_max_distance_travel",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/ReturnQuicksilverMaxDistanceTravelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/XMen/Quicksilver"
+    },
+    {
+      "name": "QuicksilverQuickTravelGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quicksilver_quick_travel_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/client/gui/QuicksilverQuickTravelGUIScreen.java",
+          "src/main/java/net/mcreator/artinjustice/world/inventory/QuicksilverQuickTravelGUIMenu.java",
+          "src/main/java/net/mcreator/artinjustice/network/QuicksilverQuickTravelGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/XMen/Quicksilver"
+    },
+    {
+      "name": "QuickTravelTeleportButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quick_travel_teleport_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/QuickTravelTeleportButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -55806,8 +55872,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/CompoundV/ATrain"
+      }
     }
   ],
   "variable_elements": [
@@ -58013,6 +58078,7 @@
       "advancements.power_ranger.descr": "Craft Copper Wiring",
       "advancements.stbbdg_deactivate.descr": "§eAbility - By pressing the suit Ability 1 key with the Suit Activated the Scarab Armor is Deactivated",
       "advancements.st_mathias_regeneration.descr": "Passive - Regeneration III",
+      "gui.art5019injustice.quicksilver_quick_travel_gui.button_travel": "Travel",
       "advancements.poison_ivy_st_pheromones.title": "§3Human Pheromone Release",
       "advancements.alignment_vigilante.title": "Vigilante",
       "advancements.st_neuro_engineering_skills.title": "§3Engineering Skills",
@@ -58520,6 +58586,8 @@
       "item.art5019injustice.missile_ranged": "Missile Ranged",
       "item.art5019injustice.spiderman_enhanced_suit_chestplate": "Spider-Man Advanced Suit Chestplate",
       "advancements.st_anti_venom_cleaner_hands.descr": "§bAbility 3 - Channels the antibodies flow to your hands, which allows you to strike an healing punch or access other powers. [Cooldown: 6s]",
+      "gui.art5019injustice.quicksilver_quick_travel_gui.travelY": "Y",
+      "gui.art5019injustice.quicksilver_quick_travel_gui.travelX": "X",
       "item.art5019injustice.nanites": "Basic Unactivated Nanites",
       "item.art5019injustice.formula_mustard_bottle": "Formula",
       "advancements.poison_ivy_st_chlorokinesis.title": "§4Chlorokinesis",
@@ -59495,6 +59563,7 @@
       "advancements.st_superman_x_ray.title": "§3X-Ray Vision",
       "block.art5019injustice.ranged_tnt": "Ranged TNT",
       "advancements.st_deadpool_regeneration.descr": "§ePassive - Regeneration II",
+      "gui.art5019injustice.quicksilver_quick_travel_gui.TravelZ": "Z",
       "advancements.everyone_has_something_to_fear.title": "Everyone has something to Fear",
       "advancements.snyder_weakest_hater.title": "Snyder Weakest Hater",
       "item.art5019injustice.silver_pickaxe": "Silver Pickaxe",

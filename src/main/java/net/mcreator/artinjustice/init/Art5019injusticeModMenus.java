@@ -23,6 +23,7 @@ import net.mcreator.artinjustice.world.inventory.SuittableguiMenu;
 import net.mcreator.artinjustice.world.inventory.SuitSchemeMenuVoughtExecutiveMenu;
 import net.mcreator.artinjustice.world.inventory.SignalMachineBlockMenu;
 import net.mcreator.artinjustice.world.inventory.SawmillGuiMenu;
+import net.mcreator.artinjustice.world.inventory.QuicksilverQuickTravelGUIMenu;
 import net.mcreator.artinjustice.world.inventory.PowerGuiSpidermanMenu;
 import net.mcreator.artinjustice.world.inventory.PowerGuiPeakHumanMenu;
 import net.mcreator.artinjustice.world.inventory.PetriTableGuiMenu;
@@ -71,4 +72,5 @@ public class Art5019injusticeModMenus {
 	public static final RegistryObject<MenuType<AnnotationJeffersonJacksonMenu>> ANNOTATION_JEFFERSON_JACKSON = REGISTRY.register("annotation_jefferson_jackson", () -> IForgeMenuType.create(AnnotationJeffersonJacksonMenu::new));
 	public static final RegistryObject<MenuType<TodayProblemBackupMenu>> TODAY_PROBLEM_BACKUP = REGISTRY.register("today_problem_backup", () -> IForgeMenuType.create(TodayProblemBackupMenu::new));
 	public static final RegistryObject<MenuType<TransmutationGUIMenu>> TRANSMUTATION_GUI = REGISTRY.register("transmutation_gui", () -> IForgeMenuType.create(TransmutationGUIMenu::new));
+	public static final RegistryObject<MenuType<QuicksilverQuickTravelGUIMenu>> QUICKSILVER_QUICK_TRAVEL_GUI = REGISTRY.register("quicksilver_quick_travel_gui", () -> IForgeMenuType.create(QuicksilverQuickTravelGUIMenu::new));
 }

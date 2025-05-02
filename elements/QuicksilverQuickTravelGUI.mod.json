@@ -1,0 +1,84 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "map.png",
+          "use1Xscale": true,
+          "x": 108,
+          "y": -1
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "X",
+          "name": "travelX",
+          "width": 120,
+          "height": 20,
+          "x": 143,
+          "y": 71
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Z",
+          "name": "TravelZ",
+          "width": 120,
+          "height": 20,
+          "x": 143,
+          "y": 101
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_travel",
+          "text": "Travel",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "QuickTravelTeleportButton"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 263,
+          "y": 133
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_quicksilver_max_dist",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnQuicksilverMaxDistanceTravel"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 144,
+          "y": 48
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

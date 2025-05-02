@@ -1,31 +1,39 @@
 package net.mcreator.artinjustice.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.MenuProvider;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
+import net.mcreator.artinjustice.world.inventory.QuicksilverQuickTravelGUIMenu;
 import net.mcreator.artinjustice.network.Art5019injusticeModVariables;
 import net.mcreator.artinjustice.init.Art5019injusticeModMobEffects;
 
 import java.util.List;
 import java.util.Comparator;
+
+import io.netty.buffer.Unpooled;
 
 public class Ability3OnKeyPressedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -82,8 +90,26 @@ public class Ability3OnKeyPressedProcedure {
 					}
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 300, 3, false, false));
-				} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 8) {
-					AbilityTeleportProcedure.execute(world, x, y, z, entity, 800, 3, 50);
+				} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 8
+						|| (entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 26) {
+					if (entity.isShiftKeyDown()) {
+						if (entity instanceof ServerPlayer _ent) {
+							BlockPos _bpos = BlockPos.containing(x, y, z);
+							NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+								@Override
+								public Component getDisplayName() {
+									return Component.literal("QuicksilverQuickTravelGUI");
+								}
+
+								@Override
+								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+									return new QuicksilverQuickTravelGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+								}
+							}, _bpos);
+						}
+					} else {
+						AbilityTeleportProcedure.execute(world, x, y, z, entity, 700, 3, (entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).maxSpeed * 6);
+					}
 				} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 12) {
 					VenomOrganicWebbingProcedure.execute(world, x, y, z, entity, 3);
 				} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 69) {

@@ -23,6 +23,7 @@ import net.mcreator.artinjustice.client.gui.SuittableguiScreen;
 import net.mcreator.artinjustice.client.gui.SuitSchemeMenuVoughtExecutiveScreen;
 import net.mcreator.artinjustice.client.gui.SignalMachineBlockScreen;
 import net.mcreator.artinjustice.client.gui.SawmillGuiScreen;
+import net.mcreator.artinjustice.client.gui.QuicksilverQuickTravelGUIScreen;
 import net.mcreator.artinjustice.client.gui.PowerGuiSpidermanScreen;
 import net.mcreator.artinjustice.client.gui.PowerGuiPeakHumanScreen;
 import net.mcreator.artinjustice.client.gui.PetriTableGuiScreen;
@@ -73,6 +74,7 @@ public class Art5019injusticeModScreens {
 			MenuScreens.register(Art5019injusticeModMenus.ANNOTATION_JEFFERSON_JACKSON.get(), AnnotationJeffersonJacksonScreen::new);
 			MenuScreens.register(Art5019injusticeModMenus.TODAY_PROBLEM_BACKUP.get(), TodayProblemBackupScreen::new);
 			MenuScreens.register(Art5019injusticeModMenus.TRANSMUTATION_GUI.get(), TransmutationGUIScreen::new);
+			MenuScreens.register(Art5019injusticeModMenus.QUICKSILVER_QUICK_TRAVEL_GUI.get(), QuicksilverQuickTravelGUIScreen::new);
 		});
 	}
 }
