@@ -12,11 +12,9 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.artinjustice.init.Art5019injusticeModEnchantments;
-import net.mcreator.artinjustice.Art5019injusticeMod;
 
 public class SuperAnvilForgingProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity toBeManipulated, ItemStack itemstack) {
@@ -61,19 +59,11 @@ public class SuperAnvilForgingProcedure {
 			} else {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.hit")), SoundSource.NEUTRAL, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.place")), SoundSource.NEUTRAL, 1, 2);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.hit")), SoundSource.NEUTRAL, 1, 1, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.place")), SoundSource.NEUTRAL, 1, 2, false);
 					}
 				}
-				Art5019injusticeMod.queueServerWork(40, () -> {
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.FLASH, x, y, z, 22, 1, 1, 1, 1);
-				});
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.LAVA, x, y, z, (int) (10 * realpower), 0.1, 0.1, 0.1, 1);
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, x, y, z, (int) (7 * realpower), 0.5, 0.5, 0.5, 0.4);
 			}
 		}
 	}

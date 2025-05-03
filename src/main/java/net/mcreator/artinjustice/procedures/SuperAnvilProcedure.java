@@ -72,21 +72,34 @@ public class SuperAnvilProcedure {
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.LAVA, x, y, z, 100, 0.1, 0.1, 0.1, 1);
 				result = AnvilBladeForgingProcedure.execute(world, toBeChanged);
+			} else if (toBeChanged.is(ItemTags.create(new ResourceLocation("art5019injustice:can_become_fine_blade")))) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.land")), SoundSource.BLOCKS, 1, (float) 1.4);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.land")), SoundSource.BLOCKS, 1, (float) 1.4, false);
+					}
+				}
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.LAVA, x, y, z, 100, 0.1, 0.1, 0.1, 1);
+				result = AnvilFineBladeForgingProcedure.execute(world, toBeChanged);
 			}
 		}
-		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.LAVA, x, y, z, (int) (10 * power), 0.1, 0.1, 0.1, 1);
-		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.FLASH, x, y, z, (int) (4 * power), 0.1, 0.1, 0.1, 1);
-		Art5019injusticeMod.queueServerWork(40, () -> {
+		if (!(result.getItem() == ItemStack.EMPTY.getItem())) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, x, y, z, (int) (10 * power), 0.1, 0.1, 0.1, 0.4);
-		});
-		if (world instanceof Level _level) {
-			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.BLOCKS, 1, 1);
-			} else {
-				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.BLOCKS, 1, 1, false);
+				_level.sendParticles(ParticleTypes.LAVA, x, y, z, (int) (10 * power), 0.1, 0.1, 0.1, 1);
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.FLASH, x, y, z, (int) (4 * power), 0.1, 0.1, 0.1, 1);
+			Art5019injusticeMod.queueServerWork(40, () -> {
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, x, y, z, (int) (10 * power), 0.1, 0.1, 0.1, 0.4);
+			});
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.BLOCKS, 1, 1);
+				} else {
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")), SoundSource.BLOCKS, 1, 1, false);
+				}
 			}
 		}
 		return result;

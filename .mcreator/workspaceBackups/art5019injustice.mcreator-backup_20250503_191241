@@ -55873,6 +55873,29 @@
           }
         ]
       }
+    },
+    {
+      "name": "AnvilFineBladeForging",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anvil_fine_blade_forging",
+      "metadata": {
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/AnvilFineBladeForgingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "toBeChanged",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -56301,6 +56324,12 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
+    },
+    {
+      "name": "ability2duration",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -56948,6 +56977,12 @@
       "wooded_badlands_plateau",
       "desert",
       "stony_peaks"
+    ],
+    "ITEMS:mod:can_become_fine_blade": [
+      "CUSTOM:LongSteelBlade",
+      "CUSTOM:LongIronBlade",
+      "CUSTOM:LongGoldenKryptoniteBlade",
+      "CUSTOM:LongKryptoniteBlade"
     ],
     "BLOCKS:forge:orchid_can_live": [
       "Blocks.LOG#3",
@@ -58840,7 +58875,7 @@
       "advancements.obtain_iridium_advancement.descr": "Obtain Raw Iridium from a Meteorite",
       "advancements.st_superman_superbreath.title": "§3Super-Breath II",
       "gui.art5019injustice.compound_v_menu_vought_executive.label_of_dollars_to_fill_only_a_syring": "fill only a syringe, our transactions are",
-      "item.art5019injustice.steel_katana": "Iron Katana",
+      "item.art5019injustice.steel_katana": "Steel Katana",
       "advancements.st_superman_heatvision.title": "§3Heat Vision",
       "item.art5019injustice.fine_iron_blade": "Fine Iron Blade",
       "subtitles.effect.short_shock": "Electric Shock",

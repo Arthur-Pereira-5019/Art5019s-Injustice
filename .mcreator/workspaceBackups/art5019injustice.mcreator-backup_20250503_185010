@@ -55873,6 +55873,29 @@
           }
         ]
       }
+    },
+    {
+      "name": "AnvilFineBladeForging",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anvil_fine_blade_forging",
+      "metadata": {
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/AnvilFineBladeForgingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "toBeChanged",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -56954,6 +56977,12 @@
       "wooded_badlands_plateau",
       "desert",
       "stony_peaks"
+    ],
+    "ITEMS:mod:can_become_fine_blade": [
+      "CUSTOM:GoldenKryptoniteFineBlade",
+      "CUSTOM:FineIronBlade",
+      "CUSTOM:FineKryptoniteBlade",
+      "CUSTOM:FineSteelBlade"
     ],
     "BLOCKS:forge:orchid_can_live": [
       "Blocks.LOG#3",

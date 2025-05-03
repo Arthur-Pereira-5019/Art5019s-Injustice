@@ -55873,6 +55873,29 @@
           }
         ]
       }
+    },
+    {
+      "name": "AnvilFineBladeForging",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anvil_fine_blade_forging",
+      "metadata": {
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/AnvilFineBladeForgingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "toBeChanged",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -56301,6 +56324,12 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
+    },
+    {
+      "name": "ability2duration",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
