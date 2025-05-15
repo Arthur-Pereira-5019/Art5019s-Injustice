@@ -35,75 +35,92 @@ public class FluOnEffectActiveTickProcedure {
 		if (entity == null)
 			return;
 		double lethality = 0;
-		lethality = amplifier;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(Art5019injusticeModMobEffects.AIDS.get())) {
-			lethality = lethality + 2;
-		}
-		if (!world.isClientSide()) {
-			if (Math.random() < 0.5) {
+		if (IsHumanProcedure.execute(entity)) {
+			lethality = amplifier;
+			if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(Art5019injusticeModMobEffects.AIDS.get())) {
+				lethality = lethality + 2;
+			}
+			if (!world.isClientSide()) {
 				if (Math.random() < 0.5) {
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.panda.sneeze")), SoundSource.PLAYERS, 1, (float) 0.6);
-						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.panda.sneeze")), SoundSource.PLAYERS, 1, (float) 0.6, false);
+					if (Math.random() < 0.5) {
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.panda.sneeze")), SoundSource.PLAYERS, 1, (float) 0.6);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.panda.sneeze")), SoundSource.PLAYERS, 1, (float) 0.6, false);
+							}
 						}
-					}
-					if (Math.random() < 0.35) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.FALLING_WATER, x, y, z, 20, 0.4, 1, 0.4, 0.4);
-						{
-							final Vec3 _center = new Vec3(x, y, z);
-							List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-							for (Entity entityiterator : _entfound) {
-								if (!((entityiterator instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("art5019injustice:gas_masks")))
-										|| (entityiterator instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-												.is(ItemTags.create(new ResourceLocation("art5019injustice:biological_protection"))))) {
-									if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-										_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.FLU.get(), 12000, 0, false, false));
+						if (Math.random() < 0.25) {
+							if (world instanceof ServerLevel _level)
+								_level.sendParticles(ParticleTypes.FALLING_WATER, x, y, z, 20, 0.4, 1, 0.4, 0.4);
+							{
+								final Vec3 _center = new Vec3(x, y, z);
+								List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+								for (Entity entityiterator : _entfound) {
+									if (!((entityiterator instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("art5019injustice:gas_masks")))
+											|| (entityiterator instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
+													.is(ItemTags.create(new ResourceLocation("art5019injustice:biological_protection"))))) {
+										if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+											_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.FLU.get(), 12000, 0, false, false));
+									}
 								}
 							}
+						} else {
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.BLOCKED_NOSE.get(), 200, (int) (lethality * 2), false, false));
 						}
 					} else {
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.BLOCKED_NOSE.get(), 200, (int) (lethality * 2), false, false));
+						if (Math.random() < 0.5) {
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, (int) (200 + 200 * lethality), 0, false, false));
+						} else {
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 200, (int) (lethality * 2), false, false));
+						}
 					}
 				} else {
 					if (Math.random() < 0.5) {
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, (int) (200 + 200 * lethality), 0, false, false));
+						if (Math.random() < 0.5) {
+							entity.setSecondsOnFire((int) (7 + 7 * lethality));
+							if (entity instanceof ServerPlayer _player) {
+								Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("art5019injustice:fever_dreams"));
+								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+								if (!_ap.isDone()) {
+									for (String criteria : _ap.getRemainingCriteria())
+										_player.getAdvancements().award(_adv, criteria);
+								}
+							}
+							if (world instanceof ServerLevel _level)
+								_level.sendParticles(ParticleTypes.FALLING_WATER, x, y, z, 20, 0.4, 1, 0.4, 0.4);
+						} else {
+							entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("art5019injustice:virulence")))),
+									(float) (1 + lethality * 2));
+						}
 					} else {
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 200, (int) (lethality * 2), false, false));
+						if (Math.random() < 0.5) {
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 200, (int) (lethality + lethality), false, false));
+							if (world instanceof ServerLevel _level)
+								_level.sendParticles(ParticleTypes.FALLING_WATER, x, y, z, 20, 0.4, 1, 0.4, 0.4);
+						} else {
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 200, (int) lethality, false, false));
+						}
 					}
 				}
-			} else {
-				if (Math.random() < 0.5) {
-					if (Math.random() < 0.5) {
-						entity.setSecondsOnFire((int) (7 + 7 * lethality));
-						if (entity instanceof ServerPlayer _player) {
-							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("art5019injustice:fever_dreams"));
-							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-							if (!_ap.isDone()) {
-								for (String criteria : _ap.getRemainingCriteria())
-									_player.getAdvancements().award(_adv, criteria);
-							}
+			}
+		}
+		if (Math.random() < 0.1) {
+			{
+				final Vec3 _center = new Vec3(x, y, z);
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+				for (Entity entityiterator : _entfound) {
+					if (!((entityiterator instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("art5019injustice:gas_masks")))
+							|| (entityiterator instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("art5019injustice:biological_protection"))))) {
+						if (!(entity == entityiterator)) {
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.FLU.get(), 24000, 0, false, false));
 						}
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.FALLING_WATER, x, y, z, 20, 0.4, 1, 0.4, 0.4);
-					} else {
-						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("art5019injustice:virulence")))),
-								(float) (1 + lethality * 2));
-					}
-				} else {
-					if (Math.random() < 0.5) {
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 200, (int) (lethality + lethality), false, false));
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.FALLING_WATER, x, y, z, 20, 0.4, 1, 0.4, 0.4);
-					} else {
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 200, (int) lethality, false, false));
 					}
 				}
 			}

@@ -55896,6 +55896,38 @@
           }
         ]
       }
+    },
+    {
+      "name": "IsHuman",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_human",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/IsHumanProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "Art5019sDoDiseasesAppearNaturally",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "art_5019s_do_diseases_appear_naturally",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      },
+      "path": "~/Gamerules"
     }
   ],
   "variable_elements": [
@@ -57504,6 +57536,14 @@
       "CUSTOM:VibraniumSaw",
       "CUSTOM:WoodenSaw"
     ],
+    "ENTITIES:mod:display_meningitis": [
+      "EntityVillager",
+      "EntityPig",
+      "EntityCow",
+      "EntitySheep",
+      "EntityWolf",
+      "#forge:fishes"
+    ],
     "BIOMES:forge:is_plains": [
       "CUSTOM:VibraniumLands"
     ],
@@ -57522,6 +57562,12 @@
       "Items.GUNPOWDER",
       "Blocks.KELP",
       "Blocks.STONE#0"
+    ],
+    "ENTITIES:forge:fishes": [
+      "EntityCod",
+      "EntitySalmon",
+      "EntityTropicalFish",
+      "EntityPufferfish"
     ],
     "ITEMS:mod:hammers": [
       "CUSTOM:DwarfStarHammer",
@@ -58253,6 +58299,7 @@
       "advancements.obtain_the_multiverse_core.descr": "Vibrations, strings of a web, a tree...",
       "death.attack.electrical_damage.item": "%1$s was electrocuted by %2$s using %3$s",
       "item.art5019injustice.yin_yang_icon": "Yin Yang Icon",
+      "gamerule.art5019sDoDiseasesAppearNaturally.description": "Activating this will make diseases appear naturally.",
       "advancements.spider_man_great_responsabilities.descr": "Save the day.",
       "item.art5019injustice.venom_jar": "Jar",
       "gui.art5019injustice.today_problem.button_validate": "\u003d",
@@ -59392,6 +59439,7 @@
       "advancements.st_aquaman_resistance.descr": "§eAttribute - Grants +20 Health Points",
       "item.art5019injustice.atlantean_symbol": "Atlantean Symbol",
       "advancements.green_effect_moss.descr": "Humans tend to think that simple structures are bad, but this is what allow beings such as mosses to live everywhere, without any risk of extinction.",
+      "gamerule.art5019sDoDiseasesAppearNaturally": "Diseases Appear Naturally",
       "block.art5019injustice.homelander_plush": "Homelander Plush",
       "item.art5019injustice.spider_man_ag_1_boots": "Vigilante Spider-Man Sneakers",
       "item.art5019injustice.contamined_water_syringe": "Syringe",

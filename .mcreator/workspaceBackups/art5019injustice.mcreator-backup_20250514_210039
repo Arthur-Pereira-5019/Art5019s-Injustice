@@ -55896,6 +55896,26 @@
           }
         ]
       }
+    },
+    {
+      "name": "IsHuman",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_human",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/IsHumanProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GlobalProcedures"
     }
   ],
   "variable_elements": [
@@ -57504,6 +57524,14 @@
       "CUSTOM:VibraniumSaw",
       "CUSTOM:WoodenSaw"
     ],
+    "ENTITIES:mod:display_meningitis": [
+      "EntityVillager",
+      "EntityPig",
+      "EntityCow",
+      "EntitySheep",
+      "EntityWolf",
+      "#forge:fishes"
+    ],
     "BIOMES:forge:is_plains": [
       "CUSTOM:VibraniumLands"
     ],
@@ -57522,6 +57550,12 @@
       "Items.GUNPOWDER",
       "Blocks.KELP",
       "Blocks.STONE#0"
+    ],
+    "ENTITIES:forge:fishes": [
+      "EntityCod",
+      "EntitySalmon",
+      "EntityTropicalFish",
+      "EntityPufferfish"
     ],
     "ITEMS:mod:hammers": [
       "CUSTOM:DwarfStarHammer",
@@ -58426,7 +58460,7 @@
       "gui.art5019injustice.chemistry_table_gui.label_si_levels": "Si Levels:",
       "item.art5019injustice.bane_injustice_2_suit_helmet": "Will-Breaker Bane Mascarilla",
       "item.art5019injustice.alcohol_flask": "Alcohol Flask",
-      "item.art5019injustice.kryptonite_katana": "Iron Katana",
+      "item.art5019injustice.kryptonite_katana": "Kryptonite Katana",
       "gui.art5019injustice.chemistry_table_gui.label_kr_levels": "Kr Levels:",
       "gui.art5019injustice.sawmill_gui.tooltip_turn_into_dust": "Turn up",
       "advancements.st_supreme_strength.descr": "§fPassive - +2.5 Strength Points",
@@ -58875,7 +58909,7 @@
       "advancements.obtain_iridium_advancement.descr": "Obtain Raw Iridium from a Meteorite",
       "advancements.st_superman_superbreath.title": "§3Super-Breath II",
       "gui.art5019injustice.compound_v_menu_vought_executive.label_of_dollars_to_fill_only_a_syring": "fill only a syringe, our transactions are",
-      "item.art5019injustice.steel_katana": "Iron Katana",
+      "item.art5019injustice.steel_katana": "Steel Katana",
       "advancements.st_superman_heatvision.title": "§3Heat Vision",
       "item.art5019injustice.fine_iron_blade": "Fine Iron Blade",
       "subtitles.effect.short_shock": "Electric Shock",
@@ -58991,7 +59025,7 @@
       "item.art5019injustice.enriched_pickaxe": "Atomic Pickaxe",
       "item.art5019injustice.earth_x_icon": "Earth X Icon",
       "advancements.st_neuro_fighting_skill.descr": "§fPassive - + 0.3 Attack Speed. Requires Power Level 2",
-      "item.art5019injustice.golden_kryptonite_katana": "Iron Katana",
+      "item.art5019injustice.golden_kryptonite_katana": "Golden Kryptonite Katana",
       "advancements.hidden_agenda.descr": "Learn about Mr. Li and his secrets",
       "advancements.st_storm_level_4.descr": "§6Level 4",
       "advancements.st_quicksilver_extra_speed_i.descr": "Adds an extra level of Speed (Requires Level 2)",

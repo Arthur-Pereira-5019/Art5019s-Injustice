@@ -18,6 +18,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.util.RandomSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerLevel;
@@ -26,7 +27,9 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.artinjustice.init.Art5019injusticeModMobEffects;
 import net.mcreator.artinjustice.init.Art5019injusticeModItems;
+import net.mcreator.artinjustice.init.Art5019injusticeModGameRules;
 
 import javax.annotation.Nullable;
 
@@ -136,6 +139,30 @@ public class EntitySpawnsProcedure {
 					Entity entityToSpawn = EntityType.PILLAGER.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {
 						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
+			}
+		}
+		if (world.getLevelData().getGameRules().getBoolean(Art5019injusticeModGameRules.ART_5019S_DO_DISEASES_APPEAR_NATURALLY)) {
+			if (!world.isClientSide()) {
+				if (Math.random() < 0.01) {
+					if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("forge:is_animals")))) {
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.FLU.get(), 24000, 0, false, false));
+					}
+				} else {
+					if (Math.random() < 0.002) {
+						if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("art5019injustice:display_meningitis")))) {
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.MENINGITIS.get(), 24000, 0, false, false));
+						}
+					} else {
+						if (Math.random() < 0.011) {
+							if (entity instanceof Zombie) {
+								if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+									_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.PLAGUE.get(), 24000, 0, false, false));
+							}
+						}
 					}
 				}
 			}
