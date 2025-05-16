@@ -279,6 +279,9 @@ public class PlayerTickProcedure {
 									* (0.13 + (entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).currentSpeed / 25) * 2.15845),
 							0.01, (Math.cos(Math.toRadians(entity.getYRot()))
 									* (0.13 + (entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).currentSpeed / 25) * 2.15845)));
+				} else if (entity.isSprinting()) {
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, y, z, 1, 0.1, 0.1, 0.1, 0.1);
 				}
 			}
 			if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).currentSpeed >= 1) {
@@ -290,11 +293,11 @@ public class PlayerTickProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					AbilitySpeedsterUpdateProcedure.execute(entity);
+					AbilitySpeedsterUpdateProcedure.execute(world, x, y, z, entity);
 				}
 			}
 			if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).sunWeakness && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))
-					&& !world.getLevelData().isThundering() && !world.getLevelData().isRaining() && world instanceof Level _lvl51 && _lvl51.isDay()) {
+					&& !world.getLevelData().isThundering() && !world.getLevelData().isRaining() && world instanceof Level _lvl53 && _lvl53.isDay()) {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()
 						|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
 					if (!entity.isOnFire()) {
@@ -442,7 +445,7 @@ public class PlayerTickProcedure {
 						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 0, false, false));
 				}
 				if (EnchantmentHelper.getItemEnchantmentLevel(Art5019injusticeModEnchantments.ESHU_BINDING.get(), (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)) != 0) {
-					if (!(entity instanceof LivingEntity _livEnt89 && _livEnt89.hasEffect(Art5019injusticeModMobEffects.FORTUNE.get()))) {
+					if (!(entity instanceof LivingEntity _livEnt91 && _livEnt91.hasEffect(Art5019injusticeModMobEffects.FORTUNE.get()))) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.FORTUNE.get(), 900, 0, false, false));
 					}

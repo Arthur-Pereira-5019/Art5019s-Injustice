@@ -19,14 +19,14 @@ import javax.annotation.Nullable;
 public class PlayerRespawnProcedure {
 	@SubscribeEvent
 	public static void onPlayerRespawned(PlayerEvent.PlayerRespawnEvent event) {
-		execute(event, event.getEntity().level(), event.getEntity());
+		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
 	}
 
-	public static void execute(LevelAccessor world, Entity entity) {
-		execute(null, world, entity);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 1) {
@@ -315,6 +315,6 @@ public class PlayerRespawnProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		AbilitySpeedsterUpdateProcedure.execute(entity);
+		AbilitySpeedsterUpdateProcedure.execute(world, x, y, z, entity);
 	}
 }

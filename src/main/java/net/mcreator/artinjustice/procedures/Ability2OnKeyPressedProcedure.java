@@ -93,6 +93,13 @@ public class Ability2OnKeyPressedProcedure {
 					AbilityPunchMassUpdateProcedure.execute(entity);
 				}
 				if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 26) {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("art5019injustice:a_train_sfx")), SoundSource.PLAYERS, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("art5019injustice:a_train_sfx")), SoundSource.PLAYERS, 1, 1, false);
+						}
+					}
 					{
 						double _setval = 200;
 						entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

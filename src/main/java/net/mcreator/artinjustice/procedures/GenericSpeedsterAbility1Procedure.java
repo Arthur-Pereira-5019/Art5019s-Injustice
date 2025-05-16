@@ -21,7 +21,7 @@ public class GenericSpeedsterAbility1Procedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					AbilitySpeedsterUpdateProcedure.execute(entity);
+					AbilitySpeedsterUpdateProcedure.execute(world, x, y, z, entity);
 				}
 			}
 		} else {
@@ -33,7 +33,7 @@ public class GenericSpeedsterAbility1Procedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
-				AbilitySpeedsterUpdateProcedure.execute(entity);
+				AbilitySpeedsterUpdateProcedure.execute(world, x, y, z, entity);
 			}
 		}
 		if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 8) {

@@ -21,7 +21,7 @@ public class QuicksilverAbility1Procedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					AbilitySpeedsterUpdateProcedure.execute(entity);
+					AbilitySpeedsterUpdateProcedure.execute(world, x, y, z, entity);
 					QuicksilverTryToLevelUpProcedure.execute(world, x, y, z, entity);
 				}
 			}
@@ -34,7 +34,7 @@ public class QuicksilverAbility1Procedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
-				AbilitySpeedsterUpdateProcedure.execute(entity);
+				AbilitySpeedsterUpdateProcedure.execute(world, x, y, z, entity);
 			}
 		}
 	}

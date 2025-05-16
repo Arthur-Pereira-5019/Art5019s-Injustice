@@ -109,6 +109,15 @@ public class Ability3OnKeyPressedProcedure {
 						}
 					} else {
 						AbilityTeleportProcedure.execute(world, x, y, z, entity, 700, 3, (entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).maxSpeed * 6);
+						if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 26) {
+							if (world instanceof Level _level) {
+								if (!_level.isClientSide()) {
+									_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("art5019injustice:a_train_sfx")), SoundSource.PLAYERS, 4, (float) 1.1);
+								} else {
+									_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("art5019injustice:a_train_sfx")), SoundSource.PLAYERS, 4, (float) 1.1, false);
+								}
+							}
+						}
 					}
 				} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 12) {
 					VenomOrganicWebbingProcedure.execute(world, x, y, z, entity, 3);

@@ -369,5 +369,26 @@
         "stream": false
       }
     ]
+  },
+  "a_train_sfx": {
+    "subtitle": "subtitles.a_train_sfx",
+    "sounds": [
+      {
+        "name": "art5019injustice:a_train_1",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:a_train_2",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:a_train_3",
+        "stream": false
+      },
+      {
+        "name": "art5019injustice:a_train_4",
+        "stream": false
+      }
+    ]
   }
 }

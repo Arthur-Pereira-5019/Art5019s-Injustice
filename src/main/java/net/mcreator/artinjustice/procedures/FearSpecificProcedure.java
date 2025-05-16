@@ -171,7 +171,7 @@ public class FearSpecificProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
-				AbilitySpeedsterUpdateProcedure.execute(entity);
+				AbilitySpeedsterUpdateProcedure.execute(world, x, y, z, entity);
 			}
 		} else if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 9) {
 			if (!world.getEntitiesOfClass(Chicken.class, AABB.ofSize(new Vec3(x, y, z), 9, 9, 9), e -> true).isEmpty()) {

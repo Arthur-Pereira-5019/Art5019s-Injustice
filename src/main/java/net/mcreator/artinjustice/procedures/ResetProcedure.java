@@ -465,7 +465,7 @@ public class ResetProcedure {
 		}
 		entity.setMaxUpStep((float) 0.6);
 		Art5019injusticeMod.queueServerWork(2, () -> {
-			AbilitySpeedsterUpdateProcedure.execute(entity);
+			AbilitySpeedsterUpdateProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 		});
 		{
 			double _setval = 0;

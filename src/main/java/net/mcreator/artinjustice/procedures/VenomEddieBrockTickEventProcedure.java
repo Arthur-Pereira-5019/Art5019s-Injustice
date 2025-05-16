@@ -10,11 +10,8 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
@@ -63,13 +60,7 @@ public class VenomEddieBrockTickEventProcedure {
 						});
 					}
 				}
-				{
-					Entity _ent = entity;
-					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "particle block black_concrete ~ ~ ~ 1 1 1 1 10 normal");
-					}
-				}
+				GenerateBlockyParticlesProcedure.execute(world, entity.getX(), entity.getY() + 1, entity.getZ(), "minecraft:black_concrete", "600", "0.6", "1.1", "0.6", "");
 			}
 		}
 	}

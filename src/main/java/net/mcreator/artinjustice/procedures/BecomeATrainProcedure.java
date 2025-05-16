@@ -77,7 +77,14 @@ public class BecomeATrainProcedure {
 			Entity _ent = entity;
 			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "advancement revoke @s from art5019injustice:st_a_train_extra_speed_i");
+						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "advancement grant @s from art5019injustice:st_a_train_base");
+			}
+		}
+		{
+			Entity _ent = entity;
+			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "attribute @s minecraft:generic.attack_damage modifier add 3674dfda-db47-4358-982d-18dfa1a245ba ATrainStrength 2.5 add");
 			}
 		}
 	}

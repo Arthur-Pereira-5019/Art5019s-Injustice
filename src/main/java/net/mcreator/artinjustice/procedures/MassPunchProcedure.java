@@ -52,7 +52,7 @@ public class MassPunchProcedure {
 			_player.getFoodData().setFoodLevel((int) ((sourceentity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0)
 					- (sourceentity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).masspunch * 2));
 		sourceentity.setSecondsOnFire((int) ((sourceentity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).masspunch * 4));
-		AbilitySpeedsterUpdateProcedure.execute(entity);
+		AbilitySpeedsterUpdateProcedure.execute(world, x, y, z, entity);
 		{
 			double _setval = 0;
 			sourceentity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
