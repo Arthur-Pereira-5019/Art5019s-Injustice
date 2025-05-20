@@ -58,7 +58,7 @@ public class RandomNamingProcedure {
 					return "Floyd";
 				}
 			} else if (entity instanceof Cat) {
-				names = 26;
+				names = 27;
 				if (Math.random() == (1 / names) * 1) {
 					return "Streaky";
 				} else if (probs == (1 / names) * 2) {
@@ -111,6 +111,8 @@ public class RandomNamingProcedure {
 					return "Lola";
 				} else if (probs == (1 / names) * 26) {
 					return "Zuli";
+				} else if (probs == (1 / names) * 27) {
+					return "Rutty";
 				}
 			} else if (entity instanceof Parrot) {
 				names = 7;

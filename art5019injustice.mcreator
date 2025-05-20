@@ -55972,6 +55972,40 @@
         "type": "logic"
       },
       "path": "~/Gamerules"
+    },
+    {
+      "name": "DwarfStarKeyItemIsDroppedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_key_item_is_dropped_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/DwarfStarKeyItemIsDroppedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
