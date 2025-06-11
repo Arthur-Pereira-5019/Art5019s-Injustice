@@ -473,6 +473,7 @@ import net.mcreator.artinjustice.item.ElektrumDustItem;
 import net.mcreator.artinjustice.item.ElectricityWeaknessTranslucentIconItem;
 import net.mcreator.artinjustice.item.EarthXIconItem;
 import net.mcreator.artinjustice.item.EarIconItem;
+import net.mcreator.artinjustice.item.DwarfStarScrapItem;
 import net.mcreator.artinjustice.item.DwarfStarKeyItem;
 import net.mcreator.artinjustice.item.DwarfStarItem;
 import net.mcreator.artinjustice.item.DwarfStarHammerItem;
@@ -1450,6 +1451,7 @@ public class Art5019injusticeModItems {
 	public static final RegistryObject<Item> ICON_EXTRA_SPEED_2 = REGISTRY.register("icon_extra_speed_2", () -> new IconExtraSpeed2Item());
 	public static final RegistryObject<Item> ICON_EXTRA_SPEED_3 = REGISTRY.register("icon_extra_speed_3", () -> new IconExtraSpeed3Item());
 	public static final RegistryObject<Item> ICON_EXTRA_SPEED_4 = REGISTRY.register("icon_extra_speed_4", () -> new IconExtraSpeed4Item());
+	public static final RegistryObject<Item> DWARF_STAR_SCRAP = REGISTRY.register("dwarf_star_scrap", () -> new DwarfStarScrapItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

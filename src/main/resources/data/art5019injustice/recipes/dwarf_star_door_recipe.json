@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:dwarf_star"
+    },
+    "b": {
+      "item": "minecraft:iron_door"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:dwarf_star_door",
+    "count": 1
+  }
+}

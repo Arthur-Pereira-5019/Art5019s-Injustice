@@ -180,6 +180,7 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.FINE_IRON_BLADE.get());
 				tabData.accept(Art5019injusticeModItems.FINE_KRYPTONITE_BLADE.get());
 				tabData.accept(Art5019injusticeModItems.FINE_STEEL_BLADE.get());
+				tabData.accept(Art5019injusticeModItems.DWARF_STAR_SCRAP.get());
 			})
 
 					.build());

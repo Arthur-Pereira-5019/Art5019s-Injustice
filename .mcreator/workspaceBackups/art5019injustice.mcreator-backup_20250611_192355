@@ -44373,24 +44373,7 @@
         "files": [
           "src/main/java/net/mcreator/artinjustice/procedures/DwarfStarDoorOnBlockRightClickedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Kryptonian"
     },
@@ -44398,7 +44381,7 @@
       "name": "DwarfStarDoor",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "dwarf_star_door",
       "metadata": {
         "files": [
@@ -55972,6 +55955,134 @@
         "type": "logic"
       },
       "path": "~/Gamerules"
+    },
+    {
+      "name": "DwarfStarKeyItemIsDroppedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_key_item_is_dropped_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/DwarfStarKeyItemIsDroppedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DroppedKeyOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dropped_key_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/DroppedKeyOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IsHolding",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_holding",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/IsHoldingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "DwarfStarKeyRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_key_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/dwarf_star_key_recipe.json"
+        ]
+      },
+      "path": "~/Materials/DwarfStar"
+    },
+    {
+      "name": "DwarfStarScrap",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_scrap",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/item/DwarfStarScrapItem.java",
+          "src/main/resources/assets/art5019injustice/models/item/dwarf_star_scrap.json"
+        ]
+      },
+      "path": "~/Materials/DwarfStar"
+    },
+    {
+      "name": "DwarfStarFromScrap",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_from_scrap",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/dwarf_star_from_scrap.json"
+        ]
+      },
+      "path": "~/Materials/DwarfStar"
     }
   ],
   "variable_elements": [
@@ -58600,6 +58711,7 @@
       "item.art5019injustice.badge": "Badge",
       "item.art5019injustice.ferric_chloride": "Ferric Chloride",
       "item.art5019injustice.empty_cylinder": "Empty Cylinder",
+      "item.art5019injustice.dwarf_star_scrap": "Dwarf Star Scrap",
       "block.art5019injustice.tomato_stage_final": "Tomato",
       "item.art5019injustice.unactivated_mark_iii_helmet": "Unactivated Iron Man Mark III Helmet",
       "advancements.st_superman_super_pressure.title": "Super Pressure",
@@ -60770,7 +60882,7 @@
   "workspaceSettings": {
     "modid": "art5019injustice",
     "modName": "Art5019\u0027s Injustice (Closed Beta)",
-    "version": "2.0.0.8",
+    "version": "2.0.0.9",
     "description": "Art5019\u0027s Injustice is a fighting/adventure superpower themed mod, which allows the player to collect items, weapons, suits and other stuff related to different superheros and villains mythologies,",
     "author": "Art5019, MCreator",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/art5019s-injustice",

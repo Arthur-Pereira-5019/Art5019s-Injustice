@@ -18,9 +18,7 @@ import java.util.List;
 import java.util.Comparator;
 
 public class DwarfStarKeyItemIsDroppedByPlayerProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		if (entity == null)
-			return;
+	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double dy = 0;
 		double newz = 0;
 		double newy = 0;
@@ -34,7 +32,7 @@ public class DwarfStarKeyItemIsDroppedByPlayerProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof ItemEntity) {
-						if ((entity instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY).getItem() == Art5019injusticeModItems.DWARF_STAR_KEY.get()) {
+						if ((entityiterator instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY).getItem() == Art5019injusticeModItems.DWARF_STAR_KEY.get()) {
 							if (!entityiterator.level().isClientSide())
 								entityiterator.discard();
 						}

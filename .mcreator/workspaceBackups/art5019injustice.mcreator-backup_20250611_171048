@@ -44375,22 +44375,11 @@
         ],
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
-        ]
+        ],
+        "return_type": "actionresulttype"
       },
       "path": "~/Kryptonian"
     },
@@ -55972,6 +55961,107 @@
         "type": "logic"
       },
       "path": "~/Gamerules"
+    },
+    {
+      "name": "DwarfStarKeyItemIsDroppedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_key_item_is_dropped_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/DwarfStarKeyItemIsDroppedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DroppedKeyOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dropped_key_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/DroppedKeyOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IsHolding",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_holding",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/IsHoldingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "DwarfStarKeyRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_key_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/dwarf_star_key_recipe.json"
+        ]
+      },
+      "path": "~/Materials/DwarfStar"
     }
   ],
   "variable_elements": [
@@ -60770,7 +60860,7 @@
   "workspaceSettings": {
     "modid": "art5019injustice",
     "modName": "Art5019\u0027s Injustice (Closed Beta)",
-    "version": "2.0.0.8",
+    "version": "2.0.0.9",
     "description": "Art5019\u0027s Injustice is a fighting/adventure superpower themed mod, which allows the player to collect items, weapons, suits and other stuff related to different superheros and villains mythologies,",
     "author": "Art5019, MCreator",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/art5019s-injustice",

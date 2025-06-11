@@ -10,7 +10,7 @@ public class AnvilFineBladeForgingProcedure {
 	public static ItemStack execute(LevelAccessor world, ItemStack toBeChanged) {
 		ItemStack toBeReturned = ItemStack.EMPTY;
 		if (!world.isClientSide()) {
-			if (Math.random() < 0.6) {
+			if (Math.random() < 0.55) {
 				if (toBeChanged.getItem() == Art5019injusticeModItems.LONG_IRON_BLADE.get()) {
 					toBeReturned = new ItemStack(Items.IRON_INGOT);
 				} else if (toBeChanged.getItem() == Art5019injusticeModItems.LONG_STEEL_BLADE.get()) {

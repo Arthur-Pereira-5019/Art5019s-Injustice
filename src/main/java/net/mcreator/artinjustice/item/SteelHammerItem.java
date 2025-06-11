@@ -43,7 +43,7 @@ public class SteelHammerItem extends PickaxeItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		HammerGenericRayCastProcedure.execute(entity.level(), entity, itemstack);
+		HammerGenericRayCastProcedure.execute(entity.level(), entity, entity, itemstack, itemstack, entity.level());
 		return retval;
 	}
 }

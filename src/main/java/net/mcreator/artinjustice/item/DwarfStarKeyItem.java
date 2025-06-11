@@ -15,7 +15,7 @@ public class DwarfStarKeyItem extends Item {
 
 	@Override
 	public boolean onDroppedByPlayer(ItemStack itemstack, Player entity) {
-		DwarfStarKeyItemIsDroppedByPlayerProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+		DwarfStarKeyItemIsDroppedByPlayerProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ());
 		return true;
 	}
 }

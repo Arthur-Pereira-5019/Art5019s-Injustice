@@ -401,9 +401,9 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:DwarfStar"
+              "value": "CUSTOM:DwarfStarScrap"
             },
-            "weight": 1,
+            "weight": 3,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
