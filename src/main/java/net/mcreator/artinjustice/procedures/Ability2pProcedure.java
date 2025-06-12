@@ -35,23 +35,12 @@ public class Ability2pProcedure {
 			if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 23) {
 				if (!entity.isShiftKeyDown()) {
 					if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).ability5duration >= 1) {
-						if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerlvl >= 3) {
-							GenericSuperBreathProcedure.execute(world, entity, 2 + ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerlvl - 2) / 3);
-							if (entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(MobEffects.WATER_BREATHING)) {
-								remainingbreath = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WATER_BREATHING) ? _livEnt.getEffect(MobEffects.WATER_BREATHING).getDuration() : 0;
-								if (entity instanceof LivingEntity _entity)
-									_entity.removeEffect(MobEffects.WATER_BREATHING);
-								if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-									_entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, (int) (remainingbreath - 2), 0, false, false));
-							} else {
-								entity.setAirSupply((int) (entity.getAirSupply() - 7));
-							}
-						}
+						SuperVortexAbilityProcedure.execute(world, x, y, z, entity);
 					} else {
 						if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerlvl >= 3) {
 							GenericSuperBreathProcedure.execute(world, entity,
 									1.5 + ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerlvl - 3) / 4);
-							if (entity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(MobEffects.WATER_BREATHING)) {
+							if (entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(MobEffects.WATER_BREATHING)) {
 								remainingbreath = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WATER_BREATHING) ? _livEnt.getEffect(MobEffects.WATER_BREATHING).getDuration() : 0;
 								if (entity instanceof LivingEntity _entity)
 									_entity.removeEffect(MobEffects.WATER_BREATHING);
@@ -68,7 +57,7 @@ public class Ability2pProcedure {
 					} else {
 						if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerlvl >= 4) {
 							GenericColdBreathProcedure.execute(world, entity, 1.5 + ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerlvl - 4) / 4);
-							if (entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(MobEffects.WATER_BREATHING)) {
+							if (entity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(MobEffects.WATER_BREATHING)) {
 								remainingbreath = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WATER_BREATHING) ? _livEnt.getEffect(MobEffects.WATER_BREATHING).getDuration() : 0;
 								if (entity instanceof LivingEntity _entity)
 									_entity.removeEffect(MobEffects.WATER_BREATHING);
