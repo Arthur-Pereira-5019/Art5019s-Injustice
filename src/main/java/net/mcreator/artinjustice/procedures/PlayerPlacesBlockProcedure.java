@@ -7,6 +7,9 @@ import net.minecraftforge.event.level.BlockEvent;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 
 import net.mcreator.artinjustice.init.Art5019injusticeModMobEffects;
 
@@ -26,7 +29,8 @@ public class PlayerPlacesBlockProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(Art5019injusticeModMobEffects.TIME_STOPPED.get())) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(Art5019injusticeModMobEffects.TIME_STOPPED.get())
+				|| ResourceKey.create(Registries.DIMENSION, new ResourceLocation("art5019injustice:phantom_zone")) == (entity.level().dimension())) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
 			} else if (event != null && event.hasResult()) {

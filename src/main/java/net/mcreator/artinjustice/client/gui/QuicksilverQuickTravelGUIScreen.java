@@ -26,7 +26,7 @@ public class QuicksilverQuickTravelGUIScreen extends AbstractContainerScreen<Qui
 	private final int x, y, z;
 	private final Player entity;
 	EditBox travelX;
-	EditBox TravelZ;
+	EditBox travelZ;
 	Button button_travel;
 
 	public QuicksilverQuickTravelGUIScreen(QuicksilverQuickTravelGUIMenu container, Inventory inventory, Component text) {
@@ -47,7 +47,7 @@ public class QuicksilverQuickTravelGUIScreen extends AbstractContainerScreen<Qui
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		travelX.render(guiGraphics, mouseX, mouseY, partialTicks);
-		TravelZ.render(guiGraphics, mouseX, mouseY, partialTicks);
+		travelZ.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
@@ -71,8 +71,8 @@ public class QuicksilverQuickTravelGUIScreen extends AbstractContainerScreen<Qui
 		}
 		if (travelX.isFocused())
 			return travelX.keyPressed(key, b, c);
-		if (TravelZ.isFocused())
-			return TravelZ.keyPressed(key, b, c);
+		if (travelZ.isFocused())
+			return travelZ.keyPressed(key, b, c);
 		return super.keyPressed(key, b, c);
 	}
 
@@ -80,16 +80,16 @@ public class QuicksilverQuickTravelGUIScreen extends AbstractContainerScreen<Qui
 	public void containerTick() {
 		super.containerTick();
 		travelX.tick();
-		TravelZ.tick();
+		travelZ.tick();
 	}
 
 	@Override
 	public void resize(Minecraft minecraft, int width, int height) {
 		String travelXValue = travelX.getValue();
-		String TravelZValue = TravelZ.getValue();
+		String travelZValue = travelZ.getValue();
 		super.resize(minecraft, width, height);
 		travelX.setValue(travelXValue);
-		TravelZ.setValue(TravelZValue);
+		travelZ.setValue(travelZValue);
 	}
 
 	@Override
@@ -125,12 +125,12 @@ public class QuicksilverQuickTravelGUIScreen extends AbstractContainerScreen<Qui
 		travelX.setMaxLength(32767);
 		guistate.put("text:travelX", travelX);
 		this.addWidget(this.travelX);
-		TravelZ = new EditBox(this.font, this.leftPos + 18, this.topPos + 65, 118, 18, Component.translatable("gui.art5019injustice.quicksilver_quick_travel_gui.TravelZ")) {
+		travelZ = new EditBox(this.font, this.leftPos + 18, this.topPos + 65, 118, 18, Component.translatable("gui.art5019injustice.quicksilver_quick_travel_gui.travelZ")) {
 			@Override
 			public void insertText(String text) {
 				super.insertText(text);
 				if (getValue().isEmpty())
-					setSuggestion(Component.translatable("gui.art5019injustice.quicksilver_quick_travel_gui.TravelZ").getString());
+					setSuggestion(Component.translatable("gui.art5019injustice.quicksilver_quick_travel_gui.travelZ").getString());
 				else
 					setSuggestion(null);
 			}
@@ -139,15 +139,15 @@ public class QuicksilverQuickTravelGUIScreen extends AbstractContainerScreen<Qui
 			public void moveCursorTo(int pos) {
 				super.moveCursorTo(pos);
 				if (getValue().isEmpty())
-					setSuggestion(Component.translatable("gui.art5019injustice.quicksilver_quick_travel_gui.TravelZ").getString());
+					setSuggestion(Component.translatable("gui.art5019injustice.quicksilver_quick_travel_gui.travelZ").getString());
 				else
 					setSuggestion(null);
 			}
 		};
-		TravelZ.setSuggestion(Component.translatable("gui.art5019injustice.quicksilver_quick_travel_gui.TravelZ").getString());
-		TravelZ.setMaxLength(32767);
-		guistate.put("text:TravelZ", TravelZ);
-		this.addWidget(this.TravelZ);
+		travelZ.setSuggestion(Component.translatable("gui.art5019injustice.quicksilver_quick_travel_gui.travelZ").getString());
+		travelZ.setMaxLength(32767);
+		guistate.put("text:travelZ", travelZ);
+		this.addWidget(this.travelZ);
 		button_travel = Button.builder(Component.translatable("gui.art5019injustice.quicksilver_quick_travel_gui.button_travel"), e -> {
 			if (true) {
 				Art5019injusticeMod.PACKET_HANDLER.sendToServer(new QuicksilverQuickTravelGUIButtonMessage(0, x, y, z));

@@ -26,22 +26,26 @@ public class SuperVortexAbilityProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.CLOUD, x, y, z, 6, 1.5, 1.5, 1.5, 1);
+			_level.sendParticles(ParticleTypes.CLOUD, x, (y + 2), z, 14, 2, 2, 2, 0.65);
+		if (world instanceof ServerLevel _level)
+			_level.sendParticles(ParticleTypes.CLOUD, x, y, z, 8, 1, 1, 1, 0.4);
+		if (world instanceof ServerLevel _level)
+			_level.sendParticles(ParticleTypes.CLOUD, x, (y - 2), z, 6, 0.5, 0.5, 0.5, 0.25);
 		{
 			final Vec3 _center = new Vec3(x, y, z);
 			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 			for (Entity entityiterator : _entfound) {
 				if (!(entityiterator == entity)) {
 					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40, 1, false, false));
+						_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40, 2, false, false));
 					if (Math.random() < 0.1) {
-						entityiterator.setDeltaMovement(new Vec3((0.35 * Mth.nextDouble(RandomSource.create(), -2, 2)), (0.35 * Mth.nextDouble(RandomSource.create(), -2, 2)), (0.35 * Mth.nextDouble(RandomSource.create(), -2, 2))));
+						entityiterator.setDeltaMovement(new Vec3((0.4 * Mth.nextDouble(RandomSource.create(), -2, 2)), (0.4 * Mth.nextDouble(RandomSource.create(), -2, 2)), (0.4 * Mth.nextDouble(RandomSource.create(), -2, 2))));
 					}
 				}
 			}
 		}
 		if (!world.isClientSide()) {
-			if (Math.random() < 0.035) {
+			if (Math.random() < 0.04) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ender_dragon.flap")), SoundSource.PLAYERS, 3, (float) 0.1);
@@ -52,6 +56,6 @@ public class SuperVortexAbilityProcedure {
 			}
 		}
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.CLOUD, x, y, z, 1, 15, 15, 15, 1);
+			_level.sendParticles(ParticleTypes.CLOUD, x, y, z, 4, 15, 15, 15, 1);
 	}
 }

@@ -34,7 +34,7 @@
         "type": "textfield",
         "data": {
           "placeholder": "Z",
-          "name": "TravelZ",
+          "name": "travelZ",
           "width": 120,
           "height": 20,
           "x": 143,

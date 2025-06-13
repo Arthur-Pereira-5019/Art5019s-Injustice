@@ -25,7 +25,9 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
@@ -89,7 +91,8 @@ public class PlayerDiesProcedure {
 				}
 			}
 		}
-		if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 7) {
+		if ((entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).powerid == 7
+				|| (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("art5019injustice:phantom_zone"))) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.setHealth(2);
 			if (event != null && event.isCancelable()) {
@@ -100,7 +103,7 @@ public class PlayerDiesProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.setHealth(2);
 		}
-		if (entity instanceof LivingEntity _livEnt13 && _livEnt13.hasEffect(Art5019injusticeModMobEffects.UNCLE_SAM_POSSESSED.get())) {
+		if (entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(Art5019injusticeModMobEffects.UNCLE_SAM_POSSESSED.get())) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = Art5019injusticeModEntities.UNCLE_SAM.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {
