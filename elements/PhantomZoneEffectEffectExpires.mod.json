@@ -2,6 +2,6 @@
   "_fv": 66,
   "_type": "procedure",
   "definition": {
-    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"call_procedure\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"2\"></mutation><field name=\"procedure\">IndividualAttributeRemover</field><field name=\"name0\">context</field><field name=\"name1\">uuid</field><value name=\"arg0\"><block type=\"math_number\"><field name=\"NUM\">2</field></block></value><value name=\"arg1\"><block type=\"text\"><field name=\"TEXT\">58a79215-a927-4319-b366-345b213c4b1d </field></block></value><next><block type=\"call_procedure\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"procedure\">NoGravityManager</field></block></next></block></next></block></xml>"
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"call_procedure\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"procedure\">NoGravityManager</field></block></next></block></xml>"
   }
 }

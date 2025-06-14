@@ -22,7 +22,7 @@ public class PhantomZoneEffectActiveTickConditionProcedure {
 					_serverPlayer.connection.teleport(x, 350, z, _ent.getYRot(), _ent.getXRot());
 			}
 		}
-		if (entity.getXRot() > 60) {
+		if (entity.getXRot() < -60) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 60, 3, false, false));
 		}

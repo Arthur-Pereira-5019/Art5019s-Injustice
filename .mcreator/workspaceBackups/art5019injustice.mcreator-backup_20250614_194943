@@ -56216,6 +56216,18 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           }
         ]
       },
@@ -56271,6 +56283,106 @@
         ]
       },
       "path": "~/Kryptonian/PhantomZone"
+    },
+    {
+      "name": "PhantomZoneEffectEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_zone_effect_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/PhantomZoneEffectEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IndividualAttributeRemover",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "individual_attribute_remover",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/IndividualAttributeRemoverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "context",
+            "type": "number"
+          },
+          {
+            "name": "uuid",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PhantomZonePlayerEntersDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_zone_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/PhantomZonePlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PhantomZonePlayerLeavesDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_zone_player_leaves_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/PhantomZonePlayerLeavesDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UniversalCan",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "universal_can",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/UniversalCanProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GlobalProcedures"
     }
   ],
   "variable_elements": [
@@ -57759,6 +57871,7 @@
       "CUSTOM:BlackNoir.body"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.BLACKSTONE",
       "~Blocks.GLASS",
       "~Blocks.STONE#0",
       "~Blocks.DIRT#1",

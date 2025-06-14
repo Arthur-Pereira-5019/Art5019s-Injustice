@@ -56279,10 +56279,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -56349,6 +56345,60 @@
           }
         ]
       }
+    },
+    {
+      "name": "PhantomZonePlayerLeavesDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_zone_player_leaves_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/PhantomZonePlayerLeavesDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UniversalCan",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "universal_can",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/UniversalCanProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "ZodArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zod_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/zod_armor_leggings.json",
+          "src/main/java/net/mcreator/artinjustice/item/ZodArmorItem.java",
+          "src/main/resources/assets/art5019injustice/models/item/zod_armor_chestplate.json",
+          "src/main/resources/assets/art5019injustice/models/item/zod_armor_boots.json"
+        ]
+      },
+      "path": "~/Kryptonian/Zod"
     }
   ],
   "variable_elements": [
@@ -58696,6 +58746,7 @@
       "item.art5019injustice.summoning_book": "Summoning Book",
       "advancements.st_anti_venom_base.descr": "§6Skilltree",
       "advancements.good_health_and_well_being.title": "III",
+      "item.art5019injustice.zod_armor_boots": "House of Zod Military Boots",
       "item.art5019injustice.hook_scythe": "Chained Sickle",
       "advancements.alignment_anti_hero.title": "Anti-Hero",
       "death.attack.panic": "%1$s panicked to death",
@@ -59655,6 +59706,7 @@
       "item.art5019injustice.gold_titanium_armor_leggings": "Gold Titanium Leggings",
       "effect.art5019injustice.rage": "Rage",
       "block.art5019injustice.signal_machine_pillager": "Signal Machine",
+      "item.art5019injustice.zod_armor_leggings": "House of Zod Military Leggings",
       "advancements.local_tailor.title": "Local Tailor",
       "item.art5019injustice.spider_man_tm_2_helmet": "Friendly Neighborhood Spider-Man Mask",
       "advancements.obtain_all_orchids.descr": "Obtain all the eight variations of orchids",
@@ -60238,6 +60290,7 @@
       "advancements.stss_regeneration.title": "Healing Factor",
       "advancements.st_black_panther_speed.descr": "§fPassive - +0.23 Speed",
       "advancements.vpst_jump_boost.title": "Jump Boost",
+      "item.art5019injustice.zod_armor_chestplate": "House of Zod Military Chestplate",
       "effect.art5019injustice.illusioned": "Tricked",
       "item.art5019injustice.elektrum_dust": "Elektrum Dust",
       "item.minecraft.potion.effect.scarecrow_stronger_formula": "Bottle of Scarecrow Formula",
@@ -61049,6 +61102,10 @@
           },
           {
             "name": "PhantomZone",
+            "children": []
+          },
+          {
+            "name": "Zod",
             "children": []
           }
         ]

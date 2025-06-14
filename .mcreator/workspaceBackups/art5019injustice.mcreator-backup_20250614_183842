@@ -56201,6 +56201,188 @@
         ]
       },
       "path": "~/Kryptonian/PhantomZone"
+    },
+    {
+      "name": "PhantomZoneEffectActiveTickCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_zone_effect_active_tick_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/PhantomZoneEffectActiveTickConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/PhantomZone"
+    },
+    {
+      "name": "PhantomZoneEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_zone_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/potion/PhantomZoneEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Kryptonian/PhantomZone"
+    },
+    {
+      "name": "NoGravityManager",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_gravity_manager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/NoGravityManagerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/PhantomZone"
+    },
+    {
+      "name": "PhantomZoneEffectEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_zone_effect_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/PhantomZoneEffectEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/PhantomZone"
+    },
+    {
+      "name": "PhantomZoneEffectEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_zone_effect_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/PhantomZoneEffectEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IndividualAttributeRemover",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "individual_attribute_remover",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/IndividualAttributeRemoverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "context",
+            "type": "number"
+          },
+          {
+            "name": "uuid",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PhantomZonePlayerEntersDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_zone_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/PhantomZonePlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PhantomZonePlayerLeavesDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_zone_player_leaves_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/PhantomZonePlayerLeavesDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UniversalCan",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "universal_can",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/UniversalCanProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GlobalProcedures"
     }
   ],
   "variable_elements": [
@@ -57689,6 +57871,7 @@
       "CUSTOM:BlackNoir.body"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.BLACKSTONE",
       "~Blocks.GLASS",
       "~Blocks.STONE#0",
       "~Blocks.DIRT#1",
@@ -59698,6 +59881,7 @@
       "item.art5019injustice.microchip_ai_5": "Microchip",
       "item.art5019injustice.loki_scepter": "§eLoki Scepter",
       "item.art5019injustice.antibiotics": "Antibiotics",
+      "effect.art5019injustice.phantom_zone_effect": "Phantom Zoned",
       "item.art5019injustice.scarab_cannon": "Scarab Cannon",
       "advancements.stjrbb_deactivate.descr": "§eAbility 1 - With your suit on, you\u0027ll take off your armor",
       "item.art5019injustice.silver_nugget": "Silver Nugget",

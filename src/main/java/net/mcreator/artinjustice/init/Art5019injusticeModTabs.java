@@ -354,6 +354,7 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.IRON_HAMMER.get());
 				tabData.accept(Art5019injusticeModItems.STEEL_HAMMER.get());
 				tabData.accept(Art5019injusticeModItems.GOLDEN_HAMMER.get());
+				tabData.accept(Art5019injusticeModItems.ZOD_BOSS_SPAWN_EGG.get());
 			})
 
 					.build());
@@ -760,6 +761,9 @@ public class Art5019injusticeModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(Art5019injusticeModItems.STEEL_SWORD.get());
+			tabData.accept(Art5019injusticeModItems.ZOD_ARMOR_CHESTPLATE.get());
+			tabData.accept(Art5019injusticeModItems.ZOD_ARMOR_LEGGINGS.get());
+			tabData.accept(Art5019injusticeModItems.ZOD_ARMOR_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(Art5019injusticeModItems.NIGHTMARE_SPIDER_SPAWN_EGG.get());
 			tabData.accept(Art5019injusticeModItems.TEST_DUMMY_SPAWN_EGG.get());
@@ -774,6 +778,7 @@ public class Art5019injusticeModTabs {
 			tabData.accept(Art5019injusticeModItems.METALLO_SPAWN_EGG.get());
 			tabData.accept(Art5019injusticeModItems.CRIMINAL_SPAWN_EGG.get());
 			tabData.accept(Art5019injusticeModItems.MARTIN_LI_SPAWN_EGG.get());
+			tabData.accept(Art5019injusticeModItems.ZOD_BOSS_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(Art5019injusticeModItems.DWARF_STAR_HAMMER.get());
 			tabData.accept(Art5019injusticeModItems.DIAMOND_HAMMER.get());

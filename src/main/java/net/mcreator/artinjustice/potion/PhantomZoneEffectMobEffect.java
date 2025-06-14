@@ -17,7 +17,7 @@ public class PhantomZoneEffectMobEffect extends MobEffect {
 
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		PhantomZoneEffectEffectStartedappliedProcedure.execute(entity.level(), entity);
+		PhantomZoneEffectEffectStartedappliedProcedure.execute(entity);
 	}
 
 	@Override

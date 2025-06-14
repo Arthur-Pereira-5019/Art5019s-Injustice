@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.artinjustice.entity.ZodBossEntity;
 import net.mcreator.artinjustice.entity.WebShooterTier1m2ProjectileEntity;
 import net.mcreator.artinjustice.entity.WebShooterTier1ProjectileEntity;
 import net.mcreator.artinjustice.entity.WebShooterElectricWebProjectileEntity;
@@ -336,6 +337,10 @@ public class Art5019injusticeModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<KryptoTheSuperdogEntity>> KRYPTO_THE_SUPERDOG = register("krypto_the_superdog", EntityType.Builder.<KryptoTheSuperdogEntity>of(KryptoTheSuperdogEntity::new, MobCategory.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KryptoTheSuperdogEntity::new).fireImmune().sized(1f, 1f));
+	public static final RegistryObject<EntityType<ZodBossEntity>> ZOD_BOSS = register("zod_boss",
+			EntityType.Builder.<ZodBossEntity>of(ZodBossEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ZodBossEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -387,6 +392,7 @@ public class Art5019injusticeModEntities {
 			ChrisTheMusicianEntity.init();
 			StanTheLegendEntity.init();
 			KryptoTheSuperdogEntity.init();
+			ZodBossEntity.init();
 		});
 	}
 
@@ -435,5 +441,6 @@ public class Art5019injusticeModEntities {
 		event.put(CHRIS_THE_MUSICIAN.get(), ChrisTheMusicianEntity.createAttributes().build());
 		event.put(STAN_THE_LEGEND.get(), StanTheLegendEntity.createAttributes().build());
 		event.put(KRYPTO_THE_SUPERDOG.get(), KryptoTheSuperdogEntity.createAttributes().build());
+		event.put(ZOD_BOSS.get(), ZodBossEntity.createAttributes().build());
 	}
 }

@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.artinjustice.client.renderer.ZodBossRenderer;
 import net.mcreator.artinjustice.client.renderer.VoughtExecutiveRenderer;
 import net.mcreator.artinjustice.client.renderer.VibraniumSilverfishRenderer;
 import net.mcreator.artinjustice.client.renderer.VenomBossRenderer;
@@ -143,5 +144,6 @@ public class Art5019injusticeModEntityRenderers {
 		event.registerEntityRenderer(Art5019injusticeModEntities.CHRIS_THE_MUSICIAN.get(), ChrisTheMusicianRenderer::new);
 		event.registerEntityRenderer(Art5019injusticeModEntities.STAN_THE_LEGEND.get(), StanTheLegendRenderer::new);
 		event.registerEntityRenderer(Art5019injusticeModEntities.KRYPTO_THE_SUPERDOG.get(), KryptoTheSuperdogRenderer::new);
+		event.registerEntityRenderer(Art5019injusticeModEntities.ZOD_BOSS.get(), ZodBossRenderer::new);
 	}
 }

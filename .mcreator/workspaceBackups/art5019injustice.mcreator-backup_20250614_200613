@@ -56279,10 +56279,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -61087,6 +61083,10 @@
           },
           {
             "name": "PhantomZone",
+            "children": []
+          },
+          {
+            "name": "Zod",
             "children": []
           }
         ]

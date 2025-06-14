@@ -27,6 +27,7 @@ import net.mcreator.artinjustice.procedures.InterdimensionalExtrapolatorProperty
 import net.mcreator.artinjustice.procedures.FrequencyEmitterTNTPropertyValueProviderProcedure;
 import net.mcreator.artinjustice.procedures.CondimentGunPropertyValueProviderProcedure;
 import net.mcreator.artinjustice.procedures.CondimentGunPropertyValueProvider2Procedure;
+import net.mcreator.artinjustice.item.ZodArmorItem;
 import net.mcreator.artinjustice.item.YinYangIconItem;
 import net.mcreator.artinjustice.item.YeastItem;
 import net.mcreator.artinjustice.item.YangItem;
@@ -1452,6 +1453,10 @@ public class Art5019injusticeModItems {
 	public static final RegistryObject<Item> ICON_EXTRA_SPEED_3 = REGISTRY.register("icon_extra_speed_3", () -> new IconExtraSpeed3Item());
 	public static final RegistryObject<Item> ICON_EXTRA_SPEED_4 = REGISTRY.register("icon_extra_speed_4", () -> new IconExtraSpeed4Item());
 	public static final RegistryObject<Item> DWARF_STAR_SCRAP = REGISTRY.register("dwarf_star_scrap", () -> new DwarfStarScrapItem());
+	public static final RegistryObject<Item> ZOD_ARMOR_CHESTPLATE = REGISTRY.register("zod_armor_chestplate", () -> new ZodArmorItem.Chestplate());
+	public static final RegistryObject<Item> ZOD_ARMOR_LEGGINGS = REGISTRY.register("zod_armor_leggings", () -> new ZodArmorItem.Leggings());
+	public static final RegistryObject<Item> ZOD_ARMOR_BOOTS = REGISTRY.register("zod_armor_boots", () -> new ZodArmorItem.Boots());
+	public static final RegistryObject<Item> ZOD_BOSS_SPAWN_EGG = REGISTRY.register("zod_boss_spawn_egg", () -> new ForgeSpawnEggItem(Art5019injusticeModEntities.ZOD_BOSS, -13553359, -9306112, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
