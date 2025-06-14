@@ -4,16 +4,16 @@
   "definition": {
     "name": "Phantom Zone",
     "groundBlock": {
-      "value": "Blocks.GLASS"
+      "value": "Blocks.BLACKSTONE"
     },
     "undergroundBlock": {
-      "value": "Blocks.GLASS"
+      "value": "Blocks.BLACKSTONE"
     },
     "underwaterBlock": {
-      "value": "Blocks.GLASS"
+      "value": "Blocks.POLISHED_BLACKSTONE_BRICK_WALL"
     },
     "airColor": {
-      "value": -1,
+      "value": -16711858,
       "falpha": 0.0
     },
     "grassColor": {

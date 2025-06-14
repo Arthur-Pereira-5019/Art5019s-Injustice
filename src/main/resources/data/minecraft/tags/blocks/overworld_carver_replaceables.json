@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "minecraft:blackstone",
     "minecraft:glass",
     "minecraft:stone",
     "minecraft:coarse_dirt",

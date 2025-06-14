@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Phantom Zoned",
+    "icon": "phantom_zone",
+    "color": {
+      "value": -13888212,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "PhantomZoneEffectEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "PhantomZoneEffectActiveTickCondition"
+    },
+    "onExpired": {
+      "name": "PhantomZoneEffectEffectExpires"
+    }
+  }
+}

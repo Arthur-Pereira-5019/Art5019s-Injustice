@@ -19,6 +19,8 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.artinjustice.init.Art5019injusticeModEntities;
@@ -91,6 +93,13 @@ public class EarthXBreakShriekerProcedure {
 			}
 		}.compareDistOf(x, y, z)).findFirst().orElse(null)) == null)) {
 			EshuEntityIsHurtProcedure.execute(world, x, y, z, entity, entity);
+			if (event != null && event.isCancelable()) {
+				event.setCanceled(true);
+			} else if (event != null && event.hasResult()) {
+				event.setResult(Event.Result.DENY);
+			}
+		}
+		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("art5019injustice:phantom_zone"))) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
 			} else if (event != null && event.hasResult()) {

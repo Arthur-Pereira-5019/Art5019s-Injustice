@@ -27,7 +27,7 @@
       "aquifers_enabled": false,
       "ore_veins_enabled": false,
       "default_block": {
-        "Name": "minecraft:glass"
+        "Name": "minecraft:blackstone"
       },
       "default_fluid": {
         "Name": "minecraft:air"
@@ -193,14 +193,22 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:glass"
+                            "Name": "minecraft:blackstone"
                           }
                         }
                       },
                       {
                         "type": "minecraft:block",
                         "result_state": {
-                          "Name": "minecraft:glass"
+                          "Name": "minecraft:polished_blackstone_brick_wall",
+                          "Properties": {
+                            "east": "none",
+                            "north": "none",
+                            "south": "none",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "none"
+                          }
                         }
                       }
                     ]
@@ -218,7 +226,7 @@
                   "then_run": {
                     "type": "minecraft:block",
                     "result_state": {
-                      "Name": "minecraft:glass"
+                      "Name": "minecraft:blackstone"
                     }
                   }
                 }

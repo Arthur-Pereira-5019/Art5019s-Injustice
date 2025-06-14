@@ -25,6 +25,7 @@ import net.mcreator.artinjustice.potion.PowerDependenceMobEffect;
 import net.mcreator.artinjustice.potion.PolioMobEffect;
 import net.mcreator.artinjustice.potion.PlagueMobEffect;
 import net.mcreator.artinjustice.potion.PheromonesMobEffect;
+import net.mcreator.artinjustice.potion.PhantomZoneEffectMobEffect;
 import net.mcreator.artinjustice.potion.MonsterInfightingMobEffect;
 import net.mcreator.artinjustice.potion.MeningitisMobEffect;
 import net.mcreator.artinjustice.potion.MagicBlockingMobEffect;
@@ -104,4 +105,5 @@ public class Art5019injusticeModMobEffects {
 	public static final RegistryObject<MobEffect> ABSOLUTE_IMMUNITY = REGISTRY.register("absolute_immunity", () -> new AbsoluteImmunityMobEffect());
 	public static final RegistryObject<MobEffect> ALCOHOL_STERILIZED = REGISTRY.register("alcohol_sterilized", () -> new AlcoholSterilizedMobEffect());
 	public static final RegistryObject<MobEffect> SPIDER_LEAP = REGISTRY.register("spider_leap", () -> new SpiderLeapMobEffect());
+	public static final RegistryObject<MobEffect> PHANTOM_ZONE_EFFECT = REGISTRY.register("phantom_zone_effect", () -> new PhantomZoneEffectMobEffect());
 }
