@@ -34,6 +34,7 @@ public class Art5019injusticeModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> LOCKED_DOOR = register("locked_door", Art5019injusticeModBlocks.LOCKED_DOOR, LockedDoorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CORPSE = register("corpse", Art5019injusticeModBlocks.CORPSE, CorpseBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> PETRI_TABLE_BLOCK = register("petri_table_block", Art5019injusticeModBlocks.PETRI_TABLE_BLOCK, PetriTableBlockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> TRANSMUTATION_TABLE = register("transmutation_table", Art5019injusticeModBlocks.TRANSMUTATION_TABLE, TransmutationTableBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> PUZZLE_BLOCK = register("puzzle_block", Art5019injusticeModBlocks.PUZZLE_BLOCK, PuzzleBlockBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {

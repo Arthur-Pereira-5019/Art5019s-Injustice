@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "art5019injustice:enriched_uranium",
+    "art5019injustice:uranium_block",
+    "art5019injustice:enriched_pickaxe",
+    "art5019injustice:enriched_axe",
+    "art5019injustice:enriched_sword",
+    "art5019injustice:enriched_shovel",
+    "art5019injustice:enriched_hoe",
+    "minecraft:nether_star",
+    "art5019injustice:activated_dwarf_star"
+  ]
+}
