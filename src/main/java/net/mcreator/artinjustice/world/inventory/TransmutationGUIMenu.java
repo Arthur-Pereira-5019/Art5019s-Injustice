@@ -20,9 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.artinjustice.procedures.DisableUltraContaminedHumanRemainsPlacementProcedure;
-import net.mcreator.artinjustice.network.TransmutationGUISlotMessage;
 import net.mcreator.artinjustice.init.Art5019injusticeModMenus;
-import net.mcreator.artinjustice.Art5019injusticeMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -45,7 +43,7 @@ public class TransmutationGUIMenu extends AbstractContainerMenu implements Suppl
 		super(Art5019injusticeModMenus.TRANSMUTATION_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(10);
+		this.internal = new ItemStackHandler(9);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -88,117 +86,29 @@ public class TransmutationGUIMenu extends AbstractContainerMenu implements Suppl
 				return !DisableUltraContaminedHumanRemainsPlacementProcedure.execute(itemstack);
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 59, 35) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 80, 55) {
+			private final int slot = 1;
+		}));
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 80, 14) {
 			private final int slot = 2;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(2, 1, 0);
-			}
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
-			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 101, 35) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 100, 35) {
 			private final int slot = 3;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(3, 1, 0);
-			}
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
-			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 60, 55) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 100, 55) {
 			private final int slot = 4;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(4, 1, 0);
-			}
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
-			}
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 80, 14) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 60, 35) {
 			private final int slot = 5;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(5, 1, 0);
-			}
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
-			}
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 80, 56) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 60, 55) {
 			private final int slot = 6;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(6, 1, 0);
-			}
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
-			}
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 100, 55) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 60, 14) {
 			private final int slot = 7;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(7, 1, 0);
-			}
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
-			}
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 100, 15) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 100, 14) {
 			private final int slot = 8;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(8, 1, 0);
-			}
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
-			}
-		}));
-		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 60, 15) {
-			private final int slot = 9;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(9, 1, 0);
-			}
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
-			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
@@ -341,13 +251,6 @@ public class TransmutationGUIMenu extends AbstractContainerMenu implements Suppl
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}
-		}
-	}
-
-	private void slotChanged(int slotid, int ctype, int meta) {
-		if (this.world != null && this.world.isClientSide()) {
-			Art5019injusticeMod.PACKET_HANDLER.sendToServer(new TransmutationGUISlotMessage(slotid, x, y, z, ctype, meta));
-			TransmutationGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 

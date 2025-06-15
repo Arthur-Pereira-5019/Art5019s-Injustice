@@ -43491,6 +43491,7 @@
           "src/main/resources/assets/art5019injustice/blockstates/transmutation_table.json",
           "src/main/resources/assets/art5019injustice/models/item/transmutation_table.json",
           "src/main/java/net/mcreator/artinjustice/block/TransmutationTableBlock.java",
+          "src/main/java/net/mcreator/artinjustice/block/entity/TransmutationTableBlockEntity.java",
           "src/main/resources/data/art5019injustice/loot_tables/blocks/transmutation_table.json"
         ]
       },
@@ -54315,7 +54316,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/artinjustice/world/inventory/TransmutationGUIMenu.java",
-          "src/main/java/net/mcreator/artinjustice/network/TransmutationGUISlotMessage.java",
           "src/main/java/net/mcreator/artinjustice/client/gui/TransmutationGUIScreen.java"
         ]
       },
@@ -56410,11 +56410,180 @@
         "files": [
           "src/main/java/net/mcreator/artinjustice/entity/ZodBossEntity.java",
           "src/main/resources/assets/art5019injustice/models/item/zod_boss_spawn_egg.json",
-          "src/main/resources/data/art5019injustice/forge/biome_modifier/zod_boss_biome_modifier.json",
           "src/main/java/net/mcreator/artinjustice/client/renderer/ZodBossRenderer.java"
         ]
       },
       "path": "~/Kryptonian/Zod"
+    },
+    {
+      "name": "RadioactiveTransmutation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_transmutation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/RadioactiveTransmutationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "slot",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TransmutationTable"
+    },
+    {
+      "name": "TransmutationTableOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transmutation_table_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/TransmutationTableOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TransmutationTable"
+    },
+    {
+      "name": "TransmutationTableEmittedRedstonePower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transmutation_table_emitted_redstone_power",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/TransmutationTableEmittedRedstonePowerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TransmutationTable"
+    },
+    {
+      "name": "RadiationMeasurer",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_measurer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/item/RadiationMeasurerItem.java",
+          "src/main/resources/assets/art5019injustice/models/item/radiation_measurer.json"
+        ]
+      },
+      "path": "~/TransmutationTable"
+    },
+    {
+      "name": "ReturnItemRadiationPoints",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_item_radiation_points",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/ReturnItemRadiationPointsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/TransmutationTable"
+    },
+    {
+      "name": "TransmutationTableOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transmutation_table_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/TransmutationTableOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -58264,6 +58433,17 @@
     ],
     "BLOCKS:minecraft:walls": [
       "~CUSTOM:MarsBricksWall"
+    ],
+    "ITEMS:mod:radioactive_items": [
+      "CUSTOM:EnrichedUranium",
+      "CUSTOM:UraniumBlock",
+      "CUSTOM:EnrichedPickaxe",
+      "CUSTOM:EnrichedAxe",
+      "CUSTOM:EnrichedSword",
+      "CUSTOM:EnrichedShovel",
+      "CUSTOM:EnrichedHoe",
+      "Items.NETHER_STAR",
+      "CUSTOM:ActivatedDwarfStar"
     ],
     "ITEMS:mod:formulas": [
       "CUSTOM:WebFluidScheme",
@@ -60387,6 +60567,7 @@
       "subtitles.player.poisonivy.kiss": "Kissing",
       "subtitles.a_train_sfx": "Train speeds",
       "gui.art5019injustice.power_gui_peak_human.label_strength_ii": "Strength: II",
+      "item.art5019injustice.radiation_measurer": "Radiation Measurer",
       "item.art5019injustice.advanced_laser_device": "Advanced Laser Device",
       "advancements.st_scarecrow_fear_manipulation.descr": "§ePassive - By attacking other entities, they will be effected with Fear I (00:11)",
       "block.art5019injustice.palladium_ore": "Palladium Ore",

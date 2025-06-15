@@ -65,7 +65,8 @@
     "isReplaceable": false,
     "canProvidePower": true,
     "emittedRedstonePower": {
-      "fixedValue": 15.0
+      "fixedValue": 15.0,
+      "name": "TransmutationTableEmittedRedstonePower"
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
@@ -108,7 +109,7 @@
     "guiBoundTo": "TransmutationGUI",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
-    "inventoryStackSize": 64,
+    "inventoryStackSize": 1,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
@@ -121,6 +122,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "TransmutationTableOnBlockRightClicked"
+    },
     "onTickUpdate": {
       "name": "TransmutationTableOnTickUpdate"
     },

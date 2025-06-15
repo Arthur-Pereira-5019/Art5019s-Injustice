@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.artinjustice.block.entity.TransmutationTableBlockEntity;
 import net.mcreator.artinjustice.block.entity.SignalMachineBlockEntity;
 import net.mcreator.artinjustice.block.entity.SawmillBlockEntity;
 import net.mcreator.artinjustice.block.entity.PuzzleBlockBlockEntity;

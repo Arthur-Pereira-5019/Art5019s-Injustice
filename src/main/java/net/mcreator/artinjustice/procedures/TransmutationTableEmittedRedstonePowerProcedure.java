@@ -36,7 +36,7 @@ public class TransmutationTableEmittedRedstonePowerProcedure {
 			if (world instanceof Level _level)
 				_level.updateNeighborsAt(BlockPos.containing(x - 1, y, z), _level.getBlockState(BlockPos.containing(x - 1, y, z)).getBlock());
 			if (world instanceof Level _level)
-				_level.updateNeighborsAt(BlockPos.containing(x - 1, y, z), _level.getBlockState(BlockPos.containing(x - 1, y, z)).getBlock());
+				_level.updateNeighborsAt(BlockPos.containing(x + 1, y, z), _level.getBlockState(BlockPos.containing(x + 1, y, z)).getBlock());
 			return 15;
 		}
 		return 0;

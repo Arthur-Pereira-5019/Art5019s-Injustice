@@ -355,6 +355,7 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.STEEL_HAMMER.get());
 				tabData.accept(Art5019injusticeModItems.GOLDEN_HAMMER.get());
 				tabData.accept(Art5019injusticeModItems.ZOD_BOSS_SPAWN_EGG.get());
+				tabData.accept(Art5019injusticeModItems.RADIATION_MEASURER.get());
 			})
 
 					.build());

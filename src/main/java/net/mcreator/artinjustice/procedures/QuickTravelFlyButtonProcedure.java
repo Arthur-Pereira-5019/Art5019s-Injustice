@@ -27,11 +27,7 @@ public class QuickTravelFlyButtonProcedure {
 		double newX = 0;
 		double newZ = 0;
 		maxTravelDistance = (entity.getCapability(Art5019injusticeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Art5019injusticeModVariables.PlayerVariables())).flyingspeed * 8000;
-		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("" + travelx)), false);
 		if (Math.abs(travelx) < maxTravelDistance && Math.abs(travelz) < maxTravelDistance) {
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("" + travelx)), false);
 			newX = x + travelx;
 			newZ = z + travelz;
 			if (world instanceof ServerLevel _level)
@@ -54,7 +50,7 @@ public class QuickTravelFlyButtonProcedure {
 			{
 				Entity _ent = entity;
 				_ent.setYRot(0);
-				_ent.setXRot(-90);
+				_ent.setXRot(90);
 				_ent.setYBodyRot(_ent.getYRot());
 				_ent.setYHeadRot(_ent.getYRot());
 				_ent.yRotO = _ent.getYRot();

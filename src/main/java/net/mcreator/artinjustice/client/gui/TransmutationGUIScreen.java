@@ -46,6 +46,9 @@ public class TransmutationGUIScreen extends AbstractContainerScreen<Transmutatio
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("art5019injustice:textures/screens/atomic_icon.png"), this.leftPos + 80, this.topPos + 35, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 

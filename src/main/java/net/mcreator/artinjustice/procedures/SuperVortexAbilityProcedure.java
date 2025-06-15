@@ -26,11 +26,11 @@ public class SuperVortexAbilityProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.CLOUD, x, (y + 2), z, 14, 2, 2, 2, 0.65);
+			_level.sendParticles(ParticleTypes.CLOUD, x, (y + 2), z, 14, 2, 2, 2, 0.35);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.CLOUD, x, y, z, 8, 1, 1, 1, 0.4);
+			_level.sendParticles(ParticleTypes.CLOUD, x, y, z, 8, 1, 1, 1, 0.15);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.CLOUD, x, (y - 2), z, 6, 0.5, 0.5, 0.5, 0.25);
+			_level.sendParticles(ParticleTypes.CLOUD, x, (y - 2), z, 6, 0.5, 0.5, 0.5, 0.05);
 		{
 			final Vec3 _center = new Vec3(x, y, z);
 			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();

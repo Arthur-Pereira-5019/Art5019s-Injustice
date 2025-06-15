@@ -117,6 +117,9 @@ public class Art5019injusticeModTrades {
 
 					new ItemStack(Art5019injusticeModItems.SHOOTING_DEVICE.get()), 2, 10, 0.05f));
 			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 3), new ItemStack(Blocks.TNT), new ItemStack(Art5019injusticeModBlocks.RANGED_TNT.get()), 8, 5, 0.05f));
+			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Items.EMERALD, 14),
+
+					new ItemStack(Art5019injusticeModItems.RADIATION_MEASURER.get()), 3, 7, 0.05f));
 		}
 		if (event.getType() == VillagerProfession.LEATHERWORKER) {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD, 5), new ItemStack(Items.LEATHER), new ItemStack(Art5019injusticeModItems.WHITE_FABRIC.get()), 10, 3, 0.05f));

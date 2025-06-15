@@ -19,6 +19,8 @@ public class RadioactiveTransmutationProcedure {
 			next = new ItemStack(Art5019injusticeModItems.KRYPTONITE.get());
 		} else if (itemstack.getItem() == Art5019injusticeModItems.RED_KRYPTONITE.get()) {
 			next = new ItemStack(Art5019injusticeModItems.GOLDEN_KRYPTONITE.get());
+		} else if (itemstack.getItem() == Art5019injusticeModItems.PALLADIUM_INGOT.get()) {
+			next = new ItemStack(Art5019injusticeModItems.BADASSIUM_CORE.get());
 		}
 		{
 			BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));

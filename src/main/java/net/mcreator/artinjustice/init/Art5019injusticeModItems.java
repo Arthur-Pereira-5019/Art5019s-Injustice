@@ -208,6 +208,7 @@ import net.mcreator.artinjustice.item.RawAtlanteanGoldItem;
 import net.mcreator.artinjustice.item.RaoliteItem;
 import net.mcreator.artinjustice.item.RangedWebGrenadeItem;
 import net.mcreator.artinjustice.item.RadioDeviceItem;
+import net.mcreator.artinjustice.item.RadiationMeasurerItem;
 import net.mcreator.artinjustice.item.QuicksilverItem;
 import net.mcreator.artinjustice.item.QuicksilverDodgeIconItem;
 import net.mcreator.artinjustice.item.QueenMaeveSuitItem;
@@ -1457,6 +1458,7 @@ public class Art5019injusticeModItems {
 	public static final RegistryObject<Item> ZOD_ARMOR_LEGGINGS = REGISTRY.register("zod_armor_leggings", () -> new ZodArmorItem.Leggings());
 	public static final RegistryObject<Item> ZOD_ARMOR_BOOTS = REGISTRY.register("zod_armor_boots", () -> new ZodArmorItem.Boots());
 	public static final RegistryObject<Item> ZOD_BOSS_SPAWN_EGG = REGISTRY.register("zod_boss_spawn_egg", () -> new ForgeSpawnEggItem(Art5019injusticeModEntities.ZOD_BOSS, -13553359, -9306112, new Item.Properties()));
+	public static final RegistryObject<Item> RADIATION_MEASURER = REGISTRY.register("radiation_measurer", () -> new RadiationMeasurerItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
