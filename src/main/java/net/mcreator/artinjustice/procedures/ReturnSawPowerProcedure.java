@@ -6,6 +6,8 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.artinjustice.init.Art5019injusticeModItems;
@@ -37,14 +39,13 @@ public class ReturnSawPowerProcedure {
 				return _retval.get();
 			}
 		}.getItemStack(world, BlockPos.containing(x, y, z), 0));
-		if (compareto.getItem() == Art5019injusticeModItems.TITANIUM_INGOT.get() || compareto.getItem() == Items.IRON_INGOT || compareto.getItem() == Art5019injusticeModItems.LEAD_INGOT.get() || compareto.getItem() == Items.GOLD_INGOT
-				|| compareto.getItem() == Art5019injusticeModItems.ZINC_INGOT.get() || compareto.getItem() == Items.COPPER_INGOT) {
+		if (compareto.is(ItemTags.create(new ResourceLocation("art5019injustice:tier_2_sawables")))) {
 			sawingpower = 2;
 		} else if (compareto.getItem() == Items.COAL) {
 			sawingpower = 1;
 		} else if (compareto.getItem() == Art5019injusticeModItems.STEEL_INGOT.get() || compareto.getItem() == Art5019injusticeModItems.ELEKTRUM_METAL.get() || compareto.getItem() == Art5019injusticeModItems.KRYPTONITE.get()) {
 			sawingpower = 3;
-		} else if (compareto.getItem() == Art5019injusticeModItems.GOLD_TITANIUM_INGOT.get()) {
+		} else if (compareto.getItem() == Art5019injusticeModItems.IRIDIUM_INGOT.get() || compareto.getItem() == Art5019injusticeModItems.GOLD_TITANIUM_INGOT.get()) {
 			sawingpower = 4;
 		} else if (compareto.getItem() == Art5019injusticeModItems.VIBRANIUM_INGOT.get()) {
 			sawingpower = 5;

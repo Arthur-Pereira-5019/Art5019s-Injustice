@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:gold_titanium_ingot"
+    },
+    "b": {
+      "item": "art5019injustice:elektrum_dust"
+    },
+    "c": {
+      "item": "art5019injustice:lithium_cobalt_capacitor"
+    },
+    "d": {
+      "item": "art5019injustice:gold_dust"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:golden_capacitor",
+    "count": 1
+  }
+}

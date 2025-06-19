@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:IridiumDust"
+      },
+      {
+        "value": "CUSTOM:CopperCapacitor"
+      },
+      {
+        "value": "CUSTOM:EndDust"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AlienCapacitor"
+    },
+    "name": "alien_capacitor_recipe",
+    "namespace": "mod"
+  }
+}

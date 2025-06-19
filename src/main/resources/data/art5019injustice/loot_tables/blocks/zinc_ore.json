@@ -1,77 +1,20 @@
 {
   "type": "minecraft:block",
+  "random_sequence": "art5019injustice:blocks/zinc_ore",
   "pools": [
     {
-      "rolls": 1,
-      "entries": [
+      "rolls": 1.0,
+      "conditions": [
         {
-          "type": "minecraft:item",
-          "name": "art5019injustice:raw_zinc",
-          "weight": 1,
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:match_tool",
-                "predicate": {
-                  "enchantments": [
-                    {
-                      "enchantment": "minecraft:silk_touch",
-                      "levels": {
-                        "min": 1
-                      }
-                    }
-                  ]
-                }
-              }
-            }
-          ],
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
+          "condition": "minecraft:survives_explosion"
         }
-      ]
-    },
-    {
-      "rolls": 1,
+      ],
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "art5019injustice:zinc_ore",
-          "weight": 1,
-          "conditions": [
-            {
-              "condition": "minecraft:match_tool",
-              "predicate": {
-                "enchantments": [
-                  {
-                    "enchantment": "minecraft:silk_touch",
-                    "levels": {
-                      "min": 1
-                    }
-                  }
-                ]
-              }
-            }
-          ],
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
+          "name": "art5019injustice:zinc_ore"
         }
       ]
     }
-  ],
-  "random_sequence": "art5019injustice:blocks/zinc_ore"
+  ]
 }

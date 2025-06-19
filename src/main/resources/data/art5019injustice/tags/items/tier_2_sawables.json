@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:copper_ingot",
+    "art5019injustice:zinc_ingot",
+    "minecraft:gold_ingot",
+    "art5019injustice:lead_ingot",
+    "minecraft:iron_ingot",
+    "art5019injustice:titanium_ingot",
+    "art5019injustice:cobalt_ingot",
+    "art5019injustice:lithium_ingot"
+  ]
+}

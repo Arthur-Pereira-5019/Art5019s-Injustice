@@ -186,6 +186,16 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.ZINC_INGOT.get());
 				tabData.accept(Art5019injusticeModItems.ZINC_DUST.get());
 				tabData.accept(Art5019injusticeModItems.COPPER_DUST.get());
+				tabData.accept(Art5019injusticeModBlocks.COBALT.get().asItem());
+				tabData.accept(Art5019injusticeModItems.RAW_COBALT.get());
+				tabData.accept(Art5019injusticeModItems.COBALT_INGOT.get());
+				tabData.accept(Art5019injusticeModItems.COBALT_DUST.get());
+				tabData.accept(Art5019injusticeModBlocks.DEEPSLATE_LITHIUM.get().asItem());
+				tabData.accept(Art5019injusticeModItems.RAW_LITHIUM.get());
+				tabData.accept(Art5019injusticeModItems.LITHIUM_INGOT.get());
+				tabData.accept(Art5019injusticeModItems.LITHIUM_DUST.get());
+				tabData.accept(Art5019injusticeModItems.END_DUST.get());
+				tabData.accept(Art5019injusticeModItems.IRIDIUM_DUST.get());
 			})
 
 					.build());
@@ -362,6 +372,10 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.ZOD_BOSS_SPAWN_EGG.get());
 				tabData.accept(Art5019injusticeModItems.RADIATION_MEASURER.get());
 				tabData.accept(Art5019injusticeModItems.COPPER_CAPACITOR.get());
+				tabData.accept(Art5019injusticeModItems.GOLDEN_CAPACITOR.get());
+				tabData.accept(Art5019injusticeModItems.LITHIUM_COBALT_CAPACITOR.get());
+				tabData.accept(Art5019injusticeModItems.ALIEN_CAPACITOR.get());
+				tabData.accept(Art5019injusticeModItems.KRYPTONIAN_CAPACITOR.get());
 			})
 
 					.build());

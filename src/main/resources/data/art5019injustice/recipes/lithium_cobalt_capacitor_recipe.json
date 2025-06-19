@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:lead_ingot"
+    },
+    "b": {
+      "item": "art5019injustice:cobalt_dust"
+    },
+    "c": {
+      "item": "art5019injustice:copper_capacitor"
+    },
+    "d": {
+      "item": "art5019injustice:lithium_dust"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:lithium_cobalt_capacitor",
+    "count": 1
+  }
+}

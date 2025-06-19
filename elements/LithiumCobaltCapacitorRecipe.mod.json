@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LeadIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CobaltDust"
+      },
+      {
+        "value": "CUSTOM:CopperCapacitor"
+      },
+      {
+        "value": "CUSTOM:LithiumDust"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LeadIngot"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LithiumCobaltCapacitor"
+    },
+    "name": "lithium_cobalt_capacitor_recipe",
+    "namespace": "mod"
+  }
+}

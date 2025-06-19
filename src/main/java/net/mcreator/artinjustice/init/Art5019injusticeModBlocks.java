@@ -98,6 +98,7 @@ import net.mcreator.artinjustice.block.FluoriteOreBlock;
 import net.mcreator.artinjustice.block.DwarfStarDoorBlock;
 import net.mcreator.artinjustice.block.DwarfStarBlockBlock;
 import net.mcreator.artinjustice.block.DroppedKeyBlock;
+import net.mcreator.artinjustice.block.DeepslateLithiumBlock;
 import net.mcreator.artinjustice.block.CorpseBlock;
 import net.mcreator.artinjustice.block.CopperGrateBlock;
 import net.mcreator.artinjustice.block.CopperElectrifierBlock;
@@ -105,6 +106,7 @@ import net.mcreator.artinjustice.block.ContaminedWaterBlock;
 import net.mcreator.artinjustice.block.ComputerBlock;
 import net.mcreator.artinjustice.block.CompressedPackedIceBlock;
 import net.mcreator.artinjustice.block.CompressedIceBlockBlock;
+import net.mcreator.artinjustice.block.CobaltBlock;
 import net.mcreator.artinjustice.block.ChemistryTableBlock;
 import net.mcreator.artinjustice.block.BromineSandBlock;
 import net.mcreator.artinjustice.block.BlackNoirPlushBlock;
@@ -210,6 +212,8 @@ public class Art5019injusticeModBlocks {
 	public static final RegistryObject<Block> ICE_LENSE = REGISTRY.register("ice_lense", () -> new IceLenseBlock());
 	public static final RegistryObject<Block> DWARF_STAR_BLOCK = REGISTRY.register("dwarf_star_block", () -> new DwarfStarBlockBlock());
 	public static final RegistryObject<Block> ZINC_ORE = REGISTRY.register("zinc_ore", () -> new ZincOreBlock());
+	public static final RegistryObject<Block> COBALT = REGISTRY.register("cobalt", () -> new CobaltBlock());
+	public static final RegistryObject<Block> DEEPSLATE_LITHIUM = REGISTRY.register("deepslate_lithium", () -> new DeepslateLithiumBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

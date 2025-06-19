@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:echo_shard"
+    },
+    "b": {
+      "item": "art5019injustice:iridium_dust"
+    },
+    "c": {
+      "item": "art5019injustice:copper_capacitor"
+    },
+    "d": {
+      "item": "art5019injustice:end_dust"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:alien_capacitor",
+    "count": 1
+  }
+}

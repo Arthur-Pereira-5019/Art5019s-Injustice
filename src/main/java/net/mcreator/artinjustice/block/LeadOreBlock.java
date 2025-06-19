@@ -16,7 +16,7 @@ import net.mcreator.artinjustice.procedures.LeadOreBlockDestroyedByPlayerProcedu
 
 public class LeadOreBlock extends Block {
 	public LeadOreBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(6f, 8.705505633f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(6f, 8.706f).requiresCorrectToolForDrops());
 	}
 
 	@Override
