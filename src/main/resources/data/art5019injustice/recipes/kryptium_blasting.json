@@ -4,7 +4,7 @@
   "experience": 40,
   "cookingtime": 12000,
   "ingredient": {
-    "item": "art5019injustice:vibranium_rocks"
+    "item": "art5019injustice:raw_kryptium"
   },
-  "result": "art5019injustice:vibranium_ingot"
+  "result": "art5019injustice:kryptium_ingot"
 }

@@ -41,7 +41,7 @@ public class ReturnSawPowerProcedure {
 		}.getItemStack(world, BlockPos.containing(x, y, z), 0));
 		if (compareto.is(ItemTags.create(new ResourceLocation("art5019injustice:tier_2_sawables")))) {
 			sawingpower = 2;
-		} else if (compareto.getItem() == Items.COAL) {
+		} else if (compareto.getItem() == Items.ENDER_PEARL || compareto.getItem() == Items.COAL) {
 			sawingpower = 1;
 		} else if (compareto.getItem() == Art5019injusticeModItems.STEEL_INGOT.get() || compareto.getItem() == Art5019injusticeModItems.ELEKTRUM_METAL.get() || compareto.getItem() == Art5019injusticeModItems.KRYPTONITE.get()) {
 			sawingpower = 3;
@@ -49,6 +49,8 @@ public class ReturnSawPowerProcedure {
 			sawingpower = 4;
 		} else if (compareto.getItem() == Art5019injusticeModItems.VIBRANIUM_INGOT.get()) {
 			sawingpower = 5;
+		} else if (compareto.getItem() == Art5019injusticeModItems.KRYPTIUM_INGOT.get()) {
+			sawingpower = IsSunExposedProcedure.execute(world, x, y, z) ? 5 : 4;
 		}
 		if (gear.getItem() == Art5019injusticeModItems.WOODEN_SAW.get()) {
 			providedsawingpower = 1;

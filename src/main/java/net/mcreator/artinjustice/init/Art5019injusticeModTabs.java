@@ -196,6 +196,7 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.LITHIUM_DUST.get());
 				tabData.accept(Art5019injusticeModItems.END_DUST.get());
 				tabData.accept(Art5019injusticeModItems.IRIDIUM_DUST.get());
+				tabData.accept(Art5019injusticeModItems.RAW_KRYPTIUM.get());
 			})
 
 					.build());

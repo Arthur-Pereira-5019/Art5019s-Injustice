@@ -7,7 +7,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 46,
+          "weight": 78,
           "functions": [
             {
               "function": "set_count",
@@ -21,7 +21,7 @@
         {
           "type": "minecraft:item",
           "name": "art5019injustice:kryptonite",
-          "weight": 6,
+          "weight": 12,
           "functions": [
             {
               "function": "set_count",
@@ -35,7 +35,7 @@
         {
           "type": "minecraft:item",
           "name": "art5019injustice:strange_bone",
-          "weight": 8,
+          "weight": 16,
           "functions": [
             {
               "function": "set_count",
@@ -49,7 +49,7 @@
         {
           "type": "minecraft:item",
           "name": "art5019injustice:microchip_tier_3",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "set_count",
@@ -63,7 +63,7 @@
         {
           "type": "minecraft:item",
           "name": "art5019injustice:microchip",
-          "weight": 8,
+          "weight": 16,
           "functions": [
             {
               "function": "set_count",
@@ -77,7 +77,7 @@
         {
           "type": "minecraft:item",
           "name": "art5019injustice:advanced_circuit_board",
-          "weight": 4,
+          "weight": 8,
           "functions": [
             {
               "function": "set_count",
@@ -91,7 +91,7 @@
         {
           "type": "minecraft:item",
           "name": "art5019injustice:kryptonite_shard",
-          "weight": 13,
+          "weight": 26,
           "functions": [
             {
               "function": "set_count",
@@ -105,7 +105,21 @@
         {
           "type": "minecraft:item",
           "name": "art5019injustice:raolite",
-          "weight": 26,
+          "weight": 52,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "art5019injustice:raw_kryptium",
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",

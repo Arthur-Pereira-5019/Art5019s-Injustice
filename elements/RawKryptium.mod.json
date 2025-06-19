@@ -3,18 +3,18 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "alien_capacitor",
+    "texture": "raw_kryptium",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Alien Capacitor",
+    "name": "Kryptium",
     "rarity": "COMMON",
     "creativeTabs": [
       {
-        "value": "CUSTOM:Art5019InjusticeItems"
+        "value": "CUSTOM:Art5019InjusticeMaterials"
       }
     ],
-    "stackSize": 1,
+    "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -23,14 +23,13 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": [],
-      "name": "ReturnCapacitorStorage"
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false

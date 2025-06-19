@@ -2,21 +2,21 @@
   "_fv": 66,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Blasting",
+    "recipeType": "Smelting",
     "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 40.0,
-    "cookingTime": 12000,
+    "cookingTime": 24000,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:VibraniumRocks"
+    "smeltingInputStack": {
+      "value": "CUSTOM:RawKryptium"
     },
-    "blastingReturnStack": {
-      "value": "CUSTOM:VibraniumIngot"
+    "smeltingReturnStack": {
+      "value": "CUSTOM:KryptiumIngot"
     },
-    "name": "vibranium_ingot_recipe",
+    "name": "kryptium_smelting",
     "namespace": "mod"
   }
 }

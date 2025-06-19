@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:raolite"
+    },
+    "b": {
+      "item": "art5019injustice:kryptium_dust"
+    },
+    "c": {
+      "item": "art5019injustice:alien_capacitor"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:kryptonian_capacitor",
+    "count": 1
+  }
+}

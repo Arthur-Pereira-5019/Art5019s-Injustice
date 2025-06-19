@@ -11,12 +11,12 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "blastingInputStack": {
-      "value": "CUSTOM:VibraniumRocks"
+      "value": "CUSTOM:RawKryptium"
     },
     "blastingReturnStack": {
-      "value": "CUSTOM:VibraniumIngot"
+      "value": "CUSTOM:KryptiumIngot"
     },
-    "name": "vibranium_ingot_recipe",
+    "name": "kryptium_blasting",
     "namespace": "mod"
   }
 }

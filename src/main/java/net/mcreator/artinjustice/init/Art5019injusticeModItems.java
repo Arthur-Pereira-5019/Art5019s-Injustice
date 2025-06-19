@@ -208,6 +208,7 @@ import net.mcreator.artinjustice.item.RedKevlarItem;
 import net.mcreator.artinjustice.item.RawZincItem;
 import net.mcreator.artinjustice.item.RawSilverItem;
 import net.mcreator.artinjustice.item.RawLithiumItem;
+import net.mcreator.artinjustice.item.RawKryptiumItem;
 import net.mcreator.artinjustice.item.RawCobaltItem;
 import net.mcreator.artinjustice.item.RawAtlanteanGoldItem;
 import net.mcreator.artinjustice.item.RaoliteItem;
@@ -334,6 +335,8 @@ import net.mcreator.artinjustice.item.KryptonianClothItem;
 import net.mcreator.artinjustice.item.KryptonianCapacitorItem;
 import net.mcreator.artinjustice.item.KryptonianBloodItem;
 import net.mcreator.artinjustice.item.KryptonIconItem;
+import net.mcreator.artinjustice.item.KryptiumIngotItem;
+import net.mcreator.artinjustice.item.KryptiumDustItem;
 import net.mcreator.artinjustice.item.KeyItem;
 import net.mcreator.artinjustice.item.KevlarDefaultItem;
 import net.mcreator.artinjustice.item.KevlarBlackItem;
@@ -1496,6 +1499,9 @@ public class Art5019injusticeModItems {
 	public static final RegistryObject<Item> LITHIUM_DUST = REGISTRY.register("lithium_dust", () -> new LithiumDustItem());
 	public static final RegistryObject<Item> END_DUST = REGISTRY.register("end_dust", () -> new EndDustItem());
 	public static final RegistryObject<Item> IRIDIUM_DUST = REGISTRY.register("iridium_dust", () -> new IridiumDustItem());
+	public static final RegistryObject<Item> RAW_KRYPTIUM = REGISTRY.register("raw_kryptium", () -> new RawKryptiumItem());
+	public static final RegistryObject<Item> KRYPTIUM_INGOT = REGISTRY.register("kryptium_ingot", () -> new KryptiumIngotItem());
+	public static final RegistryObject<Item> KRYPTIUM_DUST = REGISTRY.register("kryptium_dust", () -> new KryptiumDustItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -38437,7 +38437,7 @@
           "src/main/resources/assets/art5019injustice/models/item/raolite.json"
         ]
       },
-      "path": "~/Kryptonian"
+      "path": "~/Kryptonian/KryptonianMaterials"
     },
     {
       "name": "RaoliteRecipe1",
@@ -38450,7 +38450,7 @@
           "src/main/resources/data/art5019injustice/recipes/raolite_recipe_1.json"
         ]
       },
-      "path": "~/Kryptonian"
+      "path": "~/Kryptonian/KryptonianMaterials"
     },
     {
       "name": "BlastingRaoliteRecipe1",
@@ -38463,7 +38463,7 @@
           "src/main/resources/data/art5019injustice/recipes/blasting_raolite_recipe_1.json"
         ]
       },
-      "path": "~/Kryptonian"
+      "path": "~/Kryptonian/KryptonianMaterials"
     },
     {
       "name": "SupermanKCSuit",
@@ -38493,7 +38493,7 @@
           "src/main/java/net/mcreator/artinjustice/item/KryptonianClothItem.java"
         ]
       },
-      "path": "~/Kryptonian"
+      "path": "~/Kryptonian/KryptonianMaterials"
     },
     {
       "name": "KryptonianClothRecipe",
@@ -56993,6 +56993,255 @@
         ]
       },
       "path": "~/Materials/Cobalt"
+    },
+    {
+      "name": "DeepslateLithium",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_lithium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/deepslate_lithium.json",
+          "src/main/resources/data/art5019injustice/worldgen/placed_feature/deepslate_lithium.json",
+          "src/main/resources/assets/art5019injustice/blockstates/deepslate_lithium.json",
+          "src/main/resources/data/art5019injustice/loot_tables/blocks/deepslate_lithium.json",
+          "src/main/java/net/mcreator/artinjustice/block/DeepslateLithiumBlock.java",
+          "src/main/resources/data/art5019injustice/worldgen/configured_feature/deepslate_lithium.json",
+          "src/main/resources/data/art5019injustice/forge/biome_modifier/deepslate_lithium_biome_modifier.json",
+          "src/main/resources/assets/art5019injustice/models/block/deepslate_lithium.json"
+        ]
+      },
+      "path": "~/Materials/Lithium"
+    },
+    {
+      "name": "RawLithium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_lithium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/raw_lithium.json",
+          "src/main/java/net/mcreator/artinjustice/item/RawLithiumItem.java"
+        ]
+      },
+      "path": "~/Materials/Lithium"
+    },
+    {
+      "name": "LithiumIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lithium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/lithium_ingot.json",
+          "src/main/java/net/mcreator/artinjustice/item/LithiumIngotItem.java"
+        ]
+      },
+      "path": "~/Materials/Lithium"
+    },
+    {
+      "name": "LithiumIngotSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lithium_ingot_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/lithium_ingot_smelting.json"
+        ]
+      },
+      "path": "~/Materials/Lithium"
+    },
+    {
+      "name": "LithiumDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lithium_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/lithium_dust.json",
+          "src/main/java/net/mcreator/artinjustice/item/LithiumDustItem.java"
+        ]
+      },
+      "path": "~/Materials/Lithium"
+    },
+    {
+      "name": "AlienCapacitorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alien_capacitor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/alien_capacitor_recipe.json"
+        ]
+      },
+      "path": "~/Electricity/Capacitors"
+    },
+    {
+      "name": "EndDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/end_dust.json",
+          "src/main/java/net/mcreator/artinjustice/item/EndDustItem.java"
+        ]
+      },
+      "path": "~/Materials"
+    },
+    {
+      "name": "IridiumDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iridium_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/iridium_dust.json",
+          "src/main/java/net/mcreator/artinjustice/item/IridiumDustItem.java"
+        ]
+      },
+      "path": "~/Materials/Iridium"
+    },
+    {
+      "name": "RawKryptium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_kryptium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/raw_kryptium.json",
+          "src/main/java/net/mcreator/artinjustice/item/RawKryptiumItem.java"
+        ]
+      },
+      "path": "~/Kryptonian/KryptonianMaterials"
+    },
+    {
+      "name": "KryptiumIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kryptium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/kryptium_ingot.json",
+          "src/main/java/net/mcreator/artinjustice/item/KryptiumIngotItem.java"
+        ]
+      },
+      "path": "~/Kryptonian/KryptonianMaterials"
+    },
+    {
+      "name": "KryptiumDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kryptium_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/kryptium_dust.json",
+          "src/main/java/net/mcreator/artinjustice/item/KryptiumDustItem.java"
+        ]
+      },
+      "path": "~/Kryptonian/KryptonianMaterials"
+    },
+    {
+      "name": "KryptiumSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kryptium_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/kryptium_smelting.json"
+        ]
+      },
+      "path": "~/Kryptonian/KryptonianMaterials"
+    },
+    {
+      "name": "KryptiumBlasting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kryptium_blasting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/kryptium_blasting.json"
+        ]
+      },
+      "path": "~/Kryptonian/KryptonianMaterials"
+    },
+    {
+      "name": "IsSunExposed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_sun_exposed",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/IsSunExposedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "KryptonianCapacitorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kryptonian_capacitor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/kryptonian_capacitor_recipe.json"
+        ]
+      },
+      "path": "~/Electricity/Capacitors"
+    },
+    {
+      "name": "ReturnCapacitorCapacity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_capacitor_capacity",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/ReturnCapacitorCapacityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Electricity/Capacitors"
     }
   ],
   "variable_elements": [
@@ -58915,7 +59164,12 @@
       "CUSTOM:VibraniumIngot",
       "CUSTOM:Kryptonite",
       "Items.COPPER_INGOT",
-      "CUSTOM:ZincIngot"
+      "CUSTOM:ZincIngot",
+      "CUSTOM:CobaltIngot",
+      "CUSTOM:LithiumIngot",
+      "CUSTOM:IridiumIngot",
+      "Items.ENDER_PEARL",
+      "CUSTOM:KryptiumIngot"
     ],
     "BLOCKS:minecraft:beacon_base_blocks": [
       "CUSTOM:RubyBlock",
@@ -58928,6 +59182,16 @@
       "Items.IRON_AXE",
       "Items.IRON_PICKAXE",
       "Items.WATER_BUCKET"
+    ],
+    "ITEMS:mod:tier_2_sawables": [
+      "Items.COPPER_INGOT",
+      "CUSTOM:ZincIngot",
+      "Items.GOLD_INGOT",
+      "CUSTOM:LeadIngot",
+      "Items.IRON_INGOT",
+      "CUSTOM:TitaniumIngot",
+      "CUSTOM:CobaltIngot",
+      "CUSTOM:LithiumIngot"
     ]
   },
   "tab_element_order": {},
@@ -59244,6 +59508,7 @@
       "advancements.spider_man_tm_suit.descr": "Sometimes to do what\u0027s right, we have to give up the thing we want the most.",
       "advancements.storm_when_hell_freezes_over.descr": "Create a hailstorm in the Nether",
       "item.art5019injustice.iron_spider_th_leggings": "Iron Spider Leggings",
+      "item.art5019injustice.end_dust": "Ender Dust",
       "item.art5019injustice.superman_lobotomy_icon": "Superman Lobotomy Icon",
       "advancements.st_neuro_adapted_body.title": "§eAdapted Body I",
       "item.art5019injustice.golden_capacitor": "Gold-Elektrum Capacitor",
@@ -59341,6 +59606,7 @@
       "advancements.green_effect_venus_fly_trap.descr": "This carnivorous plant usually can only hurt small creatures, but when powered up...",
       "item.art5019injustice.fabric_black": "Fabric Black",
       "gui.art5019injustice.power_gui_spiderman.label_spider_sense_30": "Spider Sense: 30%",
+      "item.art5019injustice.iridium_dust": "Iridium Dust",
       "item.minecraft.splash_potion.effect.scarecrow_stronger_formula": "Throwable Bottle of Scarecrow Formula",
       "advancements.st_superman_fall_imunity.title": "§fFall Immunity",
       "item.art5019injustice.atlantean_zombie_blood": "Syringe",
@@ -59588,6 +59854,7 @@
       "item.art5019injustice.blue_beetle_sonic_cannon": "Sonic Cannon",
       "gui.art5019injustice.chemistry_table_gui.label_fe_levels": "Fe Levels",
       "advancements.spider_organic_web.title": "§3Organic Web",
+      "block.art5019injustice.deepslate_lithium": "Deepslate Lithium",
       "item.art5019injustice.anti_x_gene": "Syringe",
       "advancements.stss_jump_boost.descr": "Passive - Jump Boost II",
       "item.art5019injustice.storm_black_suit_chestplate": "Storm Chestplate",
@@ -59622,6 +59889,7 @@
       "advancements.blood_on_your_hands.descr": "Put your hands on a piece of Human Remains",
       "advancements.blade_mastery.title": "Blade Mastery",
       "advancements.vpst_venom_base.title": "§6Skilltree",
+      "item.art5019injustice.kryptium_dust": "Kryptium Dust",
       "gui.art5019injustice.leadcase.label_lead_suitcase": "Lead suitcase",
       "advancements.better_tech.title": "Better Tech",
       "item.art5019injustice.sodium": "Sodium",
@@ -59751,6 +60019,7 @@
       "advancements.st_homelander_laser_vision.title": "§3Laser Vision",
       "item.art5019injustice.icon_metamaterial": "Icon Metamaterial",
       "advancements.spider_man_tm_suit.title": "Friendly Neighborhood Spider-Man",
+      "item.art5019injustice.raw_lithium": "Raw Lithium",
       "advancements.st_domio_hazard_channeling.title": "§3Hazard Channeling II",
       "gui.art5019injustice.chemistry_table_gui.label_pb_levels1": "Pb Levels:",
       "advancements.advanced_tech.descr": "Develop your first microchip",
@@ -60185,6 +60454,7 @@
       "advancements.quicksilver_dodge.descr": "Ability 4 - Quickly moves you to a random nearby spot, by repeating this move on a time span of less than one second of the first time, you\u0027ll be able to keep quick moving forward at the cost of some of your energy.",
       "advancements.trauma.title": "Trauma",
       "item.art5019injustice.webweaver_suit_helmet": "Webweaver Mask",
+      "item.art5019injustice.lithium_ingot": "Lithium Ingot",
       "effect.art5019injustice.kryptonite_poisoning": "Green Kryptonite Radiation",
       "gui.art5019injustice.merchandise_menu_vought_executive.label_as_inteligent_as_we_think_you_ar": "small contribuition in exchange of one of our best",
       "subtitles.entity.venom.dies": "Venom Dies",
@@ -60822,6 +61092,7 @@
       "advancements.the_path_of_light.title": "True Man\u0027s World",
       "advancements.the_amazing_spider_man.descr": "Every day I wake up knowing that the more people I try to save, the more enemies I will make",
       "advancements.defeat_stormfront.title": "Allies",
+      "item.art5019injustice.lithium_dust": "Lithium Dust",
       "item.art5019injustice.super_soldier_emblem": "Super Soldier Emblem",
       "advancements.st_superman_universal_understanding.title": "§eUniversal Understanding",
       "item.art5019injustice.condiment_gun": "Condiment Gun",
@@ -60956,6 +61227,7 @@
       "advancements.st_storm_hailstorm.descr": "§cAbility 4 - By creating a atmospheric pressure system, a hailstorm is builded around you",
       "advancements.iron_soldier_palladium.title": "Palladium Poisoning",
       "advancements.stss_strength.title": "Super Soldier Strength",
+      "item.art5019injustice.kryptium_ingot": "Kryptium Ingot",
       "item.art5019injustice.silver_shovel": "Silver Shovel",
       "biome.art5019injustice.phantom_zone_biome": "Phantom Zone",
       "advancements.defeat_red_skull.title": "Stronger than flags",
@@ -61010,6 +61282,7 @@
       "item.art5019injustice.negative_spiderman_suit_helmet": "Negative Spider-Man Mask",
       "painting.art5019injustice.neuro_painting_1.author": "Art5019",
       "entity.art5019injustice.art_the_unemployed": "Art the Unemployed",
+      "item.art5019injustice.raw_kryptium": "Kryptium",
       "gui.art5019injustice.today_problem.n1": "0",
       "item.art5019injustice.negative_spiderman_suit_leggings": "Negative Spider-Man Leggings",
       "item.art5019injustice.silver_hoe": "Silver Hoe",
@@ -61742,6 +62015,10 @@
           },
           {
             "name": "Zod",
+            "children": []
+          },
+          {
+            "name": "KryptonianMaterials",
             "children": []
           }
         ]

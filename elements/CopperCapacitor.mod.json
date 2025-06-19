@@ -30,7 +30,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [],
-      "name": "CopperCapacitorSpecialInformation"
+      "name": "ReturnCapacitorStorage"
     },
     "glowCondition": {
       "fixedValue": false

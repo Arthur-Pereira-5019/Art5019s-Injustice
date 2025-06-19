@@ -56939,6 +56939,176 @@
         ]
       },
       "path": "~/Materials/Cobalt"
+    },
+    {
+      "name": "CobaltIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/item/CobaltIngotItem.java",
+          "src/main/resources/assets/art5019injustice/models/item/cobalt_ingot.json"
+        ]
+      },
+      "path": "~/Materials/Cobalt"
+    },
+    {
+      "name": "CobaltIngotRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/cobalt_ingot_recipe.json"
+        ]
+      },
+      "path": "~/Materials/Cobalt"
+    },
+    {
+      "name": "CobaltIngotBlasting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_ingot_blasting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/cobalt_ingot_blasting.json"
+        ]
+      },
+      "path": "~/Materials/Cobalt"
+    },
+    {
+      "name": "CobaltDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/cobalt_dust.json",
+          "src/main/java/net/mcreator/artinjustice/item/CobaltDustItem.java"
+        ]
+      },
+      "path": "~/Materials/Cobalt"
+    },
+    {
+      "name": "DeepslateLithium",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_lithium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/deepslate_lithium.json",
+          "src/main/resources/data/art5019injustice/worldgen/placed_feature/deepslate_lithium.json",
+          "src/main/resources/assets/art5019injustice/blockstates/deepslate_lithium.json",
+          "src/main/resources/data/art5019injustice/loot_tables/blocks/deepslate_lithium.json",
+          "src/main/java/net/mcreator/artinjustice/block/DeepslateLithiumBlock.java",
+          "src/main/resources/data/art5019injustice/worldgen/configured_feature/deepslate_lithium.json",
+          "src/main/resources/data/art5019injustice/forge/biome_modifier/deepslate_lithium_biome_modifier.json",
+          "src/main/resources/assets/art5019injustice/models/block/deepslate_lithium.json"
+        ]
+      },
+      "path": "~/Materials/Lithium"
+    },
+    {
+      "name": "RawLithium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_lithium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/raw_lithium.json",
+          "src/main/java/net/mcreator/artinjustice/item/RawLithiumItem.java"
+        ]
+      },
+      "path": "~/Materials/Lithium"
+    },
+    {
+      "name": "LithiumIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lithium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/lithium_ingot.json",
+          "src/main/java/net/mcreator/artinjustice/item/LithiumIngotItem.java"
+        ]
+      },
+      "path": "~/Materials/Lithium"
+    },
+    {
+      "name": "LithiumIngotSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lithium_ingot_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/lithium_ingot_smelting.json"
+        ]
+      },
+      "path": "~/Materials/Lithium"
+    },
+    {
+      "name": "LithiumDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lithium_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/lithium_dust.json",
+          "src/main/java/net/mcreator/artinjustice/item/LithiumDustItem.java"
+        ]
+      },
+      "path": "~/Materials/Lithium"
+    },
+    {
+      "name": "AlienCapacitorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alien_capacitor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/alien_capacitor_recipe.json"
+        ]
+      },
+      "path": "~/Electricity/Capacitors"
+    },
+    {
+      "name": "EndDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/end_dust.json",
+          "src/main/java/net/mcreator/artinjustice/item/EndDustItem.java"
+        ]
+      },
+      "path": "~/Materials"
+    },
+    {
+      "name": "IridiumDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iridium_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/iridium_dust.json",
+          "src/main/java/net/mcreator/artinjustice/item/IridiumDustItem.java"
+        ]
+      },
+      "path": "~/Materials/Iridium"
     }
   ],
   "variable_elements": [
@@ -58861,7 +59031,10 @@
       "CUSTOM:VibraniumIngot",
       "CUSTOM:Kryptonite",
       "Items.COPPER_INGOT",
-      "CUSTOM:ZincIngot"
+      "CUSTOM:ZincIngot",
+      "CUSTOM:CobaltIngot",
+      "CUSTOM:LithiumIngot",
+      "CUSTOM:IridiumIngot"
     ],
     "BLOCKS:minecraft:beacon_base_blocks": [
       "CUSTOM:RubyBlock",
@@ -58874,6 +59047,16 @@
       "Items.IRON_AXE",
       "Items.IRON_PICKAXE",
       "Items.WATER_BUCKET"
+    ],
+    "ITEMS:mod:tier_2_sawables": [
+      "Items.COPPER_INGOT",
+      "CUSTOM:ZincIngot",
+      "Items.GOLD_INGOT",
+      "CUSTOM:LeadIngot",
+      "Items.IRON_INGOT",
+      "CUSTOM:TitaniumIngot",
+      "CUSTOM:CobaltIngot",
+      "CUSTOM:LithiumIngot"
     ]
   },
   "tab_element_order": {},
@@ -59035,6 +59218,7 @@
       "item.art5019injustice.space_stone": "§9Space Stone",
       "item.art5019injustice.long_golden_kryptonite_blade": "Long Golden Kryptonite Blade",
       "advancements.st_superman_kryptonite_resistance_ii.title": "§fKryptonite Resistance II",
+      "item.art5019injustice.cobalt_ingot": "Cobalt Ingot",
       "advancements.st_homelander_laser_vision.descr": "§bAbility 1 - By releasing heavy amounts of ions trough your eyes, the air quickly heats up turning into a powerful plasma beam.",
       "entity.art5019injustice.hydra_sniper": "Hydra Soldier (Sniper)",
       "item.art5019injustice.webweaver_suit_leggings": "Webweaver Leggings",
@@ -59189,6 +59373,7 @@
       "advancements.spider_man_tm_suit.descr": "Sometimes to do what\u0027s right, we have to give up the thing we want the most.",
       "advancements.storm_when_hell_freezes_over.descr": "Create a hailstorm in the Nether",
       "item.art5019injustice.iron_spider_th_leggings": "Iron Spider Leggings",
+      "item.art5019injustice.end_dust": "Ender Dust",
       "item.art5019injustice.superman_lobotomy_icon": "Superman Lobotomy Icon",
       "advancements.st_neuro_adapted_body.title": "§eAdapted Body I",
       "item.art5019injustice.golden_capacitor": "Gold-Elektrum Capacitor",
@@ -59260,6 +59445,7 @@
       "item.art5019injustice.upgrade_kit": "Upgrade Kit",
       "gui.art5019injustice.power_gui_spiderman.label_spiderman": "Spider Powers",
       "item.art5019injustice.blood_storm": "Syringe",
+      "item.art5019injustice.cobalt_dust": "Cobalt Dust",
       "painting.art5019injustice.tasm_2_painting.author": "Art5019",
       "advancements.st_neuro_energy_transmission.descr": "§ePassive - When attacking, there\u0027s a good chance to apply or even making longer the effect of electricity on the enemy. Requires Power Level 3",
       "item.art5019injustice.scarecrow_injection": "Syringe",
@@ -59285,6 +59471,7 @@
       "advancements.green_effect_venus_fly_trap.descr": "This carnivorous plant usually can only hurt small creatures, but when powered up...",
       "item.art5019injustice.fabric_black": "Fabric Black",
       "gui.art5019injustice.power_gui_spiderman.label_spider_sense_30": "Spider Sense: 30%",
+      "item.art5019injustice.iridium_dust": "Iridium Dust",
       "item.minecraft.splash_potion.effect.scarecrow_stronger_formula": "Throwable Bottle of Scarecrow Formula",
       "advancements.st_superman_fall_imunity.title": "§fFall Immunity",
       "item.art5019injustice.atlantean_zombie_blood": "Syringe",
@@ -59532,6 +59719,7 @@
       "item.art5019injustice.blue_beetle_sonic_cannon": "Sonic Cannon",
       "gui.art5019injustice.chemistry_table_gui.label_fe_levels": "Fe Levels",
       "advancements.spider_organic_web.title": "§3Organic Web",
+      "block.art5019injustice.deepslate_lithium": "Deepslate Lithium",
       "item.art5019injustice.anti_x_gene": "Syringe",
       "advancements.stss_jump_boost.descr": "Passive - Jump Boost II",
       "item.art5019injustice.storm_black_suit_chestplate": "Storm Chestplate",
@@ -59695,6 +59883,7 @@
       "advancements.st_homelander_laser_vision.title": "§3Laser Vision",
       "item.art5019injustice.icon_metamaterial": "Icon Metamaterial",
       "advancements.spider_man_tm_suit.title": "Friendly Neighborhood Spider-Man",
+      "item.art5019injustice.raw_lithium": "Raw Lithium",
       "advancements.st_domio_hazard_channeling.title": "§3Hazard Channeling II",
       "gui.art5019injustice.chemistry_table_gui.label_pb_levels1": "Pb Levels:",
       "advancements.advanced_tech.descr": "Develop your first microchip",
@@ -60129,6 +60318,7 @@
       "advancements.quicksilver_dodge.descr": "Ability 4 - Quickly moves you to a random nearby spot, by repeating this move on a time span of less than one second of the first time, you\u0027ll be able to keep quick moving forward at the cost of some of your energy.",
       "advancements.trauma.title": "Trauma",
       "item.art5019injustice.webweaver_suit_helmet": "Webweaver Mask",
+      "item.art5019injustice.lithium_ingot": "Lithium Ingot",
       "effect.art5019injustice.kryptonite_poisoning": "Green Kryptonite Radiation",
       "gui.art5019injustice.merchandise_menu_vought_executive.label_as_inteligent_as_we_think_you_ar": "small contribuition in exchange of one of our best",
       "subtitles.entity.venom.dies": "Venom Dies",
@@ -60766,6 +60956,7 @@
       "advancements.the_path_of_light.title": "True Man\u0027s World",
       "advancements.the_amazing_spider_man.descr": "Every day I wake up knowing that the more people I try to save, the more enemies I will make",
       "advancements.defeat_stormfront.title": "Allies",
+      "item.art5019injustice.lithium_dust": "Lithium Dust",
       "item.art5019injustice.super_soldier_emblem": "Super Soldier Emblem",
       "advancements.st_superman_universal_understanding.title": "§eUniversal Understanding",
       "item.art5019injustice.condiment_gun": "Condiment Gun",
@@ -61200,6 +61391,10 @@
           },
           {
             "name": "Cobalt",
+            "children": []
+          },
+          {
+            "name": "Lithium",
             "children": []
           }
         ]
