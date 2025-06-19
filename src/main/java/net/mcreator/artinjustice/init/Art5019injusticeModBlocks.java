@@ -14,6 +14,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.artinjustice.block.ZincOreBlock;
 import net.mcreator.artinjustice.block.YellowCattleyaBlock;
 import net.mcreator.artinjustice.block.WineOrchidBlock;
 import net.mcreator.artinjustice.block.WhiteOrchidBlock;
@@ -208,6 +209,7 @@ public class Art5019injusticeModBlocks {
 	public static final RegistryObject<Block> PUZZLE_BLOCK = REGISTRY.register("puzzle_block", () -> new PuzzleBlockBlock());
 	public static final RegistryObject<Block> ICE_LENSE = REGISTRY.register("ice_lense", () -> new IceLenseBlock());
 	public static final RegistryObject<Block> DWARF_STAR_BLOCK = REGISTRY.register("dwarf_star_block", () -> new DwarfStarBlockBlock());
+	public static final RegistryObject<Block> ZINC_ORE = REGISTRY.register("zinc_ore", () -> new ZincOreBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

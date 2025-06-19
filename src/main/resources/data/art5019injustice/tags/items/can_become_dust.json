@@ -10,6 +10,8 @@
     "minecraft:gold_ingot",
     "art5019injustice:elektrum_metal",
     "art5019injustice:vibranium_ingot",
-    "art5019injustice:kryptonite"
+    "art5019injustice:kryptonite",
+    "minecraft:copper_ingot",
+    "art5019injustice:zinc_ingot"
   ]
 }

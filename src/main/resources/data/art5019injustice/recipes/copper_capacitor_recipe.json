@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:nugget_lead"
+    },
+    "b": {
+      "item": "minecraft:copper_ingot"
+    },
+    "c": {
+      "item": "art5019injustice:copper_dust"
+    },
+    "d": {
+      "item": "art5019injustice:bottle_sulfuric_acid"
+    },
+    "e": {
+      "item": "art5019injustice:zinc_dust"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:copper_capacitor",
+    "count": 1
+  }
+}

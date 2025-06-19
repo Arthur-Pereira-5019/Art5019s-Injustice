@@ -56584,6 +56584,86 @@
           }
         ]
       }
+    },
+    {
+      "name": "RadiationMeasurerRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_measurer_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/RadiationMeasurerRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TransmutationTable"
+    },
+    {
+      "name": "CopperCapacitor",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_capacitor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/item/CopperCapacitorItem.java",
+          "src/main/resources/assets/art5019injustice/models/item/copper_capacitor.json"
+        ]
+      },
+      "path": "~/Electricity/Capacitors"
+    },
+    {
+      "name": "CopperCapacitorSpecialInformation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_capacitor_special_information",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/CopperCapacitorSpecialInformationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Electricity/Capacitors"
+    },
+    {
+      "name": "CopperCapacitorRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_capacitor_rightclicked_on_block"
     }
   ],
   "variable_elements": [
@@ -59529,6 +59609,7 @@
       "advancements.neuro_boost.descr": "Fast up your own body cycle using the power of the Neurological Boosts",
       "gui.art5019injustice.chemistry_table_gui.label_p_levels": "P Levels:",
       "advancements.poison_ivy_st_photosynthesis.descr": "§ePassive - By absorbing light, you\u0027re able to generate a huge amount of energy, which allows you to regenerate even more and to use your abilities faster.",
+      "item.art5019injustice.copper_capacitor": "Copper Capacitor",
       "advancements.st_dark_spider_sound_weakness.descr": "§ePassive - When taking sonic based damages, not only extra damage is taken, but also there\u0027s a great chance of your losting your Symbiote",
       "painting.art5019injustice.queen_maeve_painting.title": "Performing",
       "gui.art5019injustice.influence_menu_vought_executive.label_since_the_compoundv_is_our_most": "People seems to be forgetting your heroic",
@@ -61408,6 +61489,15 @@
       {
         "name": "TransmutationTable",
         "children": []
+      },
+      {
+        "name": "Electricity",
+        "children": [
+          {
+            "name": "Capacitors",
+            "children": []
+          }
+        ]
       }
     ]
   },

@@ -34,7 +34,7 @@ public class RadiationMeasurerRightclickedProcedure {
 						if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Art5019injusticeModBlocks.URANIUM_BLOCK.get()) {
 							foundRadiation = foundRadiation + 0.24;
 						} else if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Art5019injusticeModBlocks.TRANSMUTATION_TABLE.get()) {
-							foundRadiation = ReturnItemRadiationPointsProcedure.execute(new Object() {
+							foundRadiation = foundRadiation + ReturnItemRadiationPointsProcedure.execute(new Object() {
 								public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 									BlockEntity _ent = world.getBlockEntity(pos);

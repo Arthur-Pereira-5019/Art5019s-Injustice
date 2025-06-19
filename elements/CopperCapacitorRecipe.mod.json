@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:NuggetLead"
+      },
+      {
+        "value": "Items.COPPER_INGOT"
+      },
+      {
+        "value": "CUSTOM:NuggetLead"
+      },
+      {
+        "value": "CUSTOM:CopperDust"
+      },
+      {
+        "value": "CUSTOM:BottleSulfuricAcid"
+      },
+      {
+        "value": "CUSTOM:ZincDust"
+      },
+      {
+        "value": "Items.COPPER_INGOT"
+      },
+      {
+        "value": "Items.COPPER_INGOT"
+      },
+      {
+        "value": "Items.COPPER_INGOT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CopperCapacitor"
+    },
+    "name": "copper_capacitor_recipe",
+    "namespace": "mod"
+  }
+}

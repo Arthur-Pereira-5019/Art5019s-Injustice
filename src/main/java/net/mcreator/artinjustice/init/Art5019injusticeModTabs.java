@@ -181,6 +181,11 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.FINE_KRYPTONITE_BLADE.get());
 				tabData.accept(Art5019injusticeModItems.FINE_STEEL_BLADE.get());
 				tabData.accept(Art5019injusticeModItems.DWARF_STAR_SCRAP.get());
+				tabData.accept(Art5019injusticeModBlocks.ZINC_ORE.get().asItem());
+				tabData.accept(Art5019injusticeModItems.RAW_ZINC.get());
+				tabData.accept(Art5019injusticeModItems.ZINC_INGOT.get());
+				tabData.accept(Art5019injusticeModItems.ZINC_DUST.get());
+				tabData.accept(Art5019injusticeModItems.COPPER_DUST.get());
 			})
 
 					.build());
@@ -356,6 +361,7 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.GOLDEN_HAMMER.get());
 				tabData.accept(Art5019injusticeModItems.ZOD_BOSS_SPAWN_EGG.get());
 				tabData.accept(Art5019injusticeModItems.RADIATION_MEASURER.get());
+				tabData.accept(Art5019injusticeModItems.COPPER_CAPACITOR.get());
 			})
 
 					.build());

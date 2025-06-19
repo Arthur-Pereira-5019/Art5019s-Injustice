@@ -184,6 +184,26 @@ public class SawDustButtonProcedure {
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.GOLD_INGOT && power >= 2) {
 					tobecome = new ItemStack(Art5019injusticeModItems.GOLD_DUST.get());
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+						BlockEntity _ent = world.getBlockEntity(pos);
+						if (_ent != null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						return _retval.get();
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.COPPER_INGOT && power >= 2) {
+					tobecome = new ItemStack(Art5019injusticeModItems.COPPER_DUST.get());
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+						BlockEntity _ent = world.getBlockEntity(pos);
+						if (_ent != null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						return _retval.get();
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Art5019injusticeModItems.ZINC_INGOT.get() && power >= 2) {
+					tobecome = new ItemStack(Art5019injusticeModItems.ZINC_DUST.get());
 				} else {
 					works = false;
 				}

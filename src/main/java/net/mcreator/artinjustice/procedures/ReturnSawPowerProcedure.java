@@ -37,7 +37,8 @@ public class ReturnSawPowerProcedure {
 				return _retval.get();
 			}
 		}.getItemStack(world, BlockPos.containing(x, y, z), 0));
-		if (compareto.getItem() == Art5019injusticeModItems.TITANIUM_INGOT.get() || compareto.getItem() == Items.IRON_INGOT || compareto.getItem() == Art5019injusticeModItems.LEAD_INGOT.get() || compareto.getItem() == Items.GOLD_INGOT) {
+		if (compareto.getItem() == Art5019injusticeModItems.TITANIUM_INGOT.get() || compareto.getItem() == Items.IRON_INGOT || compareto.getItem() == Art5019injusticeModItems.LEAD_INGOT.get() || compareto.getItem() == Items.GOLD_INGOT
+				|| compareto.getItem() == Art5019injusticeModItems.ZINC_INGOT.get() || compareto.getItem() == Items.COPPER_INGOT) {
 			sawingpower = 2;
 		} else if (compareto.getItem() == Items.COAL) {
 			sawingpower = 1;

@@ -56584,6 +56584,229 @@
           }
         ]
       }
+    },
+    {
+      "name": "RadiationMeasurerRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_measurer_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/RadiationMeasurerRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TransmutationTable"
+    },
+    {
+      "name": "CopperCapacitor",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_capacitor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/item/CopperCapacitorItem.java",
+          "src/main/resources/assets/art5019injustice/models/item/copper_capacitor.json"
+        ]
+      },
+      "path": "~/Electricity/Capacitors"
+    },
+    {
+      "name": "CopperCapacitorSpecialInformation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_capacitor_special_information",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/CopperCapacitorSpecialInformationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Electricity/Capacitors"
+    },
+    {
+      "name": "CopperCapacitorRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_capacitor_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/CopperCapacitorRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZincOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/loot_tables/blocks/zinc_ore.json",
+          "src/main/resources/assets/art5019injustice/models/item/zinc_ore.json",
+          "src/main/resources/assets/art5019injustice/models/block/zinc_ore.json",
+          "src/main/java/net/mcreator/artinjustice/block/ZincOreBlock.java",
+          "src/main/resources/assets/art5019injustice/blockstates/zinc_ore.json"
+        ]
+      },
+      "path": "~/Materials/Zinc"
+    },
+    {
+      "name": "RawZinc",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_zinc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/raw_zinc.json",
+          "src/main/java/net/mcreator/artinjustice/item/RawZincItem.java"
+        ]
+      },
+      "path": "~/Materials/Zinc"
+    },
+    {
+      "name": "ZincOreLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_ore_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/loot_tables/blocks/zinc_ore.json"
+        ]
+      },
+      "path": "~/Materials/Zinc"
+    },
+    {
+      "name": "ZincIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/zinc_ingot.json",
+          "src/main/java/net/mcreator/artinjustice/item/ZincIngotItem.java"
+        ]
+      },
+      "path": "~/Materials/Zinc"
+    },
+    {
+      "name": "ZincIngotBurning",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_ingot_burning",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/zinc_ingot_burning.json"
+        ]
+      },
+      "path": "~/Materials/Zinc"
+    },
+    {
+      "name": "ZincIngotBlasting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_ingot_blasting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/zinc_ingot_blasting.json"
+        ]
+      },
+      "path": "~/Materials/Zinc"
+    },
+    {
+      "name": "ZincDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/zinc_dust.json",
+          "src/main/java/net/mcreator/artinjustice/item/ZincDustItem.java"
+        ]
+      },
+      "path": "~/Materials/Zinc"
+    },
+    {
+      "name": "CopperDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_dust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/item/CopperDustItem.java",
+          "src/main/resources/assets/art5019injustice/models/item/copper_dust.json"
+        ]
+      },
+      "path": "~/Electricity"
     }
   ],
   "variable_elements": [
@@ -59435,6 +59658,7 @@
       "advancements.st_iron_soldier_base.descr": "-Iron Soldier",
       "item.art5019injustice.kryptonite_blade": "Kryptonite Blade",
       "advancements.st_scarecrow_nightmare_speed.title": "§fNightmarish Speed",
+      "item.art5019injustice.zinc_dust": "Zinc Dust",
       "advancements.domino_become.descr": "Everything usually works out for me.",
       "block.art5019injustice.rubik_cube": "Rubik\u0027s Cube",
       "item.minecraft.tipped_arrow.effect.scarecrow_formula": "Arrow of Scarecrow Formula",
@@ -59479,6 +59703,7 @@
       "item.art5019injustice.fabric_light_blue": "Light Blue Fabric",
       "item.art5019injustice.laser_device": "Laser Device",
       "advancements.defeat_scarecrow.title": "Stronger than Fear",
+      "item.art5019injustice.zinc_ingot": "Zinc Ingot",
       "advancements.st_neuro_extreme_jump_start.title": "§5Ultimate: Extreme Jump-Start",
       "advancements.st_dark_spider_wall_crawling.title": "§eWall Crawling",
       "item.art5019injustice.domino_suit_chestplate": "Domino Chestplate",
@@ -59529,6 +59754,7 @@
       "advancements.neuro_boost.descr": "Fast up your own body cycle using the power of the Neurological Boosts",
       "gui.art5019injustice.chemistry_table_gui.label_p_levels": "P Levels:",
       "advancements.poison_ivy_st_photosynthesis.descr": "§ePassive - By absorbing light, you\u0027re able to generate a huge amount of energy, which allows you to regenerate even more and to use your abilities faster.",
+      "item.art5019injustice.copper_capacitor": "Copper Capacitor",
       "advancements.st_dark_spider_sound_weakness.descr": "§ePassive - When taking sonic based damages, not only extra damage is taken, but also there\u0027s a great chance of your losting your Symbiote",
       "painting.art5019injustice.queen_maeve_painting.title": "Performing",
       "gui.art5019injustice.influence_menu_vought_executive.label_since_the_compoundv_is_our_most": "People seems to be forgetting your heroic",
@@ -59650,6 +59876,7 @@
       "item.art5019injustice.glass_lenses": "Glass Lenses",
       "item.art5019injustice.ak_47": "AK-47",
       "advancements.vpst_vision.title": "Symbiote Eyes",
+      "item.art5019injustice.copper_dust": "Copper Dust",
       "advancements.st_homelander_fall_immunity.descr": "§ePassive - Your extreme Resistance together with the ability to control your momentum in the air, makes your body immune to being hurt on falls.",
       "item.art5019injustice.golden_kryptonite_knife": "Tactical Knife",
       "advancements.superman_golden_kryptonite.title": "I\u0027ll be Back",
@@ -60540,6 +60767,7 @@
       "advancements.st_dark_spider_phenylalanine.title": "§3Phenylalanine Hunger",
       "item.art5019injustice.special_spider_spawn_egg": "Special Spider Spawn Egg",
       "advancements.alignment_hero.descr": "And I must stand for those who can\u0027t protect itself",
+      "block.art5019injustice.zinc_ore": "Zinc Ore",
       "advancements.iron_soldier_power_source.descr": "Passive - The ARC reactor allows you to merge with different high tech suits",
       "advancements.green_effect_vine.descr": "Despite The Red efforts, their cities cannot live without the trees, whose with enough time are able to conquer their space again.",
       "item.art5019injustice.pistol_upgrade_silencer": "Silencer",
@@ -60639,6 +60867,7 @@
       "item.art5019injustice.hope_heart": "Hope Heart",
       "gui.art5019injustice.influence_menu_vought_executive.label_are_10_of_those_im_sure_someon": "whenever they think about heroes.",
       "item.art5019injustice.kryptonite_nanites": "Kryptonite Nanites",
+      "item.art5019injustice.raw_zinc": "Raw Zinc",
       "advancements.st_scarecrow_fear_sense.descr": "§6Ability 3 - Depending on the fear of nearby entities, extra powerups can be given to you. Requires a minimum level of Fear nearby to work. Cooldown depends on the power acquired.",
       "advancements.st_superman_fly.descr": "§bAbility 3 - By changing even more your body mass properties, you\u0027re able to propel yourself towards anything, to anywhere, everywhere. [Requires 1,5 Weeks of Solar Energy. Doesn\u0027t consume. Toggle trough flight levels by sneaking. Flight Speed scales with the amount of Solar Energy stored.]",
       "advancements.we_have_to_cook.descr": "Place a furnace into the world",
@@ -60823,6 +61052,10 @@
           },
           {
             "name": "DwarfStar",
+            "children": []
+          },
+          {
+            "name": "Zinc",
             "children": []
           }
         ]
@@ -61408,6 +61641,15 @@
       {
         "name": "TransmutationTable",
         "children": []
+      },
+      {
+        "name": "Electricity",
+        "children": [
+          {
+            "name": "Capacitors",
+            "children": []
+          }
+        ]
       }
     ]
   },

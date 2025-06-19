@@ -28,6 +28,8 @@ import net.mcreator.artinjustice.procedures.FrequencyEmitterTNTPropertyValueProv
 import net.mcreator.artinjustice.procedures.CondimentGunPropertyValueProviderProcedure;
 import net.mcreator.artinjustice.procedures.CondimentGunPropertyValueProvider2Procedure;
 import net.mcreator.artinjustice.item.ZodArmorItem;
+import net.mcreator.artinjustice.item.ZincIngotItem;
+import net.mcreator.artinjustice.item.ZincDustItem;
 import net.mcreator.artinjustice.item.YinYangIconItem;
 import net.mcreator.artinjustice.item.YeastItem;
 import net.mcreator.artinjustice.item.YangItem;
@@ -203,6 +205,7 @@ import net.mcreator.artinjustice.item.RepulsorItem;
 import net.mcreator.artinjustice.item.RedKryptonitePillsItem;
 import net.mcreator.artinjustice.item.RedKryptoniteItem;
 import net.mcreator.artinjustice.item.RedKevlarItem;
+import net.mcreator.artinjustice.item.RawZincItem;
 import net.mcreator.artinjustice.item.RawSilverItem;
 import net.mcreator.artinjustice.item.RawAtlanteanGoldItem;
 import net.mcreator.artinjustice.item.RaoliteItem;
@@ -490,6 +493,8 @@ import net.mcreator.artinjustice.item.DeadpoolIconItem;
 import net.mcreator.artinjustice.item.DeadpoolBloodItem;
 import net.mcreator.artinjustice.item.CriminalBundleItem;
 import net.mcreator.artinjustice.item.CopperWiringItem;
+import net.mcreator.artinjustice.item.CopperDustItem;
+import net.mcreator.artinjustice.item.CopperCapacitorItem;
 import net.mcreator.artinjustice.item.ContaminedWaterSyringeItem;
 import net.mcreator.artinjustice.item.ContaminedWaterItem;
 import net.mcreator.artinjustice.item.ContaminedWaterBottleItem;
@@ -1459,6 +1464,12 @@ public class Art5019injusticeModItems {
 	public static final RegistryObject<Item> ZOD_ARMOR_BOOTS = REGISTRY.register("zod_armor_boots", () -> new ZodArmorItem.Boots());
 	public static final RegistryObject<Item> ZOD_BOSS_SPAWN_EGG = REGISTRY.register("zod_boss_spawn_egg", () -> new ForgeSpawnEggItem(Art5019injusticeModEntities.ZOD_BOSS, -13553359, -9306112, new Item.Properties()));
 	public static final RegistryObject<Item> RADIATION_MEASURER = REGISTRY.register("radiation_measurer", () -> new RadiationMeasurerItem());
+	public static final RegistryObject<Item> COPPER_CAPACITOR = REGISTRY.register("copper_capacitor", () -> new CopperCapacitorItem());
+	public static final RegistryObject<Item> ZINC_ORE = block(Art5019injusticeModBlocks.ZINC_ORE);
+	public static final RegistryObject<Item> RAW_ZINC = REGISTRY.register("raw_zinc", () -> new RawZincItem());
+	public static final RegistryObject<Item> ZINC_INGOT = REGISTRY.register("zinc_ingot", () -> new ZincIngotItem());
+	public static final RegistryObject<Item> ZINC_DUST = REGISTRY.register("zinc_dust", () -> new ZincDustItem());
+	public static final RegistryObject<Item> COPPER_DUST = REGISTRY.register("copper_dust", () -> new CopperDustItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
