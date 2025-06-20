@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "art5019injustice:copper_capacitor",
+    "art5019injustice:golden_capacitor",
+    "art5019injustice:lithium_cobalt_capacitor",
+    "art5019injustice:alien_capacitor",
+    "art5019injustice:kryptonian_capacitor"
+  ]
+}

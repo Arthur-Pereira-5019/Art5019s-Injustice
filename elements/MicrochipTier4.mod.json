@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "microchip",
+    "texture": "microchiptier4",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
     "name": "Microchip",
-    "rarity": "COMMON",
+    "rarity": "UNCOMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:Art5019InjusticeMaterials"
@@ -29,7 +29,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Alien"
+      ]
     },
     "glowCondition": {
       "fixedValue": false

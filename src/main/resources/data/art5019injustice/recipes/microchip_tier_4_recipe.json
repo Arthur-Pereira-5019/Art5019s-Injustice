@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "art5019injustice:microchip_tier_3"
+    },
+    "b": {
+      "item": "minecraft:echo_shard"
+    },
+    "c": {
+      "item": "art5019injustice:iridium_ingot"
+    }
+  },
+  "result": {
+    "item": "art5019injustice:microchip_tier_4",
+    "count": 1
+  }
+}

@@ -64,6 +64,7 @@ import net.mcreator.artinjustice.block.PuzzleBlockBlock;
 import net.mcreator.artinjustice.block.PurpleOrchidBlock;
 import net.mcreator.artinjustice.block.PricklyPathBlock;
 import net.mcreator.artinjustice.block.PoisonIvyBlock;
+import net.mcreator.artinjustice.block.PhantomZoneProjectorBlockBlock;
 import net.mcreator.artinjustice.block.PetroleumBlock;
 import net.mcreator.artinjustice.block.PetriTableBlockBlock;
 import net.mcreator.artinjustice.block.PepperStageFinalBlock;
@@ -214,6 +215,7 @@ public class Art5019injusticeModBlocks {
 	public static final RegistryObject<Block> ZINC_ORE = REGISTRY.register("zinc_ore", () -> new ZincOreBlock());
 	public static final RegistryObject<Block> COBALT = REGISTRY.register("cobalt", () -> new CobaltBlock());
 	public static final RegistryObject<Block> DEEPSLATE_LITHIUM = REGISTRY.register("deepslate_lithium", () -> new DeepslateLithiumBlock());
+	public static final RegistryObject<Block> PHANTOM_ZONE_PROJECTOR_BLOCK = REGISTRY.register("phantom_zone_projector_block", () -> new PhantomZoneProjectorBlockBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

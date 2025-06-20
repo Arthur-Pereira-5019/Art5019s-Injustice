@@ -26,6 +26,7 @@ import net.mcreator.artinjustice.world.inventory.SawmillGuiMenu;
 import net.mcreator.artinjustice.world.inventory.QuicksilverQuickTravelGUIMenu;
 import net.mcreator.artinjustice.world.inventory.PowerGuiSpidermanMenu;
 import net.mcreator.artinjustice.world.inventory.PowerGuiPeakHumanMenu;
+import net.mcreator.artinjustice.world.inventory.PhantomZoneProjectorGuiMenu;
 import net.mcreator.artinjustice.world.inventory.PetriTableGuiMenu;
 import net.mcreator.artinjustice.world.inventory.MicroscopeGUIMenu;
 import net.mcreator.artinjustice.world.inventory.MerchandiseMenuVoughtExecutiveMenu;
@@ -73,4 +74,5 @@ public class Art5019injusticeModMenus {
 	public static final RegistryObject<MenuType<TodayProblemBackupMenu>> TODAY_PROBLEM_BACKUP = REGISTRY.register("today_problem_backup", () -> IForgeMenuType.create(TodayProblemBackupMenu::new));
 	public static final RegistryObject<MenuType<TransmutationGUIMenu>> TRANSMUTATION_GUI = REGISTRY.register("transmutation_gui", () -> IForgeMenuType.create(TransmutationGUIMenu::new));
 	public static final RegistryObject<MenuType<QuicksilverQuickTravelGUIMenu>> QUICKSILVER_QUICK_TRAVEL_GUI = REGISTRY.register("quicksilver_quick_travel_gui", () -> IForgeMenuType.create(QuicksilverQuickTravelGUIMenu::new));
+	public static final RegistryObject<MenuType<PhantomZoneProjectorGuiMenu>> PHANTOM_ZONE_PROJECTOR_GUI = REGISTRY.register("phantom_zone_projector_gui", () -> IForgeMenuType.create(PhantomZoneProjectorGuiMenu::new));
 }

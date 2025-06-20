@@ -500,7 +500,7 @@
           "src/main/java/net/mcreator/artinjustice/item/MicrochipItem.java"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "SiliconeMetal",
@@ -540,7 +540,7 @@
           "src/main/resources/data/art5019injustice/recipes/microchip_recipe.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "SewingKit",
@@ -2317,7 +2317,7 @@
           "src/main/java/net/mcreator/artinjustice/item/MicrochipTier3Item.java"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "MicrochipTier3Recipe",
@@ -2330,7 +2330,7 @@
           "src/main/resources/data/art5019injustice/recipes/microchip_tier_3_recipe.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "ChemistryTable",
@@ -5494,7 +5494,7 @@
           "src/main/java/net/mcreator/artinjustice/item/MicrochipAIItem.java"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "UpgradeKit",
@@ -5626,7 +5626,7 @@
           "src/main/java/net/mcreator/artinjustice/item/MicrochipHeaterItem.java"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "MicrochipHeaterRecipe",
@@ -5639,7 +5639,7 @@
           "src/main/resources/data/art5019injustice/recipes/microchip_heater_recipe.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "SpiderManTH2BootsRecipe",
@@ -5786,7 +5786,7 @@
           "src/main/resources/assets/art5019injustice/models/item/microchip_cooler.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "MicrochipCoolerRecipe",
@@ -5799,7 +5799,7 @@
           "src/main/resources/data/art5019injustice/recipes/microchip_cooler_recipe.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "TechLenses",
@@ -15528,7 +15528,7 @@
           "src/main/java/net/mcreator/artinjustice/item/MicrochipAI2Item.java"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "MicrochipAI3",
@@ -15542,7 +15542,7 @@
           "src/main/resources/assets/art5019injustice/models/item/microchip_ai_3.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "MicrochipAI4",
@@ -15556,7 +15556,7 @@
           "src/main/resources/assets/art5019injustice/models/item/microchip_ai_4.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "MicrochipAI5",
@@ -15570,7 +15570,7 @@
           "src/main/java/net/mcreator/artinjustice/item/MicrochipAI5Item.java"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "UpgradeComputerButtonRightClicked",
@@ -57242,6 +57242,26 @@
         ]
       },
       "path": "~/Electricity/Capacitors"
+    },
+    {
+      "name": "ReturnCapacitorStorage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_capacitor_storage",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/ReturnCapacitorStorageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Electricity/Capacitors"
     }
   ],
   "variable_elements": [
@@ -61533,6 +61553,10 @@
           },
           {
             "name": "Lithium",
+            "children": []
+          },
+          {
+            "name": "Microchips",
             "children": []
           }
         ]

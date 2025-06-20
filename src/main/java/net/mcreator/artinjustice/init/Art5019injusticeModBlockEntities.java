@@ -15,6 +15,7 @@ import net.mcreator.artinjustice.block.entity.TransmutationTableBlockEntity;
 import net.mcreator.artinjustice.block.entity.SignalMachineBlockEntity;
 import net.mcreator.artinjustice.block.entity.SawmillBlockEntity;
 import net.mcreator.artinjustice.block.entity.PuzzleBlockBlockEntity;
+import net.mcreator.artinjustice.block.entity.PhantomZoneProjectorBlockBlockEntity;
 import net.mcreator.artinjustice.block.entity.PetriTableBlockBlockEntity;
 import net.mcreator.artinjustice.block.entity.MicroscopeBlockEntity;
 import net.mcreator.artinjustice.block.entity.MeteoriteBlockEntity;
@@ -37,6 +38,7 @@ public class Art5019injusticeModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> PETRI_TABLE_BLOCK = register("petri_table_block", Art5019injusticeModBlocks.PETRI_TABLE_BLOCK, PetriTableBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> TRANSMUTATION_TABLE = register("transmutation_table", Art5019injusticeModBlocks.TRANSMUTATION_TABLE, TransmutationTableBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> PUZZLE_BLOCK = register("puzzle_block", Art5019injusticeModBlocks.PUZZLE_BLOCK, PuzzleBlockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> PHANTOM_ZONE_PROJECTOR_BLOCK = register("phantom_zone_projector_block", Art5019injusticeModBlocks.PHANTOM_ZONE_PROJECTOR_BLOCK, PhantomZoneProjectorBlockBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

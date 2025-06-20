@@ -279,6 +279,7 @@ import net.mcreator.artinjustice.item.MissileRangedItem;
 import net.mcreator.artinjustice.item.MissileItem;
 import net.mcreator.artinjustice.item.MineralExtractionFormulaItem;
 import net.mcreator.artinjustice.item.MindStoneItem;
+import net.mcreator.artinjustice.item.MicrochipTier4Item;
 import net.mcreator.artinjustice.item.MicrochipTier3Item;
 import net.mcreator.artinjustice.item.MicrochipItem;
 import net.mcreator.artinjustice.item.MicrochipHeaterItem;
@@ -1502,6 +1503,8 @@ public class Art5019injusticeModItems {
 	public static final RegistryObject<Item> RAW_KRYPTIUM = REGISTRY.register("raw_kryptium", () -> new RawKryptiumItem());
 	public static final RegistryObject<Item> KRYPTIUM_INGOT = REGISTRY.register("kryptium_ingot", () -> new KryptiumIngotItem());
 	public static final RegistryObject<Item> KRYPTIUM_DUST = REGISTRY.register("kryptium_dust", () -> new KryptiumDustItem());
+	public static final RegistryObject<Item> MICROCHIP_TIER_4 = REGISTRY.register("microchip_tier_4", () -> new MicrochipTier4Item());
+	public static final RegistryObject<Item> PHANTOM_ZONE_PROJECTOR_BLOCK = block(Art5019injusticeModBlocks.PHANTOM_ZONE_PROJECTOR_BLOCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -26,6 +26,7 @@ import net.mcreator.artinjustice.client.gui.SawmillGuiScreen;
 import net.mcreator.artinjustice.client.gui.QuicksilverQuickTravelGUIScreen;
 import net.mcreator.artinjustice.client.gui.PowerGuiSpidermanScreen;
 import net.mcreator.artinjustice.client.gui.PowerGuiPeakHumanScreen;
+import net.mcreator.artinjustice.client.gui.PhantomZoneProjectorGuiScreen;
 import net.mcreator.artinjustice.client.gui.PetriTableGuiScreen;
 import net.mcreator.artinjustice.client.gui.MicroscopeGUIScreen;
 import net.mcreator.artinjustice.client.gui.MerchandiseMenuVoughtExecutiveScreen;
@@ -75,6 +76,7 @@ public class Art5019injusticeModScreens {
 			MenuScreens.register(Art5019injusticeModMenus.TODAY_PROBLEM_BACKUP.get(), TodayProblemBackupScreen::new);
 			MenuScreens.register(Art5019injusticeModMenus.TRANSMUTATION_GUI.get(), TransmutationGUIScreen::new);
 			MenuScreens.register(Art5019injusticeModMenus.QUICKSILVER_QUICK_TRAVEL_GUI.get(), QuicksilverQuickTravelGUIScreen::new);
+			MenuScreens.register(Art5019injusticeModMenus.PHANTOM_ZONE_PROJECTOR_GUI.get(), PhantomZoneProjectorGuiScreen::new);
 		});
 	}
 }

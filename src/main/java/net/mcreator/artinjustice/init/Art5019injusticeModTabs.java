@@ -197,6 +197,7 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModItems.END_DUST.get());
 				tabData.accept(Art5019injusticeModItems.IRIDIUM_DUST.get());
 				tabData.accept(Art5019injusticeModItems.RAW_KRYPTIUM.get());
+				tabData.accept(Art5019injusticeModItems.MICROCHIP_TIER_4.get());
 			})
 
 					.build());
@@ -497,6 +498,7 @@ public class Art5019injusticeModTabs {
 				tabData.accept(Art5019injusticeModBlocks.COPPER_ELECTRIFIER.get().asItem());
 				tabData.accept(Art5019injusticeModBlocks.ICE_LENSE.get().asItem());
 				tabData.accept(Art5019injusticeModBlocks.DWARF_STAR_BLOCK.get().asItem());
+				tabData.accept(Art5019injusticeModBlocks.PHANTOM_ZONE_PROJECTOR_BLOCK.get().asItem());
 			})
 
 					.build());

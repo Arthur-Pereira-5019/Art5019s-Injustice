@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "art5019injustice:block/kryptium_block",
+    "up": "art5019injustice:block/kryptium_block",
+    "north": "art5019injustice:block/phantom_zone_projector",
+    "east": "art5019injustice:block/kryptium_block",
+    "south": "art5019injustice:block/kryptium_block",
+    "west": "art5019injustice:block/kryptium_block",
+    "particle": "art5019injustice:block/kryptium_block"
+  },
+  "render_type": "solid"
+}

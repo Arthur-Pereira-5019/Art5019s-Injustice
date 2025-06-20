@@ -500,7 +500,7 @@
           "src/main/java/net/mcreator/artinjustice/item/MicrochipItem.java"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "SiliconeMetal",
@@ -540,7 +540,7 @@
           "src/main/resources/data/art5019injustice/recipes/microchip_recipe.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "SewingKit",
@@ -2290,7 +2290,7 @@
           "src/main/java/net/mcreator/artinjustice/item/AdvancedCircuitBoardItem.java"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "AdvancedCircuitBoardRecipe",
@@ -2303,7 +2303,7 @@
           "src/main/resources/data/art5019injustice/recipes/advanced_circuit_board_recipe.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "MicrochipTier3",
@@ -2317,7 +2317,7 @@
           "src/main/java/net/mcreator/artinjustice/item/MicrochipTier3Item.java"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "MicrochipTier3Recipe",
@@ -2330,7 +2330,7 @@
           "src/main/resources/data/art5019injustice/recipes/microchip_tier_3_recipe.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "ChemistryTable",
@@ -5494,7 +5494,7 @@
           "src/main/java/net/mcreator/artinjustice/item/MicrochipAIItem.java"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "UpgradeKit",
@@ -5593,7 +5593,7 @@
           "src/main/resources/data/art5019injustice/recipes/ai_chip_recipe.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "HookScytheItemIsCraftedsmelted",
@@ -5626,7 +5626,7 @@
           "src/main/java/net/mcreator/artinjustice/item/MicrochipHeaterItem.java"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "MicrochipHeaterRecipe",
@@ -5639,7 +5639,7 @@
           "src/main/resources/data/art5019injustice/recipes/microchip_heater_recipe.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "SpiderManTH2BootsRecipe",
@@ -5786,7 +5786,7 @@
           "src/main/resources/assets/art5019injustice/models/item/microchip_cooler.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "MicrochipCoolerRecipe",
@@ -5799,7 +5799,7 @@
           "src/main/resources/data/art5019injustice/recipes/microchip_cooler_recipe.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "TechLenses",
@@ -15528,7 +15528,7 @@
           "src/main/java/net/mcreator/artinjustice/item/MicrochipAI2Item.java"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "MicrochipAI3",
@@ -15542,7 +15542,7 @@
           "src/main/resources/assets/art5019injustice/models/item/microchip_ai_3.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "MicrochipAI4",
@@ -15556,7 +15556,7 @@
           "src/main/resources/assets/art5019injustice/models/item/microchip_ai_4.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "MicrochipAI5",
@@ -15570,7 +15570,7 @@
           "src/main/java/net/mcreator/artinjustice/item/MicrochipAI5Item.java"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Materials/Microchips"
     },
     {
       "name": "UpgradeComputerButtonRightClicked",
@@ -38437,7 +38437,7 @@
           "src/main/resources/assets/art5019injustice/models/item/raolite.json"
         ]
       },
-      "path": "~/Kryptonian/Materials"
+      "path": "~/Kryptonian/KryptonianMaterials"
     },
     {
       "name": "RaoliteRecipe1",
@@ -38450,7 +38450,7 @@
           "src/main/resources/data/art5019injustice/recipes/raolite_recipe_1.json"
         ]
       },
-      "path": "~/Kryptonian"
+      "path": "~/Kryptonian/KryptonianMaterials"
     },
     {
       "name": "BlastingRaoliteRecipe1",
@@ -38463,7 +38463,7 @@
           "src/main/resources/data/art5019injustice/recipes/blasting_raolite_recipe_1.json"
         ]
       },
-      "path": "~/Kryptonian"
+      "path": "~/Kryptonian/KryptonianMaterials"
     },
     {
       "name": "SupermanKCSuit",
@@ -38493,7 +38493,7 @@
           "src/main/java/net/mcreator/artinjustice/item/KryptonianClothItem.java"
         ]
       },
-      "path": "~/Kryptonian/Materials"
+      "path": "~/Kryptonian/KryptonianMaterials"
     },
     {
       "name": "KryptonianClothRecipe",
@@ -57109,6 +57109,186 @@
         ]
       },
       "path": "~/Materials/Iridium"
+    },
+    {
+      "name": "RawKryptium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_kryptium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/raw_kryptium.json",
+          "src/main/java/net/mcreator/artinjustice/item/RawKryptiumItem.java"
+        ]
+      },
+      "path": "~/Kryptonian/KryptonianMaterials"
+    },
+    {
+      "name": "KryptiumIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kryptium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/kryptium_ingot.json",
+          "src/main/java/net/mcreator/artinjustice/item/KryptiumIngotItem.java"
+        ]
+      },
+      "path": "~/Kryptonian/KryptonianMaterials"
+    },
+    {
+      "name": "KryptiumDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kryptium_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/art5019injustice/models/item/kryptium_dust.json",
+          "src/main/java/net/mcreator/artinjustice/item/KryptiumDustItem.java"
+        ]
+      },
+      "path": "~/Kryptonian/KryptonianMaterials"
+    },
+    {
+      "name": "KryptiumSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kryptium_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/kryptium_smelting.json"
+        ]
+      },
+      "path": "~/Kryptonian/KryptonianMaterials"
+    },
+    {
+      "name": "KryptiumBlasting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kryptium_blasting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/kryptium_blasting.json"
+        ]
+      },
+      "path": "~/Kryptonian/KryptonianMaterials"
+    },
+    {
+      "name": "IsSunExposed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_sun_exposed",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/IsSunExposedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "KryptonianCapacitorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kryptonian_capacitor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/kryptonian_capacitor_recipe.json"
+        ]
+      },
+      "path": "~/Electricity/Capacitors"
+    },
+    {
+      "name": "ReturnCapacitorCapacity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_capacitor_capacity",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/ReturnCapacitorCapacityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Electricity/Capacitors"
+    },
+    {
+      "name": "ReturnCapacitorStorage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_capacitor_storage",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/ReturnCapacitorStorageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Electricity/Capacitors"
+    },
+    {
+      "name": "MicrochipTier4",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "microchip_tier_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/item/MicrochipTier4Item.java",
+          "src/main/resources/assets/art5019injustice/models/item/microchip_tier_4.json"
+        ]
+      },
+      "path": "~/Materials/Microchips"
+    },
+    {
+      "name": "MicrochipTier4Recipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "microchip_tier_4_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/art5019injustice/recipes/microchip_tier_4_recipe.json"
+        ]
+      },
+      "path": "~/Materials/Microchips"
     }
   ],
   "variable_elements": [
@@ -59034,7 +59214,9 @@
       "CUSTOM:ZincIngot",
       "CUSTOM:CobaltIngot",
       "CUSTOM:LithiumIngot",
-      "CUSTOM:IridiumIngot"
+      "CUSTOM:IridiumIngot",
+      "Items.ENDER_PEARL",
+      "CUSTOM:KryptiumIngot"
     ],
     "BLOCKS:minecraft:beacon_base_blocks": [
       "CUSTOM:RubyBlock",
@@ -59754,6 +59936,7 @@
       "advancements.blood_on_your_hands.descr": "Put your hands on a piece of Human Remains",
       "advancements.blade_mastery.title": "Blade Mastery",
       "advancements.vpst_venom_base.title": "§6Skilltree",
+      "item.art5019injustice.kryptium_dust": "Kryptium Dust",
       "gui.art5019injustice.leadcase.label_lead_suitcase": "Lead suitcase",
       "advancements.better_tech.title": "Better Tech",
       "item.art5019injustice.sodium": "Sodium",
@@ -60737,6 +60920,7 @@
       "item.art5019injustice.nightmare_rush_icon": "Nightmare Rush Icon",
       "effect.art5019injustice.immunity": "Immunity Type-I",
       "item.art5019injustice.microchip_tier_3": "Circuit Board",
+      "item.art5019injustice.microchip_tier_4": "Microchip",
       "advancements.st_storm_base.descr": "§6Storm",
       "advancements.st_scarecrow_fear_manipulation_ii.title": "§bFear Manipulation II",
       "effect.art5019injustice.uncle_sam_possessed": "Spirit of a Nation",
@@ -61091,6 +61275,7 @@
       "advancements.st_storm_hailstorm.descr": "§cAbility 4 - By creating a atmospheric pressure system, a hailstorm is builded around you",
       "advancements.iron_soldier_palladium.title": "Palladium Poisoning",
       "advancements.stss_strength.title": "Super Soldier Strength",
+      "item.art5019injustice.kryptium_ingot": "Kryptium Ingot",
       "item.art5019injustice.silver_shovel": "Silver Shovel",
       "biome.art5019injustice.phantom_zone_biome": "Phantom Zone",
       "advancements.defeat_red_skull.title": "Stronger than flags",
@@ -61145,6 +61330,7 @@
       "item.art5019injustice.negative_spiderman_suit_helmet": "Negative Spider-Man Mask",
       "painting.art5019injustice.neuro_painting_1.author": "Art5019",
       "entity.art5019injustice.art_the_unemployed": "Art the Unemployed",
+      "item.art5019injustice.raw_kryptium": "Kryptium",
       "gui.art5019injustice.today_problem.n1": "0",
       "item.art5019injustice.negative_spiderman_suit_leggings": "Negative Spider-Man Leggings",
       "item.art5019injustice.silver_hoe": "Silver Hoe",
@@ -61395,6 +61581,10 @@
           },
           {
             "name": "Lithium",
+            "children": []
+          },
+          {
+            "name": "Microchips",
             "children": []
           }
         ]
@@ -61880,7 +62070,7 @@
             "children": []
           },
           {
-            "name": "Materials",
+            "name": "KryptonianMaterials",
             "children": []
           }
         ]

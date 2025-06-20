@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "art5019injustice:block/phantom_zone_projector_block"
+    },
+    "facing=east": {
+      "model": "art5019injustice:block/phantom_zone_projector_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "art5019injustice:block/phantom_zone_projector_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "art5019injustice:block/phantom_zone_projector_block",
+      "y": 270
+    }
+  }
+}
