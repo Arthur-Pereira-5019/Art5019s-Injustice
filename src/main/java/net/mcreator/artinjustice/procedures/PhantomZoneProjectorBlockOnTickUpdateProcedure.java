@@ -95,7 +95,7 @@ public class PhantomZoneProjectorBlockOnTickUpdateProcedure {
 					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 				return _retval.get();
 			}
-		}.getEnergyStored(world, BlockPos.containing(x, y, z)) > 9375) {
+		}.getEnergyStored(world, BlockPos.containing(x, y, z)) > 375000) {
 			PhantomZoneActiveProjectionProcedure.execute(world, x, y, z, blockstate);
 		}
 	}

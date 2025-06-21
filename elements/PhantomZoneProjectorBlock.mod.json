@@ -121,8 +121,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "PhantomZoneProjectorBlockOnTickUpdate"
+    "onBlockAdded": {
+      "name": "PhantomZoneProjectorBlockBlockAdded"
     },
     "onRedstoneOn": {
       "name": "PhantomZoneProjectorBlockRedstoneOn"

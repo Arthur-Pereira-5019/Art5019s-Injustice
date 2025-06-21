@@ -1,6 +1,5 @@
 package net.mcreator.artinjustice.procedures;
 
-import net.minecraftforge.fluids.capability.IFluidHandler;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.state.properties.Property;
@@ -56,29 +55,71 @@ public class PhantomZoneActiveProjectionProcedure {
 			}.getDirection(blockstate)).getStepZ() * offset;
 			GenerateDustParticlesProcedure.execute(world, 0.5 + newX, 0.5 + newY, 0.5 + newZ, "8", "0.5", "0.1", "0.5", "0.4 0.6 1 0.6", "0.3");
 		}
-		PhantomZonePortalProcedure.execute(world, x, y, z, newX, newY, newZ);
+		PhantomZonePortalProcedure.execute(world, newX, newY, newZ, new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "openX"), new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "openY"), new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "openZ"));
 		if (world instanceof ServerLevel _origLevel) {
 			LevelAccessor _worldorig = world;
 			world = _origLevel.getServer().getLevel(ResourceKey.create(Registries.DIMENSION, new ResourceLocation("art5019injustice:phantom_zone")));
 			if (world != null) {
-				PhantomZonePortalProcedure.execute(world, x, y, z, newX, newY, newZ);
+				PhantomZoneToHomeworldPortalProcedure.execute(world, newX, newY, newZ, new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "openX"), new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "openY"), new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "openZ"));
 			}
 			world = _worldorig;
 		}
 		energydrain = new Object() {
-			public int drainTankSimulate(LevelAccessor level, BlockPos pos, int amount) {
+			public int extractEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = level.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> _retval.set(capability.drain(amount, IFluidHandler.FluidAction.SIMULATE).getAmount()));
+					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
 				return _retval.get();
 			}
-		}.drainTankSimulate(world, BlockPos.containing(x, y, z), 9375);
+		}.extractEnergySimulate(world, BlockPos.containing(x, y, z), 9375);
 		{
 			BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 			int _amount = (int) energydrain;
 			if (_ent != null)
-				_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> capability.drain(_amount, IFluidHandler.FluidAction.EXECUTE));
+				_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.extractEnergy(_amount, false));
 		}
 	}
 }
