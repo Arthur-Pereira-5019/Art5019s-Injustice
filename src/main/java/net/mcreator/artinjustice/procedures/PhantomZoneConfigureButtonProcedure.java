@@ -22,7 +22,7 @@ public class PhantomZoneConfigureButtonProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble("x", new Object() {
+				_blockEntity.getPersistentData().putDouble("openX", new Object() {
 					double convert(String s) {
 						try {
 							return Double.parseDouble(s.trim());
@@ -30,7 +30,7 @@ public class PhantomZoneConfigureButtonProcedure {
 						}
 						return 0;
 					}
-				}.convert(guistate.containsKey("text:x") ? ((EditBox) guistate.get("text:x")).getValue() : ""));
+				}.convert(guistate.containsKey("text:xField") ? ((EditBox) guistate.get("text:xField")).getValue() : ""));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
@@ -39,7 +39,7 @@ public class PhantomZoneConfigureButtonProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble("y", new Object() {
+				_blockEntity.getPersistentData().putDouble("openY", new Object() {
 					double convert(String s) {
 						try {
 							return Double.parseDouble(s.trim());
@@ -47,7 +47,7 @@ public class PhantomZoneConfigureButtonProcedure {
 						}
 						return 0;
 					}
-				}.convert(guistate.containsKey("text:y") ? ((EditBox) guistate.get("text:y")).getValue() : ""));
+				}.convert(guistate.containsKey("text:yField") ? ((EditBox) guistate.get("text:yField")).getValue() : ""));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
@@ -56,7 +56,7 @@ public class PhantomZoneConfigureButtonProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble("z", new Object() {
+				_blockEntity.getPersistentData().putDouble("openZ", new Object() {
 					double convert(String s) {
 						try {
 							return Double.parseDouble(s.trim());
@@ -64,7 +64,7 @@ public class PhantomZoneConfigureButtonProcedure {
 						}
 						return 0;
 					}
-				}.convert(guistate.containsKey("text:z") ? ((EditBox) guistate.get("text:z")).getValue() : ""));
+				}.convert(guistate.containsKey("text:zField") ? ((EditBox) guistate.get("text:zField")).getValue() : ""));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

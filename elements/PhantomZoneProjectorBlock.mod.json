@@ -55,7 +55,7 @@
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": false,
+    "canRedstoneConnect": true,
     "lightOpacity": 15,
     "material": {
       "value": "ROCK"
@@ -123,6 +123,9 @@
     "fluidRestrictions": [],
     "onTickUpdate": {
       "name": "PhantomZoneProjectorBlockOnTickUpdate"
+    },
+    "onRedstoneOn": {
+      "name": "PhantomZoneProjectorBlockRedstoneOn"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

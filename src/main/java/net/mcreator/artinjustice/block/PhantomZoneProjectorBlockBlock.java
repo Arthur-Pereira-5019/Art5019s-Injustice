@@ -35,6 +35,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.artinjustice.world.inventory.PhantomZoneProjectorGuiMenu;
+import net.mcreator.artinjustice.procedures.PhantomZoneProjectorBlockRedstoneOnProcedure;
 import net.mcreator.artinjustice.procedures.PhantomZoneProjectorBlockOnTickUpdateProcedure;
 import net.mcreator.artinjustice.block.entity.PhantomZoneProjectorBlockBlockEntity;
 
@@ -72,9 +73,22 @@ public class PhantomZoneProjectorBlockBlock extends Block implements EntityBlock
 	}
 
 	@Override
+	public boolean canConnectRedstone(BlockState state, BlockGetter world, BlockPos pos, Direction side) {
+		return true;
+	}
+
+	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 1);
+	}
+
+	@Override
+	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+		if (world.getBestNeighborSignal(pos) > 0) {
+			PhantomZoneProjectorBlockRedstoneOnProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		}
 	}
 
 	@Override
@@ -83,7 +97,7 @@ public class PhantomZoneProjectorBlockBlock extends Block implements EntityBlock
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		PhantomZoneProjectorBlockOnTickUpdateProcedure.execute(world, x, y, z);
+		PhantomZoneProjectorBlockOnTickUpdateProcedure.execute(world, x, y, z, blockstate);
 		world.scheduleTick(pos, this, 1);
 	}
 
