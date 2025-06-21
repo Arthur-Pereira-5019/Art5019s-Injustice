@@ -57336,6 +57336,10 @@
         ],
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -57464,6 +57468,158 @@
         ]
       },
       "path": "~/Electricity/Capacitors"
+    },
+    {
+      "name": "PhantomZoneProjectorBlockRedstoneOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_zone_projector_block_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/PhantomZoneProjectorBlockRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/PhantomZone"
+    },
+    {
+      "name": "PhantomZoneActiveProjection",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_zone_active_projection",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/PhantomZoneActiveProjectionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/PhantomZone"
+    },
+    {
+      "name": "StopSound",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stop_sound",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/StopSoundProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "range",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "specific",
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "PhantomZonePortal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_zone_portal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/PhantomZonePortalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "newX",
+            "type": "number"
+          },
+          {
+            "name": "newY",
+            "type": "number"
+          },
+          {
+            "name": "newZ",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/PhantomZone"
     }
   ],
   "variable_elements": [

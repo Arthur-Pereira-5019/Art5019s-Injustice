@@ -57340,6 +57340,10 @@
             "type": "blockstate"
           },
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -57516,6 +57520,10 @@
             "type": "blockstate"
           },
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -57577,6 +57585,53 @@
         ]
       },
       "path": "~/GlobalProcedures"
+    },
+    {
+      "name": "PhantomZonePortal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_zone_portal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/PhantomZonePortalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "newX",
+            "type": "number"
+          },
+          {
+            "name": "newY",
+            "type": "number"
+          },
+          {
+            "name": "newZ",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/PhantomZone"
     }
   ],
   "variable_elements": [

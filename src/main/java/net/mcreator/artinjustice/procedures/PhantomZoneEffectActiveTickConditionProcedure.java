@@ -12,14 +12,14 @@ public class PhantomZoneEffectActiveTickConditionProcedure {
 		if (entity == null)
 			return;
 		if (entity.isShiftKeyDown()) {
-			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (-0.1), (entity.getDeltaMovement().z())));
+			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (-0.2), (entity.getDeltaMovement().z())));
 		}
-		if (y < -50) {
+		if (y < -30) {
 			{
 				Entity _ent = entity;
-				_ent.teleportTo(x, 350, z);
+				_ent.teleportTo(x, 180, z);
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(x, 350, z, _ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport(x, 180, z, _ent.getYRot(), _ent.getXRot());
 			}
 		}
 		if (entity.getXRot() < -60) {

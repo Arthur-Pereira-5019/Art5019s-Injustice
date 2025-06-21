@@ -11,6 +11,6 @@ public class PhantomZonePlayerEntersDimensionProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.PHANTOM_ZONE_EFFECT.get(), 60, 1, false, false));
+			_entity.addEffect(new MobEffectInstance(Art5019injusticeModMobEffects.PHANTOM_ZONE_EFFECT.get(), 99999999, 1, false, false));
 	}
 }

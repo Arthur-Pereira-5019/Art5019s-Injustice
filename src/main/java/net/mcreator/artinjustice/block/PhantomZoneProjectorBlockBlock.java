@@ -97,7 +97,7 @@ public class PhantomZoneProjectorBlockBlock extends Block implements EntityBlock
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		PhantomZoneProjectorBlockOnTickUpdateProcedure.execute(world, x, y, z, blockstate);
+		PhantomZoneProjectorBlockOnTickUpdateProcedure.execute(world, x, y, z, blockstate, newX, newY, newZ);
 		world.scheduleTick(pos, this, 1);
 	}
 
