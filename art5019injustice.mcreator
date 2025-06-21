@@ -56694,7 +56694,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Electricity/Capacitors"
     },
     {
       "name": "ZincOre",
@@ -57230,7 +57231,7 @@
       "locked_code": false,
       "registry_name": "return_capacitor_capacity",
       "metadata": {
-        "return_type": "string",
+        "return_type": "number",
         "files": [
           "src/main/java/net/mcreator/artinjustice/procedures/ReturnCapacitorCapacityProcedure.java"
         ],
@@ -57311,7 +57312,7 @@
     {
       "name": "PhantomZoneProjectorGui",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "phantom_zone_projector_gui",
       "metadata": {
@@ -57392,6 +57393,77 @@
         ]
       },
       "path": "~/Kryptonian/PhantomZone"
+    },
+    {
+      "name": "ReturnBlockChargePercentage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_block_charge_percentage",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/ReturnBlockChargePercentageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/PhantomZone"
+    },
+    {
+      "name": "CapacitorRightClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "capacitor_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/CapacitorRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Electricity/Capacitors"
     }
   ],
   "variable_elements": [

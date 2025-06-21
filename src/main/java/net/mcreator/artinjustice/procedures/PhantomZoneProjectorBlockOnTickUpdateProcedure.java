@@ -40,7 +40,7 @@ public class PhantomZoneProjectorBlockOnTickUpdateProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getOrCreateTag().getDouble("rf") > 150) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getOrCreateTag().getDouble("rf") > 1000) {
 				newitem.getOrCreateTag().putDouble("rf", ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -57,7 +57,7 @@ public class PhantomZoneProjectorBlockOnTickUpdateProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
 				}
 			} else {
-				difference = 150 - (new Object() {
+				difference = 1000 - (new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);

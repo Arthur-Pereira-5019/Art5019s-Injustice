@@ -12,6 +12,7 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.artinjustice.world.inventory.PhantomZoneProjectorGuiMenu;
+import net.mcreator.artinjustice.procedures.ReturnBlockChargePercentageProcedure;
 import net.mcreator.artinjustice.network.PhantomZoneProjectorGuiButtonMessage;
 import net.mcreator.artinjustice.Art5019injusticeMod;
 
@@ -101,6 +102,9 @@ public class PhantomZoneProjectorGuiScreen extends AbstractContainerScreen<Phant
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.art5019injustice.phantom_zone_projector_gui.label_phantom_zone_projector"), 15, 16, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				ReturnBlockChargePercentageProcedure.execute(world, x, y, z), 135, 6, -12829636, false);
 	}
 
 	@Override

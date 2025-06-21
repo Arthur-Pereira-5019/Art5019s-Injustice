@@ -56694,7 +56694,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Electricity/Capacitors"
     },
     {
       "name": "ZincOre",
@@ -57230,7 +57231,7 @@
       "locked_code": false,
       "registry_name": "return_capacitor_capacity",
       "metadata": {
-        "return_type": "string",
+        "return_type": "number",
         "files": [
           "src/main/java/net/mcreator/artinjustice/procedures/ReturnCapacitorCapacityProcedure.java"
         ],
@@ -57316,6 +57317,7 @@
       "registry_name": "phantom_zone_projector_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/artinjustice/network/PhantomZoneProjectorGuiButtonMessage.java",
           "src/main/java/net/mcreator/artinjustice/client/gui/PhantomZoneProjectorGuiScreen.java",
           "src/main/java/net/mcreator/artinjustice/world/inventory/PhantomZoneProjectorGuiMenu.java"
         ]
@@ -57359,7 +57361,109 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "phantom_zone_configure_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/PhantomZoneConfigureButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
       "path": "~/Kryptonian/PhantomZone"
+    },
+    {
+      "name": "ReturnBlockChargePercentage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_block_charge_percentage",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/ReturnBlockChargePercentageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Kryptonian/PhantomZone"
+    },
+    {
+      "name": "CapacitorRightClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "capacitor_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/artinjustice/procedures/CapacitorRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Electricity/Capacitors"
     }
   ],
   "variable_elements": [
@@ -59459,6 +59563,7 @@
       "item.art5019injustice.ghost_spider_leggings": "Ghost Spider Leggings",
       "advancements.st_neuro_stronger_nerves.title": "§eStronger Nerves",
       "block.art5019injustice.starry_orchid": "§eStarry Orchid",
+      "gui.art5019injustice.phantom_zone_projector_gui.yField": "Y:",
       "item.art5019injustice.captain_britan_leggings": "Captain Britain Leggings",
       "item.art5019injustice.old_pistol": "Old Pistol",
       "advancements.st_superman_base.title": "§6Kryptonian",
@@ -59966,7 +60071,7 @@
       "item.art5019injustice.kryptonite_katana": "Kryptonite Katana",
       "gui.art5019injustice.chemistry_table_gui.label_kr_levels": "Kr Levels:",
       "gui.art5019injustice.sawmill_gui.tooltip_turn_into_dust": "Turn up",
-      "gui.art5019injustice.phantom_zone_projector_gui.button_configurate": "Configurate",
+      "gui.art5019injustice.phantom_zone_projector_gui.button_configurate": "Configure",
       "advancements.st_supreme_strength.descr": "§fPassive - +2.5 Strength Points",
       "advancements.st_supe_strength.title": "§eStrength",
       "item.art5019injustice.poison_blood_syringe": "Syringe",
@@ -60428,6 +60533,7 @@
       "item.art5019injustice.steel_katana": "Steel Katana",
       "advancements.st_superman_heatvision.title": "§3Heat Vision",
       "item.art5019injustice.fine_iron_blade": "Fine Iron Blade",
+      "gui.art5019injustice.phantom_zone_projector_gui.xField": "X:",
       "subtitles.effect.short_shock": "Electric Shock",
       "item.art5019injustice.pistol_stabilizer_upgrade": "Stabilizer",
       "advancements.my_glasses.title": "My Glasses!",
@@ -61373,6 +61479,7 @@
       "advancements.stbbdg_strength.descr": "§fPassive - +7 Damage",
       "item.art5019injustice.mustard_gas_bomb": "Mustard Gas Bomb",
       "effect.art5019injustice.interference": "Interference",
+      "gui.art5019injustice.phantom_zone_projector_gui.zField": "Z:",
       "item.art5019injustice.leadsuitcase": "Lead Suit Case",
       "item.art5019injustice.pistol_magazine": "Magazine",
       "advancements.x_gene_hope_serum.descr": "Create a cure to \"mutantism\"",

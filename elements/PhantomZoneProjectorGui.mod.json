@@ -99,6 +99,22 @@
           "x": 278,
           "y": 74
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_block_charge_percent",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnBlockChargePercentage"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 261,
+          "y": 16
+        }
       }
     ],
     "gridSettings": {
