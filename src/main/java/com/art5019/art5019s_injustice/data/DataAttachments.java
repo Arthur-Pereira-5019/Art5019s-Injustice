@@ -36,4 +36,12 @@ public class DataAttachments {
             "power_id", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("power_id")).build()
     );
 
+    public static final Supplier<AttachmentType<Integer>> STRESS = ATTACHMENT_TYPES.register(
+            "stress", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("stress")).build()
+    );
+
+    public static final Supplier<AttachmentType<Long>> LAST_QUERY = ATTACHMENT_TYPES.register(
+            "last_query", () -> AttachmentType.builder(() -> 0L).serialize(Codec.LONG.fieldOf("last_query")).build()
+    );
+
 }

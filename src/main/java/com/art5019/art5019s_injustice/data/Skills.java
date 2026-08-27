@@ -1,10 +1,10 @@
 package com.art5019.art5019s_injustice.data;
 
 public enum Skills {
-    ENGINEERING(0,5),
-    CHEMISTRY(1,5),
-    GENETICS(2,5),
-    INTELLIGENCE(3,12);
+    ENGINEERING(0, 5),
+    CHEMISTRY(1, 5),
+    GENETICS(2, 5),
+    INTELLIGENCE(3, 12);
 
     public final int skillId;
     public final int levelCap;
@@ -16,10 +16,11 @@ public enum Skills {
 
     public static Skills fromId(int skillId) {
         for (Skills value : Skills.values()) {
-            if(value.skillId == skillId) {
+            if (value.skillId == skillId) {
                 return value;
             }
         }
+        throw new RuntimeException("Mismatched skill id");
     }
 
 
