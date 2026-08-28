@@ -30,7 +30,7 @@ public class SkillHelper {
             if(randomSource.nextFloat() < baseChance) {
                 attemptToUpgradeSkill(attemptedSkill,player, serverLevel);
             }
-            return (int) (baseChance+ randomSource.nextFloat())*400;
+            return (int) ((baseChance+ randomSource.nextFloat())*4000);
         }
         return 0;
     }

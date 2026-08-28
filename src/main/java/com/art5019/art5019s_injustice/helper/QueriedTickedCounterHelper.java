@@ -1,5 +1,8 @@
 package com.art5019.art5019s_injustice.helper;
 
+import net.minecraft.client.particle.HeartParticle;
+import net.minecraft.core.particles.ParticleOptions;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.neoforge.attachment.AttachmentType;
@@ -26,6 +29,12 @@ public class QueriedTickedCounterHelper {
 
     public static int queryData(ServerPlayer player, Supplier<AttachmentType<Integer>> data) {
         synchronizeData(player);
+        if(data == STRESS) {
+            int stress = player.getData(data);
+            player.level().sendParticles(ParticleTypes.ANGRY_VILLAGER, player.getX(), player.getY()+1.5,
+                    player.getZ(), stress/50, 0.3, 0.4, 0.3, 1);
+            return stress;
+        }
         return player.getData(data);
     }
 
