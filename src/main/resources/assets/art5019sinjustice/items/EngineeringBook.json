@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:composite",
+  "models": [
+    {
+      "type": "minecraft:model",
+      "model": "art5019sinjustice:item/engineering_book"
+    },
+    {
+      "model": {
+        "type": "minecraft:select",
+        "property": "art5019sinjustice:book_tier",
+        "fallback": {
+          "type": "minecraft:empty"
+        },
+        "cases": [
+          {
+            "when": "tier_0",
+            "model": {
+              "type": "minecraft:model",
+              "model": "art5019sinjustice:item/book_belt_tier_0"
+            }
+          },
+          {
+            "when": "tier_1",
+            "model": {
+              "type": "minecraft:model",
+              "model": "art5019sinjustice:item/book_belt_tier_1"
+            }
+          },
+          {
+            "when": "tier_2",
+            "model": {
+              "type": "minecraft:model",
+              "model": "art5019sinjustice:item/book_belt_tier_2"
+            }
+          },
+          {
+            "when": "tier_3",
+            "model": {
+              "type": "minecraft:model",
+              "model": "art5019sinjustice:item/book_belt_tier_3"
+            }
+          },
+          {
+            "when": "tier_4",
+            "model": {
+              "type": "minecraft:model",
+              "model": "art5019sinjustice:item/book_belt_tier_4"
+            }
+          },
+          {
+            "when": "tier_5",
+            "model": {
+              "type": "minecraft:model",
+              "model": "art5019sinjustice:item/book_belt_tier_5"
+            }
+          },
+          {
+            "when": "tier_6",
+            "model": {
+              "type": "minecraft:model",
+              "model": "art5019sinjustice:item/book_belt_tier_6"
+            }
+          },
+          {
+            "when": "tier_7",
+            "model": {
+              "type": "minecraft:model",
+              "model": "art5019sinjustice:item/book_belt_tier_7"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
