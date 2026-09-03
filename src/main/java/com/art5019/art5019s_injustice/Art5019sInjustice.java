@@ -45,13 +45,6 @@ public class Art5019sInjustice {
     public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", p -> p.food(new FoodProperties.Builder()
             .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.art5019sinjustice")) //The language key for the title of your CreativeModeTab
-            .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())
-            .displayItems((parameters, output) -> {
-                output.accept(EXAMPLE_ITEM.get());// Add the example item to the tab. For your own tabs, this method is preferred over the event
-            }).build());
 
     public Art5019sInjustice(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);

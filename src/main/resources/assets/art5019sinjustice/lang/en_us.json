@@ -6,11 +6,17 @@
   "art5019sinjustice.item.skill_book.skilled_enough": "It looks so easy now.",
   "art5019sinjustice.event.should_rest": "You're too stressed to do that now.",
 
+
   "art5019sinjustice.configuration.title": "Art5019's Injustice Configs",
   "art5019sinjustice.configuration.section.art5019sinjustice.common.toml": "Art5019's Injustice Configs",
   "art5019sinjustice.configuration.section.art5019sinjustice.common.toml.title": "Art5019's Injustice Configs",
   "art5019sinjustice.configuration.items": "Item List",
   "art5019sinjustice.configuration.logDirtBlock": "Log Dirt Block",
   "art5019sinjustice.configuration.magicNumberIntroduction": "Magic Number Text",
-  "art5019sinjustice.configuration.magicNumber": "Magic Number"
+  "art5019sinjustice.configuration.magicNumber": "Magic Number",
+
+  "art5019sinjustice.skill.engineering": "Engineering",
+  "art5019sinjustice.skill.chemistry": "Chemistry",
+  "art5019sinjustice.skill.genetics": "Genetics",
+  "art5019sinjustice.skill.intelligence": "Intelligence"
 }

@@ -1,10 +1,15 @@
 package com.art5019.art5019s_injustice.item;
 
 import com.art5019.art5019s_injustice.data.Skill;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.flag.FeatureFlagSet;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.alchemy.Potion;
+import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -25,4 +30,6 @@ public class Items {
                 component(SKILL_COMPONENT, skill).
                 setId(ResourceKey.create(Registries.ITEM,Identifier.fromNamespaceAndPath(MODID,name)));
     }
+
+
 }
