@@ -9,7 +9,11 @@ import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
 
 public record Skill(int skillId, int level) {
     public MutableComponent getTranslatable() {
-        return Component.translatable(MODID+".skill."+Skills.fromId(skillId).translatableSuffix);
+        return Component.translatable(geTranslatationSource());
+    }
+
+    public String geTranslatationSource() {
+        return MODID+".skill."+Skills.fromId(skillId).translatableSuffix;
     }
 
     public MutableComponent getComponent() {

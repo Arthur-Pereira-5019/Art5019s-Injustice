@@ -2,6 +2,10 @@ package com.art5019.art5019s_injustice.helper;
 
 import com.art5019.art5019s_injustice.data.Skill;
 import com.art5019.art5019s_injustice.data.Skills;
+import com.art5019.art5019s_injustice.network.SkillLevelUpPacket;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.components.toasts.Toast;
+import net.minecraft.client.gui.components.toasts.ToastManager;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
@@ -57,10 +61,17 @@ public class SkillHelper {
         if(attemptedSkill.levelCap > currentLevel) {
             serverPlayer.playSound(SoundEvents.PLAYER_LEVELUP,1,0.4F);
             removeSkill(attemptedSkill, serverPlayer);
-            skills.add(new Skill(attemptedSkill.skillId, currentLevel+1));
+
+            Skill leveledUpSkill = new Skill(attemptedSkill.skillId, ++currentLevel);
+            skills.add(leveledUpSkill);
             serverPlayer.setData(SKILL, skills);
+            serverPlayer.connection.send(new SkillLevelUpPacket(leveledUpSkill.geTranslatationSource(),currentLevel));
             return true;
         }
         return false;
+    }
+
+    public static void showSkillToast(ServerPlayer serverPlayer) {
+        //Minecraft.getInstance().gui.toastManager().addToast();
     }
 }

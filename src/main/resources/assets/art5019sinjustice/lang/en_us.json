@@ -3,7 +3,6 @@
   "block.art5019sinjustice.example_block": "Example Block",
   "item.art5019sinjustice.example_item": "Example Item",
 
-  "art5019sinjustice.item.skill_book.skilled_enough": "It looks so easy now.",
   "art5019sinjustice.event.should_rest": "You're too stressed to do that now.",
 
 
@@ -15,8 +14,13 @@
   "art5019sinjustice.configuration.magicNumberIntroduction": "Magic Number Text",
   "art5019sinjustice.configuration.magicNumber": "Magic Number",
 
+  "art5019sinjustice.item.skill_book.skilled_enough": "It looks so easy now.",
+  "art5019sinjustice.item.engineering_book": "Engineering Book",
+
+
   "art5019sinjustice.skill.engineering": "Engineering",
   "art5019sinjustice.skill.chemistry": "Chemistry",
   "art5019sinjustice.skill.genetics": "Genetics",
-  "art5019sinjustice.skill.intelligence": "Intelligence"
+  "art5019sinjustice.skill.intelligence": "Intelligence",
+  "art5019sinjustice.skill.toast.title": "You've earned new skills!"
 }
