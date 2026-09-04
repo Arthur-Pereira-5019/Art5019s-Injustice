@@ -17,7 +17,7 @@ public record BookTierRendering() implements RangeSelectItemModelProperty {
 
     @Override
     public float get(ItemStack stack, @Nullable ClientLevel level, @Nullable ItemOwner owner, int seed) {
-        return (float) stack.get(SKILL_COMPONENT).level();
+        return (float) stack.get(SKILL_COMPONENT).level()-1;
     }
 
     @Override

@@ -14,13 +14,14 @@
   "art5019sinjustice.configuration.magicNumberIntroduction": "Magic Number Text",
   "art5019sinjustice.configuration.magicNumber": "Magic Number",
 
-  "art5019sinjustice.item.skill_book.skilled_enough": "It looks so easy now.",
-  "art5019sinjustice.item.engineering_book": "Engineering Book",
+  "item.art5019sinjustice.skill_book.skilled_enough": "It looks so easy now.",
+  "item.art5019sinjustice.engineering_book": "Engineering Book",
 
 
   "art5019sinjustice.skill.engineering": "Engineering",
   "art5019sinjustice.skill.chemistry": "Chemistry",
   "art5019sinjustice.skill.genetics": "Genetics",
   "art5019sinjustice.skill.intelligence": "Intelligence",
-  "art5019sinjustice.skill.toast.title": "You've earned new skills!"
+  "art5019sinjustice.skill.toast.title": "You've earned new skills!",
+  "art5019sinjustice.item.skill_book.skilled_enough": "I'm skilled enough for this book"
 }

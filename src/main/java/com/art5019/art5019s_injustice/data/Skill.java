@@ -19,22 +19,22 @@ public record Skill(int skillId, int level) {
     public MutableComponent getComponent() {
         MutableComponent component = getTranslatable();
         component.append(Component.literal(" "));
-        component.append(TextHelper.toRomanNumeral(level+1));
+        component.append(TextHelper.toRomanNumeral(level));
         component.withColor(levelColor());
         return component;
     }
 
     public TextColor levelColor() {
         return switch (level) {
-            case 0 -> TextColor.parseColor("#4d3719").getOrThrow();
-            case 1 -> TextColor.GRAY;
-            case 2 -> TextColor.parseColor("#b46519").getOrThrow();
-            case 3 -> TextColor.DARK_GRAY;
-            case 4 -> TextColor.GOLD;
-            case 5 -> TextColor.GREEN;
-            case 6 -> TextColor.AQUA;
-            case 7 -> TextColor.BLACK;
-            default -> TextColor.GRAY;
+            case 1 -> TextColor.parseColor("#4d3719").getOrThrow();
+            case 2 -> TextColor.GRAY;
+            case 3 -> TextColor.parseColor("#b46519").getOrThrow();
+            case 4 -> TextColor.DARK_GRAY;
+            case 5 -> TextColor.GOLD;
+            case 6 -> TextColor.GREEN;
+            case 7 -> TextColor.AQUA;
+            case 8 -> TextColor.BLACK;
+            default -> TextColor.WHITE;
         };
     }
 }

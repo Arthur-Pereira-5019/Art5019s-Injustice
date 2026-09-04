@@ -29,12 +29,13 @@ public class SkillHelper {
         int playerIntelligence = getIntelligenceLevel(player);
         int currentLevel = getProvidedSkillLevel(player, attemptedSkill);
         if(currentLevel < sourceLevel) {
+            player.playSound(SoundEvents.BOOK_PAGE_TURN,1,0.8F);
             player.giveExperiencePoints(randomSource.nextInt(0,4));
-            double baseChance = 0.31 - ((Math.pow(2,sourceLevel-currentLevel)/10F) + additionalHardness - playerIntelligence);
+            double baseChance = Math.pow(0.05,sourceLevel-currentLevel) - additionalHardness + (double) playerIntelligence /100;
             if(randomSource.nextFloat() < baseChance) {
                 attemptToUpgradeSkill(attemptedSkill,player, serverLevel);
             }
-            return (int) ((baseChance+ randomSource.nextFloat())*4000);
+            return (int) (1-baseChance)*4000;
         }
         return 0;
     }
