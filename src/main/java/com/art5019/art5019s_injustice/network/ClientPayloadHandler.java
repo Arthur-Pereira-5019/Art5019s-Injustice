@@ -1,6 +1,6 @@
 package com.art5019.art5019s_injustice.network;
 
-import com.art5019.art5019s_injustice.graphics.toast.SkillToast;
+import com.art5019.art5019s_injustice.graphics.toast.SkillLevelUpToast;
 import net.minecraft.client.Minecraft;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 
@@ -11,7 +11,7 @@ public class ClientPayloadHandler {
 
     private static void handleSkillLevelUpToast(SkillLevelUpPacket data) {
         Minecraft minecraft = Minecraft.getInstance();
-        SkillToast.addOrUpdate(minecraft.gui.toastManager(),data);
+        minecraft.gui.toastManager().addToast(new SkillLevelUpToast(data));
     }
 
 }

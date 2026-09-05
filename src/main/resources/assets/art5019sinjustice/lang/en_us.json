@@ -21,7 +21,9 @@
   "art5019sinjustice.skill.engineering": "Engineering",
   "art5019sinjustice.skill.chemistry": "Chemistry",
   "art5019sinjustice.skill.genetics": "Genetics",
+  "art5019sinjustice.skill.levelup": " is now level ",
   "art5019sinjustice.skill.intelligence": "Intelligence",
   "art5019sinjustice.skill.toast.title": "You've earned new skills!",
-  "art5019sinjustice.item.skill_book.skilled_enough": "I'm skilled enough for this book"
+  "art5019sinjustice.item.skill_book.skilled_enough": "I'm skilled enough for this book",
+  "art5019sinjustice.skill.gain_xp.toast.title": "You're learning!"
 }

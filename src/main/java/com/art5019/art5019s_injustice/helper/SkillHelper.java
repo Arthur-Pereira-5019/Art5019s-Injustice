@@ -11,14 +11,22 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.RandomSource;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 import static com.art5019.art5019s_injustice.data.DataAttachments.*;
 import static com.art5019.art5019s_injustice.data.Skills.INTELLIGENCE;
+import static java.util.Map.entry;
 
 public class SkillHelper {
+    public static int levelToXpFunction(int l) {
+        return 500+125*((l*l)+3*l+2);
+    }
+
+
+    public static int getLevelForXp(int xp) {
+        double level = (-375+Math.sqrt(135625 + 500*xp))/250;
+        return (int) level;
+    }
 
     /**
      *
@@ -31,11 +39,11 @@ public class SkillHelper {
         if(currentLevel < sourceLevel) {
             player.playSound(SoundEvents.BOOK_PAGE_TURN,1,0.8F);
             player.giveExperiencePoints(randomSource.nextInt(0,4));
-            double baseChance = Math.pow(0.05,sourceLevel-currentLevel) - additionalHardness + (double) playerIntelligence /100;
+            double baseChance = Math.pow(1,sourceLevel-currentLevel) - additionalHardness + (double) playerIntelligence /100;
             if(randomSource.nextFloat() < baseChance) {
                 attemptToUpgradeSkill(attemptedSkill,player, serverLevel);
             }
-            return (int) (1-baseChance)*4000;
+            return (int) ((1-baseChance)*4000);
         }
         return 0;
     }
@@ -47,7 +55,7 @@ public class SkillHelper {
     public static int getProvidedSkillLevel(ServerPlayer serverPlayer, Skills skill) {
         List<Skill> skillList = serverPlayer.getData(SKILL);
         Optional<Skill> optionalSkill = skillList.stream().filter(x -> x.skillId() == skill.skillId).findFirst();
-        return optionalSkill.map(Skill::skillId).orElse(0);
+        return optionalSkill.map(Skill::level).orElse(0);
     }
 
     public static void removeSkill(Skills skill, ServerPlayer serverPlayer) {
@@ -58,15 +66,16 @@ public class SkillHelper {
 
     public static boolean attemptToUpgradeSkill(Skills attemptedSkill, ServerPlayer serverPlayer, ServerLevel serverLevel) {
         int currentLevel = getProvidedSkillLevel(serverPlayer, attemptedSkill);
-        List<Skill> skills = new ArrayList<>(serverPlayer.getData(SKILL));
         if(attemptedSkill.levelCap > currentLevel) {
             serverPlayer.playSound(SoundEvents.PLAYER_LEVELUP,1,0.4F);
             removeSkill(attemptedSkill, serverPlayer);
 
+            List<Skill> skills = new ArrayList<>(serverPlayer.getData(SKILL));
+
             Skill leveledUpSkill = new Skill(attemptedSkill.skillId, ++currentLevel);
             skills.add(leveledUpSkill);
             serverPlayer.setData(SKILL, skills);
-            serverPlayer.connection.send(new SkillLevelUpPacket(leveledUpSkill.geTranslatationSource(),currentLevel));
+            serverPlayer.connection.send(new SkillLevelUpPacket(leveledUpSkill.skillId(),currentLevel));
             return true;
         }
         return false;

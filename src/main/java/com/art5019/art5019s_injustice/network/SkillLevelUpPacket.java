@@ -8,13 +8,13 @@ import net.minecraft.resources.Identifier;
 
 import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
 
-public record SkillLevelUpPacket(String skillName, int skillLevel) implements CustomPacketPayload {
+public record SkillLevelUpPacket(int skillId, int skillLevel) implements CustomPacketPayload {
 
     public static final CustomPacketPayload.Type<SkillLevelUpPacket> TYPE = new CustomPacketPayload.Type<>(Identifier.fromNamespaceAndPath(MODID, "skill_level_up"));
 
     public static final StreamCodec<ByteBuf, SkillLevelUpPacket> STREAM_CODEC = StreamCodec.composite(
-            ByteBufCodecs.STRING_UTF8,
-            SkillLevelUpPacket::skillName,
+            ByteBufCodecs.VAR_INT,
+            SkillLevelUpPacket::skillId,
             ByteBufCodecs.VAR_INT,
             SkillLevelUpPacket::skillLevel,
             SkillLevelUpPacket::new

@@ -19,7 +19,6 @@ public class TextHelper {
      */
     public static String toRomanNumeral(int n) {
         if(romanNumerals.containsKey(n)) {
-            System.out.println(n + " " + romanNumerals.get(n));
             return romanNumerals.get(n);
         }
         return "?";
