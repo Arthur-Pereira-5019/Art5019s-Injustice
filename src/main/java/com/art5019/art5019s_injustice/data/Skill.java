@@ -42,9 +42,6 @@ public record Skill(int skillId, int level) {
         return new Skill(skillId, level).levelUpComponent();
     }
 
-    public static Component gainXpComponent(int skillId, int level) {
-        return new Skill(skillId, level).levelUpComponent();
-    }
 
     public Component levelUpComponent() {
         return getTranslatable().
@@ -52,9 +49,4 @@ public record Skill(int skillId, int level) {
                 append(String.valueOf(level)).append("!").withColor(levelColor());
     }
 
-    public Component gainXpComponent() {
-        return getTranslatable().
-                append(Component.translatable(MODID+".skill.gainxp")).
-                append(String.valueOf(level)).append("%").withColor(levelColor());
-    }
 }

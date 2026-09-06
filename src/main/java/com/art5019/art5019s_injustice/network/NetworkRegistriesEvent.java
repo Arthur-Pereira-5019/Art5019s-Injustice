@@ -20,5 +20,10 @@ public class NetworkRegistriesEvent {
                 SkillLevelUpPacket.STREAM_CODEC,
                 ServerPayloadHandler::handleDataOnMain
         );
+        registrar.playBidirectional(
+                SkillGainXpPacket.TYPE,
+                SkillGainXpPacket.STREAM_CODEC,
+                ServerPayloadHandler::handleDataOnMain
+        );
     }
 }

@@ -1,5 +1,6 @@
 package com.art5019.art5019s_injustice.graphics.toast;
 
+import com.art5019.art5019s_injustice.data.PlayerSkill;
 import com.art5019.art5019s_injustice.data.Skill;
 import com.art5019.art5019s_injustice.data.Skills;
 import com.art5019.art5019s_injustice.network.SkillGainXpPacket;
@@ -17,11 +18,11 @@ public class SkillGainXpToast implements Toast {
     private static final Component TITLE_TEXT = Component.translatable("art5019sinjustice.skill.gain_xp.toast.title");
     private final Component newLevelDescription;
     private Visibility wantedVisibility;
-    private Skill associatedSkill;
+    private PlayerSkill associatedSkill;
 
     public SkillGainXpToast(SkillGainXpPacket skillGainXpPacket) {
-        newLevelDescription = Skill.gainXpComponent(skillGainXpPacket.skillId(), skillGainXpPacket.skillXp());
-        associatedSkill = new Skill(skillGainXpPacket.skillId(),skillGainXpPacket.skillXp());
+        associatedSkill = new PlayerSkill(skillGainXpPacket.skillId(),skillGainXpPacket.skillXp());
+        newLevelDescription = PlayerSkill.gainXpComponent(skillGainXpPacket.skillId(), skillGainXpPacket.skillXp());
         this.wantedVisibility = Visibility.HIDE;
     }
 

@@ -6,4 +6,7 @@ public class ServerPayloadHandler {
     public static void handleDataOnMain(final SkillLevelUpPacket data, final IPayloadContext context) {
     }
 
+    public static void handleDataOnMain(final SkillGainXpPacket data, final IPayloadContext context) {
+    }
+
 }
