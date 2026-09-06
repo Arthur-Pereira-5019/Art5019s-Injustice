@@ -14,17 +14,17 @@ import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
 
 @Mod(MODID)
 public class DataAttachments {
-    public static final Codec<Skill> SKILL_CODEC = RecordCodecBuilder.create(instance ->
+    public static final Codec<PlayerSkill> SKILL_CODEC = RecordCodecBuilder.create(instance ->
             instance.group(
-                    Codec.INT.fieldOf("skillId").forGetter(Skill::skillId),
-                    Codec.INT.fieldOf("level").forGetter(Skill::level)
-            ).apply(instance, Skill::new)
+                    Codec.INT.fieldOf("skillId").forGetter(PlayerSkill::skillId),
+                    Codec.INT.fieldOf("xp").forGetter(PlayerSkill::xp)
+            ).apply(instance, PlayerSkill::new)
     );
 
-    public static final Codec<List<Skill>> SKILLS = SKILL_CODEC.listOf();
+    public static final Codec<List<PlayerSkill>> SKILLS = SKILL_CODEC.listOf();
 
-    public static final Supplier<AttachmentType<List<Skill>>> SKILL = ATTACHMENT_TYPES.register(
-            "skills", () -> AttachmentType.builder((Supplier<List<Skill>>) ArrayList::new).
+    public static final Supplier<AttachmentType<List<PlayerSkill>>> SKILL = ATTACHMENT_TYPES.register(
+            "skills", () -> AttachmentType.builder((Supplier<List<PlayerSkill>>) ArrayList::new).
                     serialize(SKILLS.fieldOf("skills")).copyOnDeath().build()
     );
 

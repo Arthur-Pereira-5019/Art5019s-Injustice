@@ -2,6 +2,7 @@ package com.art5019.art5019s_injustice.graphics.toast;
 
 import com.art5019.art5019s_injustice.data.Skill;
 import com.art5019.art5019s_injustice.data.Skills;
+import com.art5019.art5019s_injustice.network.SkillGainXpPacket;
 import com.art5019.art5019s_injustice.network.SkillLevelUpPacket;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
@@ -11,16 +12,16 @@ import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 
-public class SkillGainLevelToast implements Toast {
+public class SkillGainXpToast implements Toast {
     private static final Identifier BACKGROUND_SPRITE = Identifier.withDefaultNamespace("toast/advancement");
     private static final Component TITLE_TEXT = Component.translatable("art5019sinjustice.skill.gain_xp.toast.title");
     private final Component newLevelDescription;
     private Visibility wantedVisibility;
     private Skill associatedSkill;
 
-    public SkillGainLevelToast(SkillLevelUpPacket skillLevelUpPacket) {
-        newLevelDescription = Skill.levelUpComponent(skillLevelUpPacket.skillId(), skillLevelUpPacket.skillLevel());
-        associatedSkill = new Skill(skillLevelUpPacket.skillId(),skillLevelUpPacket.skillLevel());
+    public SkillGainXpToast(SkillGainXpPacket skillGainXpPacket) {
+        newLevelDescription = Skill.gainXpComponent(skillGainXpPacket.skillId(), skillGainXpPacket.skillXp());
+        associatedSkill = new Skill(skillGainXpPacket.skillId(),skillGainXpPacket.skillXp());
         this.wantedVisibility = Visibility.HIDE;
     }
 

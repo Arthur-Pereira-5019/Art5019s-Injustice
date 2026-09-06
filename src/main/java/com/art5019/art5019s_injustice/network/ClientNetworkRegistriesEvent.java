@@ -16,7 +16,11 @@ public class ClientNetworkRegistriesEvent {
     public static void register(RegisterClientPayloadHandlersEvent event) {
         event.register(
                 SkillLevelUpPacket.TYPE,
-                ClientPayloadHandler::handleDataOnMain
+                ClientPayloadHandler::handleSkillLevelUp
+        );
+        event.register(
+                SkillGainXpPacket.TYPE,
+                ClientPayloadHandler::handleSkillGainXp
         );
     }
 }
