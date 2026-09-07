@@ -1,5 +1,6 @@
 package com.art5019.art5019s_injustice;
 
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.neoforge.registries.*;
 import org.slf4j.Logger;
@@ -42,8 +43,8 @@ public class Art5019sInjustice {
     public static final DeferredBlock<Block> EXAMPLE_BLOCK = BLOCKS.registerSimpleBlock("example_block", p -> p.mapColor(MapColor.STONE));
     public static final DeferredItem<BlockItem> EXAMPLE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("example_block", EXAMPLE_BLOCK);
 
-    public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", p -> p.food(new FoodProperties.Builder()
-            .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
+    public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY_TYPES =
+            DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, MODID);
 
 
     public Art5019sInjustice(IEventBus modEventBus, ModContainer modContainer) {
@@ -54,6 +55,7 @@ public class Art5019sInjustice {
         ITEMS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
         DATA_COMPONENTS.register(modEventBus);
+        BLOCK_ENTITY_TYPES.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 

@@ -24,12 +24,16 @@ public class Items {
             "engineering_book", x -> new SkillBook(bookProperties("engineering_book",new Skill(1,1)))
     );
 
+    public static final DeferredItem<Item> IRON_STICK = ITEMS.registerItem("iron_stick", Item::new);
+    public static final DeferredItem<Item> IRON_PLATE = ITEMS.registerItem("iron_plate", Item::new);
+
+
+
     public static Item.Properties bookProperties(String name, Skill skill) {
         return new Item.Properties().
                 stacksTo(1).
                 component(SKILL_COMPONENT, skill).
                 setId(ResourceKey.create(Registries.ITEM,Identifier.fromNamespaceAndPath(MODID,name)));
     }
-
 
 }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "show_notification": true,
+  "group": "iron_plate",
+  "category": "misc",
+  "pattern": [
+    "#O",
+    "O#"
+  ],
+  "key": {
+    "#": [
+      "minecraft:iron_ingot"
+    ],
+    "O": [
+      "minecraft:iron_nugget"
+    ]
+  },
+  "result": {
+    "id": "art5019sinjustice:iron_plate",
+    "count": 3
+  }
+}

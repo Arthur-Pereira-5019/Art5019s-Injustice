@@ -12,6 +12,9 @@ build/
 out/
 !**/src/**/out/
 
+### BLOCKBENCH ###
+*.bbmodel
+
 .run/
 
 ### Eclipse ###

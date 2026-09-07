@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "show_notification": true,
+  "group": "iron_stick",
+  "category": "misc",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": [
+      "minecraft:iron_ingot"
+    ]
+  },
+  "result": {
+    "id": "art5019sinjustice:iron_stick",
+    "count": 2
+  }
+}

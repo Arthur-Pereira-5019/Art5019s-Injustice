@@ -1,4 +1,4 @@
-package com.art5019.art5019s_injustice.event;
+package com.art5019.art5019s_injustice.item;
 
 import com.art5019.art5019s_injustice.data.Skill;
 import com.art5019.art5019s_injustice.data.Skills;
@@ -13,18 +13,22 @@ import java.util.function.Supplier;
 
 import static com.art5019.art5019s_injustice.Art5019sInjustice.CREATIVE_MODE_TABS;
 import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
+import static com.art5019.art5019s_injustice.block.BlockItems.ENGINEERING_TABLE_ITEM;
 import static com.art5019.art5019s_injustice.data.item.ItemDataComponents.SKILL_COMPONENT;
-import static com.art5019.art5019s_injustice.item.Items.ENGINEERING_BOOK;
+import static com.art5019.art5019s_injustice.item.Items.*;
 
 @Mod(MODID)
 @EventBusSubscriber
 public class RegisterModItens {
 
     public static final Supplier<CreativeModeTab> MOD_ITENS = CREATIVE_MODE_TABS.register("itens", () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup." + MODID + ".itens"))
+            .title(Component.translatable(MODID + ".itemGroup.itens"))
             .icon(() -> new ItemStack(ENGINEERING_BOOK.get()))
             .displayItems((params, output) -> {
                 generateBookTiers(output,ENGINEERING_BOOK.get(),1);
+                output.accept(ENGINEERING_TABLE_ITEM);
+                output.accept(IRON_PLATE);
+                output.accept(IRON_STICK);
             })
             .build()
     );

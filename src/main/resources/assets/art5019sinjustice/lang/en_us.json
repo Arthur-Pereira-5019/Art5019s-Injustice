@@ -5,6 +5,7 @@
 
   "art5019sinjustice.event.should_rest": "You're too stressed to do that now.",
 
+  "block.art5019sinjustice.engineering_table": "Engineering Table",
 
   "art5019sinjustice.configuration.title": "Art5019's Injustice Configs",
   "art5019sinjustice.configuration.section.art5019sinjustice.common.toml": "Art5019's Injustice Configs",
@@ -16,6 +17,10 @@
 
   "item.art5019sinjustice.skill_book.skilled_enough": "It looks so easy now.",
   "item.art5019sinjustice.engineering_book": "Engineering Book",
+  "item.art5019sinjustice.iron_stick": "Iron Stick",
+  "item.art5019sinjustice.iron_plate": "Iron Plate",
+
+  "art5019sinjustice.itemGroup.itens": "Itens",
 
 
   "art5019sinjustice.skill.engineering": "Engineering",

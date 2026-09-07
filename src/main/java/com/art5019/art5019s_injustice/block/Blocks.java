@@ -19,8 +19,8 @@ public class Blocks {
     public static BlockBehaviour.Properties engineeringProperties(Identifier registryName) {
         return BlockBehaviour.Properties.of()
                 .setId(ResourceKey.create(Registries.BLOCK,registryName))
-                .destroyTime(2.0f)
-                .explosionResistance(20.0f)
+                .destroyTime(1.0f)
+                .explosionResistance(8.0f)
                 .sound(SoundType.METAL);
     }
 }
