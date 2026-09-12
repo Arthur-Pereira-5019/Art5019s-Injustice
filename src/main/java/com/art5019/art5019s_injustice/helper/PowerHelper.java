@@ -11,7 +11,7 @@ public class PowerHelper {
         if(!testHuman || serverPlayer.getData(POWER_ID) == 0) {
             Power fpower = power;
             while (fpower.powerId < 0) {
-                fpower = Power.fromId(power.weightedList.getRandom());
+                fpower = power.weightedList.getRandom();
             }
             serverPlayer.setData(POWER_ID,fpower.powerId);
             return fpower.powerId;
