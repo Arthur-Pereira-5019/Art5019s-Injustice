@@ -1,7 +1,7 @@
 package com.art5019.art5019s_injustice.item;
 
-import com.art5019.art5019s_injustice.data.Skill;
-import com.art5019.art5019s_injustice.data.Skills;
+import com.art5019.art5019s_injustice.data.records.skill.Skill;
+import com.art5019.art5019s_injustice.data.records.skill.Skills;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;

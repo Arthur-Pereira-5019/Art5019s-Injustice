@@ -1,26 +1,20 @@
 package com.art5019.art5019s_injustice.helper;
 
-import com.art5019.art5019s_injustice.data.PlayerSkill;
-import com.art5019.art5019s_injustice.data.Skill;
-import com.art5019.art5019s_injustice.data.Skills;
+import com.art5019.art5019s_injustice.data.records.skill.PlayerSkill;
+import com.art5019.art5019s_injustice.data.records.skill.Skills;
 import com.art5019.art5019s_injustice.network.SkillGainXpPacket;
 import com.art5019.art5019s_injustice.network.SkillLevelUpPacket;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.components.toasts.Toast;
-import net.minecraft.client.gui.components.toasts.ToastManager;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.RandomSource;
 
-import java.awt.*;
 import java.util.*;
 import java.util.List;
 
 import static com.art5019.art5019s_injustice.data.DataAttachments.*;
-import static com.art5019.art5019s_injustice.data.Skills.INTELLIGENCE;
-import static java.util.Map.entry;
+import static com.art5019.art5019s_injustice.data.records.skill.Skills.INTELLIGENCE;
 
 public class SkillHelper {
     public static int levelToXpFunction(int l) {

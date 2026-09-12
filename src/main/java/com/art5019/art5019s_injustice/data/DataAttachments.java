@@ -1,5 +1,6 @@
 package com.art5019.art5019s_injustice.data;
 
+import com.art5019.art5019s_injustice.data.records.skill.PlayerSkill;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.neoforged.fml.common.Mod;

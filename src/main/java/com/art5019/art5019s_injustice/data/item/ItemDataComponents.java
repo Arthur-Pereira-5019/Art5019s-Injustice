@@ -1,12 +1,10 @@
 package com.art5019.art5019s_injustice.data.item;
 
-import com.art5019.art5019s_injustice.data.Skill;
+import com.art5019.art5019s_injustice.data.records.skill.Skill;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.component.DataComponentType;
-import net.minecraft.core.registries.Registries;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 

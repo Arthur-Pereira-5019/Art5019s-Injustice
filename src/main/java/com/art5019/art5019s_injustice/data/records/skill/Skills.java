@@ -1,4 +1,4 @@
-package com.art5019.art5019s_injustice.data;
+package com.art5019.art5019s_injustice.data.records.skill;
 
 import net.minecraft.world.item.ItemStack;
 

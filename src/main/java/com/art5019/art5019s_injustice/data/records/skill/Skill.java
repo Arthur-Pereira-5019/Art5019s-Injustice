@@ -1,6 +1,5 @@
-package com.art5019.art5019s_injustice.data;
+package com.art5019.art5019s_injustice.data.records.skill;
 
-import com.art5019.art5019s_injustice.helper.SkillHelper;
 import com.art5019.art5019s_injustice.helper.TextHelper;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -8,7 +7,7 @@ import net.minecraft.network.chat.TextColor;
 
 import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
 
-public record PlayerSkill(int skillId, int xp) {
+public record Skill(int skillId, int level) {
     public MutableComponent getTranslatable() {
         return Component.translatable(geTranslatationSource());
     }
@@ -17,20 +16,16 @@ public record PlayerSkill(int skillId, int xp) {
         return MODID+".skill."+Skills.fromId(skillId).translatableSuffix;
     }
 
-    public int getLevel() {
-        return SkillHelper.getLevelForXp(xp);
-    }
-
     public MutableComponent getComponent() {
         MutableComponent component = getTranslatable();
         component.append(Component.literal(" "));
-        component.append(TextHelper.toRomanNumeral(getLevel()));
+        component.append(TextHelper.toRomanNumeral(level));
         component.withColor(levelColor());
         return component;
     }
 
     public TextColor levelColor() {
-        return switch (getLevel()) {
+        return switch (level) {
             case 1 -> TextColor.parseColor("#4d3719").getOrThrow();
             case 2 -> TextColor.DARK_GRAY;
             case 3 -> TextColor.parseColor("#b46519").getOrThrow();
@@ -44,24 +39,14 @@ public record PlayerSkill(int skillId, int xp) {
     }
 
     public static Component levelUpComponent(int skillId, int level) {
-        return new PlayerSkill(skillId, level).levelUpComponent();
+        return new Skill(skillId, level).levelUpComponent();
     }
 
-    public static Component gainXpComponent(int skillId, int level) {
-        return new PlayerSkill(skillId, level).gainXpComponent();
-    }
 
     public Component levelUpComponent() {
         return getTranslatable().
                 append(Component.translatable(MODID+".skill.levelup")).
-                append(String.valueOf(getLevel())).append("!").withColor(levelColor());
+                append(String.valueOf(level)).append("!").withColor(levelColor());
     }
 
-    public Component gainXpComponent() {
-        return getTranslatable().
-                append(" ").
-                append(SkillHelper.getLevelXpComponent(xp)).
-                append(" XP.")
-                .withColor(TextColor.WHITE);
-    }
 }
