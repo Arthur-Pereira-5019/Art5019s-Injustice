@@ -1,5 +1,6 @@
 package com.art5019.art5019s_injustice.data.item;
 
+import com.art5019.art5019s_injustice.data.records.blood_syringe.BloodSyringeData;
 import com.art5019.art5019s_injustice.data.records.skill.Skill;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -20,10 +21,23 @@ public class ItemDataComponents {
             ).apply(instance, Skill::new)
     );
 
+    public static final Codec<BloodSyringeData> BLOOD_TYPE_CODEC = RecordCodecBuilder.create(instance ->
+            instance.group(
+                    Codec.INT.fieldOf("bloodEffectId").forGetter(BloodSyringeData::bloodEffectId),
+                    Codec.INT.fieldOf("extraEnumId").forGetter(BloodSyringeData::bloodEffectId)
+            ).apply(instance, BloodSyringeData::new)
+    );
+
 
     public static final Supplier<DataComponentType<Skill>> SKILL_COMPONENT = DATA_COMPONENTS.registerComponentType(
             "skill_component",
             builder -> builder
                     .persistent(SKILL_COMPONENT_CODEC)
+    );
+
+    public static final Supplier<DataComponentType<BloodSyringeData>> BLOOD_TYPE_COMPONENT = DATA_COMPONENTS.registerComponentType(
+            "blood_type_component",
+            builder -> builder
+                    .persistent(BLOOD_TYPE_CODEC)
     );
 }

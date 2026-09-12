@@ -20,6 +20,7 @@ public class Items {
 
     public static final DeferredItem<Item> IRON_STICK = ITEMS.registerItem("iron_stick", Item::new);
     public static final DeferredItem<Item> IRON_PLATE = ITEMS.registerItem("iron_plate", Item::new);
+    public static final DeferredItem<Item> EMPTY_SYRINGE = ITEMS.registerItem("empty_syringe", Item::new);
 
 
 
