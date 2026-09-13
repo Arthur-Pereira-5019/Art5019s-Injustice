@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "silicon_bit",
+  "category": "misc",
+  "pattern": [
+    "OOW",
+    "0V0",
+    "#00"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_nugget"
+    },
+    "V": {
+      "item": "art5019sinjustice:silicon_bit"
+    },
+    "W": {
+      "tag": "minecraft:buttons"
+    }
+  },
+  "result": {
+    "item": "art5019sinjustice:empty_syringe",
+    "count": 1
+  }
+}

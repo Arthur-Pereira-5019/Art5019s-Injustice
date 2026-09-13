@@ -12,7 +12,7 @@ public enum BloodSyringeEffect {
     STRANGE(-1,"strange",null),
     POISON(0,"toxic",null),
     HEALTHY(1,"healthy",null),
-    MUTANT_UNKNOWN(2,"mutant_unknown", Power.class);
+    MUTANT(2,"mutant", Power.class);
 
     public final int bloodEffectId;
     public final String translatable;

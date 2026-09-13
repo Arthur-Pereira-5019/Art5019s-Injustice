@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "silicon_bit",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "art5019sinjustice:silicon_bit"
+    }
+  },
+  "result": {
+    "item": "art5019sinjustice:silicon",
+    "count": 9
+  }
+}

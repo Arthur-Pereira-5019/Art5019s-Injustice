@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silicon_bit",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "art5019sinjustice:silicon"
+    }
+  ],
+  "result": {
+    "item": "art5019sinjustice:silicon_bit",
+    "count": 9
+  }
+}

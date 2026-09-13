@@ -1,5 +1,6 @@
 package com.art5019.art5019s_injustice.item;
 
+import com.art5019.art5019s_injustice.data.records.blood_syringe.BloodSyringeData;
 import com.art5019.art5019s_injustice.data.records.skill.Skill;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
@@ -10,6 +11,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import static com.art5019.art5019s_injustice.Art5019sInjustice.ITEMS;
 import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
+import static com.art5019.art5019s_injustice.data.item.ItemDataComponents.BLOOD_TYPE_COMPONENT;
 import static com.art5019.art5019s_injustice.data.item.ItemDataComponents.SKILL_COMPONENT;
 
 @Mod(MODID)
@@ -18,9 +20,15 @@ public class Items {
             "engineering_book", x -> new SkillBook(bookProperties("engineering_book",new Skill(1,1)))
     );
 
+    public static final DeferredItem<Item> BLOOD_SYRINGE = ITEMS.register(
+            "blood_syringe", x -> new BloodSyringe(bloodSyringeProperties(x,new BloodSyringeData(1,0)))
+    );
+
     public static final DeferredItem<Item> IRON_STICK = ITEMS.registerItem("iron_stick", Item::new);
     public static final DeferredItem<Item> IRON_PLATE = ITEMS.registerItem("iron_plate", Item::new);
     public static final DeferredItem<Item> EMPTY_SYRINGE = ITEMS.registerItem("empty_syringe", Item::new);
+    public static final DeferredItem<Item> SILICON = ITEMS.registerItem("silicon", Item::new);
+    public static final DeferredItem<Item> SILICON_BIT = ITEMS.registerItem("silicon_bit", Item::new);
 
 
 
@@ -29,6 +37,13 @@ public class Items {
                 stacksTo(1).
                 component(SKILL_COMPONENT, skill).
                 setId(ResourceKey.create(Registries.ITEM,Identifier.fromNamespaceAndPath(MODID,name)));
+    }
+
+    public static Item.Properties bloodSyringeProperties(Identifier identifier, BloodSyringeData blood) {
+        return new Item.Properties().
+                stacksTo(1).
+                component(BLOOD_TYPE_COMPONENT, blood).
+                setId(ResourceKey.create(Registries.ITEM,identifier));
     }
 
 }

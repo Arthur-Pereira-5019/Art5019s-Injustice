@@ -2,6 +2,8 @@ package com.art5019.art5019s_injustice.data;
 
 import com.art5019.art5019s_injustice.data.common.WeightedList;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -34,7 +36,7 @@ public enum Power {
 
     Power(int powerId) {
         this.powerId = powerId;
-        this.weightedList = new WeightedList<>(Power.fromId(powerId));
+        this.weightedList = new WeightedList<>(this);
     }
 
     public static Power fromId(int powerId) {
@@ -44,6 +46,32 @@ public enum Power {
             }
         }
         return NONE;
+    }
+
+    public static List<Power> collapseReferences(Power power) {
+        ArrayList<Power> references = new ArrayList<>();
+        references.add(power);
+        Power currentPower;
+        int i = 0;
+        while (true) {
+            currentPower = references.get(i);
+            List<Power> newPowerList = currentPower.weightedList.getKeyList();
+            for (Power power1 : newPowerList) {
+                if(!references.contains(power1)) {
+                    references.add(power1);
+                }
+            }
+            i++;
+            if(i == references.size()) {
+                break;
+            }
+        }
+        return references;
+    }
+
+    public static List<Power> collapseFinalReferences(Power power) {
+        ArrayList<Integer> ids = new ArrayList<>();
+        return collapseReferences(power).stream().filter(x -> x.powerId > 0).toList();
     }
 
 }

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "silicon",
+  "category": "misc",
+  "ingredient": {
+    "item": "minecraft:quartz"
+  },
+  "result": "art5019sinjustice:silicon_bit",
+  "experience": 2
+}

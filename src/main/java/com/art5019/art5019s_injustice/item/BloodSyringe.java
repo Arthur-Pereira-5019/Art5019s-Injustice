@@ -45,7 +45,7 @@ public class BloodSyringe extends Item {
                 serverPlayer.addEffect(new MobEffectInstance(POISON,600,1));
             case HEALTHY:
                 serverPlayer.addEffect(new MobEffectInstance(REGENERATION,600,0));
-            case MUTANT_UNKNOWN:
+            case MUTANT:
                 PowerHelper.applyPower(serverPlayer, Power.MUTANT, true);
         }
     }

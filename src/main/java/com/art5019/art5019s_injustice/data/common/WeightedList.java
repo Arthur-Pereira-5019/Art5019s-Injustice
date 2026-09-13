@@ -47,4 +47,8 @@ public class WeightedList<T> {
     public void addEntry(Map<T, Float> entries) {
         this.entries.putAll(entries);
     }
+
+    public List<T> getKeyList() {
+        return entries.keySet().stream().toList();
+    }
 }
