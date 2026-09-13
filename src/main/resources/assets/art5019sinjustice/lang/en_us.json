@@ -19,6 +19,27 @@
   "item.art5019sinjustice.engineering_book": "Engineering Book",
   "item.art5019sinjustice.iron_stick": "Iron Stick",
   "item.art5019sinjustice.iron_plate": "Iron Plate",
+  "item.art5019sinjustice.silicon": "Silicon",
+  "item.art5019sinjustice.silicon_bit": "Silicon Bit",
+  "item.art5019sinjustice.empty_syringe": "Empty Syringe",
+  "item.art5019sinjustice.blood_syringe": "Red Blood Syringe",
+
+  "art5019sinjustice.item.blood_syringe.strange": "Unexpected Blood",
+  "art5019sinjustice.item.blood_syringe.toxic": "Toxic Homo sapiens Blood.",
+  "art5019sinjustice.item.blood_syringe.healthy": "Healthy Homo sapiens Blood",
+  "art5019sinjustice.item.blood_syringe.mutant": "Homo superior Blood",
+
+  "art5019sinjustice.power.scientific.mutant": "Unknown Mutant type abilities.",
+  "art5019sinjustice.power.scientific.omega_level": "Omega-Level Mutant gene.",
+  "art5019sinjustice.power.scientific.alpha": "Alpha-Level Mutant gene.",
+  "art5019sinjustice.power.scientific.beta": "Beta-Level Mutant gene.",
+
+  "art5019sinjustice.power.scientific.storm": "Omega-Level Mutant with identified weather manipulation genes.",
+  "art5019sinjustice.power.scientific.cyclops": "Alpha-Level Mutant with identified portal eyes genes.",
+  "art5019sinjustice.power.scientific.shadowcat": "Beta-Level Mutant with identified density shifting genes.",
+  "art5019sinjustice.power.scientific.wolverine": "Beta-Level Mutant with identified wolverine-like genes.",
+
+
 
   "art5019sinjustice.itemGroup.itens": "Itens",
 

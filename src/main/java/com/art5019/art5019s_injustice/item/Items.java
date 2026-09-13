@@ -21,7 +21,7 @@ public class Items {
     );
 
     public static final DeferredItem<Item> BLOOD_SYRINGE = ITEMS.register(
-            "blood_syringe", x -> new BloodSyringe(bloodSyringeProperties(x,new BloodSyringeData(1,0)))
+            "blood_syringe", x -> new BloodSyringe(bloodSyringeProperties(x,new BloodSyringeData(1,0,false)))
     );
 
     public static final DeferredItem<Item> IRON_STICK = ITEMS.registerItem("iron_stick", Item::new);

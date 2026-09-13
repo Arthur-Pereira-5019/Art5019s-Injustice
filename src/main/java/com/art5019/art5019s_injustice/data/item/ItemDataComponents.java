@@ -24,7 +24,8 @@ public class ItemDataComponents {
     public static final Codec<BloodSyringeData> BLOOD_TYPE_CODEC = RecordCodecBuilder.create(instance ->
             instance.group(
                     Codec.INT.fieldOf("bloodEffectId").forGetter(BloodSyringeData::bloodEffectId),
-                    Codec.INT.fieldOf("extraEnumId").forGetter(BloodSyringeData::bloodEffectId)
+                    Codec.INT.fieldOf("extraEnumId").forGetter(BloodSyringeData::bloodEffectId),
+                    Codec.BOOL.fieldOf("labeled").forGetter(BloodSyringeData::labeled)
             ).apply(instance, BloodSyringeData::new)
     );
 

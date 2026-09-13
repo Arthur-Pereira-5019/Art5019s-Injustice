@@ -53,17 +53,17 @@ public class RegisterModItens {
 
     private static void generateBloodSyringes(CreativeModeTab.Output output) {
         BloodSyringeEffect[] values = BloodSyringeEffect.values();
-        for (int i = 1; i <= values.length; i++) {
+        for (int i = 1; i < values.length; i++) {
             ItemStack itemStack = new ItemStack(BLOOD_SYRINGE.get());
             if(values[i] != BloodSyringeEffect.MUTANT) {
-                itemStack.set(BLOOD_TYPE_COMPONENT, new BloodSyringeData(values[i].bloodEffectId,0));
+                itemStack.set(BLOOD_TYPE_COMPONENT, new BloodSyringeData(values[i].bloodEffectId,0, true));
                 output.accept(itemStack);
             } else {
                 List<Power> mutantPower = Power.collapseReferences(Power.MUTANT);
                 for (Power power : mutantPower) {
-                    itemStack.set(BLOOD_TYPE_COMPONENT, new BloodSyringeData(BloodSyringeEffect.MUTANT.bloodEffectId, power.powerId));
+                    itemStack.set(BLOOD_TYPE_COMPONENT, new BloodSyringeData(BloodSyringeEffect.MUTANT.bloodEffectId, power.powerId, true));
+                    output.accept(itemStack);
                 }
-                output.accept(itemStack);
             }
         }
     }
