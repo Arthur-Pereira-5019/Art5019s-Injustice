@@ -24,15 +24,15 @@
   "item.art5019sinjustice.empty_syringe": "Empty Syringe",
   "item.art5019sinjustice.blood_syringe": "Red Blood Syringe",
 
-  "art5019sinjustice.item.blood_syringe.strange": "Unexpected Blood",
+  "art5019sinjustice.item.blood_syringe.strange": "Unexpected Blood. Contact TOAA about that.",
   "art5019sinjustice.item.blood_syringe.toxic": "Toxic Homo sapiens Blood.",
   "art5019sinjustice.item.blood_syringe.healthy": "Healthy Homo sapiens Blood",
   "art5019sinjustice.item.blood_syringe.mutant": "Homo superior Blood",
 
   "art5019sinjustice.power.scientific.mutant": "Unknown Mutant type abilities.",
-  "art5019sinjustice.power.scientific.omega_level": "Omega-Level Mutant gene.",
-  "art5019sinjustice.power.scientific.alpha": "Alpha-Level Mutant gene.",
-  "art5019sinjustice.power.scientific.beta": "Beta-Level Mutant gene.",
+  "art5019sinjustice.power.scientific.omega_mutant": "Omega-Level Mutant gene.",
+  "art5019sinjustice.power.scientific.alpha_mutant": "Alpha-Level Mutant gene.",
+  "art5019sinjustice.power.scientific.beta_mutant": "Beta-Level Mutant gene.",
 
   "art5019sinjustice.power.scientific.storm": "Omega-Level Mutant with identified weather manipulation genes.",
   "art5019sinjustice.power.scientific.cyclops": "Alpha-Level Mutant with identified portal eyes genes.",

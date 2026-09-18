@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "silicon_bit",
+  "category": "misc",
+  "pattern": [
+    "OOV",
+    "0V0",
+    "#00"
+  ],
+  "key": {
+    "#": [
+      "minecraft:iron_nugget"
+    ],
+    "V": [
+      "art5019sinjustice:silicon_bit"
+    ]
+  },
+  "result": {
+    "id": "art5019sinjustice:empty_syringe",
+    "count": 1
+  }
+}

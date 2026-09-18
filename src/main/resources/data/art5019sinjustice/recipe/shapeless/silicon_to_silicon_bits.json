@@ -3,12 +3,12 @@
   "group": "silicon_bit",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "art5019sinjustice:silicon"
-    }
+    [
+      "art5019sinjustice:silicon"
+    ]
   ],
   "result": {
-    "item": "art5019sinjustice:silicon_bit",
+    "id": "art5019sinjustice:silicon_bit",
     "count": 9
   }
 }

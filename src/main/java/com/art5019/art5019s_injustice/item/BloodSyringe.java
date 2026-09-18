@@ -4,6 +4,8 @@ import com.art5019.art5019s_injustice.data.Power;
 import com.art5019.art5019s_injustice.data.records.blood_syringe.BloodSyringeData;
 import com.art5019.art5019s_injustice.data.records.blood_syringe.BloodSyringeEffect;
 import com.art5019.art5019s_injustice.helper.PowerHelper;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -13,13 +15,18 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
 import static com.art5019.art5019s_injustice.data.item.ItemDataComponents.BLOOD_TYPE_COMPONENT;
 import static com.art5019.art5019s_injustice.item.Items.EMPTY_SYRINGE;
 import static net.minecraft.world.effect.MobEffects.POISON;
 import static net.minecraft.world.effect.MobEffects.REGENERATION;
 
-public class BloodSyringe extends Item {
+public class BloodSyringe extends Item implements ModTooltiped{
     public BloodSyringe(Properties properties) {
         super(properties);
     }
@@ -36,8 +43,6 @@ public class BloodSyringe extends Item {
         return InteractionResult.SUCCESS;
     }
 
-
-
     public void applyBlood(BloodSyringeData blood, ServerLevel serverLevel, ServerPlayer serverPlayer) {
         BloodSyringeEffect effect = BloodSyringeEffect.fromId(blood.bloodEffectId());
         switch (effect) {
@@ -48,5 +53,23 @@ public class BloodSyringe extends Item {
             case MUTANT:
                 PowerHelper.applyPower(serverPlayer, Power.MUTANT, true);
         }
+    }
+
+    @Override
+    public List<Component> display(ItemStack itemStack) {
+        List<Component> components = new ArrayList<>();
+        BloodSyringeData bloodSyringeData = itemStack.get(BLOOD_TYPE_COMPONENT);
+        if(bloodSyringeData.labeled()) {
+            BloodSyringeEffect bloodSyringeEffect = BloodSyringeEffect.fromId(bloodSyringeData.bloodEffectId());
+            components.add(Component.translatable(MODID+".item.blood_syringe."+bloodSyringeEffect.translatable));
+            if(bloodSyringeEffect == BloodSyringeEffect.MUTANT) {
+                components.add(
+                        Component.literal(" ").append(
+                                Power.fromId(bloodSyringeData.extraEnumId()).getCompScientificDecorated()
+                        )
+                );
+            }
+        }
+        return components;
     }
 }

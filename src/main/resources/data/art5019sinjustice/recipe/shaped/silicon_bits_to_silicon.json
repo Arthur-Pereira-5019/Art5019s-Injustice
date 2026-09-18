@@ -8,12 +8,12 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "art5019sinjustice:silicon_bit"
-    }
+    "#": [
+      "art5019sinjustice:silicon_bit"
+    ]
   },
   "result": {
-    "item": "art5019sinjustice:silicon",
-    "count": 9
+    "id": "art5019sinjustice:silicon",
+    "count": 1
   }
 }
