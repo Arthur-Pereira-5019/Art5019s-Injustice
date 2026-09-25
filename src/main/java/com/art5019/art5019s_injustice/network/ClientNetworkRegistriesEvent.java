@@ -1,5 +1,7 @@
 package com.art5019.art5019s_injustice.network;
 
+import com.art5019.art5019s_injustice.network.packets.SkillGainXpPacket;
+import com.art5019.art5019s_injustice.network.packets.SkillLevelUpPacket;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;

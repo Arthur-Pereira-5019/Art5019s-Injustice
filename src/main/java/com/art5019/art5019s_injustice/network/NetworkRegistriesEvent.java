@@ -1,9 +1,11 @@
 package com.art5019.art5019s_injustice.network;
 
+import com.art5019.art5019s_injustice.network.packets.PlayerUsesPowerPacket;
+import com.art5019.art5019s_injustice.network.packets.SkillGainXpPacket;
+import com.art5019.art5019s_injustice.network.packets.SkillLevelUpPacket;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.neoforge.client.network.event.RegisterClientPayloadHandlersEvent;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 
@@ -23,6 +25,11 @@ public class NetworkRegistriesEvent {
         registrar.playBidirectional(
                 SkillGainXpPacket.TYPE,
                 SkillGainXpPacket.STREAM_CODEC,
+                ServerPayloadHandler::handleDataOnMain
+        );
+        registrar.playToServer(
+                PlayerUsesPowerPacket.TYPE,
+                PlayerUsesPowerPacket.STREAM_CODEC,
                 ServerPayloadHandler::handleDataOnMain
         );
     }

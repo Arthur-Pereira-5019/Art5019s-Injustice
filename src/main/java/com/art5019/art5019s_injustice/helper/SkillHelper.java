@@ -2,8 +2,8 @@ package com.art5019.art5019s_injustice.helper;
 
 import com.art5019.art5019s_injustice.data.records.skill.PlayerSkill;
 import com.art5019.art5019s_injustice.data.records.skill.Skills;
-import com.art5019.art5019s_injustice.network.SkillGainXpPacket;
-import com.art5019.art5019s_injustice.network.SkillLevelUpPacket;
+import com.art5019.art5019s_injustice.network.packets.SkillGainXpPacket;
+import com.art5019.art5019s_injustice.network.packets.SkillLevelUpPacket;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;

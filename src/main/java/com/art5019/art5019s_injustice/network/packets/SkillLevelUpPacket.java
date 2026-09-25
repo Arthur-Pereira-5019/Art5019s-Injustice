@@ -1,4 +1,4 @@
-package com.art5019.art5019s_injustice.network;
+package com.art5019.art5019s_injustice.network.packets;
 
 import io.netty.buffer.ByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;

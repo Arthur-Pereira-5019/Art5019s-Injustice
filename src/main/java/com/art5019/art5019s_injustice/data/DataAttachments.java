@@ -1,6 +1,7 @@
 package com.art5019.art5019s_injustice.data;
 
 import com.art5019.art5019s_injustice.data.records.emissors.Emissor;
+import com.art5019.art5019s_injustice.data.records.power.ClientPower;
 import com.art5019.art5019s_injustice.data.records.skill.PlayerSkill;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -35,10 +36,22 @@ public class DataAttachments {
             ).apply(instance, Emissor::new)
     );
 
+    public static final Codec<ClientPower> CLIENT_POWER_CODEC = RecordCodecBuilder.create(instance ->
+            instance.group(
+                    Codec.INT.fieldOf("serverPowerId").forGetter(ClientPower::serverPowerId),
+                    Codec.INT.fieldOf("cooldown").forGetter(ClientPower::cooldown)
+            ).apply(instance, ClientPower::new)
+    );
+
 
     public static final Codec<List<PlayerSkill>> SKILLS = SKILL_CODEC.listOf();
     public static final Codec<List<Emissor>> EMISSORS = EMISSOR_CODEC.listOf();
+    public static final Codec<List<ClientPower>> CLIENT_POWERS = CLIENT_POWER_CODEC.listOf();
 
+    public static final Supplier<AttachmentType<List<ClientPower>>> CLIENT_POWER = ATTACHMENT_TYPES.register(
+            "client_power", () -> AttachmentType.builder((Supplier<List<ClientPower>>) ArrayList::new).
+                    serialize(CLIENT_POWERS.fieldOf("client_power")).copyOnDeath().build()
+    );
 
     public static final Supplier<AttachmentType<List<PlayerSkill>>> SKILL = ATTACHMENT_TYPES.register(
             "skills", () -> AttachmentType.builder((Supplier<List<PlayerSkill>>) ArrayList::new).
@@ -54,8 +67,8 @@ public class DataAttachments {
             "alignment", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("alignment")).build()
     );
 
-    public static final Supplier<AttachmentType<Integer>> POWER_ID = ATTACHMENT_TYPES.register(
-            "power_id", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("power_id")).build()
+    public static final Supplier<AttachmentType<Integer>> SUPERPOWER_POWER_ID = ATTACHMENT_TYPES.register(
+            "power_id", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("superpower_id")).build()
     );
 
     public static final Supplier<AttachmentType<Integer>> STRESS = ATTACHMENT_TYPES.register(
@@ -64,6 +77,10 @@ public class DataAttachments {
 
     public static final Supplier<AttachmentType<Long>> LAST_QUERY = ATTACHMENT_TYPES.register(
             "last_query", () -> AttachmentType.builder(() -> 0L).serialize(Codec.LONG.fieldOf("last_query")).build()
+    );
+
+    public static final Supplier<AttachmentType<Integer>> POWER_LIST_POS = ATTACHMENT_TYPES.register(
+            "power_list_pos", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("power_list_pos")).build()
     );
 
 }

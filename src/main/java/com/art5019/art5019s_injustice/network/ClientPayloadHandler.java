@@ -2,6 +2,8 @@ package com.art5019.art5019s_injustice.network;
 
 import com.art5019.art5019s_injustice.graphics.toast.SkillGainXpToast;
 import com.art5019.art5019s_injustice.graphics.toast.SkillLevelUpToast;
+import com.art5019.art5019s_injustice.network.packets.SkillGainXpPacket;
+import com.art5019.art5019s_injustice.network.packets.SkillLevelUpPacket;
 import net.minecraft.client.Minecraft;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 

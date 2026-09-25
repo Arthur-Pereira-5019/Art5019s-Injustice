@@ -2,7 +2,7 @@ package com.art5019.art5019s_injustice.graphics.toast;
 
 import com.art5019.art5019s_injustice.data.records.skill.PlayerSkill;
 import com.art5019.art5019s_injustice.data.records.skill.Skills;
-import com.art5019.art5019s_injustice.network.SkillGainXpPacket;
+import com.art5019.art5019s_injustice.network.packets.SkillGainXpPacket;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.toasts.Toast;
