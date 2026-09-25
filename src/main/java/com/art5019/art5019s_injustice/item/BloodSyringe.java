@@ -48,10 +48,13 @@ public class BloodSyringe extends Item implements ModTooltiped{
         switch (effect) {
             case POISON:
                 serverPlayer.addEffect(new MobEffectInstance(POISON,600,1));
+                break;
             case HEALTHY:
                 serverPlayer.addEffect(new MobEffectInstance(REGENERATION,600,0));
+                break;
             case MUTANT:
                 PowerHelper.applyPower(serverPlayer, Power.MUTANT, true);
+                break;
         }
     }
 
@@ -69,7 +72,7 @@ public class BloodSyringe extends Item implements ModTooltiped{
                         )
                 );
             }
-        }
+        } 
         return components;
     }
 }

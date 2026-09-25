@@ -1,5 +1,6 @@
 package com.art5019.art5019s_injustice.data;
 
+import com.art5019.art5019s_injustice.data.records.emissors.Emissor;
 import com.art5019.art5019s_injustice.data.records.skill.PlayerSkill;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -15,6 +16,7 @@ import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
 
 @Mod(MODID)
 public class DataAttachments {
+
     public static final Codec<PlayerSkill> SKILL_CODEC = RecordCodecBuilder.create(instance ->
             instance.group(
                     Codec.INT.fieldOf("skillId").forGetter(PlayerSkill::skillId),
@@ -22,11 +24,30 @@ public class DataAttachments {
             ).apply(instance, PlayerSkill::new)
     );
 
+    public static final Codec<Emissor> EMISSOR_CODEC = RecordCodecBuilder.create(instance ->
+            instance.group(
+                    Codec.INT.fieldOf("emissorEffectId").forGetter(Emissor::emissorEffectId),
+                    Codec.LONG.fieldOf("expiryTick").forGetter(Emissor::expiryTick),
+                    Codec.DOUBLE.fieldOf("x").forGetter(Emissor::posX),
+                    Codec.DOUBLE.fieldOf("y").forGetter(Emissor::posY),
+                    Codec.DOUBLE.fieldOf("z").forGetter(Emissor::posZ),
+                    Codec.FLOAT.listOf().fieldOf("parameters").forGetter(Emissor::parameters)
+            ).apply(instance, Emissor::new)
+    );
+
+
     public static final Codec<List<PlayerSkill>> SKILLS = SKILL_CODEC.listOf();
+    public static final Codec<List<Emissor>> EMISSORS = EMISSOR_CODEC.listOf();
+
 
     public static final Supplier<AttachmentType<List<PlayerSkill>>> SKILL = ATTACHMENT_TYPES.register(
             "skills", () -> AttachmentType.builder((Supplier<List<PlayerSkill>>) ArrayList::new).
                     serialize(SKILLS.fieldOf("skills")).copyOnDeath().build()
+    );
+
+    public static final Supplier<AttachmentType<List<Emissor>>> LEVEL_EMISSORS = ATTACHMENT_TYPES.register(
+            "emissors", () -> AttachmentType.builder((Supplier<List<Emissor>>) ArrayList::new).
+                    serialize(EMISSORS.fieldOf("emissors")).copyOnDeath().build()
     );
 
     public static final Supplier<AttachmentType<Integer>> ALIGNMENT = ATTACHMENT_TYPES.register(
