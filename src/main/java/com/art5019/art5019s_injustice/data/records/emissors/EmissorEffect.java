@@ -18,4 +18,7 @@ public enum EmissorEffect {
         }
     }
 
+    public int getId() {
+        return id;
+    }
 }
