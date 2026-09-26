@@ -1,6 +1,8 @@
 package com.art5019.art5019s_injustice.data.records.blood_syringe;
 
-import com.art5019.art5019s_injustice.data.Power;
+import com.art5019.art5019s_injustice.data.common.IdMapper;
+import com.art5019.art5019s_injustice.powers.SuperpowerService;
+import com.art5019.art5019s_injustice.powers.superpower.Superpower;
 
 /**
  * Strange isn't actually a blood type, it should only be used as a countermeasure to undefined Ids.
@@ -12,16 +14,16 @@ public enum BloodSyringeEffect {
     STRANGE(-1,"strange",null),
     POISON(0,"toxic",null),
     HEALTHY(1,"healthy",null),
-    MUTANT(2,"mutant", Power.class);
+    MUTANT(2,"mutant", SuperpowerService::getUndeterminedSuperpower);
 
     public final int bloodEffectId;
     public final String translatable;
-    public final Class<? extends Enum<?>> relatedEnum;
+    public final IdMapper<?> relatedMap;
 
-    BloodSyringeEffect(int bloodEffectId, String translatable, Class<? extends Enum<?>> relatedEnum) {
+    BloodSyringeEffect(int bloodEffectId, String translatable, IdMapper<?> relatedMap) {
         this.bloodEffectId = bloodEffectId;
         this.translatable = translatable;
-        this.relatedEnum = relatedEnum;
+        this.relatedMap = relatedMap;
     }
 
     public static BloodSyringeEffect fromId(int bloodEffectId) {

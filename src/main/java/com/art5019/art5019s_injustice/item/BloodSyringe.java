@@ -1,11 +1,10 @@
 package com.art5019.art5019s_injustice.item;
 
-import com.art5019.art5019s_injustice.data.Power;
 import com.art5019.art5019s_injustice.data.records.blood_syringe.BloodSyringeData;
 import com.art5019.art5019s_injustice.data.records.blood_syringe.BloodSyringeEffect;
-import com.art5019.art5019s_injustice.helper.PowerHelper;
+import com.art5019.art5019s_injustice.powers.SuperpowerService;
+import com.art5019.art5019s_injustice.powers.superpower.mutant.Mutant;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -15,7 +14,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,7 +51,7 @@ public class BloodSyringe extends Item implements ModTooltiped{
                 serverPlayer.addEffect(new MobEffectInstance(REGENERATION,600,0));
                 break;
             case MUTANT:
-                PowerHelper.applyPower(serverPlayer, Power.MUTANT, true);
+                SuperpowerService.applySuperpower(serverPlayer, Mutant.getInstance(), true);
                 break;
         }
     }
@@ -68,7 +66,7 @@ public class BloodSyringe extends Item implements ModTooltiped{
             if(bloodSyringeEffect == BloodSyringeEffect.MUTANT) {
                 components.add(
                         Component.literal(" ").append(
-                                Power.fromId(bloodSyringeData.extraEnumId()).getCompScientificDecorated()
+                                SuperpowerService.getUndeterminedSuperpower(bloodSyringeData.extraEnumId()).getCompScientificDecorated()
                         )
                 );
             }

@@ -1,10 +1,12 @@
 package com.art5019.art5019s_injustice.item;
 
-import com.art5019.art5019s_injustice.data.Power;
 import com.art5019.art5019s_injustice.data.records.blood_syringe.BloodSyringeData;
 import com.art5019.art5019s_injustice.data.records.blood_syringe.BloodSyringeEffect;
 import com.art5019.art5019s_injustice.data.records.skill.Skill;
 import com.art5019.art5019s_injustice.data.records.skill.Skills;
+import com.art5019.art5019s_injustice.powers.superpower.Superpower;
+import com.art5019.art5019s_injustice.powers.superpower.SuperpowerGroup;
+import com.art5019.art5019s_injustice.powers.superpower.mutant.Mutant;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -24,7 +26,7 @@ import static com.art5019.art5019s_injustice.item.Items.*;
 
 @Mod(MODID)
 @EventBusSubscriber
-public class RegisterModItens {
+public class CreativeTab {
 
     public static final Supplier<CreativeModeTab> MOD_ITENS = CREATIVE_MODE_TABS.register("itens", () -> CreativeModeTab.builder()
             .title(Component.translatable(MODID + ".itemGroup.itens"))
@@ -60,10 +62,13 @@ public class RegisterModItens {
                 itemStack.set(BLOOD_TYPE_COMPONENT, new BloodSyringeData(values[i].bloodEffectId,0, true));
                 output.accept(itemStack);
             } else {
-                List<Power> mutantPower = Power.collapseReferences(Power.MUTANT);
-                for (Power power : mutantPower) {
+                List<Superpower> mutantPower = SuperpowerGroup.collapseFinalReferences(Mutant.getInstance());
+                for (Superpower superpower : mutantPower) {
                     itemStack = new ItemStack(BLOOD_SYRINGE.get());
-                    itemStack.set(BLOOD_TYPE_COMPONENT, new BloodSyringeData(BloodSyringeEffect.MUTANT.bloodEffectId, power.powerId, true));
+                    itemStack.set(BLOOD_TYPE_COMPONENT,
+                            new BloodSyringeData(BloodSyringeEffect.MUTANT.bloodEffectId,
+                                    superpower.getPowerId(),
+                                    true));
                     output.accept(itemStack);
                 }
             }

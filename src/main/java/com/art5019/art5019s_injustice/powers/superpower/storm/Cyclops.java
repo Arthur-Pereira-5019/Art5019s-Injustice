@@ -10,9 +10,9 @@ import net.minecraft.server.level.ServerPlayer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Storm extends Superpower {
-    private static Storm storm;
-    private Storm() {
+public class Cyclops extends Superpower {
+    private static Cyclops cyclops;
+    private Cyclops() {
         List<Power> powers = new ArrayList<>();
         Power summonTornado = new Power(null,
                 null,
@@ -22,7 +22,7 @@ public class Storm extends Superpower {
                 6000,
                 null);
         powers.add(summonTornado);
-        super(powers, 1, TextDecoration.PURPLE, "storm", 2);
+        super(powers, 1, TextDecoration.PURPLE, "cyclops", 3);
     }
 
 
@@ -31,10 +31,10 @@ public class Storm extends Superpower {
 
     }
 
-    public static Storm getInstance() {
-        if(storm == null) {
-            storm = new Storm();
+    public static Cyclops getInstance() {
+        if(cyclops == null) {
+            cyclops = new Cyclops();
         }
-        return storm;
+        return cyclops;
     }
 }

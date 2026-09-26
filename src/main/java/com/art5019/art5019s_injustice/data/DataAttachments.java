@@ -67,7 +67,7 @@ public class DataAttachments {
             "alignment", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("alignment")).build()
     );
 
-    public static final Supplier<AttachmentType<Integer>> SUPERPOWER_POWER_ID = ATTACHMENT_TYPES.register(
+    public static final Supplier<AttachmentType<Integer>> SUPERPOWER_ID = ATTACHMENT_TYPES.register(
             "power_id", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("superpower_id")).build()
     );
 
