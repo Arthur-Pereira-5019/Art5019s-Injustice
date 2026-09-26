@@ -1,4 +1,4 @@
-package com.art5019.art5019s_injustice.powers.superpower.storm;
+package com.art5019.art5019s_injustice.powers.superpower.mutant.wolverine;
 
 import com.art5019.art5019s_injustice.data.common.TextDecoration;
 import com.art5019.art5019s_injustice.powers.Power;
@@ -9,9 +9,9 @@ import net.minecraft.server.level.ServerPlayer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Shadowcat extends Superpower {
-    private static Shadowcat shadowcat;
-    private Shadowcat() {
+public class Wolverine extends Superpower {
+    private static Wolverine wolverine;
+    private Wolverine() {
         List<Power> powers = new ArrayList<>();
         Power summonTornado = new Power(null,
                 null,
@@ -21,7 +21,7 @@ public class Shadowcat extends Superpower {
                 6000,
                 null);
         powers.add(summonTornado);
-        super(powers, 1, TextDecoration.PURPLE, "cyclops", 3);
+        super(powers, 1, TextDecoration.YELLOW, "wolverine", 4);
     }
 
 
@@ -30,10 +30,10 @@ public class Shadowcat extends Superpower {
 
     }
 
-    public static Shadowcat getInstance() {
-        if(shadowcat == null) {
-            shadowcat = new Shadowcat();
+    public static Wolverine getInstance() {
+        if(wolverine == null) {
+            wolverine = new Wolverine();
         }
-        return shadowcat;
+        return wolverine;
     }
 }

@@ -8,10 +8,10 @@ import com.art5019.art5019s_injustice.powers.superpower.mutant.AlphaMutant;
 import com.art5019.art5019s_injustice.powers.superpower.mutant.BetaMutant;
 import com.art5019.art5019s_injustice.powers.superpower.mutant.Mutant;
 import com.art5019.art5019s_injustice.powers.superpower.mutant.OmegaMutant;
-import com.art5019.art5019s_injustice.powers.superpower.storm.Cyclops;
-import com.art5019.art5019s_injustice.powers.superpower.storm.Shadowcat;
-import com.art5019.art5019s_injustice.powers.superpower.storm.Storm;
-import com.art5019.art5019s_injustice.powers.superpower.storm.Wolverine;
+import com.art5019.art5019s_injustice.powers.superpower.mutant.cyclops.Cyclops;
+import com.art5019.art5019s_injustice.powers.superpower.mutant.shadowcat.Shadowcat;
+import com.art5019.art5019s_injustice.powers.superpower.mutant.storm.Storm;
+import com.art5019.art5019s_injustice.powers.superpower.mutant.wolverine.Wolverine;
 import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.fml.common.Mod;
 
@@ -66,7 +66,6 @@ public class SuperpowerService {
             while (temp instanceof SuperpowerGroup superpowerGroup) {
                 temp = superpowerGroup.getPossiblePowers().getRandom();
             }
-            temp = (Superpower) temp;
             serverPlayer.setData(SUPERPOWER_ID, temp.getPowerId());
             return temp.getPowerId();
         }

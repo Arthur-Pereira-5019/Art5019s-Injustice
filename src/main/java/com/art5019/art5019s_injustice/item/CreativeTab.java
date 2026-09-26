@@ -6,6 +6,7 @@ import com.art5019.art5019s_injustice.data.records.skill.Skill;
 import com.art5019.art5019s_injustice.data.records.skill.Skills;
 import com.art5019.art5019s_injustice.powers.superpower.Superpower;
 import com.art5019.art5019s_injustice.powers.superpower.SuperpowerGroup;
+import com.art5019.art5019s_injustice.powers.superpower.UndeterminedSuperpower;
 import com.art5019.art5019s_injustice.powers.superpower.mutant.Mutant;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -62,8 +63,8 @@ public class CreativeTab {
                 itemStack.set(BLOOD_TYPE_COMPONENT, new BloodSyringeData(values[i].bloodEffectId,0, true));
                 output.accept(itemStack);
             } else {
-                List<Superpower> mutantPower = SuperpowerGroup.collapseFinalReferences(Mutant.getInstance());
-                for (Superpower superpower : mutantPower) {
+                List<UndeterminedSuperpower> mutantPower = SuperpowerGroup.collapseReferences(Mutant.getInstance());
+                for (UndeterminedSuperpower superpower : mutantPower) {
                     itemStack = new ItemStack(BLOOD_SYRINGE.get());
                     itemStack.set(BLOOD_TYPE_COMPONENT,
                             new BloodSyringeData(BloodSyringeEffect.MUTANT.bloodEffectId,

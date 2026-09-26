@@ -3,8 +3,7 @@ package com.art5019.art5019s_injustice.powers.superpower.mutant;
 import com.art5019.art5019s_injustice.data.common.TextDecoration;
 import com.art5019.art5019s_injustice.data.common.WeightedList;
 import com.art5019.art5019s_injustice.powers.superpower.SuperpowerGroup;
-import com.art5019.art5019s_injustice.powers.superpower.UndeterminedSuperpower;
-import com.art5019.art5019s_injustice.powers.superpower.storm.Cyclops;
+import com.art5019.art5019s_injustice.powers.superpower.mutant.cyclops.Cyclops;
 
 import java.util.Map;
 

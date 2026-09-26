@@ -3,9 +3,8 @@ package com.art5019.art5019s_injustice.powers.superpower.mutant;
 import com.art5019.art5019s_injustice.data.common.TextDecoration;
 import com.art5019.art5019s_injustice.data.common.WeightedList;
 import com.art5019.art5019s_injustice.powers.superpower.SuperpowerGroup;
-import com.art5019.art5019s_injustice.powers.superpower.UndeterminedSuperpower;
-import com.art5019.art5019s_injustice.powers.superpower.storm.Shadowcat;
-import com.art5019.art5019s_injustice.powers.superpower.storm.Wolverine;
+import com.art5019.art5019s_injustice.powers.superpower.mutant.shadowcat.Shadowcat;
+import com.art5019.art5019s_injustice.powers.superpower.mutant.wolverine.Wolverine;
 
 import java.util.Map;
 

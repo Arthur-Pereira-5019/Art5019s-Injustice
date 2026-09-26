@@ -1,4 +1,4 @@
-package com.art5019.art5019s_injustice.powers.superpower.storm;
+package com.art5019.art5019s_injustice.powers.superpower.mutant.cyclops;
 
 import com.art5019.art5019s_injustice.data.common.TextDecoration;
 import com.art5019.art5019s_injustice.powers.Power;
@@ -9,9 +9,9 @@ import net.minecraft.server.level.ServerPlayer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Wolverine extends Superpower {
-    private static Wolverine wolverine;
-    private Wolverine() {
+public class Cyclops extends Superpower {
+    private static Cyclops cyclops;
+    private Cyclops() {
         List<Power> powers = new ArrayList<>();
         Power summonTornado = new Power(null,
                 null,
@@ -21,7 +21,7 @@ public class Wolverine extends Superpower {
                 6000,
                 null);
         powers.add(summonTornado);
-        super(powers, 1, TextDecoration.PURPLE, "cyclops", 3);
+        super(powers, 1, TextDecoration.AQUA, "cyclops", 1);
     }
 
 
@@ -30,10 +30,10 @@ public class Wolverine extends Superpower {
 
     }
 
-    public static Wolverine getInstance() {
-        if(wolverine == null) {
-            wolverine = new Wolverine();
+    public static Cyclops getInstance() {
+        if(cyclops == null) {
+            cyclops = new Cyclops();
         }
-        return wolverine;
+        return cyclops;
     }
 }

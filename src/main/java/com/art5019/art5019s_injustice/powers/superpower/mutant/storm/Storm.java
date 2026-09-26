@@ -1,18 +1,17 @@
-package com.art5019.art5019s_injustice.powers.superpower.storm;
+package com.art5019.art5019s_injustice.powers.superpower.mutant.storm;
 
 import com.art5019.art5019s_injustice.data.common.TextDecoration;
 import com.art5019.art5019s_injustice.powers.Power;
 import com.art5019.art5019s_injustice.powers.power_types.SummonTornado;
 import com.art5019.art5019s_injustice.powers.superpower.Superpower;
-import com.art5019.art5019s_injustice.powers.superpower.UndeterminedSuperpower;
 import net.minecraft.server.level.ServerPlayer;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cyclops extends Superpower {
-    private static Cyclops cyclops;
-    private Cyclops() {
+public class Storm extends Superpower {
+    private static Storm storm;
+    private Storm() {
         List<Power> powers = new ArrayList<>();
         Power summonTornado = new Power(null,
                 null,
@@ -22,7 +21,7 @@ public class Cyclops extends Superpower {
                 6000,
                 null);
         powers.add(summonTornado);
-        super(powers, 1, TextDecoration.PURPLE, "cyclops", 3);
+        super(powers, 1, TextDecoration.PURPLE, "storm", 2);
     }
 
 
@@ -31,10 +30,10 @@ public class Cyclops extends Superpower {
 
     }
 
-    public static Cyclops getInstance() {
-        if(cyclops == null) {
-            cyclops = new Cyclops();
+    public static Storm getInstance() {
+        if(storm == null) {
+            storm = new Storm();
         }
-        return cyclops;
+        return storm;
     }
 }
