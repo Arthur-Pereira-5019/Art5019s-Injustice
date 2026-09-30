@@ -47,7 +47,7 @@ public class RegisterKeyBinds {
             return;
         }
         while (FIRST_POWER.get().consumeClick()) {
-            minecraft.getConnection().send(new PlayerUsesPowerPacket(0,0));
+            minecraft.getConnection().send(new PlayerUsesPowerPacket(0,false));
         }
     }
 

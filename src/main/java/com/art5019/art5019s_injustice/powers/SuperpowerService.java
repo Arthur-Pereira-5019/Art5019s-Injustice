@@ -17,10 +17,11 @@ import net.neoforged.fml.common.Mod;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
-import static com.art5019.art5019s_injustice.data.DataAttachments.SUPERPOWER_ID;
+import static com.art5019.art5019s_injustice.data.DataAttachments.*;
 
 @Mod(MODID)
 public class SuperpowerService {
@@ -49,15 +50,15 @@ public class SuperpowerService {
         AlphaMutant alphaMutant = AlphaMutant.getInstance();
         OmegaMutant omegaMutant = OmegaMutant.getInstance();
 
-        superpowerMap.put(storm.getPowerId(), storm);
-        superpowerMap.put(shadowcat.getPowerId(), shadowcat);
-        superpowerMap.put(wolverine.getPowerId(), wolverine);
-        superpowerMap.put(cyclops.getPowerId(), cyclops);
+        superpowerMap.put(storm.getSuperpowerId(), storm);
+        superpowerMap.put(shadowcat.getSuperpowerId(), shadowcat);
+        superpowerMap.put(wolverine.getSuperpowerId(), wolverine);
+        superpowerMap.put(cyclops.getSuperpowerId(), cyclops);
 
-        superpowerMap.put(mutant.getPowerId(), mutant);
-        superpowerMap.put(alphaMutant.getPowerId(), alphaMutant);
-        superpowerMap.put(betaMutant.getPowerId(), betaMutant);
-        superpowerMap.put(omegaMutant.getPowerId(), omegaMutant);
+        superpowerMap.put(mutant.getSuperpowerId(), mutant);
+        superpowerMap.put(alphaMutant.getSuperpowerId(), alphaMutant);
+        superpowerMap.put(betaMutant.getSuperpowerId(), betaMutant);
+        superpowerMap.put(omegaMutant.getSuperpowerId(), omegaMutant);
     }
 
     public static int applySuperpower(ServerPlayer serverPlayer, UndeterminedSuperpower superpower, boolean testHuman) {
@@ -66,17 +67,33 @@ public class SuperpowerService {
             while (temp instanceof SuperpowerGroup superpowerGroup) {
                 temp = superpowerGroup.getPossiblePowers().getRandom();
             }
-            serverPlayer.setData(SUPERPOWER_ID, temp.getPowerId());
-            return temp.getPowerId();
+            serverPlayer.setData(SUPERPOWER_ID, temp.getSuperpowerId());
+            synchronizePowerList(serverPlayer);
+            return temp.getSuperpowerId();
         }
         return serverPlayer.getData(SUPERPOWER_ID);
     }
 
+    // TODO: Optimize
     public static void synchronizePowerList(ServerPlayer serverPlayer) {
-        ArrayList<ClientPower> clientPowers = new ArrayList<>();
+        List<ClientPower> clientPowers = new ArrayList<>(serverPlayer.getData(CLIENT_POWER));
         int superpowerId = serverPlayer.getData(SUPERPOWER_ID);
         Superpower superpower = SuperpowerService.getSuperpower(superpowerId);
-        superpower.getAvailablePowers(serverPlayer);
-        // serverPlayer.setData(CLIENT_POWER, )
+        List<Power> powers = superpower.getAvailablePowers(serverPlayer);
+        System.out.println(powers.get(0));
+        for (int i = 0; i < powers.size(); i++) {
+            Power currentPower = powers.get(i);
+            int currentPowerId = currentPower.getId();
+            boolean exists = false;
+            for (int j = 0; j < clientPowers.size(); j++) {
+                if(clientPowers.get(j).powerId() == currentPowerId) {
+                    exists = true;
+                }
+            }
+            if(!exists) {
+                clientPowers.add(new ClientPower(superpower.getSuperpowerId(), currentPowerId, 0));
+            }
+        }
+        serverPlayer.setData(CLIENT_POWER, clientPowers);
     }
 }

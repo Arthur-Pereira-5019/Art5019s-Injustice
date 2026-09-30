@@ -51,7 +51,7 @@ public class BloodSyringe extends Item implements ModTooltiped{
                 serverPlayer.addEffect(new MobEffectInstance(REGENERATION,600,0));
                 break;
             case MUTANT:
-                SuperpowerService.applySuperpower(serverPlayer, Mutant.getInstance(), true);
+                SuperpowerService.applySuperpower(serverPlayer, SuperpowerService.getSuperpower(effect.bloodEffectId), true);
                 break;
         }
     }

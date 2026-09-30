@@ -17,8 +17,9 @@ public class Power {
     private final Identifier iconSource;
     private final Power secondaryPower;
     private final List<Condition> conditions;
+    private final int id;
 
-    public Power(String translatable, Power secondaryPower, PowerType powerType, Identifier iconSource, String description, int defaultCooldown, List<Condition> conditions) {
+    public Power(String translatable, Power secondaryPower, PowerType powerType, Identifier iconSource, String description, int defaultCooldown, List<Condition> conditions, int id) {
         if(translatable == null) {
             this.translatable = powerType.getDefaultTranslatable();
         } else {
@@ -45,6 +46,7 @@ public class Power {
         } else {
             this.conditions = conditions;
         }
+        this.id = id;
     }
 
     public boolean use(ServerPlayer serverPlayer, boolean secondary) {
@@ -65,6 +67,11 @@ public class Power {
         return true;
     }
 
+    public int getId() {
+        return id;
+    }
 
-
+    public String getTranslatable() {
+        return translatable;
+    }
 }

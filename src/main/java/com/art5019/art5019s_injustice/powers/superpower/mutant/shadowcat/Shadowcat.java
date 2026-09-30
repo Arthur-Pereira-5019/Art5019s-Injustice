@@ -13,14 +13,6 @@ public class Shadowcat extends Superpower {
     private static Shadowcat shadowcat;
     private Shadowcat() {
         List<Power> powers = new ArrayList<>();
-        Power summonTornado = new Power(null,
-                null,
-                new SummonTornado(2600, 3F),
-                null,
-                null,
-                6000,
-                null);
-        powers.add(summonTornado);
         super(powers, 1, TextDecoration.YELLOW, "shadowcat", 3);
     }
 

@@ -8,7 +8,7 @@ import net.minecraft.resources.Identifier;
 
 import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
 
-public record PlayerUsesPowerPacket(int abilityNumber, int modified) implements CustomPacketPayload {
+public record PlayerUsesPowerPacket(int abilityNumber, boolean modified) implements CustomPacketPayload {
 
     public static final CustomPacketPayload.Type<PlayerUsesPowerPacket> TYPE =
             new CustomPacketPayload.Type<>(Identifier.fromNamespaceAndPath(MODID, "player_uses_power"));
@@ -16,7 +16,7 @@ public record PlayerUsesPowerPacket(int abilityNumber, int modified) implements 
     public static final StreamCodec<ByteBuf, PlayerUsesPowerPacket> STREAM_CODEC = StreamCodec.composite(
             ByteBufCodecs.VAR_INT,
             PlayerUsesPowerPacket::abilityNumber,
-            ByteBufCodecs.VAR_INT,
+            ByteBufCodecs.BOOL,
             PlayerUsesPowerPacket::modified,
             PlayerUsesPowerPacket::new
     );

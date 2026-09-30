@@ -19,7 +19,8 @@ public class Storm extends Superpower {
                 null,
                 null,
                 6000,
-                null);
+                null,
+                1);
         powers.add(summonTornado);
         super(powers, 1, TextDecoration.PURPLE, "storm", 2);
     }

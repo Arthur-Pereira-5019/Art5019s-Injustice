@@ -13,14 +13,6 @@ public class Cyclops extends Superpower {
     private static Cyclops cyclops;
     private Cyclops() {
         List<Power> powers = new ArrayList<>();
-        Power summonTornado = new Power(null,
-                null,
-                new SummonTornado(2600, 3F),
-                null,
-                null,
-                6000,
-                null);
-        powers.add(summonTornado);
         super(powers, 1, TextDecoration.AQUA, "cyclops", 1);
     }
 

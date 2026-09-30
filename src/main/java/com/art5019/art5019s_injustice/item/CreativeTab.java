@@ -4,7 +4,6 @@ import com.art5019.art5019s_injustice.data.records.blood_syringe.BloodSyringeDat
 import com.art5019.art5019s_injustice.data.records.blood_syringe.BloodSyringeEffect;
 import com.art5019.art5019s_injustice.data.records.skill.Skill;
 import com.art5019.art5019s_injustice.data.records.skill.Skills;
-import com.art5019.art5019s_injustice.powers.superpower.Superpower;
 import com.art5019.art5019s_injustice.powers.superpower.SuperpowerGroup;
 import com.art5019.art5019s_injustice.powers.superpower.UndeterminedSuperpower;
 import com.art5019.art5019s_injustice.powers.superpower.mutant.Mutant;
@@ -68,7 +67,7 @@ public class CreativeTab {
                     itemStack = new ItemStack(BLOOD_SYRINGE.get());
                     itemStack.set(BLOOD_TYPE_COMPONENT,
                             new BloodSyringeData(BloodSyringeEffect.MUTANT.bloodEffectId,
-                                    superpower.getPowerId(),
+                                    superpower.getSuperpowerId(),
                                     true));
                     output.accept(itemStack);
                 }

@@ -11,12 +11,12 @@ import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
 public abstract class UndeterminedSuperpower {
     private final TextDecoration textDecoration;
     private final String translatable;
-    private final int powerId;
+    private final int superpowerId;
 
-    public UndeterminedSuperpower(TextDecoration textDecoration, String translatable, int powerId) {
+    public UndeterminedSuperpower(TextDecoration textDecoration, String translatable, int superpowerId) {
         this.textDecoration = textDecoration;
         this.translatable = translatable;
-        this.powerId = powerId;
+        this.superpowerId = superpowerId;
     }
 
     public abstract void onGain(ServerPlayer serverPlayer);
@@ -40,7 +40,8 @@ public abstract class UndeterminedSuperpower {
         return getCompScientificDecorated().withStyle(ChatFormatting.ITALIC);
     }
 
-    public int getPowerId() {
-        return powerId;
+    public int getSuperpowerId() {
+        return superpowerId;
     }
+
 }

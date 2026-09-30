@@ -50,6 +50,6 @@ public abstract class SuperpowerGroup extends UndeterminedSuperpower{
 
     @Override
     public void onGain(ServerPlayer serverPlayer) {
-        serverPlayer.setData(SUPERPOWER_ID, possiblePowers.getRandom().getPowerId());
+        serverPlayer.setData(SUPERPOWER_ID, possiblePowers.getRandom().getSuperpowerId());
     }
 }

@@ -38,8 +38,9 @@ public class DataAttachments {
 
     public static final Codec<ClientPower> CLIENT_POWER_CODEC = RecordCodecBuilder.create(instance ->
             instance.group(
-                    Codec.INT.fieldOf("serverPowerId").forGetter(ClientPower::serverPowerId),
-                    Codec.INT.fieldOf("cooldown").forGetter(ClientPower::cooldown)
+                    Codec.INT.fieldOf("powerId").forGetter(ClientPower::powerId),
+                    Codec.INT.fieldOf("cooldown").forGetter(ClientPower::cooldown),
+                    Codec.INT.fieldOf("superpowerId").forGetter(ClientPower::superpowerId)
             ).apply(instance, ClientPower::new)
     );
 

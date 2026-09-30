@@ -35,5 +35,9 @@ public abstract class Superpower extends UndeterminedSuperpower{
         return maxLevel;
     }
 
+    public Power getPowerById(int id) {
+        return powers.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+    }
+
 
 }
