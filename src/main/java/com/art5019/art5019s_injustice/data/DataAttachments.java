@@ -28,9 +28,9 @@ public class DataAttachments {
 
     public static final Codec<ClientPower> CLIENT_POWER_CODEC = RecordCodecBuilder.create(instance ->
             instance.group(
+                    Codec.INT.fieldOf("superpowerId").forGetter(ClientPower::superpowerId),
                     Codec.INT.fieldOf("powerId").forGetter(ClientPower::powerId),
-                    Codec.INT.fieldOf("cooldown").forGetter(ClientPower::cooldown),
-                    Codec.INT.fieldOf("superpowerId").forGetter(ClientPower::superpowerId)
+                    Codec.INT.fieldOf("cooldown").forGetter(ClientPower::cooldown)
             ).apply(instance, ClientPower::new)
     );
 
@@ -49,23 +49,33 @@ public class DataAttachments {
     );
 
     public static final Supplier<AttachmentType<Integer>> ALIGNMENT = ATTACHMENT_TYPES.register(
-            "alignment", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("alignment")).build()
+            "alignment", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("alignment"))
+                    .copyOnDeath()
+                    .build()
     );
 
     public static final Supplier<AttachmentType<Integer>> SUPERPOWER_ID = ATTACHMENT_TYPES.register(
-            "power_id", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("superpower_id")).build()
+            "power_id", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("superpower_id"))
+                    .copyOnDeath()
+                    .build()
     );
 
     public static final Supplier<AttachmentType<Integer>> STRESS = ATTACHMENT_TYPES.register(
-            "stress", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("stress")).build()
+            "stress", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("stress"))
+                    .copyOnDeath()
+                    .build()
     );
 
     public static final Supplier<AttachmentType<Long>> LAST_QUERY = ATTACHMENT_TYPES.register(
-            "last_query", () -> AttachmentType.builder(() -> 0L).serialize(Codec.LONG.fieldOf("last_query")).build()
+            "last_query", () -> AttachmentType.builder(() -> 0L).serialize(Codec.LONG.fieldOf("last_query"))
+                    .copyOnDeath()
+                    .build()
     );
 
     public static final Supplier<AttachmentType<Integer>> POWER_LIST_POS = ATTACHMENT_TYPES.register(
-            "power_list_pos", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("power_list_pos")).build()
+            "power_list_pos", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("power_list_pos"))
+                    .copyOnDeath()
+                    .build()
     );
 
 }
