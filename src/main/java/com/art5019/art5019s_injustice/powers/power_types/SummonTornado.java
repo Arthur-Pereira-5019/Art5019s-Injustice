@@ -4,6 +4,7 @@ import com.art5019.art5019s_injustice.helper.EmissorHelper;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.monster.breeze.Breeze;
 
 import java.io.IOException;
 
@@ -24,11 +25,10 @@ public class SummonTornado extends PowerType {
 
     @Override
     public boolean use(ServerPlayer serverPlayer) {
-        try (ServerLevel serverLevel = serverPlayer.level()) {
+        if(serverPlayer.level() instanceof ServerLevel serverLevel) {
+            serverLevel.setRainLevel(1);
             EmissorHelper.appendTornado(serverLevel, serverPlayer.blockPosition(), tornadoDuration, tornadoStrength);
-            return true;
-        } catch (IOException e) {
-            throw new RuntimeException(e);
         }
+        return true;
     }
 }

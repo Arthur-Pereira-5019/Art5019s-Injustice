@@ -10,18 +10,18 @@ import static com.art5019.art5019s_injustice.data.DataAttachments.*;
 
 public class ClientPowerService {
     public static void invoke(int key, ServerPlayer serverPlayer, boolean secondary) {
-        Superpower superpower = SuperpowerService.getSuperpower(serverPlayer.getData(SUPERPOWER_ID));
+        int superpowerId = serverPlayer.getData(SUPERPOWER_ID);
+        if(superpowerId < 1) {
+            return;
+        }
+        Superpower superpower = SuperpowerService.getSuperpower(superpowerId);
         List<ClientPower> powers = serverPlayer.getData(CLIENT_POWER);
         int shift = serverPlayer.getData(POWER_LIST_POS);
-        System.out.println(key);
-        System.out.println(shift);
-        System.out.println(powers.size());
 
         ClientPower targetedPower = powers.get((key + shift) % powers.size());
         if(targetedPower.cooldown() == 0) {
             Power actualPower = superpower.getPowerById(targetedPower.powerId());
             if(actualPower.canUse(serverPlayer)) {
-                System.out.println(actualPower.getTranslatable());
                 actualPower.use(serverPlayer,secondary);
             }
         }

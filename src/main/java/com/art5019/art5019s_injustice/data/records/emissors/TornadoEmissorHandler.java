@@ -8,6 +8,6 @@ import java.util.List;
 public class TornadoEmissorHandler implements EmissorHandler{
     @Override
     public void handle(Emissor emissor, ServerLevel serverLevel) {
-        serverLevel.explode(null, emissor.posX(), emissor.posY(), emissor.posZ(), 3F, true, Level.ExplosionInteraction.TNT);
+        serverLevel.explode(null, emissor.getPosX(), emissor.getPosY(), emissor.getPosZ(), 3F, true, Level.ExplosionInteraction.TNT);
     }
 }

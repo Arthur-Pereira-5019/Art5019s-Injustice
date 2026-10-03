@@ -15,7 +15,7 @@ public class Storm extends Superpower {
         List<Power> powers = new ArrayList<>();
         Power summonTornado = new Power(null,
                 null,
-                new SummonTornado(2600, 3F),
+                new SummonTornado(200, 3F),
                 null,
                 null,
                 6000,
