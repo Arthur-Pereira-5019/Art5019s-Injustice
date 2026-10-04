@@ -3,6 +3,7 @@ package com.art5019.art5019s_injustice.data.records.emissors;
 import com.art5019.art5019s_injustice.data.records.power.ClientPower;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.core.BlockPos;
 
 import java.util.List;
 
@@ -54,5 +55,9 @@ public class Emissor {
 
     public double getPosZ() {
         return posZ;
+    }
+
+    public BlockPos getBlockPos() {
+        return new BlockPos((int) posX, (int) posY, (int) posZ);
     }
 }
