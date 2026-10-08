@@ -26,7 +26,6 @@ public class SummonTornado extends PowerType {
     @Override
     public boolean use(ServerPlayer serverPlayer) {
         if(serverPlayer.level() instanceof ServerLevel serverLevel) {
-            serverLevel.setRainLevel(1);
             EmissorHelper.appendTornado(serverLevel, serverPlayer.blockPosition(), tornadoDuration, tornadoStrength);
         }
         return true;

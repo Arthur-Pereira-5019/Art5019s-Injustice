@@ -21,9 +21,6 @@ import static com.art5019.art5019s_injustice.data.records.emissors.EmissorCollec
 @Mod(MODID)
 @EventBusSubscriber
 public class ServerLevelTick {
-    private static final Map<EmissorEffect, EmissorHandler> emissorHandler = Map.of(
-            EmissorEffect.TORNADO, new TornadoEmissorHandler()
-    );
 
     @SubscribeEvent
     public static void handle(LevelTickEvent.Post event) {
@@ -40,7 +37,7 @@ public class ServerLevelTick {
         Iterator<Emissor> iterator = emissors.iterator();
         while(iterator.hasNext()) {
             Emissor e = iterator.next();
-            emissorHandler.get(EmissorEffect.fromId(e.getEmissorEffectId())).handle(e, serverLevel);
+            e.handle(serverLevel);
             if(e.getExpiryTick() <= currentTick) {
                 iterator.remove();
             }

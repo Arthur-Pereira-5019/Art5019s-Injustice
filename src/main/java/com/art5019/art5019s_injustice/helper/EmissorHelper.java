@@ -2,6 +2,7 @@ package com.art5019.art5019s_injustice.helper;
 
 import com.art5019.art5019s_injustice.data.records.emissors.Emissor;
 import com.art5019.art5019s_injustice.data.records.emissors.EmissorCollection;
+import com.art5019.art5019s_injustice.data.records.emissors.TornadoEmissor;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
@@ -22,15 +23,12 @@ public class EmissorHelper {
     }
 
     public static void appendTornado(ServerLevel serverLevel, BlockPos blockPos, int tornadoDuration, float tornadoStrength) {
-        ArrayList<Float> parameters = new ArrayList<>();
-        parameters.add(tornadoStrength);
         appendEmissor(serverLevel,
-                 new Emissor(TORNADO.getId(),
-                serverLevel.getGameTime() + (long) tornadoDuration,
-                         parameters,
-                         blockPos.getX(),
-                blockPos.getY(),
-                blockPos.getZ()
-        ));
+                 new TornadoEmissor(expiryTick(tornadoDuration, serverLevel), tornadoStrength, blockPos.getX(), blockPos.getY(), blockPos.getZ())
+        );
+    }
+
+    public static long expiryTick(int tornadoDuration, ServerLevel serverLevel) {
+        return serverLevel.getGameTime() + tornadoDuration;
     }
 }

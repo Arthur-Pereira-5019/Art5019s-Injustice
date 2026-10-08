@@ -42,6 +42,7 @@ public class EmissorCollection extends SavedData {
         this.emissors = emissors;
     }
 
+
     public void setEmissors(List<Emissor> emissors) {
         this.emissors = emissors;
         this.setDirty();

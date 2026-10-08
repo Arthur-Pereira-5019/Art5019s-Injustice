@@ -1,40 +1,33 @@
 package com.art5019.art5019s_injustice.data.records.emissors;
 
-import com.art5019.art5019s_injustice.data.records.power.ClientPower;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Emissor {
-    int emissorEffectId;
-    long expiryTick;
-    double posX;
-    double posY;
-    double posZ;
-    List<Float> parameters;
+    private long expiryTick;
+    private double posX;
+    private double posY;
+    private double posZ;
 
     public static final Codec<Emissor> INDIVIDUAL_EMISSOR_CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Codec.INT.fieldOf("emissorEffectId").forGetter(e -> e.emissorEffectId),
             Codec.LONG.fieldOf("expiryTick").forGetter(e -> e.expiryTick),
-            Codec.FLOAT.listOf().fieldOf("parameters").forGetter(e -> e.parameters),
+            Codec.FLOAT.listOf().fieldOf("parameters").forGetter(Emissor::getParameters),
             Codec.DOUBLE.fieldOf("x").forGetter(e -> e.posX),
             Codec.DOUBLE.fieldOf("y").forGetter(e -> e.posY),
             Codec.DOUBLE.fieldOf("z").forGetter(e -> e.posX)
     ).apply(instance, Emissor::new));
 
-    public Emissor(int emissorEffectId, long expiryTick, List<Float> parameters, double posX, double posY, double posZ) {
-        this.emissorEffectId = emissorEffectId;
+    public Emissor(long expiryTick, List<Float> parameters, double posX, double posY, double posZ) {
+        this.unpackParameters(parameters);
         this.expiryTick = expiryTick;
-        this.parameters = parameters;
         this.posX = posX;
         this.posY = posY;
         this.posZ = posZ;
-    }
-
-    public int getEmissorEffectId() {
-        return emissorEffectId;
     }
 
     public long getExpiryTick() {
@@ -42,7 +35,19 @@ public class Emissor {
     }
 
     public List<Float> getParameters() {
-        return parameters;
+        return new ArrayList<>();
+    }
+
+    public void unpackParameters(List<Float> parameters) {
+
+    }
+
+    public static List<Float> packParameters(float... parameters) {
+        ArrayList<Float> result = new ArrayList<>();
+        for (float parameter : parameters) {
+            result.add(parameter);
+        }
+        return result;
     }
 
     public double getPosX() {
@@ -59,5 +64,9 @@ public class Emissor {
 
     public BlockPos getBlockPos() {
         return new BlockPos((int) posX, (int) posY, (int) posZ);
+    }
+
+    public void handle(ServerLevel serverLevel) {
+
     }
 }
