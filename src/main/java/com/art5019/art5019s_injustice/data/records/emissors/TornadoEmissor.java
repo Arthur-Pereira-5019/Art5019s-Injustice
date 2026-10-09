@@ -38,9 +38,9 @@ public class TornadoEmissor extends Emissor{
         double x = this.getPosX();
         double y = this.getPosY();
         double z = this.getPosZ();
-        serverLevel.sendParticles(CLOUD, false, true, x, y, z, 8, 0.1, 0.1, 0.1, 0.2);
-        serverLevel.sendParticles(CLOUD, false, true, x, y+4, z, 12, 1.5, 1.5, 1.5, 0.3);
-        serverLevel.sendParticles(CLOUD, false, true, x, y+8, z, 18, 3, 3, 3, 0.4);
+        serverLevel.sendParticles(CLOUD, false, true, x, y, z, 8, 0.1, 0.1, 0.1, 0.1);
+        serverLevel.sendParticles(CLOUD, false, true, x, y+4, z, 12, 1.5, 1.5, 1.5, 0.2);
+        serverLevel.sendParticles(CLOUD, false, true, x, y+9, z, 18, 2, 2, 2, 0.3);
         for (Entity e: entities) {
             applyMovement(e);
             if(e instanceof ServerPlayer serverPlayer) {

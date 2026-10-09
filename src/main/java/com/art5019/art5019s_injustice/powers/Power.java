@@ -36,6 +36,9 @@ public class Power {
             this.description = description;
         }
 
+        if(secondaryPower != null && secondaryPower.getSecondaryPower() != null) {
+            throw new RuntimeException("Secondary power with secondary power.");
+        }
         this.secondaryPower = secondaryPower;
         this.powerType = powerType;
         this.defaultCooldown = defaultCooldown;
@@ -73,5 +76,9 @@ public class Power {
 
     public String getTranslatable() {
         return translatable;
+    }
+
+    public Power getSecondaryPower() {
+        return secondaryPower;
     }
 }

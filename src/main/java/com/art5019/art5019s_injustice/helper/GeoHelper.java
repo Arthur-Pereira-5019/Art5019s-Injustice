@@ -77,7 +77,6 @@ public class GeoHelper {
             double x = resultPos.getX();
             double y = resultPos.getY();
             double z = resultPos.getZ();
-            serverLevel.sendParticles(CLOUD, false, true, x, y, z, 1, 0, 0, 0, 0);
             if(serverLevel.getBlockState(new BlockPos((int) x, (int) y, (int) z)).isSolidRender()) {
                 return new Vec3(x, y, z);
             } else {

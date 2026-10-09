@@ -1,5 +1,7 @@
 package com.art5019.art5019s_injustice.powers.power_types;
 
+import com.art5019.art5019s_injustice.data.records.emissors.Emissor;
+import com.art5019.art5019s_injustice.data.records.emissors.TornadoEmissor;
 import com.art5019.art5019s_injustice.helper.EmissorHelper;
 import com.art5019.art5019s_injustice.helper.GeoHelper;
 import net.minecraft.core.BlockPos;
@@ -24,6 +26,12 @@ public class SummonTornado extends PowerType {
                 Identifier.fromNamespaceAndPath(MODID,""),
                 "art5019sinjustice.powertype.summon_tornado.description",
                 6000);
+    }
+
+    public SummonTornado(String defaultTranslatable, Identifier defaultIconSource, String defaultDescription, int defaultCooldownTicks, int tornadoDuration, float tornadoStrength) {
+        super(defaultTranslatable, defaultIconSource, defaultDescription, defaultCooldownTicks);
+        this.tornadoDuration = tornadoDuration;
+        this.tornadoStrength = tornadoStrength;
     }
 
     @Override
