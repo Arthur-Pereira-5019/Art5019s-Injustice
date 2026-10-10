@@ -1,22 +1,18 @@
 package com.art5019.art5019s_injustice.event;
 
-import com.art5019.art5019s_injustice.data.records.emissors.*;
+import com.art5019.art5019s_injustice.data.emissors.*;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.ticks.LevelChunkTicks;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.neoforge.event.level.ChunkEvent;
 import net.neoforged.neoforge.event.tick.LevelTickEvent;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 
 import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
-import static com.art5019.art5019s_injustice.data.records.emissors.EmissorCollection.EMISSOR_ID;
+import static com.art5019.art5019s_injustice.data.emissors.EmissorCollection.EMISSOR_ID;
 
 @Mod(MODID)
 @EventBusSubscriber

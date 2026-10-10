@@ -1,20 +1,18 @@
 package com.art5019.art5019s_injustice.helper;
 
-import com.art5019.art5019s_injustice.data.records.emissors.Emissor;
-import com.art5019.art5019s_injustice.data.records.emissors.EmissorCollection;
-import com.art5019.art5019s_injustice.data.records.emissors.TornadoEmissor;
+import com.art5019.art5019s_injustice.data.emissors.Emissor;
+import com.art5019.art5019s_injustice.data.emissors.EmissorCollection;
+import com.art5019.art5019s_injustice.data.emissors.TornadoEmissor;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-import static com.art5019.art5019s_injustice.data.records.emissors.EmissorCollection.EMISSOR_ID;
-import static com.art5019.art5019s_injustice.data.records.emissors.EmissorEffect.TORNADO;
+import static com.art5019.art5019s_injustice.data.emissors.EmissorCollection.EMISSOR_ID;
 
 public class EmissorHelper {
     private static void appendEmissor(ServerLevel serverLevel, Emissor emissor) {

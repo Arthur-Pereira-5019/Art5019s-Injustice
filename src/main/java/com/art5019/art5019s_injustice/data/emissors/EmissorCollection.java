@@ -1,26 +1,15 @@
-package com.art5019.art5019s_injustice.data.records.emissors;
+package com.art5019.art5019s_injustice.data.emissors;
 
-import com.art5019.art5019s_injustice.data.records.power.ClientPower;
-import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.saveddata.SavedDataType;
-import net.neoforged.fml.common.Mod;
-import net.neoforged.neoforge.attachment.AttachmentType;
-import org.jspecify.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Supplier;
 
-import static com.art5019.art5019s_injustice.Art5019sInjustice.ATTACHMENT_TYPES;
 import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
-import static com.art5019.art5019s_injustice.data.records.emissors.Emissor.INDIVIDUAL_EMISSOR_CODEC;
+import static com.art5019.art5019s_injustice.data.emissors.Emissor.INDIVIDUAL_EMISSOR_CODEC;
 
 public class EmissorCollection extends SavedData {
     private List<Emissor> emissors = new ArrayList<>();

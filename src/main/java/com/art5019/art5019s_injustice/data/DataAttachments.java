@@ -1,6 +1,5 @@
 package com.art5019.art5019s_injustice.data;
 
-import com.art5019.art5019s_injustice.data.records.emissors.Emissor;
 import com.art5019.art5019s_injustice.data.records.power.ClientPower;
 import com.art5019.art5019s_injustice.data.records.skill.PlayerSkill;
 import com.mojang.serialization.Codec;

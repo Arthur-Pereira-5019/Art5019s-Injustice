@@ -1,9 +1,10 @@
-package com.art5019.art5019s_injustice.data.records.emissors;
+package com.art5019.art5019s_injustice.data.emissors;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.phys.Vec3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,6 +65,10 @@ public class Emissor {
 
     public BlockPos getBlockPos() {
         return new BlockPos((int) posX, (int) posY, (int) posZ);
+    }
+
+    public Vec3 getVec3() {
+        return new Vec3(posX, posY, posZ);
     }
 
     public void handle(ServerLevel serverLevel) {

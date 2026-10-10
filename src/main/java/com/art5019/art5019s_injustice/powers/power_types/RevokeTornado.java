@@ -1,6 +1,6 @@
 package com.art5019.art5019s_injustice.powers.power_types;
 
-import com.art5019.art5019s_injustice.data.records.emissors.TornadoEmissor;
+import com.art5019.art5019s_injustice.data.emissors.TornadoEmissor;
 import com.art5019.art5019s_injustice.helper.EmissorHelper;
 import com.art5019.art5019s_injustice.helper.GeoHelper;
 import net.minecraft.core.BlockPos;

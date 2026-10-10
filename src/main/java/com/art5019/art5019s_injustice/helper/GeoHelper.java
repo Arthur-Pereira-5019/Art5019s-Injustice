@@ -42,11 +42,40 @@ public class GeoHelper {
         return Math.sqrt(podx+pody+podz);
     }
 
+    public static double distanceBetweenPos(Vec3 a, Vec3 b) {
+        double ax = a.x();
+        double bx = b.x();
+
+        double ay = a.y();
+        double by = b.y();
+
+        double az = a.z();
+        double bz = b.z();
+
+        double podx = Math.pow(bx-ax,2);
+        double pody = Math.pow(by-ay,2);
+        double podz = Math.pow(bz-az,2);
+
+        return Math.sqrt(podx+pody+podz);
+    }
+
     public static double horizontalDistance(BlockPos a, BlockPos b) {
         double ax = a.getX();
         double bx = b.getX();
         double az = a.getZ();
         double bz = b.getZ();
+
+        double podx = Math.pow(bx-ax,2);
+        double podz = Math.pow(bz-az,2);
+
+        return Math.sqrt(podx+podz);
+    }
+
+    public static double horizontalDistance(Vec3 a, Vec3 b) {
+        double ax = a.x();
+        double bx = b.x();
+        double az = a.z();
+        double bz = b.z();
 
         double podx = Math.pow(bx-ax,2);
         double podz = Math.pow(bz-az,2);
@@ -61,11 +90,25 @@ public class GeoHelper {
         return ax-bx;
     }
 
+    public static double dx(Vec3 a, Vec3 b) {
+        double ax = a.x();
+        double bx = b.x();
+
+        return ax-bx;
+    }
+
     public static double dz(BlockPos a, BlockPos b) {
         double az = a.getZ();
         double bz = b.getZ();
 
         return az-bz;
+    }
+
+    public static double dz(Vec3 a, Vec3 b) {
+        double ax = a.z();
+        double bx = b.z();
+
+        return ax-bx;
     }
 
     public static Vec3 rayCastTillHit(int distance, float precision, Entity entity, ServerLevel serverLevel) {
