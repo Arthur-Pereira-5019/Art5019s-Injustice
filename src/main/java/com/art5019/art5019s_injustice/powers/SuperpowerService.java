@@ -78,7 +78,13 @@ public class SuperpowerService {
     public static void synchronizePowerList(ServerPlayer serverPlayer) {
         List<ClientPower> clientPowers = new ArrayList<>(serverPlayer.getData(CLIENT_POWER));
         int superpowerId = serverPlayer.getData(SUPERPOWER_ID);
-        Superpower superpower = SuperpowerService.getSuperpower(superpowerId);
+        Superpower superpower;
+        try {
+            superpower = SuperpowerService.getSuperpower(superpowerId);
+        } catch (Exception e) {
+            return;
+        }
+        superpower = SuperpowerService.getSuperpower(superpowerId);
         List<Power> powers = superpower.getAvailablePowers(serverPlayer);
         System.out.println(powers.get(0));
         for (int i = 0; i < powers.size(); i++) {

@@ -2,6 +2,7 @@ package com.art5019.art5019s_injustice.helper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.ClipContext;
@@ -10,12 +11,26 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 
 import java.util.List;
+import java.util.Random;
 
 import static net.minecraft.core.particles.ParticleTypes.CLOUD;
 
 public class GeoHelper {
+    private static final Random random = new Random();
+
     public static List<Entity> getEntitiesAt(BlockPos at, double radius, ServerLevel serverLevel) {
         return serverLevel.getEntitiesOfClass(Entity.class, generateAABB(at, radius), x -> true);
+    }
+
+    public static List<Entity> getEntitiesAt(BlockPos at, double hradius, double yradius, ServerLevel serverLevel) {
+        return serverLevel.getEntitiesOfClass(Entity.class, generateAABB(at, hradius, yradius), x -> true);
+    }
+
+    public static AABB generateAABB(BlockPos blockPos, double hr, double yr) {
+        int x = blockPos.getX();
+        int y = blockPos.getY();
+        int z = blockPos.getZ();
+        return new AABB(x-hr, y-yr, z-hr, x+hr, y+yr, z+hr);
     }
 
     public static AABB generateAABB(BlockPos blockPos, double r) {
@@ -127,5 +142,19 @@ public class GeoHelper {
             }
         }
         return null;
+    }
+
+    public static Vec3 randomCoordinates(float cap, Vec3 origin) {
+        return new Vec3(origin.x + random.nextFloat(-cap,cap),
+                origin.y + random.nextFloat(-cap,cap), origin.z + random.nextFloat(-cap,cap));
+    }
+
+    public static Vec3 randomHCoordinates(float cap, Vec3 origin) {
+        return new Vec3(origin.x + random.nextFloat(-cap,cap),
+                origin.y, origin.z + random.nextFloat(-cap,cap));
+    }
+
+    public static BlockPos Vec3ToBlockPos(Vec3 vec3) {
+        return new BlockPos((int) vec3.x, (int) vec3.y, (int) vec3.z);
     }
 }

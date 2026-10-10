@@ -1,55 +1,35 @@
 package com.art5019.art5019s_injustice.data.emissors;
 
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.codecs.RecordCodecBuilder;
+import com.art5019.art5019s_injustice.event.custom.EmissorUpdatedState;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.phys.Vec3;
+import net.neoforged.neoforge.common.NeoForge;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Objects;
 
-public class Emissor {
+public abstract class Emissor {
     private long expiryTick;
     private double posX;
     private double posY;
     private double posZ;
+    private String uuid;
 
-    public static final Codec<Emissor> INDIVIDUAL_EMISSOR_CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Codec.LONG.fieldOf("expiryTick").forGetter(e -> e.expiryTick),
-            Codec.FLOAT.listOf().fieldOf("parameters").forGetter(Emissor::getParameters),
-            Codec.DOUBLE.fieldOf("x").forGetter(e -> e.posX),
-            Codec.DOUBLE.fieldOf("y").forGetter(e -> e.posY),
-            Codec.DOUBLE.fieldOf("z").forGetter(e -> e.posX)
-    ).apply(instance, Emissor::new));
+    public abstract MapCodec<? extends Emissor> type();
 
-    public Emissor(long expiryTick, List<Float> parameters, double posX, double posY, double posZ) {
-        this.unpackParameters(parameters);
+    public Emissor(long expiryTick, double posX, double posY, double posZ, String uuid) {
         this.expiryTick = expiryTick;
         this.posX = posX;
         this.posY = posY;
         this.posZ = posZ;
+        this.uuid = uuid;
     }
 
     public long getExpiryTick() {
         return expiryTick;
     }
 
-    public List<Float> getParameters() {
-        return new ArrayList<>();
-    }
-
-    public void unpackParameters(List<Float> parameters) {
-
-    }
-
-    public static List<Float> packParameters(float... parameters) {
-        ArrayList<Float> result = new ArrayList<>();
-        for (float parameter : parameters) {
-            result.add(parameter);
-        }
-        return result;
-    }
 
     public double getPosX() {
         return posX;
@@ -71,7 +51,28 @@ public class Emissor {
         return new Vec3(posX, posY, posZ);
     }
 
-    public void handle(ServerLevel serverLevel) {
+    public abstract void handle(ServerLevel serverLevel);
 
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Emissor emissor = (Emissor) o;
+        return Objects.equals(uuid, emissor.uuid);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(uuid);
+    }
+
+    public void moveTo(Vec3 vec3, ServerLevel serverLevel) {
+        this.posX = vec3.x;
+        this.posY = vec3.y;
+        this.posZ = vec3.z;
+        NeoForge.EVENT_BUS.post(new EmissorUpdatedState(this, serverLevel));
+    }
+
+    public String getUuid() {
+        return uuid;
     }
 }

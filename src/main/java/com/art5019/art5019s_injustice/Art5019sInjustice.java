@@ -1,6 +1,7 @@
 package com.art5019.art5019s_injustice;
 
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.neoforged.bus.api.BusBuilder;
 import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.neoforge.registries.*;
 import org.slf4j.Logger;
@@ -30,6 +31,8 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
+import static com.art5019.art5019s_injustice.registries.Registries.EMISSORS_DISPATCH;
+
 @Mod(Art5019sInjustice.MODID)
 public class Art5019sInjustice {
     public static final String MODID = "art5019sinjustice";
@@ -56,6 +59,7 @@ public class Art5019sInjustice {
         CREATIVE_MODE_TABS.register(modEventBus);
         DATA_COMPONENTS.register(modEventBus);
         BLOCK_ENTITY_TYPES.register(modEventBus);
+        EMISSORS_DISPATCH.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 

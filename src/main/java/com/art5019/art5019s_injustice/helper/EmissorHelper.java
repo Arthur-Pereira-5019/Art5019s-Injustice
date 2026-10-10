@@ -1,8 +1,6 @@
 package com.art5019.art5019s_injustice.helper;
 
-import com.art5019.art5019s_injustice.data.emissors.Emissor;
-import com.art5019.art5019s_injustice.data.emissors.EmissorCollection;
-import com.art5019.art5019s_injustice.data.emissors.TornadoEmissor;
+import com.art5019.art5019s_injustice.data.emissors.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.phys.AABB;
@@ -25,9 +23,10 @@ public class EmissorHelper {
 
     public static void appendTornado(ServerLevel serverLevel, BlockPos blockPos, int tornadoDuration, float tornadoStrength) {
         appendEmissor(serverLevel,
-                 new TornadoEmissor(expiryTick(tornadoDuration, serverLevel), tornadoStrength, blockPos.getX(), blockPos.getY(), blockPos.getZ())
+                 new TornadoEmissor(expiryTick(tornadoDuration, serverLevel), blockPos.getX(), blockPos.getY(), blockPos.getZ(), tornadoStrength)
         );
     }
+
 
     public static void revokeEmissors(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
         EmissorCollection emissorCollection = serverLevel.getDataStorage().computeIfAbsent(EMISSOR_ID);
