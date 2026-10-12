@@ -30,14 +30,16 @@ public class RevokeTornado extends PowerType{
     }
 
     @Override
-    public boolean use(ServerPlayer serverPlayer) {
+    public int use(ServerPlayer serverPlayer) {
         if(serverPlayer.level() instanceof ServerLevel serverLevel) {
             Vec3 collision = GeoHelper.rayCastTillHit(searchRadius, 0.5F, serverPlayer, serverLevel);
             if(collision == null) {
-                return false;
+                return 0;
             }
             BlockPos hit = new BlockPos((int) collision.x, (int) collision.y, (int) collision.z);
             EmissorHelper.revokeEmissors(serverLevel, hit, radius, TornadoEmissor.class);
+            return this.getDefaultCooldownTicks();
         }
-        return true;    }
+        return 0;
+    }
 }

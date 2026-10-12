@@ -52,13 +52,13 @@ public class Power {
         this.id = id;
     }
 
-    public boolean use(ServerPlayer serverPlayer, boolean secondary) {
+    public int use(ServerPlayer serverPlayer, boolean secondary) {
         if(secondary && secondaryPower != null) {
             secondaryPower.use(serverPlayer, false);
         } else {
             powerType.use(serverPlayer);
         }
-        return true;
+        return this.defaultCooldown;
     }
 
     public boolean canUse(ServerPlayer serverPlayer) {

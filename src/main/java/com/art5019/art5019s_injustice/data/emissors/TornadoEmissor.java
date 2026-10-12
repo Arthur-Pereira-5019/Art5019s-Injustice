@@ -5,6 +5,7 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -15,6 +16,7 @@ import net.minecraft.world.phys.Vec3;
 import java.util.List;
 import java.util.UUID;
 
+import static net.minecraft.core.particles.ParticleTypes.BLOCK;
 import static net.minecraft.core.particles.ParticleTypes.CLOUD;
 import static net.minecraft.world.damagesource.DamageTypes.GENERIC;
 
@@ -57,6 +59,10 @@ public class TornadoEmissor extends Emissor {
         int si = 0;
         for (int i = 0; i < tornadoStrength; i++) {
             serverLevel.sendParticles(CLOUD, false, true, x, y + 0 + 3 * i + si, z, 8 + i * 6, 0.1 + i * 0.8, 0.1 + i, 0.1 + i * 0.8, (double) i / 20);
+            BlockPos tryToBreak = GeoHelper.randomCoordinates((int) tornadoStrength, (int) tornadoStrength*2 ,this.getBlockPos().offset(0, (int) tornadoStrength,0));
+            if(serverLevel.getBlockState(tryToBreak).getDestroySpeed(serverLevel, tryToBreak) < tornadoStrength/3) {
+                serverLevel.destroyBlock(tryToBreak, true);
+            }
             si += i;
         }
         for (Entity e : entities) {

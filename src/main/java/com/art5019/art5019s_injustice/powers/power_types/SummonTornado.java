@@ -30,15 +30,16 @@ public class SummonTornado extends PowerType {
     }
 
     @Override
-    public boolean use(ServerPlayer serverPlayer) {
+    public int use(ServerPlayer serverPlayer) {
         if(serverPlayer.level() instanceof ServerLevel serverLevel) {
             Vec3 collision = GeoHelper.rayCastTillHit(300, 0.5F, serverPlayer, serverLevel);
             if(collision == null) {
-                return false;
+                return 0;
             }
             BlockPos hit = new BlockPos((int) collision.x, (int) collision.y, (int) collision.z);
             EmissorHelper.appendTornado(serverLevel, hit, tornadoDuration, tornadoStrength);
+            return getDefaultCooldownTicks();
         }
-        return true;
+        return 0;
     }
 }

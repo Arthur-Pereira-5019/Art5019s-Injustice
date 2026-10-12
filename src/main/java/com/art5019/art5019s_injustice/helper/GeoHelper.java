@@ -135,7 +135,7 @@ public class GeoHelper {
             double x = resultPos.getX();
             double y = resultPos.getY();
             double z = resultPos.getZ();
-            if(serverLevel.getBlockState(new BlockPos((int) x, (int) y, (int) z)).isSolidRender()) {
+            if(!serverLevel.getBlockState(new BlockPos((int) x, (int) y, (int) z)).canBeReplaced()) {
                 return new Vec3(x, y, z);
             } else {
                 scaling+=precision;
@@ -147,6 +147,14 @@ public class GeoHelper {
     public static Vec3 randomCoordinates(float cap, Vec3 origin) {
         return new Vec3(origin.x + random.nextFloat(-cap,cap),
                 origin.y + random.nextFloat(-cap,cap), origin.z + random.nextFloat(-cap,cap));
+    }
+
+    public static BlockPos randomCoordinates(int cap, BlockPos origin) {
+        return origin.offset(random.nextInt(-cap,cap), random.nextInt(-cap,cap), random.nextInt(-cap,cap));
+    }
+
+    public static BlockPos randomCoordinates(int cap, int hcap, BlockPos origin) {
+        return origin.offset(random.nextInt(-cap,cap), random.nextInt(-hcap,hcap), random.nextInt(-cap,cap));
     }
 
     public static Vec3 randomHCoordinates(float cap, Vec3 origin) {

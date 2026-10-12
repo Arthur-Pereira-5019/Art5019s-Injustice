@@ -41,7 +41,7 @@ public class SummonLightning extends PowerType{
     }
 
     @Override
-    public boolean use(ServerPlayer serverPlayer) {
+    public int use(ServerPlayer serverPlayer) {
         if(serverPlayer.level() instanceof ServerLevel serverLevel) {
             int radiusBoost = 0;
             int powerBoost = 0;
@@ -52,7 +52,7 @@ public class SummonLightning extends PowerType{
             LightningBolt lightningBolt = EntityTypes.LIGHTNING_BOLT.create(serverLevel, EntitySpawnReason.TRIGGERED);
             Vec3 collision = GeoHelper.rayCastTillHit(radius+radiusBoost, 0.5F, serverPlayer, serverLevel);
             if(collision == null) {
-                return false;
+                return 0;
             }
             double x = collision.x;
             double y = collision.y;
@@ -61,10 +61,11 @@ public class SummonLightning extends PowerType{
                 serverLevel.addFreshEntity(lightningBolt);
                 lightningBolt.snapTo(x, y, z, serverLevel.getRandom().nextFloat() * 360.0F, 0.0F);
                 serverLevel.explode(null, x, y, z, lightningPower+powerBoost, true, Level.ExplosionInteraction.MOB);
+                return getDefaultCooldownTicks();
             } else {
-                return false;
+                return 0;
             }
         }
-        return true;
+        return 0;
     }
 }

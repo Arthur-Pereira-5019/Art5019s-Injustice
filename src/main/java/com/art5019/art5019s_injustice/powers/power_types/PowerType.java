@@ -38,5 +38,5 @@ public abstract class PowerType {
         return defaultTranslatable;
     }
 
-    public abstract boolean use(ServerPlayer serverPlayer);
+    public abstract int use(ServerPlayer serverPlayer);
 }
