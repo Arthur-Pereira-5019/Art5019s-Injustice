@@ -29,7 +29,8 @@ public class DataAttachments {
             instance.group(
                     Codec.INT.fieldOf("superpowerId").forGetter(ClientPower::superpowerId),
                     Codec.INT.fieldOf("powerId").forGetter(ClientPower::powerId),
-                    Codec.INT.fieldOf("cooldown").forGetter(ClientPower::cooldown)
+                    Codec.INT.fieldOf("cooldown").forGetter(ClientPower::cooldown),
+                    Codec.INT.fieldOf("secondaryCooldown").forGetter(ClientPower::secondaryCooldown)
             ).apply(instance, ClientPower::new)
     );
 

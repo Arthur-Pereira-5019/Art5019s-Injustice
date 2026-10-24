@@ -4,6 +4,8 @@ import com.art5019.art5019s_injustice.data.emissors.Emissor;
 import com.art5019.art5019s_injustice.data.emissors.TornadoEmissor;
 import com.art5019.art5019s_injustice.helper.EmissorHelper;
 import com.art5019.art5019s_injustice.helper.GeoHelper;
+import com.art5019.art5019s_injustice.powers.booster.EmptyPowerBooster;
+import com.art5019.art5019s_injustice.powers.booster.PowerTypeBooster;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
@@ -37,9 +39,14 @@ public class RevokeEmissor extends PowerType{
                 return 0;
             }
             BlockPos hit = new BlockPos((int) collision.x, (int) collision.y, (int) collision.z);
-            EmissorHelper.revokeEmissors(serverLevel, hit, this.getRadius(), searchFor);
-            return this.getDefaultCooldownTicks();
+
+            return EmissorHelper.revokeEmissors(serverLevel, hit, this.getRadius(), searchFor) ? this.getDefaultCooldownTicks() : 80;
         }
         return 0;
+    }
+
+    @Override
+    public PowerTypeBooster getBooster() {
+        return new EmptyPowerBooster();
     }
 }

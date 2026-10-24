@@ -1,5 +1,6 @@
 package com.art5019.art5019s_injustice.powers.power_types;
 
+import com.art5019.art5019s_injustice.powers.booster.PowerTypeBooster;
 import com.art5019.art5019s_injustice.powers.conditions.Condition;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
@@ -39,4 +40,7 @@ public abstract class PowerType {
     }
 
     public abstract int use(ServerPlayer serverPlayer);
+
+    public abstract PowerTypeBooster getBooster();
+
 }

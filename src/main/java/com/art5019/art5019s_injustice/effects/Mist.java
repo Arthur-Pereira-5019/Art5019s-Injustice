@@ -1,39 +1,41 @@
 package com.art5019.art5019s_injustice.effects;
 
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+
+import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
+import static net.minecraft.world.entity.ai.attributes.Attributes.FOLLOW_RANGE;
 
 public class Mist extends MobEffect {
+    public static final Identifier MIST_VIEW_MODIFIER = Identifier.fromNamespaceAndPath(MODID, "mist_view_modifier");
     public Mist(MobEffectCategory category, int color) {
         super(category, color);
     }
 
     @Override
     public boolean applyEffectTick(ServerLevel level, LivingEntity entity, int amplifier) {
-        // Apply your effect logic here.
-
-        // If this returns false when shouldApplyEffectTickThisTick returns true, the effect will immediately be removed
         return true;
     }
 
-    // Whether the effect should apply this tick. Used e.g. by the Regeneration effect that only applies
-    // once every x ticks, depending on the tick count and amplifier.
     @Override
     public boolean shouldApplyEffectTickThisTick(int tickCount, int amplifier) {
         return tickCount % 2 == 0; // replace this with whatever check you want
     }
 
-    // Utility method that is called when the effect is first added to the entity.
-    // This does not get called again until all instances of this effect have been removed from the entity.
     @Override
     public void onEffectAdded(LivingEntity entity, int amplifier) {
+        AttributeInstance instance = entity.getAttributes().getInstance(FOLLOW_RANGE);
+        if(instance != null) {
+            instance.addTransientModifier(new AttributeModifier(MIST_VIEW_MODIFIER, -16, AttributeModifier.Operation.ADD_VALUE));
+        }
         super.onEffectAdded(entity, amplifier);
     }
 
-    // Utility method that is called when the effect is added to the entity.
-    // This gets called every time this effect is added to the entity.
     @Override
     public void onEffectStarted(LivingEntity entity, int amplifier) {
     }

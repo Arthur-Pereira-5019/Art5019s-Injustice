@@ -58,7 +58,7 @@ public class Power {
         } else {
             powerType.use(serverPlayer);
         }
-        return this.defaultCooldown;
+        return Math.max(0, defaultCooldown - powerType.getBooster().cooldownReducer(serverPlayer));
     }
 
     public boolean canUse(ServerPlayer serverPlayer) {

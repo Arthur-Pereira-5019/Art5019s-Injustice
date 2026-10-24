@@ -2,6 +2,8 @@ package com.art5019.art5019s_injustice.powers.power_types;
 
 import com.art5019.art5019s_injustice.helper.EmissorHelper;
 import com.art5019.art5019s_injustice.helper.GeoHelper;
+import com.art5019.art5019s_injustice.powers.booster.EmptyPowerBooster;
+import com.art5019.art5019s_injustice.powers.booster.PowerTypeBooster;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
@@ -41,5 +43,10 @@ public class SummonTornado extends PowerType {
             return getDefaultCooldownTicks();
         }
         return 0;
+    }
+
+    @Override
+    public PowerTypeBooster getBooster() {
+        return new EmptyPowerBooster();
     }
 }

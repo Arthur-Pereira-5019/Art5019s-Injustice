@@ -84,7 +84,6 @@ public class SuperpowerService {
         } catch (Exception e) {
             return;
         }
-        superpower = SuperpowerService.getSuperpower(superpowerId);
         List<Power> powers = superpower.getAvailablePowers(serverPlayer);
         System.out.println(powers.get(0));
         for (int i = 0; i < powers.size(); i++) {
@@ -97,7 +96,7 @@ public class SuperpowerService {
                 }
             }
             if(!exists) {
-                clientPowers.add(new ClientPower(superpower.getSuperpowerId(), currentPowerId, 0));
+                clientPowers.add(new ClientPower(superpower.getSuperpowerId(), currentPowerId, 0, 0));
             }
         }
         serverPlayer.setData(CLIENT_POWER, clientPowers);

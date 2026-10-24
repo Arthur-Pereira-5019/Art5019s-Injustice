@@ -22,7 +22,7 @@ public class PlayerTick {
             List<ClientPower> powers = serverPlayer.getData(CLIENT_POWER);
             if(!powers.isEmpty()) {
                 List<ClientPower> reducedCooldown = new ArrayList<>();
-                powers.forEach(x -> reducedCooldown.add(new ClientPower(x.superpowerId(), x.powerId(), Math.max(x.cooldown()-1,0))));
+                powers.forEach(x -> reducedCooldown.add(new ClientPower(x.superpowerId(), x.powerId(), Math.max(x.cooldown()-1,0),Math.max(x.secondaryCooldown()-1,0))));
                 serverPlayer.setData(CLIENT_POWER, reducedCooldown);
             }
         }

@@ -2,6 +2,8 @@ package com.art5019.art5019s_injustice.powers.power_types;
 
 import com.art5019.art5019s_injustice.helper.EmissorHelper;
 import com.art5019.art5019s_injustice.helper.GeoHelper;
+import com.art5019.art5019s_injustice.powers.booster.EmptyPowerBooster;
+import com.art5019.art5019s_injustice.powers.booster.PowerTypeBooster;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
@@ -36,9 +38,14 @@ public class SummonMist extends PowerType {
                 return 0;
             }
             BlockPos hit = new BlockPos((int) collision.x, (int) collision.y, (int) collision.z);
-            EmissorHelper.appendMist(serverLevel, hit, mistDuration, mistRange);
+            EmissorHelper.appendMist(serverLevel, hit, mistDuration, mistRange, true);
             return getDefaultCooldownTicks();
         }
         return 0;
+    }
+
+    @Override
+    public PowerTypeBooster getBooster() {
+        return new EmptyPowerBooster();
     }
 }

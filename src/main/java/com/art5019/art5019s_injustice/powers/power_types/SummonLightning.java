@@ -1,16 +1,15 @@
 package com.art5019.art5019s_injustice.powers.power_types;
 
-import com.art5019.art5019s_injustice.helper.EmissorHelper;
 import com.art5019.art5019s_injustice.helper.GeoHelper;
-import net.minecraft.core.BlockPos;
+import com.art5019.art5019s_injustice.powers.booster.EmptyPowerBooster;
+import com.art5019.art5019s_injustice.powers.booster.PowerTypeBooster;
+import com.art5019.art5019s_injustice.powers.booster.SummonLightningBooster;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.EntityTypes;
 import net.minecraft.world.entity.LightningBolt;
-import net.minecraft.world.entity.monster.cubemob.Slime;
-import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
@@ -19,9 +18,9 @@ import javax.annotation.Nullable;
 import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
 
 public class SummonLightning extends PowerType{
-    int radius;
-    int lightningPower;
-    SummonLightningBooster summonLightningBooster;
+    private int radius;
+    private int lightningPower;
+    private SummonLightningBooster summonLightningBooster;
 
 
     public SummonLightning(String defaultTranslatable, Identifier defaultIconSource, String defaultDescription, int defaultCooldownTicks, int radius, int lightningPower, @Nullable SummonLightningBooster summonLightningBooster) {
@@ -31,7 +30,7 @@ public class SummonLightning extends PowerType{
         this.summonLightningBooster = summonLightningBooster;
     }
 
-    public SummonLightning(int radius, int lightningPower) {
+    public SummonLightning(int radius, int lightningPower, @Nullable SummonLightningBooster summonLightningBooster) {
         this.lightningPower = lightningPower;
         this.radius = radius;
         super("art5019sinjustice.powertype.summon_lightning.name",
@@ -46,8 +45,8 @@ public class SummonLightning extends PowerType{
             int radiusBoost = 0;
             int powerBoost = 0;
             if(summonLightningBooster != null) {
-                radiusBoost = summonLightningBooster.radiusModifier();
-                powerBoost = summonLightningBooster.lightningPowerModifier();
+                radiusBoost = summonLightningBooster.radiusModifier(serverPlayer);
+                powerBoost = summonLightningBooster.lightningPowerModifier(serverPlayer);
             }
             LightningBolt lightningBolt = EntityTypes.LIGHTNING_BOLT.create(serverLevel, EntitySpawnReason.TRIGGERED);
             Vec3 collision = GeoHelper.rayCastTillHit(radius+radiusBoost, 0.5F, serverPlayer, serverLevel);
@@ -58,14 +57,19 @@ public class SummonLightning extends PowerType{
             double y = collision.y;
             double z = collision.z;
             if(lightningBolt != null) {
+                serverLevel.explode(null, x, y, z, lightningPower+powerBoost, true, Level.ExplosionInteraction.MOB);
                 serverLevel.addFreshEntity(lightningBolt);
                 lightningBolt.snapTo(x, y, z, serverLevel.getRandom().nextFloat() * 360.0F, 0.0F);
-                serverLevel.explode(null, x, y, z, lightningPower+powerBoost, true, Level.ExplosionInteraction.MOB);
                 return getDefaultCooldownTicks();
             } else {
                 return 0;
             }
         }
         return 0;
+    }
+
+    @Override
+    public PowerTypeBooster getBooster() {
+        return this.summonLightningBooster;
     }
 }

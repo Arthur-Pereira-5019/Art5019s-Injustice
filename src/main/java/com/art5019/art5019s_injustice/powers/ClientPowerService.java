@@ -21,25 +21,41 @@ public class ClientPowerService {
         int shift = serverPlayer.getData(POWER_LIST_POS);
 
         ClientPower targetedPower = powers.get((key + shift) % powers.size());
-        if(targetedPower.cooldown() == 0) {
-            Power actualPower = superpower.getPowerById(targetedPower.powerId());
-            if(actualPower.canUse(serverPlayer)) {
-                int cooldown = actualPower.use(serverPlayer,secondary);
-                if(cooldown > 0) {
-                    ClientPower updatedCooldown = new ClientPower(targetedPower.superpowerId(), targetedPower.powerId(), cooldown);
-                    int pos = powers.indexOf(targetedPower);
-                    powers.remove(targetedPower);
-                    powers.add(pos, updatedCooldown);
+        if(secondary) {
+            if(targetedPower.secondaryCooldown() == 0) {
+                Power actualPower = superpower.getPowerById(targetedPower.powerId());
+                if(actualPower.canUse(serverPlayer)) {
+                    int cooldown = actualPower.use(serverPlayer,true);
+                    if(cooldown > 0) {
+                        ClientPower updatedCooldown = new ClientPower(targetedPower.superpowerId(), targetedPower.powerId(), targetedPower.cooldown(), cooldown);
+                        int pos = powers.indexOf(targetedPower);
+                        powers.remove(targetedPower);
+                        powers.add(pos, updatedCooldown);
+                    }
+                }
+            }
+        } else {
+            if(targetedPower.cooldown() == 0) {
+                Power actualPower = superpower.getPowerById(targetedPower.powerId());
+                if(actualPower.canUse(serverPlayer)) {
+                    int cooldown = actualPower.use(serverPlayer,false);
+                    if(cooldown > 0) {
+                        ClientPower updatedCooldown = new ClientPower(targetedPower.superpowerId(), targetedPower.powerId(), cooldown, targetedPower.secondaryCooldown());
+                        int pos = powers.indexOf(targetedPower);
+                        powers.remove(targetedPower);
+                        powers.add(pos, updatedCooldown);
+                    }
                 }
             }
         }
+
         serverPlayer.setData(CLIENT_POWER, powers);
     }
 
     public static void resetCooldown(ServerPlayer player, int pos) {
         List<ClientPower> powers = player.getData(CLIENT_POWER);
         ClientPower targetedPower = powers.get(pos);
-        ClientPower updatedCooldown = new ClientPower(targetedPower.superpowerId(), targetedPower.powerId(), 0);
+        ClientPower updatedCooldown = new ClientPower(targetedPower.superpowerId(), targetedPower.powerId(), 0, 0);
         powers.remove(targetedPower);
         powers.add(pos, updatedCooldown);
     }

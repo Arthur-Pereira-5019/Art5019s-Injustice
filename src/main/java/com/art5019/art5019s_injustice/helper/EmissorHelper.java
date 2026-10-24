@@ -28,19 +28,20 @@ public class EmissorHelper {
         );
     }
 
-    public static void appendMist(ServerLevel serverLevel, BlockPos blockPos, int mistDuration, int mistRange) {
+    public static void appendMist(ServerLevel serverLevel, BlockPos blockPos, int mistDuration, int mistRange, boolean visualEmissor) {
         appendEmissor(serverLevel,
-                 new MistEmissor(expiryTick(mistDuration, serverLevel), blockPos.getX(), blockPos.getY(), blockPos.getZ(), mistRange)
+             new MistEmissor(expiryTick(mistDuration, serverLevel), blockPos.getX(), blockPos.getY(), blockPos.getZ(), mistRange, visualEmissor)
         );
     }
 
 
-    public static void revokeEmissors(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
+    public static boolean revokeEmissors(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
         EmissorCollection emissorCollection = serverLevel.getDataStorage().computeIfAbsent(EMISSOR_ID);
         ArrayList<Emissor> emissors = new ArrayList<>(emissorCollection.getEmissors());
         List<? extends Emissor> emissorsAt = findEmissorsAt(emissors, serverLevel, blockPos, radius, type);
-        emissors.removeAll(emissorsAt);
+        boolean removed = emissors.removeAll(emissorsAt);
         serverLevel.getDataStorage().computeIfAbsent(EMISSOR_ID).setEmissors(emissors);
+        return removed;
     }
 
     public static List<? extends Emissor> findEmissorsAt(ArrayList<Emissor> emissors, ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {

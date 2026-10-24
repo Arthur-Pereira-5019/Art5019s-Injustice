@@ -31,7 +31,7 @@ public class Storm extends Superpower {
                 1);
         Power summonLightning = new Power(null,
                 null,
-                new SummonLightning(300, 3),
+                new SummonLightning(300, 2, new StormLightningBooster()),
                 null,
                 null,
                 2400,
@@ -53,9 +53,26 @@ public class Storm extends Superpower {
                 6000,
                 null,
                 3);
+        Power reduceWeather = new Power(null,
+                null,
+                new WeatherShifting(-1),
+                null,
+                null,
+                3600,
+                null,
+                4);
+        Power addWeather = new Power(null,
+                reduceWeather,
+                new WeatherShifting(1),
+                null,
+                null,
+                3600,
+                null,
+                5);
         powers.add(summonTornado);
         powers.add(summonLightning);
         powers.add(summonMist);
+        powers.add(addWeather);
         super(powers, 1, TextDecoration.PURPLE, "storm", 2);
     }
 
