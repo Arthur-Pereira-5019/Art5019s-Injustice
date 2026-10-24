@@ -1,5 +1,6 @@
 package com.art5019.art5019s_injustice;
 
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.BusBuilder;
 import net.neoforged.neoforge.attachment.AttachmentType;
@@ -46,6 +47,8 @@ public class Art5019sInjustice {
     public static final DeferredBlock<Block> EXAMPLE_BLOCK = BLOCKS.registerSimpleBlock("example_block", p -> p.mapColor(MapColor.STONE));
     public static final DeferredItem<BlockItem> EXAMPLE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("example_block", EXAMPLE_BLOCK);
 
+    public static final DeferredRegister<MobEffect> MOB_EFFECTS = DeferredRegister.create(Registries.MOB_EFFECT, MODID);
+
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY_TYPES =
             DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, MODID);
 
@@ -60,6 +63,7 @@ public class Art5019sInjustice {
         DATA_COMPONENTS.register(modEventBus);
         BLOCK_ENTITY_TYPES.register(modEventBus);
         EMISSORS_DISPATCH.register(modEventBus);
+        MOB_EFFECTS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 

@@ -71,6 +71,12 @@ public class DataAttachments {
                     .build()
     );
 
+    public static final Supplier<AttachmentType<Integer>> GRAPHICS_STACK = ATTACHMENT_TYPES.register(
+            "graphics_stack", () -> AttachmentType.builder(() -> 1).serialize(Codec.INT.fieldOf("graphics_stack"))
+                    .copyOnDeath()
+                    .build()
+    );
+
     public static final Supplier<AttachmentType<Integer>> POWER_LIST_POS = ATTACHMENT_TYPES.register(
             "power_list_pos", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT.fieldOf("power_list_pos"))
                     .copyOnDeath()

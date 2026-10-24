@@ -3,6 +3,7 @@ package com.art5019.art5019s_injustice.powers;
 import com.art5019.art5019s_injustice.data.records.power.ClientPower;
 import com.art5019.art5019s_injustice.powers.superpower.Superpower;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.player.Player;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,11 +27,22 @@ public class ClientPowerService {
                 int cooldown = actualPower.use(serverPlayer,secondary);
                 if(cooldown > 0) {
                     ClientPower updatedCooldown = new ClientPower(targetedPower.superpowerId(), targetedPower.powerId(), cooldown);
+                    int pos = powers.indexOf(targetedPower);
                     powers.remove(targetedPower);
-                    powers.add(updatedCooldown);
+                    powers.add(pos, updatedCooldown);
                 }
             }
         }
         serverPlayer.setData(CLIENT_POWER, powers);
     }
+
+    public static void resetCooldown(ServerPlayer player, int pos) {
+        List<ClientPower> powers = player.getData(CLIENT_POWER);
+        ClientPower targetedPower = powers.get(pos);
+        ClientPower updatedCooldown = new ClientPower(targetedPower.superpowerId(), targetedPower.powerId(), 0);
+        powers.remove(targetedPower);
+        powers.add(pos, updatedCooldown);
+    }
+
+
 }

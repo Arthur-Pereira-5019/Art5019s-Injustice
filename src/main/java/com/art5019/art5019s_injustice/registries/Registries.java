@@ -2,6 +2,7 @@ package com.art5019.art5019s_injustice.registries;
 
 import com.art5019.art5019s_injustice.data.emissors.Emissor;
 import com.art5019.art5019s_injustice.data.emissors.TornadoEmissor;
+import com.art5019.art5019s_injustice.data.emissors.mist.MistEmissor;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.Identifier;
@@ -31,6 +32,9 @@ public class Registries {
 
     public static final Supplier<MapCodec<? extends Emissor>> TORNADO =
             EMISSORS_DISPATCH.register("tornado", () -> TornadoEmissor.TORNADO);
+
+    public static final Supplier<MapCodec<? extends Emissor>> MIST =
+            EMISSORS_DISPATCH.register("mist", () -> MistEmissor.MIST);
 
 
     @SubscribeEvent // on the mod event bus

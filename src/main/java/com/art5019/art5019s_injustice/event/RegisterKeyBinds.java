@@ -62,6 +62,24 @@ public class RegisterKeyBinds {
             INJUSTICE_KEY_CATEGORY
     ));
 
+    public static final Lazy<KeyMapping> THIRD_POWER = Lazy.of(() -> new KeyMapping(
+            "art5019sinjustice.key.power3",
+            KeyConflictContext.UNIVERSAL,
+            KeyModifier.NONE,
+            InputConstants.Type.KEYSYM,
+            GLFW.GLFW_KEY_C,
+            INJUSTICE_KEY_CATEGORY
+    ));
+
+    public static final Lazy<KeyMapping> THIRD_POWER_SECONDARY = Lazy.of(() -> new KeyMapping(
+            "art5019sinjustice.key.power3_secondary",
+            KeyConflictContext.UNIVERSAL,
+            KeyModifier.SHIFT,
+            InputConstants.Type.KEYSYM,
+            GLFW.GLFW_KEY_C,
+            INJUSTICE_KEY_CATEGORY
+    ));
+
 
 
     @SubscribeEvent
@@ -71,6 +89,8 @@ public class RegisterKeyBinds {
         event.register(FIRST_POWER_SECONDARY.get());
         event.register(SECOND_POWER.get());
         event.register(SECOND_POWER_SECONDARY.get());
+        event.register(THIRD_POWER.get());
+        event.register(THIRD_POWER_SECONDARY.get());
     }
 
     @SubscribeEvent
@@ -91,6 +111,12 @@ public class RegisterKeyBinds {
         }
         while (SECOND_POWER_SECONDARY.get().consumeClick()) {
             minecraft.getConnection().send(new PlayerUsesPowerPacket(1,true));
+        }
+        while (THIRD_POWER.get().consumeClick()) {
+            minecraft.getConnection().send(new PlayerUsesPowerPacket(2,false));
+        }
+        while (THIRD_POWER_SECONDARY.get().consumeClick()) {
+            minecraft.getConnection().send(new PlayerUsesPowerPacket(2,true));
         }
     }
 

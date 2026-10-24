@@ -2,9 +2,7 @@ package com.art5019.art5019s_injustice.powers.superpower.mutant.storm;
 
 import com.art5019.art5019s_injustice.data.common.TextDecoration;
 import com.art5019.art5019s_injustice.powers.Power;
-import com.art5019.art5019s_injustice.powers.power_types.RevokeTornado;
-import com.art5019.art5019s_injustice.powers.power_types.SummonLightning;
-import com.art5019.art5019s_injustice.powers.power_types.SummonTornado;
+import com.art5019.art5019s_injustice.powers.power_types.*;
 import com.art5019.art5019s_injustice.powers.superpower.Superpower;
 import net.minecraft.server.level.ServerPlayer;
 
@@ -39,8 +37,25 @@ public class Storm extends Superpower {
                 2400,
                 null,
                 2);
+        Power revokeMist = new Power(null,
+                null,
+                new RevokeMist(300, 32),
+                null,
+                null,
+                1200,
+                null,
+                3);
+        Power summonMist = new Power(null,
+                revokeMist,
+                new SummonMist(4800, 96),
+                null,
+                null,
+                6000,
+                null,
+                3);
         powers.add(summonTornado);
         powers.add(summonLightning);
+        powers.add(summonMist);
         super(powers, 1, TextDecoration.PURPLE, "storm", 2);
     }
 

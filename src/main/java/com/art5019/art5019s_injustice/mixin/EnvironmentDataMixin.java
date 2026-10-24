@@ -16,6 +16,7 @@ public interface EnvironmentDataMixin {
     @Inject(method = "getValue(Lnet/minecraft/world/attribute/EnvironmentAttribute;Lnet/minecraft/core/BlockPos;)Ljava/lang/Object;", at = @At("HEAD"), cancellable = true)
     default <Value> void getValue(EnvironmentAttribute<Value> attribute, BlockPos pos, CallbackInfoReturnable<Value> cir) {
         if(attribute == WATER_EVAPORATES) {
+
             cir.setReturnValue((Value) Boolean.FALSE);
         }
     }

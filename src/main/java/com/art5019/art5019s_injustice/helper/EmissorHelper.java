@@ -1,6 +1,7 @@
 package com.art5019.art5019s_injustice.helper;
 
 import com.art5019.art5019s_injustice.data.emissors.*;
+import com.art5019.art5019s_injustice.data.emissors.mist.MistEmissor;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.phys.AABB;
@@ -24,6 +25,12 @@ public class EmissorHelper {
     public static void appendTornado(ServerLevel serverLevel, BlockPos blockPos, int tornadoDuration, float tornadoStrength) {
         appendEmissor(serverLevel,
                  new TornadoEmissor(expiryTick(tornadoDuration, serverLevel), blockPos.getX(), blockPos.getY(), blockPos.getZ(), tornadoStrength)
+        );
+    }
+
+    public static void appendMist(ServerLevel serverLevel, BlockPos blockPos, int mistDuration, int mistRange) {
+        appendEmissor(serverLevel,
+                 new MistEmissor(expiryTick(mistDuration, serverLevel), blockPos.getX(), blockPos.getY(), blockPos.getZ(), mistRange)
         );
     }
 
