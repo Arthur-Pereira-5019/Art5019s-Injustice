@@ -33,6 +33,7 @@ public class SummonLightning extends PowerType{
     public SummonLightning(int radius, int lightningPower, @Nullable SummonLightningBooster summonLightningBooster) {
         this.lightningPower = lightningPower;
         this.radius = radius;
+        this.summonLightningBooster = summonLightningBooster;
         super("art5019sinjustice.powertype.summon_lightning.name",
                 Identifier.fromNamespaceAndPath(MODID,""),
                 "art5019sinjustice.powertype.summon_lightning.description",
