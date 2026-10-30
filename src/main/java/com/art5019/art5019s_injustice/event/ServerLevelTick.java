@@ -12,8 +12,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
-import static com.art5019.art5019s_injustice.data.emissors.EmissorCollection.EMISSOR_ID;
-
+import static com.art5019.art5019s_injustice.data.DataAttachments.EMISSORS_ATTACHMENT;
 @Mod(MODID)
 @EventBusSubscriber
 public class ServerLevelTick {
@@ -28,8 +27,7 @@ public class ServerLevelTick {
 
     private static void doEmissors(ServerLevel serverLevel) {
         long currentTick = serverLevel.getGameTime();
-        EmissorCollection emissorCollection = serverLevel.getDataStorage().computeIfAbsent(EMISSOR_ID);
-        ArrayList<Emissor> emissors = new ArrayList<>(emissorCollection.getEmissors());
+        ArrayList<Emissor> emissors = new ArrayList<>(serverLevel.getData(EMISSORS_ATTACHMENT));
         Iterator<Emissor> iterator = emissors.iterator();
         while(iterator.hasNext()) {
             Emissor e = iterator.next();
@@ -38,6 +36,6 @@ public class ServerLevelTick {
                 iterator.remove();
             }
         }
-        serverLevel.getDataStorage().computeIfAbsent(EMISSOR_ID).setEmissors(emissors);
+        serverLevel.setData(EMISSORS_ATTACHMENT, emissors);
     }
 }

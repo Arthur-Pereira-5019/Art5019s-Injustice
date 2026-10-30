@@ -4,6 +4,10 @@ import com.art5019.art5019s_injustice.helper.GeoHelper;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
@@ -28,6 +32,24 @@ public class MistEmissor extends Emissor {
                     Codec.INT.fieldOf("mistRange").forGetter(MistEmissor::getMistRange),
                     Codec.BOOL.fieldOf("visualEmissor").forGetter(MistEmissor::isVisualEmissor)
             ).apply(instance, MistEmissor::new)
+    );
+
+    public static final StreamCodec<FriendlyByteBuf, MistEmissor> MIST_STREAM = StreamCodec.composite(
+            ByteBufCodecs.LONG,
+            MistEmissor::getExpiryTick,
+            ByteBufCodecs.DOUBLE,
+            MistEmissor::getPosX,
+            ByteBufCodecs.DOUBLE,
+            MistEmissor::getPosY,
+            ByteBufCodecs.DOUBLE,
+            MistEmissor::getPosZ,
+            ByteBufCodecs.STRING_UTF8,
+            MistEmissor::getUuid,
+            ByteBufCodecs.INT,
+            MistEmissor::getMistRange,
+            ByteBufCodecs.BOOL,
+            MistEmissor::isVisualEmissor,
+            MistEmissor::new
     );
 
     public MistEmissor(long expiryTick, double posX, double posY, double posZ, int mistRange, boolean visualEmissor) {
@@ -63,6 +85,11 @@ public class MistEmissor extends Emissor {
     @Override
     public MapCodec<? extends Emissor> type() {
         return MIST;
+    }
+
+    @Override
+    public StreamCodec<? super RegistryFriendlyByteBuf, ? extends Emissor> streamCodec() {
+        return MIST_STREAM;
     }
 
     public int getMistRange() {

@@ -7,6 +7,10 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.damagesource.DamageSource;
@@ -35,6 +39,23 @@ public class TornadoEmissor extends Emissor {
                     Codec.FLOAT.fieldOf("strength").forGetter(TornadoEmissor::getTornadoStrength)
             ).apply(instance, TornadoEmissor::new)
     );
+
+    public static final StreamCodec<FriendlyByteBuf, TornadoEmissor> TORNADO_STREAM = StreamCodec.composite(
+            ByteBufCodecs.LONG,
+            TornadoEmissor::getExpiryTick,
+            ByteBufCodecs.DOUBLE,
+            TornadoEmissor::getPosX,
+            ByteBufCodecs.DOUBLE,
+            TornadoEmissor::getPosY,
+            ByteBufCodecs.DOUBLE,
+            TornadoEmissor::getPosZ,
+            ByteBufCodecs.STRING_UTF8,
+            TornadoEmissor::getUuid,
+            ByteBufCodecs.FLOAT,
+            TornadoEmissor::getTornadoStrength,
+            TornadoEmissor::new
+    );
+
 
     public TornadoEmissor(long expiryTick, double posX, double posY, double posZ, float tornadoStrength) {
         super(expiryTick, posX, posY, posZ, UUID.randomUUID().toString());
@@ -113,5 +134,10 @@ public class TornadoEmissor extends Emissor {
     @Override
     public MapCodec<? extends Emissor> type() {
         return TORNADO;
+    }
+
+    @Override
+    public StreamCodec<? super RegistryFriendlyByteBuf, ? extends Emissor> streamCodec() {
+        return TORNADO_STREAM;
     }
 }

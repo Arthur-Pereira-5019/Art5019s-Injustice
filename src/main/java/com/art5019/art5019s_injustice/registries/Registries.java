@@ -6,6 +6,8 @@ import com.art5019.art5019s_injustice.data.emissors.TornadoEmissor;
 import com.art5019.art5019s_injustice.data.emissors.MistEmissor;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.Registry;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -40,10 +42,29 @@ public class Registries {
     public static final Supplier<MapCodec<? extends Emissor>> COLD_ZONE =
             EMISSORS_DISPATCH.register("cold_zone", () -> ColdZoneEmissor.COLD_ZONE);
 
+    public static final ResourceKey<Registry<StreamCodec<? super RegistryFriendlyByteBuf, ? extends Emissor>>> EMISSOR_STREAM_REGISTRY_KEY =
+            ResourceKey.createRegistryKey(Identifier.fromNamespaceAndPath(MODID, "emissor_stream"));
 
-    @SubscribeEvent // on the mod event bus
+    public static final Registry<StreamCodec<? super RegistryFriendlyByteBuf, ? extends Emissor>> EMISSOR_STREAM_REGISTRY =
+            new RegistryBuilder<>(EMISSOR_STREAM_REGISTRY_KEY).sync(true).create();
+
+    public static final DeferredRegister<StreamCodec<? super RegistryFriendlyByteBuf, ? extends Emissor>> EMISSOR_STREAM_DISPATCH =
+            DeferredRegister.create(EMISSOR_STREAM_REGISTRY_KEY, MODID);
+
+    public static final Supplier<StreamCodec<? super RegistryFriendlyByteBuf, ? extends Emissor>> TORNADO_STREAM =
+            EMISSOR_STREAM_DISPATCH.register("tornado", () -> TornadoEmissor.TORNADO_STREAM);
+
+    public static final Supplier<StreamCodec<? super RegistryFriendlyByteBuf, ? extends Emissor>> MIST_STREAM =
+            EMISSOR_STREAM_DISPATCH.register("mist", () -> MistEmissor.MIST_STREAM);
+
+    public static final Supplier<StreamCodec<? super RegistryFriendlyByteBuf, ? extends Emissor>> COLD_ZONE_STREAM =
+            EMISSOR_STREAM_DISPATCH.register("cold_zone", () -> ColdZoneEmissor.COLD_ZONE_STREAM);
+
+
+    @SubscribeEvent
     public static void registerRegistries(NewRegistryEvent event) {
         event.register(EMISSOR_REGISTRY);
+        event.register(EMISSOR_STREAM_REGISTRY);
     }
 
 }

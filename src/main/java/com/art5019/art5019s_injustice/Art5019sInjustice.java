@@ -33,6 +33,7 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 import static com.art5019.art5019s_injustice.registries.Registries.EMISSORS_DISPATCH;
+import static com.art5019.art5019s_injustice.registries.Registries.EMISSOR_STREAM_DISPATCH;
 
 @Mod(Art5019sInjustice.MODID)
 public class Art5019sInjustice {
@@ -63,6 +64,7 @@ public class Art5019sInjustice {
         DATA_COMPONENTS.register(modEventBus);
         BLOCK_ENTITY_TYPES.register(modEventBus);
         EMISSORS_DISPATCH.register(modEventBus);
+        EMISSOR_STREAM_DISPATCH.register(modEventBus);
         MOB_EFFECTS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);

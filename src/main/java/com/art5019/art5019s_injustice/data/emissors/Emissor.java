@@ -3,6 +3,8 @@ package com.art5019.art5019s_injustice.data.emissors;
 import com.art5019.art5019s_injustice.event.custom.EmissorUpdatedState;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.common.NeoForge;
@@ -17,6 +19,7 @@ public abstract class Emissor {
     private String uuid;
 
     public abstract MapCodec<? extends Emissor> type();
+    public abstract StreamCodec<? super RegistryFriendlyByteBuf, ? extends Emissor> streamCodec();
 
     public Emissor(long expiryTick, double posX, double posY, double posZ, String uuid) {
         this.expiryTick = expiryTick;

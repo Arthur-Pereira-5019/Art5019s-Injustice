@@ -11,14 +11,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-import static com.art5019.art5019s_injustice.data.emissors.EmissorCollection.EMISSOR_ID;
+import static com.art5019.art5019s_injustice.data.DataAttachments.EMISSORS_ATTACHMENT;
 
 public class EmissorHelper {
     private static void appendEmissor(ServerLevel serverLevel, Emissor emissor) {
-        EmissorCollection emissorCollection = serverLevel.getDataStorage().computeIfAbsent(EMISSOR_ID);
-        ArrayList<Emissor> emissors = new ArrayList<>(emissorCollection.getEmissors());
+        ArrayList<Emissor> emissors = new ArrayList<>(serverLevel.getData(EMISSORS_ATTACHMENT));
         emissors.add(emissor);
-        serverLevel.getDataStorage().computeIfAbsent(EMISSOR_ID).setEmissors(emissors);
+        serverLevel.setData(EMISSORS_ATTACHMENT, emissors);
     }
 
     public static void appendColdZone(ServerLevel serverLevel, BlockPos blockPos, int duration) {
@@ -42,17 +41,15 @@ public class EmissorHelper {
 
 
     public static boolean revokeEmissors(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
-        EmissorCollection emissorCollection = serverLevel.getDataStorage().computeIfAbsent(EMISSOR_ID);
-        ArrayList<Emissor> emissors = new ArrayList<>(emissorCollection.getEmissors());
+        ArrayList<Emissor> emissors = new ArrayList<>(serverLevel.getData(EMISSORS_ATTACHMENT));
         List<? extends Emissor> emissorsAt = filterEmissorsAt(emissors, serverLevel, blockPos, radius, type);
         boolean removed = emissors.removeAll(emissorsAt);
-        serverLevel.getDataStorage().computeIfAbsent(EMISSOR_ID).setEmissors(emissors);
+        serverLevel.setData(EMISSORS_ATTACHMENT, emissors);
         return removed;
     }
 
     public static List<? extends Emissor> findEmissorsAt(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
-        EmissorCollection emissorCollection = serverLevel.getDataStorage().computeIfAbsent(EMISSOR_ID);
-        ArrayList<Emissor> emissors = new ArrayList<>(emissorCollection.getEmissors());
+        ArrayList<Emissor> emissors = new ArrayList<>(serverLevel.getData(EMISSORS_ATTACHMENT));
         return filterEmissorsAt(emissors, serverLevel, blockPos, radius, type);
     }
 
