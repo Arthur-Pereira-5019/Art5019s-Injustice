@@ -4,6 +4,7 @@ import com.art5019.art5019s_injustice.data.emissors.*;
 import com.art5019.art5019s_injustice.data.emissors.MistEmissor;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 
@@ -42,23 +43,23 @@ public class EmissorHelper {
 
     public static boolean revokeEmissors(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
         ArrayList<Emissor> emissors = new ArrayList<>(serverLevel.getData(EMISSORS_ATTACHMENT));
-        List<? extends Emissor> emissorsAt = filterEmissorsAt(emissors, serverLevel, blockPos, radius, type);
+        List<? extends Emissor> emissorsAt = filterEmissorsAt(emissors, blockPos, radius, type);
         boolean removed = emissors.removeAll(emissorsAt);
         serverLevel.setData(EMISSORS_ATTACHMENT, emissors);
         return removed;
     }
 
-    public static List<? extends Emissor> findEmissorsAt(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
-        ArrayList<Emissor> emissors = new ArrayList<>(serverLevel.getData(EMISSORS_ATTACHMENT));
-        return filterEmissorsAt(emissors, serverLevel, blockPos, radius, type);
+    public static List<? extends Emissor> findEmissorsAt(Level level, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
+        ArrayList<Emissor> emissors = new ArrayList<>(level.getData(EMISSORS_ATTACHMENT));
+        return filterEmissorsAt(emissors, blockPos, radius, type);
     }
 
-    public static boolean containsEmissorAt(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
-        List<? extends Emissor> emissors = findEmissorsAt(serverLevel, blockPos, radius, type);
+    public static boolean containsEmissorAt(Level level, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
+        List<? extends Emissor> emissors = findEmissorsAt(level, blockPos, radius, type);
         return !emissors.isEmpty();
     }
 
-    public static List<? extends Emissor> filterEmissorsAt(ArrayList<Emissor> emissors, ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
+    public static List<? extends Emissor> filterEmissorsAt(ArrayList<Emissor> emissors, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
         AABB aabb = GeoHelper.generateAABB(blockPos, radius);
         return emissors.stream().filter(x -> aabb.contains(new Vec3(x.getPosX(), x.getPosY(), x.getPosZ())) && type.isInstance(x)).toList();
     }
