@@ -1,29 +1,15 @@
-package com.art5019.art5019s_injustice.data.emissors.mist;
+package com.art5019.art5019s_injustice.graphics;
 
 import com.art5019.art5019s_injustice.effects.Effects;
 import net.minecraft.client.Camera;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.multiplayer.ClientLevel;
-import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.renderer.fog.FogData;
-import net.minecraft.client.renderer.fog.environment.FogEnvironment;
 import net.minecraft.client.renderer.fog.environment.MobEffectFogEnvironment;
 import net.minecraft.core.Holder;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.util.Mth;
 import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.level.material.FogType;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.fml.common.Mod;
-import org.joml.Vector4f;
-import org.jspecify.annotations.Nullable;
-
-import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
-import static com.art5019.art5019s_injustice.data.DataAttachments.GRAPHICS_STACK;
-import static com.art5019.art5019s_injustice.data.DataAttachments.SUPERPOWER_ID;
 
 public class MistFogEnvironment extends MobEffectFogEnvironment {
     @Override

@@ -1,6 +1,5 @@
-package com.art5019.art5019s_injustice.data.emissors.mist;
+package com.art5019.art5019s_injustice.data.emissors;
 
-import com.art5019.art5019s_injustice.data.emissors.Emissor;
 import com.art5019.art5019s_injustice.helper.GeoHelper;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;

@@ -1,8 +1,9 @@
 package com.art5019.art5019s_injustice.registries;
 
+import com.art5019.art5019s_injustice.data.emissors.ColdZoneEmissor;
 import com.art5019.art5019s_injustice.data.emissors.Emissor;
 import com.art5019.art5019s_injustice.data.emissors.TornadoEmissor;
-import com.art5019.art5019s_injustice.data.emissors.mist.MistEmissor;
+import com.art5019.art5019s_injustice.data.emissors.MistEmissor;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.Identifier;
@@ -35,6 +36,9 @@ public class Registries {
 
     public static final Supplier<MapCodec<? extends Emissor>> MIST =
             EMISSORS_DISPATCH.register("mist", () -> MistEmissor.MIST);
+
+    public static final Supplier<MapCodec<? extends Emissor>> COLD_ZONE =
+            EMISSORS_DISPATCH.register("cold_zone", () -> ColdZoneEmissor.COLD_ZONE);
 
 
     @SubscribeEvent // on the mod event bus

@@ -90,11 +90,29 @@ public class RegisterKeyBinds {
     ));
 
     public static final Lazy<KeyMapping> FOURTH_POWER_SECONDARY = Lazy.of(() -> new KeyMapping(
-            "art5019sinjustice.key.power34_secondary",
+            "art5019sinjustice.key.power4_secondary",
             KeyConflictContext.UNIVERSAL,
             KeyModifier.SHIFT,
             InputConstants.Type.KEYSYM,
             GLFW.GLFW_KEY_V,
+            INJUSTICE_KEY_CATEGORY
+    ));
+
+    public static final Lazy<KeyMapping> FIFTH_POWER = Lazy.of(() -> new KeyMapping(
+            "art5019sinjustice.key.power5",
+            KeyConflictContext.UNIVERSAL,
+            KeyModifier.NONE,
+            InputConstants.Type.KEYSYM,
+            GLFW.GLFW_KEY_B,
+            INJUSTICE_KEY_CATEGORY
+    ));
+
+    public static final Lazy<KeyMapping> FIFTH_POWER_SECONDARY = Lazy.of(() -> new KeyMapping(
+            "art5019sinjustice.key.power5_secondary",
+            KeyConflictContext.UNIVERSAL,
+            KeyModifier.SHIFT,
+            InputConstants.Type.KEYSYM,
+            GLFW.GLFW_KEY_B,
             INJUSTICE_KEY_CATEGORY
     ));
 
@@ -111,6 +129,8 @@ public class RegisterKeyBinds {
         event.register(THIRD_POWER_SECONDARY.get());
         event.register(FOURTH_POWER.get());
         event.register(FOURTH_POWER_SECONDARY.get());
+        event.register(FIFTH_POWER.get());
+        event.register(FIFTH_POWER_SECONDARY.get());
     }
 
     @SubscribeEvent
@@ -143,6 +163,12 @@ public class RegisterKeyBinds {
         }
         while (FOURTH_POWER_SECONDARY.get().consumeClick()) {
             minecraft.getConnection().send(new PlayerUsesPowerPacket(3,true));
+        }
+        while (FIFTH_POWER.get().consumeClick()) {
+            minecraft.getConnection().send(new PlayerUsesPowerPacket(4, false));
+        }
+        while (FIFTH_POWER_SECONDARY.get().consumeClick()) {
+            minecraft.getConnection().send(new PlayerUsesPowerPacket(4,true));
         }
     }
 

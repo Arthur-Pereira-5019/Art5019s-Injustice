@@ -1,7 +1,7 @@
 package com.art5019.art5019s_injustice.helper;
 
 import com.art5019.art5019s_injustice.data.emissors.*;
-import com.art5019.art5019s_injustice.data.emissors.mist.MistEmissor;
+import com.art5019.art5019s_injustice.data.emissors.MistEmissor;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.phys.AABB;
@@ -21,6 +21,12 @@ public class EmissorHelper {
         serverLevel.getDataStorage().computeIfAbsent(EMISSOR_ID).setEmissors(emissors);
     }
 
+    public static void appendColdZone(ServerLevel serverLevel, BlockPos blockPos, int duration) {
+        appendEmissor(serverLevel,
+                new ColdZoneEmissor(expiryTick(duration, serverLevel), blockPos.getX(), blockPos.getY(), blockPos.getZ())
+        );
+    }
+
 
     public static void appendTornado(ServerLevel serverLevel, BlockPos blockPos, int tornadoDuration, float tornadoStrength) {
         appendEmissor(serverLevel,
@@ -38,13 +44,24 @@ public class EmissorHelper {
     public static boolean revokeEmissors(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
         EmissorCollection emissorCollection = serverLevel.getDataStorage().computeIfAbsent(EMISSOR_ID);
         ArrayList<Emissor> emissors = new ArrayList<>(emissorCollection.getEmissors());
-        List<? extends Emissor> emissorsAt = findEmissorsAt(emissors, serverLevel, blockPos, radius, type);
+        List<? extends Emissor> emissorsAt = filterEmissorsAt(emissors, serverLevel, blockPos, radius, type);
         boolean removed = emissors.removeAll(emissorsAt);
         serverLevel.getDataStorage().computeIfAbsent(EMISSOR_ID).setEmissors(emissors);
         return removed;
     }
 
-    public static List<? extends Emissor> findEmissorsAt(ArrayList<Emissor> emissors, ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
+    public static List<? extends Emissor> findEmissorsAt(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
+        EmissorCollection emissorCollection = serverLevel.getDataStorage().computeIfAbsent(EMISSOR_ID);
+        ArrayList<Emissor> emissors = new ArrayList<>(emissorCollection.getEmissors());
+        return filterEmissorsAt(emissors, serverLevel, blockPos, radius, type);
+    }
+
+    public static boolean containsEmissorAt(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
+        List<? extends Emissor> emissors = findEmissorsAt(serverLevel, blockPos, radius, type);
+        return !emissors.isEmpty();
+    }
+
+    public static List<? extends Emissor> filterEmissorsAt(ArrayList<Emissor> emissors, ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
         AABB aabb = GeoHelper.generateAABB(blockPos, radius);
         return emissors.stream().filter(x -> aabb.contains(new Vec3(x.getPosX(), x.getPosY(), x.getPosZ())) && type.isInstance(x)).toList();
     }

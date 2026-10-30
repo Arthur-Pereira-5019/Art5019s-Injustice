@@ -3,6 +3,7 @@
   "package": "com.art5019.art5019s_injustice.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
+    "BiomeMixin",
     "EnvironmentDataMixin"
   ],
   "injectors": {

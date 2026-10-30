@@ -69,10 +69,19 @@ public class Storm extends Superpower {
                 3600,
                 null,
                 5);
+        Power addColdZone = new Power(null,
+                null,
+                new SummonColdZone(900),
+                null,
+                null,
+                3600,
+                null,
+                6);
         powers.add(summonTornado);
         powers.add(summonLightning);
         powers.add(summonMist);
         powers.add(addWeather);
+        powers.add(addColdZone);
         super(powers, 1, TextDecoration.PURPLE, "storm", 2);
     }
 
