@@ -1,4 +1,4 @@
-package com.art5019.art5019s_injustice.network;
+package com.art5019.art5019s_injustice.network.infra;
 
 import com.art5019.art5019s_injustice.network.packets.SkillGainXpPacket;
 import com.art5019.art5019s_injustice.network.packets.SkillLevelUpPacket;

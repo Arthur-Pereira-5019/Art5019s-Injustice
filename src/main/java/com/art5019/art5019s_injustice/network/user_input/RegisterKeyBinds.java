@@ -1,4 +1,4 @@
-package com.art5019.art5019s_injustice.network;
+package com.art5019.art5019s_injustice.network.user_input;
 
 import com.art5019.art5019s_injustice.network.packets.PlayerUsesPowerPacket;
 import com.mojang.blaze3d.platform.InputConstants;
@@ -115,6 +115,8 @@ public class RegisterKeyBinds {
             GLFW.GLFW_KEY_B,
             INJUSTICE_KEY_CATEGORY
     ));
+
+
 
 
 

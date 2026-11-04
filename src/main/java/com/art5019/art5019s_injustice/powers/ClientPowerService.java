@@ -2,12 +2,14 @@ package com.art5019.art5019s_injustice.powers;
 
 import com.art5019.art5019s_injustice.data.records.power.ClientPower;
 import com.art5019.art5019s_injustice.powers.superpower.Superpower;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.art5019.art5019s_injustice.Art5019sInjustice.TEST;
 import static com.art5019.art5019s_injustice.data.DataAttachments.*;
 
 public class ClientPowerService {
@@ -58,6 +60,22 @@ public class ClientPowerService {
         ClientPower updatedCooldown = new ClientPower(targetedPower.superpowerId(), targetedPower.powerId(), 0, 0);
         powers.remove(targetedPower);
         powers.add(pos, updatedCooldown);
+    }
+
+    public static void attemptPowerShift(ServerPlayer player, int deltaY) {
+        int shift = player.getData(POWER_LIST_POS);
+        int shiftMax = player.getData(CLIENT_POWER).size();
+        if(player.isShiftKeyDown() && shiftMax != 0) {
+            shift += deltaY;
+            shift = shift % shiftMax;
+            if(shift < 0) {
+                shift = shiftMax+shift;
+            }
+            player.setData(POWER_LIST_POS, shift);
+            if(TEST) {
+                player.sendOverlayMessage(Component.literal(shift + "/" + (shiftMax-1)));
+            }
+        }
     }
 
 

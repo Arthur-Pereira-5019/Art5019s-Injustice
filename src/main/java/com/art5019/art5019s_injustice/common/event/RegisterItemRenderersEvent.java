@@ -1,4 +1,4 @@
-package com.art5019.art5019s_injustice.event;
+package com.art5019.art5019s_injustice.common.event;
 
 import com.art5019.art5019s_injustice.graphics.item_rendering.BookTierRendering;
 import net.minecraft.resources.Identifier;

@@ -1,6 +1,5 @@
-package com.art5019.art5019s_injustice.event;
+package com.art5019.art5019s_injustice.common.event;
 
-import com.art5019.art5019s_injustice.powers.ClientPowerService;
 import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;

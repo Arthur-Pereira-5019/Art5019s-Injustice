@@ -37,6 +37,8 @@ import static com.art5019.art5019s_injustice.registries.Registries.EMISSOR_STREA
 
 @Mod(Art5019sInjustice.MODID)
 public class Art5019sInjustice {
+    public static final boolean TEST = true;
+
     public static final String MODID = "art5019sinjustice";
     public static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);

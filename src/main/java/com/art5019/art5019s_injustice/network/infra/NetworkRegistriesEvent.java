@@ -1,5 +1,6 @@
-package com.art5019.art5019s_injustice.network;
+package com.art5019.art5019s_injustice.network.infra;
 
+import com.art5019.art5019s_injustice.network.packets.PlayerScrollsPacket;
 import com.art5019.art5019s_injustice.network.packets.PlayerUsesPowerPacket;
 import com.art5019.art5019s_injustice.network.packets.SkillGainXpPacket;
 import com.art5019.art5019s_injustice.network.packets.SkillLevelUpPacket;
@@ -31,6 +32,12 @@ public class NetworkRegistriesEvent {
                 PlayerUsesPowerPacket.TYPE,
                 PlayerUsesPowerPacket.STREAM_CODEC,
                 ServerPayloadHandler::handleDataOnMain
+        );
+
+        registrar.playToServer(
+                PlayerScrollsPacket.TYPE,
+                PlayerScrollsPacket.STREAM_CODEC,
+                ServerPayloadHandler::handlePlayerScroll
         );
     }
 }

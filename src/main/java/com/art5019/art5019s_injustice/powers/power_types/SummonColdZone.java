@@ -14,18 +14,21 @@ import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
 
 public class SummonColdZone extends PowerType {
     private int zoneDuration;
+    private int zoneRadius;
 
-    public SummonColdZone(int zoneDuration) {
+    public SummonColdZone(int zoneDuration, int zoneRadius) {
         this.zoneDuration = zoneDuration;
+        this.zoneRadius = zoneRadius;
         super("art5019sinjustice.powertype.summon_cold_zone.name",
                 Identifier.fromNamespaceAndPath(MODID,""),
                 "art5019sinjustice.powertype.summon_cold_zone.description",
                 4800);
     }
 
-    public SummonColdZone(String defaultTranslatable, Identifier defaultIconSource, String defaultDescription, int defaultCooldownTicks, int zoneDuration) {
+    public SummonColdZone(String defaultTranslatable, Identifier defaultIconSource, String defaultDescription, int defaultCooldownTicks, int zoneDuration, int zoneRadius) {
         super(defaultTranslatable, defaultIconSource, defaultDescription, defaultCooldownTicks);
         this.zoneDuration = zoneDuration;
+        this.zoneRadius = zoneRadius;
     }
 
     @Override
@@ -36,7 +39,7 @@ public class SummonColdZone extends PowerType {
                 return 0;
             }
             BlockPos hit = new BlockPos((int) collision.x, (int) collision.y, (int) collision.z);
-            EmissorHelper.appendColdZone(serverLevel, hit, zoneDuration);
+            EmissorHelper.appendColdZone(serverLevel, hit, zoneDuration, zoneRadius);
             return getDefaultCooldownTicks();
         }
         return 0;

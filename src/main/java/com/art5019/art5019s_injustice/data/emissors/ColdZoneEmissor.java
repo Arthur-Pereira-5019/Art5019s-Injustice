@@ -1,26 +1,37 @@
 package com.art5019.art5019s_injustice.data.emissors;
 
+import com.art5019.art5019s_injustice.helper.GeoHelper;
 import com.art5019.art5019s_injustice.network.packets.SkillGainXpPacket;
+import com.art5019.art5019s_injustice.powers.helper.FreezingHelper;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
+import oshi.software.os.unix.freebsd.FreeBsdFileSystem;
 
+import java.util.List;
 import java.util.UUID;
 import java.util.stream.Stream;
 
+import static net.minecraft.core.particles.ParticleTypes.CLOUD;
+
 public class ColdZoneEmissor extends Emissor{
+    private int radius;
     public static final MapCodec<ColdZoneEmissor> COLD_ZONE = RecordCodecBuilder.mapCodec(instance ->
             instance.group(
                     Codec.LONG.fieldOf("expiryTick").forGetter(ColdZoneEmissor::getExpiryTick),
                     Codec.DOUBLE.fieldOf("posX").forGetter(ColdZoneEmissor::getPosX),
                     Codec.DOUBLE.fieldOf("posY").forGetter(ColdZoneEmissor::getPosY),
                     Codec.DOUBLE.fieldOf("posZ").forGetter(ColdZoneEmissor::getPosZ),
-                    Codec.STRING.fieldOf("uuid").forGetter(ColdZoneEmissor::getUuid)
+                    Codec.STRING.fieldOf("uuid").forGetter(ColdZoneEmissor::getUuid),
+                    Codec.INT.fieldOf("radius").forGetter(ColdZoneEmissor::getRadius)
             ).apply(instance, ColdZoneEmissor::new)
     );
 
@@ -35,13 +46,19 @@ public class ColdZoneEmissor extends Emissor{
             ColdZoneEmissor::getPosZ,
             ByteBufCodecs.STRING_UTF8,
             ColdZoneEmissor::getUuid,
+            ByteBufCodecs.INT,
+            ColdZoneEmissor::getRadius,
             ColdZoneEmissor::new
     );
 
-    public ColdZoneEmissor(long expiryTick, double posX, double posY, double posZ, String uuid) {
+    public ColdZoneEmissor(long expiryTick, double posX, double posY, double posZ, String uuid, int radius) {
         super(expiryTick, posX, posY, posZ, uuid);
-    }public ColdZoneEmissor(long expiryTick, double posX, double posY, double posZ) {
+        this.radius = radius;
+    }
+    public ColdZoneEmissor(long expiryTick, double posX, double posY, double posZ, int radius) {
         super(expiryTick, posX, posY, posZ, UUID.randomUUID().toString());
+        this.radius = radius;
+
     }
 
     @Override
@@ -56,6 +73,28 @@ public class ColdZoneEmissor extends Emissor{
 
     @Override
     public void handle(ServerLevel serverLevel) {
+        float r = serverLevel.getRandom().nextFloat();
+        if(r < 0.1) {
+            BlockPos toFreeze = GeoHelper.randomCoordinates(radius, radius ,this.getBlockPos());
+            FreezingHelper.freezeBlock(serverLevel, toFreeze);
+            List<Entity> entities = GeoHelper.getEntitiesAt(this.getBlockPos(), radius, serverLevel);
+            for (Entity entity : entities) {
+                if(entity instanceof LivingEntity livingEntity) {
+                    if(livingEntity.isInWater()) {
+                        livingEntity.setTicksFrozen(livingEntity.getTicksFrozen() + 20);
+                    }
+                    livingEntity.extinguishFire();
+                }
 
+            }
+        }
+    }
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public void setRadius(int radius) {
+        this.radius = radius;
     }
 }

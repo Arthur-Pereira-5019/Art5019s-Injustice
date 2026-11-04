@@ -71,7 +71,7 @@ public class Storm extends Superpower {
                 5);
         Power addColdZone = new Power(null,
                 null,
-                new SummonColdZone(900),
+                new SummonColdZone(1800, 32),
                 null,
                 null,
                 3600,

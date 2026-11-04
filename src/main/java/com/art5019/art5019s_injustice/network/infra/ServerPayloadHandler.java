@@ -1,5 +1,6 @@
-package com.art5019.art5019s_injustice.network;
+package com.art5019.art5019s_injustice.network.infra;
 
+import com.art5019.art5019s_injustice.network.packets.PlayerScrollsPacket;
 import com.art5019.art5019s_injustice.network.packets.PlayerUsesPowerPacket;
 import com.art5019.art5019s_injustice.network.packets.SkillGainXpPacket;
 import com.art5019.art5019s_injustice.network.packets.SkillLevelUpPacket;
@@ -20,6 +21,13 @@ public class ServerPayloadHandler {
         Player player = context.player();
         if(player instanceof ServerPlayer serverPlayer) {
             ClientPowerService.invoke(data.abilityNumber(), serverPlayer, data.modified());
+        }
+    }
+
+    public static void handlePlayerScroll(final PlayerScrollsPacket data, final IPayloadContext context) {
+        Player player = context.player();
+        if(player instanceof ServerPlayer serverPlayer) {
+            ClientPowerService.attemptPowerShift(serverPlayer, data.deltaY());
         }
     }
 

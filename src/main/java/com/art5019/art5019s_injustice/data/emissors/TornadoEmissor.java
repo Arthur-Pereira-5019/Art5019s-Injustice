@@ -125,7 +125,14 @@ public class TornadoEmissor extends Emissor {
         double deltaMovementX = -relativeForce*(dx/ distance)+rotationSpeed*(dz/ distance);
         double deltaMovementZ = -relativeForce*(dz/ distance)-rotationSpeed*(dx/ distance);
         Vec3 vecna = new Vec3(deltaMovementX, relativeForce,deltaMovementZ);
+        boolean print = serverLevel.getGameTime() % 20 == 0;
+        if(print) {
+            System.out.println(e.getDeltaMovement());
+        }
         e.addDeltaMovement(vecna);
+        if(print) {
+            System.out.println(e.getDeltaMovement());
+        }
         if(serverLevel.getRandom().nextFloat() < 0.1) {
             e.hurtServer(serverLevel, damageSource, (float) (relativeForce*20));
         }

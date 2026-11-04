@@ -1,4 +1,4 @@
-package com.art5019.art5019s_injustice.event.custom;
+package com.art5019.art5019s_injustice.common.event.custom;
 
 import com.art5019.art5019s_injustice.data.emissors.Emissor;
 import net.minecraft.server.level.ServerLevel;

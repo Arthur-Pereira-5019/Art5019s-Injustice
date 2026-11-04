@@ -21,9 +21,9 @@ public class EmissorHelper {
         serverLevel.setData(EMISSORS_ATTACHMENT, emissors);
     }
 
-    public static void appendColdZone(ServerLevel serverLevel, BlockPos blockPos, int duration) {
+    public static void appendColdZone(ServerLevel serverLevel, BlockPos blockPos, int duration, int radius) {
         appendEmissor(serverLevel,
-                new ColdZoneEmissor(expiryTick(duration, serverLevel), blockPos.getX(), blockPos.getY(), blockPos.getZ())
+                new ColdZoneEmissor(expiryTick(duration, serverLevel), blockPos.getX(), blockPos.getY(), blockPos.getZ(), radius)
         );
     }
 
