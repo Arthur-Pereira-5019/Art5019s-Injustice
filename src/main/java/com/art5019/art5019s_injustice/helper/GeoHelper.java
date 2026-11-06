@@ -8,6 +8,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.Vec3;
 
 import java.util.List;
@@ -17,6 +18,14 @@ import static net.minecraft.core.particles.ParticleTypes.CLOUD;
 
 public class GeoHelper {
     private static final Random random = new Random();
+
+    public static Vec2 getComponentsDeg(double rotationDegrees) {
+        double rad = Math.toRadians(rotationDegrees);
+        double xComponent = -Math.sin(rad);
+        double zComponent = Math.cos(rad);
+        return new Vec2((float) xComponent, (float) zComponent);
+    }
+
 
     public static List<Entity> getEntitiesAt(BlockPos at, double radius, ServerLevel serverLevel) {
         return serverLevel.getEntitiesOfClass(Entity.class, generateAABB(at, radius), x -> true);

@@ -1,5 +1,6 @@
 package com.art5019.art5019s_injustice.helper;
 
+import com.art5019.art5019s_injustice.data.emissors.custom.EmissorUpdatedStateEvent;
 import com.art5019.art5019s_injustice.data.emissors.*;
 import com.art5019.art5019s_injustice.data.emissors.MistEmissor;
 import net.minecraft.core.BlockPos;
@@ -7,8 +8,10 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
+import net.neoforged.neoforge.common.NeoForge;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 
@@ -28,9 +31,11 @@ public class EmissorHelper {
     }
 
 
-    public static void appendTornado(ServerLevel serverLevel, BlockPos blockPos, int tornadoDuration, float tornadoStrength) {
+    public static void appendTornado(ServerLevel serverLevel, BlockPos blockPos, int tornadoDuration, float tornadoStrength, double rot) {
+        float xComponent = GeoHelper.getComponentsDeg(rot).x;
+        float zComponent = GeoHelper.getComponentsDeg(rot).y;
         appendEmissor(serverLevel,
-                 new TornadoEmissor(expiryTick(tornadoDuration, serverLevel), blockPos.getX(), blockPos.getY(), blockPos.getZ(), tornadoStrength)
+                 new TornadoEmissor(expiryTick(tornadoDuration, serverLevel), blockPos.getX(), blockPos.getY(), blockPos.getZ(), tornadoStrength, xComponent, zComponent)
         );
     }
 
@@ -47,6 +52,19 @@ public class EmissorHelper {
         boolean removed = emissors.removeAll(emissorsAt);
         serverLevel.setData(EMISSORS_ATTACHMENT, emissors);
         return removed;
+    }
+
+    public static void enhanceNearestEmissor(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type, int factor) {
+        Emissor updated = nearestEmissor(serverLevel, blockPos, radius, type);
+        updated.evolve(factor, serverLevel);
+        NeoForge.EVENT_BUS.post(new EmissorUpdatedStateEvent(updated, serverLevel));
+    }
+
+    public static Emissor nearestEmissor(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
+        ArrayList<Emissor> emissors = new ArrayList<>(serverLevel.getData(EMISSORS_ATTACHMENT));
+        ArrayList<? extends Emissor> emissorsAt = new ArrayList<> (filterEmissorsAt(emissors, blockPos, radius, type));
+        emissorsAt.sort(Comparator.comparingDouble((Emissor x) -> GeoHelper.distanceBetweenPos(x.getBlockPos(), blockPos)));
+        return emissorsAt.getFirst();
     }
 
     public static List<? extends Emissor> findEmissorsAt(Level level, BlockPos blockPos, int radius, Class<? extends Emissor> type) {

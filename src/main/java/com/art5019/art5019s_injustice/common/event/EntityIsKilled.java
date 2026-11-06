@@ -28,7 +28,7 @@ public class EntityIsKilled {
             RandomSource random = serverLevel.getRandom();
             if(livingEntity instanceof Breeze breeze) {
                 if(random.nextFloat() < 0.02) {
-                    EmissorHelper.appendTornado(serverLevel, livingEntity.blockPosition(), 240, 1);
+                    EmissorHelper.appendTornado(serverLevel, livingEntity.blockPosition(), 240, 1, livingEntity.yHeadRot);
                 }
             }
         }

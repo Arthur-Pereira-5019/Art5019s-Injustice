@@ -1,7 +1,6 @@
 package com.art5019.art5019s_injustice.data.emissors;
 
 import com.art5019.art5019s_injustice.helper.GeoHelper;
-import com.art5019.art5019s_injustice.network.packets.SkillGainXpPacket;
 import com.art5019.art5019s_injustice.powers.helper.FreezingHelper;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
@@ -14,13 +13,9 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import oshi.software.os.unix.freebsd.FreeBsdFileSystem;
 
 import java.util.List;
 import java.util.UUID;
-import java.util.stream.Stream;
-
-import static net.minecraft.core.particles.ParticleTypes.CLOUD;
 
 public class ColdZoneEmissor extends Emissor{
     private int radius;
@@ -69,6 +64,17 @@ public class ColdZoneEmissor extends Emissor{
     @Override
     public StreamCodec<? super RegistryFriendlyByteBuf, ? extends Emissor> streamCodec() {
         return COLD_ZONE_STREAM;
+    }
+
+    @Override
+    public void evolve(int factor, ServerLevel serverLevel) {
+        radius += (radius/4)*factor;
+        this.setExpiryTick(getExpiryTick() + 300L *factor);
+    }
+
+    @Override
+    public void devolve(int factor, ServerLevel serverLevel) {
+        radius -= (radius/4)*factor;
     }
 
     @Override

@@ -1,14 +1,15 @@
 package com.art5019.art5019s_injustice.data.emissors;
 
+import com.art5019.art5019s_injustice.data.emissors.custom.EmissorSelfRemovedEvent;
 import com.art5019.art5019s_injustice.helper.GeoHelper;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.server.level.ServerLevel;
@@ -16,17 +17,19 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.phys.Vec3;
+import net.neoforged.neoforge.common.NeoForge;
 
 import java.util.List;
 import java.util.UUID;
 
-import static net.minecraft.core.particles.ParticleTypes.BLOCK;
 import static net.minecraft.core.particles.ParticleTypes.CLOUD;
 import static net.minecraft.world.damagesource.DamageTypes.GENERIC;
 
 public class TornadoEmissor extends Emissor {
     private float tornadoStrength;
     private double basicForce;
+    private float xComponent;
+    private float zComponent;
     private DamageSource damageSource;
 
     public static final MapCodec<TornadoEmissor> TORNADO = RecordCodecBuilder.mapCodec(instance ->
@@ -36,7 +39,9 @@ public class TornadoEmissor extends Emissor {
                     Codec.DOUBLE.fieldOf("posY").forGetter(TornadoEmissor::getPosY),
                     Codec.DOUBLE.fieldOf("posZ").forGetter(TornadoEmissor::getPosZ),
                     Codec.STRING.fieldOf("uuid").forGetter(TornadoEmissor::getUuid),
-                    Codec.FLOAT.fieldOf("strength").forGetter(TornadoEmissor::getTornadoStrength)
+                    Codec.FLOAT.fieldOf("strength").forGetter(TornadoEmissor::getTornadoStrength),
+                    Codec.FLOAT.fieldOf("xComponent").forGetter(TornadoEmissor::getxComponent),
+                    Codec.FLOAT.fieldOf("zComponent").forGetter(TornadoEmissor::getzComponent)
             ).apply(instance, TornadoEmissor::new)
     );
 
@@ -53,26 +58,34 @@ public class TornadoEmissor extends Emissor {
             TornadoEmissor::getUuid,
             ByteBufCodecs.FLOAT,
             TornadoEmissor::getTornadoStrength,
+            ByteBufCodecs.FLOAT,
+            TornadoEmissor::getxComponent,
+            ByteBufCodecs.FLOAT,
+            TornadoEmissor::getzComponent,
             TornadoEmissor::new
     );
 
 
-    public TornadoEmissor(long expiryTick, double posX, double posY, double posZ, float tornadoStrength) {
+    public TornadoEmissor(long expiryTick, double posX, double posY, double posZ, float tornadoStrength, float xComponent, float zComponent) {
         super(expiryTick, posX, posY, posZ, UUID.randomUUID().toString());
         this.tornadoStrength = tornadoStrength;
+        this.xComponent = xComponent;
+        this.zComponent = zComponent;
         basicForce = Math.pow(2,tornadoStrength);
     }
 
-    public TornadoEmissor(long expiryTick, double posX, double posY, double posZ, String uuid, float tornadoStrength) {
+    public TornadoEmissor(long expiryTick, double posX, double posY, double posZ, String uuid, float tornadoStrength, float xComponent, float zComponent) {
         super(expiryTick, posX, posY, posZ, uuid);
         this.tornadoStrength = tornadoStrength;
+        this.xComponent = xComponent;
+        this.zComponent = zComponent;
         basicForce = Math.pow(2,tornadoStrength);
     }
 
 
     @Override
     public void handle(ServerLevel serverLevel) {
-        List<Entity> entities = GeoHelper.getEntitiesAt(this.getBlockPos().offset(0,(int) basicForce,0), basicForce*2, basicForce*1.2, serverLevel);
+        List<Entity> entities = GeoHelper.getEntitiesAt(this.getBlockPos().offset(0, (int) basicForce, 0), basicForce * 2, basicForce * 1.2, serverLevel);
         double x = this.getPosX();
         double y = this.getPosY();
         double z = this.getPosZ();
@@ -80,8 +93,8 @@ public class TornadoEmissor extends Emissor {
         int si = 0;
         for (int i = 0; i < tornadoStrength; i++) {
             serverLevel.sendParticles(CLOUD, false, true, x, y + 0 + 3 * i + si, z, 8 + i * 6, 0.1 + i * 0.8, 0.1 + i, 0.1 + i * 0.8, (double) i / 20);
-            BlockPos tryToBreak = GeoHelper.randomCoordinates((int) tornadoStrength, (int) tornadoStrength*2 ,this.getBlockPos().offset(0, (int) tornadoStrength,0));
-            if(serverLevel.getBlockState(tryToBreak).getDestroySpeed(serverLevel, tryToBreak) < tornadoStrength/3) {
+            BlockPos tryToBreak = GeoHelper.randomCoordinates((int) tornadoStrength, (int) tornadoStrength * 2, this.getBlockPos().offset(0, (int) tornadoStrength, 0));
+            if (serverLevel.getBlockState(tryToBreak).getDestroySpeed(serverLevel, tryToBreak) < tornadoStrength / 3) {
                 serverLevel.destroyBlock(tryToBreak, true);
             }
             si += i;
@@ -93,15 +106,15 @@ public class TornadoEmissor extends Emissor {
             }
         }
         Vec3 nextMove = GeoHelper.randomHCoordinates(0.1F, getVec3());
-        BlockPos move = GeoHelper.Vec3ToBlockPos(nextMove);
-        if (serverLevel.getBlockState(move).isSolid()) {
-            if (!serverLevel.getBlockState(move.above()).isSolid()) {
-                this.moveTo(nextMove.add(0, 1, 0), serverLevel);
+        nextMove = nextMove.add(xComponent * (basicForce / 40), 0, zComponent * (basicForce / 40));
+        for (int i = (int) basicForce; i > -basicForce; i--) {
+            Vec3 actualMoveCoords = nextMove.add(0, i, 0);
+            BlockPos moveBlockPos = GeoHelper.Vec3ToBlockPos(actualMoveCoords);
+            if (serverLevel.getBlockState(moveBlockPos).isSolid()) {
+                if (!serverLevel.getBlockState(moveBlockPos.above()).isSolid()) {
+                    this.moveTo(actualMoveCoords.add(0,1,0), serverLevel);
+                }
             }
-        } else if (serverLevel.getBlockState(move.below()).isSolid()) {
-            this.moveTo(nextMove, serverLevel);
-        } else if (serverLevel.getBlockState(move.below().below()).isSolid()) {
-            this.moveTo(nextMove.add(0, -1, 0),serverLevel);
         }
     }
 
@@ -125,14 +138,7 @@ public class TornadoEmissor extends Emissor {
         double deltaMovementX = -relativeForce*(dx/ distance)+rotationSpeed*(dz/ distance);
         double deltaMovementZ = -relativeForce*(dz/ distance)-rotationSpeed*(dx/ distance);
         Vec3 vecna = new Vec3(deltaMovementX, relativeForce,deltaMovementZ);
-        boolean print = serverLevel.getGameTime() % 20 == 0;
-        if(print) {
-            System.out.println(e.getDeltaMovement());
-        }
         e.addDeltaMovement(vecna);
-        if(print) {
-            System.out.println(e.getDeltaMovement());
-        }
         if(serverLevel.getRandom().nextFloat() < 0.1) {
             e.hurtServer(serverLevel, damageSource, (float) (relativeForce*20));
         }
@@ -146,5 +152,35 @@ public class TornadoEmissor extends Emissor {
     @Override
     public StreamCodec<? super RegistryFriendlyByteBuf, ? extends Emissor> streamCodec() {
         return TORNADO_STREAM;
+    }
+
+    @Override
+    public void evolve(int factor, ServerLevel serverLevel) {
+        this.tornadoStrength += factor;
+        this.setExpiryTick(getExpiryTick() + 200L *factor);
+    }
+
+    @Override
+    public void devolve(int factor, ServerLevel serverLevel) {
+        this.tornadoStrength -= factor;
+        if(tornadoStrength == 0) {
+            NeoForge.EVENT_BUS.post(new EmissorSelfRemovedEvent(this, serverLevel));
+        }
+    }
+
+    public float getxComponent() {
+        return xComponent;
+    }
+
+    public void setxComponent(float xComponent) {
+        this.xComponent = xComponent;
+    }
+
+    public float getzComponent() {
+        return zComponent;
+    }
+
+    public void setzComponent(float zComponent) {
+        this.zComponent = zComponent;
     }
 }

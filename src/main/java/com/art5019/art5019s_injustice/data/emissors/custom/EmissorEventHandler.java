@@ -1,4 +1,4 @@
-package com.art5019.art5019s_injustice.common.event.custom;
+package com.art5019.art5019s_injustice.data.emissors.custom;
 
 import com.art5019.art5019s_injustice.data.emissors.Emissor;
 import net.minecraft.server.level.ServerLevel;
@@ -15,12 +15,21 @@ import static com.art5019.art5019s_injustice.data.DataAttachments.EMISSORS_ATTAC
 @Mod(MODID)
 public class EmissorEventHandler {
     @SubscribeEvent
-    public static void onEmissorUpdate(EmissorUpdatedState event) {
+    public static void onEmissorUpdate(EmissorUpdatedStateEvent event) {
         ServerLevel serverLevel = event.getServerLevel();
         Emissor emissor = event.getEmissor();
         ArrayList<Emissor> emissors = new ArrayList<>(serverLevel.getData(EMISSORS_ATTACHMENT));
         emissors.remove(emissor);
         emissors.add(emissor);
+        serverLevel.setData(EMISSORS_ATTACHMENT, emissors);
+    }
+
+    @SubscribeEvent
+    public static void onEmissorUpdate(EmissorSelfRemovedEvent event) {
+        ServerLevel serverLevel = event.getServerLevel();
+        Emissor emissor = event.getEmissor();
+        ArrayList<Emissor> emissors = new ArrayList<>(serverLevel.getData(EMISSORS_ATTACHMENT));
+        emissors.remove(emissor);
         serverLevel.setData(EMISSORS_ATTACHMENT, emissors);
     }
 

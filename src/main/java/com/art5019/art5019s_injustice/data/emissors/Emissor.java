@@ -1,6 +1,6 @@
 package com.art5019.art5019s_injustice.data.emissors;
 
-import com.art5019.art5019s_injustice.common.event.custom.EmissorUpdatedState;
+import com.art5019.art5019s_injustice.data.emissors.custom.EmissorUpdatedStateEvent;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.RegistryFriendlyByteBuf;
@@ -29,9 +29,14 @@ public abstract class Emissor {
         this.uuid = uuid;
     }
 
+    public abstract void evolve(int factor, ServerLevel serverLevel);
+    public abstract void devolve(int factor, ServerLevel serverLevel);
+
+
     public long getExpiryTick() {
         return expiryTick;
     }
+
 
 
     public double getPosX() {
@@ -44,6 +49,10 @@ public abstract class Emissor {
 
     public double getPosZ() {
         return posZ;
+    }
+
+    public void setExpiryTick(long expiryTick) {
+        this.expiryTick = expiryTick;
     }
 
     public BlockPos getBlockPos() {
@@ -72,7 +81,7 @@ public abstract class Emissor {
         this.posX = vec3.x;
         this.posY = vec3.y;
         this.posZ = vec3.z;
-        NeoForge.EVENT_BUS.post(new EmissorUpdatedState(this, serverLevel));
+        NeoForge.EVENT_BUS.post(new EmissorUpdatedStateEvent(this, serverLevel));
     }
 
     public String getUuid() {

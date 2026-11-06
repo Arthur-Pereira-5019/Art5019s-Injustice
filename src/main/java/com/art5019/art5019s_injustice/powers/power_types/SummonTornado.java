@@ -5,6 +5,7 @@ import com.art5019.art5019s_injustice.helper.GeoHelper;
 import com.art5019.art5019s_injustice.powers.booster.EmptyPowerBooster;
 import com.art5019.art5019s_injustice.powers.booster.PowerTypeBooster;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -39,7 +40,7 @@ public class SummonTornado extends PowerType {
                 return 0;
             }
             BlockPos hit = new BlockPos((int) collision.x, (int) collision.y, (int) collision.z);
-            EmissorHelper.appendTornado(serverLevel, hit, tornadoDuration, tornadoStrength);
+            EmissorHelper.appendTornado(serverLevel, hit, tornadoDuration, tornadoStrength, serverPlayer.yHeadRot);
             return getDefaultCooldownTicks();
         }
         return 0;

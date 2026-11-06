@@ -20,7 +20,7 @@ import static com.art5019.art5019s_injustice.effects.Effects.MIST_EFFECT;
 import static net.minecraft.core.particles.ParticleTypes.CLOUD;
 
 public class MistEmissor extends Emissor {
-    private final int mistRange;
+    private int mistRange;
     private final boolean visualEmissor;
     public static final MapCodec<MistEmissor> MIST = RecordCodecBuilder.mapCodec(instance ->
             instance.group(
@@ -90,6 +90,17 @@ public class MistEmissor extends Emissor {
     @Override
     public StreamCodec<? super RegistryFriendlyByteBuf, ? extends Emissor> streamCodec() {
         return MIST_STREAM;
+    }
+
+    @Override
+    public void evolve(int factor, ServerLevel serverLevel) {
+        mistRange += (mistRange/4)*factor;
+        this.setExpiryTick(getExpiryTick() + 500L *factor);
+    }
+
+    @Override
+    public void devolve(int factor, ServerLevel serverLevel) {
+        mistRange -= (mistRange/4)*factor;
     }
 
     public int getMistRange() {
