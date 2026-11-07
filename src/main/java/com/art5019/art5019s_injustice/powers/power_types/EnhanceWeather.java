@@ -11,12 +11,22 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.phys.Vec3;
 
+import static com.art5019.art5019s_injustice.Art5019sInjustice.MODID;
+
 public class EnhanceWeather extends PowerType{
     private int searchRadius;
     private int radius;
     private final Class<? extends Emissor> searchFor;
+
     public EnhanceWeather(String defaultTranslatable, Identifier defaultIconSource, String defaultDescription, int defaultCooldownTicks, int searchRadius, int radius, Class<? extends Emissor> searchFor) {
         super(defaultTranslatable, defaultIconSource, defaultDescription, defaultCooldownTicks);
+        this.searchRadius = searchRadius;
+        this.radius = radius;
+        this.searchFor = searchFor;
+    }
+
+    public EnhanceWeather(int searchRadius, int radius, Class<? extends Emissor> searchFor) {
+        super("art5019sinjustice.powertype.enhance_weather.name", Identifier.fromNamespaceAndPath(MODID,""), "art5019sinjustice.powertype.revoke_tornado.description", 1200);
         this.searchRadius = searchRadius;
         this.radius = radius;
         this.searchFor = searchFor;
@@ -39,7 +49,7 @@ public class EnhanceWeather extends PowerType{
             }
             BlockPos hit = new BlockPos((int) collision.x, (int) collision.y, (int) collision.z);
 
-            return EmissorHelper.revokeEmissors(serverLevel, hit, this.getRadius(), searchFor) ? this.getDefaultCooldownTicks() : 80;
+            return EmissorHelper.enhanceNearestEmissor(serverLevel, hit, this.getRadius(), searchFor, 1) ? this.getDefaultCooldownTicks() : 80;
         }
         return 0;
     }

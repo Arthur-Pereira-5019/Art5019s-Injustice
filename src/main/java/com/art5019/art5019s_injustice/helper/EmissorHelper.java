@@ -1,6 +1,6 @@
 package com.art5019.art5019s_injustice.helper;
 
-import com.art5019.art5019s_injustice.data.emissors.custom.EmissorUpdatedStateEvent;
+import com.art5019.art5019s_injustice.data.emissors.event.EmissorUpdatedStateEvent;
 import com.art5019.art5019s_injustice.data.emissors.*;
 import com.art5019.art5019s_injustice.data.emissors.MistEmissor;
 import net.minecraft.core.BlockPos;
@@ -18,9 +18,24 @@ import java.util.List;
 import static com.art5019.art5019s_injustice.data.DataAttachments.EMISSORS_ATTACHMENT;
 
 public class EmissorHelper {
-    private static void appendEmissor(ServerLevel serverLevel, Emissor emissor) {
+    public static void appendEmissor(ServerLevel serverLevel, Emissor emissor) {
         ArrayList<Emissor> emissors = new ArrayList<>(serverLevel.getData(EMISSORS_ATTACHMENT));
+        if(emissor instanceof Mergeable mergeable) {
+            if((mergeable.optimizedQuery() && serverLevel.getGameTime() % 20 == 0) || !mergeable.optimizedQuery()) {
+                Emissor emissorB = nearestEmissor(serverLevel, emissor.getBlockPos(), (int) mergeable.mergeDistance(), emissor.getClass());
+                if(emissorB instanceof Mergeable mergeableB) {
+                    mergeable.mergeWith(mergeableB, serverLevel);
+                    removeEmissor(emissorB, serverLevel);
+                }
+            }
+        }
         emissors.add(emissor);
+        serverLevel.setData(EMISSORS_ATTACHMENT, emissors);
+    }
+
+    public static void removeEmissor(Emissor emissor, ServerLevel serverLevel) {
+        ArrayList<Emissor> emissors = new ArrayList<>(serverLevel.getData(EMISSORS_ATTACHMENT));
+        emissors.remove(emissor);
         serverLevel.setData(EMISSORS_ATTACHMENT, emissors);
     }
 
@@ -54,15 +69,23 @@ public class EmissorHelper {
         return removed;
     }
 
-    public static void enhanceNearestEmissor(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type, int factor) {
+    public static boolean enhanceNearestEmissor(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type, int factor) {
         Emissor updated = nearestEmissor(serverLevel, blockPos, radius, type);
+        if(updated == null) {
+            return false;
+        }
+        System.out.println("not null");
         updated.evolve(factor, serverLevel);
         NeoForge.EVENT_BUS.post(new EmissorUpdatedStateEvent(updated, serverLevel));
+        return true;
     }
 
     public static Emissor nearestEmissor(ServerLevel serverLevel, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
         ArrayList<Emissor> emissors = new ArrayList<>(serverLevel.getData(EMISSORS_ATTACHMENT));
         ArrayList<? extends Emissor> emissorsAt = new ArrayList<> (filterEmissorsAt(emissors, blockPos, radius, type));
+        if(emissorsAt.isEmpty()) {
+            return null;
+        }
         emissorsAt.sort(Comparator.comparingDouble((Emissor x) -> GeoHelper.distanceBetweenPos(x.getBlockPos(), blockPos)));
         return emissorsAt.getFirst();
     }

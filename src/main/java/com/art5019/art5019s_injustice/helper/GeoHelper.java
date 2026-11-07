@@ -171,6 +171,7 @@ public class GeoHelper {
                 origin.y, origin.z + random.nextFloat(-cap,cap));
     }
 
+
     public static BlockPos Vec3ToBlockPos(Vec3 vec3) {
         return new BlockPos((int) vec3.x, (int) vec3.y, (int) vec3.z);
     }

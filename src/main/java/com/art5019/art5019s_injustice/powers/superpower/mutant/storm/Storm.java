@@ -1,6 +1,7 @@
 package com.art5019.art5019s_injustice.powers.superpower.mutant.storm;
 
 import com.art5019.art5019s_injustice.data.common.TextDecoration;
+import com.art5019.art5019s_injustice.data.emissors.Emissor;
 import com.art5019.art5019s_injustice.powers.Power;
 import com.art5019.art5019s_injustice.powers.power_types.*;
 import com.art5019.art5019s_injustice.powers.superpower.Superpower;
@@ -77,11 +78,20 @@ public class Storm extends Superpower {
                 3600,
                 null,
                 6);
+        Power evolveWeather = new Power(null,
+                null,
+                new EnhanceWeather(32, 200, Emissor.class),
+                null,
+                null,
+                800,
+                null,
+                7);
         powers.add(summonTornado);
         powers.add(summonLightning);
         powers.add(summonMist);
         powers.add(addWeather);
         powers.add(addColdZone);
+        powers.add(evolveWeather);
         super(powers, 1, TextDecoration.PURPLE, "storm", 2);
     }
 

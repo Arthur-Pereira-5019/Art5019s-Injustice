@@ -1,7 +1,9 @@
 package com.art5019.art5019s_injustice.data.emissors;
 
-import com.art5019.art5019s_injustice.data.emissors.custom.EmissorSelfRemovedEvent;
+import com.art5019.art5019s_injustice.data.emissors.event.EmissorSelfRemovedEvent;
+import com.art5019.art5019s_injustice.data.emissors.event.EmissorUpdatedStateEvent;
 import com.art5019.art5019s_injustice.helper.GeoHelper;
+import com.art5019.art5019s_injustice.helper.MathHelper;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -9,13 +11,13 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.RegistryFriendlyByteBuf;
-import net.minecraft.network.chat.Component;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.common.NeoForge;
 
@@ -25,7 +27,7 @@ import java.util.UUID;
 import static net.minecraft.core.particles.ParticleTypes.CLOUD;
 import static net.minecraft.world.damagesource.DamageTypes.GENERIC;
 
-public class TornadoEmissor extends Emissor {
+public class TornadoEmissor extends Emissor implements Mergeable {
     private float tornadoStrength;
     private double basicForce;
     private float xComponent;
@@ -92,10 +94,12 @@ public class TornadoEmissor extends Emissor {
         damageSource = new DamageSource(serverLevel.holderLookup(Registries.DAMAGE_TYPE).getOrThrow(GENERIC));
         int si = 0;
         for (int i = 0; i < tornadoStrength; i++) {
-            serverLevel.sendParticles(CLOUD, false, true, x, y + 0 + 3 * i + si, z, 8 + i * 6, 0.1 + i * 0.8, 0.1 + i, 0.1 + i * 0.8, (double) i / 20);
-            BlockPos tryToBreak = GeoHelper.randomCoordinates((int) tornadoStrength, (int) tornadoStrength * 2, this.getBlockPos().offset(0, (int) tornadoStrength, 0));
-            if (serverLevel.getBlockState(tryToBreak).getDestroySpeed(serverLevel, tryToBreak) < tornadoStrength / 3) {
-                serverLevel.destroyBlock(tryToBreak, true);
+            serverLevel.sendParticles(CLOUD, true, true, x, y + 0 + 3 * i + si, z, 8 + i * 6, 0.1 + i * 0.8, 0.1 + i, 0.1 + i * 0.8, (double) i / 20);
+            for(int j = 0; j < tornadoStrength/2; j++) {
+                BlockPos tryToBreak = GeoHelper.randomCoordinates((int) tornadoStrength, (int) tornadoStrength * 2, this.getBlockPos().offset(0, (int) tornadoStrength, 0));
+                if (serverLevel.getBlockState(tryToBreak).getDestroySpeed(serverLevel, tryToBreak) < tornadoStrength / 3) {
+                    serverLevel.destroyBlock(tryToBreak, true);
+                }
             }
             si += i;
         }
@@ -106,7 +110,7 @@ public class TornadoEmissor extends Emissor {
             }
         }
         Vec3 nextMove = GeoHelper.randomHCoordinates(0.1F, getVec3());
-        nextMove = nextMove.add(xComponent * (basicForce / 40), 0, zComponent * (basicForce / 40));
+        nextMove = nextMove.add(xComponent * (basicForce / 60), 0, zComponent * (basicForce / 60));
         for (int i = (int) basicForce; i > -basicForce; i--) {
             Vec3 actualMoveCoords = nextMove.add(0, i, 0);
             BlockPos moveBlockPos = GeoHelper.Vec3ToBlockPos(actualMoveCoords);
@@ -124,6 +128,7 @@ public class TornadoEmissor extends Emissor {
     }
 
     public void setTornadoStrength(float tornadoStrength) {
+        basicForce = Math.pow(2,tornadoStrength);
         this.tornadoStrength = tornadoStrength;
     }
 
@@ -156,13 +161,13 @@ public class TornadoEmissor extends Emissor {
 
     @Override
     public void evolve(int factor, ServerLevel serverLevel) {
-        this.tornadoStrength += factor;
+        this.setTornadoStrength(tornadoStrength + factor);
         this.setExpiryTick(getExpiryTick() + 200L *factor);
     }
 
     @Override
     public void devolve(int factor, ServerLevel serverLevel) {
-        this.tornadoStrength -= factor;
+        this.setTornadoStrength(tornadoStrength - factor);
         if(tornadoStrength == 0) {
             NeoForge.EVENT_BUS.post(new EmissorSelfRemovedEvent(this, serverLevel));
         }
@@ -182,5 +187,35 @@ public class TornadoEmissor extends Emissor {
 
     public void setzComponent(float zComponent) {
         this.zComponent = zComponent;
+    }
+
+    public Vec2 getComponents() {
+        return new Vec2(xComponent, zComponent);
+    }
+
+    @Override
+    public void mergeWith(Mergeable b, ServerLevel serverLevel) {
+        if(b instanceof TornadoEmissor other) {
+            if(serverLevel.getRandom().nextFloat() < 0.5) {
+                this.tornadoStrength = Math.max(this.tornadoStrength, other.tornadoStrength) + 1;
+                this.setExpiryTick(Math.max(this.getExpiryTick(), other.getExpiryTick()) + 400);
+                Vec2 newComponents = MathHelper.normalizedVectorSum(getComponents(), other.getComponents());
+                this.setxComponent(newComponents.x);
+                this.setzComponent(newComponents.y);
+                NeoForge.EVENT_BUS.post(new EmissorUpdatedStateEvent(this, serverLevel));
+            } else {
+                NeoForge.EVENT_BUS.post(new EmissorSelfRemovedEvent(this, serverLevel));
+            }
+        }
+    }
+
+    @Override
+    public double mergeDistance() {
+        return basicForce*2;
+    }
+
+    @Override
+    public boolean optimizedQuery() {
+        return true;
     }
 }

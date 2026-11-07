@@ -1,6 +1,6 @@
 package com.art5019.art5019s_injustice.data.emissors;
 
-import com.art5019.art5019s_injustice.data.emissors.custom.EmissorUpdatedStateEvent;
+import com.art5019.art5019s_injustice.data.emissors.event.EmissorUpdatedStateEvent;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.RegistryFriendlyByteBuf;

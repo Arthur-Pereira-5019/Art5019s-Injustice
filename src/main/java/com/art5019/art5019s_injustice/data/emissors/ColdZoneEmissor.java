@@ -70,6 +70,7 @@ public class ColdZoneEmissor extends Emissor{
     public void evolve(int factor, ServerLevel serverLevel) {
         radius += (radius/4)*factor;
         this.setExpiryTick(getExpiryTick() + 300L *factor);
+
     }
 
     @Override
