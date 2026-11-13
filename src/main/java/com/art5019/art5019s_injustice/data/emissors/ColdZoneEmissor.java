@@ -1,5 +1,6 @@
 package com.art5019.art5019s_injustice.data.emissors;
 
+import com.art5019.art5019s_injustice.data.RangedEmissor;
 import com.art5019.art5019s_injustice.helper.GeoHelper;
 import com.art5019.art5019s_injustice.powers.helper.FreezingHelper;
 import com.mojang.serialization.Codec;
@@ -17,7 +18,7 @@ import net.minecraft.world.entity.LivingEntity;
 import java.util.List;
 import java.util.UUID;
 
-public class ColdZoneEmissor extends Emissor{
+public class ColdZoneEmissor extends Emissor implements RangedEmissor {
     private int radius;
     public static final MapCodec<ColdZoneEmissor> COLD_ZONE = RecordCodecBuilder.mapCodec(instance ->
             instance.group(

@@ -22,7 +22,7 @@ public class WeatherEffectRendererMixin {
             )
     )
     private Biome.Precipitation modifyPrecipitation(Biome.Precipitation original, @Local(argsOnly = true, name = "level") ClientLevel level, @Local(name = "x") int x, @Local(name = "z") int z, @Local(name = "cameraBlockY") int cameraBlockY) {
-        if(EmissorHelper.containsEmissorAt(level, new BlockPos(x, cameraBlockY, z), 16, ColdZoneEmissor.class)) {
+        if(EmissorHelper.atRangeOfEmissor(level, new BlockPos(x, cameraBlockY, z), ColdZoneEmissor.class)) {
             return Biome.Precipitation.SNOW;
         }
         return original;

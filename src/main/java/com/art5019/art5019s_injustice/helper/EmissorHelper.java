@@ -1,8 +1,10 @@
 package com.art5019.art5019s_injustice.helper;
 
+import com.art5019.art5019s_injustice.data.RangedEmissor;
 import com.art5019.art5019s_injustice.data.emissors.event.EmissorUpdatedStateEvent;
 import com.art5019.art5019s_injustice.data.emissors.*;
 import com.art5019.art5019s_injustice.data.emissors.MistEmissor;
+import com.mojang.datafixers.util.Pair;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
@@ -13,23 +15,34 @@ import net.neoforged.neoforge.common.NeoForge;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Objects;
 
 
+import static com.art5019.art5019s_injustice.common.event.ServerLevelTick.queueServerWork;
 import static com.art5019.art5019s_injustice.data.DataAttachments.EMISSORS_ATTACHMENT;
 
 public class EmissorHelper {
     public static void appendEmissor(ServerLevel serverLevel, Emissor emissor) {
         ArrayList<Emissor> emissors = new ArrayList<>(serverLevel.getData(EMISSORS_ATTACHMENT));
+        Pair<Boolean, ? extends Emissor> result = null;
+        boolean merged = false;
         if(emissor instanceof Mergeable mergeable) {
-            if((mergeable.optimizedQuery() && serverLevel.getGameTime() % 20 == 0) || !mergeable.optimizedQuery()) {
-                Emissor emissorB = nearestEmissor(serverLevel, emissor.getBlockPos(), (int) mergeable.mergeDistance(), emissor.getClass());
-                if(emissorB instanceof Mergeable mergeableB) {
-                    mergeable.mergeWith(mergeableB, serverLevel);
-                    removeEmissor(emissorB, serverLevel);
-                }
+            Emissor emissorB = nearestEmissor(serverLevel, emissor.getBlockPos(), (int) mergeable.mergeDistance(), emissor.getClass());
+            if(emissorB instanceof Mergeable mergeableB && !Objects.equals(emissorB.getUuid(), emissor.getUuid())) {
+                System.out.println("Merged " + emissorB.getUuid() + " with " + emissor.getUuid());
+                result = mergeableB.mergeWith(mergeable, serverLevel);
+                merged = result.getFirst();
             }
         }
-        emissors.add(emissor);
+        if(!merged) {
+            emissors.add(emissor);
+        } else {
+            removeEmissor(result.getSecond(), serverLevel);
+            if (result.getSecond() != null) {
+                final Pair<Boolean, ? extends Emissor> resultF = result;
+                queueServerWork(2, () -> appendEmissor(serverLevel, resultF.getSecond()));
+            }
+        }
         serverLevel.setData(EMISSORS_ATTACHMENT, emissors);
     }
 
@@ -98,6 +111,18 @@ public class EmissorHelper {
     public static boolean containsEmissorAt(Level level, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
         List<? extends Emissor> emissors = findEmissorsAt(level, blockPos, radius, type);
         return !emissors.isEmpty();
+    }
+
+    public static boolean atRangeOfEmissor(Level level, BlockPos blockPos, Class<? extends RangedEmissor> type) {
+        ArrayList<Emissor> emissors = new ArrayList<>(level.getData(EMISSORS_ATTACHMENT));
+        for (Emissor emissor : emissors) {
+            if(type.isInstance(emissor)) {
+                if(GeoHelper.distanceBetweenPos(blockPos, emissor.getBlockPos()) < type.cast(emissor).getRadius()) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     public static List<? extends Emissor> filterEmissorsAt(ArrayList<Emissor> emissors, BlockPos blockPos, int radius, Class<? extends Emissor> type) {
